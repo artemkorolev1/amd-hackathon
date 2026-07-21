@@ -1,0 +1,76 @@
+idx,task_id,model_label,category,prompt,expected,answer,score,passed,total_time_s,stage0_ms,stage2_ms,stage3_ms,det_ms,llm_ms,complexity,confidence,raw_scores,max_tokens,qc_pass,solver,prompt_tokens,completion_tokens
+0,hep-1d92c13765c5,qwen-1.5b,code_debug,"Fix this Python function:
+return x + y + y + x
+
+Task: Write a Python function `add(x: int, y: int)` to solve the followi",return x + y,"```python
+def add(x, y):
+    return x + y + y + x
+```",0.95,True,0.149,0.0,5.1,0.1,0.0,143.2,0.022,0.0,"{'code_debug': 5.5, 'code_gen': 5.5, 'factual': 0.0, 'logic': 0.0, 'math': 1.5, 'ner': 2.0, 'sentiment': 0.0, 'summarization': 0.0}",200,True,local_llm,129,20
+1,hep-3fd5c7578380,qwen-1.5b,code_debug,"Fix this Python function:
+return n%2 == 0 and n >= 8 and n <= 8
+
+Task: Write a Python function `is_equal_to_sum_even(n)`",return n%2 == 0 and n >= 8,"```python
+def is_equal_to_sum_even(n):
+    return n % 2 == 0 and n >= 8 and n <= 8
+```",0.6667,True,0.213,0.0,0.5,0.0,0.0,212.8,0.022,0.0,"{'code_debug': 5.5, 'code_gen': 5.5, 'factual': 0.0, 'logic': 0.0, 'math': 3.5, 'ner': 2.0, 'sentiment': 2.0, 'summarization': 0.0}",200,True,local_llm,163,32
+2,hep-682e254149c6,qwen-1.5b,code_debug,"Fix this Python function:
+l = list(l)
+    return l
+
+Task: Write a Python function `sort_third(l: list)` to solve the fol","l = list(l)
+    l[::3] = sorted(l[::3])
+    return l","```python
+def sort_third(l: list) -> list:
+    l = [l[i] for i in range(len(l)) if i % 3 != 0]
+    for i in range(0, len",0.3333,False,0.453,0.0,0.6,0.0,0.0,452.5,0.03,0.0,"{'code_debug': 5.5, 'code_gen': 5.5, 'factual': 0.0, 'logic': 0.0, 'math': 1.5, 'ner': 2.0, 'sentiment': 0.0, 'summarization': 0.0}",200,True,local_llm,226,70
+3,hep-834c04c213df,qwen-1.5b,code_debug,"Fix this Python function:
+return string.lower()
+
+Task: Write a Python function `flip_case(string: str) -> str` to solve ",return string.swapcase(),"```python
+def flip_case(string: str) -> str:
+    return ''.join([char.lower() if char.isupper() else char.upper() for ch",0.125,False,0.221,0.0,0.3,0.0,0.0,220.6,0.018,0.0,"{'code_debug': 5.5, 'code_gen': 5.5, 'factual': 0.0, 'logic': 0.0, 'math': 1.5, 'ner': 2.0, 'sentiment': 0.0, 'summarization': 0.0}",200,True,local_llm,122,35
+4,hep-afacd15524c3,qwen-1.5b,code_debug,"Fix this Python function:
+return sum([x for idx, x in enumerate(lst) if idx%2==1 and x%2==1])
+
+Task: Write a Python func","return sum([x for idx, x in enumerate(lst) if idx%2==0 and x%2==1])","```python
+def solution(lst):
+    return sum(x for idx, x in enumerate(lst) if idx % 2 == 0 and x % 2 == 1)
+```",0.9,True,0.25,0.0,0.7,0.0,0.0,249.2,0.022,0.0,"{'code_debug': 5.5, 'code_gen': 5.5, 'factual': 0.0, 'logic': 3.0, 'math': 1.5, 'ner': 2.0, 'sentiment': 0.0, 'summarization': 0.0}",200,True,local_llm,195,37
+5,hep-b1e31928f81b,qwen-1.5b,code_debug,"Fix this Python function:
+if n < 1:
+        return False
+    for k in range(1, n - 1):
+        if n % k == 0:
+          ","if n < 2:
+        return False
+    for k in range(2, n - 1):
+        if n % k == 0:
+            return False
+    return ","```python
+def is_prime(n):
+    if n < 2:
+        return False
+    for k in range(2, n):
+        if n % k == 0:
+         ",0.7333,True,0.315,0.0,0.5,0.0,0.0,314.5,0.06,1.5,"{'code_debug': 7.0, 'code_gen': 5.5, 'factual': 0.0, 'logic': 0.0, 'math': 1.5, 'ner': 2.0, 'sentiment': 0.0, 'summarization': 0.0}",200,True,local_llm,204,47
+6,mbpp-8d6a7e8721c2,qwen-1.5b,code_gen,Write a Python function: Write a function to get the frequency of the elements in a list.,"import collections
+def freq_count(list1):
+  freq_count= collections.Counter(list1)
+  return freq_count","```python
+from collections import Counter",0.3333,False,0.063,0.0,0.2,0.2,0,62.3,0.152,3.5,"{'code_debug': 0.0, 'code_gen': 5.0, 'factual': 0.0, 'logic': 0.0, 'math': 1.5, 'ner': 0.0, 'sentiment': 0.0, 'summarization': 0.0}",250,True,local_llm,85,8
+7,mbpp-9d9e82a53e71,qwen-1.5b,code_gen,Write a Python function: Write a function to find the closest smaller number than n.,"def closest_num(N):
+  return (N - 1)","```python
+from math import floor",0.0,False,0.064,0.0,0.2,0.0,0,63.7,0.152,3.5,"{'code_debug': 0.0, 'code_gen': 5.0, 'factual': 0.0, 'logic': 0.0, 'math': 1.5, 'ner': 0.0, 'sentiment': 0.0, 'summarization': 0.0}",250,True,local_llm,83,8
+8,mbpp-c0d8bcd24b66,qwen-1.5b,code_gen,Write a Python function: Write a function to split a string at lowercase letters.,"import re
+def split_lowerstring(text):
+ return (re.findall('[a-z][^a-z]*', text))","```python
+def split_at_lowercase(s):
+    return ''.join([i for i in s if i.isupper()])
+```",0.1111,False,0.165,0.0,0.2,0.0,0,164.6,0.152,3.5,"{'code_debug': 0.0, 'code_gen': 5.0, 'factual': 0.0, 'logic': 0.0, 'math': 1.5, 'ner': 0.0, 'sentiment': 0.0, 'summarization': 0.0}",250,True,local_llm,82,25
+9,mbpp-c1be6ad9855c,qwen-1.5b,code_gen,Write a Python function: Write a python function to find the largest number that can be formed with the given digits.,"def find_Max_Num(arr,n) : 
+    arr.sort(reverse = True) 
+    num = arr[0] 
+    for i in range(1,n) : 
+        num = ","```python
+from functools import reduce
+from operator import mul",0.0,False,0.084,0.0,0.2,0.0,0,83.5,0.152,2.5,"{'code_debug': 0.0, 'code_gen': 4.0, 'factual': 0.0, 'logic': 0.0, 'math': 1.5, 'ner': 0.0, 'sentiment': 0.0, 'summarization': 0.0}",250,True,local_llm,89,13

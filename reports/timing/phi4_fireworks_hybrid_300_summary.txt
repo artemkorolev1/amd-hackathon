@@ -1,0 +1,93 @@
+Loading Phi-4 on GPU...
+Model loaded in 1.4s
+
+=== TIMING SUMMARY ===
+Total time for 300 questions: 930.06s
+Average per-question: 3.100s
+Throughput: 0.3 q/s
+
+--- Per-category timing ---
+  code_debug          : 26 q, avg 1.427s, total 37.11s
+  code_gen            : 39 q, avg 1.735s, total 67.67s
+  factual             : 67 q, avg 1.736s, total 116.31s
+  general             : 12 q, avg 0.345s, total 4.14s
+  logic               : 38 q, avg 2.323s, total 88.28s
+  math                : 46 q, avg 1.663s, total 76.48s
+  ner                 : 24 q, avg 0.971s, total 23.30s
+  sentiment           : 24 q, avg 3.676s, total 88.23s
+  summarization       : 24 q, avg 3.501s, total 84.03s
+
+--- Routing breakdown ---
+  deterministic         : 28
+  fireworks             : 39
+  fireworks_fallback    : 25
+  local                 : 208
+
+--- Answer token counts ---
+Local LLM: 208  Fireworks: 64
+  Q13 (code_gen       ) mode=fireworks_fallback   tok=201 time=3.2s
+  Q17 (code_gen       ) mode=fireworks_fallback   tok=200 time=3.3s
+  Q18 (code_gen       ) mode=fireworks_fallback   tok=200 time=2.2s
+  Q20 (code_gen       ) mode=fireworks_fallback   tok=197 time=4.2s
+  Q21 (code_gen       ) mode=fireworks_fallback   tok=200 time=2.3s
+  Q24 (code_gen       ) mode=fireworks_fallback   tok=220 time=2.3s
+  Q26 (factual        ) mode=fireworks_fallback   tok=222 time=3.1s
+  Q30 (factual        ) mode=fireworks_fallback   tok=218 time=6.7s
+  Q54 (math           ) mode=fireworks_fallback   tok=200 time=2.7s
+  Q69 (ner            ) mode=fireworks_fallback   tok=212 time=2.2s
+  Q70 (ner            ) mode=fireworks_fallback   tok=209 time=3.8s
+  Q76 (sentiment      ) mode=fireworks            tok= 15 time=1.9s
+  Q77 (sentiment      ) mode=fireworks            tok= 18 time=2.8s
+  Q78 (sentiment      ) mode=fireworks            tok=218 time=2.0s
+  Q79 (sentiment      ) mode=fireworks            tok=218 time=3.4s
+  Q80 (sentiment      ) mode=fireworks            tok=220 time=3.0s
+  Q81 (sentiment      ) mode=fireworks            tok=219 time=2.2s
+  Q82 (sentiment      ) mode=fireworks            tok=218 time=2.7s
+  Q83 (sentiment      ) mode=fireworks            tok=216 time=5.2s
+  Q84 (sentiment      ) mode=fireworks            tok=219 time=6.0s
+  Q85 (sentiment      ) mode=fireworks            tok=218 time=2.6s
+  Q86 (sentiment      ) mode=fireworks            tok=219 time=1.7s
+  Q87 (sentiment      ) mode=fireworks            tok=  7 time=2.4s
+  Q88 (summarization  ) mode=fireworks            tok= 54 time=3.3s
+  Q89 (summarization  ) mode=fireworks            tok=200 time=3.1s
+  Q92 (summarization  ) mode=fireworks            tok=194 time=3.0s
+  Q93 (summarization  ) mode=fireworks            tok=200 time=3.1s
+  Q96 (summarization  ) mode=fireworks            tok=  7 time=5.8s
+  Q98 (summarization  ) mode=fireworks            tok=196 time=2.1s
+  Q99 (summarization  ) mode=fireworks            tok= 44 time=2.8s
+  Q100 (code_gen       ) mode=fireworks_fallback   tok=202 time=4.4s
+  Q107 (code_gen       ) mode=fireworks_fallback   tok=199 time=2.6s
+  Q108 (code_gen       ) mode=fireworks_fallback   tok=201 time=3.3s
+  Q111 (code_gen       ) mode=fireworks_fallback   tok=221 time=1.8s
+  Q126 (factual        ) mode=fireworks_fallback   tok=219 time=3.2s
+  Q135 (factual        ) mode=fireworks_fallback   tok=219 time=4.8s
+  Q138 (logic          ) mode=fireworks_fallback   tok=199 time=2.0s
+  Q148 (logic          ) mode=fireworks_fallback   tok=195 time=2.0s
+  Q154 (math           ) mode=fireworks_fallback   tok=202 time=6.6s
+  Q170 (ner            ) mode=fireworks_fallback   tok=214 time=7.1s
+  Q176 (sentiment      ) mode=fireworks            tok= 32 time=3.2s
+  Q177 (sentiment      ) mode=fireworks            tok=  7 time=1.9s
+  Q178 (sentiment      ) mode=fireworks            tok= 11 time=1.7s
+  Q179 (sentiment      ) mode=fireworks            tok=218 time=4.2s
+  Q180 (sentiment      ) mode=fireworks            tok=220 time=3.7s
+  Q181 (sentiment      ) mode=fireworks            tok=218 time=1.7s
+  Q182 (sentiment      ) mode=fireworks            tok= 34 time=6.8s
+  Q183 (sentiment      ) mode=fireworks            tok=217 time=3.9s
+  Q184 (sentiment      ) mode=fireworks            tok=217 time=9.3s
+  Q185 (sentiment      ) mode=fireworks            tok=217 time=2.3s
+  Q186 (sentiment      ) mode=fireworks            tok= 21 time=6.5s
+  Q187 (sentiment      ) mode=fireworks            tok=  7 time=6.9s
+  Q188 (summarization  ) mode=fireworks            tok= 14 time=8.3s
+  Q189 (summarization  ) mode=fireworks            tok=202 time=3.6s
+  Q192 (summarization  ) mode=fireworks            tok=198 time=9.3s
+  Q193 (summarization  ) mode=fireworks            tok=198 time=3.0s
+  Q196 (summarization  ) mode=fireworks            tok= 27 time=4.1s
+  Q198 (summarization  ) mode=fireworks            tok=195 time=3.8s
+  Q199 (summarization  ) mode=fireworks            tok=126 time=4.9s
+  Q225 (math           ) mode=fireworks            tok=200 time=3.0s
+  Q267 (logic          ) mode=fireworks_fallback   tok=199 time=4.0s
+  Q268 (logic          ) mode=fireworks_fallback   tok=228 time=2.4s
+  Q271 (logic          ) mode=fireworks_fallback   tok=198 time=2.0s
+  Q275 (logic          ) mode=fireworks_fallback   tok=200 time=3.5s
+
+Results saved to /home/artem/dev/amd-hackathon-shared/phi4_fireworks_hybrid_results.json

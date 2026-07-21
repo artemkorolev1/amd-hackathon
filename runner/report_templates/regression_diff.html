@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regression Diff: {{ label_baseline }} → {{ label_candidate }}</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+           background: #f5f5f5; color: #333; padding: 20px; }
+    .container { max-width: 1000px; margin: 0 auto; }
+
+    h1 { font-size: 1.5rem; margin-bottom: 4px; }
+    .meta { color: #666; font-size: 0.85rem; margin-bottom: 20px; }
+
+    .delta-header { display: flex; align-items: baseline; gap: 16px;
+                    background: #fff; border-radius: 8px; padding: 20px;
+                    box-shadow: 0 1px 3px rgba(0,0,0,0.1); margin-bottom: 20px; }
+    .delta-header .big { font-size: 2.5rem; font-weight: 700; }
+    .delta-up { color: #1a7d1a; }
+    .delta-down { color: #c41e1e; }
+    .delta-flat { color: #666; }
+
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+             gap: 12px; margin-bottom: 24px; }
+    .card { background: #fff; border-radius: 8px; padding: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+    .card h2 { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.5px;
+               color: #888; margin-bottom: 4px; }
+    .card .val { font-size: 1.5rem; font-weight: 700; }
+    .card .sub { font-size: 0.8rem; color: #888; margin-top: 2px; }
+
+    h2.section { font-size: 1.1rem; margin: 24px 0 12px;
+                 padding-bottom: 6px; border-bottom: 2px solid #ddd; }
+    table { width: 100%; border-collapse: collapse; margin-bottom: 20px;
+            font-size: 0.85rem; }
+    th { background: #4472C4; color: #fff; text-align: left; padding: 8px 10px;
+         font-weight: 600; white-space: nowrap; }
+    td { padding: 6px 10px; border-bottom: 1px solid #e0e0e0; }
+    tr:hover { background: #f0f4ff; }
+    tr.regression { background: #fff0f0; }
+    tr.improvement { background: #f0fff0; }
+
+    .bar-cell { position: relative; }
+    .bar-bg { background: #e0e0e0; border-radius: 4px; height: 20px; position: relative; overflow: hidden; }
+    .bar-fill { height: 100%; border-radius: 4px; }
+    .bar-fill.delta-up { background: #4caf50; }
+    .bar-fill.delta-down { background: #f44336; }
+    .bar-label { position: absolute; top: 0; left: 8px; line-height: 20px;
+                 font-size: 0.75rem; font-weight: 600; }
+
+    .tag { display: inline-block; padding: 2px 8px; border-radius: 4px;
+           font-size: 0.75rem; font-weight: 600; }
+    .tag-reg { background: #f8d7da; color: #721c24; }
+    .tag-imp { background: #d4edda; color: #155724; }
+    .tag-same { background: #e2e3e5; color: #383d41; }
+
+    @media (max-width: 600px) {
+      .cards { grid-template-columns: 1fr 1fr; }
+      .delta-header { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Regression Diff</h1>
+    <div class="meta">{{ label_baseline }} &rarr; {{ label_candidate }} &middot; {{ date }}</div>
+
+    <!-- Delta header -->
+    <div class="delta-header">
+      <div>
+        <div style="font-size:0.85rem;color:#888;">Overall Accuracy Delta</div>
+        <div class="big {% if overall.delta > 0.001 %}delta-up{% elif overall.delta < -0.001 %}delta-down{% else %}delta-flat{% endif %}">
+          {{ "%+.1f"|format(overall.delta * 100) }}pp
+        </div>
+      </div>
+      <div>
+        <div style="font-size:0.85rem;color:#888;">Baseline ({{ label_baseline }})</div>
+        <div style="font-size:1.2rem;font-weight:600;">{{ "%.1f"|format(overall.baseline_accuracy * 100) }}%</div>
+        <div style="font-size:0.8rem;color:#888;">Gate: {{ "PASS" if overall.gate_baseline else "FAIL" }}</div>
+      </div>
+      <div>
+        <div style="font-size:0.85rem;color:#888;">Candidate ({{ label_candidate }})</div>
+        <div style="font-size:1.2rem;font-weight:600;">{{ "%.1f"|format(overall.candidate_accuracy * 100) }}%</div>
+        <div style="font-size:0.8rem;color:#888;">Gate: {{ "PASS" if overall.gate_candidate else "FAIL" }}</div>
+      </div>
+    </div>
+
+    <!-- Summary cards -->
+    <div class="cards">
+      <div class="card">
+        <h2>Regressions</h2>
+        <div class="val delta-down">{{ regressions|length }}</div>
+        <div class="sub">tasks got worse</div>
+      </div>
+      <div class="card">
+        <h2>Improvements</h2>
+        <div class="val delta-up">{{ improvements|length }}</div>
+        <div class="sub">tasks got better</div>
+      </div>
+      <div class="card">
+        <h2>Unchanged</h2>
+        <div class="val">{{ unchanged|length }}</div>
+        <div class="sub">same result in both runs</div>
+      </div>
+      <div class="card">
+        <h2>Net Change</h2>
+        <div class="val {% if net_change > 0 %}delta-up{% elif net_change < 0 %}delta-down{% else %}delta-flat{% endif %}">
+          {{ "%+d"|format(net_change) }}
+        </div>
+        <div class="sub">correct minus lost</div>
+      </div>
+    </div>
+
+    <!-- Per-category deltas -->
+    <h2 class="section">Per-Category Deltas</h2>
+    <table>
+      <tr><th>Category</th><th>{{ label_baseline }}</th><th>{{ label_candidate }}</th><th>Delta</th><th>Bar</th></tr>
+      {% for cat, stats in by_category.items()|sort %}
+      <tr>
+        <td><strong>{{ cat }}</strong></td>
+        <td>{{ "%.1f"|format(stats.baseline * 100) }}%</td>
+        <td>{{ "%.1f"|format(stats.candidate * 100) }}%</td>
+        <td class="{% if stats.delta > 0.001 %}delta-up{% elif stats.delta < -0.001 %}delta-down{% else %}delta-flat{% endif %}">
+          {{ "%+.1f"|format(stats.delta * 100) }}pp
+        </td>
+        <td class="bar-cell" style="width:200px;">
+          <div class="bar-bg">
+            <div class="bar-fill {% if stats.delta > 0 %}delta-up{% elif stats.delta < 0 %}delta-down{% endif %}"
+                 style="width: {{ (stats.delta|abs * 100)|round(1) }}%;"></div>
+          </div>
+        </td>
+      </tr>
+      {% endfor %}
+    </table>
+
+    <!-- Regressions -->
+    <h2 class="section">Regressions ({{ regressions|length }})</h2>
+    {% if regressions %}
+    <table>
+      <tr><th>ID</th><th>Category</th><th>Expected</th><th>Baseline Answer</th><th>Candidate Answer</th></tr>
+      {% for r in regressions %}
+      <tr class="regression">
+        <td><code>{{ r.task_id }}</code></td>
+        <td>{{ r.category }}</td>
+        <td>{{ r.expected[:80] }}</td>
+        <td>{{ r.baseline_answer[:80] }}</td>
+        <td>{{ r.candidate_answer[:80] }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+    {% else %}
+    <p style="color: #666;">No regressions detected.</p>
+    {% endif %}
+
+    <!-- Improvements -->
+    <h2 class="section">Improvements ({{ improvements|length }})</h2>
+    {% if improvements %}
+    <table>
+      <tr><th>ID</th><th>Category</th><th>Expected</th><th>Baseline Answer</th><th>Candidate Answer</th></tr>
+      {% for r in improvements %}
+      <tr class="improvement">
+        <td><code>{{ r.task_id }}</code></td>
+        <td>{{ r.category }}</td>
+        <td>{{ r.expected[:80] }}</td>
+        <td>{{ r.baseline_answer[:80] }}</td>
+        <td>{{ r.candidate_answer[:80] }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+    {% else %}
+    <p style="color: #666;">No improvements.</p>
+    {% endif %}
+
+    <div style="margin: 30px 0; font-size: 0.75rem; color: #aaa; text-align: center;">
+      Generated by regression.py on {{ date }}
+    </div>
+  </div>
+</body>
+</html>

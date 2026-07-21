@@ -1,0 +1,6 @@
+What is the capital of France?
+Summarize: The quick brown fox jumps over the lazy dog.
+Translate 'Hello world' to French.
+Classify the sentiment of this review: The product was okay.
+Define what a neural network is.
+What is the square root of 144?

@@ -1,0 +1,16 @@
+# Dependencies for amd-final-15b — Qwen2.5-1.5B GGUF + Fireworks API
+# llama-cpp-python for local GGUF inference (CPU)
+numpy>=1.26.0
+scipy>=1.13.0
+sympy>=1.12
+click>=8.1
+spacy>=3.7
+llama-cpp-python>=0.3.1
+openpyxl>=3.1.0
+python-constraint>=1.4.0
+RestrictedPython>=7.0
+vaderSentiment>=3.3.2
+symspellpy>=6.7.0
+duckduckgo-search>=7.5.0
+sentence-transformers>=3.0.0
+scikit-learn>=1.5.0

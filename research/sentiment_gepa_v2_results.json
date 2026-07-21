@@ -1,0 +1,150 @@
+{
+  "timestamp": "20260713_152507",
+  "config": {
+    "models": [
+      "gemma-3-1b",
+      "qwen2.5-1.5b",
+      "qwen2.5-coder-1.5b"
+    ],
+    "generations": 2,
+    "questions_per_eval": 100,
+    "hybrid": true
+  },
+  "all_generations": [
+    {
+      "generation": 0,
+      "cells": [
+        {
+          "id": "seed_1",
+          "model": "gemma-3-1b",
+          "system_prompt": "Classify the sentiment. Output EXACTLY one word: positive, negative, neutral, or mixed.",
+          "params": {
+            "top_p": 0.9,
+            "top_k": 20,
+            "min_p": 0.05
+          },
+          "train_accuracy": 76.77,
+          "val_accuracy": 66.0
+        },
+        {
+          "id": "seed_13",
+          "model": "qwen2.5-1.5b",
+          "system_prompt": "Is the sentiment positive or negative? Reply with one word.",
+          "params": {
+            "top_p": 0.9,
+            "top_k": 20,
+            "min_p": 0.05
+          },
+          "train_accuracy": 78.79,
+          "val_accuracy": 83.0
+        },
+        {
+          "id": "seed_20",
+          "model": "qwen2.5-coder-1.5b",
+          "system_prompt": "What is the sentiment? Reply with one word.",
+          "params": {
+            "top_p": 0.9,
+            "top_k": 20,
+            "min_p": 0.05
+          },
+          "train_accuracy": 76.77,
+          "val_accuracy": 65.0
+        }
+      ]
+    },
+    {
+      "generation": 1,
+      "cells": [
+        {
+          "id": "gemma-3-1b_elite_seed_1",
+          "model": "gemma-3-1b",
+          "system_prompt": "Classify the sentiment. Output EXACTLY one word: positive, negative, neutral, or mixed.",
+          "params": {
+            "top_p": 0.9,
+            "top_k": 20,
+            "min_p": 0.05
+          },
+          "train_accuracy": 76.77,
+          "val_accuracy": 66.0
+        },
+        {
+          "id": "qwen2.5-1.5b_mut_11",
+          "model": "qwen2.5-1.5b",
+          "system_prompt": "Is the sentiment positive or negative? Reply with one word.",
+          "params": {
+            "top_p": 0.80570169649468,
+            "top_k": 30,
+            "min_p": 0.06256462124948563
+          },
+          "train_accuracy": 79.8,
+          "val_accuracy": 83.0
+        },
+        {
+          "id": "qwen2.5-coder-1.5b_elite_seed_20",
+          "model": "qwen2.5-coder-1.5b",
+          "system_prompt": "What is the sentiment? Reply with one word.",
+          "params": {
+            "top_p": 0.9,
+            "top_k": 20,
+            "min_p": 0.05
+          },
+          "train_accuracy": 76.77,
+          "val_accuracy": 66.0
+        }
+      ]
+    },
+    {
+      "generation": 2,
+      "cells": [
+        {
+          "id": "gemma-3-1b_elite_gemma-3-1b_elite_seed_1",
+          "model": "gemma-3-1b",
+          "system_prompt": "Classify the sentiment. Output EXACTLY one word: positive, negative, neutral, or mixed.",
+          "params": {
+            "top_p": 0.9,
+            "top_k": 20,
+            "min_p": 0.05
+          },
+          "train_accuracy": 76.77,
+          "val_accuracy": 66.0
+        },
+        {
+          "id": "qwen2.5-1.5b_elite_qwen2.5-1.5b_mut_11",
+          "model": "qwen2.5-1.5b",
+          "system_prompt": "Is the sentiment positive or negative? Reply with one word.",
+          "params": {
+            "top_p": 0.80570169649468,
+            "top_k": 30,
+            "min_p": 0.06256462124948563
+          },
+          "train_accuracy": 79.8,
+          "val_accuracy": 82.0
+        },
+        {
+          "id": "qwen2.5-coder-1.5b_mut_19",
+          "model": "qwen2.5-coder-1.5b",
+          "system_prompt": "Classify the sentiment.",
+          "params": {
+            "top_p": 0.872025991947291,
+            "top_k": 25,
+            "min_p": 0.03268152311860239
+          },
+          "train_accuracy": 79.8,
+          "val_accuracy": 66.0
+        }
+      ]
+    }
+  ],
+  "best_overall": {
+    "generation": 0,
+    "model": "qwen2.5-1.5b",
+    "system_prompt": "Is the sentiment positive or negative? Reply with one word.",
+    "params": {
+      "top_p": 0.9,
+      "top_k": 20,
+      "min_p": 0.05
+    },
+    "train_accuracy": 78.79,
+    "val_accuracy": 83.0
+  }
+}

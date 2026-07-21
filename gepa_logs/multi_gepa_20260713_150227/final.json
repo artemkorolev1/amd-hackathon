@@ -1,0 +1,23 @@
+{
+  "num_categories_completed": 1,
+  "categories_attempted": [
+    "sentiment"
+  ],
+  "categories_completed": [
+    "sentiment"
+  ],
+  "models": [
+    "qwen2.5-1.5b"
+  ],
+  "generations": 1,
+  "routing_table_version": 1,
+  "per_category_summary": {
+    "sentiment": {
+      "qwen2.5-1.5b": {
+        "best_accuracy": 1.0,
+        "best_prompt": "",
+        "temperature": 0.0
+      }
+    }
+  }
+}

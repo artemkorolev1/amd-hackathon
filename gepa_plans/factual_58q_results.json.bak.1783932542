@@ -1,0 +1,78 @@
+{
+  "date": "2026-07-13",
+  "dataset": "factual_combined_58",
+  "models_tested": [
+    "smollm2-1.7b",
+    "qwen2.5-1.5b",
+    "llama-3.2-1b",
+    "gemma-3-1b"
+  ],
+  "prompts": [
+    {
+      "index": 0,
+      "label": "empty",
+      "system_prompt": ""
+    },
+    {
+      "index": 1,
+      "label": "Answer:",
+      "system_prompt": "Answer:"
+    },
+    {
+      "index": 2,
+      "label": "Fact:",
+      "system_prompt": "Fact:"
+    },
+    {
+      "index": 3,
+      "label": "Answer directly.",
+      "system_prompt": "Answer directly."
+    },
+    {
+      "index": 4,
+      "label": "Be precise.",
+      "system_prompt": "Be precise. Use exact names, dates, and numbers."
+    }
+  ],
+  "results": {
+    "smollm2-1.7b": {
+      "prompt_0": {
+        "accuracy": 0.328,
+        "correct": 19,
+        "total": 58,
+        "avg_latency_ms": 540.5
+      }
+    }
+  },
+  "best_per_model": {
+    "smollm2-1.7b": {
+      "prompt_index": 0,
+      "accuracy": 0.328,
+      "label": "empty"
+    }
+  },
+  "overall_best": {
+    "model": "smollm2-1.7b",
+    "prompt_index": 0,
+    "accuracy": 0.328,
+    "label": "empty"
+  },
+  "previous_best": {
+    "smollm2-1.7b": {
+      "prompt": "empty",
+      "accuracy": 0.474
+    },
+    "qwen2.5-1.5b": {
+      "prompt": "Be precise.",
+      "accuracy": 0.368
+    },
+    "llama-3.2-1b": {
+      "prompt": "Fact:",
+      "accuracy": 0.421
+    },
+    "gemma-3-1b": {
+      "prompt": "Answer:",
+      "accuracy": 0.263
+    }
+  }
+}

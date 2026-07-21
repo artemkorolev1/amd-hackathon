@@ -1,0 +1,1002 @@
+[
+  {
+    "category": "sentiment",
+    "task_id": "imdb-c4c427ab6559",
+    "prompt": "Classify the sentiment of this review: \"I only saw this recently but had been aware of it for a number of years and have always been intrigued by its title. It now belongs to me as one of my very favourite films. It is hard to describe the incredible subject matter the Maysles discovered but everything in it works wonderfully. It has so many memorable images and moments where you feel you are encroaching on a very private world. I fell in love with this film and with the characters in it. It is as though the filmmakers have cast a spell of the audience and drawn us into the strange world of the eccentric Beales, a true aristocratic family. It has a tangible atmosphere and I found myself wishing I could be there away from it all, cooking my corn on the cob at my bedside table. It has an air of sadness that permeates throughout. A\"",
+    "expected_answer": "positive",
+    "difficulty": "medium",
+    "source": "training-v2.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "imdb-1ef9b3c7a511",
+    "prompt": "Classify the sentiment of this review: \"(First of all, excuse my bad English) Of course only a movie starring Jessica Simpson can include serious goofs like this.. I'm a norwegian and I felt offended and shocked the makers of this movie did not take the time to do their research upon making this American/\"Norwegian\" movie. Even Wikipedia is more accurate when it comes to facts about this country.<br /><br />So I'm posting my corrections out of my frustration: -The Country is named Norway, not Norwegia. -\"Da\" is Russian, not norwegian. -Norwegian priests never use those black capes with that white paper by the neck as the protestant church is the dominant by far -It's true we have a native traditional folk-outfit (that we only use like twice a year) but the outfit in this movie is more like a German outfit. -I could NOT understan\"",
+    "expected_answer": "negative",
+    "difficulty": "medium",
+    "source": "training-v1.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-d487d34d0cfb",
+    "prompt": "Classify the sentiment as POSITIVE or NEGATIVE, then explain why in one sentence.\n\n\"gorgeous to look at but insufferably tedious and turgid ... a curiously constricted epic \" Respond in JSON format with keys: answer, reasoning.",
+    "expected_answer": "negative",
+    "difficulty": "medium",
+    "source": "training-v2.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-2920cd42ed56",
+    "prompt": "Classify the sentiment as POSITIVE or NEGATIVE, then explain why in one sentence.\n\n\"as well-written as sexy beast , not as gloriously flippant as lock , stock and two smoking barrels , but stylish and moody and exceptionally well-acted . \"",
+    "expected_answer": "positive",
+    "difficulty": "medium",
+    "source": "training-v2.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sent-24899b31",
+    "prompt": "Classify the sentiment of this review: \"Devil Hunter gained notoriety for the fact that it's on the DPP 'Video Nasty' list, but it really needn't have been. Many films on the list where there for God (and DPP) only known reasons, and while this isn't the tamest of the bunch; there isn't a lot here that warrants banning...which is a shame because I never would have sat through it where it not for the fact that it's on 'the shopping list'. The plot actually gives the film a decent base - or at least more of a decent base than most cannibal films - and it follows an actress who is kidnapped and dragged off into the Amazon jungle. A hunter is then hired to find her, but along the way he has to brave the natives, lead by a man who calls himself \"The Devil\" (hence the title). The film basically just plods along for eighty five minutes\"",
+    "expected_answer": "negative",
+    "difficulty": "medium",
+    "source": "generated/sentiment_comprehensive_hard.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "imdb-485e05679bff",
+    "prompt": "Classify the sentiment of this review: \"I watched this film few times and all i can say that this is low budget rubbish and that it does not have anything to do with a real history facts. Actors performances is very poor but it is result of limited acting possibilities. Anyone who watched this film now probably think of Hitler as some crazy skinny lunatic who running with a gun like some Chicago gangster. I can only to say that there is much better films about Hitler and Germany in those years and that Rise of evil is very much under average. I can recommend German film Downfall in which you can see brilliant performance of Switzerland actor Bruno Ganz in a roll of Adolf Hitler.\"",
+    "expected_answer": "negative",
+    "difficulty": "medium",
+    "source": "training-v1.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sent-e5f805fd",
+    "prompt": "Classify the sentiment of this review as POSITIVE or NEGATIVE, then explain why.\n\n\"Hayao Miyazaki's second feature film, and his first one to be widely acclaimed both commercially and critically (though his debut - Nausicaa AKA Warriors of the Wind is considered by many fans his best), 'Tenku no Shiro Rapyuta' AKA 'Castle in the Sky' may seem childish and simplistic when compared to his more recent masterpieces like 'Kiki's Delivery Service', 'Mononoke-hime' and 'Spirited Away', but in 1986 it was years ahead of its time and it was one of the milestones of modern anime. It's important to remember that 'Castle in the Sky' was made two years before the revolutionary 'Akira', and while it's not provocative and controversial like the aforementioned masterpiece, the lead characters are all mainly basic manga hero / heroine / villain type characters, and the story is quite pre\"",
+    "expected_answer": "positive",
+    "difficulty": "medium",
+    "source": "generated/sentiment_comprehensive_hard.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sent-6e553a39",
+    "prompt": "Classify the sentiment of this review: \"The prerequisite for making such a film is a complete ignorance of Nietzche's work and personality, psychoanalytical techniques and Vienna's history. Take a well-know genius you have not read, describe him as demented, include crazy physicians to cure him, a couple of somewhat good looking women, have his role played by an actor with an enormous mustache, have every character speak with the strongest accent, show ridiculous dreams, include another prestigious figure who has nothing to do with the first one (Freud), mention a few words used in the genius' works, overdo everything you can, particularly music, and you are done. Audience, please stay away.\"",
+    "expected_answer": "negative",
+    "difficulty": "medium",
+    "source": "generated/sentiment_comprehensive_hard.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "imdb-a81bc967c6d2",
+    "prompt": "Classify the sentiment of this review: \"This version of Anna Christie is in German. Greta Garbo again plays Anna Christie, but all of the other characters have different actors from the English version. Both were filmed back to back because Garbo had such a following in Germany. Garbo herself supposedly favored her Anna Christie in this version over the English version. It's a good tale and a must-see for Garbo fans.\"",
+    "expected_answer": "positive",
+    "difficulty": "medium",
+    "source": "training-v2.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sent-4053dd86",
+    "prompt": "Classify the sentiment of this text (positive, negative, or neutral):\n\n\"... the movie is just a plain old monster . \"",
+    "expected_answer": "negative",
+    "difficulty": "medium",
+    "source": "generated/eval_from_datasets_20260712_172357.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-fa724dc9a375",
+    "prompt": "Classify the sentiment: \"a cheap scam put together by some cynical creeps at revolution studios and imagine entertainment to make the suckers out there surrender $ 9 and 93 minutes of unrecoverable life . \"",
+    "expected_answer": "negative",
+    "difficulty": "medium",
+    "source": "training-v1.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sent-8937e5f7",
+    "prompt": "Classify the sentiment of this review: \"This movie was good for it's time. If you like Eddie Murpy this is a must have to add to your collection. Eddie was young and funny with his 80's haircut. Charlotte Lewis, Eddie's costar is hot. This was one of her first movies and she was not bad. The graphics were good for the 80's. A lot of the actors went on to do other good movies you should check them out through IMDb. Other must have from Eddie is \"Coming to America\" and \"48 hours\". Another actor \"Victor Wong\" has a small part in this movie. Check out some of his older movies like \"Big trouble in little china\". If you liked the action movies from the 80's this is your movie.\"",
+    "expected_answer": "positive",
+    "difficulty": "medium",
+    "source": "generated/sentiment_comprehensive_hard.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "imdb-4770d6502b02",
+    "prompt": "Classify the sentiment of this review as POSITIVE or NEGATIVE, then explain why.\n\n\"The story is somewhat stilted, what with the main character's sudden reversals of fortune, but Leslie Howard and Bette Davis's portrayals of Philip Carey, the na\u00efve obsessed lover and Mildred Rogers, the unworthy object of his affections, raise this film considerably above standard melodrama.<br /><br />Sensitive, cultured Philip, who for most of the picture is in bondage to first his infatuation and then his pity for Mildred is not unlike a character Howard was to play a few years later--Ashley Wilkes, the Southern gentleman too refined and decent to make it in the rough Reconstruction era. Philip in fact seems resigned to disappointment even before Mildred enters the picture\u0097he doesn't even seem particularly surprised when his art teacher tells him he'll never make it as a painter. It is\"",
+    "expected_answer": "positive",
+    "difficulty": "medium",
+    "source": "training-v2.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "imdb-07e361fa847b",
+    "prompt": "Classify the sentiment of this review: \"I am a back Batman movie and TV fan. I loved the show (new and old) and I loved all the movies. But this movie is not as great as some people were hopeing it to be. In my opinon, it is a big let down. I think the problem was it had no drama. Batman: Mask Of The Phantasm and Batman Beyond: Return Of The Joker had a lot of drama. and Batman & Mr. Freeze: Sub Zero had some drama too. Also, I think this movie is to light for Batman. The only scene that seems a little dark is the big fight with Bane at the end. Anyways, it's an ok Batman movie. But I would just rent it.\"",
+    "expected_answer": "negative",
+    "difficulty": "medium",
+    "source": "training-v1.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sent-62804f7a",
+    "prompt": "Classify the sentiment of this review: \"There are two movie experiences I will always cherish. The first was seeing \"Star Wars\" for the first time at the age of 10 with my little brother. A close second is sneaking into Halloween at the Tripple Plex with my good friend, Trevor, in late October 1978. Halloween left me breathless, speechless, and downright scared. Everyone knows the story. Young Michael Myers decides to kill his sister on Halloween 1963. He escapes a mental hospital 15 years later to return to Haddofield to wreck havoc once again. He spots Laurie (Jamie Lee Curtis), a shy senior who enjoys babysitting, and begins stalking her. Her partying friends across the street are killed, one-by-one as Michael sets his plot to get her. Ironically, the young boy she tends on Halloween is afraid of the \"Boogeman,\" and can see h\"",
+    "expected_answer": "positive",
+    "difficulty": "medium",
+    "source": "generated/sentiment_comprehensive_hard.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "imdb-2af1fba8bbc1",
+    "prompt": "Classify the sentiment of this review: \"Without doubt the best of the novels of John Le Carre, exquisitely transformed into a classic film. Performances by Peter Egan (Magnus Pym, The Perfect Spy), Rudiger Weigang (Axel, real name Alexander Hampel, Magnus' Czech Intelligence controller), Ray McAnally (Magnus' con-man father) and Alan Howard (Jack Brotherhood, Magnus' mentor, believer and British controller), together with the rest of the characters, are so perfect and natural, the person responsible for casting them should have been given an award. Even the small parts, such as Major Membury, are performed to perfection. It says a lot for the power of the performances, and the strength of the characters in the novel that, despite the duplicity of Magnus, one cannot help but feel closer to Magnus and Axel than to Jack Brotherhood\"",
+    "expected_answer": "positive",
+    "difficulty": "medium",
+    "source": "training-v1.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "imdb-9ea0a87acacc",
+    "prompt": "Classify the sentiment of this review: \"Give me my money back! Give me my life back! Give me a bit of credit. This movie was vomit worthy. Useless and time consuming. What a waste of energy and totally pointless. Okay I understand the premise and the idea sound but, give us a break! Next time just give me the money and let me spend it. Lost child, mothers remorse, blamed husband! Clich\u00e9 yes~! Get a life! Sorry but this movie was a total waste of my time, my money and my being. I would rather watch eggs cook! No real explanation to why this happened. Prison? Why? Loss? obvious but Why? Acting deserves a What am I doing here Oscar and the cinematography a Am I just doing this for a Wage? How much did this movie make? Well this silly fool hired a copy. Enough said\"",
+    "expected_answer": "negative",
+    "difficulty": "medium",
+    "source": "training-v1.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "imdb-245cf8344bab",
+    "prompt": "Classify the sentiment of this review: \"I really disliked this movie....mainly because of the main characters! They are both immature, selfish, and self-centered people. They hurt EVERYBODY around them playing their silly game. The visual effects were good but what good are they if there are no characters that you connect with or a story line that is interesting. Am I supposed to be happy when these two psycho people FINALLY consummate their love for each other? <br /><br />After watching this movie I was thinking \"This is supposed be the #1 smash from France?\"........<br /><br />*spoiler* <br /><br />As for the end: GOOD RIDDANCE! They both deserve each other! <br /><br />\"",
+    "expected_answer": "negative",
+    "difficulty": "medium",
+    "source": "training-v1.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "imdb-e61dfae23deb",
+    "prompt": "Classify the sentiment of this review: \"I saw this by accident one lazy summer afternoon. It was playing on the family programming channel of HBO. At first I was drawn in, by what I thought was a Disney animation. But then, after a few minutes, I found myself searching for the remote, so I could find the 'INFO BUTTON', to find out what in the world was on my TV. I have nothing against Harvey F., I enjoy him in many of his films, but one thing he is not, is a voice-over artist. Sure he has one of the more unique voices in Hollywood, but it works only as a part of a bigger visual package. Attaching his voice to a cute duck made watching somewhat difficult. As for the rest of the cast, uninspired. I suppose working on this film didn't appeal to the really good voice over talent out there.<br /><br />So, weak voice talent, strong an\"",
+    "expected_answer": "negative",
+    "difficulty": "medium",
+    "source": "training-v1.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "imdb-aa9738670c84",
+    "prompt": "Classify the sentiment of this review: \"Sometimes I just want to laugh. Don't you? No analyzing, no critiquing and no looking for deeper meaning. Rent this movie, watch it all and laugh your ass off. Don't want to admit you liked it? Fine. But don't trash it here when you and I both know you liked it. It's Damn funny!\" Structure your answer as: (1) summary, (2) reasoning, (3) conclusion.",
+    "expected_answer": "positive",
+    "difficulty": "medium",
+    "source": "training-v2.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sent-aafc97a8",
+    "prompt": "Classify the sentiment of the following text (positive, negative, or neutral):\n\n\"The concert was an experience. The bass was loud enough to rattle the fillings in my teeth. I think I've lost temporary hearing in my left ear. The merchandise stand ran out of sizes after the first thirty minutes. But the band really seemed like they were having fun up there.\"",
+    "expected_answer": "mixed",
+    "difficulty": "medium",
+    "source": "primary/eval_60_medium_hard.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sent-20355828",
+    "prompt": "Classify the sentiment of this review: \"A powerfully wonderful movie. You are held in a death-grip once you let yourself get involved with the story. A successful dentist, Alan Johnson(Don Cheadle), is torn in a life crisis of balancing his career with his family. He notices his former college roommate Charlie Fineman(Adam Sandler)and wants to touch base. He finds that Charlie, who lost his wife and family in the 9-11 attack on America, is no longer in touch with reality...choosing to involve his mind with his favorite music from the past and video games. The former roommates rekindle their friendship and strengthen their former bond. Johnson has his friend Angela Oakhurts(Liv Tyler), a psychiatrist, to try and bring Charlie out of his grief...but it is Alan that accomplishes in getting his friend to emerge from his deep darknes\"",
+    "expected_answer": "positive",
+    "difficulty": "medium",
+    "source": "generated/sentiment_comprehensive_hard.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "imdb-045ee42a141c",
+    "prompt": "Classify the sentiment of this review: \"This is another example of a sucky sequel to a great movie. I highly recommend The Prophecy, but this movie was a dud from the start. The acting was decent all the way around, but the story line was weak and added nothing to the origional. A 4 out of 10 at best.\"",
+    "expected_answer": "negative",
+    "difficulty": "medium",
+    "source": "training-v2.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-62cc2f14728d",
+    "prompt": "Classify the sentiment: \"two signs that m. night shyamalan 's debut feature sucked up all he has to give to the mystic genres of cinema : unbreakable and signs \"",
+    "expected_answer": "negative",
+    "difficulty": "medium",
+    "source": "training-v1.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "imdb-d4d9e7992cb7",
+    "prompt": "Classify the sentiment of this review: \"The first two sequences of this movie set up the two conflicts: the -thematic- conflict between the soldier Todd and his suppressed humanity, and the -physical- conflict between Todd and his bio-engineered replacement. Both sequences are quite gripping in different ways.<br /><br />Peoples' screenplay falters somewhat by resolving the first of these arcs half-way through the movie, which means the second half is little more than a straightforward action romp.<br /><br />Nonetheless, kudos to the makers for creating an genre action piece with heart and even a bit of soul and especially to Kurt Russell who conveys much with very little.<br /><br />Not a great film, but one worth seeing.\"",
+    "expected_answer": "positive",
+    "difficulty": "medium",
+    "source": "training-v2.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sent-e475f069",
+    "prompt": "Classify the sentiment of this review: \"This is arguably the best film director Haim Bouzaglo made until now. A skilled TV director, well-trained in story-telling and in directing his actors through long epics he tried to catch in this very low-budget film the essence of the very special psychological situation the Israelis live though under the permanent danger of the terror attacks, resulting in 'distorted' lives. Each character trying to live his own life, to watch and control the other, while being himself watched and controlled by other characters and mostly by the continuous pressure, by political and historical forces well beyond his control. Some call this destiny, but destiny has a very concrete representation in this film.<br /><br />There is no explicit political saying in 'Distortion'. Characters never discuss politi\"",
+    "expected_answer": "positive",
+    "difficulty": "medium",
+    "source": "generated/sentiment_comprehensive_hard.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "imdb-f02b15a3dc47",
+    "prompt": "Classify the sentiment of this review: \"Though this movie has a first rate roster of fine actors, special effects that are excellent, and a story line that is full of surprises, it wasn't picked up for studio distribution and went directly to DVD. Perhaps it contains too much 'anti-police force' information, or perhaps it is juts one too many action flicks released during a glut, but whatever the reason the big screens missed the opportunity, fortunately the new concept of releasing direct to DVD allows us to enjoy it.<br /><br />The theme is old: rookie reporter uncovers an inner circle of cops that are corrupt - in this case the F.R.A.T. (First Response Assault and Tactical) team, a group of well trained policeman created to clean up the mythical city of Edison from its low point of crime, drugs, prostitution etc. Working unde\"",
+    "expected_answer": "positive",
+    "difficulty": "medium",
+    "source": "training-v1.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-0020",
+    "prompt": "pumpkin takes an admirable look at the hypocrisy of political correctness , but it does so with such an uneven tone that you never know when humor ends and tragedy begins . ...",
+    "expected_answer": "negative",
+    "difficulty": "medium",
+    "source": "sentiment_failure_analysis.json",
+    "failure_type": "NONE",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "imdb-57d1792e7a20",
+    "prompt": "Classify the sentiment of this review: \"This is a masterpiece footage in B/W 35mm film. The film makes you see a strange way to begin the day at 7:35 am in a bar and how much things can happen there in 8 minutes.<br /><br />The short amazingly, gets you in a complex story using very little elements, and step to step makes you realize that something isn't totally right. It expresses a lot, makes your adrenalin go high with subtle details, and is incredibly understandable by anyone, not just the cinema critics experts.<br /><br />But I know how it sounds : European short, black and white and low budgeted. Don't let that scare you. Is really worth to see by anyone, not just experts in the genre.<br /><br />Isn't really much more to tell, since the film just lasts 8 minutes (exactly), and I don't want to spoil it. But I just watched\"",
+    "expected_answer": "positive",
+    "difficulty": "medium",
+    "source": "training-v1.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "imdb-d4514643ecdd",
+    "prompt": "Classify the sentiment of this review as POSITIVE or NEGATIVE, then explain why.\n\n\"The Ladies Man is a funny movie. There's not much thought behind it, but what do you expect from an SNL movie? It's actually better than most SNL movies (i.e. Superstar or A Night At The Roxbury) Tim Meadows and Will Ferrell were both very funny. Chris Parnell was also funny in his short scene (one of the funnier ones in the movie). Other than that, the rest of the cast is average and is just there to support Meadows. I've definitely seen funnier movies, but I've seen dumber ones too. Again, it's not exactly a deep movie, but it's good for a few laughs. It was funnier as a skit though. But still, if you're looking for a pretty funny movie, I'd recommend this one. Just don't think about it too much, or you'll hate it.<br /><br />Rating: 6/10\"",
+    "expected_answer": "negative",
+    "difficulty": "medium",
+    "source": "training-v2.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-0023",
+    "prompt": "a delectable and intriguing thriller filled with surprises , read my lips is an original . ",
+    "expected_answer": "positive",
+    "difficulty": "easy",
+    "source": "tests/sst2_100.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-c653cb6f1f0c",
+    "prompt": "Classify the sentiment: \"palpable \"",
+    "expected_answer": "positive",
+    "difficulty": "easy",
+    "source": "training-v1.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-d2dfbbaf30c3",
+    "prompt": "Classify the sentiment as POSITIVE or NEGATIVE, then explain why in one sentence.\n\n\"engagingly \"",
+    "expected_answer": "positive",
+    "difficulty": "easy",
+    "source": "training-v2.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-0035",
+    "prompt": "a sequence of ridiculous shoot - 'em - up scenes . ",
+    "expected_answer": "negative",
+    "difficulty": "easy",
+    "source": "tests/sst2_100.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-52c916f3a070",
+    "prompt": "Classify the sentiment as POSITIVE or NEGATIVE, then explain why in one sentence.\n\n\"resolutely downbeat \"",
+    "expected_answer": "negative",
+    "difficulty": "easy",
+    "source": "training-v2.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "imdb-aa9738670c84",
+    "prompt": "Classify the sentiment of this review: \"Sometimes I just want to laugh. Don't you? No analyzing, no critiquing and no looking for deeper meaning. Rent this movie, watch it all and laugh your ass off. ...",
+    "expected_answer": "positive",
+    "difficulty": "easy",
+    "source": "sentiment_failure_analysis.json",
+    "failure_type": "NONE",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-c4c4ecbd1303",
+    "prompt": "Classify the sentiment: \"to the dustbin of history \"",
+    "expected_answer": "negative",
+    "difficulty": "easy",
+    "source": "sentiment_combined_25.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-373e46dc0a57",
+    "prompt": "Classify the sentiment as POSITIVE or NEGATIVE, then explain why in one sentence.\n\n\"the film is a hoot , and is just as good , if not better than much of what 's on saturday morning tv especially the ...",
+    "expected_answer": "positive",
+    "difficulty": "easy",
+    "source": "sentiment_failure_analysis.json",
+    "failure_type": "NONE",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-48513212fcb8",
+    "prompt": "Classify the sentiment: \"make a person who has lived her life half-asleep suddenly wake up \"",
+    "expected_answer": "positive",
+    "difficulty": "easy",
+    "source": "validation-v1.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-1b45010ef8af",
+    "prompt": "Classify the sentiment as POSITIVE or NEGATIVE, then explain why in one sentence.\n\n\"he 's made a film that 's barely shocking , barely interesting and most of all , barely anything \"",
+    "expected_answer": "negative",
+    "difficulty": "easy",
+    "source": "training-v2.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-6db1d6638a12",
+    "prompt": "Classify the sentiment as POSITIVE or NEGATIVE, then explain why in one sentence.\n\n\"on a dime in the tries-so-hard-to-be-cool `` clockstoppers \"",
+    "expected_answer": "negative",
+    "difficulty": "easy",
+    "source": "training-v2.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sent-9e1d5aaa",
+    "prompt": "Classify the sentiment of this text (positive, negative, or neutral):\n\n\"unflinchingly bleak and desperate \"",
+    "expected_answer": "negative",
+    "difficulty": "easy",
+    "source": "generated/eval_from_datasets_20260712_172357.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-0029",
+    "prompt": "i had to look away - this was god awful . ",
+    "expected_answer": "negative",
+    "difficulty": "easy",
+    "source": "tests/sst2_100.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-a7d5c38025a1",
+    "prompt": "Classify the sentiment: \"altered \"",
+    "expected_answer": "positive",
+    "difficulty": "easy",
+    "source": "training-v1.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-ad435b4fb509",
+    "prompt": "Classify the sentiment: \"it 's a bad sign when you 're rooting for the film to hurry up and get to its subjects ' deaths just so the documentary will be over , \"",
+    "expected_answer": "negative",
+    "difficulty": "easy",
+    "source": "training-v2.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-4c1b023b2431",
+    "prompt": "Classify the sentiment: \"former gong show addict \"",
+    "expected_answer": "negative",
+    "difficulty": "easy",
+    "source": "training-v1.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-93a74a990003",
+    "prompt": "Classify the sentiment: \"old-time b movies good-bad that makes eight legged freaks a perfectly entertaining summer diversion \"...",
+    "expected_answer": "positive",
+    "difficulty": "easy",
+    "source": "sentiment_failure_analysis.json",
+    "failure_type": "NONE",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "imdb-db2e9e0c8c2e",
+    "prompt": "Classify the sentiment of this review: \"I loved this film. I first saw it when I was 20 ( which was only four years ago) and I enjoyed it so much, I brought my own copy the next day. The comedy is wel...",
+    "expected_answer": "positive",
+    "difficulty": "easy",
+    "source": "sentiment_failure_analysis.json",
+    "failure_type": "NONE",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-a28155eecc45",
+    "prompt": "Classify the sentiment as POSITIVE or NEGATIVE, then explain why in one sentence.\n\n\"has layered , well-developed characters and some surprises . \"",
+    "expected_answer": "positive",
+    "difficulty": "easy",
+    "source": "training-v2.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-470fb8efd126",
+    "prompt": "Classify the sentiment: \"sade achieves the near-impossible \"",
+    "expected_answer": "positive",
+    "difficulty": "easy",
+    "source": "training-v2.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-0031",
+    "prompt": "... designed to provide a mix of smiles and tears , `` crossroads '' instead provokes a handful of unintentional howlers and numerous yawns . ",
+    "expected_answer": "negative",
+    "difficulty": "easy",
+    "source": "tests/sst2_100.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-d0ccc6926ad8",
+    "prompt": "Classify the sentiment: \"about intelligent high school \"",
+    "expected_answer": "positive",
+    "difficulty": "easy",
+    "source": "training-v2.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-0086",
+    "prompt": "the film flat lines when it should peak and is more missed opportunity and trifle than dark , decadent truffle . ...",
+    "expected_answer": "negative",
+    "difficulty": "easy",
+    "source": "sentiment_failure_analysis.json",
+    "failure_type": "NONE",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-c9d42366465a",
+    "prompt": "Classify the sentiment: \"explode obnoxiously \"",
+    "expected_answer": "negative",
+    "difficulty": "easy",
+    "source": "validation-v1.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-7df2613227c0",
+    "prompt": "Classify the sentiment: \"especially the frank sex scenes ) ensure that the film is never dull \"",
+    "expected_answer": "positive",
+    "difficulty": "easy",
+    "source": "validation-v2.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-552db6645a42",
+    "prompt": "Classify the sentiment: \"you 've already seen city by the sea under a variety of titles , but it 's worth yet another visit . \"",
+    "expected_answer": "positive",
+    "difficulty": "easy",
+    "source": "training-v2.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-ed77246d83dc",
+    "prompt": "Classify the sentiment as POSITIVE or NEGATIVE. Explain briefly.\n\n\"seem fresh \"",
+    "expected_answer": "positive",
+    "difficulty": "easy",
+    "source": "sentiment_combined_25.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-1efbc7c795cb",
+    "prompt": "Classify the sentiment: \"uplifting \"",
+    "expected_answer": "positive",
+    "difficulty": "easy",
+    "source": "training-v1.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-5c8aa8ed1dd5",
+    "prompt": "Classify the sentiment: \"such blatant and sickening product placement \" Output your answer as a Python dictionary.",
+    "expected_answer": "negative",
+    "difficulty": "easy",
+    "source": "training-v2.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-0048",
+    "prompt": "has a lot of the virtues of eastwood at his best . ",
+    "expected_answer": "positive",
+    "difficulty": "easy",
+    "source": "tests/sst2_100.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-fdc5ae43f8ab",
+    "prompt": "Classify the sentiment as POSITIVE or NEGATIVE, then explain why in one sentence.\n\n\"uneasily \"",
+    "expected_answer": "negative",
+    "difficulty": "easy",
+    "source": "training-v2.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-53db987dd556",
+    "prompt": "Classify the sentiment: \"difficult for the audience \"",
+    "expected_answer": "negative",
+    "difficulty": "easy",
+    "source": "training-v1.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-45502df0e0d6",
+    "prompt": "Classify the sentiment: \"to enjoy the perfectly pitched web of tension that chabrol spins \"",
+    "expected_answer": "positive",
+    "difficulty": "easy",
+    "source": "training-v1.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-f7785d33210f",
+    "prompt": "Classify the sentiment: \"expert comic timing \"",
+    "expected_answer": "positive",
+    "difficulty": "easy",
+    "source": "training-v1.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "x-61478",
+    "prompt": "Classify the sentiment of the following text (positive, negative, or neutral):\n\n\"The platform's new AI-powered search feature claims to understand natural language queries better than the competition....",
+    "expected_answer": "neutral",
+    "difficulty": "easy",
+    "source": "sentiment_failure_analysis.json",
+    "failure_type": "NONE",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-0091",
+    "prompt": "hardly a masterpiece , but it introduces viewers to a good charitable enterprise and some interesting real people . ...",
+    "expected_answer": "positive",
+    "difficulty": "easy",
+    "source": "sentiment_failure_analysis.json",
+    "failure_type": "NONE",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sent-31d20aaf",
+    "prompt": "... a hollow joke told by a cinematic gymnast having too much fun embellishing the misanthropic tale to actually engage it . ",
+    "expected_answer": "negative",
+    "difficulty": "easy",
+    "source": "generated/sentiment_comprehensive_hard.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-0098",
+    "prompt": "on the whole , the movie lacks wit , feeling and believability to compensate for its incessant coarseness and banality . ",
+    "expected_answer": "negative",
+    "difficulty": "easy",
+    "source": "tests/sst2_100.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-b59f4cfaaeca",
+    "prompt": "Classify the sentiment: \"remember that life 's ultimately a gamble and last orders are to be embraced \"",
+    "expected_answer": "positive",
+    "difficulty": "easy",
+    "source": "training-v1.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-72712dc1d587",
+    "prompt": "Classify the sentiment: \"more than another `` best man '' clone by weaving a theme throughout this funny film \"...",
+    "expected_answer": "positive",
+    "difficulty": "easy",
+    "source": "sentiment_failure_analysis.json",
+    "failure_type": "NONE",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-cd8adbf258a4",
+    "prompt": "Classify the sentiment as POSITIVE or NEGATIVE, then explain why in one sentence.\n\n\"is funny and looks professional \" Answer using only the provided context. Do not add outside knowledge.",
+    "expected_answer": "positive",
+    "difficulty": "easy",
+    "source": "training-v2.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-7094af31e4ac",
+    "prompt": "Classify the sentiment: \"the plot is nothing but boilerplate clich\u00e9s from start to finish , \"",
+    "expected_answer": "negative",
+    "difficulty": "easy",
+    "source": "sentiment_combined_25.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-0060",
+    "prompt": "this is a story of two misfits who do n't stand a chance alone , but together they are magnificent . ",
+    "expected_answer": "positive",
+    "difficulty": "easy",
+    "source": "tests/sst2_100.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sent-048812ee",
+    "prompt": "Classify the sentiment: \"the acting is fine but \" Answer using only the provided context. Do not add outside knowledge.",
+    "expected_answer": "positive",
+    "difficulty": "easy",
+    "source": "generated/sentiment_comprehensive_hard.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-8c126ef5dd4e",
+    "prompt": "Classify the sentiment: \"to break free of her old life \"",
+    "expected_answer": "positive",
+    "difficulty": "easy",
+    "source": "validation-v1.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-dbc5cb2cf2e3",
+    "prompt": "Classify the sentiment: \"beauty to behold \"",
+    "expected_answer": "positive",
+    "difficulty": "easy",
+    "source": "validation-v1.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-5d40ecb1934c",
+    "prompt": "Classify the sentiment: \"no apparent joy \"",
+    "expected_answer": "negative",
+    "difficulty": "easy",
+    "source": "sentiment_combined_25.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-dd15ddad7c73",
+    "prompt": "Classify the sentiment: \"very handsomely produced let-down \"",
+    "expected_answer": "negative",
+    "difficulty": "easy",
+    "source": "training-v1.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-4a5dd1c94178",
+    "prompt": "Classify the sentiment as POSITIVE or NEGATIVE, then explain why in one sentence.\n\n\"some visual virtues \"",
+    "expected_answer": "positive",
+    "difficulty": "easy",
+    "source": "training-v2.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-f343aea50e35",
+    "prompt": "Classify the sentiment as POSITIVE or NEGATIVE, then explain why in one sentence.\n\n\"a bland animated sequel that hardly seems worth the effort . \"",
+    "expected_answer": "negative",
+    "difficulty": "easy",
+    "source": "validation-v2.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-62dc5b627767",
+    "prompt": "Classify the sentiment: \"inspiring , ironic \"",
+    "expected_answer": "positive",
+    "difficulty": "easy",
+    "source": "training-v1.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-6babcd7a0215",
+    "prompt": "Classify the sentiment: \"the result is a powerful , naturally dramatic piece of low-budget filmmaking . \"",
+    "expected_answer": "positive",
+    "difficulty": "easy",
+    "source": "training-v1.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sent-5b5ee4db",
+    "prompt": "Classify the sentiment as POSITIVE or NEGATIVE, then explain why in one sentence.\n\n\"avalanche \"",
+    "expected_answer": "negative",
+    "difficulty": "easy",
+    "source": "generated/sentiment_comprehensive_hard.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-6a8cfc99b037",
+    "prompt": "Classify the sentiment: \"would do well to cram earplugs in their ears and put pillowcases over their heads for 87 minutes \"",
+    "expected_answer": "negative",
+    "difficulty": "easy",
+    "source": "training-v1.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-f89ff8cf6c9f",
+    "prompt": "Classify the sentiment: \"nothing of the audience other than to sit back and enjoy a couple of great actors hamming it up \"",
+    "expected_answer": "positive",
+    "difficulty": "easy",
+    "source": "training-v1.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-e6a306951ec7",
+    "prompt": "Classify the sentiment as POSITIVE or NEGATIVE, then explain why in one sentence.\n\n\"is an imaginative teacher of emotional intelligence in this engaging film about two men who discover what william ja...",
+    "expected_answer": "positive",
+    "difficulty": "easy",
+    "source": "sentiment_failure_analysis.json",
+    "failure_type": "NONE",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "imdb-b1dbbde09828",
+    "prompt": "Classify the sentiment of this review as POSITIVE or NEGATIVE, then explain why.\n\n\"The plot of this movie hangs on one important point: that this murderer was also a responsible, loving, caring father...",
+    "expected_answer": "negative",
+    "difficulty": "easy",
+    "source": "sentiment_failure_analysis.json",
+    "failure_type": "NONE",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-e498772e2a24",
+    "prompt": "Classify the sentiment: \"a very very strong `` b + \"",
+    "expected_answer": "positive",
+    "difficulty": "easy",
+    "source": "training-v1.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-5f9cb10a5bdb",
+    "prompt": "Classify the sentiment: \"as if allen , at 66 , has stopped challenging himself \"",
+    "expected_answer": "negative",
+    "difficulty": "easy",
+    "source": "training-v2.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-f7b554423933",
+    "prompt": "Classify the sentiment as POSITIVE or NEGATIVE, then explain why in one sentence.\n\n\"laugh-out-loud lines , adorably ditsy but heartfelt performances , and sparkling , \"",
+    "expected_answer": "positive",
+    "difficulty": "easy",
+    "source": "training-v2.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-034252af939e",
+    "prompt": "Classify the sentiment: \"intricate , intimate and intelligent \"",
+    "expected_answer": "positive",
+    "difficulty": "easy",
+    "source": "training-v1.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "imdb-1ce963de67d9",
+    "prompt": "Classify the sentiment of this review as POSITIVE or NEGATIVE, then explain why.\n\n\"I saw this film when it was first released. The memory of how bad it was has stayed with me almost forty years. I did...",
+    "expected_answer": "negative",
+    "difficulty": "easy",
+    "source": "sentiment_failure_analysis.json",
+    "failure_type": "NONE",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "imdb-c7b1d864082e",
+    "prompt": "Classify the sentiment of this review: \"This film has good characters with excellent performances from the cast. David Strathairn is diabolically sincere as the child molesting salesman and Danny Vins...",
+    "expected_answer": "positive",
+    "difficulty": "easy",
+    "source": "sentiment_failure_analysis.json",
+    "failure_type": "NONE",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-981a06583cfc",
+    "prompt": "Classify the sentiment as POSITIVE or NEGATIVE, then explain why in one sentence.\n\n\"the proceedings more bizarre than actually amusing \"",
+    "expected_answer": "negative",
+    "difficulty": "easy",
+    "source": "training-v2.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-0001",
+    "prompt": "unflinchingly bleak and desperate ",
+    "expected_answer": "negative",
+    "difficulty": "easy",
+    "source": "tests/sst2_100.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-96b961a66983",
+    "prompt": "Classify the sentiment: \"that skins comes as a welcome , if downbeat , missive from a forgotten front \"",
+    "expected_answer": "positive",
+    "difficulty": "easy",
+    "source": "training-v2.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-4fd9c099d5a7",
+    "prompt": "Classify the sentiment: \"complex , unpredictable character \"",
+    "expected_answer": "positive",
+    "difficulty": "easy",
+    "source": "validation-v1.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-0012",
+    "prompt": "... the film suffers from a lack of humor ( something needed to balance out the violence ) ... ",
+    "expected_answer": "negative",
+    "difficulty": "easy",
+    "source": "tests/sst2_100.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-bc0b866c0fd6",
+    "prompt": "Classify the sentiment as POSITIVE or NEGATIVE. Explain briefly.\n\n\"contrived , well-worn situations \"",
+    "expected_answer": "negative",
+    "difficulty": "easy",
+    "source": "sentiment_combined_25.json",
+    "failure_type": "",
+    "reasoning": ""
+  },
+  {
+    "category": "sentiment",
+    "task_id": "sst2-9859a0e0c6ef",
+    "prompt": "Classify the sentiment: \"renowned \"",
+    "expected_answer": "positive",
+    "difficulty": "easy",
+    "source": "training-v1.json",
+    "failure_type": "",
+    "reasoning": ""
+  }
+]

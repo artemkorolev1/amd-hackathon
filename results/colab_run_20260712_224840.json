@@ -1,0 +1,70 @@
+{
+  "summary": {
+    "eval": "/tmp/sample_16.json",
+    "model": "models/qwen2.5-1.5b-instruct-q4_k_m.gguf",
+    "gpu_layers": -1,
+    "total": 3,
+    "passed": 2,
+    "failed": 1,
+    "accuracy_pct": 66.7,
+    "total_time_s": 1.5,
+    "avg_time_s": 0.492,
+    "q_per_min": 121.9,
+    "timestamp": "2026-07-12T22:48:40.775546",
+    "per_category": {
+      "code_debug": {
+        "count": 2,
+        "passed": 2,
+        "accuracy_pct": 100.0,
+        "avg_time_s": 0.361
+      },
+      "code_gen": {
+        "count": 1,
+        "passed": 0,
+        "accuracy_pct": 0.0,
+        "avg_time_s": 0.755
+      }
+    }
+  },
+  "results": [
+    {
+      "idx": 0,
+      "task_id": "hep-00a5e59ef77d",
+      "category": "code_debug",
+      "score": 0.9,
+      "passed": true,
+      "time_s": 0.387,
+      "prompt": "Fix the bug in this Python function:\n\nfor idx, elem in enumerate(numbers):\n     ",
+      "answer": "```python\ndef has_close_elements(numbers, threshold):\n    for idx, elem in enume",
+      "expected": "for idx, elem in enumerate(numbers):\n        for idx2, elem2 in enumerate(number",
+      "complexity": 0.168,
+      "llm_ms": 382.5
+    },
+    {
+      "idx": 1,
+      "task_id": "hep-0393737b8f57",
+      "category": "code_debug",
+      "score": 0.95,
+      "passed": true,
+      "time_s": 0.335,
+      "prompt": "Fix the bug in this Python function:\n\nlis = list()\n    for i in s.split(' '):\n  ",
+      "answer": "```python\ndef fruit_distribution(s, n):\n    lis = list()\n    for i in s.split(' ",
+      "expected": "lis = list()\n    for i in s.split(' '):\n        if i.isdigit():\n            lis.",
+      "complexity": 0.169,
+      "llm_ms": 334.4
+    },
+    {
+      "idx": 2,
+      "task_id": "humaneval-00d43cbe7881",
+      "category": "code_gen",
+      "score": 0.2258,
+      "passed": false,
+      "time_s": 0.755,
+      "prompt": "Write a Python function:\n\n\n\ndef derivative(xs: list):\n    \"\"\" xs represent coeff",
+      "answer": "```python\ndef derivative(xs: list):\n    \"\"\" xs represent coefficients of a polyn",
+      "expected": "return [(i * x) for i, x in enumerate(xs)][1:]",
+      "complexity": 0.15,
+      "llm_ms": 754.2
+    }
+  ]
+}

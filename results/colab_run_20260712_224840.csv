@@ -1,0 +1,27 @@
+idx,task_id,category,score,passed,time_s,prompt,answer,expected,complexity,llm_ms
+0,hep-00a5e59ef77d,code_debug,0.9,True,0.387,"Fix the bug in this Python function:
+
+for idx, elem in enumerate(numbers):
+     ","```python
+def has_close_elements(numbers, threshold):
+    for idx, elem in enume","for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(number",0.168,382.5
+1,hep-0393737b8f57,code_debug,0.95,True,0.335,"Fix the bug in this Python function:
+
+lis = list()
+    for i in s.split(' '):
+  ","```python
+def fruit_distribution(s, n):
+    lis = list()
+    for i in s.split(' ","lis = list()
+    for i in s.split(' '):
+        if i.isdigit():
+            lis.",0.169,334.4
+2,humaneval-00d43cbe7881,code_gen,0.2258,False,0.755,"Write a Python function:
+
+
+
+def derivative(xs: list):
+    """""" xs represent coeff","```python
+def derivative(xs: list):
+    """""" xs represent coefficients of a polyn","return [(i * x) for i, x in enumerate(xs)][1:]",0.15,754.2

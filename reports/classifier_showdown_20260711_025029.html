@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><title>Classifier Showdown — 20260711_025029</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; margin: 20px; background: #0d1117; color: #c9d1d9; }
+  h1, h2, h3 { color: #58a6ff; } .container { max-width: 1400px; margin: 0 auto; }
+  .section { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 20px; margin: 20px 0; overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; margin: 10px 0; }
+  th, td { border: 1px solid #30363d; padding: 8px 12px; text-align: left; }
+  th { background: #21262d; color: #8b949e; font-weight: 600; } td { background: #0d1117; }
+  .best { color: #3fb950; font-weight: bold; }
+  .stat-number { font-size: 1.8em; font-weight: bold; color: #58a6ff; }
+  .stat-label { font-size: 0.9em; color: #8b949e; }
+  .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px; }
+  .stat-box { background: #0d1117; border: 1px solid #30363d; border-radius: 6px; padding: 15px; text-align: center; }
+</style></head><body>
+<div class="container">
+  <h1>🚀 Classifier Showdown Report</h1>
+  <p>Generated: 20260711_025029</p>
+  <div class="section"><h2>📊 Summary</h2>
+  <div class="stat-grid">
+    <div class="stat-box"><div class="stat-number">218</div><div class="stat-label">Total Items</div></div>
+    <div class="stat-box"><div class="stat-number">9</div><div class="stat-label">Classifiers</div></div>
+  </div></div>
+  <div class="section"><h2>📈 Accuracy Rankings</h2><table><tr><th>Classifier</th><th>Correct/Total</th><th>Accuracy</th><th>Avg Latency (ms)</th></tr><tr><td><strong>deterministic</strong></td><td>155/218</td><td>71.10%</td><td>0.157</td></tr>
+<tr><td><strong>tfidf_lr</strong></td><td>117/218</td><td>53.67%</td><td>0.831</td></tr>
+<tr><td><strong>minilm_lr</strong></td><td>130/218</td><td>59.63%</td><td>20.184</td></tr>
+<tr><td><strong>ensemble</strong></td><td>142/218</td><td>65.14%</td><td>9.835</td></tr>
+<tr><td><strong>hybrid</strong></td><td>149/218</td><td>68.35%</td><td>10.616</td></tr>
+<tr><td><strong>deterministic_4way</strong></td><td>158/218</td><td>72.48%</td><td>0.137</td></tr>
+<tr><td><strong>tfidf_4way</strong></td><td>111/218</td><td>50.92%</td><td>0.719</td></tr>
+<tr><td><strong>ensemble_4way</strong></td><td>158/218</td><td>72.48%</td><td>80.675</td></tr>
+<tr><td><strong>hybrid_4way</strong></td><td>158/218</td><td>72.48%</td><td>93.258</td></tr>
+</table></div>
+  <div class="section">
+<h3>deterministic — Per-Category Accuracy</h3>
+<table><tr><th>Category</th><th>Correct/Total</th><th>Accuracy</th></tr><tr><td>code_debug</td><td>26/26</td><td>100.00%</td></tr><tr><td>code_gen</td><td>26/26</td><td>100.00%</td></tr><tr><td>factual</td><td>20/34</td><td>58.82%</td></tr><tr><td>logic</td><td>13/25</td><td>52.00%</td></tr><tr><td>math</td><td>29/34</td><td>85.29%</td></tr><tr><td>ner</td><td>15/23</td><td>65.22%</td></tr><tr><td>sentiment</td><td>16/26</td><td>61.54%</td></tr><tr><td>summarization</td><td>10/24</td><td>41.67%</td></tr></table>
+</div>
+<div class="section">
+<h3>tfidf_lr — Per-Category Accuracy</h3>
+<table><tr><th>Category</th><th>Correct/Total</th><th>Accuracy</th></tr><tr><td>code_debug</td><td>13/26</td><td>50.00%</td></tr><tr><td>code_gen</td><td>16/26</td><td>61.54%</td></tr><tr><td>factual</td><td>7/34</td><td>20.59%</td></tr><tr><td>logic</td><td>4/25</td><td>16.00%</td></tr><tr><td>math</td><td>27/34</td><td>79.41%</td></tr><tr><td>ner</td><td>10/23</td><td>43.48%</td></tr><tr><td>sentiment</td><td>21/26</td><td>80.77%</td></tr><tr><td>summarization</td><td>19/24</td><td>79.17%</td></tr></table>
+</div>
+<div class="section">
+<h3>minilm_lr — Per-Category Accuracy</h3>
+<table><tr><th>Category</th><th>Correct/Total</th><th>Accuracy</th></tr><tr><td>code_debug</td><td>14/26</td><td>53.85%</td></tr><tr><td>code_gen</td><td>17/26</td><td>65.38%</td></tr><tr><td>factual</td><td>14/34</td><td>41.18%</td></tr><tr><td>logic</td><td>9/25</td><td>36.00%</td></tr><tr><td>math</td><td>31/34</td><td>91.18%</td></tr><tr><td>ner</td><td>10/23</td><td>43.48%</td></tr><tr><td>sentiment</td><td>16/26</td><td>61.54%</td></tr><tr><td>summarization</td><td>19/24</td><td>79.17%</td></tr></table>
+</div>
+<div class="section">
+<h3>ensemble — Per-Category Accuracy</h3>
+<table><tr><th>Category</th><th>Correct/Total</th><th>Accuracy</th></tr><tr><td>code_debug</td><td>19/26</td><td>73.08%</td></tr><tr><td>code_gen</td><td>18/26</td><td>69.23%</td></tr><tr><td>factual</td><td>14/34</td><td>41.18%</td></tr><tr><td>logic</td><td>9/25</td><td>36.00%</td></tr><tr><td>math</td><td>31/34</td><td>91.18%</td></tr><tr><td>ner</td><td>10/23</td><td>43.48%</td></tr><tr><td>sentiment</td><td>20/26</td><td>76.92%</td></tr><tr><td>summarization</td><td>21/24</td><td>87.50%</td></tr></table>
+</div>
+<div class="section">
+<h3>hybrid — Per-Category Accuracy</h3>
+<table><tr><th>Category</th><th>Correct/Total</th><th>Accuracy</th></tr><tr><td>code_debug</td><td>21/26</td><td>80.77%</td></tr><tr><td>code_gen</td><td>22/26</td><td>84.62%</td></tr><tr><td>factual</td><td>14/34</td><td>41.18%</td></tr><tr><td>logic</td><td>9/25</td><td>36.00%</td></tr><tr><td>math</td><td>30/34</td><td>88.24%</td></tr><tr><td>ner</td><td>11/23</td><td>47.83%</td></tr><tr><td>sentiment</td><td>20/26</td><td>76.92%</td></tr><tr><td>summarization</td><td>22/24</td><td>91.67%</td></tr></table>
+</div>
+<div class="section">
+<h3>deterministic_4way — Per-Category Accuracy</h3>
+<table><tr><th>Category</th><th>Correct/Total</th><th>Accuracy</th></tr><tr><td>code</td><td>52/52</td><td>100.00%</td></tr><tr><td>knowledge</td><td>35/57</td><td>61.40%</td></tr><tr><td>reasoning</td><td>45/59</td><td>76.27%</td></tr><tr><td>text</td><td>26/50</td><td>52.00%</td></tr></table>
+</div>
+<div class="section">
+<h3>tfidf_4way — Per-Category Accuracy</h3>
+<table><tr><th>Category</th><th>Correct/Total</th><th>Accuracy</th></tr><tr><td>code</td><td>36/52</td><td>69.23%</td></tr><tr><td>knowledge</td><td>12/57</td><td>21.05%</td></tr><tr><td>reasoning</td><td>34/59</td><td>57.63%</td></tr><tr><td>text</td><td>29/50</td><td>58.00%</td></tr></table>
+</div>
+<div class="section">
+<h3>ensemble_4way — Per-Category Accuracy</h3>
+<table><tr><th>Category</th><th>Correct/Total</th><th>Accuracy</th></tr><tr><td>code</td><td>52/52</td><td>100.00%</td></tr><tr><td>knowledge</td><td>35/57</td><td>61.40%</td></tr><tr><td>reasoning</td><td>45/59</td><td>76.27%</td></tr><tr><td>text</td><td>26/50</td><td>52.00%</td></tr></table>
+</div>
+<div class="section">
+<h3>hybrid_4way — Per-Category Accuracy</h3>
+<table><tr><th>Category</th><th>Correct/Total</th><th>Accuracy</th></tr><tr><td>code</td><td>52/52</td><td>100.00%</td></tr><tr><td>knowledge</td><td>35/57</td><td>61.40%</td></tr><tr><td>reasoning</td><td>45/59</td><td>76.27%</td></tr><tr><td>text</td><td>26/50</td><td>52.00%</td></tr></table>
+</div>
+
+</div></body></html>

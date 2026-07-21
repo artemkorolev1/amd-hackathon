@@ -1,0 +1,290 @@
+{
+  "category": "logic",
+  "num_questions": 10,
+  "num_generations": 2,
+  "model_keys": [
+    "qwen2.5-1.5b"
+  ],
+  "history": [
+    {
+      "generation": 1,
+      "top3_mean": 0.10000000000000002,
+      "per_model_best": {
+        "qwen2.5-1.5b": 0.1
+      },
+      "pareto_front_sizes": {
+        "qwen2.5-1.5b": 2
+      }
+    },
+    {
+      "generation": 2,
+      "top3_mean": 0.13333333333333333,
+      "per_model_best": {
+        "qwen2.5-1.5b": 0.2
+      },
+      "pareto_front_sizes": {
+        "qwen2.5-1.5b": 3
+      }
+    }
+  ],
+  "final_results": {
+    "qwen2.5-1.5b": {
+      "best_accuracy": 0.2,
+      "best_prompt": "Solve: Consider all possibilities. Logic:.",
+      "temperature": 0.0,
+      "max_tokens": 128,
+      "avg_output_tokens": 118.7,
+      "avg_latency_ms": 681.7602157592773,
+      "variant_name": "gen0_c3_logic",
+      "best_generation": 2
+    }
+  },
+  "generations": [
+    {
+      "generation": 1,
+      "population": [
+        {
+          "name": "seed_0_logic",
+          "system_prompt": "",
+          "temperature": 0.0,
+          "accuracy": {
+            "qwen2.5-1.5b": 0.1
+          },
+          "avg_output_tokens": {
+            "qwen2.5-1.5b": 119.1
+          },
+          "avg_latency_ms": {
+            "qwen2.5-1.5b": 715.5301332473755
+          }
+        },
+        {
+          "name": "seed_1_logic",
+          "system_prompt": "Solve the logic puzzle. Output only the final answer.",
+          "temperature": 0.0,
+          "accuracy": {
+            "qwen2.5-1.5b": 0.0
+          },
+          "avg_output_tokens": {
+            "qwen2.5-1.5b": 25.5
+          },
+          "avg_latency_ms": {
+            "qwen2.5-1.5b": 166.0832405090332
+          }
+        },
+        {
+          "name": "seed_2_logic",
+          "system_prompt": "Logic:",
+          "temperature": 0.0,
+          "accuracy": {
+            "qwen2.5-1.5b": 0.1
+          },
+          "avg_output_tokens": {
+            "qwen2.5-1.5b": 119.1
+          },
+          "avg_latency_ms": {
+            "qwen2.5-1.5b": 702.7474164962769
+          }
+        },
+        {
+          "name": "seed_3_logic",
+          "system_prompt": "Think through the reasoning step by step, then output the solution.",
+          "temperature": 0.0,
+          "accuracy": {
+            "qwen2.5-1.5b": 0.1
+          },
+          "avg_output_tokens": {
+            "qwen2.5-1.5b": 128.0
+          },
+          "avg_latency_ms": {
+            "qwen2.5-1.5b": 760.5015516281128
+          }
+        },
+        {
+          "name": "seed_4_logic",
+          "system_prompt": "Apply logical deduction to find the answer. Be precise.",
+          "temperature": 0.0,
+          "accuracy": {
+            "qwen2.5-1.5b": 0.1
+          },
+          "avg_output_tokens": {
+            "qwen2.5-1.5b": 119.1
+          },
+          "avg_latency_ms": {
+            "qwen2.5-1.5b": 711.8057727813721
+          }
+        },
+        {
+          "name": "rand_5_logic",
+          "system_prompt": "Answer:",
+          "temperature": 0.0,
+          "accuracy": {
+            "qwen2.5-1.5b": 0.1
+          },
+          "avg_output_tokens": {
+            "qwen2.5-1.5b": 124.5
+          },
+          "avg_latency_ms": {
+            "qwen2.5-1.5b": 718.1516408920288
+          }
+        },
+        {
+          "name": "rand_6_logic",
+          "system_prompt": "Solve: Don't hedge.. Be specific.",
+          "temperature": 0.2,
+          "accuracy": {
+            "qwen2.5-1.5b": 0.1
+          },
+          "avg_output_tokens": {
+            "qwen2.5-1.5b": 119.0
+          },
+          "avg_latency_ms": {
+            "qwen2.5-1.5b": 681.3500642776489
+          }
+        },
+        {
+          "name": "rand_7_logic",
+          "system_prompt": "Solve: Consider all possibilities. Keep under 5 words.. Be specific.",
+          "temperature": 0.0,
+          "accuracy": {
+            "qwen2.5-1.5b": 0.0
+          },
+          "avg_output_tokens": {
+            "qwen2.5-1.5b": 17.2
+          },
+          "avg_latency_ms": {
+            "qwen2.5-1.5b": 113.34288120269775
+          }
+        }
+      ],
+      "pareto_front_sizes": {
+        "qwen2.5-1.5b": 2
+      },
+      "per_model_best": {
+        "qwen2.5-1.5b": 0.1
+      }
+    },
+    {
+      "generation": 2,
+      "population": [
+        {
+          "name": "elite_g0_6_logic",
+          "system_prompt": "Solve: Don't hedge.. Be specific.",
+          "temperature": 0.2,
+          "accuracy": {
+            "qwen2.5-1.5b": 0.1
+          },
+          "avg_output_tokens": {
+            "qwen2.5-1.5b": 122.1
+          },
+          "avg_latency_ms": {
+            "qwen2.5-1.5b": 703.4781217575073
+          }
+        },
+        {
+          "name": "elite_g0_7_logic",
+          "system_prompt": "Solve: Consider all possibilities. Keep under 5 words.. Be specific.",
+          "temperature": 0.0,
+          "accuracy": {
+            "qwen2.5-1.5b": 0.0
+          },
+          "avg_output_tokens": {
+            "qwen2.5-1.5b": 17.2
+          },
+          "avg_latency_ms": {
+            "qwen2.5-1.5b": 113.58141899108887
+          }
+        },
+        {
+          "name": "gen0_c2_logic",
+          "system_prompt": "Apply logical deduction to find the answer. Solve: Don't hedge. Be specific. Be precise.",
+          "temperature": 0.0,
+          "accuracy": {
+            "qwen2.5-1.5b": 0.1
+          },
+          "avg_output_tokens": {
+            "qwen2.5-1.5b": 116.9
+          },
+          "avg_latency_ms": {
+            "qwen2.5-1.5b": 673.2339859008789
+          }
+        },
+        {
+          "name": "gen0_c3_logic",
+          "system_prompt": "Solve: Consider all possibilities. Logic:.",
+          "temperature": 0.0,
+          "accuracy": {
+            "qwen2.5-1.5b": 0.2
+          },
+          "avg_output_tokens": {
+            "qwen2.5-1.5b": 118.7
+          },
+          "avg_latency_ms": {
+            "qwen2.5-1.5b": 681.7602157592773
+          }
+        },
+        {
+          "name": "gen0_c4_logic",
+          "system_prompt": "Solve: Consider all possibilities. Solve: Consider all possibilities. Keep under 5 words. Keep under 5 words. Be specific. No preamble. No commentary.",
+          "temperature": 0.0,
+          "accuracy": {
+            "qwen2.5-1.5b": 0.0
+          },
+          "avg_output_tokens": {
+            "qwen2.5-1.5b": 24.3
+          },
+          "avg_latency_ms": {
+            "qwen2.5-1.5b": 154.29887771606445
+          }
+        },
+        {
+          "name": "gen0_m5_logic",
+          "system_prompt": "Solve: Consider all possibilities. Keep under 5 words.. Be specific. No preamble. No commentary.",
+          "temperature": 0.0,
+          "accuracy": {
+            "qwen2.5-1.5b": 0.0
+          },
+          "avg_output_tokens": {
+            "qwen2.5-1.5b": 19.5
+          },
+          "avg_latency_ms": {
+            "qwen2.5-1.5b": 129.31008338928223
+          }
+        },
+        {
+          "name": "gen0_m6_logic",
+          "system_prompt": "Logic: Apply logical deduction to find the answer. Be precise.",
+          "temperature": 0.0,
+          "accuracy": {
+            "qwen2.5-1.5b": 0.1
+          },
+          "avg_output_tokens": {
+            "qwen2.5-1.5b": 119.1
+          },
+          "avg_latency_ms": {
+            "qwen2.5-1.5b": 681.8741321563721
+          }
+        },
+        {
+          "name": "fresh_gen0_logic",
+          "system_prompt": "",
+          "temperature": 0.2,
+          "accuracy": {
+            "qwen2.5-1.5b": 0.1
+          },
+          "avg_output_tokens": {
+            "qwen2.5-1.5b": 119.1
+          },
+          "avg_latency_ms": {
+            "qwen2.5-1.5b": 678.6186933517456
+          }
+        }
+      ],
+      "pareto_front_sizes": {
+        "qwen2.5-1.5b": 3
+      },
+      "per_model_best": {
+        "qwen2.5-1.5b": 0.2
+      }
+    }
+  ]
+}

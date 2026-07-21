@@ -1,0 +1,403 @@
+#!/usr/bin/env python3
+"""
+Ensemble Router — task classifier + per-category routing + parallel model execution + judge.
+
+Routing table based on empirical eval results (training-v3.json):
+  code_debug  → Math-1.5B + Qwen-1.5B      (94.7% / 78.9%)
+  code_gen    → Gemma-1B + Qwen-1.5B        (42.1% / 31.6%)
+  factual     → Qwen-1.5B + Gemma-1B        (21.1% / 21.1%)
+  logic       → Math-1.5B                    (15.8% — best of bad bunch)
+  math        → Math-1.5B(×2 temps) + Gemma  (89.5% + self-consistency)
+  ner         → Gemma-1B + Qwen-1.5B         (26.3% / 21.1%)
+  sentiment   → Qwen-1.5B + Math-1.5B        (94.7% / 63.2%)
+  summarization → Gemma-1B + Qwen-1.5B       (0% both — placeholder)
+"""
+import json
+import re
+import sys
+import time
+import gc
+import asyncio
+from typing import Dict, List, Optional, Tuple
+
+# ---------------------------------------------------------------------------
+# Config
+# ---------------------------------------------------------------------------
+MODEL_PATHS = {
+    "qwen2.5-1.5b": "/home/artem/models/qwen2.5-1.5b-instruct-q4_k_m.gguf",
+    "qwen2.5-math-1.5b": "/home/artem/models/Qwen2.5-Math-1.5B-Instruct-Q4_K_M.gguf",
+    "gemma-3-1b": "/home/artem/models/gemma-3-1b-it-Q4_K_M.gguf",
+}
+
+MODEL_DESCS = {
+    "qwen2.5-1.5b": "Generalist",
+    "qwen2.5-math-1.5b": "Math/Logic",
+    "gemma-3-1b": "Format",
+}
+
+SYSTEM_PROMPTS = {
+    "qwen2.5-1.5b": "Answer concisely and directly. Output ONLY the answer.",
+    "qwen2.5-math-1.5b": "Solve step by step, then output the final answer as a single number or short phrase.",
+    "gemma-3-1b": "Answer concisely and directly.",
+}
+
+# Per-category routing rules
+# Each entry: models=[(model_name, temperature, seed?), ...], judge=judge_name
+ROUTING_TABLE = {
+    "code_debug": {
+        "models": [("qwen2.5-math-1.5b", 0.0), ("qwen2.5-1.5b", 0.0)],
+        "judge": "prefer_first",
+    },
+    "code_gen": {
+        "models": [("gemma-3-1b", 0.1), ("qwen2.5-1.5b", 0.0)],
+        "judge": "prefer_first",
+    },
+    "factual": {
+        "models": [("qwen2.5-1.5b", 0.0), ("gemma-3-1b", 0.0)],
+        "judge": "prefer_first",
+    },
+    "logic": {
+        "models": [("qwen2.5-math-1.5b", 0.0)],
+        "judge": "single",
+    },
+    "math": {
+        "models": [
+            ("qwen2.5-math-1.5b", 0.0),
+            ("qwen2.5-math-1.5b", 0.3),
+            ("gemma-3-1b", 0.0),
+        ],
+        "judge": "numeric_majority",
+    },
+    "ner": {
+        "models": [("gemma-3-1b", 0.0), ("qwen2.5-1.5b", 0.0)],
+        "judge": "prefer_first",
+    },
+    "sentiment": {
+        "models": [("qwen2.5-1.5b", 0.0), ("qwen2.5-math-1.5b", 0.0)],
+        "judge": "prefer_first",
+    },
+    "summarization": {
+        "models": [("gemma-3-1b", 0.0), ("qwen2.5-1.5b", 0.0)],
+        "judge": "prefer_first",
+    },
+}
+
+# ---------------------------------------------------------------------------
+# Fuzzy matching
+# ---------------------------------------------------------------------------
+def extract_numbers(s: str) -> List[float]:
+    return [float(x) for x in re.findall(r"-?\d+(?:\.\d+)?", s)]
+
+def tokenize(s: str) -> set:
+    return set(tok for tok in re.split(r"[^a-zA-Z0-9.]+", s.lower()) if tok)
+
+def fuzzy_match(answer: str, expected: str) -> bool:
+    a, e = answer.strip().lower(), expected.strip().lower()
+    if not a or not e:
+        return False
+    if a == e:
+        return True
+    if len(e) <= 20 and e in a:
+        return True
+    if len(a) <= 20 and a in e:
+        return True
+    nums_a = extract_numbers(a)
+    nums_e = extract_numbers(e)
+    if nums_a and nums_e:
+        a_num, e_num = nums_a[-1], nums_e[-1]
+        if e_num != 0 and abs((a_num - e_num) / e_num) <= 0.01:
+            return True
+        if a_num == e_num:
+            return True
+    ta, te = tokenize(a), tokenize(e)
+    if len(te) > 0 and len(ta & te) / len(te) >= 0.8:
+        return True
+    return False
+
+# ---------------------------------------------------------------------------
+# Router: classify task type
+# ---------------------------------------------------------------------------
+class TaskClassifier:
+    """Classify questions into task categories using Qwen-1.5B."""
+    
+    def __init__(self):
+        self.llm = None
+        self._classify_prompt = (
+            "Classify this question into exactly one category: code_debug, code_gen, factual, "
+            "logic, math, ner, sentiment, summarization.\n"
+            "Return ONLY the category name, nothing else.\n\n"
+            "Question: {prompt}\n\nCategory:"
+        )
+    
+    def _ensure_loaded(self):
+        if self.llm is None:
+            from llama_cpp import Llama
+            print("  [Router] Loading classifier (Qwen-1.5B)...", file=sys.stderr)
+            self.llm = Llama(
+                model_path=MODEL_PATHS["qwen2.5-1.5b"],
+                n_gpu_layers=-1,
+                n_ctx=1024,
+                verbose=False,
+            )
+    
+    def classify(self, prompt: str) -> str:
+        self._ensure_loaded()
+        p = self._classify_prompt.format(prompt=prompt[:800])
+        r = self.llm.create_completion(
+            p, max_tokens=20, temperature=0.0, stop=["\n"]
+        )
+        label = r["choices"][0]["text"].strip().lower()
+        valid = {"code_debug", "code_gen", "factual", "logic", "math", "ner", "sentiment", "summarization"}
+        if label not in valid:
+            # Fallback: keyword match
+            pl = prompt.lower()
+            if any(w in pl for w in ["fix", "debug", "bug", "error", "broken"]):
+                return "code_debug"
+            if any(w in pl for w in ["def ", "function", "return", "write a"]):
+                return "code_gen"
+            if any(w in pl for w in ["what", "who", "which", "explain", "describe"]):
+                return "factual"
+            if any(w in pl for w in ["if", "then", "therefore", "conclusion", "argument", "must be"]):
+                return "logic"
+            if any(w in pl for w in ["sum", "number", "average", "total", "calculate", "how many"]):
+                return "math"
+            if any(w in pl for w in ["entity", "name", "person", "location", "organization"]):
+                return "ner"
+            if any(w in pl for w in ["feeling", "opinion", "sentiment", "positive", "negative"]):
+                return "sentiment"
+            if any(w in pl for w in ["summarize", "summary", "brief", "overview"]):
+                return "summarization"
+            return "factual"  # default fallback
+        return label
+    
+    def unload(self):
+        if self.llm:
+            del self.llm
+            self.llm = None
+            gc.collect()
+            import torch
+            torch.cuda.empty_cache()
+
+
+# ---------------------------------------------------------------------------
+# Judges — combine answers from multiple model calls
+# ---------------------------------------------------------------------------
+def judge_single(answers: List[str]) -> str:
+    """Single model — use its answer directly."""
+    return answers[0] if answers else ""
+
+def judge_prefer_first(answers: List[str]) -> str:
+    """Use first model's answer (the specialist)."""
+    return answers[0] if answers else ""
+
+def judge_numeric_majority(answers: List[str]) -> str:
+    """Extract numbers from all answers, pick the most common numeric answer."""
+    nums = []
+    for a in answers:
+        ns = extract_numbers(a)
+        if ns:
+            nums.append(ns[-1])
+    if not nums:
+        return answers[0] if answers else ""
+    # Group by value (rounded to 2 decimals)
+    from collections import Counter
+    rounded = [round(n, 2) for n in nums]
+    most_common = Counter(rounded).most_common(1)[0][0]
+    # Find the answer containing this number
+    for a in answers:
+        if str(most_common) in a:
+            return a
+    return str(most_common)
+
+
+JUDGE_MAP = {
+    "single": judge_single,
+    "prefer_first": judge_prefer_first,
+    "numeric_majority": judge_numeric_majority,
+}
+
+
+# ---------------------------------------------------------------------------
+# Model runner — loads one model at a time, runs assigned instances
+# ---------------------------------------------------------------------------
+class ModelRunner:
+    """Load/unload models on demand, run inference with specified params."""
+    
+    def __init__(self):
+        self._loaded = {}
+    
+    def _load(self, name: str):
+        if name not in self._loaded:
+            from llama_cpp import Llama
+            print(f"  [Runner] Loading {name}...", file=sys.stderr)
+            t0 = time.time()
+            llm = Llama(
+                model_path=MODEL_PATHS[name],
+                n_gpu_layers=-1,
+                n_ctx=2048,
+                verbose=False,
+            )
+            self._loaded[name] = llm
+            print(f"  [Runner] {name} loaded in {time.time()-t0:.1f}s", file=sys.stderr)
+    
+    def run(self, name: str, prompt: str, temperature: float = 0.0, max_tokens: int = 512) -> str:
+        self._load(name)
+        system = SYSTEM_PROMPTS.get(name, "Answer concisely.")
+        messages = [
+            {"role": "system", "content": system},
+            {"role": "user", "content": prompt},
+        ]
+        r = self._loaded[name].create_chat_completion(
+            messages=messages,
+            max_tokens=max_tokens,
+            temperature=temperature,
+        )
+        return r["choices"][0]["message"]["content"].strip()
+    
+    def unload_all(self):
+        for name in list(self._loaded.keys()):
+            del self._loaded[name]
+        self._loaded = {}
+        gc.collect()
+        import torch
+        torch.cuda.empty_cache()
+
+
+# ---------------------------------------------------------------------------
+# Evaluate ensemble router on a dataset
+# ---------------------------------------------------------------------------
+def evaluate(questions: List[dict], subset_label: str = ""):
+    classifier = TaskClassifier()
+    runner = ModelRunner()
+    
+    results = []
+    n = len(questions)
+    
+    # Category accuracy tracking
+    by_cat = {}
+    overall_ok = 0
+    
+    for i, q in enumerate(questions):
+        prompt = q["prompt"]
+        expected = q["expected_answer"]
+        true_cat = q["category"]
+        
+        # Step 1: Classify
+        t0 = time.time()
+        pred_cat = classifier.classify(prompt)
+        classify_time = time.time() - t0
+        
+        # Step 2: Route
+        route = ROUTING_TABLE.get(pred_cat, ROUTING_TABLE["factual"])
+        
+        # Step 3: Run models
+        answers = []
+        model_times = []
+        for model_name, temp in route["models"]:
+            t = time.time()
+            ans = runner.run(model_name, prompt, temperature=temp)
+            elapsed = time.time() - t
+            answers.append(ans)
+            model_times.append((model_name, round(elapsed, 2)))
+        
+        # Step 4: Judge
+        judge_fn = JUDGE_MAP.get(route["judge"], judge_prefer_first)
+        final_answer = judge_fn(answers)
+        
+        # Step 5: Compare
+        ok = fuzzy_match(final_answer, expected)
+        overall_ok += 1 if ok else 0
+        
+        by_cat.setdefault(true_cat, {"correct": 0, "total": 0, "classify_ok": 0})
+        by_cat[true_cat]["total"] += 1
+        by_cat[true_cat]["correct"] += 1 if ok else 0
+        if pred_cat == true_cat:
+            by_cat[true_cat]["classify_ok"] += 1
+        
+        marker = "✓" if ok else "✗"
+        classify_status = f"cls={'✓' if pred_cat==true_cat else '✗'}"
+        
+        status = (
+            f"[{i+1:3d}/{n}] {true_cat:15s}→{pred_cat:15s} {classify_status} {marker} "
+            f"{final_answer[:50]}"
+        )
+        print(status, file=sys.stderr)
+        
+        results.append({
+            "task_id": q.get("task_id", f"q_{i}"),
+            "true_category": true_cat,
+            "predicted_category": pred_cat,
+            "classify_ok": pred_cat == true_cat,
+            "routing": pred_cat,
+            "models_run": [m[0] for m in route["models"]],
+            "model_times": model_times,
+            "raw_answers": answers,
+            "final_answer": final_answer,
+            "expected": expected,
+            "correct": ok,
+        })
+    
+    # Unload everything
+    classifier.unload()
+    runner.unload_all()
+    
+    # Summary
+    print(f"\n{'='*60}", file=sys.stderr)
+    print(f"ENSEMBLE ROUTER RESULTS {subset_label}", file=sys.stderr)
+    print(f"{'='*60}", file=sys.stderr)
+    print(f"Overall: {overall_ok}/{n} = {overall_ok/n*100:.1f}%", file=sys.stderr)
+    print(f"\nBy category:", file=sys.stderr)
+    for cat in sorted(by_cat.keys()):
+        v = by_cat[cat]
+        cls_acc = v["classify_ok"] / v["total"] * 100 if v["total"] > 0 else 0
+        print(f"  {cat:20s}: {v['correct']:2d}/{v['total']:2d} = {v['correct']/v['total']*100:5.1f}%  (classifier: {cls_acc:.0f}%)", file=sys.stderr)
+    
+    return {
+        "total": n,
+        "correct": overall_ok,
+        "accuracy": round(overall_ok / n * 100, 1),
+        "by_category": by_cat,
+        "results": results,
+    }
+
+
+def main():
+    dataset_path = "/home/artem/dev/amd-hackathon/data/eval/training-v3.json"
+    with open(dataset_path) as f:
+        all_questions = json.load(f)
+    
+    # First, run on a small subset (40 Q = 5 per category)
+    import random
+    random.seed(42)
+    by_cat = {}
+    for q in all_questions:
+        by_cat.setdefault(q["category"], []).append(q)
+    
+    subset = []
+    for cat, qs in sorted(by_cat.items()):
+        sample = random.sample(qs, min(5, len(qs)))
+        subset.extend(sample)
+    random.shuffle(subset)
+    
+    print(f"Small subset: {len(subset)} questions (5 per category)", file=sys.stderr)
+    result = evaluate(subset, "(40Q subset)")
+    
+    # Save
+    out_path = "/home/artem/dev/amd-hackathon/data/eval/ensemble_router_40q.json"
+    with open(out_path, "w") as f:
+        json.dump(result, f, indent=2)
+    print(f"\nResults saved to {out_path}", file=sys.stderr)
+    
+    # Print sample successes/failures
+    correct = [r for r in result["results"] if r["correct"]]
+    wrong = [r for r in result["results"] if not r["correct"]]
+    print(f"\nSample successes ({len(correct)}):", file=sys.stderr)
+    for r in correct[:3]:
+        print(f"  [{r['true_category']:15s}] exp: {r['expected'][:40]} | got: {r['final_answer'][:40]}", file=sys.stderr)
+    print(f"\nSample failures ({len(wrong)}):", file=sys.stderr)
+    for r in wrong[:5]:
+        print(f"  [{r['true_category']:15s}] cls:{r['predicted_category']} exp: {r['expected'][:40]} | got: {r['final_answer'][:40]}", file=sys.stderr)
+
+
+if __name__ == "__main__":
+    main()

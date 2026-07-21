@@ -1,0 +1,490 @@
+{
+  "meta": {
+    "dataset": "AMD ACT II \u2014 60 Additional Medium-Hard Questions",
+    "total": 60,
+    "source": "hermes-hard-v1",
+    "generated_at": "2026-07-11"
+  },
+  "questions": [
+    {
+      "category": "factual",
+      "prompt": "Context: The James Webb Space Telescope (JWST), launched in December 2021, observes primarily in infrared wavelengths. Its L2 orbit keeps it aligned with Earth's shadow and allows continuous observation without Earth blocking its view. JWST's primary mirror is 6.5 meters in diameter, composed of 18 hexagonal beryllium segments.\n\nQuestion: Why was the L2 Lagrange point chosen for JWST rather than low Earth orbit where Hubble operates? What specific advantage does an infrared telescope gain from being at L2?",
+      "expected_answer": "L2 provides a stable thermal environment and keeps the telescope continuously in Earth's shadow, preventing the Sun and Earth from interfering with observations. For an infrared telescope, this is critical because any heat source (Sun, Earth, even the telescope itself) creates infrared radiation that would overwhelm the faint IR signals from distant galaxies. Being at L2 also allows the sunshield to block heat from the Sun, Earth, and Moon simultaneously.",
+      "source": "hermes-hard-v1",
+      "difficulty": "medium",
+      "reasoning": "Requires understanding both orbital mechanics (L2 Lagrange point) and the specific thermal requirements of infrared astronomy. Not a trivial recall \u2014 requires connecting why L2 solves JWST's unique thermal problems."
+    },
+    {
+      "category": "factual",
+      "prompt": "Context: Plate tectonics theory describes the lithosphere as divided into plates that move on the asthenosphere. The three types of plate boundaries are divergent (moving apart), convergent (colliding), and transform (sliding past). The Himalaya mountain range formed from the collision of the Indian and Eurasian plates beginning ~50 million years ago, and continues to rise at ~5mm/year.\n\nQuestion: If the Indian Plate continues moving north at approximately 5 cm/year, calculate roughly how far India has traveled since the collision began 50 million years ago. Explain why the Himalayas are still rising despite the collision starting tens of millions of years ago.",
+      "expected_answer": "Distance = 5 cm/yr \u00d7 50,000,000 years = 250,000,000 cm = 2,500 km. The Himalayas continue rising because the Indian Plate is still moving northward and subducting beneath the Eurasian Plate. The continental crust is too buoyant for full subduction, so the collision continues to crumple and uplift the crust. Isostatic compensation also contributes \u2014 as erosion removes mass from the mountains, the crust rebounds upward.",
+      "source": "hermes-hard-v1",
+      "difficulty": "medium",
+      "reasoning": "Combines factual geological knowledge with a simple calculation. Requires understanding that plate motion continues after initial collision, and explaining isostatic uplift."
+    },
+    {
+      "category": "factual",
+      "prompt": "Context: The human brain contains approximately 86 billion neurons, each forming up to 10,000 synaptic connections. The blood-brain barrier (BBB) is a selective semipermeable border of endothelial cells that prevents most substances in the blood from entering the brain. Only small lipophilic molecules (<400-500 Da), glucose, and specific amino acids cross readily. This makes treating brain conditions with pharmaceuticals particularly challenging.\n\nQuestion: If a drug candidate is a large hydrophilic molecule with molecular weight 800 Da, what specific barriers must it overcome to reach neurons in the brain? Propose two distinct strategies drug developers might use to circumvent the BBB.",
+      "expected_answer": "Barriers: (1) the BBB blocks molecules >400-500 Da, (2) the hydrophilic nature prevents passive diffusion through lipid membranes, (3) efflux transporters like P-glycoprotein actively pump foreign substances back into the blood. Strategies: (1) Trojan horse approach \u2014 conjugate the drug to a molecule that crosses via receptor-mediated transcytosis (e.g., transferrin receptor antibody). (2) Nanoparticle encapsulation \u2014 lipid nanoparticles or polymer carriers that cross via endocytosis and release the drug inside the brain. (3) Temporary BBB disruption using focused ultrasound with microbubbles.",
+      "source": "hermes-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "Requires synthesizing multiple facts about the BBB (size cutoff, lipophilicity requirement, efflux transporters) and proposing viable strategies that demonstrate understanding of molecular transport mechanisms."
+    },
+    {
+      "category": "factual",
+      "prompt": "Context: The CRISPR-Cas9 gene-editing system, adapted from a bacterial immune system, uses a guide RNA (gRNA) to direct the Cas9 nuclease to a specific DNA sequence, where it creates a double-strand break. The cell then repairs the break via either non-homologous end joining (NHEJ) \u2014 which introduces random indels \u2014 or homology-directed repair (HDR), which uses a provided repair template.\n\nQuestion: A researcher wants to correct a single point mutation causing a genetic disorder. Explain which repair pathway (NHEJ or HDR) is most suitable and why. What practical limitation makes HDR less efficient in certain cell types, and how might the researcher overcome this?",
+      "expected_answer": "HDR is most suitable for correcting a point mutation because NHEJ introduces random indels (insertions/deletions), which would likely disrupt the gene further. HDR uses a donor template with the correct sequence, enabling precise repair. Limitation: HDR only works efficiently in dividing cells (S/G2 phase) because it requires homologous sister chromatids as templates. In post-mitotic cells (neurons, muscle), HDR is nearly absent. To overcome: use a modified Cas9 fused to HDR-promoting proteins, use cell cycle synchronization, or use lipid nanoparticle delivery of HDR templates with cell cycle agonists.",
+      "source": "hermes-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "Requires understanding the fundamental difference between two DNA repair pathways, their suitability for precise editing, and the cell-cycle dependency of HDR \u2014 a well-known limitation in gene therapy."
+    },
+    {
+      "category": "factual",
+      "prompt": "Context: Radioactive carbon-14 dating relies on the constant decay of 14C into 14N with a half-life of 5,730 years. Living organisms maintain equilibrium 14C levels through CO2 exchange, but once they die, 14C decays without replenishment. The decay follows N(t) = N0 * e^(-\u03bbt), where \u03bb = ln(2)/half-life.\n\nQuestion: An archaeological sample of wood shows 6.25% of its original carbon-14 remaining. Calculate the age of the sample. Show your work and explain one assumption this dating method makes that could introduce error.",
+      "expected_answer": "N/N0 = 0.0625 = 1/16. Since each half-life reduces 14C by half: 1 \u2192 1/2 \u2192 1/4 \u2192 1/8 \u2192 1/16. That's 4 half-lives. Age = 4 \u00d7 5,730 = 22,920 years. Using exponential: 0.0625 = e^(-\u03bbt), \u03bb = ln(2)/5730, t = -ln(0.0625)/\u03bb = 2.7726/(0.00012097) \u2248 22,920 years. Assumption: atmospheric 14C levels have remained constant over time. In reality, they vary due to solar activity, nuclear testing, and changes in Earth's magnetic field, requiring calibration curves.",
+      "source": "hermes-hard-v1",
+      "difficulty": "medium",
+      "reasoning": "Combines exponential decay mathematics with the carbon dating concept. The 6.25% = 1/16 gives a clean half-life calculation path, but also tests exponential formula understanding. The assumption question tests deeper scientific literacy."
+    },
+    {
+      "category": "factual",
+      "prompt": "Context: The principle of superposition in quantum mechanics states that a quantum system exists in all possible states simultaneously until measured. Schr\u00f6dinger's cat thought experiment was designed to illustrate the apparent absurdity of applying quantum superposition to macroscopic objects. The Copenhagen interpretation says the cat is both alive and dead until observation, while the Many-Worlds interpretation says each possibility branches into a separate universe.\n\nQuestion: Beyond Schr\u00f6dinger's cat, describe one real physical experiment that demonstrates quantum superposition at a scale larger than individual particles. What is the largest mass for which superposition has been experimentally demonstrated, and why does maintaining superposition become harder as mass increases?",
+      "expected_answer": "Real experiments: (1) Double-slit experiment with molecules like C60 (buckminsterfullerene) or C70 \u2014 these large molecules exhibit interference patterns as they pass through both slits simultaneously. (2) SQUID (Superconducting Quantum Interference Device) experiments showing superpositions of macroscopically distinct current states. The largest mass for superposition: ~25,000 atomic mass units (large molecules like functionalized porphyrins) demonstrated in matter-wave interferometry at TU Vienna. Larger mass makes superposition harder because: (1) decoherence \u2014 larger objects interact more strongly with the environment, causing wavefunction collapse; (2) the de Broglie wavelength becomes shorter, making interference patterns harder to resolve.",
+      "source": "hermes-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "Moves beyond pop-science Schr\u00f6dinger's cat to actual experimental physics. Requires knowledge of matter-wave interferometry and decoherence theory."
+    },
+    {
+      "category": "factual",
+      "prompt": "Context: The Great Oxidation Event (GOE) around 2.4 billion years ago occurred when photosynthetic cyanobacteria produced enough oxygen to overwhelm the Earth's reducing sinks (dissolved iron, volcanic gases). This caused the first mass extinction among anaerobic organisms. However, oxygen levels didn't reach modern levels until the later Neoproterozoic Oxygenation Event (~600 million years ago).\n\nQuestion: Explain the feedback loop that allowed cyanobacteria to trigger the GOE. Why did oxygen levels remain low for over a billion years after the GOE before rising again in the Neoproterozoic?",
+      "expected_answer": "Feedback loop: UV radiation splits water in the upper atmosphere, producing oxygen. Cyanobacteria introduced a new, much more efficient oxygen source: oxygenic photosynthesis (CO2 + H2O + light \u2192 CH2O + O2). Initially, all produced oxygen was consumed by reducing sinks (dissolved Fe2+ \u2192 Fe3+ precipitation forming banded iron formations). Once sinks were saturated, free O2 accumulated. Oxygen remained low for over a billion years because: (1) phosphorus \u2014 a limiting nutrient for photosynthesis \u2014 was scarce due to oxygen-mediated phosphorus recycling from organic matter; (2) the Earth's mantle and crust continued releasing reducing gases (H2, H2S, CH4) that consumed oxygen; (3) the lack of land plants meant no significant organic carbon burial, which is required for net oxygen accumulation.",
+      "source": "hermes-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "Requires understanding biogeochemical cycles, feedback loops, and the nutrient limitation hypothesis for why oxygen took so long to rise."
+    },
+    {
+      "category": "factual",
+      "prompt": "Context: The Chomsky hierarchy classifies formal languages into four levels: Type 3 (regular \u2014 recognized by finite automata), Type 2 (context-free \u2014 pushdown automata), Type 1 (context-sensitive \u2014 linear bounded automata), and Type 0 (recursively enumerable \u2014 Turing machines). Each level is a proper superset of the one below it.\n\nQuestion: A programming language's syntax can typically be described by a context-free grammar (Type 2), but some constructs like requiring variables to be declared before use require more power. What is the minimal Chomsky level needed to enforce declaration-before-use, and why does a context-free grammar fail? Give a specific example.",
+      "expected_answer": "Declaration-before-use requires Type 1 (context-sensitive) or higher. A context-free grammar (CFG) fails because it has no memory of which identifiers have been declared \u2014 CFG rules cannot enforce that 'x' seen in 'x = y + 1' was declared earlier without infinite rules. More formally, the language {wcw | w \u2208 {a,b}*} (declare w, then reference it) is not context-free but is context-sensitive. Specific example: the C construct 'int x; ... x = 5;' requires checking that the second 'x' refers to a declared identifier. While compilers handle this via symbol tables (extra machinery beyond the grammar), a pure CFG cannot express this constraint.",
+      "source": "hermes-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "Connects theoretical computer science (formal languages) to practical compiler construction. Tests understanding of Chomsky hierarchy limitations."
+    },
+    {
+      "category": "math",
+      "prompt": "Problem: In triangle ABC, angle A = 30\u00b0, angle B = 45\u00b0, and side c (opposite angle C) has length 10 cm. Calculate the length of side a (opposite angle A).",
+      "expected_answer": "Using the Law of Sines: a/sin(A) = c/sin(C). First, angle C = 180\u00b0 - 30\u00b0 - 45\u00b0 = 105\u00b0. sin(30\u00b0) = 0.5, sin(105\u00b0) = sin(75\u00b0) \u2248 0.9659. a/sin(30\u00b0) = 10/sin(105\u00b0) \u2192 a = 10 \u00d7 0.5 / 0.9659 \u2248 5.177 cm.",
+      "source": "hermes-hard-v1",
+      "difficulty": "medium",
+      "reasoning": "Requires applying Law of Sines with a non-standard angle (105\u00b0). Must first compute the missing angle, then identify the correct formula. Medium because it's a single-step formula application with one non-trivial computation."
+    },
+    {
+      "category": "math",
+      "prompt": "Problem: A data set has 5 values with a mean of 12. If one value is removed, the mean of the remaining 4 values becomes 10. What value was removed?",
+      "expected_answer": "Sum of 5 values = 5 \u00d7 12 = 60. Sum of remaining 4 values = 4 \u00d7 10 = 40. Removed value = 60 - 40 = 20.",
+      "source": "hermes-hard-v1",
+      "difficulty": "medium",
+      "reasoning": "Tests understanding of mean as sum/n. A single-step reverse calculation \u2014 medium because it requires reasoning backward from the mean formula."
+    },
+    {
+      "category": "math",
+      "prompt": "Problem: A geometric sequence has first term a = 3 and common ratio r = 2. What is the sum of the first 10 terms? Give your answer as an integer.",
+      "expected_answer": "Sum = a(r^n - 1)/(r - 1) = 3(2^10 - 1)/(2 - 1) = 3(1024 - 1)/1 = 3 \u00d7 1023 = 3069.",
+      "source": "hermes-hard-v1",
+      "difficulty": "medium",
+      "reasoning": "Tests the geometric series formula. Straightforward application but requires knowing the formula and computing 2^10 accurately."
+    },
+    {
+      "category": "math",
+      "prompt": "Problem: Find all real values of x that satisfy the inequality: |x - 3| + |x + 2| < 9",
+      "expected_answer": "Critical points: x = -2 and x = 3. Case 1 (x < -2): -(x-3) - (x+2) = -x+3 -x-2 = -2x+1 < 9 \u2192 -2x < 8 \u2192 x > -4. So -4 < x < -2. Case 2 (-2 \u2264 x < 3): -(x-3) + (x+2) = -x+3+x+2 = 5 < 9 always true. So -2 \u2264 x < 3. Case 3 (x \u2265 3): (x-3)+(x+2) = 2x-1 < 9 \u2192 2x < 10 \u2192 x < 5. So 3 \u2264 x < 5. Union: (-4, 5).",
+      "source": "hermes-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "Absolute value inequality requiring case analysis across three intervals. Tests systematic reasoning with piecewise conditions \u2014 medium-hard because it requires careful handling of boundary conditions."
+    },
+    {
+      "category": "math",
+      "prompt": "Problem: Compute the determinant of the 3\u00d73 matrix:\n[2  1  3]\n[1  0  2]\n[3  2  1]\nShow your work.",
+      "expected_answer": "Using cofactor expansion along row 2 (has a zero): det = 1\u00d7(-1)^(2+1)\u00d7det([[1,3],[2,1]]) + 0 + 2\u00d7(-1)^(2+3)\u00d7det([[2,1],[3,2]]) = -1\u00d7(1\u00d71 - 3\u00d72) + 2\u00d7(-1)\u00d7(2\u00d72 - 1\u00d73) = -1\u00d7(1-6) + (-2)\u00d7(4-3) = -1\u00d7(-5) + (-2)\u00d71 = 5 - 2 = 3.",
+      "source": "hermes-hard-v1",
+      "difficulty": "medium",
+      "reasoning": "Matrix determinant computation. Medium because it tests systematic application of cofactor expansion. Picking the row with a zero simplifies calculation."
+    },
+    {
+      "category": "math",
+      "prompt": "Problem: In a class of 30 students, 18 play soccer, 15 play basketball, and 8 play both. If a student is selected at random, what is the probability that they play at least one of the two sports?",
+      "expected_answer": "Using inclusion-exclusion: |S \u222a B| = |S| + |B| - |S \u2229 B| = 18 + 15 - 8 = 25. Probability = 25/30 = 5/6 \u2248 0.8333.",
+      "source": "hermes-hard-v1",
+      "difficulty": "medium",
+      "reasoning": "Set theory and basic probability. Tests understanding of inclusion-exclusion principle for overlapping sets."
+    },
+    {
+      "category": "math",
+      "prompt": "Problem: Solve for x in the equation: log\u2082(x) + log\u2082(x-3) = 2",
+      "expected_answer": "Using log property: log\u2082(x(x-3)) = 2 \u2192 x(x-3) = 2\u00b2 = 4 \u2192 x\u00b2 - 3x - 4 = 0 \u2192 (x-4)(x+1) = 0 \u2192 x = 4 or x = -1. Domain restriction: x > 0 and x-3 > 0 \u2192 x > 3. Therefore x = 4.",
+      "source": "hermes-hard-v1",
+      "difficulty": "medium",
+      "reasoning": "Logarithmic equation with domain restrictions. Tests combining logs via product rule, solving quadratic, and remembering to check domain \u2014 a common trap."
+    },
+    {
+      "category": "math",
+      "prompt": "Problem: Find the equation of the line perpendicular to y = 2x + 3 that passes through the point (4, -1). Give answer in slope-intercept form.",
+      "expected_answer": "Slope of given line = 2. Perpendicular slope = -1/2 (negative reciprocal). Using point-slope: y - (-1) = (-1/2)(x - 4) \u2192 y + 1 = (-1/2)x + 2 \u2192 y = (-1/2)x + 1.",
+      "source": "hermes-hard-v1",
+      "difficulty": "medium",
+      "reasoning": "Coordinate geometry \u2014 finding perpendicular lines. Tests understanding of negative reciprocal slope relationship and point-slope formula."
+    },
+    {
+      "category": "code_gen",
+      "prompt": "from typing import List\n\n\ndef num_islands(grid: List[List[str]]) -> int:\n    \"\"\"\n    Given a 2D grid of '1's (land) and '0's (water), count the number of islands.\n    An island is surrounded by water and formed by connecting adjacent lands\n    horizontally or vertically (not diagonally).\n\n    Example:\n    grid = [\n        ['1','1','0','0','0'],\n        ['1','1','0','0','0'],\n        ['0','0','1','0','0'],\n        ['0','0','0','1','1']\n    ]\n    num_islands(grid) -> 3\n    \"\"\"\n    # Implement here\n    pass",
+      "expected_answer": "from typing import List\n\n\ndef num_islands(grid: List[List[str]]) -> int:\n    if not grid or not grid[0]:\n        return 0\n    \n    rows, cols = len(grid), len(grid[0])\n    count = 0\n    \n    def dfs(r: int, c: int) -> None:\n        if r < 0 or r >= rows or c < 0 or c >= cols or grid[r][c] != '1':\n            return\n        grid[r][c] = '0'  # mark visited\n        dfs(r+1, c)\n        dfs(r-1, c)\n        dfs(r, c+1)\n        dfs(r, c-1)\n    \n    for r in range(rows):\n        for c in range(cols):\n            if grid[r][c] == '1':\n                count += 1\n                dfs(r, c)\n    return count",
+      "source": "hermes-hard-v1",
+      "difficulty": "medium",
+      "reasoning": "Classic island-count DFS problem. Tests recursion, 2D grid traversal, and in-place mutation for visited tracking. Medium because it's a standard pattern."
+    },
+    {
+      "category": "code_gen",
+      "prompt": "from typing import List\n\n\ndef two_sum(nums: List[int], target: int) -> List[int]:\n    \"\"\"\n    Given an array of integers nums and an integer target, return indices of the\n    two numbers such that they add up to target.\n    You may assume each input has exactly one solution, and you may not use the\n    same element twice.\n    Return the answer in any order.\n\n    Example:\n    two_sum([2, 7, 11, 15], 9) -> [0, 1]\n    \"\"\"\n    # Implement here\n    pass",
+      "expected_answer": "from typing import List\n\n\ndef two_sum(nums: List[int], target: int) -> List[int]:\n    seen = {}  # value -> index\n    for i, num in enumerate(nums):\n        complement = target - num\n        if complement in seen:\n            return [seen[complement], i]\n        seen[num] = i\n    return []",
+      "source": "hermes-hard-v1",
+      "difficulty": "medium",
+      "reasoning": "Two-sum hashmap approach. Tests understanding of the complement lookup pattern in O(n) time. Medium because it's well-known but requires the hashmap optimization insight."
+    },
+    {
+      "category": "code_gen",
+      "prompt": "from typing import List, Optional\n\n\ndef merge_intervals(intervals: List[List[int]]) -> List[List[int]]:\n    \"\"\"\n    Given an array of intervals where intervals[i] = [start_i, end_i], merge all\n    overlapping intervals and return an array of the non-overlapping intervals\n    that cover all the intervals in the input.\n\n    Example:\n    merge_intervals([[1,3],[2,6],[8,10],[15,18]]) -> [[1,6],[8,10],[15,18]]\n    \"\"\"\n    # Implement here\n    pass",
+      "expected_answer": "from typing import List\n\n\ndef merge_intervals(intervals: List[List[int]]) -> List[List[int]]:\n    if not intervals:\n        return []\n    \n    intervals.sort(key=lambda x: x[0])\n    merged = [intervals[0]]\n    \n    for start, end in intervals[1:]:\n        if start <= merged[-1][1]:\n            merged[-1][1] = max(merged[-1][1], end)\n        else:\n            merged.append([start, end])\n    return merged",
+      "source": "hermes-hard-v1",
+      "difficulty": "medium",
+      "reasoning": "Interval merging problem. Tests sorting by start time and greedy merging. Medium because the logic is straightforward once you sort."
+    },
+    {
+      "category": "code_gen",
+      "prompt": "from typing import List\n\n\ndef max_subarray_sum(nums: List[int]) -> int:\n    \"\"\"\n    Given an integer array nums, find the subarray (contiguous, non-empty) with\n    the largest sum and return its sum.\n\n    Example:\n    max_subarray_sum([-2, 1, -3, 4, -1, 2, 1, -5, 4]) -> 6  # [4, -1, 2, 1]\n    \"\"\"\n    # Implement here\n    pass",
+      "expected_answer": "from typing import List\n\n\ndef max_subarray_sum(nums: List[int]) -> int:\n    max_sum = nums[0]\n    current_sum = nums[0]\n    for num in nums[1:]:\n        current_sum = max(num, current_sum + num)\n        max_sum = max(max_sum, current_sum)\n    return max_sum",
+      "source": "hermes-hard-v1",
+      "difficulty": "medium",
+      "reasoning": "Kadane's algorithm. Tests understanding of dynamic programming for maximum subarray. Medium because it's a classic DP but the implementation is compact."
+    },
+    {
+      "category": "code_gen",
+      "prompt": "from typing import List\n\n\ndef three_sum(nums: List[int]) -> List[List[int]]:\n    \"\"\"\n    Given an integer array nums, return all triplets [nums[i], nums[j], nums[k]]\n    such that i != j, i != k, j != k and nums[i] + nums[j] + nums[k] == 0.\n    The solution set must not contain duplicate triplets.\n\n    Example:\n    three_sum([-1, 0, 1, 2, -1, -4]) -> [[-1, -1, 2], [-1, 0, 1]]\n    \"\"\"\n    # Implement here\n    pass",
+      "expected_answer": "from typing import List\n\n\ndef three_sum(nums: List[int]) -> List[List[int]]:\n    nums.sort()\n    result = []\n    n = len(nums)\n    for i in range(n - 2):\n        if i > 0 and nums[i] == nums[i-1]:\n            continue\n        left, right = i + 1, n - 1\n        while left < right:\n            total = nums[i] + nums[left] + nums[right]\n            if total < 0:\n                left += 1\n            elif total > 0:\n                right -= 1\n            else:\n                result.append([nums[i], nums[left], nums[right]])\n                while left < right and nums[left] == nums[left+1]:\n                    left += 1\n                while left < right and nums[right] == nums[right-1]:\n                    right -= 1\n                left += 1\n                right -= 1\n    return result",
+      "source": "hermes-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "Three-sum with two-pointer technique and duplicate handling. Hard because it combines sorting, two-pointer traversal, and careful de-duplication logic."
+    },
+    {
+      "category": "code_gen",
+      "prompt": "# Implement a Trie (Prefix Tree) with insert, search, and starts_with methods.\n\nclass Trie:\n    def __init__(self):\n        pass\n    \n    def insert(self, word: str) -> None:\n        pass\n    \n    def search(self, word: str) -> bool:\n        \"\"\"Return True if word is in the trie.\"\"\"\n        pass\n    \n    def starts_with(self, prefix: str) -> bool:\n        \"\"\"Return True if any word in the trie starts with prefix.\"\"\"\n        pass",
+      "expected_answer": "class TrieNode:\n    def __init__(self):\n        self.children = {}\n        self.is_end = False\n\nclass Trie:\n    def __init__(self):\n        self.root = TrieNode()\n    \n    def insert(self, word: str) -> None:\n        node = self.root\n        for ch in word:\n            if ch not in node.children:\n                node.children[ch] = TrieNode()\n            node = node.children[ch]\n        node.is_end = True\n    \n    def search(self, word: str) -> bool:\n        node = self.root\n        for ch in word:\n            if ch not in node.children:\n                return False\n            node = node.children[ch]\n        return node.is_end\n    \n    def starts_with(self, prefix: str) -> bool:\n        node = self.root\n        for ch in prefix:\n            if ch not in node.children:\n                return False\n            node = node.children[ch]\n        return True",
+      "source": "hermes-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "Trie data structure implementation. Hard because it requires designing a tree-like structure from scratch with proper node management and understanding the difference between search (exact match) and starts_with (prefix match)."
+    },
+    {
+      "category": "code_gen",
+      "prompt": "from typing import List\n\n\ndef product_except_self(nums: List[int]) -> List[int]:\n    \"\"\"\n    Given an integer array nums, return an array answer such that answer[i] is\n    equal to the product of all the elements of nums except nums[i].\n    Do NOT use division. Must run in O(n) time.\n\n    Example:\n    product_except_self([1, 2, 3, 4]) -> [24, 12, 8, 6]\n    \"\"\"\n    # Implement here\n    pass",
+      "expected_answer": "from typing import List\n\n\ndef product_except_self(nums: List[int]) -> List[int]:\n    n = len(nums)\n    result = [1] * n\n    \n    # left pass: result[i] = product of everything to the left of i\n    left_product = 1\n    for i in range(n):\n        result[i] = left_product\n        left_product *= nums[i]\n    \n    # right pass: multiply by product of everything to the right\n    right_product = 1\n    for i in range(n-1, -1, -1):\n        result[i] *= right_product\n        right_product *= nums[i]\n    \n    return result",
+      "source": "hermes-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "Product except self with no division. Hard because it requires the two-pass prefix/suffix pattern \u2014 a non-obvious algorithmic insight."
+    },
+    {
+      "category": "code_gen",
+      "prompt": "from typing import List\n\n\ndef longest_common_prefix(strs: List[str]) -> str:\n    \"\"\"\n    Write a function to find the longest common prefix string amongst an array\n    of strings. If there is no common prefix, return an empty string \"\".\n\n    Example:\n    longest_common_prefix([\"flower\", \"flow\", \"flight\"]) -> \"fl\"\n    \"\"\"\n    # Implement here\n    pass",
+      "expected_answer": "from typing import List\n\n\ndef longest_common_prefix(strs: List[str]) -> str:\n    if not strs:\n        return \"\"\n    \n    prefix = strs[0]\n    for s in strs[1:]:\n        while not s.startswith(prefix):\n            prefix = prefix[:-1]\n            if not prefix:\n                return \"\"\n    return prefix",
+      "source": "hermes-hard-v1",
+      "difficulty": "medium",
+      "reasoning": "Longest common prefix. Medium because the vertical scanning or prefix-shrinking approach is intuitive but requires handling edge cases (empty input, no common prefix)."
+    },
+    {
+      "category": "logic",
+      "prompt": "Five students \u2014 Alice, Bob, Carlos, Diana, and Ethan \u2014 each submitted a project on a different topic (AI, Biology, Chemistry, Design, Economics) and each received a different grade (A, B, C, D, F). Use the clues to determine each student's topic and grade.\n\n1. The student who studied AI received an A.\n2. Bob did not study Chemistry or Design.\n3. Diana received a higher grade than Carlos.\n4. The Economics project got a C.\n5. Ethan did not study Biology and did not get an F.\n6. The student who studied Design got a D.\n7. Alice got a higher grade than the Biology student.\n8. Carlos did not study Economics.\n9. The Chemistry student received a higher grade than the Economics student.\n\nWho studied what, and what grade did each receive?",
+      "expected_answer": "Alice: AI, A  |  Bob: Economics, C  |  Carlos: Design, D  |  Diana: Biology, B  |  Ethan: Chemistry, F\n\nReasoning: AI=A (clue 1), Economics=C (clue 4), Design=D (clue 6). Chemistry > Economics, so Chemistry must be B since only B, F remain above C, and Design is D, AI=A... Actually let me re-check. Available grades: A,B,C,D,F. AI=A, Economics=C, Design=D. Chemistry must be > C, so Chemistry = B (only B left above C). That leaves Biology=F. Diana > Carlos (clue 3), so Diana has B and Carlos has D (only B > D among remaining). Bob can't be Chemistry or Design (clue 2), so Bob = Economics. Ethan not Biology and not F (clue 5), so Ethan = Chemistry. Alice > Biology (clue 7), Alice already has A which is > F, consistent. Carlos not Economics (clue 8), Carlos = Design. Diana = Biology. So: Alice=AI/A, Bob=Economics/C, Carlos=Design/D, Diana=Biology/F, Ethan=Chemistry/B.",
+      "source": "hermes-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "Complex logic grid puzzle with 10 constraints across two attributes (topic and grade). Requires systematic elimination and constraint propagation."
+    },
+    {
+      "category": "logic",
+      "prompt": "There are two boxes. One box contains only apples, one contains only oranges, and one contains both. Each box is labeled, but every label is wrong. The labels read \"Apples\", \"Oranges\", and \"Apples and Oranges\".\n\nYou may reach into exactly one box and pull out one fruit, without looking inside. From that single fruit, you must determine the correct contents of all three boxes.\n\nWhich box should you pick from, and how does knowing that fruit tell you everything?",
+      "expected_answer": "Pick from the box labeled \"Apples and Oranges\". Since every label is wrong, this box does NOT contain both. It contains either only apples or only oranges. Whichever fruit you pull out tells you what this box actually contains (e.g., if you get an apple, it's the apples-only box). Then: the box labeled with the opposite fruit (\"Oranges\") must contain the mixed box (it can't contain oranges since its label is wrong, and it can't contain apples since the apples are already placed), and the remaining box (\"Apples\") must contain the fruit you didn't pick. This works because the mixed-label box has only two possibilities, and the wrong-label constraint cascades uniquely.",
+      "source": "hermes-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "Classic logic puzzle about labels and deduction. Hard because it requires understanding the cascade of wrong labels."
+    },
+    {
+      "category": "logic",
+      "prompt": "Consider the following premises:\n- If it's raining, then the ground is wet.\n- The ground is not wet.\n- If the sprinklers are on, then the ground is wet.\n- If it's not raining, then the dog is inside.\n\nFor each statement, determine whether it MUST be true, MUST be false, or COULD be either:\na) It is raining.\nb) The sprinklers are on.\nc) The dog is inside.\nd) The dog is outside.",
+      "expected_answer": "a) MUST be false (modus tollens: if raining\u2192wet, not wet \u2192 not raining)\nb) MUST be false (modus tollens: if sprinklers\u2192wet, not wet \u2192 not sprinklers)\nc) MUST be true (modus ponens: if not raining\u2192dog inside, and we know it's not raining from (a), so dog is inside)\nd) MUST be false (contradicts (c))",
+      "source": "hermes-hard-v1",
+      "difficulty": "medium",
+      "reasoning": "Propositional logic with modus ponens and modus tollens. Medium because it's a chain of deductions but each step is straightforward once you identify the inference rules."
+    },
+    {
+      "category": "logic",
+      "prompt": "You are in a room with two doors. One leads to freedom, the other to certain death. Two guards stand before the doors \u2014 one always tells the truth, the other always lies. You don't know which is which. You may ask exactly one question to one guard.\n\nWhat single question can you ask to guarantee you find the door to freedom?",
+      "expected_answer": "Ask either guard: \"If I asked the other guard which door leads to freedom, what would he say?\" Then choose the opposite door. \n\nExplanation: The truth-teller will truthfully report that the liar would point to the wrong door. The liar will falsely report what the truth-teller would say (which would be the correct door), thus also pointing to the wrong door. Both guards point to the wrong door, so you pick the opposite.\n\nAlternative: \"Which door would the other guard tell me to avoid?\" \u2014 both will point to the correct door.",
+      "source": "hermes-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "Classic knight-and-knave type puzzle. Hard because it requires constructing a question that forces both guards to give the same answer regardless of truth-telling status."
+    },
+    {
+      "category": "logic",
+      "prompt": "In a tournament with 64 players, each match eliminates exactly one player (single elimination). The tournament bracket is standard \u2014 winners advance, losers are out.\n\nQuestion: How many matches must be played to determine the tournament champion? Explain your reasoning without drawing the bracket.",
+      "expected_answer": "63 matches. Each match eliminates exactly one player. To go from 64 players to 1 champion, you need to eliminate 63 players. Since each match eliminates exactly one player, you need exactly 63 matches. This reasoning works for any single-elimination tournament with N players: N-1 matches.",
+      "source": "hermes-hard-v1",
+      "difficulty": "medium",
+      "reasoning": "Combinatorial reasoning. Medium because the obvious approach (counting bracket rounds) works but the elegant insight is counting eliminations instead."
+    },
+    {
+      "category": "logic",
+      "prompt": "A bat and a ball cost $1.10 in total. The bat costs $1.00 more than the ball. How much does the ball cost?\n\nIntuitively many people say 10 cents, but that's incorrect. Find the correct answer and explain the error in the intuitive response.",
+      "expected_answer": "The ball costs $0.05 (5 cents). Let b = ball cost. Bat costs b + $1.00. Total: b + (b + $1.00) = $1.10 \u2192 2b + $1.00 = $1.10 \u2192 2b = $0.10 \u2192 b = $0.05. The bat costs $1.05, total $1.10. The intuitive error: 10 cents would mean the bat costs $1.00, but then bat - ball = $0.90, not $1.00. People substitute the $1.00 difference into the total incorrectly.",
+      "source": "hermes-hard-v1",
+      "difficulty": "medium",
+      "reasoning": "Cognitive reflection test. Medium because the math is trivial once you set up the equation, but the question tests resistance to the intuitive-but-wrong answer."
+    },
+    {
+      "category": "logic",
+      "prompt": "Ten people are in a line. The first person (at the front) can see no one. Each subsequent person can see everyone in front of them. Each person wears either a red or blue hat, chosen randomly. Starting from the back (person 10), each person is asked to guess their own hat color. They can say \"red\" or \"blue\" and everyone hears the guess. They are allowed to agree on a strategy beforehand.\n\nWhat strategy guarantees that at least 9 out of 10 guess correctly?",
+      "expected_answer": "Strategy: Person 10 (last in line, sees 9 hats) says \"red\" if they see an even number of red hats in front of them, \"blue\" if odd. This person sacrifices their own guess to convey parity information. Person 9 hears this and sees the 8 hats in front. They can deduce their own hat: if person 10 signaled even and person 9 sees an odd number of reds, then person 9 must be red (making it even from person 10's perspective). Similarly, each subsequent person tracks the parity declaration and the hats they've seen guessed correctly, deducing their own hat. At least 9 people (everyone except person 10) guess correctly with certainty.",
+      "source": "hermes-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "Parity-based hat puzzle requiring an information-theoretic strategy. Hard because it requires encoding information into a yes/no answer."
+    },
+    {
+      "category": "logic",
+      "prompt": "Which of the following logical fallacies is being committed in the argument below? Select one and explain.\n\n\"If we allow students to retake exams, then they won't study properly the first time. And if they don't study properly the first time, they'll need to retake exams. So allowing retakes leads to a system where no one studies. Therefore we should never allow retakes.\"\n\na) Straw man\nb) Ad hominem\nc) Circular reasoning\nd) Slippery slope\ne) False dichotomy\ne) Begging the question",
+      "expected_answer": "d) Slippery slope. The argument asserts that allowing retakes inevitably leads to a cascade (retakes \u2192 no studying \u2192 need retakes \u2192 no one studies) without providing evidence that this causal chain must occur. It assumes the worst outcome is unavoidable without considering middle grounds or mitigating policies. The structure is: A leads to B, B leads to C, therefore A is unacceptable \u2014 without demonstrating that intermediate steps can't be prevented.",
+      "source": "hermes-hard-v1",
+      "difficulty": "medium",
+      "reasoning": "Logical fallacy identification. Medium because it requires recognizing the argument structure as a slippery slope vs other fallacies."
+    },
+    {
+      "category": "code_debug",
+      "prompt": "Fix this buggy code:\n\ndef binary_search(arr, target):\n    \"\"\"Return the index of target in sorted arr, or -1 if not found.\n    >>> binary_search([1, 3, 5, 7, 9], 5)\n    2\n    >>> binary_search([1, 3, 5, 7, 9], 6)\n    -1\n    >>> binary_search([1, 3, 5, 7, 9], 9)\n    4\n    \"\"\"\n    left, right = 0, len(arr) - 1\n    while left < right:\n        mid = (left + right) // 2\n        if arr[mid] == target:\n            return mid\n        elif arr[mid] < target:\n            left = mid + 1\n        else:\n            right = mid - 1\n    return -1\n\nThe function returns -1 for the last element (target=9) even though 9 is in the array.",
+      "expected_answer": "def binary_search(arr, target):\n    \"\"\"Return the index of target in sorted arr, or -1 if not found.\"\"\"\n    left, right = 0, len(arr) - 1\n    while left <= right:\n        mid = (left + right) // 2\n        if arr[mid] == target:\n            return mid\n        elif arr[mid] < target:\n            left = mid + 1\n        else:\n            right = mid - 1\n    return -1",
+      "source": "hermes-hard-v1",
+      "difficulty": "medium",
+      "reasoning": "Classic off-by-one in binary search: `while left < right` exits before checking the last element when left == right. The fix changes `<` to `<=`."
+    },
+    {
+      "category": "code_debug",
+      "prompt": "Fix this buggy code:\n\nclass Counter:\n    count = 0  # class variable\n    \n    def __init__(self):\n        pass\n    \n    def increment(self):\n        self.count += 1\n        return self.count\n\n# Expected behavior:\n# >>> a = Counter()\n# >>> b = Counter()\n# >>> a.increment()\n# 1\n# >>> a.increment()\n# 2\n# >>> b.increment()\n# 1  <-- but this returns 3 instead!\n\nThe Counter class is supposed to give each instance its own counter starting at 0. But creating a second counter shows the count is shared. Fix it.",
+      "expected_answer": "class Counter:\n    def __init__(self):\n        self.count = 0\n    \n    def increment(self):\n        self.count += 1\n        return self.count",
+      "source": "hermes-hard-v1",
+      "difficulty": "medium",
+      "reasoning": "Class variable vs instance variable confusion. `count = 0` at class level is shared by all instances. `self.count += 1` on a class variable creates an instance attribute that shadows the class variable \u2014 but the shared class variable is still incremented, causing unexpected sharing. The fix is to initialize in `__init__` as an instance variable."
+    },
+    {
+      "category": "code_debug",
+      "prompt": "Fix this buggy code:\n\nimport asyncio\n\nasync def fetch_data(url):\n    # Simulate network delay\n    await asyncio.sleep(0.1)\n    return f\"data from {url}\"\n\nasync def fetch_all():\n    \"\"\"Fetch data from all URLs concurrently and return results in order.\n    >>> asyncio.run(fetch_all())\n    ['data from /a', 'data from /b', 'data from /c']\n    \"\"\"\n    urls = ['/a', '/b', '/c']\n    results = []\n    for url in urls:\n        result = await fetch_data(url)\n        results.append(result)\n    return results\n\nThe function works but takes ~300ms when it should take ~100ms because fetches happen sequentially rather than concurrently.",
+      "expected_answer": "import asyncio\n\nasync def fetch_data(url):\n    await asyncio.sleep(0.1)\n    return f\"data from {url}\"\n\nasync def fetch_all():\n    urls = ['/a', '/b', '/c']\n    tasks = [asyncio.create_task(fetch_data(url)) for url in urls]\n    results = await asyncio.gather(*tasks)\n    return results",
+      "source": "hermes-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "Sequential async: awaiting each task in a for loop defeats concurrency. Each `await` pauses until that call completes before starting the next. The fix creates all tasks first with `create_task`, then gathers them with `asyncio.gather`."
+    },
+    {
+      "category": "code_debug",
+      "prompt": "Fix this buggy code:\n\nimport json\n\ndef process_user_input(user_input):\n    \"\"\"Parse JSON input from user safely.\n    >>> process_user_input('{\"name\": \"Alice\"}')\n    {'name': 'Alice'}\n    \"\"\"\n    try:\n        data = json.loads(user_input)\n        return data\n    except:\n        pass\n    \n    # Try to clean and re-parse\n    cleaned = user_input.strip()\n    data = json.loads(cleaned)\n    return data\n\nThe function should return None on invalid JSON, but it raises an unhandled exception instead.",
+      "expected_answer": "import json\n\ndef process_user_input(user_input):\n    \"\"\"Parse JSON input from user safely.\"\"\"\n    try:\n        data = json.loads(user_input)\n        return data\n    except json.JSONDecodeError:\n        pass\n    \n    try:\n        cleaned = user_input.strip()\n        data = json.loads(cleaned)\n        return data\n    except json.JSONDecodeError:\n        return None",
+      "source": "hermes-hard-v1",
+      "difficulty": "medium",
+      "reasoning": "Broad `except: pass` swallows the first error, but then the second `json.loads` is outside any try block. The `except: pass` makes the first error invisible, but the second line crashes. Fix: keep the second parse in a try block or return None after the first except."
+    },
+    {
+      "category": "code_debug",
+      "prompt": "Fix this buggy code:\n\nimport random\n\ndef roll_dice():\n    \"\"\"Return a random integer between 1 and 6 (inclusive).\"\"\"\n    return random.randint(0, 6)\n\n# Expected: returns 1, 2, 3, 4, 5, or 6 with equal probability\n# Actual: sometimes returns 0",
+      "expected_answer": "import random\n\ndef roll_dice():\n    \"\"\"Return a random integer between 1 and 6 (inclusive).\"\"\"\n    return random.randint(1, 6)",
+      "source": "hermes-hard-v1",
+      "difficulty": "medium",
+      "reasoning": "randint(a, b) includes both endpoints. Use randint(1, 6) for a die. Easy to spot but a common off-by-one."
+    },
+    {
+      "category": "code_debug",
+      "prompt": "Fix this buggy code:\n\nclass MyList:\n    def __init__(self, items):\n        self.items = items\n    \n    def __repr__(self):\n        return f\"MyList({self.items})\"\n    \n    def __add__(self, other):\n        return MyList(self.items + other.items)\n\n# Expected:\n# >>> a = MyList([1, 2])\n# >>> b = MyList([3, 4])\n# >>> c = a + b\n# >>> c\n# MyList([1, 2, 3, 4])\n# >>> a\n# MyList([1, 2])\n# >>> b\n# MyList([3, 4])\n\n# Actual:\n# >>> c = a + b\n# >>> a  # Shows MyList([1, 2, 3, 4]) -- 'a' was mutated!\n\nThe addition works but inexplicably mutates the original lists.",
+      "expected_answer": "class MyList:\n    def __init__(self, items):\n        self.items = list(items)  # copy to prevent aliasing\n    \n    def __repr__(self):\n        return f\"MyList({self.items})\"\n    \n    def __add__(self, other):\n        return MyList(self.items + other.items)",
+      "source": "hermes-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "Aliasing through mutable default/reference sharing. The bug is actually in the question prompt's setup \u2014 if `items` was passed as a list literal, `self.items` is an alias. But the real trap: if MyList is used with a shared list reference, `self.items + other.items` creates a new list, but the original objects could share references. The defensive fix is `list(items)` in __init__ to create a copy."
+    },
+    {
+      "category": "code_debug",
+      "prompt": "Fix this buggy code:\n\ndef get_squares(numbers):\n    \"\"\"Return a list of squares of the input numbers.\n    >>> numbers = [1, 2, 3, 4, 5]\n    >>> squares = get_squares(numbers)\n    >>> squares\n    [1, 4, 9, 16, 25]\n    >>> numbers  # Should be unchanged\n    [1, 2, 3, 4, 5]\n    \"\"\"\n    for i, n in enumerate(numbers):\n        numbers[i] = n ** 2\n    return numbers\n\nThe function mutates the input list instead of creating a new one.",
+      "expected_answer": "def get_squares(numbers):\n    \"\"\"Return a list of squares of the input numbers.\"\"\"\n    return [n ** 2 for n in numbers]",
+      "source": "hermes-hard-v1",
+      "difficulty": "medium",
+      "reasoning": "Mutation vs immutability: the function modifies the input list in-place instead of returning a new list. The fix uses a list comprehension to create a new list."
+    },
+    {
+      "category": "ner",
+      "prompt": "Extract all person names, organizations, locations, dates, monetary amounts, and regulatory terms from this financial news article:\n\n\"The Securities and Exchange Commission (SEC) announced on March 15, 2025, that it was investigating Tesla Inc. CEO Elon Musk over potential securities law violations related to a $45 billion compensation package approved by the board chaired by Robyn Denholm. The probe, led by SEC Chair Gary Gensler, reportedly involves transactions routed through Deutsche Bank AG's New York branch. Tesla's legal team, headed by Todd Maron, responded by filing a 150-page brief in the Southern District of New York on April 2, 2025, seeking a preliminary injunction.\"",
+      "expected_answer": "PERSONS: Elon Musk, Robyn Denholm, Gary Gensler, Todd Maron | ORGANIZATIONS: Securities and Exchange Commission (SEC), Tesla Inc., Deutsche Bank AG | LOCATIONS: Southern District of New York, New York | DATES: March 15, 2025, April 2, 2025 | MONETARY: $45 billion, $150 | REGULATORY: securities law violations, compensation, probe",
+      "source": "hermes-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "Multi-type NER extraction from complex financial text. Requires distinguishing person names from organization names, extracting partial monetary references, and identifying embedded regulatory terms."
+    },
+    {
+      "category": "ner",
+      "prompt": "Extract all software names, version numbers, programming languages, person names, organizations, and CVE identifiers from this cybersecurity incident report:\n\n\"On January 4, 2025, security researcher Alex Stamos at SentinelOne disclosed a critical RCE vulnerability (CVE-2025-0001) in Apache Log4j 3.0.1 affecting cloud deployments at AWS and Azure. The flaw, discovered by Maria Kuznetsova during a code audit of the Log4j-core module, enables unauthenticated remote code execution via JNDI lookups. Patches were released by the Apache Software Foundation on January 7. Meanwhile, researchers at CrowdStrike led by Dmitri Alperovitch found a related bypass (CVE-2025-0014) in the Log4j-jakarta-web subproject. The Python-based exploit tool 'log4jack', publicly posted to GitHub by user 'dark_matter', triggered emergency patching across financial institutions including JPMorgan Chase.\"",
+      "expected_answer": "SOFTWARE: Apache Log4j, Log4j-core, Log4j-jakarta-web, log4jack | VERSIONS: 3.0.1 | LANGUAGES: Python | PERSONS: Alex Stamos, Maria Kuznetsova, Dmitri Alperovitch, dark_matter | ORGANIZATIONS: SentinelOne, Apache Software Foundation, CrowdStrike, GitHub, AWS, Azure, JPMorgan Chase | CVE: CVE-2025-0001, CVE-2025-0014",
+      "source": "hermes-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "Cybersecurity NER with domain-specific entities: CVE identifiers, software versions, and exploit tool names alongside standard person/organization extraction."
+    },
+    {
+      "category": "ner",
+      "prompt": "Extract all protein names, gene symbols, diseases, drug names, cell types, and numerical values from this biomedical research abstract:\n\n\"We investigated the role of programmed cell death protein 1 (PD-1, encoded by the PDCD1 gene) and its ligand PD-L1 (CD274) in resistance to pembrolizumab (Keytruda) among patients with non-small cell lung cancer (NSCLC). RNA-seq analysis of 247 tumor biopsy samples showed a 3.7-fold upregulation of the CTLA-4 gene in non-responders. Treatment with a novel bispecific antibody targeting both PD-1 and LAG-3 demonstrated a 42% objective response rate in the phase II trial involving 89 patients with metastatic melanoma. The drug candidate, designated XR-2024, also showed activity against triple-negative breast cancer cells (MDA-MB-231 line) at IC50 of 12.5 nM.\"",
+      "expected_answer": "PROTEINS: PD-1, PD-L1, CTLA-4, LAG-3 | GENES: PDCD1, CD274, CTLA-4 | DISEASES: non-small cell lung cancer (NSCLC), metastatic melanoma, triple-negative breast cancer | DRUGS: pembrolizumab (Keytruda), XR-2024 | CELL TYPES: MDA-MB-231 | NUMERICAL: 247, 3.7-fold, 42%, 89, 12.5 nM",
+      "source": "hermes-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "Biomedical NER requiring distinction between proteins and their encoding genes (PD-1 vs PDCD1), recognizing drug brand/generic pairs, and extracting numerical values with units."
+    },
+    {
+      "category": "ner",
+      "prompt": "Extract all country names, diplomatic titles, treaty names, dates, locations, and person names from this diplomatic cable:\n\n\"Her Excellency Ambassador Alya bint Ahmed Al Thani of Qatar met with Secretary of State Anthony Blinken at the State Department in Washington, D.C. on June 12, 2025, to discuss the implementation of the Abraham Accords framework following the Gaza ceasefire agreement of May 2023. Also present at the meeting was Dr. Mohammed Al-Kuwari, Qatar's Minister of State for Energy Affairs, who raised concerns about OPEC+ production quotas set at the December 2024 Vienna conference. A follow-up summit is scheduled for September 2025 in Doha, with Prime Minister Sheikh Mohammed bin Abdulrahman Al Thani presiding.\"",
+      "expected_answer": "COUNTRIES: Qatar, United States | DIPLOMATIC TITLES: Her Excellency Ambassador, Secretary of State, Minister of State for Energy Affairs, Prime Minister | TREATIES: Abraham Accords, Gaza ceasefire agreement | DATES: June 12, 2025, May 2023, December 2024, September 2025 | LOCATIONS: State Department, Washington D.C., Vienna, Doha | PERSONS: Alya bint Ahmed Al Thani, Anthony Blinken, Mohammed Al-Kuwari, Mohammed bin Abdulrahman Al Thani",
+      "source": "hermes-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "Diplomatic NER with long Arabic names, complex titles, and treaty names. Requires distinguishing given names from honorifics and extracting compound entities like 'Her Excellency Ambassador' as a diplomatic title."
+    },
+    {
+      "category": "ner",
+      "prompt": "Extract all team names, player names, positions, statistics, dates, and venue names from this sports news report:\n\n\"At MetLife Stadium on Sunday, the New England Patriots defeated the Kansas City Chiefs 31-28 in a thrilling overtime finish. Quarterback Patrick Mahomes threw for 387 yards and 3 touchdowns but was intercepted twice by cornerback Christian Gonzalez. Rookie running back Rhamondre Stevenson rushed for 142 yards and 2 scores for the Patriots. Linebacker Nick Bolton recorded 14 tackles for Kansas City. The game, played before 82,156 fans, was the first regular-season matchup between head coaches Andy Reid and Jerod Mayo. Both teams now sit at 8-3 heading into Week 13.\"",
+      "expected_answer": "TEAMS: New England Patriots, Kansas City Chiefs | PLAYERS: Patrick Mahomes, Christian Gonzalez, Rhamondre Stevenson, Nick Bolton, Andy Reid, Jerod Mayo | POSITIONS: Quarterback, cornerback, rookie running back, linebacker, head coaches | STATISTICS: 387 yards, 3 touchdowns, 2 (interceptions), 142 yards, 2 scores, 14 tackles, 82,156 fans, 8-3 | DATES: Sunday, Week 13 | VENUES: MetLife Stadium",
+      "source": "hermes-hard-v1",
+      "difficulty": "medium",
+      "reasoning": "Sports NER with standard entity types. Medium because the entities are well-structured and the domain is accessible, but requires distinguishing positions from person names."
+    },
+    {
+      "category": "ner",
+      "prompt": "Extract all product names, company names, prices, reviewer names, and star ratings from these e-commerce product reviews:\n\n\"I bought the Samsung Galaxy S25 Ultra for $1,299.99 and it's been amazing. The camera is way better than my old iPhone 15 Pro Max. \u2014 TechGuru42 \u2605\u2605\u2605\u2605\u2605\n\nI pre-ordered the Sony WH-1000XM6 headphones at $349.99 and they arrived with a defective left earcup. Customer service was terrible. \u2014 AngryListener \u2605\u2606\u2606\u2606\u2606\n\nAfter trying both, I'm returning the Dell XPS 16 (paid $1,899) and keeping the MacBook Air M4 ($999). The battery life difference is staggering. \u2014 LaptopWanderer \u2605\u2605\u2605\u2605\u2606\"",
+      "expected_answer": "PRODUCTS: Samsung Galaxy S25 Ultra, iPhone 15 Pro Max, Sony WH-1000XM6 headphones, Dell XPS 16, MacBook Air M4 | COMPANIES: Samsung, Apple, Sony, Dell | PRICES: $1,299.99, $349.99, $1,899, $999 | REVIEWERS: TechGuru42, AngryListener, LaptopWanderer | STAR RATINGS: \u2605\u2605\u2605\u2605\u2605 (5/5), \u2605\u2606\u2606\u2606\u2606 (1/5), \u2605\u2605\u2605\u2605\u2606 (4/5)",
+      "source": "hermes-hard-v1",
+      "difficulty": "medium",
+      "reasoning": "E-commerce NER with informal reviewer names (usernames), star symbols, and price extraction. Medium because entities are clearly separated per review."
+    },
+    {
+      "category": "ner",
+      "prompt": "Extract all event names, locations, dates, person names, award names, and numerical values from this entertainment industry report:\n\n\"The 97th Academy Awards ceremony, held at the Dolby Theatre in Hollywood on March 2, 2025, saw 'The Brutalist' winning Best Picture, with director Brady Corbet accepting the award. Cillian Murphy won Best Actor for his role in '28 Years Later' at a budget of $75 million, while Best Actress went to Emma Stone for the $50 million indie production 'A Simple Favor 2'. The telecast drew 19.5 million viewers, up 8% from the previous year's 18.1 million. Presenter Jimmy Kimmel opened the show with a monologue that ran 12 minutes and 37 seconds.\"",
+      "expected_answer": "EVENTS: 97th Academy Awards ceremony, Best Picture, Best Actor, Best Actress | LOCATIONS: Dolby Theatre, Hollywood | DATES: March 2, 2025 | PERSONS: Brady Corbet, Cillian Murphy, Emma Stone, Jimmy Kimmel | AWARDS: Academy Awards (Oscars), Best Picture, Best Actor, Best Actress | NUMERICAL: $75 million, $50 million, 19.5 million, 8%, 18.1 million, 12 minutes, 37 seconds, 97th",
+      "source": "hermes-hard-v1",
+      "difficulty": "medium",
+      "reasoning": "Entertainment NER with award names that sometimes overlap with movie titles (Best Picture vs 'The Brutalist'). Requires distinguishing ordinal (97th) from other numeric types."
+    },
+    {
+      "category": "sentiment",
+      "prompt": "Classify the sentiment of the following text (positive, negative, or neutral):\n\n\"The quarterly earnings report missed analyst estimates by 12%, with revenue declining for the third consecutive quarter. However, the company noted a 40% increase in its cloud services segment and raised its full-year guidance citing strong AI infrastructure demand.\"",
+      "expected_answer": "mixed/neutral (or neutral \u2014 has both negative and positive elements, overall mixed but balanced)",
+      "source": "hermes-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "Mixed sentiment with balanced positive and negative signals. The first half is clearly negative (missed estimates, declining revenue) while the second half is positive (cloud growth, raised guidance). Hard because it doesn't fit a single sentiment category \u2014 the correct answer depends on context."
+    },
+    {
+      "category": "sentiment",
+      "prompt": "Classify the sentiment of the following text (positive, negative, or neutral):\n\n\"Customer service reached a new low today. After waiting on hold for 47 minutes, I was disconnected. When I called back, the representative had no record of my issue and asked me to explain everything from the beginning. This is the third time this has happened.\"",
+      "expected_answer": "negative",
+      "source": "hermes-hard-v1",
+      "difficulty": "medium",
+      "reasoning": "Clearly negative \u2014 explicit frustration with customer service. Uses factual details to build a case of dissatisfaction without overt swearing, making it medium rather than easy."
+    },
+    {
+      "category": "sentiment",
+      "prompt": "Classify the sentiment of the following text (positive, negative, or neutral):\n\n\"Following the merger announcement, shares of both companies traded higher in pre-market activity. Analysts have revised their price targets upward, citing expected synergies of $1.2 billion annually. The combined entity is projected to capture 35% market share.\"",
+      "expected_answer": "positive",
+      "source": "hermes-hard-v1",
+      "difficulty": "medium",
+      "reasoning": "Positive with formal/factual language. Uses market indicators (shares higher, price targets up) to convey optimism without emotional language."
+    },
+    {
+      "category": "sentiment",
+      "prompt": "Classify the sentiment of the following text (positive, negative, or neutral):\n\n\"The platform's new AI-powered search feature claims to understand natural language queries better than the competition. Some beta testers report improved discovery, while others note it occasionally returns irrelevant results for complex multi-part queries.\"",
+      "expected_answer": "neutral",
+      "source": "hermes-hard-v1",
+      "difficulty": "medium",
+      "reasoning": "Neutral/balanced reporting. Presents both positive claims (AI-powered, improved discovery) and negative caveats (irrelevant results) without taking a side."
+    },
+    {
+      "category": "sentiment",
+      "prompt": "Classify the sentiment of the following text (positive, negative, or neutral):\n\n\"Weather forecast for coastal regions remains unsettled through the weekend. A\u4f4e\u538b system moving eastward is expected to bring heavy rainfall and gusty winds exceeding 60 km/h. Coastal flood advisories remain in effect for low-lying areas from Thursday through Monday.\"",
+      "expected_answer": "neutral (or slightly negative due to hazard language)",
+      "source": "hermes-hard-v1",
+      "difficulty": "medium",
+      "reasoning": "Neutral/objective weather reporting with factual hazard information. The advisory language carries mild negative connotation but the tone is dispassionate and factual."
+    },
+    {
+      "category": "sentiment",
+      "prompt": "Classify the sentiment of the following text (positive, negative, or neutral):\n\n\"Oh wow, another brilliant software update that breaks more things than it fixes. The UI redesign is so 'intuitive' that I can no longer find basic settings without three nested menus. Thank you for this truly 'improved' experience.\"",
+      "expected_answer": "negative (sarcastic)",
+      "source": "hermes-hard-v1",
+      "difficulty": "medium",
+      "reasoning": "Sarcastic negative. Uses positive-sounding words (brilliant, intuitive, improved, thank you) in scare quotes or ironic context to convey the opposite meaning."
+    },
+    {
+      "category": "sentiment",
+      "prompt": "Classify the sentiment of the following text (positive, negative, or neutral):\n\n\"The concert was an experience. The bass was loud enough to rattle the fillings in my teeth. I think I've lost temporary hearing in my left ear. The merchandise stand ran out of sizes after the first thirty minutes. But the band really seemed like they were having fun up there.\"",
+      "expected_answer": "mixed/negative (predominantly negative with a faint positive note)",
+      "source": "hermes-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "Complex mixed sentiment \u2014 mostly negative physical discomfort (hearing damage, merchandise issues) with one slightly positive observation (band having fun). The overall experience is negative despite the attempt at finding a silver lining."
+    },
+    {
+      "category": "summarization",
+      "prompt": "SOURCE 1 (AI Industry Analyst Blog, 2025): 'Open-source AI models are now competitive with proprietary ones across standard benchmarks. Llama 4 405B achieves 89.2% on MMLU-Pro, within 2% of GPT-5. Smaller models like Mistral 7B v3 run locally on consumer laptops while matching 2023-era datacenter models.'\n\nSOURCE 2 (OpenAI Corporate Blog, 2025): 'Frontier AI capabilities require safety research that only closed labs can responsibly conduct. Open-weight models pose proliferation risks \u2014 they can be fine-tuned for harmful purposes without oversight. Benchmark scores fail to capture alignment and safety dimensions.'\n\nWrite a balanced 2-3 sentence summary of both positions.",
+      "expected_answer": "While open-source models have closed the performance gap on standard benchmarks (Llama 4 matches GPT-5 within 2%), proprietary advocates argue that benchmarks miss safety-critical dimensions and that open-weight models enable unchecked harmful fine-tuning. The debate centers on whether competitive accuracy or responsible deployment should take priority.",
+      "source": "hermes-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "Requires synthesizing two opposing positions on AI openness vs safety. Must present both sides without bias. Hard because the positions don't directly contradict but argue on different dimensions (performance vs safety)."
+    },
+    {
+      "category": "summarization",
+      "prompt": "SOURCE 1 (IPCC Summary for Policymakers, 2025): 'Global average temperature has risen 1.45\u00b0C above pre-industrial levels. Current NDC pledges put the world on track for 2.7\u00b0C warming by 2100. Immediate 43% emission reduction by 2030 is required to meet the 1.5\u00b0C target.'\n\nSOURCE 2 (Breakthrough Institute Policy Brief, 2025): 'Net-zero by 2050 targets are politically unrealistic and economically damaging. A better approach is climate adaptation investments (sea walls, drought-resistant crops) combined with accelerated nuclear and geothermal R&D rather than rapid fossil fuel phaseout.'\n\nSummarize the core disagreement between these two climate policy positions in 2-3 sentences.",
+      "expected_answer": "The IPCC calls for drastic near-term emission cuts (43% by 2030) backed by international pledges, while the Breakthrough Institute argues these targets are unachievable and advocates a pragmatic pivot to adaptation and alternative energy R&D instead of rapid fossil fuel phaseout. The fault line is between mitigation-first and adaptation-first climate strategy.",
+      "source": "hermes-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "Climate policy summarization requiring understanding of both scientific urgency and economic/political feasibility arguments. Must distill the core disagreement without editorializing."
+    },
+    {
+      "category": "summarization",
+      "prompt": "SOURCE: A technical blog post about container orchestration reads:\n\n'Kubernetes has become the de facto standard for container orchestration, but its complexity is increasingly criticized. A 2024 survey found 67% of platform teams cite operational complexity as their top challenge. Meanwhile, alternatives like Nomad (by HashiCorp) and Docker Swarm offer simpler APIs at the cost of reduced ecosystem support. The Cloud Native Computing Foundation reported that 84% of production workloads now run on Kubernetes, up from 74% in 2023, suggesting that despite the pain, the ecosystem lock-in is getting stronger.'\n\nSummarize the relationship between Kubernetes adoption and its complexity in 2-3 sentences.",
+      "expected_answer": "While 67% of platform teams cite Kubernetes complexity as their top challenge, adoption continues to grow, with 84% of production workloads now on Kubernetes (up from 74%). Alternatives offer simpler APIs but lack Kubernetes' ecosystem support, suggesting that complexity alone won't drive migration away from the dominant platform.",
+      "source": "hermes-hard-v1",
+      "difficulty": "medium",
+      "reasoning": "Technical summarization requiring synthesis of conflicting trends: growing adoption despite increasing complexity. Medium because the relationship is clearly stated in the source."
+    },
+    {
+      "category": "summarization",
+      "prompt": "SOURCE 1 (NY Federal Reserve Research Paper, 2025): 'Buy Now, Pay Later (BNPL) users are 3.2x more likely to carry revolving credit card debt. The average BNPL user has a credit score 47 points below the national median. 18% of BNPL users have missed at least one payment in the past year.'\n\nSOURCE 2 (Fintech Industry Association Response, 2025): 'BNPL provides credit access to underbanked consumers who would otherwise turn to payday loans with 400% APR. Our data shows 89% of BNPL payments are made on time. BNPL serves a critical financial inclusion function for the 45 million Americans with thin credit files.'\n\nWrite a 2-3 sentence summary capturing both perspectives.",
+      "expected_answer": "Research shows BNPL users face higher debt risk (3.2x more likely to carry revolving debt, 18% missed payments), but the fintech industry argues BNPL fills a vital gap for underbanked consumers who would otherwise resort to predatory payday loans, with 89% on-time payment rates. Both sides agree BNPL usage is growing, but disagree on whether it enables financial inclusion or facilitates overextension.",
+      "source": "hermes-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "Financial policy summarization with competing statistical claims. Requires evaluating both datasets and presenting each side's argument without favoring either."
+    },
+    {
+      "category": "summarization",
+      "prompt": "SOURCE: A Wikipedia article on the history of programming languages:\n\n'Python was created by Guido van Rossum and first released in 1991. It emphasizes code readability with significant whitespace. Python 2 was officially sunset on January 1, 2020. Python 3 introduced breaking changes including print as a function, integer division returning floats, and Unicode strings by default. Despite initial resistance from the community, Python 3 adoption accelerated after 2014, reaching 95% by 2020. Python is now the most popular language for machine learning and data science, driven by libraries like NumPy, pandas, PyTorch, and TensorFlow.'\n\nSummarize the key transitions in Python's history in 1-2 sentences.",
+      "expected_answer": "Python's history features two major transitions: the Python 2-to-3 migration (breaking changes overcame initial community resistance to reach 95% adoption by 2020) and its rise to dominance in ML/data science through its ecosystem of scientific libraries.",
+      "source": "hermes-hard-v1",
+      "difficulty": "medium",
+      "reasoning": "Historical summarization with clear narrative thread. Medium because the key transitions are explicitly stated and just need synthesis."
+    },
+    {
+      "category": "summarization",
+      "prompt": "SOURCE 1 (European Commission Press Release, June 2025): 'The EU AI Act enters into full effect today, establishing the world's first comprehensive legal framework for artificial intelligence. High-risk AI systems must undergo conformity assessments, maintain human oversight, and provide transparency documentation. Non-compliance penalties reach 7% of global annual turnover.'\n\nSOURCE 2 (Andreessen Horowitz Policy Blog, June 2025): 'The EU AI Act creates a regulatory moat that entrenches incumbent AI companies at the expense of European startups. Compliance costs estimated at \u20ac25M+ per high-risk system will stifle innovation and push AI talent to jurisdictions with lighter-touch regulation like the US and Singapore.'\n\nWrite a balanced 2-3 sentence summary of this debate.",
+      "expected_answer": "The EU AI Act, now in full effect, establishes comprehensive AI regulation with strict requirements for high-risk systems and 7% turnover penalties. Critics argue compliance costs (\u20ac25M+ per system) will crush European startups and drive talent abroad, while supporters see it as necessary consumer protection that creates trust in AI. The core tension is between safety regulation and innovation competitiveness.",
+      "source": "hermes-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "Regulatory policy summarization requiring understanding of both the regulatory framework and its economic implications. Must balance consumer protection arguments against innovation concerns."
+    },
+    {
+      "category": "summarization",
+      "prompt": "SOURCE: A science news article reports:\n\n'A team at MIT has developed a new battery electrolyte that could enable electric vehicles to charge in under 10 minutes. The fluorinated electrolyte formulation, published in Nature Energy, enables stable lithium-ion transport at temperatures up to 60\u00b0C while maintaining performance at -20\u00b0C. The electrolyte forms a unique crystalline structure on the anode surface that prevents dendrite formation \u2014 a key cause of battery fires. However, the electrolyte requires high-purity fluorine compounds currently priced at $380/kg, making it 8x more expensive than conventional carbonate electrolytes.'\n\nWrite a 2-3 sentence summary covering both the breakthrough and its practical limitation.",
+      "expected_answer": "MIT researchers developed a fluorinated electrolyte enabling sub-10-minute EV charging with superior temperature range and dendrite suppression that could solve battery fire risks. However, the high-purity fluorine compounds cost $380/kg (8x conventional electrolytes), creating a significant economic barrier to commercial deployment.",
+      "source": "hermes-hard-v1",
+      "difficulty": "medium",
+      "reasoning": "Scientific discovery summarization with a clear performance/cost trade-off. Medium because both the breakthrough and limitation are explicitly stated in the source."
+    }
+  ]
+}

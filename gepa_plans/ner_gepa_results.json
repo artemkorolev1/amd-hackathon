@@ -1,0 +1,423 @@
+{
+  "category": "ner",
+  "num_questions": 19,
+  "num_generations": 3,
+  "model_keys": [
+    "qwen2.5-coder-1.5b"
+  ],
+  "history": [
+    {
+      "generation": 1,
+      "top3_mean": 0.3508771929824561,
+      "per_model_best": {
+        "qwen2.5-coder-1.5b": 0.3684210526315789
+      },
+      "pareto_front_sizes": {
+        "qwen2.5-coder-1.5b": 3
+      }
+    },
+    {
+      "generation": 2,
+      "top3_mean": 0.2982456140350877,
+      "per_model_best": {
+        "qwen2.5-coder-1.5b": 0.3684210526315789
+      },
+      "pareto_front_sizes": {
+        "qwen2.5-coder-1.5b": 2
+      }
+    },
+    {
+      "generation": 3,
+      "top3_mean": 0.3508771929824561,
+      "per_model_best": {
+        "qwen2.5-coder-1.5b": 0.3684210526315789
+      },
+      "pareto_front_sizes": {
+        "qwen2.5-coder-1.5b": 3
+      }
+    }
+  ],
+  "final_results": {
+    "qwen2.5-coder-1.5b": {
+      "best_accuracy": 0.3684210526315789,
+      "best_prompt": "",
+      "temperature": 0.0,
+      "max_tokens": 128,
+      "avg_output_tokens": 33.10526315789474,
+      "avg_latency_ms": 205.77946462129293,
+      "variant_name": "seed_0_ner",
+      "best_generation": 1
+    }
+  },
+  "generations": [
+    {
+      "generation": 1,
+      "population": [
+        {
+          "name": "seed_0_ner",
+          "system_prompt": "",
+          "temperature": 0.0,
+          "accuracy": {
+            "qwen2.5-coder-1.5b": 0.3684210526315789
+          },
+          "avg_output_tokens": {
+            "qwen2.5-coder-1.5b": 33.10526315789474
+          },
+          "avg_latency_ms": {
+            "qwen2.5-coder-1.5b": 205.77946462129293
+          }
+        },
+        {
+          "name": "seed_1_ner",
+          "system_prompt": "Extract entities from the text. Format: category: entity",
+          "temperature": 0.0,
+          "accuracy": {
+            "qwen2.5-coder-1.5b": 0.3157894736842105
+          },
+          "avg_output_tokens": {
+            "qwen2.5-coder-1.5b": 30.94736842105263
+          },
+          "avg_latency_ms": {
+            "qwen2.5-coder-1.5b": 190.60863946613512
+          }
+        },
+        {
+          "name": "seed_2_ner",
+          "system_prompt": "Entities:",
+          "temperature": 0.0,
+          "accuracy": {
+            "qwen2.5-coder-1.5b": 0.21052631578947367
+          },
+          "avg_output_tokens": {
+            "qwen2.5-coder-1.5b": 39.8421052631579
+          },
+          "avg_latency_ms": {
+            "qwen2.5-coder-1.5b": 241.04443349336324
+          }
+        },
+        {
+          "name": "seed_3_ner",
+          "system_prompt": "Extract named entities with labels: person, org, loc, date.",
+          "temperature": 0.0,
+          "accuracy": {
+            "qwen2.5-coder-1.5b": 0.2631578947368421
+          },
+          "avg_output_tokens": {
+            "qwen2.5-coder-1.5b": 32.578947368421055
+          },
+          "avg_latency_ms": {
+            "qwen2.5-coder-1.5b": 200.2090654875103
+          }
+        },
+        {
+          "name": "seed_4_ner",
+          "system_prompt": "List all named entities in the format: TYPE: value",
+          "temperature": 0.0,
+          "accuracy": {
+            "qwen2.5-coder-1.5b": 0.3684210526315789
+          },
+          "avg_output_tokens": {
+            "qwen2.5-coder-1.5b": 24.473684210526315
+          },
+          "avg_latency_ms": {
+            "qwen2.5-coder-1.5b": 154.50039662812887
+          }
+        },
+        {
+          "name": "rand_5_ner",
+          "system_prompt": "Entities: Format as TYPE: value, one per line. No preamble.",
+          "temperature": 0.2,
+          "accuracy": {
+            "qwen2.5-coder-1.5b": 0.3157894736842105
+          },
+          "avg_output_tokens": {
+            "qwen2.5-coder-1.5b": 60.31578947368421
+          },
+          "avg_latency_ms": {
+            "qwen2.5-coder-1.5b": 360.3865598377429
+          }
+        },
+        {
+          "name": "rand_6_ner",
+          "system_prompt": "Output only the answer.. No explanation.",
+          "temperature": 0.0,
+          "accuracy": {
+            "qwen2.5-coder-1.5b": 0.3157894736842105
+          },
+          "avg_output_tokens": {
+            "qwen2.5-coder-1.5b": 12.31578947368421
+          },
+          "avg_latency_ms": {
+            "qwen2.5-coder-1.5b": 85.90735887226306
+          }
+        },
+        {
+          "name": "rand_7_ner",
+          "system_prompt": "Extract: Label as PERSON, ORG, LOC, or DATE. No preamble.",
+          "temperature": 0.2,
+          "accuracy": {
+            "qwen2.5-coder-1.5b": 0.10526315789473684
+          },
+          "avg_output_tokens": {
+            "qwen2.5-coder-1.5b": 2.736842105263158
+          },
+          "avg_latency_ms": {
+            "qwen2.5-coder-1.5b": 30.70050791690224
+          }
+        }
+      ],
+      "pareto_front_sizes": {
+        "qwen2.5-coder-1.5b": 3
+      },
+      "per_model_best": {
+        "qwen2.5-coder-1.5b": 0.3684210526315789
+      }
+    },
+    {
+      "generation": 2,
+      "population": [
+        {
+          "name": "elite_g0_4_ner",
+          "system_prompt": "List all named entities in the format: TYPE: value",
+          "temperature": 0.0,
+          "accuracy": {
+            "qwen2.5-coder-1.5b": 0.3684210526315789
+          },
+          "avg_output_tokens": {
+            "qwen2.5-coder-1.5b": 24.473684210526315
+          },
+          "avg_latency_ms": {
+            "qwen2.5-coder-1.5b": 155.61963382520173
+          }
+        },
+        {
+          "name": "elite_g0_7_ner",
+          "system_prompt": "Extract: Label as PERSON, ORG, LOC, or DATE. No preamble.",
+          "temperature": 0.2,
+          "accuracy": {
+            "qwen2.5-coder-1.5b": 0.15789473684210525
+          },
+          "avg_output_tokens": {
+            "qwen2.5-coder-1.5b": 3.0
+          },
+          "avg_latency_ms": {
+            "qwen2.5-coder-1.5b": 32.62839819255628
+          }
+        },
+        {
+          "name": "gen0_c2_ner",
+          "system_prompt": "Extract: Label as PERSON, ORG, LOC, or DATE. Output only the answer. No explanation. Format as TYPE: value, one per line.",
+          "temperature": 0.0,
+          "accuracy": {
+            "qwen2.5-coder-1.5b": 0.15789473684210525
+          },
+          "avg_output_tokens": {
+            "qwen2.5-coder-1.5b": 15.842105263157896
+          },
+          "avg_latency_ms": {
+            "qwen2.5-coder-1.5b": 106.18438218769275
+          }
+        },
+        {
+          "name": "gen0_c3_ner",
+          "system_prompt": "Extract named entities with labels: person, org, loc, date. Extract: Label as PERSON, ORG, LOC, or DATE. No preamble.",
+          "temperature": 0.2,
+          "accuracy": {
+            "qwen2.5-coder-1.5b": 0.2631578947368421
+          },
+          "avg_output_tokens": {
+            "qwen2.5-coder-1.5b": 18.789473684210527
+          },
+          "avg_latency_ms": {
+            "qwen2.5-coder-1.5b": 123.83542562785901
+          }
+        },
+        {
+          "name": "gen0_c4_ner",
+          "system_prompt": "Output only the answer. Extract: Label as PERSON, ORG, LOC, or DATE. No explanation. No preamble.",
+          "temperature": 0.2,
+          "accuracy": {
+            "qwen2.5-coder-1.5b": 0.2631578947368421
+          },
+          "avg_output_tokens": {
+            "qwen2.5-coder-1.5b": 1.0
+          },
+          "avg_latency_ms": {
+            "qwen2.5-coder-1.5b": 21.00068644473427
+          }
+        },
+        {
+          "name": "gen0_m5_ner",
+          "system_prompt": "Entities: Label as PERSON, ORG, LOC, or DATE. No preamble.",
+          "temperature": 0.2,
+          "accuracy": {
+            "qwen2.5-coder-1.5b": 0.21052631578947367
+          },
+          "avg_output_tokens": {
+            "qwen2.5-coder-1.5b": 9.31578947368421
+          },
+          "avg_latency_ms": {
+            "qwen2.5-coder-1.5b": 68.97748144049393
+          }
+        },
+        {
+          "name": "gen0_m6_ner",
+          "system_prompt": "List all named entities in the format: TYPE: value. No preamble. No commentary.",
+          "temperature": 0.0,
+          "accuracy": {
+            "qwen2.5-coder-1.5b": 0.2631578947368421
+          },
+          "avg_output_tokens": {
+            "qwen2.5-coder-1.5b": 26.894736842105264
+          },
+          "avg_latency_ms": {
+            "qwen2.5-coder-1.5b": 170.43906763980263
+          }
+        },
+        {
+          "name": "fresh_gen0_ner",
+          "system_prompt": "Entities: Label as PERSON, ORG, LOC, or DATE. Keep under 15 words.. No preamble.",
+          "temperature": 0.0,
+          "accuracy": {
+            "qwen2.5-coder-1.5b": 0.21052631578947367
+          },
+          "avg_output_tokens": {
+            "qwen2.5-coder-1.5b": 6.315789473684211
+          },
+          "avg_latency_ms": {
+            "qwen2.5-coder-1.5b": 51.895969792416224
+          }
+        }
+      ],
+      "pareto_front_sizes": {
+        "qwen2.5-coder-1.5b": 2
+      },
+      "per_model_best": {
+        "qwen2.5-coder-1.5b": 0.3684210526315789
+      }
+    },
+    {
+      "generation": 3,
+      "population": [
+        {
+          "name": "elite_g1_0_ner",
+          "system_prompt": "List all named entities in the format: TYPE: value",
+          "temperature": 0.0,
+          "accuracy": {
+            "qwen2.5-coder-1.5b": 0.3684210526315789
+          },
+          "avg_output_tokens": {
+            "qwen2.5-coder-1.5b": 24.473684210526315
+          },
+          "avg_latency_ms": {
+            "qwen2.5-coder-1.5b": 156.31723403930664
+          }
+        },
+        {
+          "name": "elite_g1_4_ner",
+          "system_prompt": "Output only the answer. Extract: Label as PERSON, ORG, LOC, or DATE. No explanation. No preamble.",
+          "temperature": 0.2,
+          "accuracy": {
+            "qwen2.5-coder-1.5b": 0.3157894736842105
+          },
+          "avg_output_tokens": {
+            "qwen2.5-coder-1.5b": 1.0
+          },
+          "avg_latency_ms": {
+            "qwen2.5-coder-1.5b": 20.918406938251696
+          }
+        },
+        {
+          "name": "gen1_c2_ner",
+          "system_prompt": "Output only the answer. List all named entities in the format: TYPE: value. Extract: Label as PERSON, ORG, LOC, or DATE. No explanation.",
+          "temperature": 0.0,
+          "accuracy": {
+            "qwen2.5-coder-1.5b": 0.15789473684210525
+          },
+          "avg_output_tokens": {
+            "qwen2.5-coder-1.5b": 4.842105263157895
+          },
+          "avg_latency_ms": {
+            "qwen2.5-coder-1.5b": 43.883511894627624
+          }
+        },
+        {
+          "name": "gen1_c3_ner",
+          "system_prompt": "List all named entities in the format: TYPE: value. Extract: Label as PERSON, ORG, LOC, or DATE. No preamble.",
+          "temperature": 0.1,
+          "accuracy": {
+            "qwen2.5-coder-1.5b": 0.21052631578947367
+          },
+          "avg_output_tokens": {
+            "qwen2.5-coder-1.5b": 6.842105263157895
+          },
+          "avg_latency_ms": {
+            "qwen2.5-coder-1.5b": 55.16222903603002
+          }
+        },
+        {
+          "name": "gen1_c4_ner",
+          "system_prompt": "Extract: Label as PERSON, ORG, LOC, or DATE. List all named entities in the format: TYPE: value.",
+          "temperature": 0.1,
+          "accuracy": {
+            "qwen2.5-coder-1.5b": 0.3684210526315789
+          },
+          "avg_output_tokens": {
+            "qwen2.5-coder-1.5b": 10.368421052631579
+          },
+          "avg_latency_ms": {
+            "qwen2.5-coder-1.5b": 75.73155352943822
+          }
+        },
+        {
+          "name": "gen1_m5_ner",
+          "system_prompt": "Extract: Label as PERSON, ORG, LOC, or DATE. No preamble.",
+          "temperature": 0.2,
+          "accuracy": {
+            "qwen2.5-coder-1.5b": 0.10526315789473684
+          },
+          "avg_output_tokens": {
+            "qwen2.5-coder-1.5b": 2.9473684210526314
+          },
+          "avg_latency_ms": {
+            "qwen2.5-coder-1.5b": 33.42751452797338
+          }
+        },
+        {
+          "name": "gen1_m6_ner",
+          "system_prompt": "Output only the answer. Extract: Label as PERSON, ORG, LOC, or DATE. No explanation. No preamble.",
+          "temperature": 0.2,
+          "accuracy": {
+            "qwen2.5-coder-1.5b": 0.2631578947368421
+          },
+          "avg_output_tokens": {
+            "qwen2.5-coder-1.5b": 1.0
+          },
+          "avg_latency_ms": {
+            "qwen2.5-coder-1.5b": 20.52535508808337
+          }
+        },
+        {
+          "name": "fresh_gen1_ner",
+          "system_prompt": "Entities: Extract all named entities. Output only the answer.",
+          "temperature": 0.2,
+          "accuracy": {
+            "qwen2.5-coder-1.5b": 0.3157894736842105
+          },
+          "avg_output_tokens": {
+            "qwen2.5-coder-1.5b": 7.315789473684211
+          },
+          "avg_latency_ms": {
+            "qwen2.5-coder-1.5b": 61.3604093852796
+          }
+        }
+      ],
+      "pareto_front_sizes": {
+        "qwen2.5-coder-1.5b": 3
+      },
+      "per_model_best": {
+        "qwen2.5-coder-1.5b": 0.3684210526315789
+      }
+    }
+  ]
+}

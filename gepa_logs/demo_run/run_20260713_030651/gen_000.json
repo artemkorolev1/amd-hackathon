@@ -1,0 +1,1247 @@
+{
+  "generation": 0,
+  "timestamp": 1783930011.4075584,
+  "timestamp_iso": "2026-07-13T03:06:51",
+  "population_size": 44,
+  "cells": [
+    {
+      "task_id": "T01",
+      "model_key": "qwen2.5-1.5b",
+      "system_prompt": "Fact:",
+      "decoding": {
+        "temperature": 0.0,
+        "max_tokens": 64,
+        "top_p": 1.0,
+        "top_k": 40,
+        "min_p": 0.0,
+        "repeat_penalty": 1.0,
+        "seed": null
+      },
+      "aggregation": "single",
+      "name": "seed_factual_qwen2.5-1.5b_0",
+      "parent": "",
+      "generation": 0,
+      "created_at": 1783930011.4065285,
+      "metadata": {
+        "accuracy": 0.1,
+        "avg_output_tokens": 40,
+        "avg_latency_ms": 3000,
+        "format_compliance": 0.7,
+        "correct": 1,
+        "total": 19,
+        "category": "factual"
+      }
+    },
+    {
+      "task_id": "T01",
+      "model_key": "qwen2.5-1.5b",
+      "system_prompt": "Answer:",
+      "decoding": {
+        "temperature": 0.0,
+        "max_tokens": 64,
+        "top_p": 1.0,
+        "top_k": 40,
+        "min_p": 0.0,
+        "repeat_penalty": 1.0,
+        "seed": null
+      },
+      "aggregation": "single",
+      "name": "seed_factual_qwen2.5-1.5b_1",
+      "parent": "",
+      "generation": 0,
+      "created_at": 1783930011.4065363,
+      "metadata": {
+        "accuracy": 0.15,
+        "avg_output_tokens": 50,
+        "avg_latency_ms": 3500,
+        "format_compliance": 0.7999999999999999,
+        "correct": 2,
+        "total": 19,
+        "category": "factual"
+      }
+    },
+    {
+      "task_id": "T01",
+      "model_key": "qwen2.5-1.5b",
+      "system_prompt": "Answer directly.",
+      "decoding": {
+        "temperature": 0.0,
+        "max_tokens": 64,
+        "top_p": 1.0,
+        "top_k": 40,
+        "min_p": 0.0,
+        "repeat_penalty": 1.0,
+        "seed": null
+      },
+      "aggregation": "single",
+      "name": "seed_factual_qwen2.5-1.5b_2",
+      "parent": "",
+      "generation": 0,
+      "created_at": 1783930011.4065409,
+      "metadata": {
+        "accuracy": 0.3,
+        "avg_output_tokens": 60,
+        "avg_latency_ms": 4000,
+        "format_compliance": 0.8999999999999999,
+        "correct": 5,
+        "total": 19,
+        "category": "factual"
+      }
+    },
+    {
+      "task_id": "T01",
+      "model_key": "qwen2.5-1.5b",
+      "system_prompt": "Keep under 5 words. Keep under 15 words.",
+      "decoding": {
+        "temperature": 0.0,
+        "max_tokens": 64,
+        "top_p": 1.0,
+        "top_k": 40,
+        "min_p": 0.0,
+        "repeat_penalty": 1.0,
+        "seed": null
+      },
+      "aggregation": "single",
+      "name": "fresh_T01_qwen2.5-1.5b",
+      "parent": "",
+      "generation": 0,
+      "created_at": 1783930011.4066064,
+      "metadata": {
+        "accuracy": 0.44999999999999996,
+        "avg_output_tokens": 70,
+        "avg_latency_ms": 4500,
+        "format_compliance": 0.7,
+        "correct": 8,
+        "total": 19,
+        "category": "factual"
+      }
+    },
+    {
+      "task_id": "T01",
+      "model_key": "qwen2.5-1.5b",
+      "system_prompt": "Fact: Answer the question directly.. No preamble. Don't hedge.. No preamble.",
+      "decoding": {
+        "temperature": 0.0,
+        "max_tokens": 64,
+        "top_p": 1.0,
+        "top_k": 40,
+        "min_p": 0.0,
+        "repeat_penalty": 1.0,
+        "seed": null
+      },
+      "aggregation": "single",
+      "name": "fresh_T01_qwen2.5-1.5b",
+      "parent": "",
+      "generation": 0,
+      "created_at": 1783930011.4066422,
+      "metadata": {
+        "accuracy": 0.6,
+        "avg_output_tokens": 80,
+        "avg_latency_ms": 3000,
+        "format_compliance": 0.7999999999999999,
+        "correct": 11,
+        "total": 19,
+        "category": "factual"
+      }
+    },
+    {
+      "task_id": "T01",
+      "model_key": "smollm2-1.7b",
+      "system_prompt": "Fact:",
+      "decoding": {
+        "temperature": 0.0,
+        "max_tokens": 64,
+        "top_p": 1.0,
+        "top_k": 40,
+        "min_p": 0.0,
+        "repeat_penalty": 1.0,
+        "seed": null
+      },
+      "aggregation": "single",
+      "name": "seed_factual_smollm2-1.7b_0",
+      "parent": "",
+      "generation": 0,
+      "created_at": 1783930011.406647,
+      "metadata": {
+        "accuracy": 0.1,
+        "avg_output_tokens": 90,
+        "avg_latency_ms": 3500,
+        "format_compliance": 0.8999999999999999,
+        "correct": 1,
+        "total": 19,
+        "category": "factual"
+      }
+    },
+    {
+      "task_id": "T01",
+      "model_key": "smollm2-1.7b",
+      "system_prompt": "Answer:",
+      "decoding": {
+        "temperature": 0.0,
+        "max_tokens": 64,
+        "top_p": 1.0,
+        "top_k": 40,
+        "min_p": 0.0,
+        "repeat_penalty": 1.0,
+        "seed": null
+      },
+      "aggregation": "single",
+      "name": "seed_factual_smollm2-1.7b_1",
+      "parent": "",
+      "generation": 0,
+      "created_at": 1783930011.40665,
+      "metadata": {
+        "accuracy": 0.15,
+        "avg_output_tokens": 100,
+        "avg_latency_ms": 4000,
+        "format_compliance": 0.7,
+        "correct": 2,
+        "total": 19,
+        "category": "factual"
+      }
+    },
+    {
+      "task_id": "T01",
+      "model_key": "smollm2-1.7b",
+      "system_prompt": "Answer directly.",
+      "decoding": {
+        "temperature": 0.0,
+        "max_tokens": 64,
+        "top_p": 1.0,
+        "top_k": 40,
+        "min_p": 0.0,
+        "repeat_penalty": 1.0,
+        "seed": null
+      },
+      "aggregation": "single",
+      "name": "seed_factual_smollm2-1.7b_2",
+      "parent": "",
+      "generation": 0,
+      "created_at": 1783930011.4066553,
+      "metadata": {
+        "accuracy": 0.3,
+        "avg_output_tokens": 40,
+        "avg_latency_ms": 4500,
+        "format_compliance": 0.7999999999999999,
+        "correct": 5,
+        "total": 19,
+        "category": "factual"
+      }
+    },
+    {
+      "task_id": "T01",
+      "model_key": "smollm2-1.7b",
+      "system_prompt": "",
+      "decoding": {
+        "temperature": 0.2,
+        "max_tokens": 64,
+        "top_p": 1.0,
+        "top_k": 40,
+        "min_p": 0.0,
+        "repeat_penalty": 1.0,
+        "seed": null
+      },
+      "aggregation": "single",
+      "name": "fresh_T01_smollm2-1.7b",
+      "parent": "",
+      "generation": 0,
+      "created_at": 1783930011.4066634,
+      "metadata": {
+        "accuracy": 0.44999999999999996,
+        "avg_output_tokens": 50,
+        "avg_latency_ms": 3000,
+        "format_compliance": 0.8999999999999999,
+        "correct": 8,
+        "total": 19,
+        "category": "factual"
+      }
+    },
+    {
+      "task_id": "T01",
+      "model_key": "smollm2-1.7b",
+      "system_prompt": "Use exact names, dates, and numbers.. Be precise.",
+      "decoding": {
+        "temperature": 0.1,
+        "max_tokens": 64,
+        "top_p": 1.0,
+        "top_k": 40,
+        "min_p": 0.0,
+        "repeat_penalty": 1.0,
+        "seed": null
+      },
+      "aggregation": "single",
+      "name": "fresh_T01_smollm2-1.7b",
+      "parent": "",
+      "generation": 0,
+      "created_at": 1783930011.4066741,
+      "metadata": {
+        "accuracy": 0.6,
+        "avg_output_tokens": 60,
+        "avg_latency_ms": 3500,
+        "format_compliance": 0.7,
+        "correct": 11,
+        "total": 19,
+        "category": "factual"
+      }
+    },
+    {
+      "task_id": "T02",
+      "model_key": "qwen2.5-1.5b",
+      "system_prompt": "Math:",
+      "decoding": {
+        "temperature": 0.0,
+        "max_tokens": 64,
+        "top_p": 1.0,
+        "top_k": 40,
+        "min_p": 0.0,
+        "repeat_penalty": 1.0,
+        "seed": null
+      },
+      "aggregation": "single",
+      "name": "seed_math_qwen2.5-1.5b_0",
+      "parent": "",
+      "generation": 0,
+      "created_at": 1783930011.406678,
+      "metadata": {
+        "accuracy": 0.1,
+        "avg_output_tokens": 70,
+        "avg_latency_ms": 4000,
+        "format_compliance": 0.7999999999999999,
+        "correct": 1,
+        "total": 19,
+        "category": "math"
+      }
+    },
+    {
+      "task_id": "T02",
+      "model_key": "qwen2.5-1.5b",
+      "system_prompt": "Solve step by step.",
+      "decoding": {
+        "temperature": 0.0,
+        "max_tokens": 64,
+        "top_p": 1.0,
+        "top_k": 40,
+        "min_p": 0.0,
+        "repeat_penalty": 1.0,
+        "seed": null
+      },
+      "aggregation": "single",
+      "name": "seed_math_qwen2.5-1.5b_1",
+      "parent": "",
+      "generation": 0,
+      "created_at": 1783930011.4066813,
+      "metadata": {
+        "accuracy": 0.15,
+        "avg_output_tokens": 80,
+        "avg_latency_ms": 4500,
+        "format_compliance": 0.8999999999999999,
+        "correct": 2,
+        "total": 19,
+        "category": "math"
+      }
+    },
+    {
+      "task_id": "T02",
+      "model_key": "qwen2.5-1.5b",
+      "system_prompt": "Calculate:",
+      "decoding": {
+        "temperature": 0.0,
+        "max_tokens": 64,
+        "top_p": 1.0,
+        "top_k": 40,
+        "min_p": 0.0,
+        "repeat_penalty": 1.0,
+        "seed": null
+      },
+      "aggregation": "single",
+      "name": "seed_math_qwen2.5-1.5b_2",
+      "parent": "",
+      "generation": 0,
+      "created_at": 1783930011.406684,
+      "metadata": {
+        "accuracy": 0.3,
+        "avg_output_tokens": 90,
+        "avg_latency_ms": 3000,
+        "format_compliance": 0.7,
+        "correct": 5,
+        "total": 19,
+        "category": "math"
+      }
+    },
+    {
+      "task_id": "T02",
+      "model_key": "qwen2.5-1.5b",
+      "system_prompt": "Calculate:",
+      "decoding": {
+        "temperature": 0.2,
+        "max_tokens": 64,
+        "top_p": 1.0,
+        "top_k": 40,
+        "min_p": 0.0,
+        "repeat_penalty": 1.0,
+        "seed": null
+      },
+      "aggregation": "single",
+      "name": "fresh_T02_qwen2.5-1.5b",
+      "parent": "",
+      "generation": 0,
+      "created_at": 1783930011.406691,
+      "metadata": {
+        "accuracy": 0.44999999999999996,
+        "avg_output_tokens": 100,
+        "avg_latency_ms": 3500,
+        "format_compliance": 0.7999999999999999,
+        "correct": 8,
+        "total": 19,
+        "category": "math"
+      }
+    },
+    {
+      "task_id": "T02",
+      "model_key": "qwen2.5-1.5b",
+      "system_prompt": "Answer: Show your working briefly.",
+      "decoding": {
+        "temperature": 0.0,
+        "max_tokens": 64,
+        "top_p": 1.0,
+        "top_k": 40,
+        "min_p": 0.0,
+        "repeat_penalty": 1.0,
+        "seed": null
+      },
+      "aggregation": "single",
+      "name": "fresh_T02_qwen2.5-1.5b",
+      "parent": "",
+      "generation": 0,
+      "created_at": 1783930011.4066997,
+      "metadata": {
+        "accuracy": 0.6,
+        "avg_output_tokens": 40,
+        "avg_latency_ms": 4000,
+        "format_compliance": 0.8999999999999999,
+        "correct": 11,
+        "total": 19,
+        "category": "math"
+      }
+    },
+    {
+      "task_id": "T02",
+      "model_key": "smollm2-1.7b",
+      "system_prompt": "Math:",
+      "decoding": {
+        "temperature": 0.0,
+        "max_tokens": 64,
+        "top_p": 1.0,
+        "top_k": 40,
+        "min_p": 0.0,
+        "repeat_penalty": 1.0,
+        "seed": null
+      },
+      "aggregation": "single",
+      "name": "seed_math_smollm2-1.7b_0",
+      "parent": "",
+      "generation": 0,
+      "created_at": 1783930011.4067025,
+      "metadata": {
+        "accuracy": 0.1,
+        "avg_output_tokens": 50,
+        "avg_latency_ms": 4500,
+        "format_compliance": 0.7,
+        "correct": 1,
+        "total": 19,
+        "category": "math"
+      }
+    },
+    {
+      "task_id": "T02",
+      "model_key": "smollm2-1.7b",
+      "system_prompt": "Solve step by step.",
+      "decoding": {
+        "temperature": 0.0,
+        "max_tokens": 64,
+        "top_p": 1.0,
+        "top_k": 40,
+        "min_p": 0.0,
+        "repeat_penalty": 1.0,
+        "seed": null
+      },
+      "aggregation": "single",
+      "name": "seed_math_smollm2-1.7b_1",
+      "parent": "",
+      "generation": 0,
+      "created_at": 1783930011.4067051,
+      "metadata": {
+        "accuracy": 0.15,
+        "avg_output_tokens": 60,
+        "avg_latency_ms": 3000,
+        "format_compliance": 0.7999999999999999,
+        "correct": 2,
+        "total": 19,
+        "category": "math"
+      }
+    },
+    {
+      "task_id": "T02",
+      "model_key": "smollm2-1.7b",
+      "system_prompt": "Calculate:",
+      "decoding": {
+        "temperature": 0.0,
+        "max_tokens": 64,
+        "top_p": 1.0,
+        "top_k": 40,
+        "min_p": 0.0,
+        "repeat_penalty": 1.0,
+        "seed": null
+      },
+      "aggregation": "single",
+      "name": "seed_math_smollm2-1.7b_2",
+      "parent": "",
+      "generation": 0,
+      "created_at": 1783930011.4067078,
+      "metadata": {
+        "accuracy": 0.3,
+        "avg_output_tokens": 70,
+        "avg_latency_ms": 3500,
+        "format_compliance": 0.8999999999999999,
+        "correct": 5,
+        "total": 19,
+        "category": "math"
+      }
+    },
+    {
+      "task_id": "T02",
+      "model_key": "smollm2-1.7b",
+      "system_prompt": "Calculate:",
+      "decoding": {
+        "temperature": 0.1,
+        "max_tokens": 64,
+        "top_p": 1.0,
+        "top_k": 40,
+        "min_p": 0.0,
+        "repeat_penalty": 1.0,
+        "seed": null
+      },
+      "aggregation": "single",
+      "name": "fresh_T02_smollm2-1.7b",
+      "parent": "",
+      "generation": 0,
+      "created_at": 1783930011.4067135,
+      "metadata": {
+        "accuracy": 0.44999999999999996,
+        "avg_output_tokens": 80,
+        "avg_latency_ms": 4000,
+        "format_compliance": 0.7,
+        "correct": 8,
+        "total": 19,
+        "category": "math"
+      }
+    },
+    {
+      "task_id": "T02",
+      "model_key": "smollm2-1.7b",
+      "system_prompt": "Show your working briefly. Keep under 5 words.. No preamble.",
+      "decoding": {
+        "temperature": 0.2,
+        "max_tokens": 64,
+        "top_p": 1.0,
+        "top_k": 40,
+        "min_p": 0.0,
+        "repeat_penalty": 1.0,
+        "seed": null
+      },
+      "aggregation": "single",
+      "name": "fresh_T02_smollm2-1.7b",
+      "parent": "",
+      "generation": 0,
+      "created_at": 1783930011.4067235,
+      "metadata": {
+        "accuracy": 0.6,
+        "avg_output_tokens": 90,
+        "avg_latency_ms": 4500,
+        "format_compliance": 0.7999999999999999,
+        "correct": 11,
+        "total": 19,
+        "category": "math"
+      }
+    },
+    {
+      "task_id": "T03",
+      "model_key": "qwen2.5-1.5b",
+      "system_prompt": "Sentiment:",
+      "decoding": {
+        "temperature": 0.0,
+        "max_tokens": 64,
+        "top_p": 1.0,
+        "top_k": 40,
+        "min_p": 0.0,
+        "repeat_penalty": 1.0,
+        "seed": null
+      },
+      "aggregation": "single",
+      "name": "seed_sentiment_qwen2.5-1.5b_0",
+      "parent": "",
+      "generation": 0,
+      "created_at": 1783930011.4067268,
+      "metadata": {
+        "accuracy": 0.1,
+        "avg_output_tokens": 100,
+        "avg_latency_ms": 3000,
+        "format_compliance": 0.8999999999999999,
+        "correct": 1,
+        "total": 19,
+        "category": "sentiment"
+      }
+    },
+    {
+      "task_id": "T03",
+      "model_key": "qwen2.5-1.5b",
+      "system_prompt": "One word: positive, negative, neutral, or mixed.",
+      "decoding": {
+        "temperature": 0.0,
+        "max_tokens": 64,
+        "top_p": 1.0,
+        "top_k": 40,
+        "min_p": 0.0,
+        "repeat_penalty": 1.0,
+        "seed": null
+      },
+      "aggregation": "single",
+      "name": "seed_sentiment_qwen2.5-1.5b_1",
+      "parent": "",
+      "generation": 0,
+      "created_at": 1783930011.4067292,
+      "metadata": {
+        "accuracy": 0.15,
+        "avg_output_tokens": 40,
+        "avg_latency_ms": 3500,
+        "format_compliance": 0.7,
+        "correct": 2,
+        "total": 19,
+        "category": "sentiment"
+      }
+    },
+    {
+      "task_id": "T03",
+      "model_key": "qwen2.5-1.5b",
+      "system_prompt": "Sentiment: Classify as positive, negative, neutral, or mixed.. Watch for sarcasm and hedging.",
+      "decoding": {
+        "temperature": 0.2,
+        "max_tokens": 64,
+        "top_p": 1.0,
+        "top_k": 40,
+        "min_p": 0.0,
+        "repeat_penalty": 1.0,
+        "seed": null
+      },
+      "aggregation": "single",
+      "name": "fresh_T03_qwen2.5-1.5b",
+      "parent": "",
+      "generation": 0,
+      "created_at": 1783930011.4067373,
+      "metadata": {
+        "accuracy": 0.3,
+        "avg_output_tokens": 50,
+        "avg_latency_ms": 4000,
+        "format_compliance": 0.7999999999999999,
+        "correct": 5,
+        "total": 19,
+        "category": "sentiment"
+      }
+    },
+    {
+      "task_id": "T03",
+      "model_key": "qwen2.5-1.5b",
+      "system_prompt": "Sentiment: Output exactly one word.. Watch for sarcasm and hedging. Keep under 15 words.. No explanation.",
+      "decoding": {
+        "temperature": 0.0,
+        "max_tokens": 64,
+        "top_p": 1.0,
+        "top_k": 40,
+        "min_p": 0.0,
+        "repeat_penalty": 1.0,
+        "seed": null
+      },
+      "aggregation": "single",
+      "name": "fresh_T03_qwen2.5-1.5b",
+      "parent": "",
+      "generation": 0,
+      "created_at": 1783930011.4067466,
+      "metadata": {
+        "accuracy": 0.44999999999999996,
+        "avg_output_tokens": 60,
+        "avg_latency_ms": 4500,
+        "format_compliance": 0.8999999999999999,
+        "correct": 8,
+        "total": 19,
+        "category": "sentiment"
+      }
+    },
+    {
+      "task_id": "T03",
+      "model_key": "smollm2-1.7b",
+      "system_prompt": "Sentiment:",
+      "decoding": {
+        "temperature": 0.0,
+        "max_tokens": 64,
+        "top_p": 1.0,
+        "top_k": 40,
+        "min_p": 0.0,
+        "repeat_penalty": 1.0,
+        "seed": null
+      },
+      "aggregation": "single",
+      "name": "seed_sentiment_smollm2-1.7b_0",
+      "parent": "",
+      "generation": 0,
+      "created_at": 1783930011.4067516,
+      "metadata": {
+        "accuracy": 0.6,
+        "avg_output_tokens": 70,
+        "avg_latency_ms": 3000,
+        "format_compliance": 0.7,
+        "correct": 11,
+        "total": 19,
+        "category": "sentiment"
+      }
+    },
+    {
+      "task_id": "T03",
+      "model_key": "smollm2-1.7b",
+      "system_prompt": "One word: positive, negative, neutral, or mixed.",
+      "decoding": {
+        "temperature": 0.0,
+        "max_tokens": 64,
+        "top_p": 1.0,
+        "top_k": 40,
+        "min_p": 0.0,
+        "repeat_penalty": 1.0,
+        "seed": null
+      },
+      "aggregation": "single",
+      "name": "seed_sentiment_smollm2-1.7b_1",
+      "parent": "",
+      "generation": 0,
+      "created_at": 1783930011.406754,
+      "metadata": {
+        "accuracy": 0.1,
+        "avg_output_tokens": 80,
+        "avg_latency_ms": 3500,
+        "format_compliance": 0.7999999999999999,
+        "correct": 1,
+        "total": 19,
+        "category": "sentiment"
+      }
+    },
+    {
+      "task_id": "T03",
+      "model_key": "smollm2-1.7b",
+      "system_prompt": "Classify: No explanation.",
+      "decoding": {
+        "temperature": 0.0,
+        "max_tokens": 64,
+        "top_p": 1.0,
+        "top_k": 40,
+        "min_p": 0.0,
+        "repeat_penalty": 1.0,
+        "seed": null
+      },
+      "aggregation": "single",
+      "name": "fresh_T03_smollm2-1.7b",
+      "parent": "",
+      "generation": 0,
+      "created_at": 1783930011.4067616,
+      "metadata": {
+        "accuracy": 0.15,
+        "avg_output_tokens": 90,
+        "avg_latency_ms": 4000,
+        "format_compliance": 0.8999999999999999,
+        "correct": 2,
+        "total": 19,
+        "category": "sentiment"
+      }
+    },
+    {
+      "task_id": "T03",
+      "model_key": "smollm2-1.7b",
+      "system_prompt": "Watch for sarcasm and hedging. Be specific.",
+      "decoding": {
+        "temperature": 0.0,
+        "max_tokens": 64,
+        "top_p": 1.0,
+        "top_k": 40,
+        "min_p": 0.0,
+        "repeat_penalty": 1.0,
+        "seed": null
+      },
+      "aggregation": "single",
+      "name": "fresh_T03_smollm2-1.7b",
+      "parent": "",
+      "generation": 0,
+      "created_at": 1783930011.4067755,
+      "metadata": {
+        "accuracy": 0.3,
+        "avg_output_tokens": 100,
+        "avg_latency_ms": 4500,
+        "format_compliance": 0.7,
+        "correct": 5,
+        "total": 19,
+        "category": "sentiment"
+      }
+    },
+    {
+      "task_id": "T04",
+      "model_key": "qwen2.5-1.5b",
+      "system_prompt": "Summary:",
+      "decoding": {
+        "temperature": 0.0,
+        "max_tokens": 64,
+        "top_p": 1.0,
+        "top_k": 40,
+        "min_p": 0.0,
+        "repeat_penalty": 1.0,
+        "seed": null
+      },
+      "aggregation": "single",
+      "name": "seed_summarization_qwen2.5-1.5b_0",
+      "parent": "",
+      "generation": 0,
+      "created_at": 1783930011.4067798,
+      "metadata": {
+        "accuracy": 0.44999999999999996,
+        "avg_output_tokens": 40,
+        "avg_latency_ms": 3000,
+        "format_compliance": 0.7999999999999999,
+        "correct": 8,
+        "total": 19,
+        "category": "summarization"
+      }
+    },
+    {
+      "task_id": "T04",
+      "model_key": "qwen2.5-1.5b",
+      "system_prompt": "Summarize in 2 sentences.",
+      "decoding": {
+        "temperature": 0.0,
+        "max_tokens": 64,
+        "top_p": 1.0,
+        "top_k": 40,
+        "min_p": 0.0,
+        "repeat_penalty": 1.0,
+        "seed": null
+      },
+      "aggregation": "single",
+      "name": "seed_summarization_qwen2.5-1.5b_1",
+      "parent": "",
+      "generation": 0,
+      "created_at": 1783930011.4067833,
+      "metadata": {
+        "accuracy": 0.6,
+        "avg_output_tokens": 50,
+        "avg_latency_ms": 3500,
+        "format_compliance": 0.8999999999999999,
+        "correct": 11,
+        "total": 19,
+        "category": "summarization"
+      }
+    },
+    {
+      "task_id": "T04",
+      "model_key": "qwen2.5-1.5b",
+      "system_prompt": "TL;DR: Use exact names and numbers. Keep under 5 words.. No explanation.",
+      "decoding": {
+        "temperature": 0.2,
+        "max_tokens": 64,
+        "top_p": 1.0,
+        "top_k": 40,
+        "min_p": 0.0,
+        "repeat_penalty": 1.0,
+        "seed": null
+      },
+      "aggregation": "single",
+      "name": "fresh_T04_qwen2.5-1.5b",
+      "parent": "",
+      "generation": 0,
+      "created_at": 1783930011.406794,
+      "metadata": {
+        "accuracy": 0.1,
+        "avg_output_tokens": 60,
+        "avg_latency_ms": 4000,
+        "format_compliance": 0.7,
+        "correct": 1,
+        "total": 19,
+        "category": "summarization"
+      }
+    },
+    {
+      "task_id": "T04",
+      "model_key": "qwen2.5-1.5b",
+      "system_prompt": "Summary: Use exact names and numbers.. Summarize in 1-2 sentences. Don't hedge.",
+      "decoding": {
+        "temperature": 0.1,
+        "max_tokens": 64,
+        "top_p": 1.0,
+        "top_k": 40,
+        "min_p": 0.0,
+        "repeat_penalty": 1.0,
+        "seed": null
+      },
+      "aggregation": "single",
+      "name": "fresh_T04_qwen2.5-1.5b",
+      "parent": "",
+      "generation": 0,
+      "created_at": 1783930011.4068031,
+      "metadata": {
+        "accuracy": 0.15,
+        "avg_output_tokens": 70,
+        "avg_latency_ms": 4500,
+        "format_compliance": 0.7999999999999999,
+        "correct": 2,
+        "total": 19,
+        "category": "summarization"
+      }
+    },
+    {
+      "task_id": "T04",
+      "model_key": "smollm2-1.7b",
+      "system_prompt": "Summary:",
+      "decoding": {
+        "temperature": 0.0,
+        "max_tokens": 64,
+        "top_p": 1.0,
+        "top_k": 40,
+        "min_p": 0.0,
+        "repeat_penalty": 1.0,
+        "seed": null
+      },
+      "aggregation": "single",
+      "name": "seed_summarization_smollm2-1.7b_0",
+      "parent": "",
+      "generation": 0,
+      "created_at": 1783930011.4068058,
+      "metadata": {
+        "accuracy": 0.3,
+        "avg_output_tokens": 80,
+        "avg_latency_ms": 3000,
+        "format_compliance": 0.8999999999999999,
+        "correct": 5,
+        "total": 19,
+        "category": "summarization"
+      }
+    },
+    {
+      "task_id": "T04",
+      "model_key": "smollm2-1.7b",
+      "system_prompt": "Summarize in 2 sentences.",
+      "decoding": {
+        "temperature": 0.0,
+        "max_tokens": 64,
+        "top_p": 1.0,
+        "top_k": 40,
+        "min_p": 0.0,
+        "repeat_penalty": 1.0,
+        "seed": null
+      },
+      "aggregation": "single",
+      "name": "seed_summarization_smollm2-1.7b_1",
+      "parent": "",
+      "generation": 0,
+      "created_at": 1783930011.4068089,
+      "metadata": {
+        "accuracy": 0.44999999999999996,
+        "avg_output_tokens": 90,
+        "avg_latency_ms": 3500,
+        "format_compliance": 0.7,
+        "correct": 8,
+        "total": 19,
+        "category": "summarization"
+      }
+    },
+    {
+      "task_id": "T04",
+      "model_key": "smollm2-1.7b",
+      "system_prompt": "Summary: Capture the core event.. Summarize in 1-2 sentences.",
+      "decoding": {
+        "temperature": 0.0,
+        "max_tokens": 64,
+        "top_p": 1.0,
+        "top_k": 40,
+        "min_p": 0.0,
+        "repeat_penalty": 1.0,
+        "seed": null
+      },
+      "aggregation": "single",
+      "name": "fresh_T04_smollm2-1.7b",
+      "parent": "",
+      "generation": 0,
+      "created_at": 1783930011.4068165,
+      "metadata": {
+        "accuracy": 0.6,
+        "avg_output_tokens": 100,
+        "avg_latency_ms": 4000,
+        "format_compliance": 0.7999999999999999,
+        "correct": 11,
+        "total": 19,
+        "category": "summarization"
+      }
+    },
+    {
+      "task_id": "T04",
+      "model_key": "smollm2-1.7b",
+      "system_prompt": "TL;DR: Capture the core event.",
+      "decoding": {
+        "temperature": 0.0,
+        "max_tokens": 64,
+        "top_p": 1.0,
+        "top_k": 40,
+        "min_p": 0.0,
+        "repeat_penalty": 1.0,
+        "seed": null
+      },
+      "aggregation": "single",
+      "name": "fresh_T04_smollm2-1.7b",
+      "parent": "",
+      "generation": 0,
+      "created_at": 1783930011.4068234,
+      "metadata": {
+        "accuracy": 0.1,
+        "avg_output_tokens": 40,
+        "avg_latency_ms": 4500,
+        "format_compliance": 0.8999999999999999,
+        "correct": 1,
+        "total": 19,
+        "category": "summarization"
+      }
+    },
+    {
+      "task_id": "T05",
+      "model_key": "qwen2.5-1.5b",
+      "system_prompt": "Entities:",
+      "decoding": {
+        "temperature": 0.0,
+        "max_tokens": 64,
+        "top_p": 1.0,
+        "top_k": 40,
+        "min_p": 0.0,
+        "repeat_penalty": 1.0,
+        "seed": null
+      },
+      "aggregation": "single",
+      "name": "seed_ner_qwen2.5-1.5b_0",
+      "parent": "",
+      "generation": 0,
+      "created_at": 1783930011.4068277,
+      "metadata": {
+        "accuracy": 0.15,
+        "avg_output_tokens": 50,
+        "avg_latency_ms": 3000,
+        "format_compliance": 0.7,
+        "correct": 2,
+        "total": 19,
+        "category": "ner"
+      }
+    },
+    {
+      "task_id": "T05",
+      "model_key": "qwen2.5-1.5b",
+      "system_prompt": "Extract all named entities. Label as PERSON, ORG, LOC, DATE.",
+      "decoding": {
+        "temperature": 0.0,
+        "max_tokens": 64,
+        "top_p": 1.0,
+        "top_k": 40,
+        "min_p": 0.0,
+        "repeat_penalty": 1.0,
+        "seed": null
+      },
+      "aggregation": "single",
+      "name": "seed_ner_qwen2.5-1.5b_1",
+      "parent": "",
+      "generation": 0,
+      "created_at": 1783930011.4068305,
+      "metadata": {
+        "accuracy": 0.3,
+        "avg_output_tokens": 60,
+        "avg_latency_ms": 3500,
+        "format_compliance": 0.7999999999999999,
+        "correct": 5,
+        "total": 19,
+        "category": "ner"
+      }
+    },
+    {
+      "task_id": "T05",
+      "model_key": "qwen2.5-1.5b",
+      "system_prompt": "NER: If unsure, give your best guess.. Don't hedge.",
+      "decoding": {
+        "temperature": 0.2,
+        "max_tokens": 64,
+        "top_p": 1.0,
+        "top_k": 40,
+        "min_p": 0.0,
+        "repeat_penalty": 1.0,
+        "seed": null
+      },
+      "aggregation": "single",
+      "name": "fresh_T05_qwen2.5-1.5b",
+      "parent": "",
+      "generation": 0,
+      "created_at": 1783930011.4068382,
+      "metadata": {
+        "accuracy": 0.44999999999999996,
+        "avg_output_tokens": 70,
+        "avg_latency_ms": 4000,
+        "format_compliance": 0.8999999999999999,
+        "correct": 8,
+        "total": 19,
+        "category": "ner"
+      }
+    },
+    {
+      "task_id": "T05",
+      "model_key": "qwen2.5-1.5b",
+      "system_prompt": "Extract: No commentary.",
+      "decoding": {
+        "temperature": 0.0,
+        "max_tokens": 64,
+        "top_p": 1.0,
+        "top_k": 40,
+        "min_p": 0.0,
+        "repeat_penalty": 1.0,
+        "seed": null
+      },
+      "aggregation": "single",
+      "name": "fresh_T05_qwen2.5-1.5b",
+      "parent": "",
+      "generation": 0,
+      "created_at": 1783930011.4068465,
+      "metadata": {
+        "accuracy": 0.6,
+        "avg_output_tokens": 80,
+        "avg_latency_ms": 4500,
+        "format_compliance": 0.7,
+        "correct": 11,
+        "total": 19,
+        "category": "ner"
+      }
+    },
+    {
+      "task_id": "T05",
+      "model_key": "smollm2-1.7b",
+      "system_prompt": "Entities:",
+      "decoding": {
+        "temperature": 0.0,
+        "max_tokens": 64,
+        "top_p": 1.0,
+        "top_k": 40,
+        "min_p": 0.0,
+        "repeat_penalty": 1.0,
+        "seed": null
+      },
+      "aggregation": "single",
+      "name": "seed_ner_smollm2-1.7b_0",
+      "parent": "",
+      "generation": 0,
+      "created_at": 1783930011.406849,
+      "metadata": {
+        "accuracy": 0.1,
+        "avg_output_tokens": 90,
+        "avg_latency_ms": 3000,
+        "format_compliance": 0.7999999999999999,
+        "correct": 1,
+        "total": 19,
+        "category": "ner"
+      }
+    },
+    {
+      "task_id": "T05",
+      "model_key": "smollm2-1.7b",
+      "system_prompt": "Extract all named entities. Label as PERSON, ORG, LOC, DATE.",
+      "decoding": {
+        "temperature": 0.0,
+        "max_tokens": 64,
+        "top_p": 1.0,
+        "top_k": 40,
+        "min_p": 0.0,
+        "repeat_penalty": 1.0,
+        "seed": null
+      },
+      "aggregation": "single",
+      "name": "seed_ner_smollm2-1.7b_1",
+      "parent": "",
+      "generation": 0,
+      "created_at": 1783930011.4068513,
+      "metadata": {
+        "accuracy": 0.15,
+        "avg_output_tokens": 100,
+        "avg_latency_ms": 3500,
+        "format_compliance": 0.8999999999999999,
+        "correct": 2,
+        "total": 19,
+        "category": "ner"
+      }
+    },
+    {
+      "task_id": "T05",
+      "model_key": "smollm2-1.7b",
+      "system_prompt": "NER: Only include entities explicitly in the text.. Label as PERSON, ORG, LOC, DATE. Don't hedge.. Be specific.",
+      "decoding": {
+        "temperature": 0.0,
+        "max_tokens": 64,
+        "top_p": 1.0,
+        "top_k": 40,
+        "min_p": 0.0,
+        "repeat_penalty": 1.0,
+        "seed": null
+      },
+      "aggregation": "single",
+      "name": "fresh_T05_smollm2-1.7b",
+      "parent": "",
+      "generation": 0,
+      "created_at": 1783930011.4068625,
+      "metadata": {
+        "accuracy": 0.3,
+        "avg_output_tokens": 40,
+        "avg_latency_ms": 4000,
+        "format_compliance": 0.7,
+        "correct": 5,
+        "total": 19,
+        "category": "ner"
+      }
+    },
+    {
+      "task_id": "T05",
+      "model_key": "smollm2-1.7b",
+      "system_prompt": "Entities: Label as PERSON, ORG, LOC, DATE.. Extract all named entities.",
+      "decoding": {
+        "temperature": 0.0,
+        "max_tokens": 64,
+        "top_p": 1.0,
+        "top_k": 40,
+        "min_p": 0.0,
+        "repeat_penalty": 1.0,
+        "seed": null
+      },
+      "aggregation": "single",
+      "name": "fresh_T05_smollm2-1.7b",
+      "parent": "",
+      "generation": 0,
+      "created_at": 1783930011.4068694,
+      "metadata": {
+        "accuracy": 0.44999999999999996,
+        "avg_output_tokens": 50,
+        "avg_latency_ms": 4500,
+        "format_compliance": 0.7999999999999999,
+        "correct": 8,
+        "total": 19,
+        "category": "ner"
+      }
+    }
+  ],
+  "pareto_fronts": {},
+  "metrics": {
+    "top_accuracy": 0.6,
+    "mean_accuracy": 0.35
+  },
+  "tags": [],
+  "eval_time_s": 0.0
+}

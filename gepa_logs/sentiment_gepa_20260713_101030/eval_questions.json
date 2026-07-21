@@ -1,0 +1,830 @@
+[
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of this review: \"There are two movie experiences I will always cherish. The first was seeing \"Star Wars\" for the first time at the age of 10 with my little brother. A close second is sneaking into Halloween at the Tripple Plex with my good friend, Trevor, in late October 1978. Halloween left me breathless, speechless, and downright scared. Everyone knows the story. Young Michael Myers decides to kill his sister on Halloween 1963. He escapes a mental hospital 15 years later to return to Haddofield to wreck havoc once again. He spots Laurie (Jamie Lee Curtis), a shy senior who enjoys babysitting, and begins stalking her. Her partying friends across the street are killed, one-by-one as Michael sets his plot to get her. Ironically, the young boy she tends on Halloween is afraid of the \"Boogeman,\" and can see h\"",
+    "expected_answer": "positive",
+    "difficulty": "hard",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Hard because it requires pragmatic/sarcasm detection beyond keyword matching, or involves mixed/hedged sentiment.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment as POSITIVE or NEGATIVE, then explain why in one sentence.\n\n\"so with an artistry that also smacks of revelation \"",
+    "expected_answer": "positive",
+    "difficulty": "easy",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Easy because clear positive/negative keywords make sentiment unambiguous.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of this review: \"Why would a person go back to a person, who kicks them in the teeth, not once, not twice, but over and over again.<br /><br />This film teaches us that in order to find love we must accept abuse (not just forgive it, but fully accept it). Gosh! No wonder my first relationship only lasted ten years. I obviously wasn't embracing my inner masochist.<br /><br />As Bucatinsky's writing debut, there are many wonderful aspects to this film; however, in order to justify the reunion of Eli and Tom, more character development would have been helpful. We are never acquainted with Eli's masochism, in fact, we are led to believe that he is not a masochist, although Tom's psycho-emotional sadism is highly evident.\"",
+    "expected_answer": "negative",
+    "difficulty": "medium",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Medium because it contains mixed signals or indirect language requiring inference beyond surface keywords.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of this review as POSITIVE or NEGATIVE, then explain why.\n\n\"Telemundo should definitely consider making a DVD collection of the novela Xica! I know tons of people including myself who would like to be able to purchase the novela Xica! It is a very entertaining novela which is set in Brazil. The costumes worn by the actors are beautiful and the town in which the novela takes place is beautiful. Xica contains a lot of history of that time period. I wish Telemundo would televise it again even if it was a 2 in the morning. I would highly recommend watching Xica if it is ever shown again on Telemundo. I've e-mailed Telemundo a million times already to show the novela again but my pleas have fallen on deaf ears. The only cautionary statement about Xica is that it occasionally contains some harsh scenes therefore I would recommend that children under 14 d\"",
+    "expected_answer": "positive",
+    "difficulty": "medium",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Medium because it contains mixed signals or indirect language requiring inference beyond surface keywords.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of this text (positive, negative, or neutral):\n\n\"allows us to hope that nolan is poised to embark a major career as a commercial yet inventive filmmaker . \"",
+    "expected_answer": "positive",
+    "difficulty": "hard",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Hard because it requires pragmatic/sarcasm detection beyond keyword matching, or involves mixed/hedged sentiment.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment: \"dull , inconsistent , dishonest \" Keep your answer under 50 words.",
+    "expected_answer": "negative",
+    "difficulty": "easy",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Easy because clear positive/negative keywords make sentiment unambiguous.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment as POSITIVE or NEGATIVE, then explain why in one sentence.\n\n\"the unnamed , easily substitutable forces that serve as whatever terror the heroes of horror movies try to avoid \"",
+    "expected_answer": "negative",
+    "difficulty": "easy",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Easy because clear positive/negative keywords make sentiment unambiguous.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment: \"with raw urban humor \"",
+    "expected_answer": "positive",
+    "difficulty": "easy",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Easy because clear positive/negative keywords make sentiment unambiguous.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of this review: \"Intrigued by the synopsis (every gay video these days has a hunk on the cover; this is not necessarily to be construed as a good sign) I purchased BEN AND ARTHUR without knowing a thing about it. This is my second (and I assure you it will be my last) purchase of a CULTURE Q CONNECTION video. As far as I am concerned, this DVD is nothing but a blatant rip-off. I do not make this observation lightly \u0096 I am a major collector of videos, gay and mainstream, and I can state with some authority and without hesitation that BEN AND ARTHUR is quite simply the worst film I have ever sat through in my life. Period. My collection boasts over 1,600 films (93% on them on DVD) and of those, well over 300 are gay and lesbian themed. I hardly own every gay movie ever made, but I am comfortable in stating t\"",
+    "expected_answer": "negative",
+    "difficulty": "hard",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Hard because it requires pragmatic/sarcasm detection beyond keyword matching, or involves mixed/hedged sentiment.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of this text (positive, negative, or neutral):\n\n\"in its best moments , resembles a bad high school production of grease , without benefit of song . \"",
+    "expected_answer": "negative",
+    "difficulty": "hard",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Hard because it requires pragmatic/sarcasm detection beyond keyword matching, or involves mixed/hedged sentiment.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment as POSITIVE or NEGATIVE, then explain why in one sentence.\n\n\"most of the distance \"",
+    "expected_answer": "negative",
+    "difficulty": "easy",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Easy because clear positive/negative keywords make sentiment unambiguous.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of this review: \"In the glory days of the 90s (god rest its soul) you could turn on the great Comedy Central at any hour of the day and see the greatest sketch comedy show of all time Saturday Night Live. Whpat a glorious show that was, whether it was the original Not-Ready-for-Primetime Players or the second golden age of SNL featuring the greats- Chris Farley, Adam Sandler, David Spade... and then, it all went to hell. I was first exposed to MadTV about a year and a half ago, and I think I must've passed out from shock. How could a show so terrible prevail for so long? There are so many horrible flaws. I suppose I'll start with the writing. The writing, for most part, is terrible. It is nothing more than kindergarten bathroom humor. The cast, for the most part, is talentless. There are a few sketches I h\"",
+    "expected_answer": "negative",
+    "difficulty": "hard",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Mixed signals: combines positive ('great') and negative ('terrible') in the same review. Requires 4-class output (positive/negative/neutral/mixed).",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of this text (positive, negative, or neutral):\n\n\"you do n't have to know about music to appreciate the film 's easygoing blend of comedy and romance . \"",
+    "expected_answer": "positive",
+    "difficulty": "hard",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Hard because it requires pragmatic/sarcasm detection beyond keyword matching, or involves mixed/hedged sentiment.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment: \"a chinese film depict a homosexual relationship in a mature and frank fashion \"",
+    "expected_answer": "positive",
+    "difficulty": "easy",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Easy because clear positive/negative keywords make sentiment unambiguous.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment: \"that stubbornly refused to gel \"",
+    "expected_answer": "negative",
+    "difficulty": "easy",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Easy because clear positive/negative keywords make sentiment unambiguous.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of the following text (positive, negative, or neutral):\n\n\"For someone with your qualifications, I think you've done remarkably well.\"",
+    "expected_answer": "negative",
+    "difficulty": "hard",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Dismissive backhanded compliment: 'for someone with your qualifications' implies the person is underqualified, so 'remarkably well' is condescending, not genuinely positive. LLMs often read 'remarkably well' literally and miss the condescension.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment: \"successful animated movies \"",
+    "expected_answer": "positive",
+    "difficulty": "easy",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Easy because clear positive/negative keywords make sentiment unambiguous.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of the following text (positive, negative, or neutral):\n\n\"The new policy ensures that every customer interaction generates a minimum of three follow-up emails. Efficiency at its finest.\"",
+    "expected_answer": "negative",
+    "difficulty": "hard",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Sarcasm: 'efficiency at its finest' sounds positive but the context \u2014 excessive follow-up emails \u2014 frames it as bureaucratic annoyance. LLMs often latch onto 'finest' and miss the ironic tone.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of this review as POSITIVE or NEGATIVE, then explain why.\n\n\"The plot of this movie hangs on one important point: that this murderer was also a responsible, loving, caring father. Not that being a father and a murderer is impossible. But this man is shown murdering a teenage girl without provocation or reason and without emotion. This girl was someone's daughter. I don't think a father who cared so much about his own daughter could have been so cold-blooded to someone else's daughter. Or, alternately, could have been so cold blooded and yet worry about and care for his own daughter. And the idea that a convicted murderer would actually ask his victim's parents to take in and care for his daughter is beyond belief.<br /><br />That said, the characters were acted with conviction by the actors. I thought changing Scott Bakula's eye color did make him s\"",
+    "expected_answer": "negative",
+    "difficulty": "medium",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Medium because it contains mixed signals or indirect language requiring inference beyond surface keywords.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of the following text (positive, negative, or neutral):\n\n\"Oh brilliant, my flight got canceled. Just the highlight of my day.\"",
+    "expected_answer": "negative",
+    "difficulty": "hard",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Sarcasm: 'brilliant' and 'highlight of my day' are positive words used to express frustration about a canceled flight. LLMs focused on keyword sentiment often label this positive.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of this review: \"This movie is great.<br /><br />Now, I do tend to like my films heavy on the story and dialogue, but now and then, something like Moonwalker comes along, and it's watchable, despite numerous flaws.<br /><br />This film is no more than a highly entertaining Michael Jackson advertisement. Beginning with sickly video set to 'Man in the Mirror' a montage listing his achievements, and bits and bobs from his career, it goes through all the highs of his life, then crashes down into a really, really entertaining segment which acts as a funny music video for 'Bad' and 'Speed Demon', following the adventures of MJ as he runs from manic stop-motion fans, and finally dancing against a rabbit costume. The stop motion isn't that bad as some would have you believe. It's passable.<br /><br />Then we see t\"",
+    "expected_answer": "positive",
+    "difficulty": "hard",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Hard because it requires pragmatic/sarcasm detection beyond keyword matching, or involves mixed/hedged sentiment.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "... a hollow joke told by a cinematic gymnast having too much fun embellishing the misanthropic tale to actually engage it . ",
+    "expected_answer": "negative",
+    "difficulty": "easy",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Easy because clear positive/negative keywords make sentiment unambiguous.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of this text (positive, negative, or neutral):\n\n\"in exactly 89 minutes , most of which passed as slowly as if i 'd been sitting naked on an igloo , formula 51 sank from quirky to jerky to utter turkey . \"",
+    "expected_answer": "negative",
+    "difficulty": "hard",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Hard because it requires pragmatic/sarcasm detection beyond keyword matching, or involves mixed/hedged sentiment.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of this review as POSITIVE or NEGATIVE, then explain why.\n\n\"I am completely shocked that this show had been cancelled.Ity only lasted one year.I just recently started watching it and I love it.Its a show that could of gone as far as Friends went.It had the humour and was extremely enjoyable.<br /><br />It is about 2 brothers and 2 sisters living under one roof without their parents.Kurt(Joey Lawrence) plays the part of the oldest sibling and takes on the more fatherly role.<br /><br />This should of lasted much more than year as it was fantastic. Amazing show with all the best actors.<br /><br />10/10\"",
+    "expected_answer": "positive",
+    "difficulty": "medium",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Medium because it contains mixed signals or indirect language requiring inference beyond surface keywords.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of this review: \"Who votes in these ratings? \"Jacknife\" is a beautifully acted, brilliantly observed piece of work, with actors on top of their game, especially Ed Harris and the peerless Robert DeNiro(please don't mention Marlon Brando in the same breath of this man-see \"Taxi Driver\" for confirmation of this point). Is it a 'mundane' movie because it doesn't have sex/meaningless action/nudity in it. This movie is about the complexities of the characters involved. Ed Harris makes you feel every moment with him and his emotional outburst towards the end is heartbreaking. The part where he orders a young man in a bar to take off his army clothes is a wonderful observation of how fashion and the movies exploit tragic situations and how frustrated real men must feel to see a young upstart sporting military att\"",
+    "expected_answer": "positive",
+    "difficulty": "hard",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Hard because it requires pragmatic/sarcasm detection beyond keyword matching, or involves mixed/hedged sentiment.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of this review as POSITIVE or NEGATIVE, then explain why.\n\n\"I would have rated the series a perfect 10 for outstanding and consistently high quality story and character development had it not been for the last episode of Season 10! <br /><br />The final episode of the 10th season \"Unending\", where (it would certainly appear that) the Asgard have been killed-off in a very rushed, unconvincing and very unceremonious fashion, left me in disbelief! <br /><br />From the extremely rushed end of the series, it's obvious that many of the story arcs were originally scheduled to occur over at least one more season. My guess would be that they rapidly accelerated these stories to position the Stargate SG-1 franchise for the two upcoming direct-to-DVD moves!<br /><br />Unless the Asgard return in a future SG-1 movie (with a very good explanation of the \"appare\" Keep your answer under 50 words.",
+    "expected_answer": "positive",
+    "difficulty": "medium",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Medium because it contains mixed signals or indirect language requiring inference beyond surface keywords.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of the following text (positive, negative, or neutral):\n\n\"The report is thorough and well-researched. Pity it completely misses the point of the assignment.\"",
+    "expected_answer": "negative",
+    "difficulty": "hard",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Backhanded compliment: opens with genuine praise ('thorough and well-researched') then undercuts it entirely ('misses the point'). The overall sentiment is negative despite the initial positive words. LLMs often stop after the first sentence and label positive.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of this review: \"A powerfully wonderful movie. You are held in a death-grip once you let yourself get involved with the story. A successful dentist, Alan Johnson(Don Cheadle), is torn in a life crisis of balancing his career with his family. He notices his former college roommate Charlie Fineman(Adam Sandler)and wants to touch base. He finds that Charlie, who lost his wife and family in the 9-11 attack on America, is no longer in touch with reality...choosing to involve his mind with his favorite music from the past and video games. The former roommates rekindle their friendship and strengthen their former bond. Johnson has his friend Angela Oakhurts(Liv Tyler), a psychiatrist, to try and bring Charlie out of his grief...but it is Alan that accomplishes in getting his friend to emerge from his deep darknes\"",
+    "expected_answer": "positive",
+    "difficulty": "medium",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Medium because it contains mixed signals or indirect language requiring inference beyond surface keywords.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "the title not only describes its main characters , but the lazy people behind the camera as well . ",
+    "expected_answer": "negative",
+    "difficulty": "easy",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Easy because clear positive/negative keywords make sentiment unambiguous.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of this review as POSITIVE or NEGATIVE, then explain why.\n\n\"Hayao Miyazaki's second feature film, and his first one to be widely acclaimed both commercially and critically (though his debut - Nausicaa AKA Warriors of the Wind is considered by many fans his best), 'Tenku no Shiro Rapyuta' AKA 'Castle in the Sky' may seem childish and simplistic when compared to his more recent masterpieces like 'Kiki's Delivery Service', 'Mononoke-hime' and 'Spirited Away', but in 1986 it was years ahead of its time and it was one of the milestones of modern anime. It's important to remember that 'Castle in the Sky' was made two years before the revolutionary 'Akira', and while it's not provocative and controversial like the aforementioned masterpiece, the lead characters are all mainly basic manga hero / heroine / villain type characters, and the story is quite pre\"",
+    "expected_answer": "positive",
+    "difficulty": "medium",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Medium because it contains mixed signals or indirect language requiring inference beyond surface keywords.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of this review: \"So Mary and Rhoda have aged--who hasn't? I was a teen when Mary premiered, and a \"young adult\" when it left the air. Yes, it was great to see Mary and Rho together, and yes, maybe the film didn't sustain the comedy of the original series, but there were enough moments that recalled the spirit of the series to make this a fitting tribute. Example: the producer who hires Mary and then dictates the idea for a new series about \"old people.\" Isn't this typical of the mentality of present-day Hollywood TV and film \"bean counters?\" This may not be THE MARY TYLER MOORE SHOW at its best--but it's a pretty damned good look back at one of the best shows we grew up with in the 70s.\"",
+    "expected_answer": "positive",
+    "difficulty": "medium",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Medium because it contains mixed signals or indirect language requiring inference beyond surface keywords.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of the following text (positive, negative, or neutral):\n\n\"I really admire your ability to be so confident even when you're completely wrong.\"",
+    "expected_answer": "negative",
+    "difficulty": "hard",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Passive-aggressive sarcasm: 'admire your ability to be so confident' is positive on the surface, but 'even when you're completely wrong' reveals mockery. LLMs often label this positive based on 'admire' and 'confident'.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of this text (positive, negative, or neutral):\n\n\"audrey tatou has a knack for picking roles that magnify her outrageous charm , and in this literate french comedy , she 's as morning-glory exuberant as she was in am\u00e9lie . \"",
+    "expected_answer": "positive",
+    "difficulty": "hard",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Hard because it requires pragmatic/sarcasm detection beyond keyword matching, or involves mixed/hedged sentiment.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment as POSITIVE or NEGATIVE, then explain why in one sentence.\n\n\"avalanche \"",
+    "expected_answer": "negative",
+    "difficulty": "easy",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Easy because clear positive/negative keywords make sentiment unambiguous.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of the following text (positive, negative, or neutral):\n\n\"The algorithm flagged 3,842 transactions as potentially fraudulent \u2014 none were confirmed.\"",
+    "expected_answer": "neutral",
+    "difficulty": "hard",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Neutral factual report despite charged keywords ('fraudulent'). No evaluative language. LLMs often mislabel this negative due to 'fraudulent' or positive due to 'none confirmed' \u2014 both are incorrect.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of the following text (positive, negative, or neutral):\n\n\"Well, that went about as well as expected.\"",
+    "expected_answer": "negative",
+    "difficulty": "hard",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Deadpan sarcasm: delivered after a failure, the phrase uses understatement ('as well as expected') to signal disappointment. Without pragmatic context, LLMs often call this neutral since no overtly negative words appear.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of this review: \"Black and White film. Good photography. Believable characters. <br /><br />Just awful.<br /><br />I have wasted another perfect evening watching a film that other rated as \"worthy\" and \"very good.\" There is some good acting here and the back ground setting for the plot is good (more should have been done with this) but it is very slow to grow and never develops. It is totally bases on sex without much romance with much un needed nudity. More could have been done with the main characters. If you are looking for something to watch with you family this in not the movie and if not you will have trouble sitting through it. Though this film is long its only about 1 inch deep!\"",
+    "expected_answer": "negative",
+    "difficulty": "hard",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Hard because it requires pragmatic/sarcasm detection beyond keyword matching, or involves mixed/hedged sentiment.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of this review: \"OK this movie was really \"unique\" shall we say. Carrie Fisher was by far the most talented in the movie, even though it is said she had a coke problem during the movie. but she said that she can't remember to much of it. well thats her excuse but whats everyone else's??? i can't imagine they all had a coke problem.whatever it wasn't all that bad i mean i guess the plot was OK and it had some pretty funny moments. although the part where the guy gets that thing shoved in his head was a little too violent for my taste. oh well i guess i was disappointed cause Carrie fisher is like so awesome and this movie did nothing for her.\"",
+    "expected_answer": "negative",
+    "difficulty": "medium",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Medium because it contains mixed signals or indirect language requiring inference beyond surface keywords.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of this review as POSITIVE or NEGATIVE, then explain why.\n\n\"Basically there's a family where a little boy (Jake) thinks there's a zombie in his closet & his parents are fighting all the time.<br /><br />This movie is slower than a soap opera... and suddenly, Jake decides to become Rambo and kill the zombie.<br /><br />OK, first of all when you're going to make a film you must Decide if its a thriller or a drama! As a drama the movie is watchable. Parents are divorcing & arguing like in real life. And then we have Jake with his closet which totally ruins all the film! I expected to see a BOOGEYMAN similar movie, and instead i watched a drama with some meaningless thriller spots.<br /><br />3 out of 10 just for the well playing parents & descent dialogs. As for the shots with Jake: just ignore them.\"",
+    "expected_answer": "negative",
+    "difficulty": "hard",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Hard because it requires pragmatic/sarcasm detection beyond keyword matching, or involves mixed/hedged sentiment.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of the following text (positive, negative, or neutral):\n\n\"The quarterly earnings report missed analyst estimates by 12%, with revenue declining for the third consecutive quarter. However, the company noted a 40% increase in its cloud services segment and raised its full-year guidance citing strong AI infrastructure demand.\"",
+    "expected_answer": "mixed",
+    "difficulty": "hard",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Mixed sentiment with balanced positive and negative signals. The first half is clearly negative (missed estimates, declining revenue) while the second half is positive (cloud growth, raised guidance). Hard because it doesn't fit a single sentiment category \u2014 the correct answer depends on context.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "schaeffer has to find some hook on which to hang his persistently useless movies , and it might as well be the resuscitation of the middle-aged character . ",
+    "expected_answer": "negative",
+    "difficulty": "easy",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Easy because clear positive/negative keywords make sentiment unambiguous.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of this text (positive, negative, or neutral):\n\n\"it takes a strange kind of laziness to waste the talents of robert forster , anne meara , eugene levy , and reginald veljohnson all in the same movie . \"",
+    "expected_answer": "negative",
+    "difficulty": "hard",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Hard because it requires pragmatic/sarcasm detection beyond keyword matching, or involves mixed/hedged sentiment.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of this review: \"I got this movie out of Blockbuster in one of those racks were you can get like 5 movies for 20 bucks. I'd have to say I got my money's worth on this one. I had expected horrible dialogue, crappy monsters, and shaky cameras. Well, as Meatloaf said, two outta three ain't bad.<br /><br />The acting is bad, though not as bad as some movies I've seen. Or maybe I've watched so many low budget movies recently I've lost perspective. There are some bits were the acting is downright terrible, but for the most part it's of at least High School Play level.<br /><br />The CG for the Sasquatch in this movie is probably the second-worst part. The first thing I thought when I saw it (and I noticed another reviewer agreed with me) was that a man in an ape suit would have been better. Clunky stop-motion an\"",
+    "expected_answer": "negative",
+    "difficulty": "medium",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Medium because it contains mixed signals or indirect language requiring inference beyond surface keywords.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of this review: \"I loved this film. I first saw it when I was 20 ( which was only four years ago) and I enjoyed it so much, I brought my own copy the next day. The comedy is well played by all involved. I always have to rewind and rewatch the scene where Mr. Tsanders explains why he found water at 6 ft in one area and 227 feet in another area. Also look for Jason Robards father who plays Mr. Retch. Talent ran in that family.\"",
+    "expected_answer": "positive",
+    "difficulty": "hard",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Hard because it requires pragmatic/sarcasm detection beyond keyword matching, or involves mixed/hedged sentiment.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of this review: \"Hardcastle and McCormick is an excellent TV show. <br /><br />Yes, it is predictable much like The Dukes of Hazzard, Hunter, The A-Team, etc etc etc.<br /><br />This show is just good clean television. The relationship between Hardcastle and McCormick is quite amusing. They often take jabs at each other several times an episode, which adds a great deal of humor to the show. It contains several car chases in almost every episode, but, who doesn't enjoy a good car chase? Especially with the Coyote! <br /><br />I only wish they made clean television like this today I highly recommend this!\"",
+    "expected_answer": "positive",
+    "difficulty": "medium",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Medium because it contains mixed signals or indirect language requiring inference beyond surface keywords.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of this review as POSITIVE or NEGATIVE, then explain why.\n\n\"Stack should have received the Academy Award for this performance, period. Its a crime that he did not. Amazing how he humanizes a rich worthless character. <br /><br />Dorothy Malone did earn a well-deserved Academy Award for her performance. In fact, all of the acting in this film is excellent.<br /><br />The plot begins with a taxi ride, then an airplane ride, then keeps moving on an emotional ride that will hold your interest throughout. You will be entertained!<br /><br />However, this is only a blatant soap opera. One-dimensional, 100-percent soaper. You might call it the ultimate soaper, because the acting so thoroughly triumphs over the material. Excellently acted, well directed, but strictly within its soap genre. I wouldn't even call it a melodrama (such as \"Mildred Pierce\" or \"I\"",
+    "expected_answer": "positive",
+    "difficulty": "hard",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Negated positive: initial exclamation is undercut by negative follow-up. Requires reading beyond the first sentence.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of the following text (positive, negative, or neutral):\n\n\"I suppose it's not entirely terrible. One could do worse, I imagine.\"",
+    "expected_answer": "neutral",
+    "difficulty": "hard",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Hedging/understatement: 'not entirely terrible' and 'one could do worse' are classic understatement \u2014 neither positive nor negative, just reluctant acceptance. LLMs often mislabel this as negative because of 'terrible' or positive because of the implied approval.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment: \"neatly \"",
+    "expected_answer": "positive",
+    "difficulty": "easy",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Easy because clear positive/negative keywords make sentiment unambiguous.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment: \"real human soul \"",
+    "expected_answer": "positive",
+    "difficulty": "easy",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Easy because clear positive/negative keywords make sentiment unambiguous.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of this review as POSITIVE or NEGATIVE, then explain why.\n\n\"It's hard to believe an \"action\" packed Jet Li movie could be so boring, but this was transcendant trash. The plot is an amalgam of other Hong Kong chopsocky flicks. The martial arts action is all special effects and no human talent. <br /><br />It's a comic book story about a group of super-human soldiers who are to be killed because they're mentally unstable, one of their number (Li) who holds off an incompetent army to save them and rebuilds a life as a pacifist librarian. The saved killers resurface with an Austin Powers quality plot to take over the world, and Li sheds his new life to save the world.<br /><br />The version I saw was dubbed, and that may have accentuated the cheesiness of the wafer-thin plot and comic-book 25 cent special effects. But I suspect even Ninja-Turtle-watchi\"",
+    "expected_answer": "negative",
+    "difficulty": "medium",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Medium because it contains mixed signals or indirect language requiring inference beyond surface keywords.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of this review as POSITIVE or NEGATIVE, then explain why.\n\n\"Bunny Comes Home 'This Man's Navy' deserves more credit than it gets, a clever script by Borden Chase, directed by 'Wild Bill' Wellman, the film has just the right feel for early post WW11 euphoria and goodwill, and none of the blind terror that came into play few years later. Produced in 1944, the Japanese defeated, the battle scenes a little d\u00e9j\u00e0 vu, Tom Drake's melancholy attraction for radiant young Jan Clayton has solid chemistry, plays real and validates Drake's career at Metro. The following year Jan opened on Broadway in 'Carousel.' Wally Beery, a little bleary-eyed, boasts to an always incredulous Jimmy Gleason\u0085 his memories an improvement over reality, and give Beery a Ulysses-like shadow to play against. The Navy LTA (Lighter Than Air) shots are authentic, photographed at Tustin\"",
+    "expected_answer": "positive",
+    "difficulty": "hard",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Hard because it requires pragmatic/sarcasm detection beyond keyword matching, or involves mixed/hedged sentiment.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of this review: \"This movie was good for it's time. If you like Eddie Murpy this is a must have to add to your collection. Eddie was young and funny with his 80's haircut. Charlotte Lewis, Eddie's costar is hot. This was one of her first movies and she was not bad. The graphics were good for the 80's. A lot of the actors went on to do other good movies you should check them out through IMDb. Other must have from Eddie is \"Coming to America\" and \"48 hours\". Another actor \"Victor Wong\" has a small part in this movie. Check out some of his older movies like \"Big trouble in little china\". If you liked the action movies from the 80's this is your movie.\"",
+    "expected_answer": "positive",
+    "difficulty": "hard",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Hard because it requires pragmatic/sarcasm detection beyond keyword matching, or involves mixed/hedged sentiment.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of this review: \"I remember when this was in theaters, reviews said it was horrible. Well, I didn't think it was that bad. It was amusing and had a lot of tongue-in-cheek humor concerning families around holiday time.<br /><br />Ben Affleck is a rich guy who needs to find a family for Christmas to please his girlfriend. He goes to visit the house he grew up in and strikes a deal to rent the family there for Christmas. I really liked the lawyer scene where they sign a contract. That was funny.<br /><br />So, he makes silly requests of the family and even writes scripts for them to read. Of course, the family has a hot daughter for the love interest. And he learns that the holidays aren't so bad after all.<br /><br />Also, the whole doo-dah act was funny, especially when they replaced the first one with a bl\"",
+    "expected_answer": "negative",
+    "difficulty": "hard",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Hard because it requires pragmatic/sarcasm detection beyond keyword matching, or involves mixed/hedged sentiment.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment: \"ridiculous and money-oriented \" Respond in JSON format with keys: answer, reasoning.",
+    "expected_answer": "negative",
+    "difficulty": "easy",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Easy because clear positive/negative keywords make sentiment unambiguous.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment as POSITIVE or NEGATIVE. Explain briefly.\n\n\"it 's about issues most adults have to face in marriage and i think that 's what i liked about it -- the real issues tucked between the silly and crude storyline \"",
+    "expected_answer": "positive",
+    "difficulty": "hard",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Hard because it requires pragmatic/sarcasm detection beyond keyword matching, or involves mixed/hedged sentiment.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of this review as POSITIVE or NEGATIVE, then explain why.\n\n\"With a cast list like this one, I expected far better. Venessa Redgrave spent the majority of the movie lying in bed. The best actresses in the world cannot make anything very interesting when their acting is limited to lying down and falling asleep throughout the entire movie. The plot summary says that a secret is revealed to the daughters as their mother comes closer to death. The thing is, she never tells her daughters anything except cryptic advice to be happy. All the relationships in the movie are underdeveloped. I also felt that the back and forth between the past and present was unnecessary. It seemed as if the idea was stolen either from the book the Da Vinci Code in which the device was used to increase suspense, or from The Notebook in which they used the device to create the n\"",
+    "expected_answer": "negative",
+    "difficulty": "medium",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Medium because it contains mixed signals or indirect language requiring inference beyond surface keywords.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment: \"made a remarkable film that explores the monster 's psychology not in order to excuse him but rather to demonstrate that his pathology evolved from human impulses that grew hideously twisted \"",
+    "expected_answer": "positive",
+    "difficulty": "medium",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Medium because it contains mixed signals or indirect language requiring inference beyond surface keywords.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment: \"that should be relegated to a dark video store corner \"",
+    "expected_answer": "negative",
+    "difficulty": "easy",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Easy because clear positive/negative keywords make sentiment unambiguous.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of the following text (positive, negative, or neutral):\n\n\"You're so brave to wear that outfit in public.\"",
+    "expected_answer": "negative",
+    "difficulty": "hard",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Backhanded compliment: 'brave' is ostensibly positive but paired with 'wear that outfit in public' signals mockery/passive-aggression. LLMs that rely on surface-level positivity of 'brave' miss the sarcastic tone.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment: \"zips along with b-movie verve while adding the rich details and go-for-broke acting that heralds something special \"",
+    "expected_answer": "positive",
+    "difficulty": "medium",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Medium because it contains mixed signals or indirect language requiring inference beyond surface keywords.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment as POSITIVE or NEGATIVE, then explain why in one sentence.\n\n\"a bad film \"",
+    "expected_answer": "negative",
+    "difficulty": "easy",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Easy because clear positive/negative keywords make sentiment unambiguous.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment: \"all too literally \"",
+    "expected_answer": "negative",
+    "difficulty": "easy",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Easy because clear positive/negative keywords make sentiment unambiguous.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of this review as POSITIVE or NEGATIVE, then explain why.\n\n\"This is a very bad western mainly because it is historically inaccurate. It looks as if it were shot on a back lot in California instead of where Jack Slade lived and died, Idaho, Colorado Territories, and Montana. It fictionalizes everything that is known about this mysterious 'bad man,' 'good man.' The script is horrible; there is very little direction, and lousy acting. Dorothy Malone is completely wasted as his wife. Mark Steven never seems to know how to portray this mysterious Jack Slade. In real life, Jack Slade was a very good stage line superintendent. He was feared by his local townsmen for his hard drinking. When drunk he would start fights and cause other problems in Virginia City, Montana. To insure that he could never terrorize them again, vigilantes lynched Jack Slade after \"",
+    "expected_answer": "negative",
+    "difficulty": "hard",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Hard because it requires pragmatic/sarcasm detection beyond keyword matching, or involves mixed/hedged sentiment.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment: \"enriched by an imaginatively mixed cast of antic spirits \"",
+    "expected_answer": "positive",
+    "difficulty": "medium",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Medium because it contains mixed signals or indirect language requiring inference beyond surface keywords.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of the following text (positive, negative, or neutral):\n\n\"Oh wow, another brilliant software update that breaks more things than it fixes. The UI redesign is so 'intuitive' that I can no longer find basic settings without three nested menus. Thank you for this truly 'improved' experience.\"",
+    "expected_answer": "negative",
+    "difficulty": "hard",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Sarcastic negative. Uses positive-sounding words (brilliant, intuitive, improved, thank you) in scare quotes or ironic context to convey the opposite meaning.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of this review: \"Some people loved \"The Aristocrats\" and others hated it, frequently walking out in the middle. Reactions to Eddie Izzard aren't likely to be that extreme -- if you can handle a transvestite comedian (who says he likes girls) and has a vocabulary that makes, shall we say, enough use of the \"f\" word that his program would be one long beep if presented on network television. Many of Izzard's fans are so devoted that they see no flaws whatsoever in his performances. On the other hand, I thought this show was occasionally flatter than Izzard's chest but also more often than not funny and, in spots, absolutely hilarious. He has a way of connecting references from routines early in the show to his later routines. He's not a story teller. He's not a joke maker. He's not a frenetic fantasist like R\"",
+    "expected_answer": "positive",
+    "difficulty": "medium",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Medium because it contains mixed signals or indirect language requiring inference beyond surface keywords.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of this review: \"It's difficult to precisely put into words the sheer awfulness of this film. An entirely new vocabulary will have to be invented to describe the complete absence of anything even remotely recognizable as 'humor' or even 'entertainment' in \"Rabbit Test.\" So, as a small contribution to this future effort, I'd like to suggest this word: <br /><br />\"Hubiriffic\" (adj.) A combination of 'hubristic' and 'terrific'; used to describe overly ambitious debacles like the film \"Rabbit Test.\"<br /><br />Joan Rivers and \"Hollywood Squares\" producer Jay Redack have severely over-reached their meager abilities to amuse in this 82-minute festival of wretchedness. Trying to put together an Airplane! style comedy with a moldy collection of gags, (Note to Joan: German doctors haven't been funny since Vaudevil\"",
+    "expected_answer": "negative",
+    "difficulty": "medium",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Medium because it contains mixed signals or indirect language requiring inference beyond surface keywords.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of this review: \"The prerequisite for making such a film is a complete ignorance of Nietzche's work and personality, psychoanalytical techniques and Vienna's history. Take a well-know genius you have not read, describe him as demented, include crazy physicians to cure him, a couple of somewhat good looking women, have his role played by an actor with an enormous mustache, have every character speak with the strongest accent, show ridiculous dreams, include another prestigious figure who has nothing to do with the first one (Freud), mention a few words used in the genius' works, overdo everything you can, particularly music, and you are done. Audience, please stay away.\"",
+    "expected_answer": "negative",
+    "difficulty": "hard",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Hard because it requires pragmatic/sarcasm detection beyond keyword matching, or involves mixed/hedged sentiment.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of this text (positive, negative, or neutral):\n\n\"even horror fans will most likely not find what they 're seeking with trouble every day ; the movie lacks both thrills and humor . \"",
+    "expected_answer": "negative",
+    "difficulty": "hard",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Hard because it requires pragmatic/sarcasm detection beyond keyword matching, or involves mixed/hedged sentiment.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of this review as POSITIVE or NEGATIVE, then explain why.\n\n\"One of my favorite movies I saw at preview in Seattle. Tom Hulce was amazing, with out words could convey his feelings/thoughts. I actually sent Mike Ferrell some donation money to help the film get distributed. It is good. System says I need more lines but do not want to give away plot stuff. I was in the audience in Seattle with Hulce and director , a writer I think and Mike Ferrell. They talked for about an hour afterwords. Not really a dry eye in the house. Why Hollywood continues to be stupid I do not know. ( actually I do know , it is our fault, look what we watch)Well you get what you pay for guys. Get this and see it with someone special. It is a gem.\"",
+    "expected_answer": "positive",
+    "difficulty": "hard",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Negated positive: initial exclamation is undercut by negative follow-up. Requires reading beyond the first sentence.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment as POSITIVE or NEGATIVE. Explain briefly.\n\n\"cold movie \"",
+    "expected_answer": "negative",
+    "difficulty": "easy",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Easy because clear positive/negative keywords make sentiment unambiguous.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of this review: \"A typical Lanza flick that had limited audience appeal with a weak story line that was put together simply to justify Lanza's MGM contract at the time.<br /><br />As reported by member Lastliberal (above) Grayson could not stand Lanza because of his obscene advances towards her off (and sometimes on) camera. In addition, his gutter mannerism and the continual smell of alcohol in her face during scenes they did together were intolerable. After doing their second (and last) film together, \"Toast of New Orleans\", the normally quiet Grayson stormed into Louie B. Mayer's office and told him in no uncertain words that she would never work with Lanza again \u0096 period. Mayer felt that Grayson was much more valuable to MGM then Lanza, so Grayson's statement stuck. Grayson went on to star in a number \"",
+    "expected_answer": "negative",
+    "difficulty": "hard",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Hard because it requires pragmatic/sarcasm detection beyond keyword matching, or involves mixed/hedged sentiment.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of this review: \"This is actually a trilogy of 3 of Somerset Maugham's short tales. The first one is The Verger, which is about 15 minutes long and very enjoyable. After 17 years Albert Foreman is laid off from his church job because he can't read nor write. So what does he do? Opens a tobacco shop, of course!<br /><br />The second is Mr. Know-All which was actually a story I had read for school 6 years ago and instantly forgotten, until I heard the familiar introduction. Another 15 minute one, and also very good. It worked better on film than in a book for me, but then perhaps that's because I was only 14 the last time, afterall.<br /><br />The 3rd one is nearly a let-down. Almost an hour in length, it simply drags. It's not all that bad, but not as quick and snappy as the last 2. I watched the first quar\"",
+    "expected_answer": "positive",
+    "difficulty": "medium",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Medium because it contains mixed signals or indirect language requiring inference beyond surface keywords.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of this review: \"This film takes what could have been a good idea, a mummified 2000 year old witch and completely destroys it. Nora and Jim are alcoholics who go to Ireland to dry-out. They go to stay with her Nan and Uncle. The uncle has discovered a 2000 year old witch preserved in the peat. He revives her and she takes the form of Nora. She cannot be killed conventionally,(more is the pity). Nora, however, works out a way to do so.<br /><br />This is a Gothic horror movie that has been done on the cheap. It is a sprawling mess. I have to ask why anyone would want to make such a bad film. I am tempted to learn witchcraft in order to make it disappear.<br /><br />AVOID AT ALL COSTS\"",
+    "expected_answer": "negative",
+    "difficulty": "hard",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Hard because it requires pragmatic/sarcasm detection beyond keyword matching, or involves mixed/hedged sentiment.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment: \"the joy the characters take in this creed \"",
+    "expected_answer": "positive",
+    "difficulty": "easy",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Easy because clear positive/negative keywords make sentiment unambiguous.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment: \"loquacious \"",
+    "expected_answer": "positive",
+    "difficulty": "easy",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Easy because clear positive/negative keywords make sentiment unambiguous.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment: \"failed jokes , twitchy acting , \"",
+    "expected_answer": "negative",
+    "difficulty": "easy",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Easy because clear positive/negative keywords make sentiment unambiguous.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of this review as POSITIVE or NEGATIVE, then explain why.\n\n\"Wilson (Erica Gavin) is nabbed by the cops and sent to prison in this slick and amusing example of prime 70's exploitation, marking the directing debut of Jonathan Demme. After writing and producing a few of mentor Roger Cormans' New World films, Demme was afforded the opportunity to direct for the first time, and he delivers a movie that not only delivers the expected and tasty doses of nudity and violence, but has an appealing tongue-in-cheek quality to it as well; it's often as funny as it is flashy.<br /><br />Standout scenes include a lewd and crude vaudeville style act performed for the prisoners, as well as a potent dream / fantasy sequence for uptight and obviously very repressed Superintendent McQueen (horror icon Barbara Steele, doing a marvelous turn in this antagonistic role). \"",
+    "expected_answer": "positive",
+    "difficulty": "medium",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Medium because it contains mixed signals or indirect language requiring inference beyond surface keywords.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment: \"that trademark grin of his \"",
+    "expected_answer": "positive",
+    "difficulty": "easy",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Easy because clear positive/negative keywords make sentiment unambiguous.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment: \"clare peploe 's airless movie adaptation could use a little american pie-like irreverence . \"",
+    "expected_answer": "negative",
+    "difficulty": "easy",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Easy because clear positive/negative keywords make sentiment unambiguous.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment as POSITIVE or NEGATIVE, then explain why in one sentence.\n\n\"wear thin with repetition \" Explain step-by-step, then give the final answer on a separate line starting with ANSWER:.",
+    "expected_answer": "negative",
+    "difficulty": "easy",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Easy because clear positive/negative keywords make sentiment unambiguous.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of this review: \"This movie is wonderful. What separates it from other 50's sci-fi is the fact that the alien has no features, no face, eyes, anything, yet it can't be killed. I especially like the idea that this film doesn't take place over a few days, it takes place in one night, lasting supposedly past midnight.It's also scary that once the blob gets on you, you can't get it off. you're stuck in it, as it dissolves your flesh and slowly devours your body. My all time favorite 50's sci-fi film, and what is sometimes considered the quintessential one. I can see why this rocketed Steve McQueen to stardom. All this and a catchy theme song! How can you go wrong?\"",
+    "expected_answer": "positive",
+    "difficulty": "hard",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Hard because it requires pragmatic/sarcasm detection beyond keyword matching, or involves mixed/hedged sentiment.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of this review: \"Devil Hunter gained notoriety for the fact that it's on the DPP 'Video Nasty' list, but it really needn't have been. Many films on the list where there for God (and DPP) only known reasons, and while this isn't the tamest of the bunch; there isn't a lot here that warrants banning...which is a shame because I never would have sat through it where it not for the fact that it's on 'the shopping list'. The plot actually gives the film a decent base - or at least more of a decent base than most cannibal films - and it follows an actress who is kidnapped and dragged off into the Amazon jungle. A hunter is then hired to find her, but along the way he has to brave the natives, lead by a man who calls himself \"The Devil\" (hence the title). The film basically just plods along for eighty five minutes\"",
+    "expected_answer": "negative",
+    "difficulty": "medium",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Medium because it contains mixed signals or indirect language requiring inference beyond surface keywords.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of this review: \"Why?!! This was an insipid, uninspired and embarrassing film. The embarrassment comes from being from the city where they made it...Pittsburgh PA! Why did they let these people do such a BAAAAAD movie there?<br /><br />When this movie was originally to be released...it was more of a romantic comedy...and no ROBO-anything. That all got changed along with cuteness courtesy of Disney. WHY???? They did a terrible interpretation of this classic comic character. Seeing Matthew Broderick make fun of his own movies was not fun either. Sheesh!!\"",
+    "expected_answer": "negative",
+    "difficulty": "hard",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Hard because it requires pragmatic/sarcasm detection beyond keyword matching, or involves mixed/hedged sentiment.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "pumpkin takes an admirable look at the hypocrisy of political correctness , but it does so with such an uneven tone that you never know when humor ends and tragedy begins . ",
+    "expected_answer": "negative",
+    "difficulty": "medium",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Medium because it contains mixed signals or indirect language requiring inference beyond surface keywords.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment: \"the acting is fine but \" Answer using only the provided context. Do not add outside knowledge.",
+    "expected_answer": "positive",
+    "difficulty": "easy",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Easy because clear positive/negative keywords make sentiment unambiguous.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of this review as POSITIVE or NEGATIVE, then explain why.\n\n\"The Cameraman's Revenge is an unusual short not because of the subject matter (adultery) or because it's animated (Winsor McCay had introduced Little Nemo on film by this time) but because it depicts bugs to tell the story! Ladislaw Starewicz had originally wanted to film actual bugs fighting but couldn't get them to do it on camera because of the hot lights they suffered through so he took dead ones and started using stop-motion techniques to manipulate movements to his satisfaction. This short does a good job of putting human characteristics on little creatures such as riding motorcycles, painting, filming, kissing, and dancing. Starewicz would also make Frogland (1922) and The Mascot (1933) but his first notable work would be this one. If you're interested in this and the other shorts m\"",
+    "expected_answer": "positive",
+    "difficulty": "medium",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Medium because it contains mixed signals or indirect language requiring inference beyond surface keywords.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of this review: \"This is arguably the best film director Haim Bouzaglo made until now. A skilled TV director, well-trained in story-telling and in directing his actors through long epics he tried to catch in this very low-budget film the essence of the very special psychological situation the Israelis live though under the permanent danger of the terror attacks, resulting in 'distorted' lives. Each character trying to live his own life, to watch and control the other, while being himself watched and controlled by other characters and mostly by the continuous pressure, by political and historical forces well beyond his control. Some call this destiny, but destiny has a very concrete representation in this film.<br /><br />There is no explicit political saying in 'Distortion'. Characters never discuss politi\"",
+    "expected_answer": "positive",
+    "difficulty": "medium",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Medium because it contains mixed signals or indirect language requiring inference beyond surface keywords.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of this review: \"By no means is this movie as bad as 'Perfect Stranger', but it just wasn't funny. It couldn't stick to one type of comedy - it jumped from SNL, to Adam Sandler-esquire, to romantic, to little guy scores big, to slapstick, to 'Loser' (the movie) types of comedies. Although there were some pretty funny slapstick moments (the fall down the hill), no one was very particularly funny or outstanding in any way. 'Schindler's List' was funnier (and felt shorter). you never knew if Andy Samberg was supposed to be in high school, a college dropout, or just a loser living at home with his mother - Sissy Spacek, in her worst choice of roles. And poor Ian McShane, THE serious actor if I only had to name one, is given crap to read into the camera. The story drags and is completely predictable up to and i\"",
+    "expected_answer": "negative",
+    "difficulty": "hard",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Hard because it requires pragmatic/sarcasm detection beyond keyword matching, or involves mixed/hedged sentiment.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of this review: \"A director and his crew head out to the isolated Beal mansion, to make a low-budget horror film about the seven mysterious deaths of the Beal family that have occurred there in the last century. Even with warnings by the caretaker, the director pays no attention to the supposedly cursed house. One of the crew find a book titled Tibetan Book of the Dead, and use some of the passages from it for their script. But in doing so, when red they raise a ghoul from its grave.<br /><br />Boring, confusing and tacky all rolled up into one, equals this penniless midnight horror production. What feels like an eternity, it just never seems to get going or demonstrate anything effective from somewhat decent ideas. Even though director Paul Harrison's clunky, tensionless direction did construct a couple e\"",
+    "expected_answer": "negative",
+    "difficulty": "medium",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Medium because it contains mixed signals or indirect language requiring inference beyond surface keywords.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of this review: \"This was no Trainspotting or Guy Ritchie film. It was a big wannabee. It wanted to be an edgy, nervous-laughter, urban-life affirming film, but it's more of a camera jerky, mess. It's a lot easier to imitate something else, than to create a real story with real characters. From the beginning, I couldn't care less about the characters or what they were involved in. They were always always hitting, pissing, or crying on each other. Only, there wasn't any substance to what they were doing. The dialog between characters is meant to be hip, revealing, instead it comes out trite, and one scene after another is predictable. I know there are viewers out there that really liked this movie, so I could be wrong.\"",
+    "expected_answer": "negative",
+    "difficulty": "medium",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Medium because it contains mixed signals or indirect language requiring inference beyond surface keywords.",
+    "task_id": ""
+  },
+  {
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of this review: \"Hmm, Hip Hop music to a period western. Modern phrases like \"cool\" and too many others to keep track of. \"The sistahs are in tha house\"!?French manicured nails on hard riding girls. Microphone packs CLEARLY visible on Li'l Kim's back. I just can't go on with the litany of errors made by the director and editors.<br /><br />The acting isn't as bad as I've ever seen. The women did well enough with a poor script.<br /><br />It was weird hearing Louis Mandylor speaking in his native accent.<br /><br />The girls are beautiful. The costumes fabulous albeit completely incorrect. I just can't believe they would dumb down what could have been a great story. I would feel offended to believe that this movie was loaded with such trappings that it would play well in the inner city.<br /><br />\"",
+    "expected_answer": "negative",
+    "difficulty": "hard",
+    "source": "sentiment-hard-v1",
+    "reasoning": "Hard because it requires pragmatic/sarcasm detection beyond keyword matching, or involves mixed/hedged sentiment.",
+    "task_id": ""
+  }
+]

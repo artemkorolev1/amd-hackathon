@@ -1,0 +1,47 @@
+# amd-hackathon-submit — parallel submission staging container
+# Build: docker buildx build --platform linux/amd64 -t ghcr.io/artemkorolev1/amd-hackathon-submit:v15-staging --load -f Dockerfile.staging .
+#
+# Uses staging/entrypoint.py instead of harness.py. Same deps as the main Dockerfile,
+# but copies the staging/ module for 4-worker parallel processing + majority voting.
+
+FROM python:3.12-slim
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    PIP_NO_CACHE_DIR=1 \
+    PIP_BREAK_SYSTEM_PACKAGES=1
+
+WORKDIR /
+
+# Runtime libs for llama-cpp-python CPU build
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install Python deps
+COPY requirements.txt /tmp/requirements.txt
+RUN pip install --no-cache-dir -r /tmp/requirements.txt \
+    && apt-get purge -y --auto-remove build-essential curl \
+    && rm -rf /var/lib/apt/lists/* \
+    && find /usr/local/lib -name '__pycache__' -exec rm -rf {} + 2>/dev/null || true
+
+# Copy agent module (needed for classifier + solvers — read-only imports)
+COPY agent/ /agent/
+
+# Copy staging module (NEW parallel architecture — replaces harness.py)
+COPY staging/ /staging/
+
+# Copy model for local inference
+COPY models/ /models/
+
+# Ensure grader I/O paths
+RUN mkdir -p /input /output
+
+ENV PYTHONPATH=/ \
+    MODEL_PATH=/models/qwen2.5-1.5b-instruct-q4_k_m.gguf \
+    N_GPU_LAYERS=0 \
+    N_THREADS=2 \
+    N_CTX=2048
+
+ENTRYPOINT ["python3", "-u", "-m", "staging.entrypoint"]

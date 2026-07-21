@@ -1,0 +1,290 @@
+{
+  "category": "code_debug",
+  "num_questions": 10,
+  "num_generations": 2,
+  "model_keys": [
+    "qwen2.5-1.5b"
+  ],
+  "history": [
+    {
+      "generation": 1,
+      "top3_mean": 0.9666666666666667,
+      "per_model_best": {
+        "qwen2.5-1.5b": 1.0
+      },
+      "pareto_front_sizes": {
+        "qwen2.5-1.5b": 4
+      }
+    },
+    {
+      "generation": 2,
+      "top3_mean": 0.9666666666666667,
+      "per_model_best": {
+        "qwen2.5-1.5b": 1.0
+      },
+      "pareto_front_sizes": {
+        "qwen2.5-1.5b": 5
+      }
+    }
+  ],
+  "final_results": {
+    "qwen2.5-1.5b": {
+      "best_accuracy": 1.0,
+      "best_prompt": "Debug:",
+      "temperature": 0.0,
+      "max_tokens": 128,
+      "avg_output_tokens": 126.2,
+      "avg_latency_ms": 756.3503503799438,
+      "variant_name": "seed_2_code_debug",
+      "best_generation": 1
+    }
+  },
+  "generations": [
+    {
+      "generation": 1,
+      "population": [
+        {
+          "name": "seed_0_code_debug",
+          "system_prompt": "",
+          "temperature": 0.0,
+          "accuracy": {
+            "qwen2.5-1.5b": 0.8
+          },
+          "avg_output_tokens": {
+            "qwen2.5-1.5b": 119.5
+          },
+          "avg_latency_ms": {
+            "qwen2.5-1.5b": 706.9762468338013
+          }
+        },
+        {
+          "name": "seed_1_code_debug",
+          "system_prompt": "Find and fix the bug in the Python code. Output only the corrected code.",
+          "temperature": 0.0,
+          "accuracy": {
+            "qwen2.5-1.5b": 0.9
+          },
+          "avg_output_tokens": {
+            "qwen2.5-1.5b": 61.0
+          },
+          "avg_latency_ms": {
+            "qwen2.5-1.5b": 379.16011810302734
+          }
+        },
+        {
+          "name": "seed_2_code_debug",
+          "system_prompt": "Debug:",
+          "temperature": 0.0,
+          "accuracy": {
+            "qwen2.5-1.5b": 1.0
+          },
+          "avg_output_tokens": {
+            "qwen2.5-1.5b": 126.2
+          },
+          "avg_latency_ms": {
+            "qwen2.5-1.5b": 756.3503503799438
+          }
+        },
+        {
+          "name": "seed_3_code_debug",
+          "system_prompt": "Identify the error in the code and provide the corrected version.",
+          "temperature": 0.0,
+          "accuracy": {
+            "qwen2.5-1.5b": 0.6
+          },
+          "avg_output_tokens": {
+            "qwen2.5-1.5b": 99.0
+          },
+          "avg_latency_ms": {
+            "qwen2.5-1.5b": 587.8975868225098
+          }
+        },
+        {
+          "name": "seed_4_code_debug",
+          "system_prompt": "Fix the bug. Output only the corrected function. Preserve the original signature.",
+          "temperature": 0.0,
+          "accuracy": {
+            "qwen2.5-1.5b": 0.8
+          },
+          "avg_output_tokens": {
+            "qwen2.5-1.5b": 38.1
+          },
+          "avg_latency_ms": {
+            "qwen2.5-1.5b": 240.36149978637695
+          }
+        },
+        {
+          "name": "rand_5_code_debug",
+          "system_prompt": "Fix: Output only the answer.",
+          "temperature": 0.1,
+          "accuracy": {
+            "qwen2.5-1.5b": 1.0
+          },
+          "avg_output_tokens": {
+            "qwen2.5-1.5b": 63.6
+          },
+          "avg_latency_ms": {
+            "qwen2.5-1.5b": 388.64543437957764
+          }
+        },
+        {
+          "name": "rand_6_code_debug",
+          "system_prompt": "Code: Preserve original functionality. No explanation.",
+          "temperature": 0.2,
+          "accuracy": {
+            "qwen2.5-1.5b": 0.8
+          },
+          "avg_output_tokens": {
+            "qwen2.5-1.5b": 93.0
+          },
+          "avg_latency_ms": {
+            "qwen2.5-1.5b": 566.3451433181763
+          }
+        },
+        {
+          "name": "rand_7_code_debug",
+          "system_prompt": "Code: Fix without changing the function signature. Keep under 5 words.. Address all parts of the question.",
+          "temperature": 0.1,
+          "accuracy": {
+            "qwen2.5-1.5b": 0.5
+          },
+          "avg_output_tokens": {
+            "qwen2.5-1.5b": 30.7
+          },
+          "avg_latency_ms": {
+            "qwen2.5-1.5b": 199.2703676223755
+          }
+        }
+      ],
+      "pareto_front_sizes": {
+        "qwen2.5-1.5b": 4
+      },
+      "per_model_best": {
+        "qwen2.5-1.5b": 1.0
+      }
+    },
+    {
+      "generation": 2,
+      "population": [
+        {
+          "name": "elite_g0_5_code_debug",
+          "system_prompt": "Fix: Output only the answer.",
+          "temperature": 0.1,
+          "accuracy": {
+            "qwen2.5-1.5b": 1.0
+          },
+          "avg_output_tokens": {
+            "qwen2.5-1.5b": 56.2
+          },
+          "avg_latency_ms": {
+            "qwen2.5-1.5b": 347.189736366272
+          }
+        },
+        {
+          "name": "elite_g0_7_code_debug",
+          "system_prompt": "Code: Fix without changing the function signature. Keep under 5 words.. Address all parts of the question.",
+          "temperature": 0.1,
+          "accuracy": {
+            "qwen2.5-1.5b": 0.5
+          },
+          "avg_output_tokens": {
+            "qwen2.5-1.5b": 33.3
+          },
+          "avg_latency_ms": {
+            "qwen2.5-1.5b": 216.1005735397339
+          }
+        },
+        {
+          "name": "gen0_c2_code_debug",
+          "system_prompt": "Fix the bug. Code: Fix without changing the function signature. Output only the corrected function. Keep under 5 words. Address all parts of the question. Preserve the original signature.",
+          "temperature": 0.0,
+          "accuracy": {
+            "qwen2.5-1.5b": 0.8
+          },
+          "avg_output_tokens": {
+            "qwen2.5-1.5b": 32.1
+          },
+          "avg_latency_ms": {
+            "qwen2.5-1.5b": 210.53271293640137
+          }
+        },
+        {
+          "name": "gen0_c3_code_debug",
+          "system_prompt": "Fix: Output only the answer.",
+          "temperature": 0.1,
+          "accuracy": {
+            "qwen2.5-1.5b": 1.0
+          },
+          "avg_output_tokens": {
+            "qwen2.5-1.5b": 60.1
+          },
+          "avg_latency_ms": {
+            "qwen2.5-1.5b": 373.6653804779053
+          }
+        },
+        {
+          "name": "gen0_c4_code_debug",
+          "system_prompt": "Find and fix the bug in the Python code. Fix the bug. Output only the corrected function. Output only the corrected code.",
+          "temperature": 0.0,
+          "accuracy": {
+            "qwen2.5-1.5b": 0.9
+          },
+          "avg_output_tokens": {
+            "qwen2.5-1.5b": 48.4
+          },
+          "avg_latency_ms": {
+            "qwen2.5-1.5b": 306.54430389404297
+          }
+        },
+        {
+          "name": "gen0_m5_code_debug",
+          "system_prompt": "Code: Fix without changing the function signature. Keep under 5 words..",
+          "temperature": 0.1,
+          "accuracy": {
+            "qwen2.5-1.5b": 0.5
+          },
+          "avg_output_tokens": {
+            "qwen2.5-1.5b": 25.0
+          },
+          "avg_latency_ms": {
+            "qwen2.5-1.5b": 171.34981155395508
+          }
+        },
+        {
+          "name": "gen0_m6_code_debug",
+          "system_prompt": "Code:",
+          "temperature": 0.0,
+          "accuracy": {
+            "qwen2.5-1.5b": 0.8
+          },
+          "avg_output_tokens": {
+            "qwen2.5-1.5b": 126.2
+          },
+          "avg_latency_ms": {
+            "qwen2.5-1.5b": 748.3433723449707
+          }
+        },
+        {
+          "name": "fresh_gen0_code_debug",
+          "system_prompt": "Only output the corrected code. No explanation.",
+          "temperature": 0.1,
+          "accuracy": {
+            "qwen2.5-1.5b": 0.9
+          },
+          "avg_output_tokens": {
+            "qwen2.5-1.5b": 49.0
+          },
+          "avg_latency_ms": {
+            "qwen2.5-1.5b": 304.86629009246826
+          }
+        }
+      ],
+      "pareto_front_sizes": {
+        "qwen2.5-1.5b": 5
+      },
+      "per_model_best": {
+        "qwen2.5-1.5b": 1.0
+      }
+    }
+  ]
+}

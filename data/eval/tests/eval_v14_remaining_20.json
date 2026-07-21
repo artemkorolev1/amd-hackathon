@@ -1,0 +1,169 @@
+{
+  "meta": {
+    "source": "complexity_eval_40.json",
+    "total": 20,
+    "note": "Remaining 20 questions (complement of the first 20) for V14 harness test"
+  },
+  "questions": [
+    {
+      "category": "sentiment",
+      "prompt": "Classify the sentiment of the following text (positive, negative, or neutral):\n\n\"The algorithm flagged 3,842 transactions as potentially fraudulent \u2014 none were confirmed.\"",
+      "expected_answer": "neutral",
+      "source": "claude-code-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "Neutral factual report despite charged keywords ('fraudulent'). No evaluative language. LLMs often mislabel this negative due to 'fraudulent' or positive due to 'none confirmed' \u2014 both are incorrect."
+    },
+    {
+      "category": "sentiment",
+      "prompt": "Classify the sentiment of the following text (positive, negative, or neutral):\n\n\"I really admire your ability to be so confident even when you're completely wrong.\"",
+      "expected_answer": "negative (sarcastic)",
+      "source": "claude-code-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "Passive-aggressive sarcasm: 'admire your ability to be so confident' is positive on the surface, but 'even when you're completely wrong' reveals mockery. LLMs often label this positive based on 'admire' and 'confident'."
+    },
+    {
+      "category": "sentiment",
+      "prompt": "Classify the sentiment of the following text (positive, negative, or neutral):\n\n\"The new policy ensures that every customer interaction generates a minimum of three follow-up emails. Efficiency at its finest.\"",
+      "expected_answer": "negative (sarcastic)",
+      "source": "claude-code-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "Sarcasm: 'efficiency at its finest' sounds positive but the context \u2014 excessive follow-up emails \u2014 frames it as bureaucratic annoyance. LLMs often latch onto 'finest' and miss the ironic tone."
+    },
+    {
+      "category": "ner",
+      "prompt": "Extract all persons, organizations, locations, dates, and legislation names from this political news article:\n\nThe European Commission formally opened an investigation on March 12 under the Digital Markets Act (DMA) into Apple's App Store practices and Meta's 'pay or consent' advertising model. Margrethe Vestager, the EU's competition commissioner, announced the probe in Brussels, stating that the companies may be violating Articles 5 and 6 of the DMA. Apple, headquartered in Cupertino, California, argued that its compliance plan was already endorsed by a separate ruling from the Court of Justice of the European Union (CJEU) in Luxembourg. Meta, which has its European headquarters in Dublin, Ireland, faces potential fines of up to 10% of its global annual revenue, which exceeded $134 billion in fiscal year 2024. The investigation is expected to conclude by Q1 2026.",
+      "expected_answer": "PERSON: Margrethe Vestager; ORGANIZATION: European Commission, Apple, Meta, Court of Justice of the European Union (CJEU); LOCATION: Brussels, Cupertino, California, Luxembourg, Dublin, Ireland; DATE: March 12, Q1 2026; LEGISLATION: Digital Markets Act (DMA), Articles 5, Article 6; MONETARY: $134 billion; PERCENTAGE: 10%",
+      "source": "claude-code-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "Hard because: (1) 'Digital Markets Act (DMA)' is a legislation name that acts as a named entity with acronym; (2) 'Articles 5 and 6' are legal document references, not dates; (3) 'Court of Justice of the European Union (CJEU)' is a long, nested organizational entity; (4) locations are nested ('Dublin, Ireland', 'Cupertino, California'); (5) 'Meta' is a short company name that could be mistaken for a common word; (6) 'Q1 2026' is a relative time reference that is a named date entity; (7) 'pay or consent' is a quoted policy name."
+    },
+    {
+      "category": "ner",
+      "prompt": "Extract all authors, institutions, locations, grant identifiers, and dates from this scientific paper header:\n\nSarah M. Chen1*, David H. Park2,3, Aisha K. Patel4,5, Roberto Garcia-Fernandez6, Yuki Tanaka7,8, and Michael O'Brien9\n\n1 Department of Molecular Biology, Princeton University, Princeton, NJ 08544, USA\n2 Division of Hematology/Oncology, Boston Children's Hospital, Boston, MA 02115, USA\n3 Department of Pediatrics, Harvard Medical School, Boston, MA 02115, USA\n4 Center for Cancer Research, National Cancer Institute, Bethesda, MD 20892, USA\n5 Department of Oncology, Johns Hopkins University School of Medicine, Baltimore, MD 21287, USA\n6 Instituto de Neurociencias de Alicante, Universidad Miguel Hern\u00e1ndez, Alicante 03550, Spain\n7 Graduate School of Medicine, Kyoto University, Kyoto 606-8501, Japan\n8 RIKEN Center for Integrative Medical Sciences, Yokohama 230-0045, Japan\n9 Wellcome Trust Centre for Cell Biology, University of Edinburgh, Edinburgh EH9 3BF, United Kingdom\n\n*Correspondence: sarah.chen@princeton.edu\n\nReceived: November 12, 2024; Accepted: February 28, 2025; Published: March 15, 2025",
+      "expected_answer": "PERSON: Sarah M. Chen, David H. Park, Aisha K. Patel, Roberto Garcia-Fernandez, Yuki Tanaka, Michael O'Brien; ORGANIZATION: Princeton University, Boston Children's Hospital, Harvard Medical School, National Cancer Institute, Johns Hopkins University School of Medicine, Universidad Miguel Hern\u00e1ndez, Kyoto University, RIKEN Center for Integrative Medical Sciences, University of Edinburgh, Wellcome Trust Centre for Cell Biology; LOCATION: Princeton NJ 08544 USA, Boston MA 02115 USA, Bethesda MD 20892 USA, Baltimore MD 21287 USA, Alicante 03550 Spain, Kyoto 606-8501 Japan, Yokohama 230-0045 Japan, Edinburgh EH9 3BF United Kingdom; DATE: November 12 2024, February 28 2025, March 15 2025; DEPARTMENT: Department of Molecular Biology, Division of Hematology/Oncology, Department of Pediatrics, Center for Cancer Research, Department of Oncology, Graduate School of Medicine; INSTITUTE: Instituto de Neurociencias de Alicante",
+      "source": "claude-code-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "Hard because: (1) author names with middle initials and multi-part last names ('Garcia-Fernandez', 'Michael O'Brien') challenge boundary detection; (2) institutional affiliations contain nested entities \u2014 'Boston Children's Hospital' is an organization but is part of a larger affiliation string; (3) 'National Cancer Institute' is both an organization and a specific institute; (4) zip codes and country names are location sub-entities within longer address strings; (5) department names like 'Division of Hematology/Oncology' contain slashes; (6) the 'Wellcome Trust Centre for Cell Biology' has a multi-word organization name that includes 'Wellcome Trust' which is another entity; (7) dates appear in a structured 'Received/Accepted/Published' format."
+    },
+    {
+      "category": "math",
+      "prompt": "Problem: How many distinct 5-digit numbers can be formed using the digits 0, 1, 2, 3, 4, 5, 6 if no digit is repeated and the number must be divisible by 4?\nOptions: a) 480, b) 540, c) 576, d) 624, e) 720",
+      "expected_answer": "d) 624",
+      "source": "claude-code-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "Permutation with divisibility constraint: A number is divisible by 4 if its last two digits form a number divisible by 4. Enumerate valid endings from the 7 digits (no repeat), count arrangements for first 3 digits considering 0 can't lead, and sum across cases."
+    },
+    {
+      "category": "math",
+      "prompt": "Problem: A sum of money is invested at compound interest. The interest rate for the first year is 10%, for the second year is 12%, and for the third year is 15%. If the total compound interest earned after 3 years is \u20b95,210, what is the principal amount?\nOptions: a) \u20b910,000, b) \u20b911,500, c) \u20b912,500, d) \u20b913,200, e) \u20b915,000",
+      "expected_answer": "c) \u20b912,500",
+      "source": "claude-code-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "Compound interest with varying rates: Amount = P \u00d7 (1+r1) \u00d7 (1+r2) \u00d7 (1+r3). CI = Amount - P. Solve P \u00d7 (1.10 \u00d7 1.12 \u00d7 1.15 - 1) = 5210, noting that 1.10\u00d71.12\u00d71.15 = 1.4168, so 0.4168P = 5210."
+    },
+    {
+      "category": "math",
+      "prompt": "Problem: A shopkeeper marks an item 40% above the cost price and offers two successive discounts of 15% and 10% on the marked price. If the shopkeeper still makes a profit of \u20b9142, what is the cost price of the item?\nOptions: a) \u20b91,800, b) \u20b92,000, c) \u20b92,200, d) \u20b92,500, e) \u20b91,600",
+      "expected_answer": "b) \u20b92,000",
+      "source": "claude-code-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "Profit and loss with successive discounts: Let CP = x. MP = 1.4x. SP = MP \u00d7 0.85 \u00d7 0.9 = 1.071x. Profit = SP - CP = 0.071x. Solve 0.071x = 142 to find x."
+    },
+    {
+      "category": "code_gen",
+      "prompt": "from typing import List, Tuple\n\n\ndef shortest_path_in_maze(\n    maze: List[List[int]],\n    start: Tuple[int, int],\n    end: Tuple[int, int]\n) -> List[Tuple[int, int]]:\n    \"\"\"\n    Find the shortest path from start to end in a 2D maze using BFS.\n\n    The maze is a rectangular grid where:\n      0 = open path\n      1 = wall (cannot traverse)\n\n    Movement is allowed in 4 directions: up, down, left, right.\n\n    Return the shortest path as a list of (row, col) coordinates from\n    start to end (inclusive). If no path exists, return an empty list.\n\n    Example:\n        maze = [\n            [0, 0, 1, 0],\n            [1, 0, 1, 0],\n            [0, 0, 0, 0],\n            [0, 1, 1, 0],\n        ]\n        shortest_path_in_maze(maze, (0, 0), (3, 3))\n        # Returns [(0,0), (0,1), (1,1), (2,1), (2,2), (2,3), (3,3)]\n    \"\"\"\n",
+      "expected_answer": "from typing import List, Tuple\nfrom collections import deque\n\n\ndef shortest_path_in_maze(\n    maze: List[List[int]],\n    start: Tuple[int, int],\n    end: Tuple[int, int]\n) -> List[Tuple[int, int]]:\n    if not maze or not maze[0]:\n        return []\n    rows, cols = len(maze), len(maze[0])\n\n    if maze[start[0]][start[1]] == 1 or maze[end[0]][end[1]] == 1:\n        return []\n\n    if start == end:\n        return [start]\n\n    queue = deque([start])\n    visited = {start}\n    parent: Dict[Tuple[int, int], Tuple[int, int]] = {start: None}  # type: ignore\n\n    while queue:\n        r, c = queue.popleft()\n\n        if (r, c) == end:\n            path = []\n            curr: Tuple[int, int] = (r, c)\n            while curr is not None:\n                path.append(curr)\n                curr = parent[curr]\n            return path[::-1]\n\n        for dr, dc in [(-1, 0), (1, 0), (0, -1), (0, 1)]:\n            nr, nc = r + dr, c + dc\n            neighbor = (nr, nc)\n            if 0 <= nr < rows and 0 <= nc < cols and maze[nr][nc] == 0 and neighbor not in visited:\n                visited.add(neighbor)\n                parent[neighbor] = (r, c)\n                queue.append(neighbor)\n\n    return []\n",
+      "source": "claude-code-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "BFS shortest path in a maze is hard because: (1) must reconstruct the full path using a parent dictionary, not just check reachability, (2) BFS guarantees shortest path in an unweighted grid but needs careful visited tracking, (3) must handle start==end edge case immediately, (4) must validate start and end are not walls, (5) must maintain correct boundary checks, (6) the path reconstruction requires iterating back through parent pointers and reversing, (7) must return empty list when maze is unsolvable."
+    },
+    {
+      "category": "code_gen",
+      "prompt": "from typing import List\n\n\ndef find_kth_largest(nums: List[int], k: int) -> int:\n    \"\"\"\n    Find the kth largest element in an unsorted array.\n    k is 1-indexed: k=1 returns the largest element.\n\n    Implement the QuickSelect algorithm (Hoare's selection algorithm)\n    with in-place partitioning. Expected time O(n), worst-case O(n^2).\n    Do NOT use sorting or heapq.nlargest.\n\n    Examples:\n        find_kth_largest([3, 2, 1, 5, 6, 4], 2) -> 5\n        find_kth_largest([3, 2, 3, 1, 2, 4, 5, 5, 6], 4) -> 4\n        find_kth_largest([1], 1) -> 1\n    \"\"\"\n",
+      "expected_answer": "from typing import List\nimport random\n\n\ndef find_kth_largest(nums: List[int], k: int) -> int:\n    # Convert to kth smallest index (0-indexed)\n    target = len(nums) - k\n    left, right = 0, len(nums) - 1\n\n    while left <= right:\n        pivot_idx = _partition(nums, left, right)\n\n        if pivot_idx == target:\n            return nums[pivot_idx]\n        elif pivot_idx < target:\n            left = pivot_idx + 1\n        else:\n            right = pivot_idx - 1\n\n    return -1  # Should never reach here\n\n\ndef _partition(nums: List[int], left: int, right: int) -> int:\n    # Random pivot to improve expected performance\n    pivot_idx = random.randint(left, right)\n    nums[pivot_idx], nums[right] = nums[right], nums[pivot_idx]\n    pivot = nums[right]\n\n    i = left  # i tracks the boundary between <= and > pivot\n    for j in range(left, right):\n        if nums[j] <= pivot:\n            nums[i], nums[j] = nums[j], nums[i]\n            i += 1\n\n    nums[i], nums[right] = nums[right], nums[i]\n    return i\n",
+      "source": "claude-code-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "QuickSelect (Hoare's selection) is hard because: (1) must convert kth largest to a kth smallest index (len(nums)-k), (2) must implement in-place partitioning (Lomuto partition scheme), (3) random pivot selection is important for average O(n) performance, (4) must handle duplicate values correctly in partitioning, (5) edge cases include k=1, k=n, single-element arrays, and arrays with all identical values, (6) the partition must place the pivot at the correct final position and return that index."
+    },
+    {
+      "category": "code_debug",
+      "prompt": "Fix this buggy code:\n    def remove_keys_with_value(d, value):\n        \"\"\"Remove all keys from dict `d` whose value equals `value`.\n        >>> d = {'a': 1, 'b': 2, 'c': 1, 'd': 3}\n        >>> remove_keys_with_value(d, 1)\n        >>> d\n        {'b': 2, 'd': 3}\n        \"\"\"\n        for key in d:\n            if d[key] == value:\n                del d[key]\n        return d\n\nCalling this function raises a RuntimeError: 'dictionary changed size during iteration'.",
+      "expected_answer": "    def remove_keys_with_value(d, value):\n        \"\"\"Remove all keys from dict `d` whose value equals `value`.\n        >>> d = {'a': 1, 'b': 2, 'c': 1, 'd': 3}\n        >>> remove_keys_with_value(d, 1)\n        >>> d\n        {'b': 2, 'd': 3}\n        \"\"\"\n        for key in list(d):\n            if d[key] == value:\n                del d[key]\n        return d",
+      "source": "claude-code-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "Dictionary mutation during iteration: Python dict views are dynamic \u2014 deleting a key while iterating over the dict changes its size, which raises a RuntimeError. The fix is to iterate over a snapshot of keys with `list(d)`, which creates a static list of all keys before iteration begins."
+    },
+    {
+      "category": "code_debug",
+      "prompt": "Fix this buggy code:\n    def fibonacci(n):\n        \"\"\"Return the nth Fibonacci number.\n        fibonacci(0) -> 0\n        fibonacci(1) -> 1\n        fibonacci(6) -> 8\n        \"\"\"\n        if n == 0:\n            return 0\n        return fibonacci(n - 1) + fibonacci(n - 2)\n\nThe function causes a RecursionError for any n > 1 because the recursion never terminates.",
+      "expected_answer": "    def fibonacci(n):\n        \"\"\"Return the nth Fibonacci number.\n        fibonacci(0) -> 0\n        fibonacci(1) -> 1\n        fibonacci(6) -> 8\n        \"\"\"\n        if n <= 1:\n            return n\n        return fibonacci(n - 1) + fibonacci(n - 2)",
+      "source": "claude-code-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "Missing recursion base case: the function handles n=0 returning 0, but has no base case for n=1. When fibonacci(1) is called, it computes fibonacci(0) + fibonacci(-1). fibonacci(-1) calls fibonacci(-2) + fibonacci(-3), cascading into infinite recursion toward negative infinity. The fix adds a base case `if n <= 1: return n` so both 0 and 1 terminate the recursion."
+    },
+    {
+      "category": "code_debug",
+      "prompt": "Fix this buggy code:\n    def uppercase_words(words):\n        \"\"\"Convert all words in the list to uppercase.\n        >>> uppercase_words(['hello', 'world'])\n        ['HELLO', 'WORLD']\n        \"\"\"\n        for w in words:\n            w.upper()\n        return words\n\nThe function returns the original list unchanged (e.g., ['hello', 'world']) instead of uppercase.",
+      "expected_answer": "    def uppercase_words(words):\n        \"\"\"Convert all words in the list to uppercase.\n        >>> uppercase_words(['hello', 'world'])\n        ['HELLO', 'WORLD']\n        \"\"\"\n        return [w.upper() for w in words]",
+      "source": "claude-code-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "String immutability: strings in Python are immutable. The method `str.upper()` does not modify the string in place \u2014 it returns a new string. The loop calls `w.upper()` but discards the return value, leaving the original list unchanged. The fix builds a new list with the uppercase results."
+    },
+    {
+      "category": "factual",
+      "prompt": "Context: The Permian-Triassic extinction event, approximately 252 million years ago, was the most severe extinction in Earth's history, killing 96% of marine species and 70% of terrestrial vertebrates. The leading cause is massive volcanic eruptions in the Siberian Traps, which released enormous CO\u2082 and methane, causing rapid global warming and ocean acidification. The extinction allowed archosaurs (the group containing dinosaurs and crocodilians) to diversify and dominate terrestrial ecosystems throughout the Triassic. By contrast, the Cretaceous-Paleogene extinction 66 million years ago (caused by the Chicxulub asteroid impact) killed about 75% of species but uniquely allowed mammals to expand into niches vacated by non-avian dinosaurs.\nQuestion: If the Siberian Traps eruptions had released only one-tenth of their actual CO\u2082 output, what major evolutionary outcome that followed the Permian-Triassic extinction would most likely NOT have occurred?",
+      "expected_answer": "The rise of archosaurs (early dinosaur ancestors) to dominance in terrestrial ecosystems would likely not have occurred, because a milder extinction event would have left synapsids (mammal-like reptiles) as the dominant land vertebrates, occupying the ecological niches that archosaurs filled after the severe extinction wiped out most synapsid lineages.",
+      "source": "claude-code-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "This requires multi-hop counterfactual reasoning: (1) linking the Siberian Traps eruption intensity to extinction severity, (2) understanding that Permian synapsids were the dominant terrestrial vertebrates before the extinction, (3) knowing that their near-elimination vacated niches for archosaurs, (4) recognizing that reducing eruption intensity would reduce extinction severity, keeping synapsids in place and preventing the archosaur takeover that eventually led to dinosaurs."
+    },
+    {
+      "category": "factual",
+      "prompt": "Context: The cosmic microwave background (CMB) radiation was discovered accidentally in 1965 by Arno Penzias and Robert Wilson at Bell Labs, who detected persistent noise in their radio antenna at 7.35 cm wavelength corresponding to a blackbody temperature of about 3.5 K. The CMB has a nearly perfect blackbody spectrum at 2.725 K today, with its peak intensity at approximately 1.06 mm wavelength according to Wien's displacement law. The Earth's atmosphere is transparent at centimeter/microwave wavelengths but largely opaque at sub-millimeter wavelengths (below ~1 mm) due to water vapor absorption. COBE (1989-1993), the first space-based CMB mission, measured the full spectrum precisely from above the atmosphere.\nQuestion: If Penzias and Wilson's antenna in 1965 had been designed to detect 1 mm wavelength radiation instead of 7.35 cm, why would they almost certainly NOT have discovered the CMB, and what would this have meant for the timeline of its discovery?",
+      "expected_answer": "They would not have detected the CMB because Earth's atmosphere is opaque at 1 mm (sub-millimeter radiation is absorbed by water vapor), so the signal would never have reached their ground-based antenna. The discovery would have been delayed until space-based observatories capable of measuring above the atmosphere \u2014 such as COBE in 1989 \u2014 were developed, pushing the discovery back by nearly 25 years.",
+      "source": "claude-code-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "This requires connecting: (1) Wien's law to determine the CMB's peak wavelength (~1 mm at 2.725 K), (2) knowledge of atmospheric transmission windows (cm waves penetrate, sub-mm is absorbed by H\u2082O), (3) the historical fact that Penzias and Wilson used a 7.35 cm horn antenna, (4) the timeline of space-based CMB missions (COBE launched 1989), and (5) inferring the counterfactual consequences for discovery chronology."
+    },
+    {
+      "category": "factual",
+      "prompt": "Context: The Library of Alexandria, founded in the 3rd century BCE under Ptolemy II Philadelphus, held an estimated 400,000 to 700,000 papyrus scrolls and was the ancient world's greatest repository of knowledge. It was damaged in stages: by fire during Julius Caesar's siege in 48 BCE, attacked by Aurelian in the 270s CE, and finally destroyed after the Arab conquest in 642 CE. The Library of Constantinople, founded by Constantius II in 353 CE, held 120,000 volumes and became the last great classical repository before it was destroyed when the Fourth Crusade sacked Constantinople in 1204 CE. During the Islamic Golden Age (8th-13th centuries), Arabic translations preserved many Greek works that were later retranslated into Latin and spurred the European Renaissance.\nQuestion: If the Fourth Crusade had not sacked Constantinople in 1204, which key historical pathway for preserving classical Greek knowledge would most likely have been rendered less critical, and why?",
+      "expected_answer": "Arabic translations during the Islamic Golden Age would have been less critical, because the Library of Constantinople (and the broader Byzantine scholarly tradition) would have continued preserving the original Greek manuscripts, giving Western European scholars direct access to classical Greek texts without relying primarily on Arabic intermediaries during the Renaissance.",
+      "source": "claude-code-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "This requires multi-hop temporal reasoning: (1) the Library of Constantinople held original Greek manuscripts, (2) the Fourth Crusade's 1204 sack destroyed this repository, (3) after 1204, Arabic translations became the primary conduit for Greek texts to reach Western Europe, (4) the Renaissance rediscovery of classical knowledge relied heavily on Latin translations of Arabic versions, (5) if Constantinople's library had survived, the direct Greek-to-Latin transmission route would have been preserved, reducing dependence on Arabic intermediaries."
+    },
+    {
+      "category": "logic",
+      "prompt": "A prism refracts white light into its constituent spectral colors. Which scenario is the most analogous?\nA) A filter removing impurities from water, leaving only pure H2O.\nB) A lens focusing sunlight to a single point, concentrating energy.\nC) A chromatography column separating a chemical mixture into its component compounds.\nD) A mirror reflecting an image without changing its composition.",
+      "expected_answer": "C) A chromatography column separating a chemical mixture into its component compounds.",
+      "source": "claude-code-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "The prism takes a single input (white light) and separates it into its constituent components (the visible spectrum). This is a separation/analysis process that reveals the components of a unified whole. Chromatography similarly takes a mixed sample and separates it into its individual compounds based on differential migration through a medium. A is a purification/removal process (not revealing components but removing unwanted ones). B is a concentration/focusing process (the opposite of separation). D is a reflection process that preserves the original unchanged. C is the closest functional analogy."
+    },
+    {
+      "category": "logic",
+      "prompt": "A restaurant has 5 reservations at different times: 6:00, 6:30, 7:00, 7:30, and 8:00. Each reservation has a different party size: 2, 3, 4, 5, or 6 people. The parties are named after the lead booker: Adams, Bell, Cole, Dean, and East.\n\n1. The party of 4 is seated at 7:30.\n2. Bell's reservation is immediately after Dean's (no other reservation in between).\n3. The party of 6 is at an earlier time than the party of 2.\n4. East's party size is 3, and it is not at 6:00 or 8:00.\n5. Adams' party is larger than Cole's party.\n6. The party of 5 is seated at 7:00.\n7. Cole's reservation is at 8:00.\n\nWhat time is each party's reservation, and what is each party's size?",
+      "expected_answer": "6:00: Adams, size 6. 6:30: East, size 3. 7:00: Dean, size 5. 7:30: Bell, size 4. 8:00: Cole, size 2.",
+      "source": "claude-code-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "From clues 1, 6, 7: 7:30=size4, 7:00=size5, 8:00=Cole. From clue 4: East=size3, not at 6:00 or 8:00, so East is at 6:30. From clue 2: Bell immediately after Dean. Possible pairs: (6:00,6:30), (6:30,7:00), (7:00,7:30), (7:30,8:00). 6:30=East, so (6:00,6:30): Dean=6:00, Bell=6:30=East impossible. (6:30,7:00): Dean=6:30=East impossible. (7:30,8:00): Bell=8:00=Cole impossible. So only (7:00,7:30): Dean=7:00=size5, Bell=7:30=size4. Remaining booker: Adams for 6:00. Remaining sizes: 2,6 for 6:00 and 8:00. Cole=8:00, Adams=6:00. Clue 3: size6 < size2, so size6 at earlier time 6:00. So Adams=6:00=size6, Cole=8:00=size2. Clue 5: Adams(6) > Cole(2) \u2713."
+    },
+    {
+      "category": "summarization",
+      "prompt": "LEGAL BRIEF - PLAINTIFFS' ARGUMENT (Artists vs. Stability AI, US District Court for the Northern District of California):\n\nThe plaintiffs, representing a class of visual artists, allege that Stability AI's Stable Diffusion model was trained on billions of copyrighted images scraped from the internet without consent, license, or compensation. The complaint cites that the LAION-5B dataset, used to train the model, contains images identified by exact URLs from artists' personal portfolios, museum collections, and commercial stock photography sites. Plaintiffs argue that Stable Diffusion's ability to generate images in the style of specific named artists demonstrates the model is not creating transformative new works but rather storing and reconstructing compressed copies of copyrighted training data. They seek damages under the Copyright Act and an injunction against further use of their works.\n\nLEGAL BRIEF - DEFENDANTS' ARGUMENT (Stability AI):\n\nDefendants move for summary judgment, arguing that training AI models on publicly available internet data constitutes fair use under 17 U.S.C. Section 107. They cite Authors Guild v. Google, Inc., in which the Second Circuit held that digitizing millions of books to create a searchable database was transformative fair use. They argue that Stable Diffusion does not store copies of training images but learns statistical patterns and mathematical representations. The model cannot reproduce any specific copyrighted work unless that image was duplicated millions of times in the training data. They further argue that artistic style is not copyrightable, citing the idea-expression dichotomy, and that an injunction would stifle innovation and violate the first sale doctrine.",
+      "expected_answer": "Artists allege Stability AI illegally trained on billions of copyrighted images without consent, citing non-transformative use and style replication as evidence of infringement; Stability AI defends on fair use grounds, comparing to Google Books, and argues that learned statistical patterns and uncopyrightable artistic style do not constitute infringement.",
+      "source": "claude-code-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "Legal arguments with two opposing sides requiring balanced synthesis. The model must distill both complex legal doctrines (fair use, idea-expression dichotomy, first sale doctrine, transformativeness) and technical AI concepts (training data, statistical patterns versus storage) into a concise summary without favoring either position."
+    },
+    {
+      "category": "summarization",
+      "prompt": "HEADLINE: 'MIRACLE DRUG CURES ALZHEIMER'S IN LANDMARK TRIAL - FDA Fast-Tracks Approval'\n\nArticle text: The FDA has granted accelerated approval to lecanemab, a new Alzheimer's treatment developed by Biogen and Eisai. However, the clinical trial results reveal a more nuanced picture than the headline suggests. In the Phase 3 Clarity AD study involving 1,795 participants with early-stage Alzheimer's, lecanemab showed a 27% reduction in cognitive decline over 18 months compared to placebo, as measured by the Clinical Dementia Rating-Sum of Boxes scale. This translates to a slowing of decline by approximately 0.45 points on an 18-point scale - a difference that many clinicians describe as clinically meaningful but modest.\n\nNotably, 17.3% of patients receiving lecanemab experienced amyloid-related imaging abnormalities (ARIA), including brain swelling or micro-hemorrhages, compared to 8.9% in the placebo group. Three deaths occurred during the trial that were potentially treatment-related. The drug requires bi-weekly intravenous infusions costing approximately $26,500 per year. Medicare has announced it will cover the drug only for patients enrolled in registries tracking real-world outcomes.\n\nBiogen's stock surged 40% on the approval news. The company projects peak annual sales of $10 billion. But Dr. Samuel Gandy, a neurologist at Mount Sinai not involved in the trials, cautioned: 'This is not a cure. It is a modest symptomatic delay. Patients and families need to have realistic expectations about what this drug can achieve.' The approval was controversial within the FDA itself, with two advisory committee members resigning in protest over the accelerated pathway used.",
+      "expected_answer": "Lecanemab was approved for Alzheimer's with a headline calling it a miracle cure, but the reality is a modest 27% slowing of cognitive decline (0.45 on an 18-point scale), with brain swelling risks, $26,500 annual cost, and internal FDA controversy; experts emphasize it is not a cure.",
+      "source": "claude-code-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "News article where the headline is misleading compared to the content - the headline claims a miracle cure while the body reveals only modest efficacy, significant side effects, and expert caution. The model must recognize and resolve this discrepancy, prioritizing the article's substantive findings over its sensational framing."
+    }
+  ]
+}

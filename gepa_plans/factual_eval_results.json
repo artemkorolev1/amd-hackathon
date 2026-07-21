@@ -1,0 +1,3463 @@
+{
+  "date": "2026-07-13",
+  "models_tested": [
+    "smollm2-1.7b",
+    "qwen2.5-1.5b",
+    "llama-3.2-1b",
+    "gemma-3-1b"
+  ],
+  "prompt_strategies": [
+    {
+      "index": 0,
+      "label": "empty",
+      "system_prompt": ""
+    },
+    {
+      "index": 1,
+      "label": "Answer:",
+      "system_prompt": "Answer:"
+    },
+    {
+      "index": 2,
+      "label": "Fact:",
+      "system_prompt": "Fact:"
+    },
+    {
+      "index": 3,
+      "label": "Answer directly.",
+      "system_prompt": "Answer directly."
+    },
+    {
+      "index": 4,
+      "label": "Be precise.",
+      "system_prompt": "Be precise. Use exact names, dates, and numbers."
+    },
+    {
+      "index": 5,
+      "label": "No preamble.",
+      "system_prompt": "No preamble. No commentary. Output the answer only."
+    }
+  ],
+  "results": {
+    "smollm2-1.7b": {
+      "prompt_0": {
+        "accuracy": 0.474,
+        "correct": 9,
+        "total": 19,
+        "avg_latency_ms": 293.2,
+        "details": [
+          {
+            "task_id": "nq-0c39ac5763fb",
+            "question": "the oligodynamic effect is a phenomenon that describes",
+            "expected": "a biocidal effect of metals",
+            "got": "The oligodynamic effect is a phenomenon that describes the ability of certain metals to have a strong antimicrobial effect when used in small amounts.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-1186bd67ee61",
+            "question": "which state is located in the centre of india",
+            "expected": "Chhattisgarh",
+            "got": "The state of Chhattisgarh is located in the centre of India. It is a centrally located state in the Indian subcontinent, bordered by the states of Madhya Pradesh, Uttar Pradesh, Maharashtra, Telangana, Orissa, and Jharkhand. Chhattisgarh is known for its rich",
+            "correct": true
+          },
+          {
+            "task_id": "nq-225aa775d644",
+            "question": "how many seasons of the bastard executioner are there",
+            "expected": "one",
+            "got": "There is no Bastard Executioner series with multiple seasons. The Bastard Executioner is a single-season television series that aired in 2019.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-2a7776c7d218",
+            "question": "where did the butchers in the slaughterhouse cases live",
+            "expected": "New Orleans",
+            "got": "In the Slaughterhouse cases, the butchers who worked in the slaughterhouses lived in the surrounding areas of New York City. Specifically, they lived in the Lower East Side, which was a densely populated and ethnically diverse neighborhood in Manhattan. The Lower East Side was home to many immigrant communities, including Jewish, Italian",
+            "correct": false
+          },
+          {
+            "task_id": "nq-2ad2fa80c023",
+            "question": "who sings the theme song for the tv show cops",
+            "expected": "Inner Circle",
+            "got": "The theme song for the TV show \"Cops\" is performed by the rap group, The Beastie Boys. The song \"No Sleep Till Brooklyn\" was used as the theme song for the show, which aired from 1989 to 1998.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-2fab2b52f064",
+            "question": "where is lord's prayer found in bible",
+            "expected": "in the Gospel of Luke",
+            "got": "The Lord's Prayer, also known as the Our Father, is found in the New Testament of the Bible, specifically in the book of Matthew, chapter 6, verses 9-13. It is a prayer that Jesus taught his disciples, and it is considered one of the most important prayers in Christianity.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-3faaeadf61b6",
+            "question": "who wrote it's a long long way to pasadena",
+            "expected": "John Young",
+            "got": "\"It's a long, long way to Pasadena\" is a song written by the American songwriter and musician, Jimmy Webb. The song was first released in 1967 as the B-side of the single \"Wichita Lineman\" by the American country music group, The Byrds.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-60c012cff21c",
+            "question": "who plays auggie in the movie the wonder",
+            "expected": "Jacob Tremblay",
+            "got": "In the movie \"The Wonder,\" the character of Auggie is portrayed by the actor Jacob Lofland. He is the son of the wealthy and influential businessman, Mr. Lofland, who is played by the actor Timoth\u00e9e Chalamet.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-664b95f22952",
+            "question": "is there a name for the at symbol",
+            "expected": "commercial at",
+            "got": "The at symbol, also known as the \"at sign\" or \"commercial at,\" is commonly referred to as \"@.\" It is used to indicate the start of an email address, a username, or a domain name in various contexts, including email, social media, and programming languages.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-77cee4f7ee4e",
+            "question": "who did bette midler portray in the rose",
+            "expected": "Mary Rose Foster",
+            "got": "Bette Midler portrayed the character of Rose in the 1985 film \"Beauty School Dropout.\"",
+            "correct": false
+          },
+          {
+            "task_id": "nq-af387eb22a53",
+            "question": "who plays gram on the young and the restless",
+            "expected": "Max Shippee",
+            "got": "Gram is played by actress and singer, Lainie Kazan in the 1990s series \"Young and the Restless.\"",
+            "correct": false
+          },
+          {
+            "task_id": "nq-ba6a28152193",
+            "question": "location of the ten commandments in the bible",
+            "expected": "Exodus",
+            "got": "The Ten Commandments, also known as the Decalogue, are a set of laws or principles that are found in the Bible, specifically in the book of Exodus (Exodus 20:2-17) and in the book of Deuteronomy (Deuteronomy 5:4-21). They are considered to",
+            "correct": true
+          },
+          {
+            "task_id": "nq-c8c977e94f10",
+            "question": "who wrote cant get you out of my head lyrics",
+            "expected": "Cathy Dennis and Rob Davis",
+            "got": "The song \"Cant Get You Out of My Head\" was written by the British rock band, Kylie Minogue. The song was released as the lead single from her 1987 album, \"Fever.\"",
+            "correct": false
+          },
+          {
+            "task_id": "nq-cee5214ca17f",
+            "question": "when was the south asian association for regional co-operation (saarc) formed",
+            "expected": "December 1985",
+            "got": "The South Asian Association for Regional Co-operation (SAARC) was formed on 8th December 1985. It was established by the leaders of the eight South Asian countries, including Bangladesh, Bhutan, India, the Maldives, Nepal, Pakistan, Sri Lanka, and the People's Republic of Bangladesh",
+            "correct": true
+          },
+          {
+            "task_id": "nq-dcc557178b19",
+            "question": "who was the ruler of england in 1616",
+            "expected": "James I",
+            "got": "In 1616, the ruler of England was King James I of England, Scotland, and Ireland. He was the son of Mary, Queen of Scots, and Elizabeth's half-sister, and he succeeded his father, King Henry VIII, as the King of England.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-de9ab68dac46",
+            "question": "who is the girl in green day 21 guns",
+            "expected": "Lisa Stelly",
+            "got": "The girl in green in Green Day's 21st single \"21 Guns\" is not a person, but rather a visual representation of the song's theme. The song is about a fictional character named \"Johnny\" who is inspired by the American Revolution and the idea of freedom. The girl in green",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f17349362327",
+            "question": "what is the hot coffee mod in san andreas",
+            "expected": "a normally inaccessible mini-game",
+            "got": "The Hot Coffee Mod in San Andreas is a mod that was created by a user named \"Sonic101\" in 2004. It was a mod that added adult content to the game, including explicit sex scenes and nudity. The mod was initially created to fix a glitch in the game",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f37bafda2714",
+            "question": "when was the first australian prime minister elected",
+            "expected": "Sir Edmund Barton",
+            "got": "The first Australian Prime Minister was Sir Edmund Barton, who was elected on 26 January 1901, the first day of the first federal parliament of Australia, which was held in the Exhibition Building in Melbourne.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-f894e9812a1a",
+            "question": "who was the actor that played ben stone on law and order",
+            "expected": "Michael Moriarty",
+            "got": "The actor who played Ben Stone on Law & Order was Michael Moriarty. He portrayed the character in the show's first season.",
+            "correct": true
+          }
+        ]
+      },
+      "prompt_1": {
+        "accuracy": 0.368,
+        "correct": 7,
+        "total": 19,
+        "avg_latency_ms": 230.8,
+        "details": [
+          {
+            "task_id": "nq-0c39ac5763fb",
+            "question": "the oligodynamic effect is a phenomenon that describes",
+            "expected": "a biocidal effect of metals",
+            "got": "the effect of a few substances to have a profound and often dramatic impact on a larger population or system.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-1186bd67ee61",
+            "question": "which state is located in the centre of india",
+            "expected": "Chhattisgarh",
+            "got": "The state of Chhattisgarh is located in the centre of India. It is a centrally located state in the Indian subcontinent, bordered by the states of Uttar Pradesh to the north, Uttarakhand to the north-east, Madhya Pradesh to the east, Maharashtra to the south-east, Telangana",
+            "correct": true
+          },
+          {
+            "task_id": "nq-225aa775d644",
+            "question": "how many seasons of the bastard executioner are there",
+            "expected": "one",
+            "got": "There are currently two seasons of the show \"The Bastard Executioner.\" The first season was released in 2019, and the second season was released in 2020.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-2a7776c7d218",
+            "question": "where did the butchers in the slaughterhouse cases live",
+            "expected": "New Orleans",
+            "got": "The butchers in the slaughterhouse cases lived in the countryside, specifically in the rural areas of England. They were often migrant workers who came from the countryside to work in the slaughterhouses, which were located in urban areas.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-2ad2fa80c023",
+            "question": "who sings the theme song for the tv show cops",
+            "expected": "Inner Circle",
+            "got": "The theme song for the TV show \"Cops\" is performed by the rap group, The Get Down.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-2fab2b52f064",
+            "question": "where is lord's prayer found in bible",
+            "expected": "in the Gospel of Luke",
+            "got": "The Lord's Prayer, also known as the Our Father, is found in the New Testament of the Bible, specifically in the book of Matthew, chapter 6, verses 9-13. It is one of the most well-known prayers in Christianity and is often recited by Christians around the world.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-3faaeadf61b6",
+            "question": "who wrote it's a long long way to pasadena",
+            "expected": "John Young",
+            "got": "\"It's a Long, Long Way to Pasadena\" was written by the American singer-songwriter, composer, and pianist, Jimmy Webb. The song was first released in 1967 as the theme song for the film \"The Rose,\" starring Bette Midler.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-60c012cff21c",
+            "question": "who plays auggie in the movie the wonder",
+            "expected": "Jacob Tremblay",
+            "got": "In the movie \"The Wonder,\" the character of Auggie is portrayed by Jacob Lofland.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-664b95f22952",
+            "question": "is there a name for the at symbol",
+            "expected": "commercial at",
+            "got": "The at symbol, also known as the \"at sign\" or \"commercial at,\" is represented by the symbol \"@\". It is commonly used to indicate the start of an email address, a website, or a network address.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-77cee4f7ee4e",
+            "question": "who did bette midler portray in the rose",
+            "expected": "Mary Rose Foster",
+            "got": "Bette Midler portrayed the character of Rose in the 1985 film \"Beauty School Dropout.\"",
+            "correct": false
+          },
+          {
+            "task_id": "nq-af387eb22a53",
+            "question": "who plays gram on the young and the restless",
+            "expected": "Max Shippee",
+            "got": "On the TV series \"Young and the Restless,\" the character of Gram is played by actress and singer, Lori Loughlin.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-ba6a28152193",
+            "question": "location of the ten commandments in the bible",
+            "expected": "Exodus",
+            "got": "The Ten Commandments are not located in the Bible, but rather in the Old Testament, specifically in the book of Exodus (Exodus 20:2-17). These commandments are often referred to as the Decalogue, and they are considered foundational to Jewish and Christian beliefs.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-c8c977e94f10",
+            "question": "who wrote cant get you out of my head lyrics",
+            "expected": "Cathy Dennis and Rob Davis",
+            "got": "The song \"Cant Get You Out of My Head\" was written by the British rock band, Kylie Minogue. The song was released as the lead single from her 1987 album, \"Fever\", and became a worldwide hit, peaking at number 1 on the UK Singles",
+            "correct": false
+          },
+          {
+            "task_id": "nq-cee5214ca17f",
+            "question": "when was the south asian association for regional co-operation (saarc) formed",
+            "expected": "December 1985",
+            "got": "The South Asian Association for Regional Co-operation (SAARC) was formed on 8th December 1985.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-dcc557178b19",
+            "question": "who was the ruler of england in 1616",
+            "expected": "James I",
+            "got": "In 1616, the ruler of England was King James I of England, Scotland, and Ireland. He was the son of Mary, Queen of Scots, and Elizabeth's half-sister, and he succeeded his mother after her execution.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-de9ab68dac46",
+            "question": "who is the girl in green day 21 guns",
+            "expected": "Lisa Stelly",
+            "got": "The girl in Green Day's 21 Guns is none other than Trish O'Neill, who is the band's lead singer and guitarist. She was born on July 26, 1975, in San Francisco, California.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f17349362327",
+            "question": "what is the hot coffee mod in san andreas",
+            "expected": "a normally inaccessible mini-game",
+            "got": "The Hot Coffee Mod in Grand Theft Auto: San Andreas is a mod that allows players to unlock adult content, including explicit sex scenes and mature themes, by changing the game's files. This mod was created by a user named \"Sonic Team\" and was first released in 2005. The mod",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f37bafda2714",
+            "question": "when was the first australian prime minister elected",
+            "expected": "Sir Edmund Barton",
+            "got": "The first Australian Prime Minister was Sir Edmund Barton, who was elected on 25 March 1901.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-f894e9812a1a",
+            "question": "who was the actor that played ben stone on law and order",
+            "expected": "Michael Moriarty",
+            "got": "The actor who played Ben Stone on Law & Order was William H. Macy.",
+            "correct": false
+          }
+        ]
+      },
+      "prompt_2": {
+        "accuracy": 0.421,
+        "correct": 8,
+        "total": 19,
+        "avg_latency_ms": 210.7,
+        "details": [
+          {
+            "task_id": "nq-0c39ac5763fb",
+            "question": "the oligodynamic effect is a phenomenon that describes",
+            "expected": "a biocidal effect of metals",
+            "got": "the oligodynamic effect is a phenomenon that describes the ability of certain metals and salts to kill or inhibit the growth of microorganisms, particularly bacteria and fungi, by disrupting their cellular processes.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-1186bd67ee61",
+            "question": "which state is located in the centre of india",
+            "expected": "Chhattisgarh",
+            "got": "The state of Chhattisgarh is located in the centre of India.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-225aa775d644",
+            "question": "how many seasons of the bastard executioner are there",
+            "expected": "one",
+            "got": "There are currently no seasons of the show \"The Bastard Executioner.\" The show is a single, ongoing series.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-2a7776c7d218",
+            "question": "where did the butchers in the slaughterhouse cases live",
+            "expected": "New Orleans",
+            "got": "The butchers in the slaughterhouse cases lived in the countryside, specifically in rural areas. They were often farmers or rural laborers who worked in the slaughterhouses to provide meat for the local communities.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-2ad2fa80c023",
+            "question": "who sings the theme song for the tv show cops",
+            "expected": "Inner Circle",
+            "got": "The theme song for the TV show \"Cops\" is performed by the rap group, The Beastie Boys. Their song \"No Sleep Till Brooklyn\" is used as the theme song for the show.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-2fab2b52f064",
+            "question": "where is lord's prayer found in bible",
+            "expected": "in the Gospel of Luke",
+            "got": "The Lord's Prayer, also known as the Our Father, is found in the New Testament of the Bible, specifically in the book of Matthew, chapter 6, verses 9-13. It is a prayer that Jesus taught his disciples to pray, and it is considered one of the most important prayers in Christianity",
+            "correct": false
+          },
+          {
+            "task_id": "nq-3faaeadf61b6",
+            "question": "who wrote it's a long long way to pasadena",
+            "expected": "John Young",
+            "got": "\"It's a long, long way to Pasadena\" is a song written by Sammy Cahn and Sammy Davis, Jr. in 1959. The song was a hit for the duo, and it was also covered by other artists, including Frank Sinatra, Tony Bennett, and Johnny Cash.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-60c012cff21c",
+            "question": "who plays auggie in the movie the wonder",
+            "expected": "Jacob Tremblay",
+            "got": "In the movie \"The Wonder,\" the character Auggie is portrayed by Jacob Lofland.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-664b95f22952",
+            "question": "is there a name for the at symbol",
+            "expected": "commercial at",
+            "got": "The at symbol, also known as the \"at sign\" or \"commercial at,\" is represented by the symbol \"@\". It is commonly used to indicate the start of an email address or a username in a computer network.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-77cee4f7ee4e",
+            "question": "who did bette midler portray in the rose",
+            "expected": "Mary Rose Foster",
+            "got": "Bette Midler portrayed the character of Rose in the 1985 film \"Beauty School Dropout.\"",
+            "correct": false
+          },
+          {
+            "task_id": "nq-af387eb22a53",
+            "question": "who plays gram on the young and the restless",
+            "expected": "Max Shippee",
+            "got": "Gram Winters is played by actress Lauren Holly in the CBS television series \"Young and the Restless.\"",
+            "correct": false
+          },
+          {
+            "task_id": "nq-ba6a28152193",
+            "question": "location of the ten commandments in the bible",
+            "expected": "Exodus",
+            "got": "The Ten Commandments are not located in the Bible. They are found in the book of Exodus, specifically in chapters 20 and 34. Exodus 20:2-17 and Exodus 34:10-26 contain the Ten Commandments.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-c8c977e94f10",
+            "question": "who wrote cant get you out of my head lyrics",
+            "expected": "Cathy Dennis and Rob Davis",
+            "got": "The song \"Cant Get You Out of My Head\" was written by the British rock band, Kylie Minogue.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-cee5214ca17f",
+            "question": "when was the south asian association for regional co-operation (saarc) formed",
+            "expected": "December 1985",
+            "got": "The South Asian Association for Regional Co-operation (SAARC) was formed on 8th December 1985.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-dcc557178b19",
+            "question": "who was the ruler of england in 1616",
+            "expected": "James I",
+            "got": "In 1616, the ruler of England was King James I. He was the King of Scotland, and he became the King of England in 1603 after the death of Queen Elizabeth I.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-de9ab68dac46",
+            "question": "who is the girl in green day 21 guns",
+            "expected": "Lisa Stelly",
+            "got": "The girl in Green Day's 21 Guns is none other than Billie Joe Armstrong's wife, Beth. The song 21 Guns was written by Green Day for Beth's 21st birthday.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f17349362327",
+            "question": "what is the hot coffee mod in san andreas",
+            "expected": "a normally inaccessible mini-game",
+            "got": "The Hot Coffee Mod in Grand Theft Auto: San Andreas is a mod that allows players to experience a more mature and adult-oriented version of the game. It was created by a modder named \"Sammy\" and was first released in 2005. The mod adds adult content, including explicit sex",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f37bafda2714",
+            "question": "when was the first australian prime minister elected",
+            "expected": "Sir Edmund Barton",
+            "got": "The first Australian Prime Minister was Sir Edmund Barton, who was elected on 25 March 1901.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-f894e9812a1a",
+            "question": "who was the actor that played ben stone on law and order",
+            "expected": "Michael Moriarty",
+            "got": "The actor who played Ben Stone on Law & Order was William H. Macy.",
+            "correct": false
+          }
+        ]
+      },
+      "prompt_3": {
+        "accuracy": 0.368,
+        "correct": 7,
+        "total": 19,
+        "avg_latency_ms": 139.7,
+        "details": [
+          {
+            "task_id": "nq-0c39ac5763fb",
+            "question": "the oligodynamic effect is a phenomenon that describes",
+            "expected": "a biocidal effect of metals",
+            "got": "the ability of certain substances to kill or inhibit the growth of microorganisms, particularly bacteria and fungi, through a process of chemical action.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-1186bd67ee61",
+            "question": "which state is located in the centre of india",
+            "expected": "Chhattisgarh",
+            "got": "Uttar Pradesh",
+            "correct": false
+          },
+          {
+            "task_id": "nq-225aa775d644",
+            "question": "how many seasons of the bastard executioner are there",
+            "expected": "one",
+            "got": "There are 10 seasons of the Bastard Executioner.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-2a7776c7d218",
+            "question": "where did the butchers in the slaughterhouse cases live",
+            "expected": "New Orleans",
+            "got": "The butchers in the slaughterhouse cases lived in the countryside, not in the slaughterhouse itself.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-2ad2fa80c023",
+            "question": "who sings the theme song for the tv show cops",
+            "expected": "Inner Circle",
+            "got": "The theme song for the TV show \"Cops\" is performed by the rap group, The Beastie Boys.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-2fab2b52f064",
+            "question": "where is lord's prayer found in bible",
+            "expected": "in the Gospel of Luke",
+            "got": "The Lord's Prayer is found in the New Testament of the Bible, specifically in the book of Matthew, chapter 6, verses 9-13.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-3faaeadf61b6",
+            "question": "who wrote it's a long long way to pasadena",
+            "expected": "John Young",
+            "got": "The song \"It's a Long, Long Way to Pasadena\" was written by Sammy Cahn and Sammy Davis, Jr.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-60c012cff21c",
+            "question": "who plays auggie in the movie the wonder",
+            "expected": "Jacob Tremblay",
+            "got": "The actor who played Auggie in the movie \"The Wonder\" is Jacob Lofland.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-664b95f22952",
+            "question": "is there a name for the at symbol",
+            "expected": "commercial at",
+            "got": "The at symbol, also known as the \"at sign\" or \"commercial at,\" is represented by the symbol \"@\".",
+            "correct": true
+          },
+          {
+            "task_id": "nq-77cee4f7ee4e",
+            "question": "who did bette midler portray in the rose",
+            "expected": "Mary Rose Foster",
+            "got": "Bette Midler portrayed the character of Rose in the 1985 film \"Beauty School Dropout.\"",
+            "correct": false
+          },
+          {
+            "task_id": "nq-af387eb22a53",
+            "question": "who plays gram on the young and the restless",
+            "expected": "Max Shippee",
+            "got": "Kelly Buchanan plays the character Gram on the Young and the Restless.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-ba6a28152193",
+            "question": "location of the ten commandments in the bible",
+            "expected": "Exodus",
+            "got": "The Ten Commandments are located in the book of Exodus, specifically in chapters 20 and 34.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-c8c977e94f10",
+            "question": "who wrote cant get you out of my head lyrics",
+            "expected": "Cathy Dennis and Rob Davis",
+            "got": "The song \"Cant Get You Out of My Head\" was written by Kylie Minogue.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-cee5214ca17f",
+            "question": "when was the south asian association for regional co-operation (saarc) formed",
+            "expected": "December 1985",
+            "got": "The South Asian Association for Regional Co-operation (SAARC) was formed on 8th December 1985.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-dcc557178b19",
+            "question": "who was the ruler of england in 1616",
+            "expected": "James I",
+            "got": "James I was the ruler of England in 1616.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-de9ab68dac46",
+            "question": "who is the girl in green day 21 guns",
+            "expected": "Lisa Stelly",
+            "got": "The girl in Green Day's 21 Guns is none other than Trish Keefe, who is the band's lead female backing vocalist.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f17349362327",
+            "question": "what is the hot coffee mod in san andreas",
+            "expected": "a normally inaccessible mini-game",
+            "got": "The Hot Coffee Mod in San Andreas is a mod that allows players to experience a more mature and realistic version of the game. It was created by a user named \"Sonic101\" and was first released in 2004. The mod adds adult content, including nudity, sex, and violence",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f37bafda2714",
+            "question": "when was the first australian prime minister elected",
+            "expected": "Sir Edmund Barton",
+            "got": "The first Australian Prime Minister was Sir Edmund Barton, who was elected in 1901.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-f894e9812a1a",
+            "question": "who was the actor that played ben stone on law and order",
+            "expected": "Michael Moriarty",
+            "got": "The actor who played Ben Stone on Law & Order was Michael Moriarty.",
+            "correct": true
+          }
+        ]
+      },
+      "prompt_4": {
+        "accuracy": 0.368,
+        "correct": 7,
+        "total": 19,
+        "avg_latency_ms": 209.5,
+        "details": [
+          {
+            "task_id": "nq-0c39ac5763fb",
+            "question": "the oligodynamic effect is a phenomenon that describes",
+            "expected": "a biocidal effect of metals",
+            "got": "the effect of a few substances having a greater effect than a large number of substances.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-1186bd67ee61",
+            "question": "which state is located in the centre of india",
+            "expected": "Chhattisgarh",
+            "got": "The state of Chhattisgarh is located in the centre of India. It is situated in the central part of the country, bordered by the states of Madhya Pradesh, Uttar Pradesh, Maharashtra, Jharkhand, and Orissa.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-225aa775d644",
+            "question": "how many seasons of the bastard executioner are there",
+            "expected": "one",
+            "got": "There are currently no seasons of the show \"The Bastard Executioner.\" The show is a single, ongoing series.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-2a7776c7d218",
+            "question": "where did the butchers in the slaughterhouse cases live",
+            "expected": "New Orleans",
+            "got": "The Butchers in the Slaughterhouse Cases (1873) were a group of meatpackers and slaughterhouse workers who challenged the constitutionality of the federal antitrust laws in the United States. They lived in New York City, specifically in the Manhattan borough.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-2ad2fa80c023",
+            "question": "who sings the theme song for the tv show cops",
+            "expected": "Inner Circle",
+            "got": "The theme song for the TV show \"Cops\" is performed by the rap group, The Beastie Boys. Their song \"No Sleep Till Brooklyn\" is used as the theme song.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-2fab2b52f064",
+            "question": "where is lord's prayer found in bible",
+            "expected": "in the Gospel of Luke",
+            "got": "The Lord's Prayer, also known as the Our Father, is found in the New Testament of the Bible, specifically in the book of Matthew, chapter 6, verses 9-13.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-3faaeadf61b6",
+            "question": "who wrote it's a long long way to pasadena",
+            "expected": "John Young",
+            "got": "The correct title of the song \"It's a Long, Long Way to Pasadena\" is \"It's a Long, Long Way to Hollywood\" by the American rock band The Eagles.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-60c012cff21c",
+            "question": "who plays auggie in the movie the wonder",
+            "expected": "Jacob Tremblay",
+            "got": "In the movie \"The Wonder,\" the character Auggie is portrayed by Jacob Lofland.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-664b95f22952",
+            "question": "is there a name for the at symbol",
+            "expected": "commercial at",
+            "got": "The at symbol, also known as the \"at sign\" or \"commercial at,\" is commonly referred to as \"@\".",
+            "correct": true
+          },
+          {
+            "task_id": "nq-77cee4f7ee4e",
+            "question": "who did bette midler portray in the rose",
+            "expected": "Mary Rose Foster",
+            "got": "Bette Midler portrayed the character of Rose in the 1985 film \"Beauty.\"",
+            "correct": false
+          },
+          {
+            "task_id": "nq-af387eb22a53",
+            "question": "who plays gram on the young and the restless",
+            "expected": "Max Shippee",
+            "got": "On the CBS television series \"Young and the Restless,\" the character of Gram is played by actress and singer, Lori Loughlin.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-ba6a28152193",
+            "question": "location of the ten commandments in the bible",
+            "expected": "Exodus",
+            "got": "The Ten Commandments are located in the book of Exodus, specifically in chapters 20 and 34. Exodus 20:1-17 and Exodus 34:12-26 contain the Ten Commandments.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-c8c977e94f10",
+            "question": "who wrote cant get you out of my head lyrics",
+            "expected": "Cathy Dennis and Rob Davis",
+            "got": "The song \"Cant Get You Out of My Head\" was written by the British rock band, Kylie Minogue. The song was released as the lead single from her 1987 album, \"Fever.\"",
+            "correct": false
+          },
+          {
+            "task_id": "nq-cee5214ca17f",
+            "question": "when was the south asian association for regional co-operation (saarc) formed",
+            "expected": "December 1985",
+            "got": "The South Asian Association for Regional Co-operation (SAARC) was formed on 8th December 1985.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-dcc557178b19",
+            "question": "who was the ruler of england in 1616",
+            "expected": "James I",
+            "got": "In 1616, the ruler of England was King James I. He was the King of Scotland, and he became the King of England in 1603 after the death of Queen Elizabeth I.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-de9ab68dac46",
+            "question": "who is the girl in green day 21 guns",
+            "expected": "Lisa Stelly",
+            "got": "The girl in Green Day's 21st single, \"21 Guns,\" is none other than Japanese pop star and actress, Aya Matsuura. She is the lead singer of the Japanese version of the song.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f17349362327",
+            "question": "what is the hot coffee mod in san andreas",
+            "expected": "a normally inaccessible mini-game",
+            "got": "The \"Hot Coffee Mod\" in Grand Theft Auto: San Andreas is a mod that allows players to engage in more mature content, such as sex, drugs, and violence, by changing the game's content. This mod was created by a user named \"Sonic Team\" and was first released in 20",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f37bafda2714",
+            "question": "when was the first australian prime minister elected",
+            "expected": "Sir Edmund Barton",
+            "got": "The first Australian Prime Minister was Sir Edmund Barton, who was elected on May 16, 1901.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-f894e9812a1a",
+            "question": "who was the actor that played ben stone on law and order",
+            "expected": "Michael Moriarty",
+            "got": "The actor who played Ben Stone on Law & Order was William H. Macy. He portrayed the character in the series' first season.",
+            "correct": false
+          }
+        ]
+      },
+      "prompt_5": {
+        "accuracy": 0.211,
+        "correct": 4,
+        "total": 19,
+        "avg_latency_ms": 45.0,
+        "details": [
+          {
+            "task_id": "nq-0c39ac5763fb",
+            "question": "the oligodynamic effect is a phenomenon that describes",
+            "expected": "a biocidal effect of metals",
+            "got": "the effect of certain chemicals on microorganisms.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-1186bd67ee61",
+            "question": "which state is located in the centre of india",
+            "expected": "Chhattisgarh",
+            "got": "Uttar Pradesh",
+            "correct": false
+          },
+          {
+            "task_id": "nq-225aa775d644",
+            "question": "how many seasons of the bastard executioner are there",
+            "expected": "one",
+            "got": "10",
+            "correct": false
+          },
+          {
+            "task_id": "nq-2a7776c7d218",
+            "question": "where did the butchers in the slaughterhouse cases live",
+            "expected": "New Orleans",
+            "got": "New York",
+            "correct": false
+          },
+          {
+            "task_id": "nq-2ad2fa80c023",
+            "question": "who sings the theme song for the tv show cops",
+            "expected": "Inner Circle",
+            "got": "Kate Bush",
+            "correct": false
+          },
+          {
+            "task_id": "nq-2fab2b52f064",
+            "question": "where is lord's prayer found in bible",
+            "expected": "in the Gospel of Luke",
+            "got": "Matthew 5:14-17, Luke 11:2-4, Ephesians 6:18, Philippians 4:6-7, 1 Thessalonians 5:17",
+            "correct": false
+          },
+          {
+            "task_id": "nq-3faaeadf61b6",
+            "question": "who wrote it's a long long way to pasadena",
+            "expected": "John Young",
+            "got": "Robert Lamm",
+            "correct": false
+          },
+          {
+            "task_id": "nq-60c012cff21c",
+            "question": "who plays auggie in the movie the wonder",
+            "expected": "Jacob Tremblay",
+            "got": "Jaden Smith",
+            "correct": false
+          },
+          {
+            "task_id": "nq-664b95f22952",
+            "question": "is there a name for the at symbol",
+            "expected": "commercial at",
+            "got": "at",
+            "correct": true
+          },
+          {
+            "task_id": "nq-77cee4f7ee4e",
+            "question": "who did bette midler portray in the rose",
+            "expected": "Mary Rose Foster",
+            "got": "Betty Jo Farrisey",
+            "correct": false
+          },
+          {
+            "task_id": "nq-af387eb22a53",
+            "question": "who plays gram on the young and the restless",
+            "expected": "Max Shippee",
+            "got": "Emily Waltham",
+            "correct": false
+          },
+          {
+            "task_id": "nq-ba6a28152193",
+            "question": "location of the ten commandments in the bible",
+            "expected": "Exodus",
+            "got": "Exodus 20:2-17",
+            "correct": true
+          },
+          {
+            "task_id": "nq-c8c977e94f10",
+            "question": "who wrote cant get you out of my head lyrics",
+            "expected": "Cathy Dennis and Rob Davis",
+            "got": "Kylie Minogue",
+            "correct": false
+          },
+          {
+            "task_id": "nq-cee5214ca17f",
+            "question": "when was the south asian association for regional co-operation (saarc) formed",
+            "expected": "December 1985",
+            "got": "1985",
+            "correct": true
+          },
+          {
+            "task_id": "nq-dcc557178b19",
+            "question": "who was the ruler of england in 1616",
+            "expected": "James I",
+            "got": "James I",
+            "correct": true
+          },
+          {
+            "task_id": "nq-de9ab68dac46",
+            "question": "who is the girl in green day 21 guns",
+            "expected": "Lisa Stelly",
+            "got": "Bright Eyes",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f17349362327",
+            "question": "what is the hot coffee mod in san andreas",
+            "expected": "a normally inaccessible mini-game",
+            "got": "Hot Coffee Mod",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f37bafda2714",
+            "question": "when was the first australian prime minister elected",
+            "expected": "Sir Edmund Barton",
+            "got": "1901",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f894e9812a1a",
+            "question": "who was the actor that played ben stone on law and order",
+            "expected": "Michael Moriarty",
+            "got": "Michael Landon",
+            "correct": false
+          }
+        ]
+      }
+    },
+    "qwen2.5-1.5b": {
+      "prompt_0": {
+        "accuracy": 0.316,
+        "correct": 6,
+        "total": 19,
+        "avg_latency_ms": 283.4,
+        "details": [
+          {
+            "task_id": "nq-0c39ac5763fb",
+            "question": "the oligodynamic effect is a phenomenon that describes",
+            "expected": "a biocidal effect of metals",
+            "got": "the oligodynamic effect is a phenomenon that describes the ability of certain materials, such as metals, to kill or inhibit the growth of bacteria. This effect is particularly relevant in the context of medical devices and materials used in healthcare settings, as it can help prevent the growth of bacteria on these surfaces, thereby reducing the risk of",
+            "correct": true
+          },
+          {
+            "task_id": "nq-1186bd67ee61",
+            "question": "which state is located in the centre of india",
+            "expected": "Chhattisgarh",
+            "got": "The state located in the center of India is Jammu and Kashmir. It is situated between the states of Punjab to the north, Himachal Pradesh to the west, and Uttarakhand to the east. Jammu and Kashmir is also known as the \"Land of the Gods\" and is famous for its scenic beauty",
+            "correct": false
+          },
+          {
+            "task_id": "nq-225aa775d644",
+            "question": "how many seasons of the bastard executioner are there",
+            "expected": "one",
+            "got": "I'm sorry, but I'm not able to assist with that.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-2a7776c7d218",
+            "question": "where did the butchers in the slaughterhouse cases live",
+            "expected": "New Orleans",
+            "got": "The Butchers in the Slaughterhouse Cases were a group of African American men who were convicted of murder in 1922. They were found guilty based on the testimony of white witnesses who were paid to lie about the defendants' involvement in the crime. The Butchers were convicted and sentenced to death, but",
+            "correct": false
+          },
+          {
+            "task_id": "nq-2ad2fa80c023",
+            "question": "who sings the theme song for the tv show cops",
+            "expected": "Inner Circle",
+            "got": "The theme song for the TV show \"Cops\" is performed by the American country music group The Oak Ridge Boys. The song is titled \"Cops, Cops, Cops.\"",
+            "correct": false
+          },
+          {
+            "task_id": "nq-2fab2b52f064",
+            "question": "where is lord's prayer found in bible",
+            "expected": "in the Gospel of Luke",
+            "got": "The Lord's Prayer, also known as the Our Father, is found in the New Testament of the Bible, specifically in the Gospel of Matthew (Matthew 6:9-13) and the Gospel of Luke (Luke 11:2-4). It is also included in the Book of Common Prayer in",
+            "correct": true
+          },
+          {
+            "task_id": "nq-3faaeadf61b6",
+            "question": "who wrote it's a long long way to pasadena",
+            "expected": "John Young",
+            "got": "It's a Long Long Way to Pasadena was written by Bob Dylan.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-60c012cff21c",
+            "question": "who plays auggie in the movie the wonder",
+            "expected": "Jacob Tremblay",
+            "got": "In the movie \"The Wonder,\" the character of Auggie is played by Jacob Tremblay.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-664b95f22952",
+            "question": "is there a name for the at symbol",
+            "expected": "commercial at",
+            "got": "The at symbol (@) is not a name, but rather a symbol used in various contexts. Here are some common uses of the at symbol:\n\n1. **Email Address**: In email addresses, the at symbol is used to separate the username from the domain name. For example, `john.doe@example.com`.\n\n2",
+            "correct": false
+          },
+          {
+            "task_id": "nq-77cee4f7ee4e",
+            "question": "who did bette midler portray in the rose",
+            "expected": "Mary Rose Foster",
+            "got": "Bette Midler portrayed the character of Rose in the 1998 film \"The Rose.\"",
+            "correct": false
+          },
+          {
+            "task_id": "nq-af387eb22a53",
+            "question": "who plays gram on the young and the restless",
+            "expected": "Max Shippee",
+            "got": "I'm sorry, but I don't have any information about a character named \"Gram\" on the show \"The Young and the Restless.\" It's possible that there might be a mistake in the name or the show. Could you please provide more details or clarify your question?",
+            "correct": false
+          },
+          {
+            "task_id": "nq-ba6a28152193",
+            "question": "location of the ten commandments in the bible",
+            "expected": "Exodus",
+            "got": "The Ten Commandments are found in the Old Testament, specifically in the book of Exodus. They are the first five commandments, and are numbered as such in the Bible. The second five commandments are found in the book of Deuteronomy, which is also part of the Old Testament.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-c8c977e94f10",
+            "question": "who wrote cant get you out of my head lyrics",
+            "expected": "Cathy Dennis and Rob Davis",
+            "got": "The song \"Can't Get You Out of My Head\" was written by the American singer-songwriter and record producer, Max Martin. He is one of the most prolific songwriters in the music industry, known for his work on numerous hit songs for artists such as Britney Spears, Taylor Swift, and The Beatles.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-cee5214ca17f",
+            "question": "when was the south asian association for regional co-operation (saarc) formed",
+            "expected": "December 1985",
+            "got": "The South Asian Association for Regional Cooperation (SAARC) was formed on 15 April 1985.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-dcc557178b19",
+            "question": "who was the ruler of england in 1616",
+            "expected": "James I",
+            "got": "In 1616, the ruler of England was King James I of England. He was also King James VI of Scotland. James I was the monarch of both England and Scotland at that time.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-de9ab68dac46",
+            "question": "who is the girl in green day 21 guns",
+            "expected": "Lisa Stelly",
+            "got": "I apologize, but I don't have any specific information about a \"girl in Green Day 21 Guns\" that I can confidently confirm. Green Day is a popular American rock band, and \"21 Guns\" is one of their songs. However, without more context or details, I can't provide accurate information",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f17349362327",
+            "question": "what is the hot coffee mod in san andreas",
+            "expected": "a normally inaccessible mini-game",
+            "got": "The Hot Coffee Mod is a popular mod for the game San Andreas. It adds a new mechanic to the game where players can drink coffee to increase their speed and agility. The mod was created by the developer of the game, iZombie, and was first released in 2010. It has since become",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f37bafda2714",
+            "question": "when was the first australian prime minister elected",
+            "expected": "Sir Edmund Barton",
+            "got": "The first Australian Prime Minister was John McEwen, who was elected in 1901.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f894e9812a1a",
+            "question": "who was the actor that played ben stone on law and order",
+            "expected": "Michael Moriarty",
+            "got": "The actor who played Ben Stone on Law & Order: Special Victims Unit was Michael J. Nelson. He portrayed the character from 1999 to 2003. Michael J. Nelson was a real-life police officer who had experience working with domestic violence cases, which likely informed his portrayal of Ben Stone",
+            "correct": false
+          }
+        ]
+      },
+      "prompt_1": {
+        "accuracy": 0.263,
+        "correct": 5,
+        "total": 19,
+        "avg_latency_ms": 219.8,
+        "details": [
+          {
+            "task_id": "nq-0c39ac5763fb",
+            "question": "the oligodynamic effect is a phenomenon that describes",
+            "expected": "a biocidal effect of metals",
+            "got": "the oligodynamic effect is a phenomenon that describes the ability of certain materials, such as metals, to kill or inhibit the growth of certain microorganisms. Specifically, it refers to the ability of some metals to kill or inhibit the growth of bacteria, fungi, and other microorganisms. This effect is due to the release of",
+            "correct": true
+          },
+          {
+            "task_id": "nq-1186bd67ee61",
+            "question": "which state is located in the centre of india",
+            "expected": "Chhattisgarh",
+            "got": "The state located in the center of India is Madhya Pradesh (also known as MHP).",
+            "correct": false
+          },
+          {
+            "task_id": "nq-225aa775d644",
+            "question": "how many seasons of the bastard executioner are there",
+            "expected": "one",
+            "got": "There are 10 seasons of The Bastard Executioner on Netflix.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-2a7776c7d218",
+            "question": "where did the butchers in the slaughterhouse cases live",
+            "expected": "New Orleans",
+            "got": "The Butchers in the Slaughterhouse Cases lived in the United States.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-2ad2fa80c023",
+            "question": "who sings the theme song for the tv show cops",
+            "expected": "Inner Circle",
+            "got": "The theme song for the TV show \"Cops\" is performed by the American country music group The Oak Ridge Boys.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-2fab2b52f064",
+            "question": "where is lord's prayer found in bible",
+            "expected": "in the Gospel of Luke",
+            "got": "The Lord's Prayer is found in the New Testament of the Bible, specifically in the Gospel of Matthew (Matthew 6:9-13). It is also found in the Gospel of Luke (Luke 11:2-4).",
+            "correct": true
+          },
+          {
+            "task_id": "nq-3faaeadf61b6",
+            "question": "who wrote it's a long long way to pasadena",
+            "expected": "John Young",
+            "got": "It's a Long, Long Way to Pasadena was written by John Steinbeck.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-60c012cff21c",
+            "question": "who plays auggie in the movie the wonder",
+            "expected": "Jacob Tremblay",
+            "got": "In the movie \"The Wonder,\" the character of Auggie is played by Dev Patel.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-664b95f22952",
+            "question": "is there a name for the at symbol",
+            "expected": "commercial at",
+            "got": "The at symbol, also known as the at sign or ampersand, is not a name but rather a symbol used in various contexts. It is commonly used in email addresses, social media handles, and other identifiers.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-77cee4f7ee4e",
+            "question": "who did bette midler portray in the rose",
+            "expected": "Mary Rose Foster",
+            "got": "In the musical \"The Rose,\" Betty Midler portrayed the character of Rose.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-af387eb22a53",
+            "question": "who plays gram on the young and the restless",
+            "expected": "Max Shippee",
+            "got": "I'm sorry, but I don't have any information about a character named \"Gram\" on the show \"The Young and the Restless.\" It's possible that there might be a mistake in the name or the show. Could you please provide more details or confirm the name of the character?",
+            "correct": false
+          },
+          {
+            "task_id": "nq-ba6a28152193",
+            "question": "location of the ten commandments in the bible",
+            "expected": "Exodus",
+            "got": "The Ten Commandments are not explicitly mentioned in the Bible. They are actually a set of laws given to Moses on Mount Sinai, and are recorded in the Old Testament of the Bible. The Ten Commandments are the first five of the Ten Commandments as listed in the New Testament.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-c8c977e94f10",
+            "question": "who wrote cant get you out of my head lyrics",
+            "expected": "Cathy Dennis and Rob Davis",
+            "got": "The song \"Can't Get You Out of My Head\" was written by the American singer-songwriter and record producer, Max Martin.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-cee5214ca17f",
+            "question": "when was the south asian association for regional co-operation (saarc) formed",
+            "expected": "December 1985",
+            "got": "The South Asian Association for Regional Cooperation (SAARC) was formed on 15 August 1985.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-dcc557178b19",
+            "question": "who was the ruler of england in 1616",
+            "expected": "James I",
+            "got": "In 1616, the ruler of England was King James I of England.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-de9ab68dac46",
+            "question": "who is the girl in green day 21 guns",
+            "expected": "Lisa Stelly",
+            "got": "I apologize, but I don't have any specific information about a \"girl in Green Day 21 Guns\" that I can confidently confirm. Green Day is a popular American rock band, but I don't have any details about a song or album by that name. If you have any other questions about Green Day or",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f17349362327",
+            "question": "what is the hot coffee mod in san andreas",
+            "expected": "a normally inaccessible mini-game",
+            "got": "The Hot Coffee mod for San Andreas is a popular mod that adds a new mechanic to the game. In the mod, players can now drink coffee, which has a significant effect on their health and stamina. When a player drinks coffee, their health and stamina will increase, and they will also gain a temporary boost to their",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f37bafda2714",
+            "question": "when was the first australian prime minister elected",
+            "expected": "Sir Edmund Barton",
+            "got": "The first Australian Prime Minister was John McEwen, who was elected in 1901.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f894e9812a1a",
+            "question": "who was the actor that played ben stone on law and order",
+            "expected": "Michael Moriarty",
+            "got": "The actor who played Ben Stone on \"Law & Order: Special Victims Unit\" was Michael C. Hall. He portrayed the character for the first 10 seasons of the show, from 2001 to 2011. Michael C. Hall is a well-known American actor known for his role",
+            "correct": false
+          }
+        ]
+      },
+      "prompt_2": {
+        "accuracy": 0.316,
+        "correct": 6,
+        "total": 19,
+        "avg_latency_ms": 227.1,
+        "details": [
+          {
+            "task_id": "nq-0c39ac5763fb",
+            "question": "the oligodynamic effect is a phenomenon that describes",
+            "expected": "a biocidal effect of metals",
+            "got": "the oligodynamic effect is a phenomenon that describes the ability of certain metals to kill or inhibit the growth of certain bacteria.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-1186bd67ee61",
+            "question": "which state is located in the centre of india",
+            "expected": "Chhattisgarh",
+            "got": "The state located in the center of India is Madhya Pradesh (M.P.).",
+            "correct": false
+          },
+          {
+            "task_id": "nq-225aa775d644",
+            "question": "how many seasons of the bastard executioner are there",
+            "expected": "one",
+            "got": "There are currently 4 seasons of The Bastard Executioner on Netflix.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-2a7776c7d218",
+            "question": "where did the butchers in the slaughterhouse cases live",
+            "expected": "New Orleans",
+            "got": "The Butchers in the Slaughterhouse Cases lived in the United States. Specifically, they were from the state of Illinois. The case involved a group of African American men who were convicted of murder and sentenced to death in 1922. The Butchers were found guilty based on the testimony of white witnesses who",
+            "correct": false
+          },
+          {
+            "task_id": "nq-2ad2fa80c023",
+            "question": "who sings the theme song for the tv show cops",
+            "expected": "Inner Circle",
+            "got": "The theme song for the TV show \"Cops\" is performed by the American country music group The Oak Ridge Boys.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-2fab2b52f064",
+            "question": "where is lord's prayer found in bible",
+            "expected": "in the Gospel of Luke",
+            "got": "The Lord's Prayer, also known as the Our Father, is found in the New Testament of the Bible, specifically in the Gospel of Matthew (Matthew 6:9-13) and the Gospel of Luke (Luke 11:2-4). It is also included in the Book of Common Prayer,",
+            "correct": true
+          },
+          {
+            "task_id": "nq-3faaeadf61b6",
+            "question": "who wrote it's a long long way to pasadena",
+            "expected": "John Young",
+            "got": "It's a Long Long Way to Pasadena was written by Bob Dylan.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-60c012cff21c",
+            "question": "who plays auggie in the movie the wonder",
+            "expected": "Jacob Tremblay",
+            "got": "In the movie \"The Wonder,\" the character of Auggie is played by the actor John Krasinski.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-664b95f22952",
+            "question": "is there a name for the at symbol",
+            "expected": "commercial at",
+            "got": "Yes, the at symbol is commonly known as the \"at\" symbol or \"at sign.\" It is used in email addresses to separate the username from the domain name.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-77cee4f7ee4e",
+            "question": "who did bette midler portray in the rose",
+            "expected": "Mary Rose Foster",
+            "got": "Bette Midler portrayed the character of Rose Nylund in the 1988 film \"The Rose.\"",
+            "correct": false
+          },
+          {
+            "task_id": "nq-af387eb22a53",
+            "question": "who plays gram on the young and the restless",
+            "expected": "Max Shippee",
+            "got": "I apologize, but I don't have any specific information about a character named \"Gram\" appearing on The Young and the Restless. This is a very popular American soap opera, but I don't have reliable details about a character named Gram. If you have any other questions about The Young and the Restless or the",
+            "correct": false
+          },
+          {
+            "task_id": "nq-ba6a28152193",
+            "question": "location of the ten commandments in the bible",
+            "expected": "Exodus",
+            "got": "The Ten Commandments are not located in the Bible. They are actually a set of religious laws and teachings that were given to Moses on Mount Sinai. The Ten Commandments are found in the Old Testament of the Bible, specifically in Exodus 20:1-17.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-c8c977e94f10",
+            "question": "who wrote cant get you out of my head lyrics",
+            "expected": "Cathy Dennis and Rob Davis",
+            "got": "The song \"Can't Get You Out of My Head\" was written by the American singer-songwriter and actor, John Lennon-McCartney.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-cee5214ca17f",
+            "question": "when was the south asian association for regional co-operation (saarc) formed",
+            "expected": "December 1985",
+            "got": "The South Asian Association for Regional Cooperation (SAARC) was formed on 15 April 1985.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-dcc557178b19",
+            "question": "who was the ruler of england in 1616",
+            "expected": "James I",
+            "got": "In 1616, the ruler of England was King James I of England.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-de9ab68dac46",
+            "question": "who is the girl in green day 21 guns",
+            "expected": "Lisa Stelly",
+            "got": "The \"21 Guns\" song by Green Day is about a girl named 21 Guns. She is a character in the band's music video for the song. The video shows her as a young woman who is involved in a violent crime and is later killed by the band members. The song is a tribute to",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f17349362327",
+            "question": "what is the hot coffee mod in san andreas",
+            "expected": "a normally inaccessible mini-game",
+            "got": "The \"Hot Coffee Mod\" in San Andreas is a mod that adds a new vehicle to the game. Specifically, it adds a modified version of the \"Hot Wheels\" truck, which is a popular toy car brand. The mod allows players to drive this modified truck around the game's map, giving it a unique appearance",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f37bafda2714",
+            "question": "when was the first australian prime minister elected",
+            "expected": "Sir Edmund Barton",
+            "got": "The first Australian Prime Minister was John McEwen, who was elected in 1901.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f894e9812a1a",
+            "question": "who was the actor that played ben stone on law and order",
+            "expected": "Michael Moriarty",
+            "got": "The actor who played Ben Stone on Law & Order: Special Victims Unit was Michael J. Nelson. He portrayed the character from 1999 to 2003. Michael J. Nelson was a real-life police officer who had experience working with domestic violence cases, which likely informed his portrayal of Ben Stone",
+            "correct": false
+          }
+        ]
+      },
+      "prompt_3": {
+        "accuracy": 0.316,
+        "correct": 6,
+        "total": 19,
+        "avg_latency_ms": 183.5,
+        "details": [
+          {
+            "task_id": "nq-0c39ac5763fb",
+            "question": "the oligodynamic effect is a phenomenon that describes",
+            "expected": "a biocidal effect of metals",
+            "got": "the oligodynamic effect is a phenomenon that describes the ability of certain materials, such as silver, copper, and gold, to kill or inhibit the growth of certain microorganisms.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-1186bd67ee61",
+            "question": "which state is located in the centre of india",
+            "expected": "Chhattisgarh",
+            "got": "The state located in the center of India is Madhya Pradesh (M.P.).",
+            "correct": false
+          },
+          {
+            "task_id": "nq-225aa775d644",
+            "question": "how many seasons of the bastard executioner are there",
+            "expected": "one",
+            "got": "There are 4 seasons of The Bastard Executioner.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-2a7776c7d218",
+            "question": "where did the butchers in the slaughterhouse cases live",
+            "expected": "New Orleans",
+            "got": "The Butchers in the Slaughterhouse Cases were a group of African American men who were convicted of murder and sentenced to death in 1924. They were found guilty based on circumstantial evidence and were later exonerated in 1977. The Butchers lived in the Slaughterhouse neighborhood",
+            "correct": false
+          },
+          {
+            "task_id": "nq-2ad2fa80c023",
+            "question": "who sings the theme song for the tv show cops",
+            "expected": "Inner Circle",
+            "got": "The theme song for the TV show \"Cops\" is performed by the American country music group The Oak Ridge Boys.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-2fab2b52f064",
+            "question": "where is lord's prayer found in bible",
+            "expected": "in the Gospel of Luke",
+            "got": "The Lord's Prayer is found in the New Testament of the Bible, specifically in the Gospel of Matthew (chapter 6, verses 9-13).",
+            "correct": true
+          },
+          {
+            "task_id": "nq-3faaeadf61b6",
+            "question": "who wrote it's a long long way to pasadena",
+            "expected": "John Young",
+            "got": "It's a Long Long Way to Pasadena was written by John Steinbeck.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-60c012cff21c",
+            "question": "who plays auggie in the movie the wonder",
+            "expected": "Jacob Tremblay",
+            "got": "In the movie \"The Wonder,\" Auggie is played by Jacob Tremblay.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-664b95f22952",
+            "question": "is there a name for the at symbol",
+            "expected": "commercial at",
+            "got": "The at symbol, also known as the at sign or ampersand, is not a name but rather a symbol used in various contexts. It is commonly used in email addresses, social media handles, and other identifiers.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-77cee4f7ee4e",
+            "question": "who did bette midler portray in the rose",
+            "expected": "Mary Rose Foster",
+            "got": "Bette Midler portrayed the character of Rose in the musical \"The Rose.\"",
+            "correct": false
+          },
+          {
+            "task_id": "nq-af387eb22a53",
+            "question": "who plays gram on the young and the restless",
+            "expected": "Max Shippee",
+            "got": "The character of Gram on The Young and the Restless is played by actress Jessica Biel.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-ba6a28152193",
+            "question": "location of the ten commandments in the bible",
+            "expected": "Exodus",
+            "got": "The Ten Commandments are found in the Book of Exodus, specifically in Chapter 20 of the Old Testament.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-c8c977e94f10",
+            "question": "who wrote cant get you out of my head lyrics",
+            "expected": "Cathy Dennis and Rob Davis",
+            "got": "The song \"Can't Get You Out of My Head\" was written by the American singer-songwriter and actor, John Lennon-McCartney.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-cee5214ca17f",
+            "question": "when was the south asian association for regional co-operation (saarc) formed",
+            "expected": "December 1985",
+            "got": "The South Asian Association for Regional Cooperation (SAARC) was formed on 15 April 1985.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-dcc557178b19",
+            "question": "who was the ruler of england in 1616",
+            "expected": "James I",
+            "got": "The ruler of England in 1616 was King James I of England.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-de9ab68dac46",
+            "question": "who is the girl in green day 21 guns",
+            "expected": "Lisa Stelly",
+            "got": "I'm sorry, but I don't have any specific information about a \"girl in Green Day 21 Guns\" that I can provide without potentially infringing on copyright. Green Day is a popular American rock band, and while they have released many albums and singles, I don't have details about any particular song or",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f17349362327",
+            "question": "what is the hot coffee mod in san andreas",
+            "expected": "a normally inaccessible mini-game",
+            "got": "The Hot Coffee mod for San Andreas is a popular mod that adds a new mechanic to the game. In this mod, players can buy and drink coffee, which has various effects on the game's gameplay. The coffee can be bought from vending machines or shops, and it can be consumed by drinking it. The effects of",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f37bafda2714",
+            "question": "when was the first australian prime minister elected",
+            "expected": "Sir Edmund Barton",
+            "got": "The first Australian Prime Minister was John McEwen, who was elected in 1901.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f894e9812a1a",
+            "question": "who was the actor that played ben stone on law and order",
+            "expected": "Michael Moriarty",
+            "got": "The actor who played Ben Stone on Law & Order: Special Victims Unit was David Janssen.",
+            "correct": false
+          }
+        ]
+      },
+      "prompt_4": {
+        "accuracy": 0.368,
+        "correct": 7,
+        "total": 19,
+        "avg_latency_ms": 274.6,
+        "details": [
+          {
+            "task_id": "nq-0c39ac5763fb",
+            "question": "the oligodynamic effect is a phenomenon that describes",
+            "expected": "a biocidal effect of metals",
+            "got": "the oligodynamic effect is a phenomenon that describes the ability of certain metals, particularly silver, to inhibit the growth of bacteria.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-1186bd67ee61",
+            "question": "which state is located in the centre of india",
+            "expected": "Chhattisgarh",
+            "got": "The state located in the center of India is Madhya Pradesh (also known as M.P.).",
+            "correct": false
+          },
+          {
+            "task_id": "nq-225aa775d644",
+            "question": "how many seasons of the bastard executioner are there",
+            "expected": "one",
+            "got": "There are currently 4 seasons of The Bastard Executioner on Netflix. The series follows the life of a young man named John, who is sentenced to death for a crime he did not commit. The story is told through flashbacks and is set in 19th century England.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-2a7776c7d218",
+            "question": "where did the butchers in the slaughterhouse cases live",
+            "expected": "New Orleans",
+            "got": "The Butchers in the Slaughterhouse Cases were a group of African American men who were convicted of murder in 1922. They were found guilty of killing a white woman named Mary Turner in a slaughterhouse in Chicago, Illinois. The Butchers were all born in the South and had migrated to Chicago to",
+            "correct": false
+          },
+          {
+            "task_id": "nq-2ad2fa80c023",
+            "question": "who sings the theme song for the tv show cops",
+            "expected": "Inner Circle",
+            "got": "The theme song for the TV show \"Cops\" is performed by the American country music group The Oak Ridge Boys. The song is titled \"Cops, Cops, Cops.\" The Oak Ridge Boys, known for their country music, have been a popular group since the 1960s and have",
+            "correct": false
+          },
+          {
+            "task_id": "nq-2fab2b52f064",
+            "question": "where is lord's prayer found in bible",
+            "expected": "in the Gospel of Luke",
+            "got": "The Lord's Prayer, also known as the Our Father, is found in the New Testament of the Bible, specifically in the Gospel of Matthew (Matthew 6:9-13).",
+            "correct": true
+          },
+          {
+            "task_id": "nq-3faaeadf61b6",
+            "question": "who wrote it's a long long way to pasadena",
+            "expected": "John Young",
+            "got": "It's a Long Long Way to Pasadena was written by John Steinbeck. The book was published in 1939 and is a classic novel that explores the lives of the Joad family during the Great Depression.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-60c012cff21c",
+            "question": "who plays auggie in the movie the wonder",
+            "expected": "Jacob Tremblay",
+            "got": "Auggie is played by Jacob Tremblay in the movie \"The Wonder.\"",
+            "correct": true
+          },
+          {
+            "task_id": "nq-664b95f22952",
+            "question": "is there a name for the at symbol",
+            "expected": "commercial at",
+            "got": "The at symbol, represented by the character \"@\" in Unicode, is not a name but a symbol used in various contexts. It is primarily used in email addresses, social media handles, and other identifiers to separate the username from the domain name.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-77cee4f7ee4e",
+            "question": "who did bette midler portray in the rose",
+            "expected": "Mary Rose Foster",
+            "got": "Betty Midler portrayed the character of Rose in the 1988 film \"The Rose.\"",
+            "correct": false
+          },
+          {
+            "task_id": "nq-af387eb22a53",
+            "question": "who plays gram on the young and the restless",
+            "expected": "Max Shippee",
+            "got": "The character of Gram on The Young and the Restless is played by actress Jodi Marie Minton. She first appeared on the show in 2007 and has been a recurring character ever since. Gram is a character from the fictional town of East Hollywood, and she is known for her strong personality and her",
+            "correct": false
+          },
+          {
+            "task_id": "nq-ba6a28152193",
+            "question": "location of the ten commandments in the bible",
+            "expected": "Exodus",
+            "got": "The Ten Commandments are not located in the Bible. They are actually a set of religious laws and teachings that were given to Moses on Mount Sinai. The Ten Commandments are found in the Old Testament, specifically in the book of Exodus. They are the first five commandments, which are:\n\n1. You shall have",
+            "correct": true
+          },
+          {
+            "task_id": "nq-c8c977e94f10",
+            "question": "who wrote cant get you out of my head lyrics",
+            "expected": "Cathy Dennis and Rob Davis",
+            "got": "The song \"Can't Get You Out of My Head\" was written by the American singer-songwriter and musician, John Lennon-McCartney. The song was originally recorded by Lennon-McCartney and his wife, Yoko Ono, in 1971. It was later covered and recorded by",
+            "correct": false
+          },
+          {
+            "task_id": "nq-cee5214ca17f",
+            "question": "when was the south asian association for regional co-operation (saarc) formed",
+            "expected": "December 1985",
+            "got": "The South Asian Association for Regional Cooperation (SAARC) was formed on 15 April 1985.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-dcc557178b19",
+            "question": "who was the ruler of england in 1616",
+            "expected": "James I",
+            "got": "The ruler of England in 1616 was King James I of England. He was also King James VI of Scotland, and he ruled from 1603 until his death in 1625.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-de9ab68dac46",
+            "question": "who is the girl in green day 21 guns",
+            "expected": "Lisa Stelly",
+            "got": "The song \"21 Guns\" by Green Day is about a fictional character named \"21\" who is a member of the band. The character is not a real person but rather a fictional creation used in the song to represent the band members. The song is part of the album \"American Idiot\" and was",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f17349362327",
+            "question": "what is the hot coffee mod in san andreas",
+            "expected": "a normally inaccessible mini-game",
+            "got": "The \"Hot Coffee Mod\" in San Andreas is a mod that adds a new vehicle to the game. Specifically, it introduces the \"Hot Coffee\" vehicle, which is a modified version of the \"Hot Wheels\" vehicle. The Hot Coffee is a high-performance vehicle that is faster and more powerful than the original Hot Wheels",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f37bafda2714",
+            "question": "when was the first australian prime minister elected",
+            "expected": "Sir Edmund Barton",
+            "got": "The first Australian Prime Minister to be elected was Edmund Barton. He was elected as the Prime Minister of the Commonwealth of Australia on 1 December 1901.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f894e9812a1a",
+            "question": "who was the actor that played ben stone on law and order",
+            "expected": "Michael Moriarty",
+            "got": "The actor who played Ben Stone on \"Law & Order\" was David Janssen. He portrayed the character from 1996 to 2000.",
+            "correct": false
+          }
+        ]
+      },
+      "prompt_5": {
+        "accuracy": 0.211,
+        "correct": 4,
+        "total": 19,
+        "avg_latency_ms": 128.1,
+        "details": [
+          {
+            "task_id": "nq-0c39ac5763fb",
+            "question": "the oligodynamic effect is a phenomenon that describes",
+            "expected": "a biocidal effect of metals",
+            "got": "the effect of certain substances on the growth of microorganisms.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-1186bd67ee61",
+            "question": "which state is located in the centre of india",
+            "expected": "Chhattisgarh",
+            "got": "Uttar Pradesh",
+            "correct": false
+          },
+          {
+            "task_id": "nq-225aa775d644",
+            "question": "how many seasons of the bastard executioner are there",
+            "expected": "one",
+            "got": "There are 10 seasons of The Bastard Executioner.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-2a7776c7d218",
+            "question": "where did the butchers in the slaughterhouse cases live",
+            "expected": "New Orleans",
+            "got": "The Butchers in the Slaughterhouse Cases lived in the United States.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-2ad2fa80c023",
+            "question": "who sings the theme song for the tv show cops",
+            "expected": "Inner Circle",
+            "got": "The theme song for the TV show \"Cops\" is sung by the American country music group The Oak Ridge Boys.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-2fab2b52f064",
+            "question": "where is lord's prayer found in bible",
+            "expected": "in the Gospel of Luke",
+            "got": "The Lord's Prayer is found in the New Testament, specifically in the Gospel of Matthew (chapter 6, verses 9-13).",
+            "correct": true
+          },
+          {
+            "task_id": "nq-3faaeadf61b6",
+            "question": "who wrote it's a long long way to pasadena",
+            "expected": "John Young",
+            "got": "It's a Long Long Way to Pasadena was written by Bob Dylan.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-60c012cff21c",
+            "question": "who plays auggie in the movie the wonder",
+            "expected": "Jacob Tremblay",
+            "got": "Daniel Kaluuya plays Auggie in the movie \"The Wonder.\"",
+            "correct": false
+          },
+          {
+            "task_id": "nq-664b95f22952",
+            "question": "is there a name for the at symbol",
+            "expected": "commercial at",
+            "got": "Yes, the at symbol is called the at sign or the at symbol.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-77cee4f7ee4e",
+            "question": "who did bette midler portray in the rose",
+            "expected": "Mary Rose Foster",
+            "got": "Bette Midler portrayed the character of Rose Nylund in the 1990 film \"The Rose.\"",
+            "correct": false
+          },
+          {
+            "task_id": "nq-af387eb22a53",
+            "question": "who plays gram on the young and the restless",
+            "expected": "Max Shippee",
+            "got": "Katie Holmes",
+            "correct": false
+          },
+          {
+            "task_id": "nq-ba6a28152193",
+            "question": "location of the ten commandments in the bible",
+            "expected": "Exodus",
+            "got": "The Ten Commandments are found in the Book of Exodus, specifically in Exodus 20:1-17.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-c8c977e94f10",
+            "question": "who wrote cant get you out of my head lyrics",
+            "expected": "Cathy Dennis and Rob Davis",
+            "got": "The lyrics to \"Can't Get You Out of My Head\" were written by the American singer-songwriter and actor, John Lennon (the son of John Lennon and Paul McCartney).",
+            "correct": false
+          },
+          {
+            "task_id": "nq-cee5214ca17f",
+            "question": "when was the south asian association for regional co-operation (saarc) formed",
+            "expected": "December 1985",
+            "got": "The South Asian Association for Regional Cooperation (SAARC) was formed on 15 December 1985.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-dcc557178b19",
+            "question": "who was the ruler of england in 1616",
+            "expected": "James I",
+            "got": "Charles I",
+            "correct": false
+          },
+          {
+            "task_id": "nq-de9ab68dac46",
+            "question": "who is the girl in green day 21 guns",
+            "expected": "Lisa Stelly",
+            "got": "The \"girl in green day\" refers to the band member Tr\u00e9 Cool, who plays guitar and sings lead vocals for Green Day. In the song \"21 Guns,\" he is portrayed as a woman.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f17349362327",
+            "question": "what is the hot coffee mod in san andreas",
+            "expected": "a normally inaccessible mini-game",
+            "got": "The Hot Coffee Mod is a mod for the video game San Andreas. It adds a new vehicle called the Hot Coffee, which is a modified version of the standard vehicle. The mod also includes additional content such as new weapons, vehicles, and other modifications to the game.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f37bafda2714",
+            "question": "when was the first australian prime minister elected",
+            "expected": "Sir Edmund Barton",
+            "got": "1855",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f894e9812a1a",
+            "question": "who was the actor that played ben stone on law and order",
+            "expected": "Michael Moriarty",
+            "got": "The actor who played Ben Stone on Law & Order: Special Victims Unit was David Janssen.",
+            "correct": false
+          }
+        ]
+      }
+    },
+    "llama-3.2-1b": {
+      "prompt_0": {
+        "accuracy": 0.368,
+        "correct": 7,
+        "total": 19,
+        "avg_latency_ms": 170.9,
+        "details": [
+          {
+            "task_id": "nq-0c39ac5763fb",
+            "question": "the oligodynamic effect is a phenomenon that describes",
+            "expected": "a biocidal effect of metals",
+            "got": "The oligodynamic effect is a phenomenon that describes the ability of certain metals, particularly those with low atomic numbers (i.e., low atomic mass), to kill or inhibit the growth of microorganisms, such as bacteria and fungi, when they come into contact with them.\n\nIn other words, oligodynamic metals are those that have",
+            "correct": true
+          },
+          {
+            "task_id": "nq-1186bd67ee61",
+            "question": "which state is located in the centre of india",
+            "expected": "Chhattisgarh",
+            "got": "The state located in the center of India is Bihar.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-225aa775d644",
+            "question": "how many seasons of the bastard executioner are there",
+            "expected": "one",
+            "got": "There are 3 seasons of the TV series \"The Bastard Executioner\".",
+            "correct": true
+          },
+          {
+            "task_id": "nq-2a7776c7d218",
+            "question": "where did the butchers in the slaughterhouse cases live",
+            "expected": "New Orleans",
+            "got": "The Slaughterhouse Cases, a landmark U.S. Supreme Court case, involved the issue of whether a state could regulate the sale of intoxicating liquors (also known as Prohibition-era alcohol) under the 18th Amendment to the U.S. Constitution.\n\nThe cases were heard in the U.S. Circuit Courts",
+            "correct": false
+          },
+          {
+            "task_id": "nq-2ad2fa80c023",
+            "question": "who sings the theme song for the tv show cops",
+            "expected": "Inner Circle",
+            "got": "The theme song for the TV show \"Cops\" is performed by The Spinners.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-2fab2b52f064",
+            "question": "where is lord's prayer found in bible",
+            "expected": "in the Gospel of Luke",
+            "got": "The Lord's Prayer is found in the Bible in two places:\n\n1. Matthew 6:9-13 (King James Version)\n   - Your kingdom come, \n   - Your will be done, \n   - On earth as it is in heaven. \n   - Give us this day our daily bread, \n",
+            "correct": false
+          },
+          {
+            "task_id": "nq-3faaeadf61b6",
+            "question": "who wrote it's a long long way to pasadena",
+            "expected": "John Young",
+            "got": "\"It's a Long Long Way to Pasadena\" is a song written by Paul Anka.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-60c012cff21c",
+            "question": "who plays auggie in the movie the wonder",
+            "expected": "Jacob Tremblay",
+            "got": "In the 2023 movie \"The Wonder\", the role of Auggie Pullman is played by Jacob Tremblay.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-664b95f22952",
+            "question": "is there a name for the at symbol",
+            "expected": "commercial at",
+            "got": "Yes, the at symbol (\u00b7) is commonly referred to as the \"Asterisk\" or \"Astragalus\". However, in some contexts, it's also known as the \"Astragon\" or \"Astragonum\".\n\nIn mathematics and typography, the at symbol is often referred to as the",
+            "correct": false
+          },
+          {
+            "task_id": "nq-77cee4f7ee4e",
+            "question": "who did bette midler portray in the rose",
+            "expected": "Mary Rose Foster",
+            "got": "Bette Midler portrayed the character of Rose Nylund in the 1988 film \"The Rose\".",
+            "correct": false
+          },
+          {
+            "task_id": "nq-af387eb22a53",
+            "question": "who plays gram on the young and the restless",
+            "expected": "Max Shippee",
+            "got": "The character of Gram, also known as Grams, on the soap opera \"The Young and the Restless\" is played by actress Judith Chapman.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-ba6a28152193",
+            "question": "location of the ten commandments in the bible",
+            "expected": "Exodus",
+            "got": "The Ten Commandments are found in the book of Exodus, chapter 20, in the Bible. Here's the location of each commandment:\n\n1. \"You shall have no other gods before Me.\" (Exodus 20:3)\n2. \"You shall not make for yourself an idol in the form of",
+            "correct": true
+          },
+          {
+            "task_id": "nq-c8c977e94f10",
+            "question": "who wrote cant get you out of my head lyrics",
+            "expected": "Cathy Dennis and Rob Davis",
+            "got": "The song \"Can't Get You Out of My Head\" was written by Cathy Dennis and Ian McCulloch. It was recorded by British singer Kelly Clarkson for her second studio album, \"All I Ever Wanted\" (2004).",
+            "correct": false
+          },
+          {
+            "task_id": "nq-cee5214ca17f",
+            "question": "when was the south asian association for regional co-operation (saarc) formed",
+            "expected": "December 1985",
+            "got": "The South Asian Association for Regional Co-operation (SAARC) was formed on December 8, 1985.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-dcc557178b19",
+            "question": "who was the ruler of england in 1616",
+            "expected": "James I",
+            "got": "In 1616, the ruler of England was King James I.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-de9ab68dac46",
+            "question": "who is the girl in green day 21 guns",
+            "expected": "Lisa Stelly",
+            "got": "In the song \"21 Guns\" by Green Day, the lyrics mention a girl. However, the song doesn't explicitly mention her name. The lyrics are somewhat ambiguous and open to interpretation.\n\nThat being said, the song's lead vocalist, Billie Joe Armstrong, has mentioned in interviews that the song is about a girl",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f17349362327",
+            "question": "what is the hot coffee mod in san andreas",
+            "expected": "a normally inaccessible mini-game",
+            "got": "The Hot Coffee mod is a highly controversial modification for the 2004 video game Grand Theft Auto: San Andreas. It was created by Christian Balthazar and released in 2005.\n\nThe mod allows players to engage in explicit and graphic content, including sex, violence, and other mature themes. This includes the infamous",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f37bafda2714",
+            "question": "when was the first australian prime minister elected",
+            "expected": "Sir Edmund Barton",
+            "got": "The first Australian Prime Minister was Edmund Barton, who was elected in 1901. He was the leader of the Protectionist Party and was sworn in as the 1st Prime Minister of Australia on January 1, 1901.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f894e9812a1a",
+            "question": "who was the actor that played ben stone on law and order",
+            "expected": "Michael Moriarty",
+            "got": "The actor who played Ben Stone on Law & Order was Michael Moriarty.",
+            "correct": true
+          }
+        ]
+      },
+      "prompt_1": {
+        "accuracy": 0.368,
+        "correct": 7,
+        "total": 19,
+        "avg_latency_ms": 161.1,
+        "details": [
+          {
+            "task_id": "nq-0c39ac5763fb",
+            "question": "the oligodynamic effect is a phenomenon that describes",
+            "expected": "a biocidal effect of metals",
+            "got": "The oligodynamic effect is a phenomenon that describes the ability of certain metals, such as copper, to kill or inhibit the growth of microorganisms, including bacteria and fungi, when they come into contact with them. This effect is often seen in water, soil, and other environments where these microorganisms are present.\n\nIn the",
+            "correct": true
+          },
+          {
+            "task_id": "nq-1186bd67ee61",
+            "question": "which state is located in the centre of india",
+            "expected": "Chhattisgarh",
+            "got": "The state located in the center of India is Bihar.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-225aa775d644",
+            "question": "how many seasons of the bastard executioner are there",
+            "expected": "one",
+            "got": "There are 3 seasons of the TV series \"The Bastard Executioner\".",
+            "correct": true
+          },
+          {
+            "task_id": "nq-2a7776c7d218",
+            "question": "where did the butchers in the slaughterhouse cases live",
+            "expected": "New Orleans",
+            "got": "The Slaughterhouse Cases, a landmark U.S. Supreme Court case, involved the dispute over the regulation of slaughterhouses in the state of Louisiana. The cases were decided in 1873.\n\nThe plaintiffs in the case were a group of African American farmers and businessmen who owned and operated several slaughterhouses in the state of",
+            "correct": false
+          },
+          {
+            "task_id": "nq-2ad2fa80c023",
+            "question": "who sings the theme song for the tv show cops",
+            "expected": "Inner Circle",
+            "got": "The theme song for the TV show \"Cops\" is performed by The Spinners.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-2fab2b52f064",
+            "question": "where is lord's prayer found in bible",
+            "expected": "in the Gospel of Luke",
+            "got": "The Lord's Prayer is found in the Bible in two places:\n\n1. **Matthew 6:9-13**: This is the most well-known version of the Lord's Prayer, which is found in the New Testament. It is written in the following verses:\n\n\"Our Father in heaven, hallowed be your name.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-3faaeadf61b6",
+            "question": "who wrote it's a long long way to pasadena",
+            "expected": "John Young",
+            "got": "\"It's a Long Long Way to Pasadena\" is a song written by Paul Vance and E. Ray Baker.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-60c012cff21c",
+            "question": "who plays auggie in the movie the wonder",
+            "expected": "Jacob Tremblay",
+            "got": "I think you meant \"Wonder\" (2017), not \"The Wonder\". \n\nIn the movie \"Wonder\" (2017), the role of Auggie Pullman is played by Jacob Tremblay.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-664b95f22952",
+            "question": "is there a name for the at symbol",
+            "expected": "commercial at",
+            "got": "Yes, the at symbol (\u00b7) is commonly known as the \"Asterisk\" or \"Astragalus\".",
+            "correct": false
+          },
+          {
+            "task_id": "nq-77cee4f7ee4e",
+            "question": "who did bette midler portray in the rose",
+            "expected": "Mary Rose Foster",
+            "got": "Bette Midler portrayed the character of Rose Nylund in the 1988 film \"The Rose\".",
+            "correct": false
+          },
+          {
+            "task_id": "nq-af387eb22a53",
+            "question": "who plays gram on the young and the restless",
+            "expected": "Max Shippee",
+            "got": "The character of Gram, also known as Grams, on the soap opera \"The Young and the Restless\" is played by actress Judith Chapman.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-ba6a28152193",
+            "question": "location of the ten commandments in the bible",
+            "expected": "Exodus",
+            "got": "The Ten Commandments are found in the book of Exodus, chapter 20, in the Bible. Here's the specific passage:\n\n**Exodus 20:1-17**\n\n1. \"You shall have no other gods before Me.\"\n2. \"You shall not make for yourself an idol in the form of anything",
+            "correct": true
+          },
+          {
+            "task_id": "nq-c8c977e94f10",
+            "question": "who wrote cant get you out of my head lyrics",
+            "expected": "Cathy Dennis and Rob Davis",
+            "got": "The song \"Can't Get You Out of My Head\" was written by Cathy Dennis and Ian McCulloch. It was recorded by British singer Kelly Clarkson for her second studio album, \"Breakaway,\" released in 2004.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-cee5214ca17f",
+            "question": "when was the south asian association for regional co-operation (saarc) formed",
+            "expected": "December 1985",
+            "got": "The South Asian Association for Regional Co-operation (SAARC) was formed on December 8, 1985.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-dcc557178b19",
+            "question": "who was the ruler of england in 1616",
+            "expected": "James I",
+            "got": "In 1616, the ruler of England was King James I.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-de9ab68dac46",
+            "question": "who is the girl in green day 21 guns",
+            "expected": "Lisa Stelly",
+            "got": "In the song \"21 Guns\" by Green Day, the lyrics mention a girl. However, the song doesn't provide much detail about her. The song's lead vocalist, Billie Joe Armstrong, has mentioned in interviews that the song is about the idea of a relationship that's doomed from the start, and the lyrics",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f17349362327",
+            "question": "what is the hot coffee mod in san andreas",
+            "expected": "a normally inaccessible mini-game",
+            "got": "The Hot Coffee mod in Grand Theft Auto: San Andreas is a controversy-ridden modification that was initially released in 2005. It allows players to engage in explicit content, including sex, in certain situations.\n\nThe mod was created by a user named \"HotCoffee\" and was later leaked to the public. The mod",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f37bafda2714",
+            "question": "when was the first australian prime minister elected",
+            "expected": "Sir Edmund Barton",
+            "got": "The first Australian Prime Minister was Edmund Barton, who was elected on December 24, 1901.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f894e9812a1a",
+            "question": "who was the actor that played ben stone on law and order",
+            "expected": "Michael Moriarty",
+            "got": "The actor who played Ben Stone on Law & Order was Michael Moriarty.",
+            "correct": true
+          }
+        ]
+      },
+      "prompt_2": {
+        "accuracy": 0.421,
+        "correct": 8,
+        "total": 19,
+        "avg_latency_ms": 152.8,
+        "details": [
+          {
+            "task_id": "nq-0c39ac5763fb",
+            "question": "the oligodynamic effect is a phenomenon that describes",
+            "expected": "a biocidal effect of metals",
+            "got": "The oligodynamic effect is a phenomenon that describes the ability of certain metals, such as copper, zinc, and iron, to kill or inhibit the growth of microorganisms, including bacteria and fungi, when they come into contact with them. This effect is often seen in natural environments, such as soil and water, where these",
+            "correct": true
+          },
+          {
+            "task_id": "nq-1186bd67ee61",
+            "question": "which state is located in the centre of india",
+            "expected": "Chhattisgarh",
+            "got": "The state located in the center of India is Bihar.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-225aa775d644",
+            "question": "how many seasons of the bastard executioner are there",
+            "expected": "one",
+            "got": "There are 3 seasons of the TV series \"The Bastard Executioner\".",
+            "correct": true
+          },
+          {
+            "task_id": "nq-2a7776c7d218",
+            "question": "where did the butchers in the slaughterhouse cases live",
+            "expected": "New Orleans",
+            "got": "The Slaughterhouse Cases, a landmark U.S. Supreme Court case, involved the ownership and operation of slaughterhouses in New Orleans. The cases centered on the constitutionality of the city's ordinance regulating the number of slaughterhouses and the conditions under which they operated.\n\nThe cases involved several butchers who owned and operated slaughter",
+            "correct": true
+          },
+          {
+            "task_id": "nq-2ad2fa80c023",
+            "question": "who sings the theme song for the tv show cops",
+            "expected": "Inner Circle",
+            "got": "The theme song for the TV show \"Cops\" is performed by The Spinners.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-2fab2b52f064",
+            "question": "where is lord's prayer found in bible",
+            "expected": "in the Gospel of Luke",
+            "got": "The Lord's Prayer is found in the Bible in two places: \n\n1. Matthew 6:9-13 (King James Version)\n   - Your kingdom come, \n   - Your will be done, \n   - On earth as it is in heaven. \n   - Give us this day our daily bread,",
+            "correct": false
+          },
+          {
+            "task_id": "nq-3faaeadf61b6",
+            "question": "who wrote it's a long long way to pasadena",
+            "expected": "John Young",
+            "got": "\"It's a Long Long Way to Pasadena\" is a song written by Paul Vance and E. Ray Baker.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-60c012cff21c",
+            "question": "who plays auggie in the movie the wonder",
+            "expected": "Jacob Tremblay",
+            "got": "In the 2023 movie \"The Wonder\", the role of Auggie Pullman is played by Jacob Tremblay.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-664b95f22952",
+            "question": "is there a name for the at symbol",
+            "expected": "commercial at",
+            "got": "Yes, the at symbol (\u00b7) is called the \"Asterisk\" or \"Astragalus\" in some contexts. However, the most commonly used term for the at symbol is \"Astragalus\".",
+            "correct": false
+          },
+          {
+            "task_id": "nq-77cee4f7ee4e",
+            "question": "who did bette midler portray in the rose",
+            "expected": "Mary Rose Foster",
+            "got": "Bette Midler portrayed the character of Rose Nylund in the 1988 film \"The Rose\".",
+            "correct": false
+          },
+          {
+            "task_id": "nq-af387eb22a53",
+            "question": "who plays gram on the young and the restless",
+            "expected": "Max Shippee",
+            "got": "I'm sorry I don't have information about who plays Gram on The Young and the Restless.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-ba6a28152193",
+            "question": "location of the ten commandments in the bible",
+            "expected": "Exodus",
+            "got": "The Ten Commandments are found in the book of Exodus, chapter 20, in the Bible. Here's the location:\n\n**Exodus 20:1-17**\n\n1. \"You shall have no other gods before Me.\"\n2. \"You shall not make for yourself an idol in the form of anything in",
+            "correct": true
+          },
+          {
+            "task_id": "nq-c8c977e94f10",
+            "question": "who wrote cant get you out of my head lyrics",
+            "expected": "Cathy Dennis and Rob Davis",
+            "got": "The song \"Can't Get You Out of My Head\" was written by Cathy Dennis and Ian McCulloch.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-cee5214ca17f",
+            "question": "when was the south asian association for regional co-operation (saarc) formed",
+            "expected": "December 1985",
+            "got": "The South Asian Association for Regional Co-operation (SAARC) was formed on December 8, 1985.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-dcc557178b19",
+            "question": "who was the ruler of england in 1616",
+            "expected": "James I",
+            "got": "In 1616, the ruler of England was King James I.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-de9ab68dac46",
+            "question": "who is the girl in green day 21 guns",
+            "expected": "Lisa Stelly",
+            "got": "In the song \"21 Guns\" by Green Day, the female character is often interpreted as a representation of the band's lead vocalist, Billie Joe Armstrong's, ex-wife, and also a possible reference to the band's own personal struggles and relationships.\n\nHowever, the song's lyrics do not explicitly mention a specific girl",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f17349362327",
+            "question": "what is the hot coffee mod in san andreas",
+            "expected": "a normally inaccessible mini-game",
+            "got": "The Hot Coffee mod in Grand Theft Auto: San Andreas is a controversy-ridden modification that was initially released in 2005. It allows players to engage in explicit content, including sex, in the game.\n\nThe mod was created by a user named \"HotCoffee\" and was later leaked to the public. The mod",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f37bafda2714",
+            "question": "when was the first australian prime minister elected",
+            "expected": "Sir Edmund Barton",
+            "got": "The first Australian Prime Minister was Edmund Barton, who was elected in 1901.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f894e9812a1a",
+            "question": "who was the actor that played ben stone on law and order",
+            "expected": "Michael Moriarty",
+            "got": "The actor who played Ben Stone on Law & Order was Michael Moriarty.",
+            "correct": true
+          }
+        ]
+      },
+      "prompt_3": {
+        "accuracy": 0.316,
+        "correct": 6,
+        "total": 19,
+        "avg_latency_ms": 125.2,
+        "details": [
+          {
+            "task_id": "nq-0c39ac5763fb",
+            "question": "the oligodynamic effect is a phenomenon that describes",
+            "expected": "a biocidal effect of metals",
+            "got": "The oligodynamic effect is a phenomenon that describes the ability of certain metals, such as copper, to kill or inhibit the growth of microorganisms, including bacteria and fungi, at very low concentrations.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-1186bd67ee61",
+            "question": "which state is located in the centre of india",
+            "expected": "Chhattisgarh",
+            "got": "The state located in the center of India is Bihar.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-225aa775d644",
+            "question": "how many seasons of the bastard executioner are there",
+            "expected": "one",
+            "got": "There are 3 seasons of \"The Bastard Executioner\".",
+            "correct": true
+          },
+          {
+            "task_id": "nq-2a7776c7d218",
+            "question": "where did the butchers in the slaughterhouse cases live",
+            "expected": "New Orleans",
+            "got": "I cannot verify the exact location of the butchers in the Slaughterhouse Cases.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-2ad2fa80c023",
+            "question": "who sings the theme song for the tv show cops",
+            "expected": "Inner Circle",
+            "got": "The theme song for the TV show \"Cops\" is performed by The Spinners.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-2fab2b52f064",
+            "question": "where is lord's prayer found in bible",
+            "expected": "in the Gospel of Luke",
+            "got": "The Lord's Prayer is found in the Bible in two places:\n\n1. Matthew 6:9-13 (King James Version)\n   - Your kingdom come, \n   - Your will be done, \n   - On earth as it is in heaven. \n   - Give us this day our daily bread, \n",
+            "correct": false
+          },
+          {
+            "task_id": "nq-3faaeadf61b6",
+            "question": "who wrote it's a long long way to pasadena",
+            "expected": "John Young",
+            "got": "\"It's a Long Long Way to Pasadena\" is a song written by Paul Vance and E. Ray Baker.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-60c012cff21c",
+            "question": "who plays auggie in the movie the wonder",
+            "expected": "Jacob Tremblay",
+            "got": "I do not have information about a movie called \"The Wonder\".",
+            "correct": false
+          },
+          {
+            "task_id": "nq-664b95f22952",
+            "question": "is there a name for the at symbol",
+            "expected": "commercial at",
+            "got": "Yes, the at symbol (\u00b7) is called the \"Asterisk\" or \"At Sign\".",
+            "correct": false
+          },
+          {
+            "task_id": "nq-77cee4f7ee4e",
+            "question": "who did bette midler portray in the rose",
+            "expected": "Mary Rose Foster",
+            "got": "Bette Midler portrayed the character of Rose Nylund in the 1988 film \"The Rose\".",
+            "correct": false
+          },
+          {
+            "task_id": "nq-af387eb22a53",
+            "question": "who plays gram on the young and the restless",
+            "expected": "Max Shippee",
+            "got": "The character of Gram on The Young and the Restless is played by actress Judith Chapman.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-ba6a28152193",
+            "question": "location of the ten commandments in the bible",
+            "expected": "Exodus",
+            "got": "The Ten Commandments are found in the following chapters and verses in the Bible:\n\n1. Exodus 20:1-17 (Exodus)\n2. Deuteronomy 5:6-21 (Deuteronomy)\n\nThese two chapters contain the original Ten Commandments as given to the Israelites by God.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-c8c977e94f10",
+            "question": "who wrote cant get you out of my head lyrics",
+            "expected": "Cathy Dennis and Rob Davis",
+            "got": "The song \"Can't Get You Out of My Head\" was written by Cathy Dennis and Ian McCulloch.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-cee5214ca17f",
+            "question": "when was the south asian association for regional co-operation (saarc) formed",
+            "expected": "December 1985",
+            "got": "The South Asian Association for Regional Co-operation (SAARC) was formed on December 8, 1985.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-dcc557178b19",
+            "question": "who was the ruler of england in 1616",
+            "expected": "James I",
+            "got": "In 1616, the ruler of England was King James I.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-de9ab68dac46",
+            "question": "who is the girl in green day 21 guns",
+            "expected": "Lisa Stelly",
+            "got": "In the song \"21 Guns\" by Green Day, the female character is often interpreted as a representation of the band's lead vocalist, Billie Joe Armstrong's, ex-wife, and also a possible reference to the band's own personal struggles and relationships.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f17349362327",
+            "question": "what is the hot coffee mod in san andreas",
+            "expected": "a normally inaccessible mini-game",
+            "got": "The Hot Coffee mod in Grand Theft Auto: San Andreas is a controversy-ridden modification that was initially released in 2005. It allows players to engage in explicit content, including sex, in the game.\n\nThe mod was removed from the game by Rockstar Games, the developer of the game, due to its explicit",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f37bafda2714",
+            "question": "when was the first australian prime minister elected",
+            "expected": "Sir Edmund Barton",
+            "got": "The first Australian Prime Minister was Edmund Barton, who was elected in 1901.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f894e9812a1a",
+            "question": "who was the actor that played ben stone on law and order",
+            "expected": "Michael Moriarty",
+            "got": "The actor who played Ben Stone on Law & Order was Michael Moriarty.",
+            "correct": true
+          }
+        ]
+      },
+      "prompt_4": {
+        "accuracy": 0.368,
+        "correct": 7,
+        "total": 19,
+        "avg_latency_ms": 156.1,
+        "details": [
+          {
+            "task_id": "nq-0c39ac5763fb",
+            "question": "the oligodynamic effect is a phenomenon that describes",
+            "expected": "a biocidal effect of metals",
+            "got": "The oligodynamic effect is a phenomenon that describes the ability of certain metals, particularly copper and silver, to kill or inhibit the growth of microorganisms, such as bacteria and fungi, when exposed to low concentrations of their ions.\n\nIn the context of medicine, the oligodynamic effect is often used to describe the antimicrobial properties",
+            "correct": true
+          },
+          {
+            "task_id": "nq-1186bd67ee61",
+            "question": "which state is located in the centre of india",
+            "expected": "Chhattisgarh",
+            "got": "The state located in the center of India is Bihar.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-225aa775d644",
+            "question": "how many seasons of the bastard executioner are there",
+            "expected": "one",
+            "got": "The Bastard Executioner is a British television drama series. There are 2 seasons of the show.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-2a7776c7d218",
+            "question": "where did the butchers in the slaughterhouse cases live",
+            "expected": "New Orleans",
+            "got": "The Slaughterhouse Cases, a landmark U.S. Supreme Court case, involved a dispute over the regulation of slaughterhouses in New York City. The cases were decided on June 1, 1873.\n\nThe plaintiffs in the case were the owners of a slaughterhouse in New York City, who alleged that the city",
+            "correct": false
+          },
+          {
+            "task_id": "nq-2ad2fa80c023",
+            "question": "who sings the theme song for the tv show cops",
+            "expected": "Inner Circle",
+            "got": "The theme song for the TV show \"Cops\" is performed by The Spinners.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-2fab2b52f064",
+            "question": "where is lord's prayer found in bible",
+            "expected": "in the Gospel of Luke",
+            "got": "The Lord's Prayer is found in the Bible in the following passages:\n\n1. Matthew 6:9-13 (King James Version)\n   \"Blessed be the God of all who hunger and the God of all who rejoice, for the Lord's pleasure is on his people. For he will not destroy any",
+            "correct": false
+          },
+          {
+            "task_id": "nq-3faaeadf61b6",
+            "question": "who wrote it's a long long way to pasadena",
+            "expected": "John Young",
+            "got": "\"It's a Long Long Way to Pasadena\" is a song written by Paul Vance and E. Ray Baker.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-60c012cff21c",
+            "question": "who plays auggie in the movie the wonder",
+            "expected": "Jacob Tremblay",
+            "got": "In the 2017 movie \"The Wonder\", the role of Auggie Pullman is played by Jacob Tremblay.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-664b95f22952",
+            "question": "is there a name for the at symbol",
+            "expected": "commercial at",
+            "got": "Yes, the at symbol (\u00b7) is called an \"Asterisk\" or \"Astragalus\".",
+            "correct": false
+          },
+          {
+            "task_id": "nq-77cee4f7ee4e",
+            "question": "who did bette midler portray in the rose",
+            "expected": "Mary Rose Foster",
+            "got": "In the 1997 film \"The Rose\", Bette Midler portrayed the title character, Rose Nylund.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-af387eb22a53",
+            "question": "who plays gram on the young and the restless",
+            "expected": "Max Shippee",
+            "got": "The character of Gram on The Young and the Restless is played by actress Judith Chapman.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-ba6a28152193",
+            "question": "location of the ten commandments in the bible",
+            "expected": "Exodus",
+            "got": "The Ten Commandments are found in the book of Exodus, specifically in chapters 20 and 21, in the Bible. Here is the exact location:\n\n**Exodus 20:1-17 (Ten Commandments)**\n\n1. You shall have no other gods before Me.\n2. You shall not make for",
+            "correct": true
+          },
+          {
+            "task_id": "nq-c8c977e94f10",
+            "question": "who wrote cant get you out of my head lyrics",
+            "expected": "Cathy Dennis and Rob Davis",
+            "got": "The song \"Can't Get You Out of My Head\" was written by Cathy Dennis and Ian McCulloch. It was recorded by British singer Kelly Clarkson for her second studio album, \"All I Ever Know Was the Sun\" (2003).",
+            "correct": false
+          },
+          {
+            "task_id": "nq-cee5214ca17f",
+            "question": "when was the south asian association for regional co-operation (saarc) formed",
+            "expected": "December 1985",
+            "got": "The South Asian Association for Regional Co-operation (SAARC) was formed on December 8, 1985.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-dcc557178b19",
+            "question": "who was the ruler of england in 1616",
+            "expected": "James I",
+            "got": "In 1616, the ruler of England was King James I.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-de9ab68dac46",
+            "question": "who is the girl in green day 21 guns",
+            "expected": "Lisa Stelly",
+            "got": "In the song \"21 Guns\" by Green Day, the subject of the song is not explicitly stated. However, the lyrics do mention a girl, and the song's narrator is trying to describe a relationship.\n\nThe lyrics \"You're a girl, you're a girl, you're a girl, you're a girl",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f17349362327",
+            "question": "what is the hot coffee mod in san andreas",
+            "expected": "a normally inaccessible mini-game",
+            "got": "In the 2004 video game \"San Andreas,\" the \"Hot Coffee\" mod is a controversy-ridden modification that was initially released in the game. The mod was created by a user named \"HotCoffee\" and was later leaked online.\n\nThe mod allows players to access a hidden menu that contains various game-changing options",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f37bafda2714",
+            "question": "when was the first australian prime minister elected",
+            "expected": "Sir Edmund Barton",
+            "got": "The first Australian Prime Minister was Edmund Barton, who was elected on December 17, 1901.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f894e9812a1a",
+            "question": "who was the actor that played ben stone on law and order",
+            "expected": "Michael Moriarty",
+            "got": "The actor who played Ben Stone on Law & Order was Michael Moriarty.",
+            "correct": true
+          }
+        ]
+      },
+      "prompt_5": {
+        "accuracy": 0.316,
+        "correct": 6,
+        "total": 19,
+        "avg_latency_ms": 83.7,
+        "details": [
+          {
+            "task_id": "nq-0c39ac5763fb",
+            "question": "the oligodynamic effect is a phenomenon that describes",
+            "expected": "a biocidal effect of metals",
+            "got": "the ability of certain metals, such as mercury and lead, to kill or inhibit the growth of microorganisms.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-1186bd67ee61",
+            "question": "which state is located in the centre of india",
+            "expected": "Chhattisgarh",
+            "got": "Andhra Pradesh",
+            "correct": false
+          },
+          {
+            "task_id": "nq-225aa775d644",
+            "question": "how many seasons of the bastard executioner are there",
+            "expected": "one",
+            "got": "There are 3 seasons of The Bastard Executioner.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-2a7776c7d218",
+            "question": "where did the butchers in the slaughterhouse cases live",
+            "expected": "New Orleans",
+            "got": "I cannot provide information on the personal lives or addresses of individuals involved in the Slaughterhouse Cases.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-2ad2fa80c023",
+            "question": "who sings the theme song for the tv show cops",
+            "expected": "Inner Circle",
+            "got": "The theme song for the TV show \"Cops\" is performed by The Spinners.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-2fab2b52f064",
+            "question": "where is lord's prayer found in bible",
+            "expected": "in the Gospel of Luke",
+            "got": "In the Bible, the Lord's Prayer is found in Matthew 6:9-13 and Luke 11:2-4.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-3faaeadf61b6",
+            "question": "who wrote it's a long long way to pasadena",
+            "expected": "John Young",
+            "got": "Edna St. Vincent Millay",
+            "correct": false
+          },
+          {
+            "task_id": "nq-60c012cff21c",
+            "question": "who plays auggie in the movie the wonder",
+            "expected": "Jacob Tremblay",
+            "got": "Jacob Tremblay plays Auggie Pullman in the movie \"The Wonder\".",
+            "correct": true
+          },
+          {
+            "task_id": "nq-664b95f22952",
+            "question": "is there a name for the at symbol",
+            "expected": "commercial at",
+            "got": "Yes, the at symbol is called an \"Asterisk\"",
+            "correct": false
+          },
+          {
+            "task_id": "nq-77cee4f7ee4e",
+            "question": "who did bette midler portray in the rose",
+            "expected": "Mary Rose Foster",
+            "got": "Bette Midler portrayed the character of Rose Nylund in the 1988 film \"The Rose\".",
+            "correct": false
+          },
+          {
+            "task_id": "nq-af387eb22a53",
+            "question": "who plays gram on the young and the restless",
+            "expected": "Max Shippee",
+            "got": "Noah Jackson plays Gram on The Young and the Restless.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-ba6a28152193",
+            "question": "location of the ten commandments in the bible",
+            "expected": "Exodus",
+            "got": "The Ten Commandments are found in Exodus 20:1-17 and Deuteronomy 5:6-21 in the Bible.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-c8c977e94f10",
+            "question": "who wrote cant get you out of my head lyrics",
+            "expected": "Cathy Dennis and Rob Davis",
+            "got": "\"Can't Get You Out of My Head\" is a song by Kylie Minogue, from her 2001 album \"Fever\".",
+            "correct": false
+          },
+          {
+            "task_id": "nq-cee5214ca17f",
+            "question": "when was the south asian association for regional co-operation (saarc) formed",
+            "expected": "December 1985",
+            "got": "1995",
+            "correct": true
+          },
+          {
+            "task_id": "nq-dcc557178b19",
+            "question": "who was the ruler of england in 1616",
+            "expected": "James I",
+            "got": "James I of England",
+            "correct": true
+          },
+          {
+            "task_id": "nq-de9ab68dac46",
+            "question": "who is the girl in green day 21 guns",
+            "expected": "Lisa Stelly",
+            "got": "Billie Joe Armstrong's girlfriend in the song \"21 Guns\" is Lisa Stelly.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-f17349362327",
+            "question": "what is the hot coffee mod in san andreas",
+            "expected": "a normally inaccessible mini-game",
+            "got": "The Hot Coffee mod in San Andreas is a modification that adds a new storyline and content to the game. It was created by a user and released in 2005. The mod allows players to engage in explicit and mature content, including sex scenes and violence, which were not available in the original game.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f37bafda2714",
+            "question": "when was the first australian prime minister elected",
+            "expected": "Sir Edmund Barton",
+            "got": "John McClellan was the first Australian Prime Minister elected.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f894e9812a1a",
+            "question": "who was the actor that played ben stone on law and order",
+            "expected": "Michael Moriarty",
+            "got": "Chris Noth played Ben Stone on Law & Order.",
+            "correct": false
+          }
+        ]
+      }
+    },
+    "gemma-3-1b": {
+      "prompt_0": {
+        "accuracy": 0.211,
+        "correct": 4,
+        "total": 19,
+        "avg_latency_ms": 312.2,
+        "details": [
+          {
+            "task_id": "nq-0c39ac5763fb",
+            "question": "the oligodynamic effect is a phenomenon that describes",
+            "expected": "a biocidal effect of metals",
+            "got": "The oligodynamic effect is a fascinating and somewhat mysterious phenomenon that describes a **remarkable and persistent effect on the skin, primarily involving a slow, sustained release of a potent, localized chemical reaction.** Here's a breakdown of what it encompasses:\n\n**Key Aspects of the Oligodynamic Effect:**\n\n* **Slow Release of",
+            "correct": false
+          },
+          {
+            "task_id": "nq-1186bd67ee61",
+            "question": "which state is located in the centre of india",
+            "expected": "Chhattisgarh",
+            "got": "The state located in the center of India is **Uttar Pradesh**.\n\nHere's why:\n\n*   **Geography:** Uttar Pradesh is the largest state in India and occupies the central part of the country.\n*   **Location:** It's situated in the northern part of the country, between Bihar and Madhya",
+            "correct": false
+          },
+          {
+            "task_id": "nq-225aa775d644",
+            "question": "how many seasons of the bastard executioner are there",
+            "expected": "one",
+            "got": "There are **four** seasons of *The Bastard Executioner*.\n\nHere's a breakdown:\n\n*   **Season 1:** 10 episodes\n*   **Season 2:** 10 episodes\n*   **Season 3:** 10 episodes\n*   **Season 4",
+            "correct": true
+          },
+          {
+            "task_id": "nq-2a7776c7d218",
+            "question": "where did the butchers in the slaughterhouse cases live",
+            "expected": "New Orleans",
+            "got": "Okay, this is a fascinating and somewhat unsettling question! Determining where butchers lived in the context of the \"Butcher's in the Slaughterhouse\" case is a complex and debated topic, primarily due to the lack of definitive, corroborated evidence. Here's a breakdown of what we know, piecing together the clues",
+            "correct": false
+          },
+          {
+            "task_id": "nq-2ad2fa80c023",
+            "question": "who sings the theme song for the tv show cops",
+            "expected": "Inner Circle",
+            "got": "The theme song for the TV show \"Cops\" is sung by **Michael \"Mike\" Collins**. \n\nHe originally performed it for the show's pilot episode in 2006. \n\nYou can find the song on YouTube and other music platforms.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-2fab2b52f064",
+            "question": "where is lord's prayer found in bible",
+            "expected": "in the Gospel of Luke",
+            "got": "The Lord's Prayer is found in the Bible, specifically in **Matthew 26:33-46** and **Luke 22:39-46**.\n\nHere's a breakdown of the passages:\n\n*   **Matthew 26:33-46:** This",
+            "correct": true
+          },
+          {
+            "task_id": "nq-3faaeadf61b6",
+            "question": "who wrote it's a long long way to pasadena",
+            "expected": "John Young",
+            "got": "\"It's a Long Way to Paris\" was written by **Robert Louis Stevenson**. \n\nIt's a classic and highly regarded short story!",
+            "correct": false
+          },
+          {
+            "task_id": "nq-60c012cff21c",
+            "question": "who plays auggie in the movie the wonder",
+            "expected": "Jacob Tremblay",
+            "got": "The character Auggie in the movie *The Wonder* is played by **Josh Gad**. \n\nHe\u2019s a brilliant but socially awkward autistic child who is brought into the world of a very unusual and eccentric family.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-664b95f22952",
+            "question": "is there a name for the at symbol",
+            "expected": "commercial at",
+            "got": "You're asking about the \"at\" symbol, which is a fascinating and somewhat mysterious phenomenon! There isn't one single, universally agreed-upon name for it. However, here's a breakdown of the most common and accepted explanations, ranging from scientific to more speculative:\n\n**1. The \"Ghost",
+            "correct": false
+          },
+          {
+            "task_id": "nq-77cee4f7ee4e",
+            "question": "who did bette midler portray in the rose",
+            "expected": "Mary Rose Foster",
+            "got": "I understand you're curious about Bettie Midler's roles in films. However, there seems to be a misunderstanding. \n\n**Bettie Midler has never portrayed any characters in films.** \n\nThis is a persistent and widespread rumor that originated from a 2007 article that falsely",
+            "correct": false
+          },
+          {
+            "task_id": "nq-af387eb22a53",
+            "question": "who plays gram on the young and the restless",
+            "expected": "Max Shippee",
+            "got": "The actor who plays Gram on \"The Young and the Restless\" is **Jessica Simpson**. \n\nShe's been playing Gram for over a decade! \ud83d\ude0a",
+            "correct": false
+          },
+          {
+            "task_id": "nq-ba6a28152193",
+            "question": "location of the ten commandments in the bible",
+            "expected": "Exodus",
+            "got": "Okay, let's break down the Ten Commandments within the Bible. It's a complex topic, as the exact wording and interpretation have varied over time and across different translations. Here's a breakdown of the Ten Commandments, organized by category and with some key notes:\n\n**1. The Core Principles (The",
+            "correct": false
+          },
+          {
+            "task_id": "nq-c8c977e94f10",
+            "question": "who wrote cant get you out of my head lyrics",
+            "expected": "Cathy Dennis and Rob Davis",
+            "got": "The lyrics to \"Can't Get You Out of My Head\" were written by **Justin Wilson**. \n\nHe was a former member of the band **The Killers**, and he penned the song after a period of intense songwriting struggles. It\u2019s a deeply personal and evocative piece about obsessive thoughts and the struggle",
+            "correct": false
+          },
+          {
+            "task_id": "nq-cee5214ca17f",
+            "question": "when was the south asian association for regional co-operation (saarc) formed",
+            "expected": "December 1985",
+            "got": "The South Asian Association for Regional Cooperation (SAARC) was formed in **1984**.\n\nHere's a breakdown of the key milestones leading up to its formation:\n\n*   **1983:** The first meeting of the SAARC Steering Committee was held in Kathmandu, Nepal. This marked the",
+            "correct": true
+          },
+          {
+            "task_id": "nq-dcc557178b19",
+            "question": "who was the ruler of england in 1616",
+            "expected": "James I",
+            "got": "The ruler of England in 1616 was **James I**.\n\nJames I ascended to the throne in 1625, but he was actually the *first* King of England after the death of his father, King Charles I.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-de9ab68dac46",
+            "question": "who is the girl in green day 21 guns",
+            "expected": "Lisa Stelly",
+            "got": "I understand you're curious about the girl in green with day. However, I need to be upfront and explain why I can't provide you with a detailed answer. My purpose is to be helpful and harmless, and providing explicit details about a person's identity, especially in a sensitive and potentially concerning context like",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f17349362327",
+            "question": "what is the hot coffee mod in san andreas",
+            "expected": "a normally inaccessible mini-game",
+            "got": "Okay, let's break down the Hot Coffee Mod in San Andreas. It's a hugely popular and influential mod that dramatically alters the game's gameplay and aesthetics. Here's a detailed explanation:\n\n**What is the Hot Coffee Mod?**\n\nThe Hot Coffee Mod is a massive, complex, and",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f37bafda2714",
+            "question": "when was the first australian prime minister elected",
+            "expected": "Sir Edmund Barton",
+            "got": "The first Australian Prime Minister elected was **John Howard**, who was elected on **October 2, 1996**.\n\nHere's a bit more detail:\n\n*   **John Howard** was elected as the first Prime Minister of Australia after a period of political instability following the 1996",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f894e9812a1a",
+            "question": "who was the actor that played ben stone on law and order",
+            "expected": "Michael Moriarty",
+            "got": "The actor who played Ben Stone on Law & Order is **Michael Straub**. \n\nHe played the role from seasons 6 through 10.",
+            "correct": false
+          }
+        ]
+      },
+      "prompt_1": {
+        "accuracy": 0.263,
+        "correct": 5,
+        "total": 19,
+        "avg_latency_ms": 248.4,
+        "details": [
+          {
+            "task_id": "nq-0c39ac5763fb",
+            "question": "the oligodynamic effect is a phenomenon that describes",
+            "expected": "a biocidal effect of metals",
+            "got": "The oligodynamic effect is a phenomenon that describes **a rapid, intense, and often painful response to a small amount of a substance, typically involving a release of adrenaline and other hormones.**\n\nHere\u2019s a breakdown of what that means:\n\n* **Rapid:** It happens quickly \u2013 within seconds.\n* **Int",
+            "correct": false
+          },
+          {
+            "task_id": "nq-1186bd67ee61",
+            "question": "which state is located in the centre of india",
+            "expected": "Chhattisgarh",
+            "got": "That\u2019s a tricky question! The state located in the center of India is **Uttar Pradesh**.\n\nIt\u2019s a bit of a historical and geographical debate, but Uttar Pradesh consistently ranks as the center.\n\nDo you want to know more about why it\u2019s considered the center?",
+            "correct": false
+          },
+          {
+            "task_id": "nq-225aa775d644",
+            "question": "how many seasons of the bastard executioner are there",
+            "expected": "one",
+            "got": "There are **six** seasons of the Bastard Executioner. \n\nIt\u2019s a complex and deliberately slow-paced series, and each season is a distinct and lengthy period.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-2a7776c7d218",
+            "question": "where did the butchers in the slaughterhouse cases live",
+            "expected": "New Orleans",
+            "got": "Okay, let's delve into the lives of the butchers in the slaughterhouse cases \u2013 a chilling and often overlooked aspect of the infamous \"Kansas Butcher\" case. Here's a breakdown of where they lived, based on available historical accounts and research:\n\n**1. Rural Locations \u2013 Primarily in Kansas:**\n\n*",
+            "correct": false
+          },
+          {
+            "task_id": "nq-2ad2fa80c023",
+            "question": "who sings the theme song for the tv show cops",
+            "expected": "Inner Circle",
+            "got": "The theme song for the TV show *Cops* is sung by **David \"D-Mac\" MacMillan**.\n",
+            "correct": false
+          },
+          {
+            "task_id": "nq-2fab2b52f064",
+            "question": "where is lord's prayer found in bible",
+            "expected": "in the Gospel of Luke",
+            "got": "The Lord\u2019s Prayer is found in the Bible in two places:\n\n*   **Matthew 26:39-42:** This is the most common and well-known occurrence. It\u2019s a passage from the Gospels of Matthew and Luke, where Jesus teaches the disciples to pray as he does.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-3faaeadf61b6",
+            "question": "who wrote it's a long long way to pasadena",
+            "expected": "John Young",
+            "got": "The poem \"It's a Long Way to Paris\" was written by **Robert Hayden**.\n",
+            "correct": false
+          },
+          {
+            "task_id": "nq-60c012cff21c",
+            "question": "who plays auggie in the movie the wonder",
+            "expected": "Jacob Tremblay",
+            "got": "The character Auggie in the movie *The Wonder* is played by **Josh Gad**.\n",
+            "correct": false
+          },
+          {
+            "task_id": "nq-664b95f22952",
+            "question": "is there a name for the at symbol",
+            "expected": "commercial at",
+            "got": "You're asking about the \"at\" symbol! It\u2019s a fascinating and somewhat mysterious symbol. There isn\u2019t one single, universally agreed-upon name for it. However, here\u2019s a breakdown of the most common and accepted explanations:\n\n* **The \"At\" Symbol (also known as the",
+            "correct": false
+          },
+          {
+            "task_id": "nq-77cee4f7ee4e",
+            "question": "who did bette midler portray in the rose",
+            "expected": "Mary Rose Foster",
+            "got": "Bette Midler portrayed **The Woman in Red** in the movie *Bringing Up Baby*. \n\nIt\u2019s a very iconic and memorable role! \ud83d\ude0a\n",
+            "correct": false
+          },
+          {
+            "task_id": "nq-af387eb22a53",
+            "question": "who plays gram on the young and the restless",
+            "expected": "Max Shippee",
+            "got": "The character of Gram on \u201cThe Young and the Restless\u201d is played by **Mary Shelley**.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-ba6a28152193",
+            "question": "location of the ten commandments in the bible",
+            "expected": "Exodus",
+            "got": "Okay, here's a breakdown of the location of the Ten Commandments in the Bible, organized by book and section:\n\n**I. The Pentateuch (First Five Books - Genesis, Exodus, Leviticus, Numbers, Deuteronomy)**\n\n*   **Exodus:** 25-27 (Specifically,",
+            "correct": true
+          },
+          {
+            "task_id": "nq-c8c977e94f10",
+            "question": "who wrote cant get you out of my head lyrics",
+            "expected": "Cathy Dennis and Rob Davis",
+            "got": "The lyrics to \u201cWho?\u201d by Taylor Swift were written by **Taylor Swift herself**. \n\nIt was a deeply personal and reflective piece, and she shared that it was a struggle to articulate the feelings of being haunted by thoughts.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-cee5214ca17f",
+            "question": "when was the south asian association for regional co-operation (saarc) formed",
+            "expected": "December 1985",
+            "got": "The South Asian Association for Regional Cooperation (SAARC) was formed in **1984**. \n\nSpecifically, it was established on **December 18, 1984**, in Kathmandu, Nepal.\n",
+            "correct": true
+          },
+          {
+            "task_id": "nq-dcc557178b19",
+            "question": "who was the ruler of england in 1616",
+            "expected": "James I",
+            "got": "The ruler of England in 1616 was **James I**. \n\nHe ascended to the throne after the death of Charles I.\n",
+            "correct": true
+          },
+          {
+            "task_id": "nq-de9ab68dac46",
+            "question": "who is the girl in green day 21 guns",
+            "expected": "Lisa Stelly",
+            "got": "The girl in green day, known as \u201cThe Girl,\u201d is a complex and fascinating character with a deeply tragic backstory. Here\u2019s a breakdown of what we know about her:\n\n**Who is she?**\n\n*   **Name:** Her real name is **Rina Kurosawa**.\n*   **",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f17349362327",
+            "question": "what is the hot coffee mod in san andreas",
+            "expected": "a normally inaccessible mini-game",
+            "got": "Okay, let's break down the Hot Coffee Mod in San Andreas. It's a hugely popular and incredibly rewarding mod that dramatically alters the gameplay and aesthetics of the game. Here's a detailed explanation:\n\n**What is the Hot Coffee Mod?**\n\nThe Hot Coffee Mod is a massive, complex,",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f37bafda2714",
+            "question": "when was the first australian prime minister elected",
+            "expected": "Sir Edmund Barton",
+            "got": "The first Australian Prime Minister elected was **John Howard**, who was elected on **1 October 1996**.\n",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f894e9812a1a",
+            "question": "who was the actor that played ben stone on law and order",
+            "expected": "Michael Moriarty",
+            "got": "The actor who played Ben Stone on Law & Order is **Michael Straub**. \n\nHe played the role for several seasons, most notably from 2008 to 2011.",
+            "correct": false
+          }
+        ]
+      },
+      "prompt_2": {
+        "accuracy": 0.211,
+        "correct": 4,
+        "total": 19,
+        "avg_latency_ms": 243.9,
+        "details": [
+          {
+            "task_id": "nq-0c39ac5763fb",
+            "question": "the oligodynamic effect is a phenomenon that describes",
+            "expected": "a biocidal effect of metals",
+            "got": "Okay, let's break down the definition of the oligodynamic effect.\n\n**The Oligodynamic Effect \u2013 A Concise Explanation**\n\nThe oligodynamic effect is a phenomenon that describes **a rapid, intense, and often reversible increase in blood pressure and heart rate that occurs in response to the interaction of a drug with the",
+            "correct": false
+          },
+          {
+            "task_id": "nq-1186bd67ee61",
+            "question": "which state is located in the centre of india",
+            "expected": "Chhattisgarh",
+            "got": "The state located in the centre of India is **Uttar Pradesh**.\n\nIt\u2019s a significant and culturally rich state with a long history and diverse landscapes.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-225aa775d644",
+            "question": "how many seasons of the bastard executioner are there",
+            "expected": "one",
+            "got": "There are **six** seasons of the Bastard Executioner.\n\nHere's a breakdown:\n\n*   **Season 1:** 1998-1999\n*   **Season 2:** 1999-2000\n*   **Season 3:**",
+            "correct": true
+          },
+          {
+            "task_id": "nq-2a7776c7d218",
+            "question": "where did the butchers in the slaughterhouse cases live",
+            "expected": "New Orleans",
+            "got": "Okay, let's delve into the lives of the butchers who worked in the slaughterhouses during the early days of the Industrial Revolution in Britain. It's a surprisingly complex and often grim picture, and the answers are nuanced. Here's a breakdown of where they lived and what their lives were like:\n\n**",
+            "correct": false
+          },
+          {
+            "task_id": "nq-2ad2fa80c023",
+            "question": "who sings the theme song for the tv show cops",
+            "expected": "Inner Circle",
+            "got": "The theme song for the TV show *Cops* is sung by **Michael \"Mike\" O\u2019Malley**. \n\nIt\u2019s a fantastic, energetic, and memorable tune! \ud83d\ude0a",
+            "correct": false
+          },
+          {
+            "task_id": "nq-2fab2b52f064",
+            "question": "where is lord's prayer found in bible",
+            "expected": "in the Gospel of Luke",
+            "got": "The Lord\u2019s Prayer is found in the Bible in two places:\n\n*   **Matthew 26:39-46:** This is the most common and well-known occurrence. It\u2019s a passage from the Gospel of Matthew, where Jesus teaches the disciples to pray.\n*   **Luke",
+            "correct": true
+          },
+          {
+            "task_id": "nq-3faaeadf61b6",
+            "question": "who wrote it's a long long way to pasadena",
+            "expected": "John Young",
+            "got": "The poem \"It's a Long Way to Paris\" was written by **Robert Louis Stevenson**.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-60c012cff21c",
+            "question": "who plays auggie in the movie the wonder",
+            "expected": "Jacob Tremblay",
+            "got": "The character Auggie in the movie *The Wonder* is played by **Josh Gad**.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-664b95f22952",
+            "question": "is there a name for the at symbol",
+            "expected": "commercial at",
+            "got": "You're asking about the \"at\" symbol! It\u2019s a really interesting and somewhat debated topic. Here\u2019s the breakdown of what\u2019s known about it:\n\n**The Theory: The \"At\" Symbol is a Representation of a \"A\"**\n\nThe prevailing theory, supported by a significant amount",
+            "correct": false
+          },
+          {
+            "task_id": "nq-77cee4f7ee4e",
+            "question": "who did bette midler portray in the rose",
+            "expected": "Mary Rose Foster",
+            "got": "Bette Midler portrayed **\"The Woman in Red\"** in the movie *Bringing Up Baby*. \n\nIt\u2019s a very iconic and memorable role for her! \ud83d\ude0a",
+            "correct": false
+          },
+          {
+            "task_id": "nq-af387eb22a53",
+            "question": "who plays gram on the young and the restless",
+            "expected": "Max Shippee",
+            "got": "The actor who plays Gram on *Young & the Restless* is **Ashley Jensen**.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-ba6a28152193",
+            "question": "location of the ten commandments in the bible",
+            "expected": "Exodus",
+            "got": "Okay, let's break down the location of the Ten Commandments in the Bible. It's a fascinating and somewhat complex story! Here's a breakdown, organized by book and section:\n\n**1. Genesis (Chapters 1-2)**\n\n*   **The First Commandment (Genesis 2:",
+            "correct": false
+          },
+          {
+            "task_id": "nq-c8c977e94f10",
+            "question": "who wrote cant get you out of my head lyrics",
+            "expected": "Cathy Dennis and Rob Davis",
+            "got": "The lyrics to \"Can't Get You Out of My Head\" were written by **Taylor Swift**.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-cee5214ca17f",
+            "question": "when was the south asian association for regional co-operation (saarc) formed",
+            "expected": "December 1985",
+            "got": "The South Asian Association for Regional Cooperation (SAARC) was formed in **1984**. \n\nSpecifically, it was established on **December 9, 1984**, in Kathmandu, Nepal.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-dcc557178b19",
+            "question": "who was the ruler of england in 1616",
+            "expected": "James I",
+            "got": "The ruler of England in 1616 was **James I**. \n\nHe was King of England, Scotland, and Ireland, and also reigned as the three-quarter King of England.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-de9ab68dac46",
+            "question": "who is the girl in green day 21 guns",
+            "expected": "Lisa Stelly",
+            "got": "The girl in green day, known as \u201cThe Girl,\u201d is **Miki Matsunaga**.\n\nShe\u2019s a pivotal and incredibly complex character in the film, and her backstory is a major focus of the narrative. She\u2019s a former member of the band Green Day, and her involvement with the film is",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f17349362327",
+            "question": "what is the hot coffee mod in san andreas",
+            "expected": "a normally inaccessible mini-game",
+            "got": "Okay, let's break down the Hot Coffee Mod in San Andreas. It's a *massive* and incredibly popular mod that fundamentally changes the game's gameplay and aesthetics. Here's a detailed explanation:\n\n**What is the Hot Coffee Mod?**\n\nThe Hot Coffee Mod is a sprawling, complex",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f37bafda2714",
+            "question": "when was the first australian prime minister elected",
+            "expected": "Sir Edmund Barton",
+            "got": "The first Australian Prime Minister elected was **Jack Charles**, who was elected on **November 2, 1901**.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f894e9812a1a",
+            "question": "who was the actor that played ben stone on law and order",
+            "expected": "Michael Moriarty",
+            "got": "The actor who played Ben Stone on Law & Order is **Michael Straub**. \n\nHe played the role from seasons 6 through 10.",
+            "correct": false
+          }
+        ]
+      },
+      "prompt_3": {
+        "accuracy": 0.158,
+        "correct": 3,
+        "total": 19,
+        "avg_latency_ms": 83.0,
+        "details": [
+          {
+            "task_id": "nq-0c39ac5763fb",
+            "question": "the oligodynamic effect is a phenomenon that describes",
+            "expected": "a biocidal effect of metals",
+            "got": "a physiological effect of nicotine.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-1186bd67ee61",
+            "question": "which state is located in the centre of india",
+            "expected": "Chhattisgarh",
+            "got": "Rajasthan",
+            "correct": false
+          },
+          {
+            "task_id": "nq-225aa775d644",
+            "question": "how many seasons of the bastard executioner are there",
+            "expected": "one",
+            "got": "There are 8 seasons of The Bastard Executioner.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-2a7776c7d218",
+            "question": "where did the butchers in the slaughterhouse cases live",
+            "expected": "New Orleans",
+            "got": "The butchers in the slaughterhouse cases lived in rural areas, often in small towns and farms.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-2ad2fa80c023",
+            "question": "who sings the theme song for the tv show cops",
+            "expected": "Inner Circle",
+            "got": "Alan Rings",
+            "correct": false
+          },
+          {
+            "task_id": "nq-2fab2b52f064",
+            "question": "where is lord's prayer found in bible",
+            "expected": "in the Gospel of Luke",
+            "got": "Matthew 26:36-46.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-3faaeadf61b6",
+            "question": "who wrote it's a long long way to pasadena",
+            "expected": "John Young",
+            "got": "James Baldwin",
+            "correct": false
+          },
+          {
+            "task_id": "nq-60c012cff21c",
+            "question": "who plays auggie in the movie the wonder",
+            "expected": "Jacob Tremblay",
+            "got": "David Cross",
+            "correct": false
+          },
+          {
+            "task_id": "nq-664b95f22952",
+            "question": "is there a name for the at symbol",
+            "expected": "commercial at",
+            "got": "The at symbol is often called the \u201cat symbol\u201d or \u201cat-symbol.\u201d",
+            "correct": false
+          },
+          {
+            "task_id": "nq-77cee4f7ee4e",
+            "question": "who did bette midler portray in the rose",
+            "expected": "Mary Rose Foster",
+            "got": "Various characters in *The Rose*.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-af387eb22a53",
+            "question": "who plays gram on the young and the restless",
+            "expected": "Max Shippee",
+            "got": "Jessica Pendler",
+            "correct": false
+          },
+          {
+            "task_id": "nq-ba6a28152193",
+            "question": "location of the ten commandments in the bible",
+            "expected": "Exodus",
+            "got": "Here are the Ten Commandments in the Bible, organized by category:\n\n**Commandments Regarding Relationships:**\n\n1.  **Thou shalt not kill:** (Exodus 20:13)\n2.  **Thou shalt not steal:** (Exodus 20:15)\n3.  ",
+            "correct": true
+          },
+          {
+            "task_id": "nq-c8c977e94f10",
+            "question": "who wrote cant get you out of my head lyrics",
+            "expected": "Cathy Dennis and Rob Davis",
+            "got": "Taylor Swift",
+            "correct": false
+          },
+          {
+            "task_id": "nq-cee5214ca17f",
+            "question": "when was the south asian association for regional co-operation (saarc) formed",
+            "expected": "December 1985",
+            "got": "1985",
+            "correct": true
+          },
+          {
+            "task_id": "nq-dcc557178b19",
+            "question": "who was the ruler of england in 1616",
+            "expected": "James I",
+            "got": "King James VI of Scotland.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-de9ab68dac46",
+            "question": "who is the girl in green day 21 guns",
+            "expected": "Lisa Stelly",
+            "got": "The girl in green day is **Miki** (also known as **Miki \"The Ghost\"**).",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f17349362327",
+            "question": "what is the hot coffee mod in san andreas",
+            "expected": "a normally inaccessible mini-game",
+            "got": "The Hot Coffee Mod is a highly customizable, aggressive, and visually striking mod for San Andreas that focuses on a brutal, almost demonic aesthetic. It\u2019s known for its:\n\n*   **Dark, volcanic-like aesthetic:** It uses a dark, almost black, volcanic stone texture and color palette.\n*   ",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f37bafda2714",
+            "question": "when was the first australian prime minister elected",
+            "expected": "Sir Edmund Barton",
+            "got": "1946",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f894e9812a1a",
+            "question": "who was the actor that played ben stone on law and order",
+            "expected": "Michael Moriarty",
+            "got": "Michael K. Williams",
+            "correct": false
+          }
+        ]
+      },
+      "prompt_4": {
+        "accuracy": 0.158,
+        "correct": 3,
+        "total": 19,
+        "avg_latency_ms": 341.7,
+        "details": [
+          {
+            "task_id": "nq-0c39ac5763fb",
+            "question": "the oligodynamic effect is a phenomenon that describes",
+            "expected": "a biocidal effect of metals",
+            "got": "The oligodynamic effect is a phenomenon that describes **a sustained, localized, and often subtle increase in the rate of dopamine release within the central nervous system, primarily in the nucleus accumbens and ventral tegmental area, following the administration of a controlled dose of nicotine.**\n\nHere\u2019s a breakdown of the key",
+            "correct": false
+          },
+          {
+            "task_id": "nq-1186bd67ee61",
+            "question": "which state is located in the centre of india",
+            "expected": "Chhattisgarh",
+            "got": "The state located in the center of India is **Uttar Pradesh**.\n\nHere\u2019s a precise breakdown:\n\n*   **Official Name:** Uttar Pradesh\n*   **Location:** It occupies the central region of India, encompassing a significant portion of the state of North India.\n*   **Date of Formation:** Uttar",
+            "correct": false
+          },
+          {
+            "task_id": "nq-225aa775d644",
+            "question": "how many seasons of the bastard executioner are there",
+            "expected": "one",
+            "got": "Okay, let\u2019s break down the seasons of *The Bastard Executioner* (Season 1) and their corresponding dates.\n\n*   **Season 1:** 12\n    *   **Start Date:** October 1, 1888\n    *   **End Date:** September",
+            "correct": true
+          },
+          {
+            "task_id": "nq-2a7776c7d218",
+            "question": "where did the butchers in the slaughterhouse cases live",
+            "expected": "New Orleans",
+            "got": "I understand you're asking for precise details about the locations where butchers in the slaughterhouse cases lived. However, the historical context of the \u201cbutcher\u2019s case\u201d phenomenon \u2013 a horrific and widespread pattern of violence and murder \u2013 is deeply rooted in a specific and disturbing period of history.  It\u2019s crucial",
+            "correct": false
+          },
+          {
+            "task_id": "nq-2ad2fa80c023",
+            "question": "who sings the theme song for the tv show cops",
+            "expected": "Inner Circle",
+            "got": "The theme song for the television show *Cops* is sung by **David \u201cDave\u201d Miller**.\n\nSpecifically, it was released on **November 19, 2006**, and is a recording of the original theme song composed by **Robert \u201cBob\u201d Miller**.\n\nThe song is titled **",
+            "correct": false
+          },
+          {
+            "task_id": "nq-2fab2b52f064",
+            "question": "where is lord's prayer found in bible",
+            "expected": "in the Gospel of Luke",
+            "got": "The Lord\u2019s Prayer is found in the New Testament of the Bible, specifically in **Matthew 6:13** and **Luke 19:41-46**.\n\nHere\u2019s a breakdown of the text:\n\n*   **Matthew 6:13:** \u201cOur Father, who",
+            "correct": true
+          },
+          {
+            "task_id": "nq-3faaeadf61b6",
+            "question": "who wrote it's a long long way to pasadena",
+            "expected": "John Young",
+            "got": "The poem \u201cIt\u2019s a Long Way to Paris\u201d was written by **James Gray** on **December 21, 1963**.\n\nIt was published in the **New York Review of Books** on **December 21, 1963**.\n\nThe poem is part of",
+            "correct": false
+          },
+          {
+            "task_id": "nq-60c012cff21c",
+            "question": "who plays auggie in the movie the wonder",
+            "expected": "Jacob Tremblay",
+            "got": "The character Auggie in the movie \u201cThe Wonder\u201d is played by **Matt Morrison**.\n\nHere\u2019s a precise breakdown of his role and timeline:\n\n*   **Role:** Auggie is the primary voice actor and the emotional core of the film. He\u2019s a young boy with autism who is brought to",
+            "correct": false
+          },
+          {
+            "task_id": "nq-664b95f22952",
+            "question": "is there a name for the at symbol",
+            "expected": "commercial at",
+            "got": "The at symbol, often referred to as the \u201cat\u201d symbol, is a complex and somewhat debated term with no single, universally accepted name. However, the most commonly accepted and widely used designation is **\u201cat-symbol\u201d**.\n\nHere\u2019s a breakdown of its history and usage:\n\n*   **Origin",
+            "correct": false
+          },
+          {
+            "task_id": "nq-77cee4f7ee4e",
+            "question": "who did bette midler portray in the rose",
+            "expected": "Mary Rose Foster",
+            "got": "Bette Midler portrayed **\u201cThe Woman in Red\u201d** in the 1998 film *The Color of Money*.\n\nSpecifically, she played the character of **\u201cRose\u201d** \u2013 a wealthy, somewhat cynical, and fiercely independent woman.\n\nThe film\u2019s release date was **November 1",
+            "correct": false
+          },
+          {
+            "task_id": "nq-af387eb22a53",
+            "question": "who plays gram on the young and the restless",
+            "expected": "Max Shippee",
+            "got": "The actor who plays Gram on \u201cYoung and the Restless\u201d is **Jessica Simpson**.\n\nShe played Gram from 2008 to 2013.\n\nSpecifically, she was originally cast in the role in 2008 and then reprised it in 2011.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-ba6a28152193",
+            "question": "location of the ten commandments in the bible",
+            "expected": "Exodus",
+            "got": "Okay, here\u2019s a precise breakdown of the Ten Commandments in the Bible, with exact names, dates, and numbers where applicable. Note that different translations and scholarly interpretations may have slight variations in the exact wording and order.\n\n**The Ten Commandments (Original Hebrew Text)**\n\n1.  **Commandment 1",
+            "correct": false
+          },
+          {
+            "task_id": "nq-c8c977e94f10",
+            "question": "who wrote cant get you out of my head lyrics",
+            "expected": "Cathy Dennis and Rob Davis",
+            "got": "The lyrics to \u201cGet You Out of My Head\u201d were written by **Taylor Swift**.\n\nHere\u2019s a breakdown of the key details:\n\n*   **Date of Composition:** Approximately November 2020 \u2013 December 2020.\n*   **Source:** The song was initially a private",
+            "correct": false
+          },
+          {
+            "task_id": "nq-cee5214ca17f",
+            "question": "when was the south asian association for regional co-operation (saarc) formed",
+            "expected": "December 1985",
+            "got": "The South Asian Association for Regional Cooperation (SAARC) was formally formed on **November 15, 1984**.\n\nSpecifically, the first meeting of the SAARC Steering Committee was held in **Islamabad, Pakistan**.",
+            "correct": true
+          },
+          {
+            "task_id": "nq-dcc557178b19",
+            "question": "who was the ruler of england in 1616",
+            "expected": "James I",
+            "got": "The ruler of England in 1616 was **King James VI of Scotland**.\n\nHere\u2019s a breakdown of the key details:\n\n*   **Date:** 1616\n*   **Event:** James VI ascended to the English throne upon the death of his father, King James V.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-de9ab68dac46",
+            "question": "who is the girl in green day 21 guns",
+            "expected": "Lisa Stelly",
+            "got": "The girl in green day 21 guns is **Sarah \u201cSarah\u201d Miller**.\n\nHere\u2019s a breakdown of the details:\n\n*   **Date of Birth:** March 19, 1988\n*   **Place of Birth:** San Francisco, California, USA\n*   **Occupation",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f17349362327",
+            "question": "what is the hot coffee mod in san andreas",
+            "expected": "a normally inaccessible mini-game",
+            "got": "Okay, let's break down the Hot Coffee Mod in San Andreas. It\u2019s a complex and highly customizable modification that significantly alters the game\u2019s gameplay and aesthetics. Here\u2019s a precise breakdown, covering its key components and how it works:\n\n**1. Core Concept:**\n\nThe Hot Coffee Mod is",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f37bafda2714",
+            "question": "when was the first australian prime minister elected",
+            "expected": "Sir Edmund Barton",
+            "got": "The first Australian Prime Minister elected was **Robert Menzies**, on **November 19, 1941**. \n\nHere\u2019s a breakdown of the key details:\n\n*   **Robert Menzies:** He was elected as the leader of the Liberal Party and subsequently became the Prime Minister.\n*   **",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f894e9812a1a",
+            "question": "who was the actor that played ben stone on law and order",
+            "expected": "Michael Moriarty",
+            "got": "The actor who played Ben Stone on Law & Order was **Michael Straub**.\n\nSpecifically, he played Ben Stone in the fifth season of Law & Order: Special Victims Unit, which aired on September 28, 2012.",
+            "correct": false
+          }
+        ]
+      },
+      "prompt_5": {
+        "accuracy": 0.158,
+        "correct": 3,
+        "total": 19,
+        "avg_latency_ms": 48.0,
+        "details": [
+          {
+            "task_id": "nq-0c39ac5763fb",
+            "question": "the oligodynamic effect is a phenomenon that describes",
+            "expected": "a biocidal effect of metals",
+            "got": "A behavioral pattern of heightened alertness and aggression in insects.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-1186bd67ee61",
+            "question": "which state is located in the centre of india",
+            "expected": "Chhattisgarh",
+            "got": "Rajasthan",
+            "correct": false
+          },
+          {
+            "task_id": "nq-225aa775d644",
+            "question": "how many seasons of the bastard executioner are there",
+            "expected": "one",
+            "got": "12",
+            "correct": false
+          },
+          {
+            "task_id": "nq-2a7776c7d218",
+            "question": "where did the butchers in the slaughterhouse cases live",
+            "expected": "New Orleans",
+            "got": "In the slaughterhouse.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-2ad2fa80c023",
+            "question": "who sings the theme song for the tv show cops",
+            "expected": "Inner Circle",
+            "got": "Scott Weeden",
+            "correct": false
+          },
+          {
+            "task_id": "nq-2fab2b52f064",
+            "question": "where is lord's prayer found in bible",
+            "expected": "in the Gospel of Luke",
+            "got": "Matthew 26:39-46",
+            "correct": false
+          },
+          {
+            "task_id": "nq-3faaeadf61b6",
+            "question": "who wrote it's a long long way to pasadena",
+            "expected": "John Young",
+            "got": "James Baldwin",
+            "correct": false
+          },
+          {
+            "task_id": "nq-60c012cff21c",
+            "question": "who plays auggie in the movie the wonder",
+            "expected": "Jacob Tremblay",
+            "got": "Ryan Gosling",
+            "correct": false
+          },
+          {
+            "task_id": "nq-664b95f22952",
+            "question": "is there a name for the at symbol",
+            "expected": "commercial at",
+            "got": "At\n",
+            "correct": true
+          },
+          {
+            "task_id": "nq-77cee4f7ee4e",
+            "question": "who did bette midler portray in the rose",
+            "expected": "Mary Rose Foster",
+            "got": "Various characters in *The Simpsons*.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-af387eb22a53",
+            "question": "who plays gram on the young and the restless",
+            "expected": "Max Shippee",
+            "got": "David O\u2019Connell",
+            "correct": false
+          },
+          {
+            "task_id": "nq-ba6a28152193",
+            "question": "location of the ten commandments in the bible",
+            "expected": "Exodus",
+            "got": "Exodus 20:2-6\nExodus 20:7-11\nDeuteronomy 6:14-25\n",
+            "correct": true
+          },
+          {
+            "task_id": "nq-c8c977e94f10",
+            "question": "who wrote cant get you out of my head lyrics",
+            "expected": "Cathy Dennis and Rob Davis",
+            "got": "Billie Eilish",
+            "correct": false
+          },
+          {
+            "task_id": "nq-cee5214ca17f",
+            "question": "when was the south asian association for regional co-operation (saarc) formed",
+            "expected": "December 1985",
+            "got": "1954",
+            "correct": false
+          },
+          {
+            "task_id": "nq-dcc557178b19",
+            "question": "who was the ruler of england in 1616",
+            "expected": "James I",
+            "got": "James I",
+            "correct": true
+          },
+          {
+            "task_id": "nq-de9ab68dac46",
+            "question": "who is the girl in green day 21 guns",
+            "expected": "Lisa Stelly",
+            "got": "Thea.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f17349362327",
+            "question": "what is the hot coffee mod in san andreas",
+            "expected": "a normally inaccessible mini-game",
+            "got": "A mod that adds a large number of new weapons, items, and gameplay changes to the game San Andreas.",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f37bafda2714",
+            "question": "when was the first australian prime minister elected",
+            "expected": "Sir Edmund Barton",
+            "got": "1946",
+            "correct": false
+          },
+          {
+            "task_id": "nq-f894e9812a1a",
+            "question": "who was the actor that played ben stone on law and order",
+            "expected": "Michael Moriarty",
+            "got": "Michael K. Williams",
+            "correct": false
+          }
+        ]
+      }
+    }
+  },
+  "best_per_model": {
+    "smollm2-1.7b": {
+      "prompt_index": 0,
+      "accuracy": 0.474,
+      "label": "empty"
+    },
+    "qwen2.5-1.5b": {
+      "prompt_index": 4,
+      "accuracy": 0.368,
+      "label": "Be precise."
+    },
+    "llama-3.2-1b": {
+      "prompt_index": 2,
+      "accuracy": 0.421,
+      "label": "Fact:"
+    },
+    "gemma-3-1b": {
+      "prompt_index": 1,
+      "accuracy": 0.263,
+      "label": "Answer:"
+    }
+  },
+  "overall_best": {
+    "model": "smollm2-1.7b",
+    "prompt_index": 0,
+    "accuracy": 0.474,
+    "label": "empty"
+  }
+}

@@ -1,0 +1,24 @@
+============================================================
+COLAB PIPELINE EVAL SUMMARY
+Run: 2026-07-12T23:02:17.459471
+============================================================
+
+Eval file:      data/eval/validation-v3.json
+Model:          models/qwen2.5-1.5b-instruct-q4_k_m.gguf
+GPU layers:     -1
+Total questions: 10
+Passed:         4
+Failed:         6
+Overall accuracy: 40.0%
+
+Total time:     2.0s
+Avg per Q:      0.198s
+Questions/min:  303.5
+
+Per-Category Breakdown:
+------------------------------------------------------------
+Category          Count Passed   Accuracy   Avg Time
+------------------------------------------------------------
+code_debug            6      4     66.7%    0.267s
+code_gen              4      0      0.0%    0.094s
+============================================================

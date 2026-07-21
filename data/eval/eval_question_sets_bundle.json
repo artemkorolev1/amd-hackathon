@@ -1,0 +1,62 @@
+# AMD ACT II Hackathon — Evaluation Question Sets
+
+## Hackathon Context
+
+**Project:** Router to Vibehalla — Track 1 (AMD Developer Hackathon ACT II)
+**Hosted by:** lablab.ai
+**Task:** Build an 8-category question classifier/solver pipeline that runs inside a Docker container.
+
+### Submission Container Constraints (HARD)
+
+| Constraint | Value |
+|---|---|
+| Base image | Python 3.12-slim |
+| CPU cores | 2 vCPU |
+| RAM | 4 GB |
+| GPU | None (CPU-only inference) |
+| Total runtime | 600 seconds (10 minutes) |
+| Per-question budget | ~28-30 seconds |
+| Allowed external API | Fireworks AI (when FIREWORKS_API_KEY + ALLOWED_MODELS provided by grader) |
+| Allowed models (FW) | minimax-m3, kimi-k2p7-code (grader-injected at runtime) |
+| Grading method | Fuzzy-match against expected answer strings |
+| Grading strategies | exact (case-insensitive) → substring → token overlap ≥70% → numeric tolerance 5% |
+| Questions per run | 20 questions per grading pass |
+
+### 8 Pipeline Categories
+
+1. **sentiment_classification** — Classify text as positive, negative, or neutral (3-class)
+2. **factual_knowledge** — Answer world knowledge questions from provided context or general knowledge
+3. **logical_reasoning** — Solve constraint puzzles, number sequences, deductive reasoning
+4. **math_reasoning** — Multi-step arithmetic word problems, fractions, percentages
+5. **code_generation** — Write Python functions from specification
+6. **code_debugging** — Fix buggy Python functions
+7. **text_summarization** — Summarize news articles / passages
+8. **named_entity_recognition** — Extract structured entities from text (bonus, not in all eval sets)
+
+### Local Model Setup (training/validation)
+
+- RTX A4000 8GB GPU for local eval
+- GGUF models (Q4_K_M quantization) at ~/models/
+- Tested: Qwen2.5-1.5B, Phi-4-mini, Nemotron-3-Nano-4B, Gemma-3-1B
+- llama-cpp-python for local inference
+- Fireworks AI fallback for hard categories (sentiment, summarization, math)
+
+---
+
+## Included Question Files
+
+This file bundles the following evaluation question sets:
+
+1. **heldout_40.json** — 40 questions (reference example from hackathon team). 7 categories. Full format with code test cases, synonym lists, keyword-based summarization grading.
+2. **build-A-40.json** — 40 questions, matched to heldout format. Adjusted for moderate difficulty: 2-step math, non-trivial code, mixed-signal sentiment.
+3. **build-B-40.json** — 40 questions, same format. Adjusted similarly, no overlap with build-A.
+4. **training-v3.json** — 152 questions, compact training set (19 per category across 8 categories). Short prompts/answers. Sources: nq_open, GSM8K, SST-2, XSum, tweetner7, MBPP, HumanEvalPack, LogiQA.
+5. **validation-v3.json** — 48 questions (6 per category), held-out companion to training-v3.
+
+Total unique questions in this bundle: 320
+
+---
+
+## File: heldout_40.json (Reference — Hackathon Team)
+
+```json

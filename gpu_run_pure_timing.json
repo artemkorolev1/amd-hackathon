@@ -1,0 +1,1 @@
+[{"classification_s": 0.01, "worker_setup_s": 76.73, "total_s": 76.7, "total_tasks": 58, "per_worker_type": {"local": {"total_s": 152.9, "count": 290, "avg_ms": 527.1, "p95_ms": 2277.6}}}]

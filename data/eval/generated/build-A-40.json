@@ -1,0 +1,559 @@
+[
+ {
+  "task_id": "sent-101",
+  "category": "sentiment_classification",
+  "prompt": "Classify the sentiment of this review as positive, negative, or neutral: \"The food was good but the service was painfully slow, making the overall experience disappointing.\"",
+  "gold": {
+   "answer": "negative"
+  }
+ },
+ {
+  "task_id": "sent-102",
+  "category": "sentiment_classification",
+  "prompt": "Classify the sentiment of this review as positive, negative, or neutral: \"I wasn't sure about this restaurant at first, but the flavors were incredible and I'm already planning my next visit.\"",
+  "gold": {
+   "answer": "positive"
+  }
+ },
+ {
+  "task_id": "sent-103",
+  "category": "sentiment_classification",
+  "prompt": "Classify the sentiment of this review as positive, negative, or neutral: \"The software update adds some useful features but it also removed a couple of tools I relied on regularly.\"",
+  "gold": {
+   "answer": "neutral"
+  }
+ },
+ {
+  "task_id": "debug-101",
+  "category": "code_debugging",
+  "prompt": "Fix the bug in this Python function that calculates the sum of numbers from 1 to n:\n```python\ndef sum_to_n(n):\n    total = 0\n    for i in range(1, n):\n        total += i\n    return total\n```",
+  "gold": {
+   "function": "sum_to_n",
+   "tests": [
+    {
+     "args": [
+      5
+     ],
+     "expected": 15
+    },
+    {
+     "args": [
+      1
+     ],
+     "expected": 1
+    },
+    {
+     "args": [
+      0
+     ],
+     "expected": 0
+    }
+   ],
+   "_reference": "def sum_to_n(n):\n    total = 0\n    for i in range(1, n + 1):\n        total += i\n    return total"
+  }
+ },
+ {
+  "task_id": "debug-102",
+  "category": "code_debugging",
+  "prompt": "Fix the bug in this Python function that finds the maximum value in a list:\n```python\ndef find_max(lst):\n    max_val = lst[0]\n    for x in lst:\n        if x < max_val:\n            max_val = x\n    return max_val\n```",
+  "gold": {
+   "function": "find_max",
+   "tests": [
+    {
+     "args": [
+      [1, 5, 3]
+     ],
+     "expected": 5
+    },
+    {
+     "args": [
+      [-5, -1, -3]
+     ],
+     "expected": -1
+    },
+    {
+     "args": [
+      [7]
+     ],
+     "expected": 7
+    }
+   ],
+   "_reference": "def find_max(lst):\n    if not lst:\n        return None\n    max_val = lst[0]\n    for x in lst:\n        if x > max_val:\n            max_val = x\n    return max_val"
+  }
+ },
+ {
+  "task_id": "debug-103",
+  "category": "code_debugging",
+  "prompt": "Fix the bug in this Python function that reverses a string:\n```python\ndef reverse_string(s):\n    return s[::-2]\n```",
+  "gold": {
+   "function": "reverse_string",
+   "tests": [
+    {
+     "args": [
+      "hello"
+     ],
+     "expected": "olleh"
+    },
+    {
+     "args": [
+      "Python"
+     ],
+     "expected": "nohtyP"
+    },
+    {
+     "args": [
+      "racecar"
+     ],
+     "expected": "racecar"
+    }
+   ],
+   "_reference": "def reverse_string(s):\n    return s[::-1]"
+  }
+ },
+ {
+  "task_id": "gen-101",
+  "category": "code_generation",
+  "prompt": "Write a Python function named sum_even_squares that takes a list of numbers and returns the sum of the squares of the even numbers. For example, given [1, 2, 3, 4, 5] it should return 2^2 + 4^2 = 20.",
+  "gold": {
+   "function": "sum_even_squares",
+   "tests": [
+    {
+     "args": [
+      [1, 2, 3, 4, 5]
+     ],
+     "expected": 20
+    },
+    {
+     "args": [
+      [1, 3, 5]
+     ],
+     "expected": 0
+    }
+   ],
+   "check_code": "def check(candidate):\n    assert candidate([1, 2, 3, 4, 5]) == 20\n    assert candidate([1, 3, 5]) == 0\n    assert candidate([]) == 0",
+   "_reference": "def sum_even_squares(lst):\n    return sum(x**2 for x in lst if x % 2 == 0)"
+  }
+ },
+ {
+  "task_id": "gen-102",
+  "category": "code_generation",
+  "prompt": "Write a Python function named median_of_three that takes three numbers and returns the median (the middle value when sorted). For example, median_of_three(3, 7, 5) should return 5.",
+  "gold": {
+   "function": "median_of_three",
+   "tests": [
+    {
+     "args": [
+      3, 7, 5
+     ],
+     "expected": 5
+    },
+    {
+     "args": [
+      -1, -5, -3
+     ],
+     "expected": -3
+    }
+   ],
+   "check_code": "def check(candidate):\n    assert candidate(3, 7, 5) == 5\n    assert candidate(-1, -5, -3) == -3\n    assert candidate(10, 10, 5) == 10",
+   "_reference": "def median_of_three(a, b, c):\n    return sorted([a, b, c])[1]"
+  }
+ },
+ {
+  "task_id": "gen-103",
+  "category": "code_generation",
+  "prompt": "Write a Python function named is_palindrome that takes a string and returns True if it reads the same forwards and backwards, ignoring case and spaces. For example, is_palindrome('Race car') should return True.",
+  "gold": {
+   "function": "is_palindrome",
+   "tests": [
+    {
+     "args": [
+      "Race car"
+     ],
+     "expected": true
+    },
+    {
+     "args": [
+      "hello"
+     ],
+     "expected": false
+    }
+   ],
+   "check_code": "def check(candidate):\n    assert candidate('Race car') == True\n    assert candidate('hello') == False\n    assert candidate('Never odd or even') == True",
+   "_reference": "def is_palindrome(s):\n    cleaned = s.lower().replace(' ', '')\n    return cleaned == cleaned[::-1]"
+  }
+ },
+ {
+  "task_id": "gen-104",
+  "category": "code_generation",
+  "prompt": "Write a Python function named second_largest that takes a list of numbers and returns the second largest distinct number. If there are fewer than 2 distinct numbers, return None. For example, second_largest([3, 1, 4, 1, 5, 9, 2]) should return 5.",
+  "gold": {
+   "function": "second_largest",
+   "tests": [
+    {
+     "args": [
+      [3, 1, 4, 1, 5, 9, 2]
+     ],
+     "expected": 5
+    },
+    {
+     "args": [
+      [5]
+     ],
+     "expected": null
+    }
+   ],
+   "check_code": "def check(candidate):\n    assert candidate([3, 1, 4, 1, 5, 9, 2]) == 5\n    assert candidate([5]) == None\n    assert candidate([1, 2]) == 1",
+   "_reference": "def second_largest(lst):\n    unique = sorted(set(lst))\n    if len(unique) < 2:\n        return None\n    return unique[-2]"
+  }
+ },
+ {
+  "task_id": "gen-105",
+  "category": "code_generation",
+  "prompt": "Write a Python function named most_frequent_word that takes a string and returns the most common word (words are separated by spaces). If there is a tie, return any one of the most frequent words. For example, most_frequent_word('cat dog cat bird dog cat') should return 'cat'.",
+  "gold": {
+   "function": "most_frequent_word",
+   "tests": [
+    {
+     "args": [
+      "cat dog cat bird dog cat"
+     ],
+     "expected": "cat"
+    },
+    {
+     "args": [
+      "apple banana apple cherry apple"
+     ],
+     "expected": "apple"
+    }
+   ],
+   "check_code": "def check(candidate):\n    assert candidate('cat dog cat bird dog cat') == 'cat'\n    assert candidate('apple banana apple cherry apple') == 'apple'\n    assert candidate('hello') == 'hello'",
+   "_reference": "def most_frequent_word(s):\n    words = s.split()\n    return max(set(words), key=words.count)"
+  }
+ },
+ {
+  "task_id": "gen-106",
+  "category": "code_generation",
+  "prompt": "Write a Python function named merge_sorted that takes two sorted lists of numbers and merges them into one sorted list. For example, merge_sorted([1, 3, 5], [2, 4, 6]) should return [1, 2, 3, 4, 5, 6].",
+  "gold": {
+   "function": "merge_sorted",
+   "tests": [
+    {
+     "args": [
+      [1, 3, 5],
+      [2, 4, 6]
+     ],
+     "expected": [1, 2, 3, 4, 5, 6]
+    },
+    {
+     "args": [
+      [],
+      [1, 2]
+     ],
+     "expected": [1, 2]
+    }
+   ],
+   "check_code": "def check(candidate):\n    assert candidate([1, 3, 5], [2, 4, 6]) == [1, 2, 3, 4, 5, 6]\n    assert candidate([], [1, 2]) == [1, 2]\n    assert candidate([5, 6, 7], [1, 2]) == [1, 2, 5, 6, 7]",
+   "_reference": "def merge_sorted(a, b):\n    result = []\n    i = j = 0\n    while i < len(a) and j < len(b):\n        if a[i] < b[j]:\n            result.append(a[i])\n            i += 1\n        else:\n            result.append(b[j])\n            j += 1\n    result.extend(a[i:])\n    result.extend(b[j:])\n    return result"
+  }
+ },
+ {
+  "task_id": "gen-107",
+  "category": "code_generation",
+  "prompt": "Write a Python function named is_leap_year that takes a year and returns True if it is a leap year (divisible by 4, but not by 100 unless also divisible by 400). For example, is_leap_year(2024) should return True, is_leap_year(1900) should return False.",
+  "gold": {
+   "function": "is_leap_year",
+   "tests": [
+    {
+     "args": [
+      2024
+     ],
+     "expected": true
+    },
+    {
+     "args": [
+      1900
+     ],
+     "expected": false
+    }
+   ],
+   "check_code": "def check(candidate):\n    assert candidate(2024) == True\n    assert candidate(1900) == False\n    assert candidate(2000) == True",
+   "_reference": "def is_leap_year(year):\n    return year % 4 == 0 and (year % 100 != 0 or year % 400 == 0)"
+  }
+ },
+ {
+  "task_id": "gen-108",
+  "category": "code_generation",
+  "prompt": "Write a Python function named remove_duplicates that takes a list and returns a new list with duplicates removed, preserving the original order. For example, remove_duplicates([1, 2, 2, 3, 1, 4]) should return [1, 2, 3, 4].",
+  "gold": {
+   "function": "remove_duplicates",
+   "tests": [
+    {
+     "args": [
+      [1, 2, 2, 3, 1, 4]
+     ],
+     "expected": [1, 2, 3, 4]
+    },
+    {
+     "args": [
+      [5, 5, 5]
+     ],
+     "expected": [5]
+    }
+   ],
+   "check_code": "def check(candidate):\n    assert candidate([1, 2, 2, 3, 1, 4]) == [1, 2, 3, 4]\n    assert candidate([5, 5, 5]) == [5]\n    assert candidate([]) == []",
+   "_reference": "def remove_duplicates(lst):\n    seen = set()\n    result = []\n    for x in lst:\n        if x not in seen:\n            seen.add(x)\n            result.append(x)\n    return result"
+  }
+ },
+ {
+  "task_id": "xfact-101",
+  "category": "factual_knowledge",
+  "prompt": "What is the chemical symbol for the element that is a liquid metal at room temperature?",
+  "gold": {
+   "answer": "Hg",
+   "accept": [
+    "Hg",
+    "Mercury"
+   ]
+  }
+ },
+ {
+  "task_id": "xfact-102",
+  "category": "factual_knowledge",
+  "prompt": "What is the smallest planet in our solar system?",
+  "gold": {
+   "answer": "Mercury",
+   "accept": [
+    "Mercury"
+   ]
+  }
+ },
+ {
+  "task_id": "xfact-103",
+  "category": "factual_knowledge",
+  "prompt": "Who wrote the novel 'Brave New World' and in which decade was it published?",
+  "gold": {
+   "answer": "Aldous Huxley in the 1930s",
+   "accept": [
+    "Aldous Huxley, 1932",
+    "Aldous Huxley in 1932",
+    "Aldous Huxley in the 1930s",
+    "Huxley in the 1930s"
+   ]
+  }
+ },
+ {
+  "task_id": "xfact-104",
+  "category": "factual_knowledge",
+  "prompt": "What is the tallest mountain in Africa and approximately how high is it in meters?",
+  "gold": {
+   "answer": "Mount Kilimanjaro, about 5895 meters",
+   "accept": [
+    "Mount Kilimanjaro, about 5895 meters",
+    "Kilimanjaro, approximately 5895 m",
+    "Mount Kilimanjaro, 5895 m",
+    "Kilimanjaro, 5895"
+   ]
+  }
+ },
+ {
+  "task_id": "xlogic-101",
+  "category": "logical_reasoning",
+  "prompt": "What is the next number in the sequence: 2, 3, 5, 9, 17, ? Answer with a number.",
+  "gold": {
+   "answer": "33"
+  }
+ },
+ {
+  "task_id": "xlogic-102",
+  "category": "logical_reasoning",
+  "prompt": "What is the next number in the sequence: 0, 1, 3, 7, 15, ? Answer with a number.",
+  "gold": {
+   "answer": "31"
+  }
+ },
+ {
+  "task_id": "xlogic-103",
+  "category": "logical_reasoning",
+  "prompt": "A frog is at the bottom of a 20-meter well. Each day it climbs up 5 meters and each night it slides back 2 meters. On which day does it first reach the top of the well? Answer with a number.",
+  "gold": {
+   "answer": "6",
+   "accept": [
+    "6",
+    "six"
+   ]
+  }
+ },
+ {
+  "task_id": "xlogic-104",
+  "category": "logical_reasoning",
+  "prompt": "What is the next number in the sequence: 1, 3, 7, 13, 21, ? Answer with a number.",
+  "gold": {
+   "answer": "31"
+  }
+ },
+ {
+  "task_id": "xlogic-105",
+  "category": "logical_reasoning",
+  "prompt": "Six books (red, blue, green, yellow, white, black) are stacked vertically. The red book is above the blue book but below the yellow book. The green book is above the white book but below the blue book. The black book is at the very bottom. Which book is third from the top? Answer with a color.",
+  "gold": {
+   "answer": "blue"
+  }
+ },
+ {
+  "task_id": "xsumm-101",
+  "category": "text_summarization",
+  "prompt": "Summarize the following text: \"On July 20, 1969, American astronauts Neil Armstrong and Buzz Aldrin became the first humans to walk on the moon as part of the Apollo 11 mission. Armstrong descended the ladder of the lunar module Eagle and spoke the famous words, 'That's one small step for man, one giant leap for mankind.' The mission fulfilled a goal set by President John F. Kennedy in 1961 and marked a decisive moment in the Space Race between the United States and the Soviet Union. However, some historians argue that the Apollo program was as much about Cold War prestige as it was about scientific discovery, and its enormous cost was controversial even at the time.\"",
+  "gold": {
+   "keywords": [
+    "Apollo 11",
+    "Armstrong",
+    "moon",
+    "Cold War",
+    "Kennedy"
+   ],
+   "min_coverage": 0.5
+  }
+ },
+ {
+  "task_id": "xsumm-102",
+  "category": "text_summarization",
+  "prompt": "Summarize the following text: \"The internet traces its origins to ARPANET, a network developed by the U.S. Department of Defense in 1969 that connected four university computers. In 1989, British computer scientist Tim Berners-Lee invented the World Wide Web at CERN, creating a system of interlinked hypertext documents accessible via the internet. The introduction of the Mosaic web browser in 1993 made the web widely usable, leading to rapid expansion and the digital age. Despite its military origins and subsequent commercialization, the early internet was shaped largely by academic and research communities who valued open access and decentralized control.\"",
+  "gold": {
+   "keywords": [
+    "ARPANET",
+    "Berners-Lee",
+    "World Wide Web",
+    "internet",
+    "Mosaic"
+   ],
+   "min_coverage": 0.5
+  }
+ },
+ {
+  "task_id": "xsumm-103",
+  "category": "text_summarization",
+  "prompt": "Summarize the following text: \"The Panama Canal, an artificial 82-kilometer waterway connecting the Atlantic and Pacific Oceans, was completed in 1914. The project was begun by France under Ferdinand de Lesseps but abandoned due to engineering difficulties and high worker mortality. The United States took over the effort in 1904, implementing improved sanitation and overcoming challenging terrain. The canal dramatically shortened shipping routes and remains a vital global trade artery today, though its importance has been challenged by larger ships that cannot fit through its locks.\"",
+  "gold": {
+   "keywords": [
+    "Panama Canal",
+    "Atlantic",
+    "Pacific",
+    "de Lesseps",
+    "shipping"
+   ],
+   "min_coverage": 0.5
+  }
+ },
+ {
+  "task_id": "gsm8k-101",
+  "category": "math_reasoning",
+  "prompt": "Tom buys 3 apples at $2 each and 2 oranges at $1.50 each. He pays with a $20 bill. How much change does he get in dollars?",
+  "gold": {
+   "answer": 11.0
+  }
+ },
+ {
+  "task_id": "gsm8k-102",
+  "category": "math_reasoning",
+  "prompt": "A car travels at 60 miles per hour for 2 hours, then at 50 miles per hour for 1.5 hours. What is the total distance traveled in miles?",
+  "gold": {
+   "answer": 195.0
+  }
+ },
+ {
+  "task_id": "gsm8k-103",
+  "category": "math_reasoning",
+  "prompt": "There are 30 students in a class. Two-fifths are girls. One-third of the boys wear glasses. How many boys do NOT wear glasses?",
+  "gold": {
+   "answer": 12.0
+  }
+ },
+ {
+  "task_id": "gsm8k-104",
+  "category": "math_reasoning",
+  "prompt": "A baker bakes 36 cookies. She puts 4 cookies in each bag and sells each bag for $3. How much money does she make from selling all the bags?",
+  "gold": {
+   "answer": 27.0
+  }
+ },
+ {
+  "task_id": "gsm8k-105",
+  "category": "math_reasoning",
+  "prompt": "A pizza has 12 slices. Four friends each eat 2 slices. Then the remaining slices are divided equally among them. How many slices does each friend eat in total?",
+  "gold": {
+   "answer": 3.0
+  }
+ },
+ {
+  "task_id": "gsm8k-106",
+  "category": "math_reasoning",
+  "prompt": "A rectangular garden is 8 meters long and 5 meters wide. What is its area in square meters? If it costs $4 per square meter to pave, how much does it cost to pave the entire garden in dollars?",
+  "gold": {
+   "answer": 160.0
+  }
+ },
+ {
+  "task_id": "gsm8k-107",
+  "category": "math_reasoning",
+  "prompt": "Sarah saves $5 per week. She already has $15 saved. She wants to buy a bicycle that costs $50. How many more weeks does she need to save?",
+  "gold": {
+   "answer": 7.0
+  }
+ },
+ {
+  "task_id": "gsm8k-108",
+  "category": "math_reasoning",
+  "prompt": "A factory produces 120 toys per hour and operates for 6 hours each day. If 5% of the toys are defective, how many good toys are produced each day?",
+  "gold": {
+   "answer": 684.0
+  }
+ },
+ {
+  "task_id": "gsm8k-109",
+  "category": "math_reasoning",
+  "prompt": "A jacket costs $80. It is on sale at 25% off, and then an additional 10% is deducted from the sale price. What is the final price in dollars?",
+  "gold": {
+   "answer": 54.0
+  }
+ },
+ {
+  "task_id": "gsm8k-110",
+  "category": "math_reasoning",
+  "prompt": "At noon the temperature is 8°C. By 6 PM it drops by 12°C, then by midnight it drops another 5°C. What is the temperature at midnight in degrees Celsius?",
+  "gold": {
+   "answer": -9.0
+  }
+ },
+ {
+  "task_id": "gsm8k-111",
+  "category": "math_reasoning",
+  "prompt": "A baker bakes 48 cookies. She puts 4 cookies in each bag. Each bag sells for $2.50. How much money does she make from selling all the bags?",
+  "gold": {
+   "answer": 30.0
+  }
+ },
+ {
+  "task_id": "gsm8k-112",
+  "category": "math_reasoning",
+  "prompt": "Mia runs 3 miles each day. She has already run 12 miles this week. After how many more days will she have run a total of 30 miles?",
+  "gold": {
+   "answer": 6.0
+  }
+ },
+ {
+  "task_id": "gsm8k-113",
+  "category": "math_reasoning",
+  "prompt": "A dress costs $60. A 30% off sale is applied, and then an additional $5 coupon is used. How much do you pay in dollars?",
+  "gold": {
+   "answer": 37.0
+  }
+ },
+ {
+  "task_id": "gsm8k-114",
+  "category": "math_reasoning",
+  "prompt": "Three numbers add up to 90. The first number is 15. The second number is three times the first. What is the third number?",
+  "gold": {
+   "answer": 30.0
+  }
+ }
+]

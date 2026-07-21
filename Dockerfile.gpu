@@ -1,0 +1,62 @@
+# amd-hackathon-submit — GPU TESTING variant (staging parallel architecture)
+# Build: docker buildx build --platform linux/amd64 -t ghcr.io/artemkorolev1/amd-hackathon-submit:gpu-test --load -f Dockerfile.gpu .
+#
+# Uses staging/entrypoint.py with CUDA-accelerated llama-cpp-python for GPU testing.
+# NOT for submission — grader has no GPU. GPU test image for local development.
+# CPU build for submission uses the regular Dockerfile.
+
+FROM nvidia/cuda:12.8.0-runtime-ubuntu24.04
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    PIP_NO_CACHE_DIR=1 \
+    PIP_BREAK_SYSTEM_PACKAGES=1 \
+    DEBIAN_FRONTEND=noninteractive
+
+WORKDIR /
+
+# Install Python 3 + pip + build-essential for eventual deps
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    python3 \
+    python3-pip \
+    python3-venv \
+    curl \
+    libgomp1 \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install deps (without llama-cpp-python — installed from wheel below)
+COPY cuda-wheels/llama_cpp_python-0.3.34-py3-none-linux_x86_64.whl /tmp/
+COPY requirements.txt /tmp/requirements.txt
+RUN pip install --no-cache-dir $(grep -v -E '^(#|llama-cpp-python)' /tmp/requirements.txt | tr '\n' ' ') \
+    && pip install --no-cache-dir /tmp/llama_cpp_python-0.3.34-py3-none-linux_x86_64.whl \
+    && rm -f /tmp/llama_cpp_python-0.3.34-py3-none-linux_x86_64.whl \
+    && find /usr/local/lib -name '__pycache__' -exec rm -rf {} + 2>/dev/null || true
+
+# Overlay CUDA-accelerated shared libraries
+COPY cuda-wheels/llama_cpp/lib/libggml-cuda.so.0 /usr/local/lib/python3.12/dist-packages/llama_cpp/lib/libggml-cuda.so.0
+RUN ln -sf libggml-cuda.so.0 /usr/local/lib/python3.12/dist-packages/llama_cpp/lib/libggml-cuda.so \
+    && ln -sf libggml-cuda.so.0 /usr/local/lib/python3.12/dist-packages/llama_cpp/lib/libggml-cuda.so.0.15.3 \
+    && mkdir -p /usr/local/lib/python3.12/dist-packages/lib/ \
+    && ln -sf /usr/local/lib/python3.12/dist-packages/llama_cpp/lib/libggml-cuda.so.0 /usr/local/lib/python3.12/dist-packages/lib/libggml-cuda.so.0 \
+    && ln -sf libggml-cuda.so.0 /usr/local/lib/python3.12/dist-packages/lib/libggml-cuda.so \
+    && ln -sf libggml-cuda.so.0 /usr/local/lib/python3.12/dist-packages/lib/libggml-cuda.so.0.15.3
+
+# Copy agent module (read-only imports for staging workers)
+COPY agent/ /agent/
+
+# Copy staging module (parallel architecture entrypoint)
+COPY staging/ /staging/
+
+# Copy model for local GPU inference
+COPY models/ /models/
+
+# Ensure grader I/O paths
+RUN mkdir -p /input /output
+
+ENV PYTHONPATH=/ \
+    MODEL_PATH=/models/qwen2.5-1.5b-instruct-q4_k_m.gguf \
+    N_GPU_LAYERS=-1 \
+    N_THREADS=4 \
+    N_CTX=2048
+
+ENTRYPOINT ["python3", "-u", "-m", "staging.entrypoint"]

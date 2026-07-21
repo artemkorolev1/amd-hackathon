@@ -1,0 +1,43 @@
+============================================================
+Bonsai-27B Q1_0 vs Small Models — Eval Comparison
+============================================================
+  factual: 10 questions
+  logic: 10 questions
+  math: 10 questions
+  code_debug: 10 questions
+  ner: 10 questions
+  sentiment: 10 questions
+  summarization: 10 questions
+  code_gen: 10 questions
+Total: 80 questions
+
+--- Bonsai-27B-Q1_0 ---
+  Loaded in 2.1s
+  factual: 5/10 correct=1/5 (20.0%) avg 21.4s/q
+  factual: 10/10 correct=1/10 (10.0%) avg 19.4s/q
+  logic: 5/10 correct=3/5 (60.0%) avg 18.3s/q
+  logic: 10/10 correct=5/10 (50.0%) avg 18.4s/q
+  math: 5/10 correct=4/5 (80.0%) avg 16.6s/q
+  math: 10/10 correct=7/10 (70.0%) avg 17.5s/q
+  code_debug: 5/10 correct=5/5 (100.0%) avg 18.6s/q
+  code_debug: 10/10 correct=10/10 (100.0%) avg 18.3s/q
+  ner: 5/10 correct=3/5 (60.0%) avg 18.3s/q
+  ner: 10/10 correct=8/10 (80.0%) avg 18.3s/q
+  sentiment: 5/10 correct=5/5 (100.0%) avg 14.9s/q
+  sentiment: 10/10 correct=9/10 (90.0%) avg 14.8s/q
+  summarization: 5/10 correct=0/5 (0.0%) avg 18.3s/q
+  summarization: 10/10 correct=0/10 (0.0%) avg 18.3s/q
+  code_gen: 5/10 correct=2/5 (40.0%) avg 18.2s/q
+  code_gen: 10/10 correct=6/10 (60.0%) avg 18.2s/q
+
+================================================================================
+Model               factual     logic       math        code_debug  ner         sentiment   summarizationcode_gen    Avg     Time    
+--------------------------------------------------------------------------------
+Bonsai-27B-Q1_0     10.0 %       50.0 %       70.0 %       100.0%       80.0 %       90.0 %       0.0  %       60.0 %       57.5 %   17.91s
+
+Bonsai delta vs best 1.5B model per category:
+Delta               -71.0%     -18.0%     +7.0 %     0.0 %     -20.0%     +14.0%     -75.0%     -40.0%     -25.4%   
+--------------------------------------------------------------------------------
+
+============================================================
+Done.

@@ -1,0 +1,1086 @@
+{"id": "pop-0001", "category": "us_navy", "question": "What is the lowest enlisted rank in the US Navy?", "answer": "Seaman Recruit (E-1)", "source": "pop-culture-v1"}
+{"id": "pop-0002", "category": "us_navy", "question": "What is the rank of Seaman Apprentice in the US Navy?", "answer": "E-2", "source": "pop-culture-v1"}
+{"id": "pop-0003", "category": "us_navy", "question": "What is the rank of Seaman in the US Navy?", "answer": "E-3", "source": "pop-culture-v1"}
+{"id": "pop-0004", "category": "us_navy", "question": "What is the rank of Petty Officer Third Class in the US Navy?", "answer": "E-4", "source": "pop-culture-v1"}
+{"id": "pop-0005", "category": "us_navy", "question": "What is the rank of Petty Officer Second Class in the US Navy?", "answer": "E-5", "source": "pop-culture-v1"}
+{"id": "pop-0006", "category": "us_navy", "question": "What is the rank of Petty Officer First Class in the US Navy?", "answer": "E-6", "source": "pop-culture-v1"}
+{"id": "pop-0007", "category": "us_navy", "question": "What is the rank of Chief Petty Officer in the US Navy?", "answer": "E-7", "source": "pop-culture-v1"}
+{"id": "pop-0008", "category": "us_navy", "question": "What is the rank of Senior Chief Petty Officer in the US Navy?", "answer": "E-8", "source": "pop-culture-v1"}
+{"id": "pop-0009", "category": "us_navy", "question": "What is the rank of Master Chief Petty Officer in the US Navy?", "answer": "E-9", "source": "pop-culture-v1"}
+{"id": "pop-0010", "category": "us_navy", "question": "What is the rank of Master Chief Petty Officer of the Navy in the US Navy?", "answer": "E-9 (special)", "source": "pop-culture-v1"}
+{"id": "pop-0011", "category": "us_navy", "question": "What is the lowest officer rank in the US Navy?", "answer": "Ensign (O-1)", "source": "pop-culture-v1"}
+{"id": "pop-0012", "category": "us_navy", "question": "What is the rank of Lieutenant Junior Grade in the US Navy?", "answer": "O-2", "source": "pop-culture-v1"}
+{"id": "pop-0013", "category": "us_navy", "question": "What is the rank of Lieutenant in the US Navy?", "answer": "O-3", "source": "pop-culture-v1"}
+{"id": "pop-0014", "category": "us_navy", "question": "What is the rank of Lieutenant Commander in the US Navy?", "answer": "O-4", "source": "pop-culture-v1"}
+{"id": "pop-0015", "category": "us_navy", "question": "What is the rank of Commander in the US Navy?", "answer": "O-5", "source": "pop-culture-v1"}
+{"id": "pop-0016", "category": "us_navy", "question": "What is the rank of Captain in the US Navy?", "answer": "O-6", "source": "pop-culture-v1"}
+{"id": "pop-0017", "category": "us_navy", "question": "What is the rank of Rear Admiral Lower Half in the US Navy?", "answer": "O-7", "source": "pop-culture-v1"}
+{"id": "pop-0018", "category": "us_navy", "question": "What is the rank of Rear Admiral Upper Half in the US Navy?", "answer": "O-8", "source": "pop-culture-v1"}
+{"id": "pop-0019", "category": "us_navy", "question": "What is the rank of Vice Admiral in the US Navy?", "answer": "O-9", "source": "pop-culture-v1"}
+{"id": "pop-0020", "category": "us_navy", "question": "What is the rank of Admiral in the US Navy?", "answer": "O-10", "source": "pop-culture-v1"}
+{"id": "pop-0021", "category": "us_navy", "question": "What is the rank of Fleet Admiral in the US Navy?", "answer": "O-11 (wartime only)", "source": "pop-culture-v1"}
+{"id": "pop-0022", "category": "us_navy", "question": "What are the ranks in the US Navy from lowest to highest?", "answer": "Seaman Recruit (E-1), Seaman Apprentice (E-2), Seaman (E-3), Petty Officer Third Class (E-4), Petty Officer Second Class (E-5), Petty Officer First Class (E-6), Chief Petty Officer (E-7), Senior Chief Petty Officer (E-8), Master Chief Petty Officer (E-9), Ensign (O-1), Lieutenant Junior Grade (O-2), Lieutenant (O-3), Lieutenant Commander (O-4), Commander (O-5), Captain (O-6), Rear Admiral Lower Half (O-7), Rear Admiral Upper Half (O-8), Vice Admiral (O-9), Admiral (O-10), Fleet Admiral (O-11)", "source": "pop-culture-v1"}
+{"id": "pop-0023", "category": "us_navy", "question": "What is the US Navy enlisted rank for E-1?", "answer": "Seaman Recruit", "source": "pop-culture-v1"}
+{"id": "pop-0024", "category": "us_navy", "question": "What is the US Navy enlisted rank for E-2?", "answer": "Seaman Apprentice", "source": "pop-culture-v1"}
+{"id": "pop-0025", "category": "us_navy", "question": "What is the US Navy enlisted rank for E-3?", "answer": "Seaman", "source": "pop-culture-v1"}
+{"id": "pop-0026", "category": "us_navy", "question": "What is the US Navy enlisted rank for E-4?", "answer": "Petty Officer Third Class", "source": "pop-culture-v1"}
+{"id": "pop-0027", "category": "us_navy", "question": "What is the US Navy enlisted rank for E-5?", "answer": "Petty Officer Second Class", "source": "pop-culture-v1"}
+{"id": "pop-0028", "category": "us_navy", "question": "What is the US Navy enlisted rank for E-6?", "answer": "Petty Officer First Class", "source": "pop-culture-v1"}
+{"id": "pop-0029", "category": "us_navy", "question": "What is the US Navy enlisted rank for E-7?", "answer": "Chief Petty Officer", "source": "pop-culture-v1"}
+{"id": "pop-0030", "category": "us_navy", "question": "What is the US Navy enlisted rank for E-8?", "answer": "Senior Chief Petty Officer", "source": "pop-culture-v1"}
+{"id": "pop-0031", "category": "us_navy", "question": "What is the US Navy enlisted rank for E-9?", "answer": "Master Chief Petty Officer", "source": "pop-culture-v1"}
+{"id": "pop-0032", "category": "us_navy", "question": "What is the US Navy officer rank for O-1?", "answer": "Ensign", "source": "pop-culture-v1"}
+{"id": "pop-0033", "category": "us_navy", "question": "What is the US Navy officer rank for O-2?", "answer": "Lieutenant Junior Grade", "source": "pop-culture-v1"}
+{"id": "pop-0034", "category": "us_navy", "question": "What is the US Navy officer rank for O-3?", "answer": "Lieutenant", "source": "pop-culture-v1"}
+{"id": "pop-0035", "category": "us_navy", "question": "What is the US Navy officer rank for O-4?", "answer": "Lieutenant Commander", "source": "pop-culture-v1"}
+{"id": "pop-0036", "category": "us_navy", "question": "What is the US Navy officer rank for O-5?", "answer": "Commander", "source": "pop-culture-v1"}
+{"id": "pop-0037", "category": "us_navy", "question": "What is the US Navy officer rank for O-6?", "answer": "Captain", "source": "pop-culture-v1"}
+{"id": "pop-0038", "category": "us_navy", "question": "What is the US Navy officer rank for O-7?", "answer": "Rear Admiral Lower Half", "source": "pop-culture-v1"}
+{"id": "pop-0039", "category": "us_navy", "question": "What is the US Navy officer rank for O-8?", "answer": "Rear Admiral Upper Half", "source": "pop-culture-v1"}
+{"id": "pop-0040", "category": "us_navy", "question": "What is the US Navy officer rank for O-9?", "answer": "Vice Admiral", "source": "pop-culture-v1"}
+{"id": "pop-0041", "category": "us_navy", "question": "What is the US Navy officer rank for O-10?", "answer": "Admiral", "source": "pop-culture-v1"}
+{"id": "pop-0042", "category": "us_navy", "question": "What is the US Navy officer rank for O-11?", "answer": "Fleet Admiral", "source": "pop-culture-v1"}
+{"id": "pop-0043", "category": "harry_potter", "question": "What is the first Harry Potter book?", "answer": "Harry Potter and the Philosopher's Stone", "source": "pop-culture-v1"}
+{"id": "pop-0044", "category": "harry_potter", "question": "What is the second Harry Potter book?", "answer": "Harry Potter and the Chamber of Secrets", "source": "pop-culture-v1"}
+{"id": "pop-0045", "category": "harry_potter", "question": "What is the third Harry Potter book?", "answer": "Harry Potter and the Prisoner of Azkaban", "source": "pop-culture-v1"}
+{"id": "pop-0046", "category": "harry_potter", "question": "What is the fourth Harry Potter book?", "answer": "Harry Potter and the Goblet of Fire", "source": "pop-culture-v1"}
+{"id": "pop-0047", "category": "harry_potter", "question": "What is the fifth Harry Potter book?", "answer": "Harry Potter and the Order of the Phoenix", "source": "pop-culture-v1"}
+{"id": "pop-0048", "category": "harry_potter", "question": "What is the sixth Harry Potter book?", "answer": "Harry Potter and the Half-Blood Prince", "source": "pop-culture-v1"}
+{"id": "pop-0049", "category": "harry_potter", "question": "What is the seventh Harry Potter book?", "answer": "Harry Potter and the Deathly Hallows", "source": "pop-culture-v1"}
+{"id": "pop-0050", "category": "harry_potter", "question": "How many Harry Potter books are there?", "answer": "Seven", "source": "pop-culture-v1"}
+{"id": "pop-0051", "category": "harry_potter", "question": "Who wrote the Harry Potter series?", "answer": "J.K. Rowling", "source": "pop-culture-v1"}
+{"id": "pop-0052", "category": "harry_potter", "question": "What are all the Harry Potter books in order?", "answer": "Harry Potter and the Philosopher's Stone, Harry Potter and the Chamber of Secrets, Harry Potter and the Prisoner of Azkaban, Harry Potter and the Goblet of Fire, Harry Potter and the Order of the Phoenix, Harry Potter and the Half-Blood Prince, Harry Potter and the Deathly Hallows", "source": "pop-culture-v1"}
+{"id": "pop-0053", "category": "harry_potter", "question": "What is the first Harry Potter book called in the US?", "answer": "Harry Potter and the Sorcerer's Stone", "source": "pop-culture-v1"}
+{"id": "pop-0054", "category": "harry_potter", "question": "What Hogwarts house is Harry Potter in?", "answer": "Gryffindor", "source": "pop-culture-v1"}
+{"id": "pop-0055", "category": "harry_potter", "question": "What are the four Hogwarts houses?", "answer": "Gryffindor, Hufflepuff, Ravenclaw, Slytherin", "source": "pop-culture-v1"}
+{"id": "pop-0056", "category": "harry_potter", "question": "What is the name of Harry Potter's owl?", "answer": "Hedwig", "source": "pop-culture-v1"}
+{"id": "pop-0057", "category": "harry_potter", "question": "Who is the main villain in Harry Potter?", "answer": "Lord Voldemort", "source": "pop-culture-v1"}
+{"id": "pop-0058", "category": "harry_potter", "question": "What is Voldemort's real name?", "answer": "Tom Marvolo Riddle", "source": "pop-culture-v1"}
+{"id": "pop-0059", "category": "harry_potter", "question": "Who is the headmaster of Hogwarts in Harry Potter?", "answer": "Albus Dumbledore", "source": "pop-culture-v1"}
+{"id": "pop-0060", "category": "harry_potter", "question": "What is the sport played on broomsticks in Harry Potter?", "answer": "Quidditch", "source": "pop-culture-v1"}
+{"id": "pop-0061", "category": "harry_potter", "question": "What is Harry Potter's best friend's name?", "answer": "Ron Weasley", "source": "pop-culture-v1"}
+{"id": "pop-0062", "category": "harry_potter", "question": "What is Hermione Granger's full name?", "answer": "Hermione Jean Granger", "source": "pop-culture-v1"}
+{"id": "pop-0063", "category": "harry_potter", "question": "What position does Harry play in Quidditch?", "answer": "Seeker", "source": "pop-culture-v1"}
+{"id": "pop-0064", "category": "harry_potter", "question": "What is the Golden Snitch worth in Quidditch?", "answer": "150 points", "source": "pop-culture-v1"}
+{"id": "pop-0065", "category": "harry_potter", "question": "Who is the potions professor at Hogwarts?", "answer": "Severus Snape", "source": "pop-culture-v1"}
+{"id": "pop-0066", "category": "harry_potter", "question": "What is the name of the school for witchcraft and wizardry?", "answer": "Hogwarts School of Witchcraft and Wizardry", "source": "pop-culture-v1"}
+{"id": "pop-0067", "category": "fifty_shades", "question": "What is the first Fifty Shades book?", "answer": "Fifty Shades of Grey", "source": "pop-culture-v1"}
+{"id": "pop-0068", "category": "fifty_shades", "question": "What is the second Fifty Shades book?", "answer": "Fifty Shades Darker", "source": "pop-culture-v1"}
+{"id": "pop-0069", "category": "fifty_shades", "question": "What is the third Fifty Shades book?", "answer": "Fifty Shades Freed", "source": "pop-culture-v1"}
+{"id": "pop-0070", "category": "fifty_shades", "question": "What are the three Fifty Shades of Grey books?", "answer": "Fifty Shades of Grey, Fifty Shades Darker, Fifty Shades Freed", "source": "pop-culture-v1"}
+{"id": "pop-0071", "category": "fifty_shades", "question": "Who wrote the Fifty Shades trilogy?", "answer": "E.L. James", "source": "pop-culture-v1"}
+{"id": "pop-0072", "category": "fifty_shades", "question": "What are the main characters in Fifty Shades of Grey?", "answer": "Christian Grey and Anastasia Steele", "source": "pop-culture-v1"}
+{"id": "pop-0073", "category": "fifty_shades", "question": "What is the name of the male lead in Fifty Shades of Grey?", "answer": "Christian Grey", "source": "pop-culture-v1"}
+{"id": "pop-0074", "category": "twilight", "question": "What is the first Twilight book?", "answer": "Twilight", "source": "pop-culture-v1"}
+{"id": "pop-0075", "category": "twilight", "question": "What is the second Twilight book?", "answer": "New Moon", "source": "pop-culture-v1"}
+{"id": "pop-0076", "category": "twilight", "question": "What is the third Twilight book?", "answer": "Eclipse", "source": "pop-culture-v1"}
+{"id": "pop-0077", "category": "twilight", "question": "What is the fourth Twilight book?", "answer": "Breaking Dawn", "source": "pop-culture-v1"}
+{"id": "pop-0078", "category": "twilight", "question": "What are all the Twilight books in order?", "answer": "Twilight, New Moon, Eclipse, Breaking Dawn", "source": "pop-culture-v1"}
+{"id": "pop-0079", "category": "twilight", "question": "Who wrote the Twilight series?", "answer": "Stephenie Meyer", "source": "pop-culture-v1"}
+{"id": "pop-0080", "category": "twilight", "question": "Who is the main character in Twilight?", "answer": "Bella Swan", "source": "pop-culture-v1"}
+{"id": "pop-0081", "category": "twilight", "question": "What is the vampire love interest's name in Twilight?", "answer": "Edward Cullen", "source": "pop-culture-v1"}
+{"id": "pop-0082", "category": "twilight", "question": "What is the werewolf's name in Twilight?", "answer": "Jacob Black", "source": "pop-culture-v1"}
+{"id": "pop-0083", "category": "twilight", "question": "What is the name of the vampire family in Twilight?", "answer": "The Cullen family", "source": "pop-culture-v1"}
+{"id": "pop-0084", "category": "twilight", "question": "Who does Bella marry in Twilight?", "answer": "Edward Cullen", "source": "pop-culture-v1"}
+{"id": "pop-0085", "category": "twilight", "question": "What is the name of Bella and Edward's daughter in Twilight?", "answer": "Renesmee Cullen", "source": "pop-culture-v1"}
+{"id": "pop-0086", "category": "hunger_games", "question": "What is the first Hunger Games book?", "answer": "The Hunger Games", "source": "pop-culture-v1"}
+{"id": "pop-0087", "category": "hunger_games", "question": "What is the second Hunger Games book?", "answer": "Catching Fire", "source": "pop-culture-v1"}
+{"id": "pop-0088", "category": "hunger_games", "question": "What is the third Hunger Games book?", "answer": "Mockingjay", "source": "pop-culture-v1"}
+{"id": "pop-0089", "category": "hunger_games", "question": "What are the Hunger Games books in order?", "answer": "The Hunger Games, Catching Fire, Mockingjay", "source": "pop-culture-v1"}
+{"id": "pop-0090", "category": "hunger_games", "question": "Who wrote the Hunger Games trilogy?", "answer": "Suzanne Collins", "source": "pop-culture-v1"}
+{"id": "pop-0091", "category": "hunger_games", "question": "Who is the main character in The Hunger Games?", "answer": "Katniss Everdeen", "source": "pop-culture-v1"}
+{"id": "pop-0092", "category": "hunger_games", "question": "Who is the male tribute from District 12 in The Hunger Games?", "answer": "Peeta Mellark", "source": "pop-culture-v1"}
+{"id": "pop-0093", "category": "hunger_games", "question": "What is the name of the dictator in The Hunger Games?", "answer": "President Snow", "source": "pop-culture-v1"}
+{"id": "pop-0094", "category": "hunger_games", "question": "What is the name of the country in The Hunger Games?", "answer": "Panem", "source": "pop-culture-v1"}
+{"id": "pop-0095", "category": "hunger_games", "question": "How many districts are there in Panem?", "answer": "13 (12 existing)", "source": "pop-culture-v1"}
+{"id": "pop-0096", "category": "hunger_games", "question": "What is Katniss's sister's name in The Hunger Games?", "answer": "Primrose Everdeen", "source": "pop-culture-v1"}
+{"id": "pop-0097", "category": "lord_of_the_rings", "question": "What is the first book in The Lord of the Rings?", "answer": "The Fellowship of the Ring", "source": "pop-culture-v1"}
+{"id": "pop-0098", "category": "lord_of_the_rings", "question": "What is the second book in The Lord of the Rings?", "answer": "The Two Towers", "source": "pop-culture-v1"}
+{"id": "pop-0099", "category": "lord_of_the_rings", "question": "What is the third book in The Lord of the Rings?", "answer": "The Return of the King", "source": "pop-culture-v1"}
+{"id": "pop-0100", "category": "lord_of_the_rings", "question": "What are the Lord of the Rings books in order?", "answer": "The Fellowship of the Ring, The Two Towers, The Return of the King", "source": "pop-culture-v1"}
+{"id": "pop-0101", "category": "lord_of_the_rings", "question": "What is the first Hobbit book?", "answer": "The Hobbit", "source": "pop-culture-v1"}
+{"id": "pop-0102", "category": "lord_of_the_rings", "question": "Who wrote The Lord of the Rings and The Hobbit?", "answer": "J.R.R. Tolkien", "source": "pop-culture-v1"}
+{"id": "pop-0103", "category": "lord_of_the_rings", "question": "Who is the main character in The Hobbit?", "answer": "Bilbo Baggins", "source": "pop-culture-v1"}
+{"id": "pop-0104", "category": "lord_of_the_rings", "question": "Who is the main character in The Lord of the Rings?", "answer": "Frodo Baggins", "source": "pop-culture-v1"}
+{"id": "pop-0105", "category": "lord_of_the_rings", "question": "What is the name of the ring in Lord of the Rings?", "answer": "The One Ring", "source": "pop-culture-v1"}
+{"id": "pop-0106", "category": "lord_of_the_rings", "question": "Who is the Dark Lord in Lord of the Rings?", "answer": "Sauron", "source": "pop-culture-v1"}
+{"id": "pop-0107", "category": "lord_of_the_rings", "question": "Who is the wizard in Lord of the Rings?", "answer": "Gandalf", "source": "pop-culture-v1"}
+{"id": "pop-0108", "category": "lord_of_the_rings", "question": "What is the name of the elf in Lord of the Rings?", "answer": "Legolas", "source": "pop-culture-v1"}
+{"id": "pop-0109", "category": "lord_of_the_rings", "question": "Who is the dwarf in Lord of the Rings?", "answer": "Gimli", "source": "pop-culture-v1"}
+{"id": "pop-0110", "category": "lord_of_the_rings", "question": "Who is the ranger who becomes king in Lord of the Rings?", "answer": "Aragorn", "source": "pop-culture-v1"}
+{"id": "pop-0111", "category": "lord_of_the_rings", "question": "What is the name of the world in Lord of the Rings?", "answer": "Middle-earth", "source": "pop-culture-v1"}
+{"id": "pop-0112", "category": "game_of_thrones", "question": "What is the first Game of Thrones book?", "answer": "A Game of Thrones", "source": "pop-culture-v1"}
+{"id": "pop-0113", "category": "game_of_thrones", "question": "What is the second book in A Song of Ice and Fire?", "answer": "A Clash of Kings", "source": "pop-culture-v1"}
+{"id": "pop-0114", "category": "game_of_thrones", "question": "What is the third book in A Song of Ice and Fire?", "answer": "A Storm of Swords", "source": "pop-culture-v1"}
+{"id": "pop-0115", "category": "game_of_thrones", "question": "What is the fourth book in A Song of Ice and Fire?", "answer": "A Feast for Crows", "source": "pop-culture-v1"}
+{"id": "pop-0116", "category": "game_of_thrones", "question": "What is the fifth book in A Song of Ice and Fire?", "answer": "A Dance with Dragons", "source": "pop-culture-v1"}
+{"id": "pop-0117", "category": "game_of_thrones", "question": "What are the Game of Thrones books in order?", "answer": "A Game of Thrones, A Clash of Kings, A Storm of Swords, A Feast for Crows, A Dance with Dragons", "source": "pop-culture-v1"}
+{"id": "pop-0118", "category": "game_of_thrones", "question": "How many books are planned for A Song of Ice and Fire?", "answer": "Seven", "source": "pop-culture-v1"}
+{"id": "pop-0119", "category": "game_of_thrones", "question": "Who wrote the Game of Thrones series?", "answer": "George R.R. Martin", "source": "pop-culture-v1"}
+{"id": "pop-0120", "category": "game_of_thrones", "question": "What is the name of the first book in A Song of Ice and Fire?", "answer": "A Game of Thrones", "source": "pop-culture-v1"}
+{"id": "pop-0121", "category": "game_of_thrones", "question": "Who is the creator of the Game of Thrones TV series?", "answer": "David Benioff and D.B. Weiss", "source": "pop-culture-v1"}
+{"id": "pop-0122", "category": "game_of_thrones", "question": "Which network aired Game of Thrones?", "answer": "HBO", "source": "pop-culture-v1"}
+{"id": "pop-0123", "category": "game_of_thrones", "question": "Who sits on the Iron Throne at the end of Game of Thrones?", "answer": "Bran Stark", "source": "pop-culture-v1"}
+{"id": "pop-0124", "category": "game_of_thrones", "question": "Who is the Mother of Dragons in Game of Thrones?", "answer": "Daenerys Targaryen", "source": "pop-culture-v1"}
+{"id": "pop-0125", "category": "game_of_thrones", "question": "What is the sigil of House Stark?", "answer": "A direwolf", "source": "pop-culture-v1"}
+{"id": "pop-0126", "category": "game_of_thrones", "question": "What is the sigil of House Lannister?", "answer": "A lion", "source": "pop-culture-v1"}
+{"id": "pop-0127", "category": "game_of_thrones", "question": "What is the sigil of House Targaryen?", "answer": "A three-headed dragon", "source": "pop-culture-v1"}
+{"id": "pop-0128", "category": "game_of_thrones", "question": "Who is the King in the North in Game of Thrones?", "answer": "Robb Stark", "source": "pop-culture-v1"}
+{"id": "pop-0129", "category": "game_of_thrones", "question": "What is the Wall in Game of Thrones?", "answer": "A massive fortification of ice guarding the northern border of the Seven Kingdoms", "source": "pop-culture-v1"}
+{"id": "pop-0130", "category": "game_of_thrones", "question": "Who are the protectors of the Wall in Game of Thrones?", "answer": "The Night's Watch", "source": "pop-culture-v1"}
+{"id": "pop-0131", "category": "game_of_thrones", "question": "What is winter coming in Game of Thrones?", "answer": "A long winter and the return of the White Walkers", "source": "pop-culture-v1"}
+{"id": "pop-0132", "category": "tv_shows", "question": "What are the names of the six main characters in Friends?", "answer": "Rachel Green, Monica Geller, Phoebe Buffay, Joey Tribbiani, Chandler Bing, Ross Geller", "source": "pop-culture-v1"}
+{"id": "pop-0133", "category": "tv_shows", "question": "Who played Rachel Green on Friends?", "answer": "Jennifer Aniston", "source": "pop-culture-v1"}
+{"id": "pop-0134", "category": "tv_shows", "question": "Who played Monica Geller on Friends?", "answer": "Courteney Cox", "source": "pop-culture-v1"}
+{"id": "pop-0135", "category": "tv_shows", "question": "Who played Phoebe Buffay on Friends?", "answer": "Lisa Kudrow", "source": "pop-culture-v1"}
+{"id": "pop-0136", "category": "tv_shows", "question": "Who played Joey Tribbiani on Friends?", "answer": "Matt LeBlanc", "source": "pop-culture-v1"}
+{"id": "pop-0137", "category": "tv_shows", "question": "Who played Chandler Bing on Friends?", "answer": "Matthew Perry", "source": "pop-culture-v1"}
+{"id": "pop-0138", "category": "tv_shows", "question": "Who played Ross Geller on Friends?", "answer": "David Schwimmer", "source": "pop-culture-v1"}
+{"id": "pop-0139", "category": "tv_shows", "question": "How many seasons of Friends were there?", "answer": "10", "source": "pop-culture-v1"}
+{"id": "pop-0140", "category": "tv_shows", "question": "What is the name of the coffee shop in Friends?", "answer": "Central Perk", "source": "pop-culture-v1"}
+{"id": "pop-0141", "category": "tv_shows", "question": "What is Ross's catchphrase in Friends?", "answer": "We were on a break!", "source": "pop-culture-v1"}
+{"id": "pop-0142", "category": "tv_shows", "question": "What is Joey's catchphrase in Friends?", "answer": "How you doin'?", "source": "pop-culture-v1"}
+{"id": "pop-0143", "category": "tv_shows", "question": "Who does Ross end up with in Friends?", "answer": "Rachel Green", "source": "pop-culture-v1"}
+{"id": "pop-0144", "category": "tv_shows", "question": "Who does Chandler marry in Friends?", "answer": "Monica Geller", "source": "pop-culture-v1"}
+{"id": "pop-0145", "category": "tv_shows", "question": "What is Phoebe's twin sister's name in Friends?", "answer": "Ursula Buffay", "source": "pop-culture-v1"}
+{"id": "pop-0146", "category": "tv_shows", "question": "What is the name of Monica's apartment building in Friends?", "answer": "No specific name, but she lives at 90 Bedford Street, New York City", "source": "pop-culture-v1"}
+{"id": "pop-0147", "category": "tv_shows", "question": "What is the theme song of Friends called?", "answer": "I'll Be There for You by The Rembrandts", "source": "pop-culture-v1"}
+{"id": "pop-0148", "category": "tv_shows", "question": "Who played Michael Scott in The Office?", "answer": "Steve Carell", "source": "pop-culture-v1"}
+{"id": "pop-0149", "category": "tv_shows", "question": "Who played Jim Halpert in The Office?", "answer": "John Krasinski", "source": "pop-culture-v1"}
+{"id": "pop-0150", "category": "tv_shows", "question": "Who played Pam Beesly in The Office?", "answer": "Jenna Fischer", "source": "pop-culture-v1"}
+{"id": "pop-0151", "category": "tv_shows", "question": "Who played Dwight Schrute in The Office?", "answer": "Rainn Wilson", "source": "pop-culture-v1"}
+{"id": "pop-0152", "category": "tv_shows", "question": "What is the name of the paper company in The Office?", "answer": "Dunder Mifflin", "source": "pop-culture-v1"}
+{"id": "pop-0153", "category": "tv_shows", "question": "What is Dwight's job title in The Office?", "answer": "Assistant to the Regional Manager", "source": "pop-culture-v1"}
+{"id": "pop-0154", "category": "tv_shows", "question": "What is the name of the town where The Office is set?", "answer": "Scranton, Pennsylvania", "source": "pop-culture-v1"}
+{"id": "pop-0155", "category": "tv_shows", "question": "How many seasons of The Office (US) are there?", "answer": "9", "source": "pop-culture-v1"}
+{"id": "pop-0156", "category": "tv_shows", "question": "Who does Jim marry in The Office?", "answer": "Pam Beesly", "source": "pop-culture-v1"}
+{"id": "pop-0157", "category": "tv_shows", "question": "What is the name of the HR representative in The Office?", "answer": "Toby Flenderson", "source": "pop-culture-v1"}
+{"id": "pop-0158", "category": "tv_shows", "question": "What is Michael Scott's catchphrase in The Office?", "answer": "That's what she said", "source": "pop-culture-v1"}
+{"id": "pop-0159", "category": "tv_shows", "question": "What is the beet farm called in The Office?", "answer": "Schrute Farms", "source": "pop-culture-v1"}
+{"id": "pop-0160", "category": "tv_shows", "question": "Who are the main characters in That 70s Show?", "answer": "Eric Forman, Donna Pinciotti, Steven Hyde, Michael Kelso, Jackie Burkhart, Fez", "source": "pop-culture-v1"}
+{"id": "pop-0161", "category": "tv_shows", "question": "Who played Eric Forman in That 70s Show?", "answer": "Topher Grace", "source": "pop-culture-v1"}
+{"id": "pop-0162", "category": "tv_shows", "question": "Who played Donna Pinciotti in That 70s Show?", "answer": "Laura Prepon", "source": "pop-culture-v1"}
+{"id": "pop-0163", "category": "tv_shows", "question": "Who played Steven Hyde in That 70s Show?", "answer": "Danny Masterson", "source": "pop-culture-v1"}
+{"id": "pop-0164", "category": "tv_shows", "question": "Who played Michael Kelso in That 70s Show?", "answer": "Ashton Kutcher", "source": "pop-culture-v1"}
+{"id": "pop-0165", "category": "tv_shows", "question": "Who played Jackie Burkhart in That 70s Show?", "answer": "Mila Kunis", "source": "pop-culture-v1"}
+{"id": "pop-0166", "category": "tv_shows", "question": "Who played Fez in That 70s Show?", "answer": "Wilmer Valderrama", "source": "pop-culture-v1"}
+{"id": "pop-0167", "category": "tv_shows", "question": "Who does Eric end up with in That 70s Show?", "answer": "Donna Pinciotti", "source": "pop-culture-v1"}
+{"id": "pop-0168", "category": "tv_shows", "question": "Who does Eric Forman marry in That 70s Show?", "answer": "Donna Pinciotti", "source": "pop-culture-v1"}
+{"id": "pop-0169", "category": "tv_shows", "question": "How many seasons of That 70s Show are there?", "answer": "8", "source": "pop-culture-v1"}
+{"id": "pop-0170", "category": "tv_shows", "question": "What is the name of the Forman family's basement hangout?", "answer": "The basement (it's the Formans' basement)", "source": "pop-culture-v1"}
+{"id": "pop-0171", "category": "tv_shows", "question": "What year is That 70s Show set in?", "answer": "1976-1979", "source": "pop-culture-v1"}
+{"id": "pop-0172", "category": "tv_shows", "question": "What is the name of the car Eric drives in That 70s Show?", "answer": "A 1970 Oldsmobile Vista Cruiser", "source": "pop-culture-v1"}
+{"id": "pop-0173", "category": "tv_shows", "question": "Who is Red Forman in That 70s Show?", "answer": "Eric's father, a strict WWII veteran", "source": "pop-culture-v1"}
+{"id": "pop-0174", "category": "tv_shows", "question": "What is Red Forman's famous threat in That 70s Show?", "answer": "I'm gonna put my foot in your ass", "source": "pop-culture-v1"}
+{"id": "pop-0175", "category": "tv_shows", "question": "Where does That 70s Show take place?", "answer": "Point Place, Wisconsin", "source": "pop-culture-v1"}
+{"id": "pop-0176", "category": "tv_shows", "question": "Who played Walter White in Breaking Bad?", "answer": "Bryan Cranston", "source": "pop-culture-v1"}
+{"id": "pop-0177", "category": "tv_shows", "question": "Who played Jesse Pinkman in Breaking Bad?", "answer": "Aaron Paul", "source": "pop-culture-v1"}
+{"id": "pop-0178", "category": "tv_shows", "question": "What is Walter White's alias in Breaking Bad?", "answer": "Heisenberg", "source": "pop-culture-v1"}
+{"id": "pop-0179", "category": "tv_shows", "question": "What is the blue meth called in Breaking Bad?", "answer": "Blue Sky", "source": "pop-culture-v1"}
+{"id": "pop-0180", "category": "tv_shows", "question": "How many seasons of Breaking Bad are there?", "answer": "5", "source": "pop-culture-v1"}
+{"id": "pop-0181", "category": "tv_shows", "question": "Where is Breaking Bad set?", "answer": "Albuquerque, New Mexico", "source": "pop-culture-v1"}
+{"id": "pop-0182", "category": "tv_shows", "question": "What is the spin-off show from Breaking Bad called?", "answer": "Better Call Saul", "source": "pop-culture-v1"}
+{"id": "pop-0183", "category": "tv_shows", "question": "Who plays Saul Goodman in Breaking Bad?", "answer": "Bob Odenkirk", "source": "pop-culture-v1"}
+{"id": "pop-0184", "category": "tv_shows", "question": "What is Walter's wife's name in Breaking Bad?", "answer": "Skyler White", "source": "pop-culture-v1"}
+{"id": "pop-0185", "category": "tv_shows", "question": "What is Walter White's profession before cooking meth?", "answer": "High school chemistry teacher", "source": "pop-culture-v1"}
+{"id": "pop-0186", "category": "tv_shows", "question": "What disease does Walter White have in Breaking Bad?", "answer": "Lung cancer", "source": "pop-culture-v1"}
+{"id": "pop-0187", "category": "tv_shows", "question": "What is the name of the fast-food chain in Breaking Bad?", "answer": "Los Pollos Hermanos", "source": "pop-culture-v1"}
+{"id": "pop-0188", "category": "tv_shows", "question": "Who is the owner of Los Pollos Hermanos in Breaking Bad?", "answer": "Gustavo Fring", "source": "pop-culture-v1"}
+{"id": "pop-0189", "category": "tv_shows", "question": "What is the RV called in Breaking Bad?", "answer": "The Crystal Ship", "source": "pop-culture-v1"}
+{"id": "pop-0190", "category": "tv_shows", "question": "Who is the DEA agent in Breaking Bad?", "answer": "Hank Schrader", "source": "pop-culture-v1"}
+{"id": "pop-0191", "category": "tv_shows", "question": "Who are the main kids in Stranger Things?", "answer": "Mike Wheeler, Eleven, Lucas Sinclair, Dustin Henderson, Will Byers", "source": "pop-culture-v1"}
+{"id": "pop-0192", "category": "tv_shows", "question": "Who played Eleven in Stranger Things?", "answer": "Millie Bobby Brown", "source": "pop-culture-v1"}
+{"id": "pop-0193", "category": "tv_shows", "question": "Where is Stranger Things set?", "answer": "Hawkins, Indiana", "source": "pop-culture-v1"}
+{"id": "pop-0194", "category": "tv_shows", "question": "What is the alternate dimension called in Stranger Things?", "answer": "The Upside Down", "source": "pop-culture-v1"}
+{"id": "pop-0195", "category": "tv_shows", "question": "What is the monster called in Stranger Things season 1?", "answer": "The Demogorgon", "source": "pop-culture-v1"}
+{"id": "pop-0196", "category": "tv_shows", "question": "What are Eleven's psychic powers in Stranger Things?", "answer": "Telekinesis and telepathy", "source": "pop-culture-v1"}
+{"id": "pop-0197", "category": "tv_shows", "question": "What is the government lab called in Stranger Things?", "answer": "Hawkins National Laboratory", "source": "pop-culture-v1"}
+{"id": "pop-0198", "category": "tv_shows", "question": "How many seasons of Stranger Things are there?", "answer": "4 (as of 2024)", "source": "pop-culture-v1"}
+{"id": "pop-0199", "category": "tv_shows", "question": "Who created Stranger Things?", "answer": "The Duffer Brothers", "source": "pop-culture-v1"}
+{"id": "pop-0200", "category": "tv_shows", "question": "What is Eleven's real name in Stranger Things?", "answer": "Jane Hopper (born Jane Ives)", "source": "pop-culture-v1"}
+{"id": "pop-0201", "category": "tv_shows", "question": "What is the name of the older teen group in Stranger Things?", "answer": "Nancy Wheeler, Jonathan Byers, Steve Harrington", "source": "pop-culture-v1"}
+{"id": "pop-0202", "category": "tv_shows", "question": "What is Steve Harrington's job in later Stranger Things seasons?", "answer": "Working at the video store Family Video", "source": "pop-culture-v1"}
+{"id": "pop-0203", "category": "tv_shows", "question": "Who are the four main characters in Seinfeld?", "answer": "Jerry Seinfeld, George Costanza, Elaine Benes, Cosmo Kramer", "source": "pop-culture-v1"}
+{"id": "pop-0204", "category": "tv_shows", "question": "Who played Jerry Seinfeld on Seinfeld?", "answer": "Jerry Seinfeld", "source": "pop-culture-v1"}
+{"id": "pop-0205", "category": "tv_shows", "question": "Who played George Costanza on Seinfeld?", "answer": "Jason Alexander", "source": "pop-culture-v1"}
+{"id": "pop-0206", "category": "tv_shows", "question": "Who played Elaine Benes on Seinfeld?", "answer": "Julia Louis-Dreyfus", "source": "pop-culture-v1"}
+{"id": "pop-0207", "category": "tv_shows", "question": "Who played Cosmo Kramer on Seinfeld?", "answer": "Michael Richards", "source": "pop-culture-v1"}
+{"id": "pop-0208", "category": "tv_shows", "question": "How many seasons of Seinfeld are there?", "answer": "9", "source": "pop-culture-v1"}
+{"id": "pop-0209", "category": "tv_shows", "question": "What is George Costanza's catchphrase in Seinfeld?", "answer": "It's not a lie if you believe it", "source": "pop-culture-v1"}
+{"id": "pop-0210", "category": "tv_shows", "question": "What is Kramer's catchphrase in Seinfeld?", "answer": "I'm out there!", "source": "pop-culture-v1"}
+{"id": "pop-0211", "category": "tv_shows", "question": "What is the name of the diner in Seinfeld?", "answer": "Monk's Cafe", "source": "pop-culture-v1"}
+{"id": "pop-0212", "category": "tv_shows", "question": "What is Jerry's neighbor's name in Seinfeld?", "answer": "Cosmo Kramer", "source": "pop-culture-v1"}
+{"id": "pop-0213", "category": "tv_shows", "question": "What is the show about on Seinfeld?", "answer": "A show about nothing", "source": "pop-culture-v1"}
+{"id": "pop-0214", "category": "tv_shows", "question": "What is Newman's first name in Seinfeld?", "answer": "It is never revealed (only referred to as Newman)", "source": "pop-culture-v1"}
+{"id": "pop-0215", "category": "tv_shows", "question": "What are the names of the main Simpson family members?", "answer": "Homer, Marge, Bart, Lisa, Maggie", "source": "pop-culture-v1"}
+{"id": "pop-0216", "category": "tv_shows", "question": "Who is the voice of Homer Simpson?", "answer": "Dan Castellaneta", "source": "pop-culture-v1"}
+{"id": "pop-0217", "category": "tv_shows", "question": "Who is the voice of Marge Simpson?", "answer": "Julie Kavner", "source": "pop-culture-v1"}
+{"id": "pop-0218", "category": "tv_shows", "question": "Who is the voice of Bart Simpson?", "answer": "Nancy Cartwright", "source": "pop-culture-v1"}
+{"id": "pop-0219", "category": "tv_shows", "question": "Who is the voice of Lisa Simpson?", "answer": "Yeardley Smith", "source": "pop-culture-v1"}
+{"id": "pop-0220", "category": "tv_shows", "question": "Where does The Simpsons take place?", "answer": "Springfield", "source": "pop-culture-v1"}
+{"id": "pop-0221", "category": "tv_shows", "question": "What is Homer's favorite beer in The Simpsons?", "answer": "Duff Beer", "source": "pop-culture-v1"}
+{"id": "pop-0222", "category": "tv_shows", "question": "What is the name of the bar in The Simpsons?", "answer": "Moe's Tavern", "source": "pop-culture-v1"}
+{"id": "pop-0223", "category": "tv_shows", "question": "Who is the bartender at Moe's Tavern in The Simpsons?", "answer": "Moe Szyslak", "source": "pop-culture-v1"}
+{"id": "pop-0224", "category": "tv_shows", "question": "What is the name of the nuclear power plant owner in The Simpsons?", "answer": "Mr. Charles Montgomery Burns", "source": "pop-culture-v1"}
+{"id": "pop-0225", "category": "tv_shows", "question": "What is Homer's catchphrase in The Simpsons?", "answer": "D'oh!", "source": "pop-culture-v1"}
+{"id": "pop-0226", "category": "tv_shows", "question": "What is Bart's catchphrase in The Simpsons?", "answer": "Eat my shorts!", "source": "pop-culture-v1"}
+{"id": "pop-0227", "category": "tv_shows", "question": "How many seasons of The Simpsons are there?", "answer": "35+ (currently airing)", "source": "pop-culture-v1"}
+{"id": "pop-0228", "category": "tv_shows", "question": "Who created The Simpsons?", "answer": "Matt Groening", "source": "pop-culture-v1"}
+{"id": "pop-0229", "category": "tv_shows", "question": "What is the name of the Simpsons' next-door neighbor?", "answer": "Ned Flanders", "source": "pop-culture-v1"}
+{"id": "pop-0230", "category": "tv_shows", "question": "What is the name of the comic book store owner in The Simpsons?", "answer": "Comic Book Guy (Jeff Albertson)", "source": "pop-culture-v1"}
+{"id": "pop-0231", "category": "tv_shows", "question": "What is the name of Springfield's rival town?", "answer": "Shelbyville", "source": "pop-culture-v1"}
+{"id": "pop-0232", "category": "sports", "question": "What NFL team is based in Cardinals?", "answer": "Arizona Cardinals", "source": "pop-culture-v1"}
+{"id": "pop-0233", "category": "sports", "question": "What NFL team is based in Falcons?", "answer": "Atlanta Falcons", "source": "pop-culture-v1"}
+{"id": "pop-0234", "category": "sports", "question": "What NFL team is based in Ravens?", "answer": "Baltimore Ravens", "source": "pop-culture-v1"}
+{"id": "pop-0235", "category": "sports", "question": "What NFL team is based in Bills?", "answer": "Buffalo Bills", "source": "pop-culture-v1"}
+{"id": "pop-0236", "category": "sports", "question": "What NFL team is based in Panthers?", "answer": "Carolina Panthers", "source": "pop-culture-v1"}
+{"id": "pop-0237", "category": "sports", "question": "What NFL team is based in Bears?", "answer": "Chicago Bears", "source": "pop-culture-v1"}
+{"id": "pop-0238", "category": "sports", "question": "What NFL team is based in Bengals?", "answer": "Cincinnati Bengals", "source": "pop-culture-v1"}
+{"id": "pop-0239", "category": "sports", "question": "What NFL team is based in Browns?", "answer": "Cleveland Browns", "source": "pop-culture-v1"}
+{"id": "pop-0240", "category": "sports", "question": "What NFL team is based in Cowboys?", "answer": "Dallas Cowboys", "source": "pop-culture-v1"}
+{"id": "pop-0241", "category": "sports", "question": "What NFL team is based in Broncos?", "answer": "Denver Broncos", "source": "pop-culture-v1"}
+{"id": "pop-0242", "category": "sports", "question": "What NFL team is based in Lions?", "answer": "Detroit Lions", "source": "pop-culture-v1"}
+{"id": "pop-0243", "category": "sports", "question": "What NFL team is based in Packers?", "answer": "Green Bay Packers", "source": "pop-culture-v1"}
+{"id": "pop-0244", "category": "sports", "question": "What NFL team is based in Texans?", "answer": "Houston Texans", "source": "pop-culture-v1"}
+{"id": "pop-0245", "category": "sports", "question": "What NFL team is based in Colts?", "answer": "Indianapolis Colts", "source": "pop-culture-v1"}
+{"id": "pop-0246", "category": "sports", "question": "What NFL team is based in Jaguars?", "answer": "Jacksonville Jaguars", "source": "pop-culture-v1"}
+{"id": "pop-0247", "category": "sports", "question": "What NFL team is based in Chiefs?", "answer": "Kansas City Chiefs", "source": "pop-culture-v1"}
+{"id": "pop-0248", "category": "sports", "question": "What NFL team is based in Raiders?", "answer": "Las Vegas Raiders", "source": "pop-culture-v1"}
+{"id": "pop-0249", "category": "sports", "question": "What NFL team is based in Chargers?", "answer": "Los Angeles Chargers", "source": "pop-culture-v1"}
+{"id": "pop-0250", "category": "sports", "question": "What NFL team is based in Rams?", "answer": "Los Angeles Rams", "source": "pop-culture-v1"}
+{"id": "pop-0251", "category": "sports", "question": "What NFL team is based in Dolphins?", "answer": "Miami Dolphins", "source": "pop-culture-v1"}
+{"id": "pop-0252", "category": "sports", "question": "What NFL team is based in Vikings?", "answer": "Minnesota Vikings", "source": "pop-culture-v1"}
+{"id": "pop-0253", "category": "sports", "question": "What NFL team is based in Patriots?", "answer": "New England Patriots", "source": "pop-culture-v1"}
+{"id": "pop-0254", "category": "sports", "question": "What NFL team is based in Saints?", "answer": "New Orleans Saints", "source": "pop-culture-v1"}
+{"id": "pop-0255", "category": "sports", "question": "What NFL team is based in Giants?", "answer": "New York Giants", "source": "pop-culture-v1"}
+{"id": "pop-0256", "category": "sports", "question": "What NFL team is based in Jets?", "answer": "New York Jets", "source": "pop-culture-v1"}
+{"id": "pop-0257", "category": "sports", "question": "What NFL team is based in Eagles?", "answer": "Philadelphia Eagles", "source": "pop-culture-v1"}
+{"id": "pop-0258", "category": "sports", "question": "What NFL team is based in Steelers?", "answer": "Pittsburgh Steelers", "source": "pop-culture-v1"}
+{"id": "pop-0259", "category": "sports", "question": "What NFL team is based in 49ers?", "answer": "San Francisco 49ers", "source": "pop-culture-v1"}
+{"id": "pop-0260", "category": "sports", "question": "What NFL team is based in Seahawks?", "answer": "Seattle Seahawks", "source": "pop-culture-v1"}
+{"id": "pop-0261", "category": "sports", "question": "What NFL team is based in Buccaneers?", "answer": "Tampa Bay Buccaneers", "source": "pop-culture-v1"}
+{"id": "pop-0262", "category": "sports", "question": "What NFL team is based in Titans?", "answer": "Tennessee Titans", "source": "pop-culture-v1"}
+{"id": "pop-0263", "category": "sports", "question": "What NFL team is based in Commanders?", "answer": "Washington Commanders", "source": "pop-culture-v1"}
+{"id": "pop-0264", "category": "sports", "question": "How many teams are in the NFL?", "answer": "32", "source": "pop-culture-v1"}
+{"id": "pop-0265", "category": "sports", "question": "How many teams are in the NFC?", "answer": "16", "source": "pop-culture-v1"}
+{"id": "pop-0266", "category": "sports", "question": "How many teams are in the AFC?", "answer": "16", "source": "pop-culture-v1"}
+{"id": "pop-0267", "category": "sports", "question": "What are all 32 NFL teams?", "answer": "Arizona Cardinals, Atlanta Falcons, Baltimore Ravens, Buffalo Bills, Carolina Panthers, Chicago Bears, Cincinnati Bengals, Cleveland Browns, Dallas Cowboys, Denver Broncos, Detroit Lions, Green Bay Packers, Houston Texans, Indianapolis Colts, Jacksonville Jaguars, Kansas City Chiefs, Las Vegas Raiders, Los Angeles Chargers, Los Angeles Rams, Miami Dolphins, Minnesota Vikings, New England Patriots, New Orleans Saints, New York Giants, New York Jets, Philadelphia Eagles, Pittsburgh Steelers, San Francisco 49ers, Seattle Seahawks, Tampa Bay Buccaneers, Tennessee Titans, Washington Commanders", "source": "pop-culture-v1"}
+{"id": "pop-0268", "category": "sports", "question": "Who won Super Bowl XXXIX?", "answer": "New England Patriots", "source": "pop-culture-v1"}
+{"id": "pop-0269", "category": "sports", "question": "Who won the Super Bowl in 2004?", "answer": "New England Patriots", "source": "pop-culture-v1"}
+{"id": "pop-0270", "category": "sports", "question": "Who was the 2004 Super Bowl champion?", "answer": "New England Patriots", "source": "pop-culture-v1"}
+{"id": "pop-0271", "category": "sports", "question": "Who won Super Bowl XL?", "answer": "Pittsburgh Steelers", "source": "pop-culture-v1"}
+{"id": "pop-0272", "category": "sports", "question": "Who won the Super Bowl in 2005?", "answer": "Pittsburgh Steelers", "source": "pop-culture-v1"}
+{"id": "pop-0273", "category": "sports", "question": "Who was the 2005 Super Bowl champion?", "answer": "Pittsburgh Steelers", "source": "pop-culture-v1"}
+{"id": "pop-0274", "category": "sports", "question": "Who won Super Bowl XLI?", "answer": "Indianapolis Colts", "source": "pop-culture-v1"}
+{"id": "pop-0275", "category": "sports", "question": "Who won the Super Bowl in 2006?", "answer": "Indianapolis Colts", "source": "pop-culture-v1"}
+{"id": "pop-0276", "category": "sports", "question": "Who was the 2006 Super Bowl champion?", "answer": "Indianapolis Colts", "source": "pop-culture-v1"}
+{"id": "pop-0277", "category": "sports", "question": "Who won Super Bowl XLII?", "answer": "New York Giants", "source": "pop-culture-v1"}
+{"id": "pop-0278", "category": "sports", "question": "Who won the Super Bowl in 2007?", "answer": "New York Giants", "source": "pop-culture-v1"}
+{"id": "pop-0279", "category": "sports", "question": "Who was the 2007 Super Bowl champion?", "answer": "New York Giants", "source": "pop-culture-v1"}
+{"id": "pop-0280", "category": "sports", "question": "Who won Super Bowl XLIII?", "answer": "Pittsburgh Steelers", "source": "pop-culture-v1"}
+{"id": "pop-0281", "category": "sports", "question": "Who won the Super Bowl in 2008?", "answer": "Pittsburgh Steelers", "source": "pop-culture-v1"}
+{"id": "pop-0282", "category": "sports", "question": "Who was the 2008 Super Bowl champion?", "answer": "Pittsburgh Steelers", "source": "pop-culture-v1"}
+{"id": "pop-0283", "category": "sports", "question": "Who won Super Bowl XLIV?", "answer": "New Orleans Saints", "source": "pop-culture-v1"}
+{"id": "pop-0284", "category": "sports", "question": "Who won the Super Bowl in 2009?", "answer": "New Orleans Saints", "source": "pop-culture-v1"}
+{"id": "pop-0285", "category": "sports", "question": "Who was the 2009 Super Bowl champion?", "answer": "New Orleans Saints", "source": "pop-culture-v1"}
+{"id": "pop-0286", "category": "sports", "question": "Who won Super Bowl XLV?", "answer": "Green Bay Packers", "source": "pop-culture-v1"}
+{"id": "pop-0287", "category": "sports", "question": "Who won the Super Bowl in 2010?", "answer": "Green Bay Packers", "source": "pop-culture-v1"}
+{"id": "pop-0288", "category": "sports", "question": "Who was the 2010 Super Bowl champion?", "answer": "Green Bay Packers", "source": "pop-culture-v1"}
+{"id": "pop-0289", "category": "sports", "question": "Who won Super Bowl XLVI?", "answer": "New York Giants", "source": "pop-culture-v1"}
+{"id": "pop-0290", "category": "sports", "question": "Who won the Super Bowl in 2011?", "answer": "New York Giants", "source": "pop-culture-v1"}
+{"id": "pop-0291", "category": "sports", "question": "Who was the 2011 Super Bowl champion?", "answer": "New York Giants", "source": "pop-culture-v1"}
+{"id": "pop-0292", "category": "sports", "question": "Who won Super Bowl XLVII?", "answer": "Baltimore Ravens", "source": "pop-culture-v1"}
+{"id": "pop-0293", "category": "sports", "question": "Who won the Super Bowl in 2012?", "answer": "Baltimore Ravens", "source": "pop-culture-v1"}
+{"id": "pop-0294", "category": "sports", "question": "Who was the 2012 Super Bowl champion?", "answer": "Baltimore Ravens", "source": "pop-culture-v1"}
+{"id": "pop-0295", "category": "sports", "question": "Who won Super Bowl XLVIII?", "answer": "Seattle Seahawks", "source": "pop-culture-v1"}
+{"id": "pop-0296", "category": "sports", "question": "Who won the Super Bowl in 2013?", "answer": "Seattle Seahawks", "source": "pop-culture-v1"}
+{"id": "pop-0297", "category": "sports", "question": "Who was the 2013 Super Bowl champion?", "answer": "Seattle Seahawks", "source": "pop-culture-v1"}
+{"id": "pop-0298", "category": "sports", "question": "Who won Super Bowl XLIX?", "answer": "New England Patriots", "source": "pop-culture-v1"}
+{"id": "pop-0299", "category": "sports", "question": "Who won the Super Bowl in 2014?", "answer": "New England Patriots", "source": "pop-culture-v1"}
+{"id": "pop-0300", "category": "sports", "question": "Who was the 2014 Super Bowl champion?", "answer": "New England Patriots", "source": "pop-culture-v1"}
+{"id": "pop-0301", "category": "sports", "question": "Who won Super Bowl 50?", "answer": "Denver Broncos", "source": "pop-culture-v1"}
+{"id": "pop-0302", "category": "sports", "question": "Who won the Super Bowl in 2015?", "answer": "Denver Broncos", "source": "pop-culture-v1"}
+{"id": "pop-0303", "category": "sports", "question": "Who was the 2015 Super Bowl champion?", "answer": "Denver Broncos", "source": "pop-culture-v1"}
+{"id": "pop-0304", "category": "sports", "question": "Who won Super Bowl LI?", "answer": "New England Patriots", "source": "pop-culture-v1"}
+{"id": "pop-0305", "category": "sports", "question": "Who won the Super Bowl in 2016?", "answer": "New England Patriots", "source": "pop-culture-v1"}
+{"id": "pop-0306", "category": "sports", "question": "Who was the 2016 Super Bowl champion?", "answer": "New England Patriots", "source": "pop-culture-v1"}
+{"id": "pop-0307", "category": "sports", "question": "Who won Super Bowl LII?", "answer": "Philadelphia Eagles", "source": "pop-culture-v1"}
+{"id": "pop-0308", "category": "sports", "question": "Who won the Super Bowl in 2017?", "answer": "Philadelphia Eagles", "source": "pop-culture-v1"}
+{"id": "pop-0309", "category": "sports", "question": "Who was the 2017 Super Bowl champion?", "answer": "Philadelphia Eagles", "source": "pop-culture-v1"}
+{"id": "pop-0310", "category": "sports", "question": "Who won Super Bowl LIII?", "answer": "New England Patriots", "source": "pop-culture-v1"}
+{"id": "pop-0311", "category": "sports", "question": "Who won the Super Bowl in 2018?", "answer": "New England Patriots", "source": "pop-culture-v1"}
+{"id": "pop-0312", "category": "sports", "question": "Who was the 2018 Super Bowl champion?", "answer": "New England Patriots", "source": "pop-culture-v1"}
+{"id": "pop-0313", "category": "sports", "question": "Who won Super Bowl LIV?", "answer": "Kansas City Chiefs", "source": "pop-culture-v1"}
+{"id": "pop-0314", "category": "sports", "question": "Who won the Super Bowl in 2019?", "answer": "Kansas City Chiefs", "source": "pop-culture-v1"}
+{"id": "pop-0315", "category": "sports", "question": "Who was the 2019 Super Bowl champion?", "answer": "Kansas City Chiefs", "source": "pop-culture-v1"}
+{"id": "pop-0316", "category": "sports", "question": "Who won Super Bowl LV?", "answer": "Tampa Bay Buccaneers", "source": "pop-culture-v1"}
+{"id": "pop-0317", "category": "sports", "question": "Who won the Super Bowl in 2020?", "answer": "Tampa Bay Buccaneers", "source": "pop-culture-v1"}
+{"id": "pop-0318", "category": "sports", "question": "Who was the 2020 Super Bowl champion?", "answer": "Tampa Bay Buccaneers", "source": "pop-culture-v1"}
+{"id": "pop-0319", "category": "sports", "question": "Who won Super Bowl LVI?", "answer": "Los Angeles Rams", "source": "pop-culture-v1"}
+{"id": "pop-0320", "category": "sports", "question": "Who won the Super Bowl in 2021?", "answer": "Los Angeles Rams", "source": "pop-culture-v1"}
+{"id": "pop-0321", "category": "sports", "question": "Who was the 2021 Super Bowl champion?", "answer": "Los Angeles Rams", "source": "pop-culture-v1"}
+{"id": "pop-0322", "category": "sports", "question": "Who won Super Bowl LVII?", "answer": "Kansas City Chiefs", "source": "pop-culture-v1"}
+{"id": "pop-0323", "category": "sports", "question": "Who won the Super Bowl in 2022?", "answer": "Kansas City Chiefs", "source": "pop-culture-v1"}
+{"id": "pop-0324", "category": "sports", "question": "Who was the 2022 Super Bowl champion?", "answer": "Kansas City Chiefs", "source": "pop-culture-v1"}
+{"id": "pop-0325", "category": "sports", "question": "Who won Super Bowl LVIII?", "answer": "Kansas City Chiefs", "source": "pop-culture-v1"}
+{"id": "pop-0326", "category": "sports", "question": "Who won the Super Bowl in 2023?", "answer": "Kansas City Chiefs", "source": "pop-culture-v1"}
+{"id": "pop-0327", "category": "sports", "question": "Who was the 2023 Super Bowl champion?", "answer": "Kansas City Chiefs", "source": "pop-culture-v1"}
+{"id": "pop-0328", "category": "sports", "question": "Who won Super Bowl LVIII?", "answer": "Kansas City Chiefs", "source": "pop-culture-v1"}
+{"id": "pop-0329", "category": "sports", "question": "Who won the most recent Super Bowl as of 2024?", "answer": "Kansas City Chiefs (Super Bowl LVIII, 2023 season)", "source": "pop-culture-v1"}
+{"id": "pop-0330", "category": "sports", "question": "Which team has the most Super Bowl wins?", "answer": "Pittsburgh Steelers and New England Patriots (6 each)", "source": "pop-culture-v1"}
+{"id": "pop-0331", "category": "sports", "question": "When is the last time the Minnesota Vikings were in the Super Bowl?", "answer": "Super Bowl XI (1976 season, played January 1977)", "source": "pop-culture-v1"}
+{"id": "pop-0332", "category": "sports", "question": "When is the last time the Vikings were in the NFC Championship?", "answer": "The 2017 season (January 2018), losing to the Philadelphia Eagles", "source": "pop-culture-v1"}
+{"id": "pop-0333", "category": "sports", "question": "When is the last time the Vikings were in the NFC Championship game?", "answer": "The 2017 season (January 2018), losing to the Philadelphia Eagles", "source": "pop-culture-v1"}
+{"id": "pop-0334", "category": "sports", "question": "Have the Vikings ever won the Super Bowl?", "answer": "No, the Minnesota Vikings have never won the Super Bowl", "source": "pop-culture-v1"}
+{"id": "pop-0335", "category": "sports", "question": "How many Super Bowls have the Vikings lost?", "answer": "4 (Super Bowls IV, VIII, IX, XI)", "source": "pop-culture-v1"}
+{"id": "pop-0336", "category": "sports", "question": "When did the Vikings last appear in the NFC Championship?", "answer": "2017 season (January 2018)", "source": "pop-culture-v1"}
+{"id": "pop-0337", "category": "sports", "question": "What is the Minnesota Vikings' all-time record in Super Bowls?", "answer": "0-4 (lost Super Bowls IV, VIII, IX, XI)", "source": "pop-culture-v1"}
+{"id": "pop-0338", "category": "sports", "question": "Which team has the most Super Bowl appearances?", "answer": "New England Patriots (11 appearances)", "source": "pop-culture-v1"}
+{"id": "pop-0339", "category": "sports", "question": "Who is Tom Brady in the NFL?", "answer": "Tom Brady is a former quarterback who played for New England Patriots, Tampa Bay Buccaneers, known for 7 Super Bowl wins, most all-time", "source": "pop-culture-v1"}
+{"id": "pop-0340", "category": "sports", "question": "What position did Tom Brady play in the NFL?", "answer": "quarterback", "source": "pop-culture-v1"}
+{"id": "pop-0341", "category": "sports", "question": "Who is Jerry Rice in the NFL?", "answer": "Jerry Rice is a former wide receiver who played for San Francisco 49ers, Oakland Raiders, Seattle Seahawks, known for all-time receiving yards leader", "source": "pop-culture-v1"}
+{"id": "pop-0342", "category": "sports", "question": "What position did Jerry Rice play in the NFL?", "answer": "wide receiver", "source": "pop-culture-v1"}
+{"id": "pop-0343", "category": "sports", "question": "Who is Peyton Manning in the NFL?", "answer": "Peyton Manning is a former quarterback who played for Indianapolis Colts, Denver Broncos, known for 2 Super Bowl wins, 5 MVP awards", "source": "pop-culture-v1"}
+{"id": "pop-0344", "category": "sports", "question": "What position did Peyton Manning play in the NFL?", "answer": "quarterback", "source": "pop-culture-v1"}
+{"id": "pop-0345", "category": "sports", "question": "Who is Jim Brown in the NFL?", "answer": "Jim Brown is a former running back who played for Cleveland Browns, known for considered one of greatest RBs ever", "source": "pop-culture-v1"}
+{"id": "pop-0346", "category": "sports", "question": "What position did Jim Brown play in the NFL?", "answer": "running back", "source": "pop-culture-v1"}
+{"id": "pop-0347", "category": "sports", "question": "Who is Lawrence Taylor in the NFL?", "answer": "Lawrence Taylor is a former linebacker who played for New York Giants, known for revolutionized the linebacker position", "source": "pop-culture-v1"}
+{"id": "pop-0348", "category": "sports", "question": "What position did Lawrence Taylor play in the NFL?", "answer": "linebacker", "source": "pop-culture-v1"}
+{"id": "pop-0349", "category": "sports", "question": "Who is Joe Montana in the NFL?", "answer": "Joe Montana is a former quarterback who played for San Francisco 49ers, Kansas City Chiefs, known for 4 Super Bowl wins, no interceptions in Super Bowls", "source": "pop-culture-v1"}
+{"id": "pop-0350", "category": "sports", "question": "What position did Joe Montana play in the NFL?", "answer": "quarterback", "source": "pop-culture-v1"}
+{"id": "pop-0351", "category": "sports", "question": "Who is Walter Payton in the NFL?", "answer": "Walter Payton is a former running back who played for Chicago Bears, known for all-time rushing leader at retirement", "source": "pop-culture-v1"}
+{"id": "pop-0352", "category": "sports", "question": "What position did Walter Payton play in the NFL?", "answer": "running back", "source": "pop-culture-v1"}
+{"id": "pop-0353", "category": "sports", "question": "Who is Barry Sanders in the NFL?", "answer": "Barry Sanders is a former running back who played for Detroit Lions, known for one of the most elusive runners in NFL history", "source": "pop-culture-v1"}
+{"id": "pop-0354", "category": "sports", "question": "What position did Barry Sanders play in the NFL?", "answer": "running back", "source": "pop-culture-v1"}
+{"id": "pop-0355", "category": "sports", "question": "Who is Reggie White in the NFL?", "answer": "Reggie White is a former defensive end who played for Philadelphia Eagles, Green Bay Packers, known for all-time sacks leader at retirement", "source": "pop-culture-v1"}
+{"id": "pop-0356", "category": "sports", "question": "What position did Reggie White play in the NFL?", "answer": "defensive end", "source": "pop-culture-v1"}
+{"id": "pop-0357", "category": "sports", "question": "Who is Deion Sanders in the NFL?", "answer": "Deion Sanders is a former cornerback who played for multiple teams, known for only player to play in both a Super Bowl and World Series", "source": "pop-culture-v1"}
+{"id": "pop-0358", "category": "sports", "question": "What position did Deion Sanders play in the NFL?", "answer": "cornerback", "source": "pop-culture-v1"}
+{"id": "pop-0359", "category": "sports", "question": "Who is Patrick Mahomes in the NFL?", "answer": "Patrick Mahomes is a former quarterback who played for Kansas City Chiefs, known for 3 Super Bowl wins, known for no-look passes", "source": "pop-culture-v1"}
+{"id": "pop-0360", "category": "sports", "question": "What position did Patrick Mahomes play in the NFL?", "answer": "quarterback", "source": "pop-culture-v1"}
+{"id": "pop-0361", "category": "sports", "question": "Who is JJ Watt in the NFL?", "answer": "JJ Watt is a former defensive end who played for Houston Texans, Arizona Cardinals, known for 3-time Defensive Player of the Year", "source": "pop-culture-v1"}
+{"id": "pop-0362", "category": "sports", "question": "What position did JJ Watt play in the NFL?", "answer": "defensive end", "source": "pop-culture-v1"}
+{"id": "pop-0363", "category": "sports", "question": "Who is Aaron Rodgers in the NFL?", "answer": "Aaron Rodgers is a former quarterback who played for Green Bay Packers, New York Jets, known for 4 MVP awards, Super Bowl XLV champion", "source": "pop-culture-v1"}
+{"id": "pop-0364", "category": "sports", "question": "What position did Aaron Rodgers play in the NFL?", "answer": "quarterback", "source": "pop-culture-v1"}
+{"id": "pop-0365", "category": "sports", "question": "Who is John Elway in the NFL?", "answer": "John Elway is a former quarterback who played for Denver Broncos, known for 2 Super Bowl wins, 5 AFC championships", "source": "pop-culture-v1"}
+{"id": "pop-0366", "category": "sports", "question": "What position did John Elway play in the NFL?", "answer": "quarterback", "source": "pop-culture-v1"}
+{"id": "pop-0367", "category": "sports", "question": "Who is Brett Favre in the NFL?", "answer": "Brett Favre is a former quarterback who played for Green Bay Packers, New York Jets, Minnesota Vikings, known for 3 MVP awards, Super Bowl XXXI champion", "source": "pop-culture-v1"}
+{"id": "pop-0368", "category": "sports", "question": "What position did Brett Favre play in the NFL?", "answer": "quarterback", "source": "pop-culture-v1"}
+{"id": "pop-0369", "category": "sports", "question": "Who is the all-time leading rusher in NFL history?", "answer": "Emmitt Smith", "source": "pop-culture-v1"}
+{"id": "pop-0370", "category": "sports", "question": "Who is the all-time leading passer in NFL history?", "answer": "Tom Brady (rushing and TD leader also Brady)", "source": "pop-culture-v1"}
+{"id": "pop-0371", "category": "sports", "question": "How many teams are in the NBA?", "answer": "30", "source": "pop-culture-v1"}
+{"id": "pop-0372", "category": "sports", "question": "What NBA team is from Hawks?", "answer": "Atlanta Hawks", "source": "pop-culture-v1"}
+{"id": "pop-0373", "category": "sports", "question": "What NBA team is from Celtics?", "answer": "Boston Celtics", "source": "pop-culture-v1"}
+{"id": "pop-0374", "category": "sports", "question": "What NBA team is from Nets?", "answer": "Brooklyn Nets", "source": "pop-culture-v1"}
+{"id": "pop-0375", "category": "sports", "question": "What NBA team is from Hornets?", "answer": "Charlotte Hornets", "source": "pop-culture-v1"}
+{"id": "pop-0376", "category": "sports", "question": "What NBA team is from Bulls?", "answer": "Chicago Bulls", "source": "pop-culture-v1"}
+{"id": "pop-0377", "category": "sports", "question": "What NBA team is from Cavaliers?", "answer": "Cleveland Cavaliers", "source": "pop-culture-v1"}
+{"id": "pop-0378", "category": "sports", "question": "What NBA team is from Mavericks?", "answer": "Dallas Mavericks", "source": "pop-culture-v1"}
+{"id": "pop-0379", "category": "sports", "question": "What NBA team is from Nuggets?", "answer": "Denver Nuggets", "source": "pop-culture-v1"}
+{"id": "pop-0380", "category": "sports", "question": "What NBA team is from Pistons?", "answer": "Detroit Pistons", "source": "pop-culture-v1"}
+{"id": "pop-0381", "category": "sports", "question": "What NBA team is from Warriors?", "answer": "Golden State Warriors", "source": "pop-culture-v1"}
+{"id": "pop-0382", "category": "sports", "question": "Who won the NBA championship in 2023-24?", "answer": "Boston Celtics", "source": "pop-culture-v1"}
+{"id": "pop-0383", "category": "sports", "question": "Who won the NBA championship in 2022-23?", "answer": "Denver Nuggets", "source": "pop-culture-v1"}
+{"id": "pop-0384", "category": "sports", "question": "Who won the NBA championship in 2021-22?", "answer": "Golden State Warriors", "source": "pop-culture-v1"}
+{"id": "pop-0385", "category": "sports", "question": "Who won the NBA championship in 2020-21?", "answer": "Milwaukee Bucks", "source": "pop-culture-v1"}
+{"id": "pop-0386", "category": "sports", "question": "Who won the NBA championship in 2019-20?", "answer": "Los Angeles Lakers", "source": "pop-culture-v1"}
+{"id": "pop-0387", "category": "sports", "question": "Who won the NBA championship in 2018-19?", "answer": "Toronto Raptors", "source": "pop-culture-v1"}
+{"id": "pop-0388", "category": "sports", "question": "Who won the NBA championship in 2017-18?", "answer": "Golden State Warriors", "source": "pop-culture-v1"}
+{"id": "pop-0389", "category": "sports", "question": "Who won the NBA championship in 2016-17?", "answer": "Golden State Warriors", "source": "pop-culture-v1"}
+{"id": "pop-0390", "category": "sports", "question": "Who won the NBA championship in 2015-16?", "answer": "Cleveland Cavaliers", "source": "pop-culture-v1"}
+{"id": "pop-0391", "category": "sports", "question": "Who won the NBA championship in 2014-15?", "answer": "Golden State Warriors", "source": "pop-culture-v1"}
+{"id": "pop-0392", "category": "sports", "question": "Who is considered the greatest basketball player of all time?", "answer": "Michael Jordan (often debated with LeBron James)", "source": "pop-culture-v1"}
+{"id": "pop-0393", "category": "sports", "question": "How many NBA championships did Michael Jordan win?", "answer": "6", "source": "pop-culture-v1"}
+{"id": "pop-0394", "category": "sports", "question": "Who is the all-time leading scorer in NBA history?", "answer": "LeBron James", "source": "pop-culture-v1"}
+{"id": "pop-0395", "category": "sports", "question": "How many NBA championships has LeBron James won?", "answer": "4", "source": "pop-culture-v1"}
+{"id": "pop-0396", "category": "sports", "question": "Who is the all-time leading scorer for a single game in NBA?", "answer": "Wilt Chamberlain (100 points)", "source": "pop-culture-v1"}
+{"id": "pop-0397", "category": "sports", "question": "Who has the most NBA championships all-time?", "answer": "Bill Russell (11 championships)", "source": "pop-culture-v1"}
+{"id": "pop-0398", "category": "sports", "question": "Which NBA team has the most championships?", "answer": "Boston Celtics (18)", "source": "pop-culture-v1"}
+{"id": "pop-0399", "category": "sports", "question": "Who are the members of the Dream Team?", "answer": "Michael Jordan, Magic Johnson, Larry Bird, Charles Barkley, Patrick Ewing, David Robinson, Karl Malone, John Stockton, Chris Mullin, Clyde Drexler, Scottie Pippen, Christian Laettner", "source": "pop-culture-v1"}
+{"id": "pop-0400", "category": "sports", "question": "Who won the NBA MVP award in 2023-24?", "answer": "Nikola Jokic", "source": "pop-culture-v1"}
+{"id": "pop-0401", "category": "sports", "question": "Who is known as King James in the NBA?", "answer": "LeBron James", "source": "pop-culture-v1"}
+{"id": "pop-0402", "category": "sports", "question": "Who is known as the Black Mamba in the NBA?", "answer": "Kobe Bryant", "source": "pop-culture-v1"}
+{"id": "pop-0403", "category": "sports", "question": "Who is known as the Greek Freak in the NBA?", "answer": "Giannis Antetokounmpo", "source": "pop-culture-v1"}
+{"id": "pop-0404", "category": "sports", "question": "Who is known as Chef Curry in the NBA?", "answer": "Stephen Curry", "source": "pop-culture-v1"}
+{"id": "pop-0405", "category": "sports", "question": "Who has the most 3-pointers in NBA history?", "answer": "Stephen Curry", "source": "pop-culture-v1"}
+{"id": "pop-0406", "category": "movies", "question": "What was the first Marvel Cinematic Universe movie?", "answer": "Iron Man (2008)", "source": "pop-culture-v1"}
+{"id": "pop-0407", "category": "movies", "question": "What is the highest-grossing Marvel movie?", "answer": "Avengers: Endgame", "source": "pop-culture-v1"}
+{"id": "pop-0408", "category": "movies", "question": "Who played Iron Man in the MCU?", "answer": "Robert Downey Jr.", "source": "pop-culture-v1"}
+{"id": "pop-0409", "category": "movies", "question": "Who played Captain America in the MCU?", "answer": "Chris Evans", "source": "pop-culture-v1"}
+{"id": "pop-0410", "category": "movies", "question": "Who played Thor in the MCU?", "answer": "Chris Hemsworth", "source": "pop-culture-v1"}
+{"id": "pop-0411", "category": "movies", "question": "Who played Black Widow in the MCU?", "answer": "Scarlett Johansson", "source": "pop-culture-v1"}
+{"id": "pop-0412", "category": "movies", "question": "Who played the Hulk in the MCU?", "answer": "Mark Ruffalo", "source": "pop-culture-v1"}
+{"id": "pop-0413", "category": "movies", "question": "Who played Thanos in the MCU?", "answer": "Josh Brolin", "source": "pop-culture-v1"}
+{"id": "pop-0414", "category": "movies", "question": "What is the Infinity Gauntlet in the MCU?", "answer": "A device that holds the six Infinity Stones", "source": "pop-culture-v1"}
+{"id": "pop-0415", "category": "movies", "question": "What are the six Infinity Stones in the MCU?", "answer": "Space, Mind, Reality, Power, Time, Soul", "source": "pop-culture-v1"}
+{"id": "pop-0416", "category": "movies", "question": "What is the name of the third Avengers movie?", "answer": "Avengers: Infinity War", "source": "pop-culture-v1"}
+{"id": "pop-0417", "category": "movies", "question": "What is the name of the fourth Avengers movie?", "answer": "Avengers: Endgame", "source": "pop-culture-v1"}
+{"id": "pop-0418", "category": "movies", "question": "Who is the main villain in Avengers: Infinity War?", "answer": "Thanos", "source": "pop-culture-v1"}
+{"id": "pop-0419", "category": "movies", "question": "What is the Snap called in Avengers: Infinity War?", "answer": "The Blip or The Snap", "source": "pop-culture-v1"}
+{"id": "pop-0420", "category": "movies", "question": "Who directed the first Iron Man movie?", "answer": "Jon Favreau", "source": "pop-culture-v1"}
+{"id": "pop-0421", "category": "movies", "question": "What is the name of Wakanda's king in Black Panther?", "answer": "T'Challa", "source": "pop-culture-v1"}
+{"id": "pop-0422", "category": "movies", "question": "Who played Black Panther in the MCU?", "answer": "Chadwick Boseman", "source": "pop-culture-v1"}
+{"id": "pop-0423", "category": "movies", "question": "What is the fictional metal in Wakanda called?", "answer": "Vibranium", "source": "pop-culture-v1"}
+{"id": "pop-0424", "category": "movies", "question": "Who is Spider-Man in the MCU?", "answer": "Tom Holland", "source": "pop-culture-v1"}
+{"id": "pop-0425", "category": "movies", "question": "What is the name of the magical art in Doctor Strange?", "answer": "The Mystic Arts", "source": "pop-culture-v1"}
+{"id": "pop-0426", "category": "movies", "question": "Who played Doctor Strange in the MCU?", "answer": "Benedict Cumberbatch", "source": "pop-culture-v1"}
+{"id": "pop-0427", "category": "movies", "question": "Who is the god of mischief in the MCU?", "answer": "Loki", "source": "pop-culture-v1"}
+{"id": "pop-0428", "category": "movies", "question": "Who played Loki in the MCU?", "answer": "Tom Hiddleston", "source": "pop-culture-v1"}
+{"id": "pop-0429", "category": "movies", "question": "What are the Avengers?", "answer": "A team of superheroes formed by Nick Fury to protect Earth", "source": "pop-culture-v1"}
+{"id": "pop-0430", "category": "movies", "question": "Who is the director of S.H.I.E.L.D. in the MCU?", "answer": "Nick Fury", "source": "pop-culture-v1"}
+{"id": "pop-0431", "category": "movies", "question": "Who played Nick Fury in the MCU?", "answer": "Samuel L. Jackson", "source": "pop-culture-v1"}
+{"id": "pop-0432", "category": "movies", "question": "What is the name of the Guardians of the Galaxy team leader?", "answer": "Star-Lord (Peter Quill)", "source": "pop-culture-v1"}
+{"id": "pop-0433", "category": "movies", "question": "Who plays Star-Lord in the MCU?", "answer": "Chris Pratt", "source": "pop-culture-v1"}
+{"id": "pop-0434", "category": "movies", "question": "How many MCU movies are there as of 2024?", "answer": "33", "source": "pop-culture-v1"}
+{"id": "pop-0435", "category": "movies", "question": "What is the first Avengers movie called?", "answer": "The Avengers (2012)", "source": "pop-culture-v1"}
+{"id": "pop-0436", "category": "movies", "question": "Who is the protagonist of Captain Marvel?", "answer": "Carol Danvers", "source": "pop-culture-v1"}
+{"id": "pop-0437", "category": "movies", "question": "Who plays Captain Marvel in the MCU?", "answer": "Brie Larson", "source": "pop-culture-v1"}
+{"id": "pop-0438", "category": "movies", "question": "What is the name of the Nova Corps in the MCU?", "answer": "Nova Corps (from Xandar)", "source": "pop-culture-v1"}
+{"id": "pop-0439", "category": "movies", "question": "Who made the Infinity Gauntlet in the comics?", "answer": "Eitri the Dwarf King", "source": "pop-culture-v1"}
+{"id": "pop-0440", "category": "movies", "question": "What is the first Star Wars movie released?", "answer": "Star Wars: Episode IV - A New Hope (1977)", "source": "pop-culture-v1"}
+{"id": "pop-0441", "category": "movies", "question": "What is the original Star Wars trilogy?", "answer": "A New Hope, The Empire Strikes Back, Return of the Jedi", "source": "pop-culture-v1"}
+{"id": "pop-0442", "category": "movies", "question": "What is the prequel Star Wars trilogy?", "answer": "The Phantom Menace, Attack of the Clones, Revenge of the Sith", "source": "pop-culture-v1"}
+{"id": "pop-0443", "category": "movies", "question": "What is the sequel Star Wars trilogy?", "answer": "The Force Awakens, The Last Jedi, The Rise of Skywalker", "source": "pop-culture-v1"}
+{"id": "pop-0444", "category": "movies", "question": "Who created Star Wars?", "answer": "George Lucas", "source": "pop-culture-v1"}
+{"id": "pop-0445", "category": "movies", "question": "Who is the main villain of the original Star Wars trilogy?", "answer": "Darth Vader", "source": "pop-culture-v1"}
+{"id": "pop-0446", "category": "movies", "question": "Who is Anakin Skywalker in Star Wars?", "answer": "The Chosen One who becomes Darth Vader", "source": "pop-culture-v1"}
+{"id": "pop-0447", "category": "movies", "question": "Who directed Star Wars: A New Hope?", "answer": "George Lucas", "source": "pop-culture-v1"}
+{"id": "pop-0448", "category": "movies", "question": "Who directed Star Wars: The Empire Strikes Back?", "answer": "Irvin Kershner", "source": "pop-culture-v1"}
+{"id": "pop-0449", "category": "movies", "question": "Who played Luke Skywalker?", "answer": "Mark Hamill", "source": "pop-culture-v1"}
+{"id": "pop-0450", "category": "movies", "question": "Who played Princess Leia?", "answer": "Carrie Fisher", "source": "pop-culture-v1"}
+{"id": "pop-0451", "category": "movies", "question": "Who played Han Solo?", "answer": "Harrison Ford", "source": "pop-culture-v1"}
+{"id": "pop-0452", "category": "movies", "question": "What is the name of Han Solo's ship?", "answer": "Millennium Falcon", "source": "pop-culture-v1"}
+{"id": "pop-0453", "category": "movies", "question": "What is the name of Luke's home planet in Star Wars?", "answer": "Tatooine", "source": "pop-culture-v1"}
+{"id": "pop-0454", "category": "movies", "question": "What is the weapon of a Jedi?", "answer": "Lightsaber", "source": "pop-culture-v1"}
+{"id": "pop-0455", "category": "movies", "question": "What is the name of the evil empire in Star Wars?", "answer": "The Galactic Empire", "source": "pop-culture-v1"}
+{"id": "pop-0456", "category": "movies", "question": "Who is the Emperor in Star Wars?", "answer": "Emperor Palpatine (Darth Sidious)", "source": "pop-culture-v1"}
+{"id": "pop-0457", "category": "movies", "question": "What is the Force in Star Wars?", "answer": "A mystical energy field that connects all living things in the universe", "source": "pop-culture-v1"}
+{"id": "pop-0458", "category": "movies", "question": "Who was Anakin Skywalker's master?", "answer": "Obi-Wan Kenobi", "source": "pop-culture-v1"}
+{"id": "pop-0459", "category": "movies", "question": "Who played Obi-Wan Kenobi?", "answer": "Alec Guinness (original), Ewan McGregor (prequel)", "source": "pop-culture-v1"}
+{"id": "pop-0460", "category": "movies", "question": "What is the name of the Rebel base on Hoth?", "answer": "Echo Base", "source": "pop-culture-v1"}
+{"id": "pop-0461", "category": "movies", "question": "What is the name of the bounty hunter in Star Wars?", "answer": "Boba Fett", "source": "pop-culture-v1"}
+{"id": "pop-0462", "category": "movies", "question": "Who is Yoda in Star Wars?", "answer": "A wise Jedi Master who trained Luke", "source": "pop-culture-v1"}
+{"id": "pop-0463", "category": "movies", "question": "What is Mando's real name in The Mandalorian?", "answer": "Din Djarin", "source": "pop-culture-v1"}
+{"id": "pop-0464", "category": "movies", "question": "What is Grogu in The Mandalorian?", "answer": "The Child (nicknamed Baby Yoda)", "source": "pop-culture-v1"}
+{"id": "pop-0465", "category": "movies", "question": "Who created The Mandalorian?", "answer": "Jon Favreau", "source": "pop-culture-v1"}
+{"id": "pop-0466", "category": "movies", "question": "What is the name of the droid in Star Wars?", "answer": "R2-D2", "source": "pop-culture-v1"}
+{"id": "pop-0467", "category": "movies", "question": "What is the protocol droid's name in Star Wars?", "answer": "C-3PO", "source": "pop-culture-v1"}
+{"id": "pop-0468", "category": "movies", "question": "What is Kylo Ren's real name in Star Wars?", "answer": "Ben Solo", "source": "pop-culture-v1"}
+{"id": "pop-0469", "category": "movies", "question": "Who plays Kylo Ren?", "answer": "Adam Driver", "source": "pop-culture-v1"}
+{"id": "pop-0470", "category": "movies", "question": "What is the name of the cantina in Mos Eisley?", "answer": "Chalmun's Spaceport Cantina", "source": "pop-culture-v1"}
+{"id": "pop-0471", "category": "movies", "question": "What is the highest-grossing film of all time?", "answer": "Avatar (2009)", "source": "pop-culture-v1"}
+{"id": "pop-0472", "category": "movies", "question": "What is the second highest-grossing film of all time?", "answer": "Avengers: Endgame (2019)", "source": "pop-culture-v1"}
+{"id": "pop-0473", "category": "movies", "question": "What is the third highest-grossing film of all time?", "answer": "Avatar: The Way of Water (2022)", "source": "pop-culture-v1"}
+{"id": "pop-0474", "category": "movies", "question": "What is the fourth highest-grossing film of all time?", "answer": "Titanic (1997)", "source": "pop-culture-v1"}
+{"id": "pop-0475", "category": "movies", "question": "What is the fifth highest-grossing film of all time?", "answer": "Star Wars: The Force Awakens (2015)", "source": "pop-culture-v1"}
+{"id": "pop-0476", "category": "movies", "question": "Who directed Avatar?", "answer": "James Cameron", "source": "pop-culture-v1"}
+{"id": "pop-0477", "category": "movies", "question": "Who directed Titanic?", "answer": "James Cameron", "source": "pop-culture-v1"}
+{"id": "pop-0478", "category": "movies", "question": "Who directed the first Jurassic Park?", "answer": "Steven Spielberg", "source": "pop-culture-v1"}
+{"id": "pop-0479", "category": "movies", "question": "Who directed Jaws?", "answer": "Steven Spielberg", "source": "pop-culture-v1"}
+{"id": "pop-0480", "category": "movies", "question": "Who directed Pulp Fiction?", "answer": "Quentin Tarantino", "source": "pop-culture-v1"}
+{"id": "pop-0481", "category": "movies", "question": "Who directed The Dark Knight?", "answer": "Christopher Nolan", "source": "pop-culture-v1"}
+{"id": "pop-0482", "category": "movies", "question": "Who directed Inception?", "answer": "Christopher Nolan", "source": "pop-culture-v1"}
+{"id": "pop-0483", "category": "movies", "question": "Who directed Schindler's List?", "answer": "Steven Spielberg", "source": "pop-culture-v1"}
+{"id": "pop-0484", "category": "movies", "question": "Who directed The Godfather?", "answer": "Francis Ford Coppola", "source": "pop-culture-v1"}
+{"id": "pop-0485", "category": "movies", "question": "Who directed E.T. the Extra-Terrestrial?", "answer": "Steven Spielberg", "source": "pop-culture-v1"}
+{"id": "pop-0486", "category": "movies", "question": "What is the highest-grossing animated film of all time?", "answer": "Frozen II (2019)", "source": "pop-culture-v1"}
+{"id": "pop-0487", "category": "movies", "question": "What is the highest-grossing R-rated film of all time?", "answer": "Joker (2019)", "source": "pop-culture-v1"}
+{"id": "pop-0488", "category": "movies", "question": "Who directed Joker?", "answer": "Todd Phillips", "source": "pop-culture-v1"}
+{"id": "pop-0489", "category": "movies", "question": "Who played the Joker in The Dark Knight?", "answer": "Heath Ledger", "source": "pop-culture-v1"}
+{"id": "pop-0490", "category": "movies", "question": "Who played the Joker in Joker (2019)?", "answer": "Joaquin Phoenix", "source": "pop-culture-v1"}
+{"id": "pop-0491", "category": "movies", "question": "What is the name of James Bond's code number?", "answer": "007", "source": "pop-culture-v1"}
+{"id": "pop-0492", "category": "movies", "question": "Who created James Bond?", "answer": "Ian Fleming", "source": "pop-culture-v1"}
+{"id": "pop-0493", "category": "movies", "question": "Who is the voice of Woody in Toy Story?", "answer": "Tom Hanks", "source": "pop-culture-v1"}
+{"id": "pop-0494", "category": "movies", "question": "Who is the voice of Buzz Lightyear in Toy Story?", "answer": "Tim Allen", "source": "pop-culture-v1"}
+{"id": "pop-0495", "category": "movies", "question": "Who directed Toy Story?", "answer": "John Lasseter", "source": "pop-culture-v1"}
+{"id": "pop-0496", "category": "movies", "question": "What was the first Pixar movie?", "answer": "Toy Story (1995)", "source": "pop-culture-v1"}
+{"id": "pop-0497", "category": "movies", "question": "Who directed The Matrix?", "answer": "The Wachowskis", "source": "pop-culture-v1"}
+{"id": "pop-0498", "category": "music", "question": "Who is known as the King of Pop?", "answer": "Michael Jackson", "source": "pop-culture-v1"}
+{"id": "pop-0499", "category": "music", "question": "Who is known as the King of Rock and Roll?", "answer": "Elvis Presley", "source": "pop-culture-v1"}
+{"id": "pop-0500", "category": "music", "question": "Who is known as the Queen of Pop?", "answer": "Madonna", "source": "pop-culture-v1"}
+{"id": "pop-0501", "category": "music", "question": "Who is known as the Queen of Soul?", "answer": "Aretha Franklin", "source": "pop-culture-v1"}
+{"id": "pop-0502", "category": "music", "question": "Who is known as the King of Rock?", "answer": "Chuck Berry", "source": "pop-culture-v1"}
+{"id": "pop-0503", "category": "music", "question": "Who is the best-selling music artist of all time?", "answer": "The Beatles", "source": "pop-culture-v1"}
+{"id": "pop-0504", "category": "music", "question": "Who is the best-selling solo artist of all time?", "answer": "Elvis Presley", "source": "pop-culture-v1"}
+{"id": "pop-0505", "category": "music", "question": "Who are the members of The Beatles?", "answer": "John Lennon, Paul McCartney, George Harrison, Ringo Starr", "source": "pop-culture-v1"}
+{"id": "pop-0506", "category": "music", "question": "Who is the best-selling female artist of all time?", "answer": "Madonna", "source": "pop-culture-v1"}
+{"id": "pop-0507", "category": "music", "question": "What is the best-selling album of all time?", "answer": "Thriller by Michael Jackson", "source": "pop-culture-v1"}
+{"id": "pop-0508", "category": "music", "question": "How many Grammy Awards has Beyonce won?", "answer": "32 (most of any artist)", "source": "pop-culture-v1"}
+{"id": "pop-0509", "category": "music", "question": "How many Grammy Awards has Taylor Swift won?", "answer": "14", "source": "pop-culture-v1"}
+{"id": "pop-0510", "category": "music", "question": "Who has won the most Grammy Awards?", "answer": "Beyonce (32)", "source": "pop-culture-v1"}
+{"id": "pop-0511", "category": "music", "question": "Who is the leader of the band Queen?", "answer": "Freddie Mercury", "source": "pop-culture-v1"}
+{"id": "pop-0512", "category": "music", "question": "What are the names of the members of Queen?", "answer": "Freddie Mercury, Brian May, John Deacon, Roger Taylor", "source": "pop-culture-v1"}
+{"id": "pop-0513", "category": "music", "question": "Who is the lead singer of Nirvana?", "answer": "Kurt Cobain", "source": "pop-culture-v1"}
+{"id": "pop-0514", "category": "music", "question": "Who is the lead singer of U2?", "answer": "Bono", "source": "pop-culture-v1"}
+{"id": "pop-0515", "category": "music", "question": "Who is the lead singer of The Rolling Stones?", "answer": "Mick Jagger", "source": "pop-culture-v1"}
+{"id": "pop-0516", "category": "music", "question": "Who is the lead singer of Led Zeppelin?", "answer": "Robert Plant", "source": "pop-culture-v1"}
+{"id": "pop-0517", "category": "music", "question": "What band released the album Abbey Road?", "answer": "The Beatles", "source": "pop-culture-v1"}
+{"id": "pop-0518", "category": "music", "question": "What band released the album The Dark Side of the Moon?", "answer": "Pink Floyd", "source": "pop-culture-v1"}
+{"id": "pop-0519", "category": "music", "question": "What band released the album Back in Black?", "answer": "AC/DC", "source": "pop-culture-v1"}
+{"id": "pop-0520", "category": "music", "question": "Who sang Bohemian Rhapsody?", "answer": "Queen", "source": "pop-culture-v1"}
+{"id": "pop-0521", "category": "music", "question": "Who sang Like a Rolling Stone?", "answer": "Bob Dylan", "source": "pop-culture-v1"}
+{"id": "pop-0522", "category": "music", "question": "Who sang Respect?", "answer": "Aretha Franklin", "source": "pop-culture-v1"}
+{"id": "pop-0523", "category": "music", "question": "Who sang Smells Like Teen Spirit?", "answer": "Nirvana", "source": "pop-culture-v1"}
+{"id": "pop-0524", "category": "music", "question": "Who sang Billie Jean?", "answer": "Michael Jackson", "source": "pop-culture-v1"}
+{"id": "pop-0525", "category": "music", "question": "Who sang Like a Virgin?", "answer": "Madonna", "source": "pop-culture-v1"}
+{"id": "pop-0526", "category": "music", "question": "Who sang I Will Always Love You?", "answer": "Whitney Houston", "source": "pop-culture-v1"}
+{"id": "pop-0527", "category": "music", "question": "Who sang Rolling in the Deep?", "answer": "Adele", "source": "pop-culture-v1"}
+{"id": "pop-0528", "category": "music", "question": "Who sang Bad Guy?", "answer": "Billie Eilish", "source": "pop-culture-v1"}
+{"id": "pop-0529", "category": "music", "question": "Who sang Shake It Off?", "answer": "Taylor Swift", "source": "pop-culture-v1"}
+{"id": "pop-0530", "category": "music", "question": "Who sang Blinding Lights?", "answer": "The Weeknd", "source": "pop-culture-v1"}
+{"id": "pop-0531", "category": "music", "question": "Who sang Shape of You?", "answer": "Ed Sheeran", "source": "pop-culture-v1"}
+{"id": "pop-0532", "category": "music", "question": "Who sang Uptown Funk?", "answer": "Mark Ronson featuring Bruno Mars", "source": "pop-culture-v1"}
+{"id": "pop-0533", "category": "music", "question": "Who sang Happy?", "answer": "Pharrell Williams", "source": "pop-culture-v1"}
+{"id": "pop-0534", "category": "music", "question": "Who sang Old Town Road?", "answer": "Lil Nas X", "source": "pop-culture-v1"}
+{"id": "pop-0535", "category": "music", "question": "Who sang Despacito?", "answer": "Luis Fonsi featuring Daddy Yankee", "source": "pop-culture-v1"}
+{"id": "pop-0536", "category": "music", "question": "Who sang Someone Like You?", "answer": "Adele", "source": "pop-culture-v1"}
+{"id": "pop-0537", "category": "music", "question": "Who sang Umbrella?", "answer": "Rihanna", "source": "pop-culture-v1"}
+{"id": "pop-0538", "category": "music", "question": "Who sang Single Ladies?", "answer": "Beyonce", "source": "pop-culture-v1"}
+{"id": "pop-0539", "category": "music", "question": "Who is the best-selling female artist of the 21st century?", "answer": "Taylor Swift", "source": "pop-culture-v1"}
+{"id": "pop-0540", "category": "music", "question": "Which rapper has the most Grammy Awards?", "answer": "Jay-Z (24)", "source": "pop-culture-v1"}
+{"id": "pop-0541", "category": "music", "question": "Who sang Lose Yourself?", "answer": "Eminem", "source": "pop-culture-v1"}
+{"id": "pop-0542", "category": "music", "question": "Who sang God's Plan?", "answer": "Drake", "source": "pop-culture-v1"}
+{"id": "pop-0543", "category": "music", "question": "Who sang HUMBLE?", "answer": "Kendrick Lamar", "source": "pop-culture-v1"}
+{"id": "pop-0544", "category": "music", "question": "What is the best-selling album by a female artist?", "answer": "21 by Adele", "source": "pop-culture-v1"}
+{"id": "pop-0545", "category": "music", "question": "What is the best-selling album of the 21st century?", "answer": "21 by Adele", "source": "pop-culture-v1"}
+{"id": "pop-0546", "category": "music", "question": "Who is the most-streamed artist on Spotify?", "answer": "Drake", "source": "pop-culture-v1"}
+{"id": "pop-0547", "category": "music", "question": "Who has the most number-one hits on the Billboard Hot 100?", "answer": "The Beatles (20)", "source": "pop-culture-v1"}
+{"id": "pop-0548", "category": "science", "question": "What is the largest planet in our solar system?", "answer": "Jupiter", "source": "pop-culture-v1"}
+{"id": "pop-0549", "category": "science", "question": "What is the smallest planet in our solar system?", "answer": "Mercury", "source": "pop-culture-v1"}
+{"id": "pop-0550", "category": "science", "question": "What is the hottest planet in our solar system?", "answer": "Venus", "source": "pop-culture-v1"}
+{"id": "pop-0551", "category": "science", "question": "What is the coldest planet in our solar system?", "answer": "Neptune", "source": "pop-culture-v1"}
+{"id": "pop-0552", "category": "science", "question": "What is the farthest planet from the Sun?", "answer": "Neptune", "source": "pop-culture-v1"}
+{"id": "pop-0553", "category": "science", "question": "What is the closest planet to the Sun?", "answer": "Mercury", "source": "pop-culture-v1"}
+{"id": "pop-0554", "category": "science", "question": "What are the planets in order from the Sun?", "answer": "Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune", "source": "pop-culture-v1"}
+{"id": "pop-0555", "category": "science", "question": "How many planets are in the solar system?", "answer": "8", "source": "pop-culture-v1"}
+{"id": "pop-0556", "category": "science", "question": "What is the largest moon of Saturn?", "answer": "Titan", "source": "pop-culture-v1"}
+{"id": "pop-0557", "category": "science", "question": "What is the largest moon of Jupiter?", "answer": "Ganymede", "source": "pop-culture-v1"}
+{"id": "pop-0558", "category": "science", "question": "What is the Earth's largest moon called?", "answer": "The Moon (Luna)", "source": "pop-culture-v1"}
+{"id": "pop-0559", "category": "science", "question": "What is the chemical symbol for water?", "answer": "H2O", "source": "pop-culture-v1"}
+{"id": "pop-0560", "category": "science", "question": "What is the chemical symbol for carbon dioxide?", "answer": "CO2", "source": "pop-culture-v1"}
+{"id": "pop-0561", "category": "science", "question": "What is the chemical symbol for oxygen gas?", "answer": "O2", "source": "pop-culture-v1"}
+{"id": "pop-0562", "category": "science", "question": "What is the chemical symbol for gold?", "answer": "Au", "source": "pop-culture-v1"}
+{"id": "pop-0563", "category": "science", "question": "What is the chemical symbol for silver?", "answer": "Ag", "source": "pop-culture-v1"}
+{"id": "pop-0564", "category": "science", "question": "What is the chemical symbol for iron?", "answer": "Fe", "source": "pop-culture-v1"}
+{"id": "pop-0565", "category": "science", "question": "What is the chemical symbol for sodium?", "answer": "Na", "source": "pop-culture-v1"}
+{"id": "pop-0566", "category": "science", "question": "What is the chemical symbol for potassium?", "answer": "K", "source": "pop-culture-v1"}
+{"id": "pop-0567", "category": "science", "question": "What is the chemical symbol for chlorine?", "answer": "Cl", "source": "pop-culture-v1"}
+{"id": "pop-0568", "category": "science", "question": "What is the chemical symbol for calcium?", "answer": "Ca", "source": "pop-culture-v1"}
+{"id": "pop-0569", "category": "science", "question": "What is the chemical symbol for lead?", "answer": "Pb", "source": "pop-culture-v1"}
+{"id": "pop-0570", "category": "science", "question": "What is the chemical symbol for mercury?", "answer": "Hg", "source": "pop-culture-v1"}
+{"id": "pop-0571", "category": "science", "question": "What is the lightest element?", "answer": "Hydrogen", "source": "pop-culture-v1"}
+{"id": "pop-0572", "category": "science", "question": "What is the heaviest naturally occurring element?", "answer": "Uranium", "source": "pop-culture-v1"}
+{"id": "pop-0573", "category": "science", "question": "What is the most abundant element in the universe?", "answer": "Hydrogen", "source": "pop-culture-v1"}
+{"id": "pop-0574", "category": "science", "question": "What is the most abundant element in the Earth's crust?", "answer": "Oxygen", "source": "pop-culture-v1"}
+{"id": "pop-0575", "category": "science", "question": "What is the most abundant element in the Earth's atmosphere?", "answer": "Nitrogen", "source": "pop-culture-v1"}
+{"id": "pop-0576", "category": "science", "question": "What is the atomic number of carbon?", "answer": "6", "source": "pop-culture-v1"}
+{"id": "pop-0577", "category": "science", "question": "What is the atomic number of hydrogen?", "answer": "1", "source": "pop-culture-v1"}
+{"id": "pop-0578", "category": "science", "question": "What is the atomic number of oxygen?", "answer": "8", "source": "pop-culture-v1"}
+{"id": "pop-0579", "category": "science", "question": "What is the atomic number of gold?", "answer": "79", "source": "pop-culture-v1"}
+{"id": "pop-0580", "category": "science", "question": "What is the atomic number of iron?", "answer": "26", "source": "pop-culture-v1"}
+{"id": "pop-0581", "category": "science", "question": "What is the largest organ in the human body?", "answer": "The skin", "source": "pop-culture-v1"}
+{"id": "pop-0582", "category": "science", "question": "What is the smallest bone in the human body?", "answer": "The stapes (in the middle ear)", "source": "pop-culture-v1"}
+{"id": "pop-0583", "category": "science", "question": "What is the largest bone in the human body?", "answer": "The femur (thigh bone)", "source": "pop-culture-v1"}
+{"id": "pop-0584", "category": "science", "question": "What is the strongest muscle in the human body?", "answer": "The masseter (jaw muscle)", "source": "pop-culture-v1"}
+{"id": "pop-0585", "category": "science", "question": "How many bones are in the adult human body?", "answer": "206", "source": "pop-culture-v1"}
+{"id": "pop-0586", "category": "science", "question": "How many teeth does an adult human have?", "answer": "32", "source": "pop-culture-v1"}
+{"id": "pop-0587", "category": "science", "question": "What is the average human body temperature in Fahrenheit?", "answer": "98.6\u00b0F", "source": "pop-culture-v1"}
+{"id": "pop-0588", "category": "science", "question": "What is the average human body temperature in Celsius?", "answer": "37\u00b0C", "source": "pop-culture-v1"}
+{"id": "pop-0589", "category": "science", "question": "How many chromosomes do humans have?", "answer": "46 (23 pairs)", "source": "pop-culture-v1"}
+{"id": "pop-0590", "category": "science", "question": "What blood type is the universal donor?", "answer": "O negative", "source": "pop-culture-v1"}
+{"id": "pop-0591", "category": "science", "question": "What blood type is the universal recipient?", "answer": "AB positive", "source": "pop-culture-v1"}
+{"id": "pop-0592", "category": "science", "question": "What is the largest organ inside the human body?", "answer": "The liver", "source": "pop-culture-v1"}
+{"id": "pop-0593", "category": "science", "question": "What is the largest artery in the human body?", "answer": "The aorta", "source": "pop-culture-v1"}
+{"id": "pop-0594", "category": "science", "question": "What is the formula for the speed of light?", "answer": "299,792,458 meters per second", "source": "pop-culture-v1"}
+{"id": "pop-0595", "category": "science", "question": "What is the speed of light?", "answer": "299,792,458 m/s (approximately 300,000 km/s)", "source": "pop-culture-v1"}
+{"id": "pop-0596", "category": "science", "question": "What is the name of our galaxy?", "answer": "The Milky Way", "source": "pop-culture-v1"}
+{"id": "pop-0597", "category": "science", "question": "What is the closest star to Earth?", "answer": "The Sun", "source": "pop-culture-v1"}
+{"id": "pop-0598", "category": "science", "question": "What is the closest star to Earth besides the Sun?", "answer": "Proxima Centauri", "source": "pop-culture-v1"}
+{"id": "pop-0599", "category": "science", "question": "How many moons does Earth have?", "answer": "1", "source": "pop-culture-v1"}
+{"id": "pop-0600", "category": "science", "question": "How many moons does Mars have?", "answer": "2 (Phobos and Deimos)", "source": "pop-culture-v1"}
+{"id": "pop-0601", "category": "science", "question": "How many moons does Jupiter have?", "answer": "95 known moons", "source": "pop-culture-v1"}
+{"id": "pop-0602", "category": "science", "question": "How many moons does Saturn have?", "answer": "146 known moons", "source": "pop-culture-v1"}
+{"id": "pop-0603", "category": "science", "question": "Which scientist developed the theory of general relativity?", "answer": "Albert Einstein", "source": "pop-culture-v1"}
+{"id": "pop-0604", "category": "science", "question": "Who developed the theory of evolution by natural selection?", "answer": "Charles Darwin", "source": "pop-culture-v1"}
+{"id": "pop-0605", "category": "science", "question": "Who is known as the father of modern physics?", "answer": "Albert Einstein", "source": "pop-culture-v1"}
+{"id": "pop-0606", "category": "science", "question": "Who is known as the father of modern chemistry?", "answer": "Antoine Lavoisier", "source": "pop-culture-v1"}
+{"id": "pop-0607", "category": "science", "question": "Who is known as the father of modern biology?", "answer": "Charles Darwin", "source": "pop-culture-v1"}
+{"id": "pop-0608", "category": "science", "question": "Who discovered penicillin?", "answer": "Alexander Fleming", "source": "pop-culture-v1"}
+{"id": "pop-0609", "category": "science", "question": "Who discovered the structure of DNA?", "answer": "James Watson and Francis Crick", "source": "pop-culture-v1"}
+{"id": "pop-0610", "category": "science", "question": "What does DNA stand for?", "answer": "Deoxyribonucleic acid", "source": "pop-culture-v1"}
+{"id": "pop-0611", "category": "science", "question": "What does RNA stand for?", "answer": "Ribonucleic acid", "source": "pop-culture-v1"}
+{"id": "pop-0612", "category": "science", "question": "What is the powerhouse of the cell?", "answer": "The mitochondria", "source": "pop-culture-v1"}
+{"id": "pop-0613", "category": "science", "question": "What is the largest animal on Earth?", "answer": "The blue whale", "source": "pop-culture-v1"}
+{"id": "pop-0614", "category": "science", "question": "What is the fastest land animal?", "answer": "The cheetah", "source": "pop-culture-v1"}
+{"id": "pop-0615", "category": "science", "question": "What is the largest land animal?", "answer": "The African elephant", "source": "pop-culture-v1"}
+{"id": "pop-0616", "category": "science", "question": "What is the tallest animal on Earth?", "answer": "The giraffe", "source": "pop-culture-v1"}
+{"id": "pop-0617", "category": "science", "question": "What is the most intelligent animal after humans?", "answer": "Great apes (chimpanzees, bonobos)", "source": "pop-culture-v1"}
+{"id": "pop-0618", "category": "science", "question": "How many species of penguins are there?", "answer": "18", "source": "pop-culture-v1"}
+{"id": "pop-0619", "category": "science", "question": "What is the boiling point of water in Celsius?", "answer": "100\u00b0C", "source": "pop-culture-v1"}
+{"id": "pop-0620", "category": "science", "question": "What is the freezing point of water in Celsius?", "answer": "0\u00b0C", "source": "pop-culture-v1"}
+{"id": "pop-0621", "category": "science", "question": "What is the boiling point of water in Fahrenheit?", "answer": "212\u00b0F", "source": "pop-culture-v1"}
+{"id": "pop-0622", "category": "science", "question": "What is the freezing point of water in Fahrenheit?", "answer": "32\u00b0F", "source": "pop-culture-v1"}
+{"id": "pop-0623", "category": "geography", "question": "What is the capital of China?", "answer": "Beijing", "source": "pop-culture-v1"}
+{"id": "pop-0624", "category": "geography", "question": "What is the capital of Japan?", "answer": "Tokyo", "source": "pop-culture-v1"}
+{"id": "pop-0625", "category": "geography", "question": "What is the capital of India?", "answer": "New Delhi", "source": "pop-culture-v1"}
+{"id": "pop-0626", "category": "geography", "question": "What is the capital of South Korea?", "answer": "Seoul", "source": "pop-culture-v1"}
+{"id": "pop-0627", "category": "geography", "question": "What is the capital of Indonesia?", "answer": "Jakarta", "source": "pop-culture-v1"}
+{"id": "pop-0628", "category": "geography", "question": "What is the capital of Philippines?", "answer": "Manila", "source": "pop-culture-v1"}
+{"id": "pop-0629", "category": "geography", "question": "What is the capital of Vietnam?", "answer": "Hanoi", "source": "pop-culture-v1"}
+{"id": "pop-0630", "category": "geography", "question": "What is the capital of Thailand?", "answer": "Bangkok", "source": "pop-culture-v1"}
+{"id": "pop-0631", "category": "geography", "question": "What is the capital of Turkey?", "answer": "Ankara", "source": "pop-culture-v1"}
+{"id": "pop-0632", "category": "geography", "question": "What is the capital of Saudi Arabia?", "answer": "Riyadh", "source": "pop-culture-v1"}
+{"id": "pop-0633", "category": "geography", "question": "What is the capital of Iran?", "answer": "Tehran", "source": "pop-culture-v1"}
+{"id": "pop-0634", "category": "geography", "question": "What is the capital of Iraq?", "answer": "Baghdad", "source": "pop-culture-v1"}
+{"id": "pop-0635", "category": "geography", "question": "What is the capital of Israel?", "answer": "Jerusalem", "source": "pop-culture-v1"}
+{"id": "pop-0636", "category": "geography", "question": "What is the capital of Egypt?", "answer": "Cairo", "source": "pop-culture-v1"}
+{"id": "pop-0637", "category": "geography", "question": "What is the capital of South Africa?", "answer": "Pretoria", "source": "pop-culture-v1"}
+{"id": "pop-0638", "category": "geography", "question": "What is the capital of Nigeria?", "answer": "Abuja", "source": "pop-culture-v1"}
+{"id": "pop-0639", "category": "geography", "question": "What is the capital of Kenya?", "answer": "Nairobi", "source": "pop-culture-v1"}
+{"id": "pop-0640", "category": "geography", "question": "What is the capital of Ethiopia?", "answer": "Addis Ababa", "source": "pop-culture-v1"}
+{"id": "pop-0641", "category": "geography", "question": "What is the capital of Morocco?", "answer": "Rabat", "source": "pop-culture-v1"}
+{"id": "pop-0642", "category": "geography", "question": "What is the capital of Algeria?", "answer": "Algiers", "source": "pop-culture-v1"}
+{"id": "pop-0643", "category": "geography", "question": "What is the capital of Argentina?", "answer": "Buenos Aires", "source": "pop-culture-v1"}
+{"id": "pop-0644", "category": "geography", "question": "What is the capital of Chile?", "answer": "Santiago", "source": "pop-culture-v1"}
+{"id": "pop-0645", "category": "geography", "question": "What is the capital of Colombia?", "answer": "Bogota", "source": "pop-culture-v1"}
+{"id": "pop-0646", "category": "geography", "question": "What is the capital of Peru?", "answer": "Lima", "source": "pop-culture-v1"}
+{"id": "pop-0647", "category": "geography", "question": "What is the capital of Mexico?", "answer": "Mexico City", "source": "pop-culture-v1"}
+{"id": "pop-0648", "category": "geography", "question": "What is the capital of Cuba?", "answer": "Havana", "source": "pop-culture-v1"}
+{"id": "pop-0649", "category": "geography", "question": "What is the capital of Jamaica?", "answer": "Kingston", "source": "pop-culture-v1"}
+{"id": "pop-0650", "category": "geography", "question": "What is the capital of Norway?", "answer": "Oslo", "source": "pop-culture-v1"}
+{"id": "pop-0651", "category": "geography", "question": "What is the capital of Sweden?", "answer": "Stockholm", "source": "pop-culture-v1"}
+{"id": "pop-0652", "category": "geography", "question": "What is the capital of Finland?", "answer": "Helsinki", "source": "pop-culture-v1"}
+{"id": "pop-0653", "category": "geography", "question": "What is the capital of Denmark?", "answer": "Copenhagen", "source": "pop-culture-v1"}
+{"id": "pop-0654", "category": "geography", "question": "What is the capital of Netherlands?", "answer": "Amsterdam", "source": "pop-culture-v1"}
+{"id": "pop-0655", "category": "geography", "question": "What is the capital of Belgium?", "answer": "Brussels", "source": "pop-culture-v1"}
+{"id": "pop-0656", "category": "geography", "question": "What is the capital of Switzerland?", "answer": "Bern", "source": "pop-culture-v1"}
+{"id": "pop-0657", "category": "geography", "question": "What is the capital of Austria?", "answer": "Vienna", "source": "pop-culture-v1"}
+{"id": "pop-0658", "category": "geography", "question": "What is the capital of Poland?", "answer": "Warsaw", "source": "pop-culture-v1"}
+{"id": "pop-0659", "category": "geography", "question": "What is the capital of Russia?", "answer": "Moscow", "source": "pop-culture-v1"}
+{"id": "pop-0660", "category": "geography", "question": "What is the capital of Ukraine?", "answer": "Kyiv", "source": "pop-culture-v1"}
+{"id": "pop-0661", "category": "geography", "question": "What is the capital of Greece?", "answer": "Athens", "source": "pop-culture-v1"}
+{"id": "pop-0662", "category": "geography", "question": "What is the capital of Portugal?", "answer": "Lisbon", "source": "pop-culture-v1"}
+{"id": "pop-0663", "category": "geography", "question": "What is the capital of Ireland?", "answer": "Dublin", "source": "pop-culture-v1"}
+{"id": "pop-0664", "category": "geography", "question": "What is the capital of Scotland?", "answer": "Edinburgh", "source": "pop-culture-v1"}
+{"id": "pop-0665", "category": "geography", "question": "What is the capital of Australia?", "answer": "Canberra", "source": "pop-culture-v1"}
+{"id": "pop-0666", "category": "geography", "question": "What is the capital of New Zealand?", "answer": "Wellington", "source": "pop-culture-v1"}
+{"id": "pop-0667", "category": "geography", "question": "What is the capital of United Arab Emirates?", "answer": "Abu Dhabi", "source": "pop-culture-v1"}
+{"id": "pop-0668", "category": "geography", "question": "What is the capital of Qatar?", "answer": "Doha", "source": "pop-culture-v1"}
+{"id": "pop-0669", "category": "geography", "question": "What is the capital of Singapore?", "answer": "Singapore", "source": "pop-culture-v1"}
+{"id": "pop-0670", "category": "geography", "question": "What is the capital of Malaysia?", "answer": "Kuala Lumpur", "source": "pop-culture-v1"}
+{"id": "pop-0671", "category": "geography", "question": "What is the capital of Alabama?", "answer": "Montgomery", "source": "pop-culture-v1"}
+{"id": "pop-0672", "category": "geography", "question": "What is the capital of Alaska?", "answer": "Juneau", "source": "pop-culture-v1"}
+{"id": "pop-0673", "category": "geography", "question": "What is the capital of Arizona?", "answer": "Phoenix", "source": "pop-culture-v1"}
+{"id": "pop-0674", "category": "geography", "question": "What is the capital of Arkansas?", "answer": "Little Rock", "source": "pop-culture-v1"}
+{"id": "pop-0675", "category": "geography", "question": "What is the capital of California?", "answer": "Sacramento", "source": "pop-culture-v1"}
+{"id": "pop-0676", "category": "geography", "question": "What is the capital of Colorado?", "answer": "Denver", "source": "pop-culture-v1"}
+{"id": "pop-0677", "category": "geography", "question": "What is the capital of Connecticut?", "answer": "Hartford", "source": "pop-culture-v1"}
+{"id": "pop-0678", "category": "geography", "question": "What is the capital of Delaware?", "answer": "Dover", "source": "pop-culture-v1"}
+{"id": "pop-0679", "category": "geography", "question": "What is the capital of Florida?", "answer": "Tallahassee", "source": "pop-culture-v1"}
+{"id": "pop-0680", "category": "geography", "question": "What is the capital of Georgia?", "answer": "Atlanta", "source": "pop-culture-v1"}
+{"id": "pop-0681", "category": "geography", "question": "What is the capital of Hawaii?", "answer": "Honolulu", "source": "pop-culture-v1"}
+{"id": "pop-0682", "category": "geography", "question": "What is the capital of Idaho?", "answer": "Boise", "source": "pop-culture-v1"}
+{"id": "pop-0683", "category": "geography", "question": "What is the capital of Illinois?", "answer": "Springfield", "source": "pop-culture-v1"}
+{"id": "pop-0684", "category": "geography", "question": "What is the capital of Indiana?", "answer": "Indianapolis", "source": "pop-culture-v1"}
+{"id": "pop-0685", "category": "geography", "question": "What is the capital of Iowa?", "answer": "Des Moines", "source": "pop-culture-v1"}
+{"id": "pop-0686", "category": "geography", "question": "What is the capital of Kansas?", "answer": "Topeka", "source": "pop-culture-v1"}
+{"id": "pop-0687", "category": "geography", "question": "What is the capital of Kentucky?", "answer": "Frankfort", "source": "pop-culture-v1"}
+{"id": "pop-0688", "category": "geography", "question": "What is the capital of Louisiana?", "answer": "Baton Rouge", "source": "pop-culture-v1"}
+{"id": "pop-0689", "category": "geography", "question": "What is the capital of Maine?", "answer": "Augusta", "source": "pop-culture-v1"}
+{"id": "pop-0690", "category": "geography", "question": "What is the capital of Maryland?", "answer": "Annapolis", "source": "pop-culture-v1"}
+{"id": "pop-0691", "category": "geography", "question": "What is the capital of Massachusetts?", "answer": "Boston", "source": "pop-culture-v1"}
+{"id": "pop-0692", "category": "geography", "question": "What is the capital of Michigan?", "answer": "Lansing", "source": "pop-culture-v1"}
+{"id": "pop-0693", "category": "geography", "question": "What is the capital of Minnesota?", "answer": "Saint Paul", "source": "pop-culture-v1"}
+{"id": "pop-0694", "category": "geography", "question": "What is the capital of Mississippi?", "answer": "Jackson", "source": "pop-culture-v1"}
+{"id": "pop-0695", "category": "geography", "question": "What is the capital of Missouri?", "answer": "Jefferson City", "source": "pop-culture-v1"}
+{"id": "pop-0696", "category": "geography", "question": "What is the capital of Montana?", "answer": "Helena", "source": "pop-culture-v1"}
+{"id": "pop-0697", "category": "geography", "question": "What is the capital of Nebraska?", "answer": "Lincoln", "source": "pop-culture-v1"}
+{"id": "pop-0698", "category": "geography", "question": "What is the capital of Nevada?", "answer": "Carson City", "source": "pop-culture-v1"}
+{"id": "pop-0699", "category": "geography", "question": "What is the capital of New Hampshire?", "answer": "Concord", "source": "pop-culture-v1"}
+{"id": "pop-0700", "category": "geography", "question": "What is the capital of New Jersey?", "answer": "Trenton", "source": "pop-culture-v1"}
+{"id": "pop-0701", "category": "geography", "question": "What is the capital of New Mexico?", "answer": "Santa Fe", "source": "pop-culture-v1"}
+{"id": "pop-0702", "category": "geography", "question": "What is the capital of New York?", "answer": "Albany", "source": "pop-culture-v1"}
+{"id": "pop-0703", "category": "geography", "question": "What is the capital of North Carolina?", "answer": "Raleigh", "source": "pop-culture-v1"}
+{"id": "pop-0704", "category": "geography", "question": "What is the capital of North Dakota?", "answer": "Bismarck", "source": "pop-culture-v1"}
+{"id": "pop-0705", "category": "geography", "question": "What is the capital of Ohio?", "answer": "Columbus", "source": "pop-culture-v1"}
+{"id": "pop-0706", "category": "geography", "question": "What is the capital of Oklahoma?", "answer": "Oklahoma City", "source": "pop-culture-v1"}
+{"id": "pop-0707", "category": "geography", "question": "What is the capital of Oregon?", "answer": "Salem", "source": "pop-culture-v1"}
+{"id": "pop-0708", "category": "geography", "question": "What is the capital of Pennsylvania?", "answer": "Harrisburg", "source": "pop-culture-v1"}
+{"id": "pop-0709", "category": "geography", "question": "What is the capital of Rhode Island?", "answer": "Providence", "source": "pop-culture-v1"}
+{"id": "pop-0710", "category": "geography", "question": "What is the capital of South Carolina?", "answer": "Columbia", "source": "pop-culture-v1"}
+{"id": "pop-0711", "category": "geography", "question": "What is the capital of South Dakota?", "answer": "Pierre", "source": "pop-culture-v1"}
+{"id": "pop-0712", "category": "geography", "question": "What is the capital of Tennessee?", "answer": "Nashville", "source": "pop-culture-v1"}
+{"id": "pop-0713", "category": "geography", "question": "What is the capital of Texas?", "answer": "Austin", "source": "pop-culture-v1"}
+{"id": "pop-0714", "category": "geography", "question": "What is the capital of Utah?", "answer": "Salt Lake City", "source": "pop-culture-v1"}
+{"id": "pop-0715", "category": "geography", "question": "What is the capital of Vermont?", "answer": "Montpelier", "source": "pop-culture-v1"}
+{"id": "pop-0716", "category": "geography", "question": "What is the capital of Virginia?", "answer": "Richmond", "source": "pop-culture-v1"}
+{"id": "pop-0717", "category": "geography", "question": "What is the capital of Washington?", "answer": "Olympia", "source": "pop-culture-v1"}
+{"id": "pop-0718", "category": "geography", "question": "What is the capital of West Virginia?", "answer": "Charleston", "source": "pop-culture-v1"}
+{"id": "pop-0719", "category": "geography", "question": "What is the capital of Wisconsin?", "answer": "Madison", "source": "pop-culture-v1"}
+{"id": "pop-0720", "category": "geography", "question": "What is the capital of Wyoming?", "answer": "Cheyenne", "source": "pop-culture-v1"}
+{"id": "pop-0721", "category": "geography", "question": "How many states are in the United States?", "answer": "50", "source": "pop-culture-v1"}
+{"id": "pop-0722", "category": "geography", "question": "What is the largest US state by area?", "answer": "Alaska", "source": "pop-culture-v1"}
+{"id": "pop-0723", "category": "geography", "question": "What is the smallest US state by area?", "answer": "Rhode Island", "source": "pop-culture-v1"}
+{"id": "pop-0724", "category": "geography", "question": "What is the largest US state by population?", "answer": "California", "source": "pop-culture-v1"}
+{"id": "pop-0725", "category": "geography", "question": "What is the smallest US state by population?", "answer": "Wyoming", "source": "pop-culture-v1"}
+{"id": "pop-0726", "category": "geography", "question": "The tallest mountain in the world", "answer": "Mount Everest (29,032 feet)", "source": "pop-culture-v1"}
+{"id": "pop-0727", "category": "geography", "question": "The longest river in the world", "answer": "The Nile River", "source": "pop-culture-v1"}
+{"id": "pop-0728", "category": "geography", "question": "The largest ocean in the world", "answer": "The Pacific Ocean", "source": "pop-culture-v1"}
+{"id": "pop-0729", "category": "geography", "question": "The smallest ocean in the world", "answer": "The Arctic Ocean", "source": "pop-culture-v1"}
+{"id": "pop-0730", "category": "geography", "question": "The largest continent by area", "answer": "Asia", "source": "pop-culture-v1"}
+{"id": "pop-0731", "category": "geography", "question": "The smallest continent by area", "answer": "Australia", "source": "pop-culture-v1"}
+{"id": "pop-0732", "category": "geography", "question": "The largest desert in the world", "answer": "The Antarctic Desert", "source": "pop-culture-v1"}
+{"id": "pop-0733", "category": "geography", "question": "The largest hot desert in the world", "answer": "The Sahara Desert", "source": "pop-culture-v1"}
+{"id": "pop-0734", "category": "geography", "question": "The deepest point in the ocean", "answer": "The Mariana Trench (Challenger Deep)", "source": "pop-culture-v1"}
+{"id": "pop-0735", "category": "geography", "question": "The highest waterfall in the world", "answer": "Angel Falls (Venezuela)", "source": "pop-culture-v1"}
+{"id": "pop-0736", "category": "geography", "question": "The largest lake in the world", "answer": "The Caspian Sea", "source": "pop-culture-v1"}
+{"id": "pop-0737", "category": "geography", "question": "The deepest lake in the world", "answer": "Lake Baikal (Siberia)", "source": "pop-culture-v1"}
+{"id": "pop-0738", "category": "geography", "question": "The largest country by area", "answer": "Russia", "source": "pop-culture-v1"}
+{"id": "pop-0739", "category": "geography", "question": "The smallest country by area", "answer": "Vatican City", "source": "pop-culture-v1"}
+{"id": "pop-0740", "category": "geography", "question": "The most populous country", "answer": "India", "source": "pop-culture-v1"}
+{"id": "pop-0741", "category": "geography", "question": "The most populous city in the world", "answer": "Tokyo, Japan", "source": "pop-culture-v1"}
+{"id": "pop-0742", "category": "geography", "question": "Where is the Great Wall of China located?", "answer": "China", "source": "pop-culture-v1"}
+{"id": "pop-0743", "category": "geography", "question": "Where is the Eiffel Tower located?", "answer": "Paris, France", "source": "pop-culture-v1"}
+{"id": "pop-0744", "category": "geography", "question": "Where is the Statue of Liberty located?", "answer": "New York City, USA", "source": "pop-culture-v1"}
+{"id": "pop-0745", "category": "geography", "question": "Where is the Colosseum located?", "answer": "Rome, Italy", "source": "pop-culture-v1"}
+{"id": "pop-0746", "category": "geography", "question": "Where is the Taj Mahal located?", "answer": "Agra, India", "source": "pop-culture-v1"}
+{"id": "pop-0747", "category": "geography", "question": "Where is Machu Picchu located?", "answer": "Peru", "source": "pop-culture-v1"}
+{"id": "pop-0748", "category": "geography", "question": "Where is the Great Pyramid of Giza located?", "answer": "Giza, Egypt", "source": "pop-culture-v1"}
+{"id": "pop-0749", "category": "geography", "question": "Where is the Sydney Opera House located?", "answer": "Sydney, Australia", "source": "pop-culture-v1"}
+{"id": "pop-0750", "category": "geography", "question": "Where is the Leaning Tower of Pisa located?", "answer": "Pisa, Italy", "source": "pop-culture-v1"}
+{"id": "pop-0751", "category": "geography", "question": "Where is Christ the Redeemer statue located?", "answer": "Rio de Janeiro, Brazil", "source": "pop-culture-v1"}
+{"id": "pop-0752", "category": "geography", "question": "Where is Stonehenge located?", "answer": "Wiltshire, England", "source": "pop-culture-v1"}
+{"id": "pop-0753", "category": "geography", "question": "Where is the Acropolis located?", "answer": "Athens, Greece", "source": "pop-culture-v1"}
+{"id": "pop-0754", "category": "geography", "question": "What is the name of the river that flows through London?", "answer": "The River Thames", "source": "pop-culture-v1"}
+{"id": "pop-0755", "category": "geography", "question": "What is the name of the river that flows through Paris?", "answer": "The River Seine", "source": "pop-culture-v1"}
+{"id": "pop-0756", "category": "geography", "question": "What is the name of the river that flows through Rome?", "answer": "The Tiber River", "source": "pop-culture-v1"}
+{"id": "pop-0757", "category": "geography", "question": "What is the name of the river that flows through Cairo?", "answer": "The Nile River", "source": "pop-culture-v1"}
+{"id": "pop-0758", "category": "geography", "question": "What is the official language of Brazil?", "answer": "Portuguese", "source": "pop-culture-v1"}
+{"id": "pop-0759", "category": "geography", "question": "What is the official language of Argentina?", "answer": "Spanish", "source": "pop-culture-v1"}
+{"id": "pop-0760", "category": "geography", "question": "What is the official language of Canada?", "answer": "English and French", "source": "pop-culture-v1"}
+{"id": "pop-0761", "category": "geography", "question": "What is the official language of Switzerland?", "answer": "German, French, Italian, Romansh", "source": "pop-culture-v1"}
+{"id": "pop-0762", "category": "geography", "question": "How many time zones does Russia have?", "answer": "11", "source": "pop-culture-v1"}
+{"id": "pop-0763", "category": "geography", "question": "How many time zones does the US have?", "answer": "9 (including territories)", "source": "pop-culture-v1"}
+{"id": "pop-0764", "category": "geography", "question": "What is the longest border in the world?", "answer": "The US-Canada border", "source": "pop-culture-v1"}
+{"id": "pop-0765", "category": "geography", "question": "What is the smallest country in the world by area?", "answer": "Vatican City", "source": "pop-culture-v1"}
+{"id": "pop-0766", "category": "geography", "question": "What is the second smallest country in the world?", "answer": "Monaco", "source": "pop-culture-v1"}
+{"id": "pop-0767", "category": "history", "question": "Who was the 1th president of the United States?", "answer": "George Washington", "source": "pop-culture-v1"}
+{"id": "pop-0768", "category": "history", "question": "Who was the US president number 1?", "answer": "George Washington", "source": "pop-culture-v1"}
+{"id": "pop-0769", "category": "history", "question": "When did George Washington serve as president?", "answer": "1789-1797", "source": "pop-culture-v1"}
+{"id": "pop-0770", "category": "history", "question": "Who was the 2th president of the United States?", "answer": "John Adams", "source": "pop-culture-v1"}
+{"id": "pop-0771", "category": "history", "question": "Who was the US president number 2?", "answer": "John Adams", "source": "pop-culture-v1"}
+{"id": "pop-0772", "category": "history", "question": "When did John Adams serve as president?", "answer": "1797-1801", "source": "pop-culture-v1"}
+{"id": "pop-0773", "category": "history", "question": "Who was the 3th president of the United States?", "answer": "Thomas Jefferson", "source": "pop-culture-v1"}
+{"id": "pop-0774", "category": "history", "question": "Who was the US president number 3?", "answer": "Thomas Jefferson", "source": "pop-culture-v1"}
+{"id": "pop-0775", "category": "history", "question": "When did Thomas Jefferson serve as president?", "answer": "1801-1809", "source": "pop-culture-v1"}
+{"id": "pop-0776", "category": "history", "question": "Who was the 4th president of the United States?", "answer": "James Madison", "source": "pop-culture-v1"}
+{"id": "pop-0777", "category": "history", "question": "Who was the US president number 4?", "answer": "James Madison", "source": "pop-culture-v1"}
+{"id": "pop-0778", "category": "history", "question": "When did James Madison serve as president?", "answer": "1809-1817", "source": "pop-culture-v1"}
+{"id": "pop-0779", "category": "history", "question": "Who was the 5th president of the United States?", "answer": "James Monroe", "source": "pop-culture-v1"}
+{"id": "pop-0780", "category": "history", "question": "Who was the US president number 5?", "answer": "James Monroe", "source": "pop-culture-v1"}
+{"id": "pop-0781", "category": "history", "question": "When did James Monroe serve as president?", "answer": "1817-1825", "source": "pop-culture-v1"}
+{"id": "pop-0782", "category": "history", "question": "Who was the 6th president of the United States?", "answer": "John Quincy Adams", "source": "pop-culture-v1"}
+{"id": "pop-0783", "category": "history", "question": "Who was the US president number 6?", "answer": "John Quincy Adams", "source": "pop-culture-v1"}
+{"id": "pop-0784", "category": "history", "question": "When did John Quincy Adams serve as president?", "answer": "1825-1829", "source": "pop-culture-v1"}
+{"id": "pop-0785", "category": "history", "question": "Who was the 7th president of the United States?", "answer": "Andrew Jackson", "source": "pop-culture-v1"}
+{"id": "pop-0786", "category": "history", "question": "Who was the US president number 7?", "answer": "Andrew Jackson", "source": "pop-culture-v1"}
+{"id": "pop-0787", "category": "history", "question": "When did Andrew Jackson serve as president?", "answer": "1829-1837", "source": "pop-culture-v1"}
+{"id": "pop-0788", "category": "history", "question": "Who was the 8th president of the United States?", "answer": "Martin Van Buren", "source": "pop-culture-v1"}
+{"id": "pop-0789", "category": "history", "question": "Who was the US president number 8?", "answer": "Martin Van Buren", "source": "pop-culture-v1"}
+{"id": "pop-0790", "category": "history", "question": "When did Martin Van Buren serve as president?", "answer": "1837-1841", "source": "pop-culture-v1"}
+{"id": "pop-0791", "category": "history", "question": "Who was the 9th president of the United States?", "answer": "William Henry Harrison", "source": "pop-culture-v1"}
+{"id": "pop-0792", "category": "history", "question": "Who was the US president number 9?", "answer": "William Henry Harrison", "source": "pop-culture-v1"}
+{"id": "pop-0793", "category": "history", "question": "When did William Henry Harrison serve as president?", "answer": "1841 (one month)", "source": "pop-culture-v1"}
+{"id": "pop-0794", "category": "history", "question": "Who was the 10th president of the United States?", "answer": "John Tyler", "source": "pop-culture-v1"}
+{"id": "pop-0795", "category": "history", "question": "Who was the US president number 10?", "answer": "John Tyler", "source": "pop-culture-v1"}
+{"id": "pop-0796", "category": "history", "question": "When did John Tyler serve as president?", "answer": "1841-1845", "source": "pop-culture-v1"}
+{"id": "pop-0797", "category": "history", "question": "Who was the 11th president of the United States?", "answer": "James K. Polk", "source": "pop-culture-v1"}
+{"id": "pop-0798", "category": "history", "question": "Who was the US president number 11?", "answer": "James K. Polk", "source": "pop-culture-v1"}
+{"id": "pop-0799", "category": "history", "question": "When did James K. Polk serve as president?", "answer": "1845-1849", "source": "pop-culture-v1"}
+{"id": "pop-0800", "category": "history", "question": "Who was the 12th president of the United States?", "answer": "Zachary Taylor", "source": "pop-culture-v1"}
+{"id": "pop-0801", "category": "history", "question": "Who was the US president number 12?", "answer": "Zachary Taylor", "source": "pop-culture-v1"}
+{"id": "pop-0802", "category": "history", "question": "When did Zachary Taylor serve as president?", "answer": "1849-1850", "source": "pop-culture-v1"}
+{"id": "pop-0803", "category": "history", "question": "Who was the 13th president of the United States?", "answer": "Millard Fillmore", "source": "pop-culture-v1"}
+{"id": "pop-0804", "category": "history", "question": "Who was the US president number 13?", "answer": "Millard Fillmore", "source": "pop-culture-v1"}
+{"id": "pop-0805", "category": "history", "question": "When did Millard Fillmore serve as president?", "answer": "1850-1853", "source": "pop-culture-v1"}
+{"id": "pop-0806", "category": "history", "question": "Who was the 14th president of the United States?", "answer": "Franklin Pierce", "source": "pop-culture-v1"}
+{"id": "pop-0807", "category": "history", "question": "Who was the US president number 14?", "answer": "Franklin Pierce", "source": "pop-culture-v1"}
+{"id": "pop-0808", "category": "history", "question": "When did Franklin Pierce serve as president?", "answer": "1853-1857", "source": "pop-culture-v1"}
+{"id": "pop-0809", "category": "history", "question": "Who was the 15th president of the United States?", "answer": "James Buchanan", "source": "pop-culture-v1"}
+{"id": "pop-0810", "category": "history", "question": "Who was the US president number 15?", "answer": "James Buchanan", "source": "pop-culture-v1"}
+{"id": "pop-0811", "category": "history", "question": "When did James Buchanan serve as president?", "answer": "1857-1861", "source": "pop-culture-v1"}
+{"id": "pop-0812", "category": "history", "question": "Who was the 16th president of the United States?", "answer": "Abraham Lincoln", "source": "pop-culture-v1"}
+{"id": "pop-0813", "category": "history", "question": "Who was the US president number 16?", "answer": "Abraham Lincoln", "source": "pop-culture-v1"}
+{"id": "pop-0814", "category": "history", "question": "When did Abraham Lincoln serve as president?", "answer": "1861-1865", "source": "pop-culture-v1"}
+{"id": "pop-0815", "category": "history", "question": "Who was the 17th president of the United States?", "answer": "Andrew Johnson", "source": "pop-culture-v1"}
+{"id": "pop-0816", "category": "history", "question": "Who was the US president number 17?", "answer": "Andrew Johnson", "source": "pop-culture-v1"}
+{"id": "pop-0817", "category": "history", "question": "When did Andrew Johnson serve as president?", "answer": "1865-1869", "source": "pop-culture-v1"}
+{"id": "pop-0818", "category": "history", "question": "Who was the 18th president of the United States?", "answer": "Ulysses S. Grant", "source": "pop-culture-v1"}
+{"id": "pop-0819", "category": "history", "question": "Who was the US president number 18?", "answer": "Ulysses S. Grant", "source": "pop-culture-v1"}
+{"id": "pop-0820", "category": "history", "question": "When did Ulysses S. Grant serve as president?", "answer": "1869-1877", "source": "pop-culture-v1"}
+{"id": "pop-0821", "category": "history", "question": "Who was the 19th president of the United States?", "answer": "Rutherford B. Hayes", "source": "pop-culture-v1"}
+{"id": "pop-0822", "category": "history", "question": "Who was the US president number 19?", "answer": "Rutherford B. Hayes", "source": "pop-culture-v1"}
+{"id": "pop-0823", "category": "history", "question": "When did Rutherford B. Hayes serve as president?", "answer": "1877-1881", "source": "pop-culture-v1"}
+{"id": "pop-0824", "category": "history", "question": "Who was the 20th president of the United States?", "answer": "James A. Garfield", "source": "pop-culture-v1"}
+{"id": "pop-0825", "category": "history", "question": "Who was the US president number 20?", "answer": "James A. Garfield", "source": "pop-culture-v1"}
+{"id": "pop-0826", "category": "history", "question": "When did James A. Garfield serve as president?", "answer": "1881", "source": "pop-culture-v1"}
+{"id": "pop-0827", "category": "history", "question": "Who was the 21th president of the United States?", "answer": "Chester A. Arthur", "source": "pop-culture-v1"}
+{"id": "pop-0828", "category": "history", "question": "Who was the US president number 21?", "answer": "Chester A. Arthur", "source": "pop-culture-v1"}
+{"id": "pop-0829", "category": "history", "question": "When did Chester A. Arthur serve as president?", "answer": "1881-1885", "source": "pop-culture-v1"}
+{"id": "pop-0830", "category": "history", "question": "Who was the 22th president of the United States?", "answer": "Grover Cleveland", "source": "pop-culture-v1"}
+{"id": "pop-0831", "category": "history", "question": "Who was the US president number 22?", "answer": "Grover Cleveland", "source": "pop-culture-v1"}
+{"id": "pop-0832", "category": "history", "question": "When did Grover Cleveland serve as president?", "answer": "1885-1889", "source": "pop-culture-v1"}
+{"id": "pop-0833", "category": "history", "question": "Who was the 23th president of the United States?", "answer": "Benjamin Harrison", "source": "pop-culture-v1"}
+{"id": "pop-0834", "category": "history", "question": "Who was the US president number 23?", "answer": "Benjamin Harrison", "source": "pop-culture-v1"}
+{"id": "pop-0835", "category": "history", "question": "When did Benjamin Harrison serve as president?", "answer": "1889-1893", "source": "pop-culture-v1"}
+{"id": "pop-0836", "category": "history", "question": "Who was the 24th president of the United States?", "answer": "Grover Cleveland", "source": "pop-culture-v1"}
+{"id": "pop-0837", "category": "history", "question": "Who was the US president number 24?", "answer": "Grover Cleveland", "source": "pop-culture-v1"}
+{"id": "pop-0838", "category": "history", "question": "When did Grover Cleveland serve as president?", "answer": "1893-1897", "source": "pop-culture-v1"}
+{"id": "pop-0839", "category": "history", "question": "Who was the 25th president of the United States?", "answer": "William McKinley", "source": "pop-culture-v1"}
+{"id": "pop-0840", "category": "history", "question": "Who was the US president number 25?", "answer": "William McKinley", "source": "pop-culture-v1"}
+{"id": "pop-0841", "category": "history", "question": "When did William McKinley serve as president?", "answer": "1897-1901", "source": "pop-culture-v1"}
+{"id": "pop-0842", "category": "history", "question": "Who was the 26th president of the United States?", "answer": "Theodore Roosevelt", "source": "pop-culture-v1"}
+{"id": "pop-0843", "category": "history", "question": "Who was the US president number 26?", "answer": "Theodore Roosevelt", "source": "pop-culture-v1"}
+{"id": "pop-0844", "category": "history", "question": "When did Theodore Roosevelt serve as president?", "answer": "1901-1909", "source": "pop-culture-v1"}
+{"id": "pop-0845", "category": "history", "question": "Who was the 27th president of the United States?", "answer": "William Howard Taft", "source": "pop-culture-v1"}
+{"id": "pop-0846", "category": "history", "question": "Who was the US president number 27?", "answer": "William Howard Taft", "source": "pop-culture-v1"}
+{"id": "pop-0847", "category": "history", "question": "When did William Howard Taft serve as president?", "answer": "1909-1913", "source": "pop-culture-v1"}
+{"id": "pop-0848", "category": "history", "question": "Who was the 28th president of the United States?", "answer": "Woodrow Wilson", "source": "pop-culture-v1"}
+{"id": "pop-0849", "category": "history", "question": "Who was the US president number 28?", "answer": "Woodrow Wilson", "source": "pop-culture-v1"}
+{"id": "pop-0850", "category": "history", "question": "When did Woodrow Wilson serve as president?", "answer": "1913-1921", "source": "pop-culture-v1"}
+{"id": "pop-0851", "category": "history", "question": "Who was the 29th president of the United States?", "answer": "Warren G. Harding", "source": "pop-culture-v1"}
+{"id": "pop-0852", "category": "history", "question": "Who was the US president number 29?", "answer": "Warren G. Harding", "source": "pop-culture-v1"}
+{"id": "pop-0853", "category": "history", "question": "When did Warren G. Harding serve as president?", "answer": "1921-1923", "source": "pop-culture-v1"}
+{"id": "pop-0854", "category": "history", "question": "Who was the 30th president of the United States?", "answer": "Calvin Coolidge", "source": "pop-culture-v1"}
+{"id": "pop-0855", "category": "history", "question": "Who was the US president number 30?", "answer": "Calvin Coolidge", "source": "pop-culture-v1"}
+{"id": "pop-0856", "category": "history", "question": "When did Calvin Coolidge serve as president?", "answer": "1923-1929", "source": "pop-culture-v1"}
+{"id": "pop-0857", "category": "history", "question": "Who was the 31th president of the United States?", "answer": "Herbert Hoover", "source": "pop-culture-v1"}
+{"id": "pop-0858", "category": "history", "question": "Who was the US president number 31?", "answer": "Herbert Hoover", "source": "pop-culture-v1"}
+{"id": "pop-0859", "category": "history", "question": "When did Herbert Hoover serve as president?", "answer": "1929-1933", "source": "pop-culture-v1"}
+{"id": "pop-0860", "category": "history", "question": "Who was the 32th president of the United States?", "answer": "Franklin D. Roosevelt", "source": "pop-culture-v1"}
+{"id": "pop-0861", "category": "history", "question": "Who was the US president number 32?", "answer": "Franklin D. Roosevelt", "source": "pop-culture-v1"}
+{"id": "pop-0862", "category": "history", "question": "When did Franklin D. Roosevelt serve as president?", "answer": "1933-1945", "source": "pop-culture-v1"}
+{"id": "pop-0863", "category": "history", "question": "Who was the 33th president of the United States?", "answer": "Harry S. Truman", "source": "pop-culture-v1"}
+{"id": "pop-0864", "category": "history", "question": "Who was the US president number 33?", "answer": "Harry S. Truman", "source": "pop-culture-v1"}
+{"id": "pop-0865", "category": "history", "question": "When did Harry S. Truman serve as president?", "answer": "1945-1953", "source": "pop-culture-v1"}
+{"id": "pop-0866", "category": "history", "question": "Who was the 34th president of the United States?", "answer": "Dwight D. Eisenhower", "source": "pop-culture-v1"}
+{"id": "pop-0867", "category": "history", "question": "Who was the US president number 34?", "answer": "Dwight D. Eisenhower", "source": "pop-culture-v1"}
+{"id": "pop-0868", "category": "history", "question": "When did Dwight D. Eisenhower serve as president?", "answer": "1953-1961", "source": "pop-culture-v1"}
+{"id": "pop-0869", "category": "history", "question": "Who was the 35th president of the United States?", "answer": "John F. Kennedy", "source": "pop-culture-v1"}
+{"id": "pop-0870", "category": "history", "question": "Who was the US president number 35?", "answer": "John F. Kennedy", "source": "pop-culture-v1"}
+{"id": "pop-0871", "category": "history", "question": "When did John F. Kennedy serve as president?", "answer": "1961-1963", "source": "pop-culture-v1"}
+{"id": "pop-0872", "category": "history", "question": "Who was the 36th president of the United States?", "answer": "Lyndon B. Johnson", "source": "pop-culture-v1"}
+{"id": "pop-0873", "category": "history", "question": "Who was the US president number 36?", "answer": "Lyndon B. Johnson", "source": "pop-culture-v1"}
+{"id": "pop-0874", "category": "history", "question": "When did Lyndon B. Johnson serve as president?", "answer": "1963-1969", "source": "pop-culture-v1"}
+{"id": "pop-0875", "category": "history", "question": "Who was the 37th president of the United States?", "answer": "Richard Nixon", "source": "pop-culture-v1"}
+{"id": "pop-0876", "category": "history", "question": "Who was the US president number 37?", "answer": "Richard Nixon", "source": "pop-culture-v1"}
+{"id": "pop-0877", "category": "history", "question": "When did Richard Nixon serve as president?", "answer": "1969-1974", "source": "pop-culture-v1"}
+{"id": "pop-0878", "category": "history", "question": "Who was the 38th president of the United States?", "answer": "Gerald Ford", "source": "pop-culture-v1"}
+{"id": "pop-0879", "category": "history", "question": "Who was the US president number 38?", "answer": "Gerald Ford", "source": "pop-culture-v1"}
+{"id": "pop-0880", "category": "history", "question": "When did Gerald Ford serve as president?", "answer": "1974-1977", "source": "pop-culture-v1"}
+{"id": "pop-0881", "category": "history", "question": "Who was the 39th president of the United States?", "answer": "Jimmy Carter", "source": "pop-culture-v1"}
+{"id": "pop-0882", "category": "history", "question": "Who was the US president number 39?", "answer": "Jimmy Carter", "source": "pop-culture-v1"}
+{"id": "pop-0883", "category": "history", "question": "When did Jimmy Carter serve as president?", "answer": "1977-1981", "source": "pop-culture-v1"}
+{"id": "pop-0884", "category": "history", "question": "Who was the 40th president of the United States?", "answer": "Ronald Reagan", "source": "pop-culture-v1"}
+{"id": "pop-0885", "category": "history", "question": "Who was the US president number 40?", "answer": "Ronald Reagan", "source": "pop-culture-v1"}
+{"id": "pop-0886", "category": "history", "question": "When did Ronald Reagan serve as president?", "answer": "1981-1989", "source": "pop-culture-v1"}
+{"id": "pop-0887", "category": "history", "question": "Who was the 41th president of the United States?", "answer": "George H.W. Bush", "source": "pop-culture-v1"}
+{"id": "pop-0888", "category": "history", "question": "Who was the US president number 41?", "answer": "George H.W. Bush", "source": "pop-culture-v1"}
+{"id": "pop-0889", "category": "history", "question": "When did George H.W. Bush serve as president?", "answer": "1989-1993", "source": "pop-culture-v1"}
+{"id": "pop-0890", "category": "history", "question": "Who was the 42th president of the United States?", "answer": "Bill Clinton", "source": "pop-culture-v1"}
+{"id": "pop-0891", "category": "history", "question": "Who was the US president number 42?", "answer": "Bill Clinton", "source": "pop-culture-v1"}
+{"id": "pop-0892", "category": "history", "question": "When did Bill Clinton serve as president?", "answer": "1993-2001", "source": "pop-culture-v1"}
+{"id": "pop-0893", "category": "history", "question": "Who was the 43th president of the United States?", "answer": "George W. Bush", "source": "pop-culture-v1"}
+{"id": "pop-0894", "category": "history", "question": "Who was the US president number 43?", "answer": "George W. Bush", "source": "pop-culture-v1"}
+{"id": "pop-0895", "category": "history", "question": "When did George W. Bush serve as president?", "answer": "2001-2009", "source": "pop-culture-v1"}
+{"id": "pop-0896", "category": "history", "question": "Who was the 44th president of the United States?", "answer": "Barack Obama", "source": "pop-culture-v1"}
+{"id": "pop-0897", "category": "history", "question": "Who was the US president number 44?", "answer": "Barack Obama", "source": "pop-culture-v1"}
+{"id": "pop-0898", "category": "history", "question": "When did Barack Obama serve as president?", "answer": "2009-2017", "source": "pop-culture-v1"}
+{"id": "pop-0899", "category": "history", "question": "Who was the 45th president of the United States?", "answer": "Donald Trump", "source": "pop-culture-v1"}
+{"id": "pop-0900", "category": "history", "question": "Who was the US president number 45?", "answer": "Donald Trump", "source": "pop-culture-v1"}
+{"id": "pop-0901", "category": "history", "question": "When did Donald Trump serve as president?", "answer": "2017-2021", "source": "pop-culture-v1"}
+{"id": "pop-0902", "category": "history", "question": "Who was the 46th president of the United States?", "answer": "Joe Biden", "source": "pop-culture-v1"}
+{"id": "pop-0903", "category": "history", "question": "Who was the US president number 46?", "answer": "Joe Biden", "source": "pop-culture-v1"}
+{"id": "pop-0904", "category": "history", "question": "When did Joe Biden serve as president?", "answer": "2021-present", "source": "pop-culture-v1"}
+{"id": "pop-0905", "category": "history", "question": "What number president was George Washington?", "answer": "1th", "source": "pop-culture-v1"}
+{"id": "pop-0906", "category": "history", "question": "What number president was Thomas Jefferson?", "answer": "3th", "source": "pop-culture-v1"}
+{"id": "pop-0907", "category": "history", "question": "What number president was Abraham Lincoln?", "answer": "16th", "source": "pop-culture-v1"}
+{"id": "pop-0908", "category": "history", "question": "What number president was Theodore Roosevelt?", "answer": "26th", "source": "pop-culture-v1"}
+{"id": "pop-0909", "category": "history", "question": "What number president was Franklin D. Roosevelt?", "answer": "32th", "source": "pop-culture-v1"}
+{"id": "pop-0910", "category": "history", "question": "What number president was Harry S. Truman?", "answer": "33th", "source": "pop-culture-v1"}
+{"id": "pop-0911", "category": "history", "question": "What number president was Dwight D. Eisenhower?", "answer": "34th", "source": "pop-culture-v1"}
+{"id": "pop-0912", "category": "history", "question": "What number president was John F. Kennedy?", "answer": "35th", "source": "pop-culture-v1"}
+{"id": "pop-0913", "category": "history", "question": "What number president was Ronald Reagan?", "answer": "40th", "source": "pop-culture-v1"}
+{"id": "pop-0914", "category": "history", "question": "What number president was Barack Obama?", "answer": "44th", "source": "pop-culture-v1"}
+{"id": "pop-0915", "category": "history", "question": "When did World War I start?", "answer": "1914", "source": "pop-culture-v1"}
+{"id": "pop-0916", "category": "history", "question": "When did World War I end?", "answer": "1918", "source": "pop-culture-v1"}
+{"id": "pop-0917", "category": "history", "question": "When did World War II start?", "answer": "1939", "source": "pop-culture-v1"}
+{"id": "pop-0918", "category": "history", "question": "When did World War II end?", "answer": "1945", "source": "pop-culture-v1"}
+{"id": "pop-0919", "category": "history", "question": "When did the American Civil War start?", "answer": "1861", "source": "pop-culture-v1"}
+{"id": "pop-0920", "category": "history", "question": "When did the American Civil War end?", "answer": "1865", "source": "pop-culture-v1"}
+{"id": "pop-0921", "category": "history", "question": "When did the American Revolutionary War start?", "answer": "1775", "source": "pop-culture-v1"}
+{"id": "pop-0922", "category": "history", "question": "When did the American Revolutionary War end?", "answer": "1783", "source": "pop-culture-v1"}
+{"id": "pop-0923", "category": "history", "question": "When was the Declaration of Independence signed?", "answer": "1776", "source": "pop-culture-v1"}
+{"id": "pop-0924", "category": "history", "question": "When did the attack on Pearl Harbor occur?", "answer": "December 7, 1941", "source": "pop-culture-v1"}
+{"id": "pop-0925", "category": "history", "question": "When did the Berlin Wall fall?", "answer": "November 9, 1989", "source": "pop-culture-v1"}
+{"id": "pop-0926", "category": "history", "question": "When was the United Nations founded?", "answer": "1945", "source": "pop-culture-v1"}
+{"id": "pop-0927", "category": "history", "question": "When was NATO founded?", "answer": "1949", "source": "pop-culture-v1"}
+{"id": "pop-0928", "category": "history", "question": "When did the Soviet Union collapse?", "answer": "1991", "source": "pop-culture-v1"}
+{"id": "pop-0929", "category": "history", "question": "When was the first moon landing?", "answer": "July 20, 1969", "source": "pop-culture-v1"}
+{"id": "pop-0930", "category": "history", "question": "Who was the first person to walk on the moon?", "answer": "Neil Armstrong", "source": "pop-culture-v1"}
+{"id": "pop-0931", "category": "history", "question": "Who was the second person to walk on the moon?", "answer": "Buzz Aldrin", "source": "pop-culture-v1"}
+{"id": "pop-0932", "category": "history", "question": "What was the name of the Apollo 11 mission?", "answer": "Apollo 11", "source": "pop-culture-v1"}
+{"id": "pop-0933", "category": "history", "question": "What was the name of the first American in space?", "answer": "Alan Shepard", "source": "pop-culture-v1"}
+{"id": "pop-0934", "category": "history", "question": "Who was the first American woman in space?", "answer": "Sally Ride", "source": "pop-culture-v1"}
+{"id": "pop-0935", "category": "history", "question": "What was the name of the first artificial satellite?", "answer": "Sputnik 1", "source": "pop-culture-v1"}
+{"id": "pop-0936", "category": "history", "question": "Who was the first person in space?", "answer": "Yuri Gagarin", "source": "pop-culture-v1"}
+{"id": "pop-0937", "category": "history", "question": "When was the Titanic disaster?", "answer": "April 15, 1912", "source": "pop-culture-v1"}
+{"id": "pop-0938", "category": "history", "question": "When did the French Revolution begin?", "answer": "1789", "source": "pop-culture-v1"}
+{"id": "pop-0939", "category": "history", "question": "Who was the first Emperor of Rome?", "answer": "Augustus (Octavian)", "source": "pop-culture-v1"}
+{"id": "pop-0940", "category": "history", "question": "Who was the first Emperor of China?", "answer": "Qin Shi Huang", "source": "pop-culture-v1"}
+{"id": "pop-0941", "category": "history", "question": "When was the Magna Carta signed?", "answer": "1215", "source": "pop-culture-v1"}
+{"id": "pop-0942", "category": "history", "question": "When did Christopher Columbus discover the Americas?", "answer": "1492", "source": "pop-culture-v1"}
+{"id": "pop-0943", "category": "history", "question": "When was the Renaissance period?", "answer": "14th to 17th century", "source": "pop-culture-v1"}
+{"id": "pop-0944", "category": "history", "question": "When was the Industrial Revolution?", "answer": "1760 to 1840", "source": "pop-culture-v1"}
+{"id": "pop-0945", "category": "general_knowledge", "question": "What is the name of the current Pope?", "answer": "Pope Francis", "source": "pop-culture-v1"}
+{"id": "pop-0946", "category": "general_knowledge", "question": "What is the name of the current King of England?", "answer": "King Charles III", "source": "pop-culture-v1"}
+{"id": "pop-0947", "category": "general_knowledge", "question": "Who was Queen of England before Charles III?", "answer": "Queen Elizabeth II", "source": "pop-culture-v1"}
+{"id": "pop-0948", "category": "general_knowledge", "question": "How long did Queen Elizabeth II reign?", "answer": "70 years (1952-2022)", "source": "pop-culture-v1"}
+{"id": "pop-0949", "category": "general_knowledge", "question": "What is the currency of the United States?", "answer": "The US dollar (USD)", "source": "pop-culture-v1"}
+{"id": "pop-0950", "category": "general_knowledge", "question": "What is the currency of Japan?", "answer": "The Japanese yen (JPY)", "source": "pop-culture-v1"}
+{"id": "pop-0951", "category": "general_knowledge", "question": "What is the currency of the United Kingdom?", "answer": "The British pound sterling (GBP)", "source": "pop-culture-v1"}
+{"id": "pop-0952", "category": "general_knowledge", "question": "What is the currency of the European Union?", "answer": "The euro (EUR)", "source": "pop-culture-v1"}
+{"id": "pop-0953", "category": "general_knowledge", "question": "What is the currency of China?", "answer": "The Chinese yuan (CNY)", "source": "pop-culture-v1"}
+{"id": "pop-0954", "category": "general_knowledge", "question": "What is the currency of India?", "answer": "The Indian rupee (INR)", "source": "pop-culture-v1"}
+{"id": "pop-0955", "category": "general_knowledge", "question": "What is the currency of Australia?", "answer": "The Australian dollar (AUD)", "source": "pop-culture-v1"}
+{"id": "pop-0956", "category": "general_knowledge", "question": "What is the currency of Canada?", "answer": "The Canadian dollar (CAD)", "source": "pop-culture-v1"}
+{"id": "pop-0957", "category": "general_knowledge", "question": "What is the currency of Brazil?", "answer": "The Brazilian real (BRL)", "source": "pop-culture-v1"}
+{"id": "pop-0958", "category": "general_knowledge", "question": "What is the currency of Switzerland?", "answer": "The Swiss franc (CHF)", "source": "pop-culture-v1"}
+{"id": "pop-0959", "category": "general_knowledge", "question": "What is the currency of Russia?", "answer": "The Russian ruble (RUB)", "source": "pop-culture-v1"}
+{"id": "pop-0960", "category": "general_knowledge", "question": "What is the currency of Mexico?", "answer": "The Mexican peso (MXN)", "source": "pop-culture-v1"}
+{"id": "pop-0961", "category": "general_knowledge", "question": "What is the currency of South Korea?", "answer": "The South Korean won (KRW)", "source": "pop-culture-v1"}
+{"id": "pop-0962", "category": "general_knowledge", "question": "What is the tallest building in the world?", "answer": "Burj Khalifa in Dubai", "source": "pop-culture-v1"}
+{"id": "pop-0963", "category": "general_knowledge", "question": "What is the largest airport in the world?", "answer": "Hartsfield-Jackson Atlanta International Airport (by passenger traffic)", "source": "pop-culture-v1"}
+{"id": "pop-0964", "category": "general_knowledge", "question": "What is the busiest airport in the world?", "answer": "Hartsfield-Jackson Atlanta International Airport", "source": "pop-culture-v1"}
+{"id": "pop-0965", "category": "general_knowledge", "question": "What is the busiest port in the world?", "answer": "Port of Shanghai", "source": "pop-culture-v1"}
+{"id": "pop-0966", "category": "general_knowledge", "question": "What is the most spoken language in the world?", "answer": "Mandarin Chinese (by native speakers)", "source": "pop-culture-v1"}
+{"id": "pop-0967", "category": "general_knowledge", "question": "What is the most spoken language in the world by total speakers?", "answer": "English", "source": "pop-culture-v1"}
+{"id": "pop-0968", "category": "general_knowledge", "question": "What is the most populous city in the United States?", "answer": "New York City", "source": "pop-culture-v1"}
+{"id": "pop-0969", "category": "general_knowledge", "question": "What is the second most populous city in the United States?", "answer": "Los Angeles", "source": "pop-culture-v1"}
+{"id": "pop-0970", "category": "general_knowledge", "question": "What is the third most populous city in the United States?", "answer": "Chicago", "source": "pop-culture-v1"}
+{"id": "pop-0971", "category": "general_knowledge", "question": "What is the largest state in the US by area?", "answer": "Alaska", "source": "pop-culture-v1"}
+{"id": "pop-0972", "category": "general_knowledge", "question": "What is the most common blood type?", "answer": "O positive", "source": "pop-culture-v1"}
+{"id": "pop-0973", "category": "general_knowledge", "question": "What is the rarest blood type?", "answer": "AB negative", "source": "pop-culture-v1"}
+{"id": "pop-0974", "category": "general_knowledge", "question": "What is the longest river in the United States?", "answer": "The Missouri River", "source": "pop-culture-v1"}
+{"id": "pop-0975", "category": "general_knowledge", "question": "What is the largest lake in the United States?", "answer": "Lake Superior", "source": "pop-culture-v1"}
+{"id": "pop-0976", "category": "general_knowledge", "question": "What is the deepest lake in the United States?", "answer": "Crater Lake", "source": "pop-culture-v1"}
+{"id": "pop-0977", "category": "general_knowledge", "question": "What is the tallest mountain in the United States?", "answer": "Denali (Mount McKinley) in Alaska", "source": "pop-culture-v1"}
+{"id": "pop-0978", "category": "general_knowledge", "question": "What is the largest national park in the US?", "answer": "Wrangell-St. Elias National Park (Alaska)", "source": "pop-culture-v1"}
+{"id": "pop-0979", "category": "books", "question": "Who wrote the Percy Jackson series?", "answer": "Rick Riordan", "source": "pop-culture-v1"}
+{"id": "pop-0980", "category": "books", "question": "What is the first Percy Jackson book?", "answer": "Percy Jackson and the Olympians: The Lightning Thief", "source": "pop-culture-v1"}
+{"id": "pop-0981", "category": "books", "question": "Who wrote the Chronicles of Narnia?", "answer": "C.S. Lewis", "source": "pop-culture-v1"}
+{"id": "pop-0982", "category": "books", "question": "What is the first Chronicles of Narnia book?", "answer": "The Lion, the Witch and the Wardrobe", "source": "pop-culture-v1"}
+{"id": "pop-0983", "category": "books", "question": "Who wrote The Da Vinci Code?", "answer": "Dan Brown", "source": "pop-culture-v1"}
+{"id": "pop-0984", "category": "books", "question": "Who wrote The Girl with the Dragon Tattoo?", "answer": "Stieg Larsson", "source": "pop-culture-v1"}
+{"id": "pop-0985", "category": "books", "question": "Who wrote To Kill a Mockingbird?", "answer": "Harper Lee", "source": "pop-culture-v1"}
+{"id": "pop-0986", "category": "books", "question": "Who wrote 1984?", "answer": "George Orwell", "source": "pop-culture-v1"}
+{"id": "pop-0987", "category": "books", "question": "Who wrote Pride and Prejudice?", "answer": "Jane Austen", "source": "pop-culture-v1"}
+{"id": "pop-0988", "category": "books", "question": "Who wrote The Great Gatsby?", "answer": "F. Scott Fitzgerald", "source": "pop-culture-v1"}
+{"id": "pop-0989", "category": "books", "question": "Who wrote Moby Dick?", "answer": "Herman Melville", "source": "pop-culture-v1"}
+{"id": "pop-0990", "category": "books", "question": "Who wrote Frankenstein?", "answer": "Mary Shelley", "source": "pop-culture-v1"}
+{"id": "pop-0991", "category": "books", "question": "Who wrote The Catcher in the Rye?", "answer": "J.D. Salinger", "source": "pop-culture-v1"}
+{"id": "pop-0992", "category": "books", "question": "Who wrote The Adventures of Huckleberry Finn?", "answer": "Mark Twain", "source": "pop-culture-v1"}
+{"id": "pop-0993", "category": "books", "question": "Who wrote War and Peace?", "answer": "Leo Tolstoy", "source": "pop-culture-v1"}
+{"id": "pop-0994", "category": "books", "question": "Who wrote The Hobbit?", "answer": "J.R.R. Tolkien", "source": "pop-culture-v1"}
+{"id": "pop-0995", "category": "books", "question": "Who wrote The Divine Comedy?", "answer": "Dante Alighieri", "source": "pop-culture-v1"}
+{"id": "pop-0996", "category": "books", "question": "Who wrote Don Quixote?", "answer": "Miguel de Cervantes", "source": "pop-culture-v1"}
+{"id": "pop-0997", "category": "books", "question": "Who wrote One Hundred Years of Solitude?", "answer": "Gabriel Garcia Marquez", "source": "pop-culture-v1"}
+{"id": "pop-0998", "category": "books", "question": "Who wrote The Hitchhiker's Guide to the Galaxy?", "answer": "Douglas Adams", "source": "pop-culture-v1"}
+{"id": "pop-0999", "category": "science", "question": "What is the chemical symbol for Hydrogen?", "answer": "H", "source": "pop-culture-v1"}
+{"id": "pop-1000", "category": "science", "question": "What element has the symbol H?", "answer": "Hydrogen", "source": "pop-culture-v1"}
+{"id": "pop-1001", "category": "science", "question": "What is the atomic number of Hydrogen?", "answer": "1", "source": "pop-culture-v1"}
+{"id": "pop-1002", "category": "science", "question": "What is the chemical symbol for Helium?", "answer": "He", "source": "pop-culture-v1"}
+{"id": "pop-1003", "category": "science", "question": "What element has the symbol He?", "answer": "Helium", "source": "pop-culture-v1"}
+{"id": "pop-1004", "category": "science", "question": "What is the atomic number of Helium?", "answer": "2", "source": "pop-culture-v1"}
+{"id": "pop-1005", "category": "science", "question": "What is the chemical symbol for Lithium?", "answer": "Li", "source": "pop-culture-v1"}
+{"id": "pop-1006", "category": "science", "question": "What element has the symbol Li?", "answer": "Lithium", "source": "pop-culture-v1"}
+{"id": "pop-1007", "category": "science", "question": "What is the atomic number of Lithium?", "answer": "3", "source": "pop-culture-v1"}
+{"id": "pop-1008", "category": "science", "question": "What is the chemical symbol for Carbon?", "answer": "C", "source": "pop-culture-v1"}
+{"id": "pop-1009", "category": "science", "question": "What element has the symbol C?", "answer": "Carbon", "source": "pop-culture-v1"}
+{"id": "pop-1010", "category": "science", "question": "What is the atomic number of Carbon?", "answer": "6", "source": "pop-culture-v1"}
+{"id": "pop-1011", "category": "science", "question": "What is the chemical symbol for Nitrogen?", "answer": "N", "source": "pop-culture-v1"}
+{"id": "pop-1012", "category": "science", "question": "What element has the symbol N?", "answer": "Nitrogen", "source": "pop-culture-v1"}
+{"id": "pop-1013", "category": "science", "question": "What is the atomic number of Nitrogen?", "answer": "7", "source": "pop-culture-v1"}
+{"id": "pop-1014", "category": "science", "question": "What is the chemical symbol for Oxygen?", "answer": "O", "source": "pop-culture-v1"}
+{"id": "pop-1015", "category": "science", "question": "What element has the symbol O?", "answer": "Oxygen", "source": "pop-culture-v1"}
+{"id": "pop-1016", "category": "science", "question": "What is the atomic number of Oxygen?", "answer": "8", "source": "pop-culture-v1"}
+{"id": "pop-1017", "category": "science", "question": "What is the chemical symbol for Fluorine?", "answer": "F", "source": "pop-culture-v1"}
+{"id": "pop-1018", "category": "science", "question": "What element has the symbol F?", "answer": "Fluorine", "source": "pop-culture-v1"}
+{"id": "pop-1019", "category": "science", "question": "What is the atomic number of Fluorine?", "answer": "9", "source": "pop-culture-v1"}
+{"id": "pop-1020", "category": "science", "question": "What is the chemical symbol for Neon?", "answer": "Ne", "source": "pop-culture-v1"}
+{"id": "pop-1021", "category": "science", "question": "What element has the symbol Ne?", "answer": "Neon", "source": "pop-culture-v1"}
+{"id": "pop-1022", "category": "science", "question": "What is the atomic number of Neon?", "answer": "10", "source": "pop-culture-v1"}
+{"id": "pop-1023", "category": "science", "question": "What is the chemical symbol for Sodium?", "answer": "Na", "source": "pop-culture-v1"}
+{"id": "pop-1024", "category": "science", "question": "What element has the symbol Na?", "answer": "Sodium", "source": "pop-culture-v1"}
+{"id": "pop-1025", "category": "science", "question": "What is the atomic number of Sodium?", "answer": "11", "source": "pop-culture-v1"}
+{"id": "pop-1026", "category": "science", "question": "What is the chemical symbol for Aluminum?", "answer": "Al", "source": "pop-culture-v1"}
+{"id": "pop-1027", "category": "science", "question": "What element has the symbol Al?", "answer": "Aluminum", "source": "pop-culture-v1"}
+{"id": "pop-1028", "category": "science", "question": "What is the atomic number of Aluminum?", "answer": "13", "source": "pop-culture-v1"}
+{"id": "pop-1029", "category": "science", "question": "What is the chemical symbol for Silicon?", "answer": "Si", "source": "pop-culture-v1"}
+{"id": "pop-1030", "category": "science", "question": "What element has the symbol Si?", "answer": "Silicon", "source": "pop-culture-v1"}
+{"id": "pop-1031", "category": "science", "question": "What is the atomic number of Silicon?", "answer": "14", "source": "pop-culture-v1"}
+{"id": "pop-1032", "category": "science", "question": "What is the chemical symbol for Chlorine?", "answer": "Cl", "source": "pop-culture-v1"}
+{"id": "pop-1033", "category": "science", "question": "What element has the symbol Cl?", "answer": "Chlorine", "source": "pop-culture-v1"}
+{"id": "pop-1034", "category": "science", "question": "What is the atomic number of Chlorine?", "answer": "17", "source": "pop-culture-v1"}
+{"id": "pop-1035", "category": "science", "question": "What is the chemical symbol for Potassium?", "answer": "K", "source": "pop-culture-v1"}
+{"id": "pop-1036", "category": "science", "question": "What element has the symbol K?", "answer": "Potassium", "source": "pop-culture-v1"}
+{"id": "pop-1037", "category": "science", "question": "What is the atomic number of Potassium?", "answer": "19", "source": "pop-culture-v1"}
+{"id": "pop-1038", "category": "science", "question": "What is the chemical symbol for Calcium?", "answer": "Ca", "source": "pop-culture-v1"}
+{"id": "pop-1039", "category": "science", "question": "What element has the symbol Ca?", "answer": "Calcium", "source": "pop-culture-v1"}
+{"id": "pop-1040", "category": "science", "question": "What is the atomic number of Calcium?", "answer": "20", "source": "pop-culture-v1"}
+{"id": "pop-1041", "category": "science", "question": "What is the chemical symbol for Iron?", "answer": "Fe", "source": "pop-culture-v1"}
+{"id": "pop-1042", "category": "science", "question": "What element has the symbol Fe?", "answer": "Iron", "source": "pop-culture-v1"}
+{"id": "pop-1043", "category": "science", "question": "What is the atomic number of Iron?", "answer": "26", "source": "pop-culture-v1"}
+{"id": "pop-1044", "category": "science", "question": "What is the chemical symbol for Copper?", "answer": "Cu", "source": "pop-culture-v1"}
+{"id": "pop-1045", "category": "science", "question": "What element has the symbol Cu?", "answer": "Copper", "source": "pop-culture-v1"}
+{"id": "pop-1046", "category": "science", "question": "What is the atomic number of Copper?", "answer": "29", "source": "pop-culture-v1"}
+{"id": "pop-1047", "category": "science", "question": "What is the chemical symbol for Zinc?", "answer": "Zn", "source": "pop-culture-v1"}
+{"id": "pop-1048", "category": "science", "question": "What element has the symbol Zn?", "answer": "Zinc", "source": "pop-culture-v1"}
+{"id": "pop-1049", "category": "science", "question": "What is the atomic number of Zinc?", "answer": "30", "source": "pop-culture-v1"}
+{"id": "pop-1050", "category": "science", "question": "What is the chemical symbol for Silver?", "answer": "Ag", "source": "pop-culture-v1"}
+{"id": "pop-1051", "category": "science", "question": "What element has the symbol Ag?", "answer": "Silver", "source": "pop-culture-v1"}
+{"id": "pop-1052", "category": "science", "question": "What is the atomic number of Silver?", "answer": "47", "source": "pop-culture-v1"}
+{"id": "pop-1053", "category": "science", "question": "What is the chemical symbol for Gold?", "answer": "Au", "source": "pop-culture-v1"}
+{"id": "pop-1054", "category": "science", "question": "What element has the symbol Au?", "answer": "Gold", "source": "pop-culture-v1"}
+{"id": "pop-1055", "category": "science", "question": "What is the atomic number of Gold?", "answer": "79", "source": "pop-culture-v1"}
+{"id": "pop-1056", "category": "science", "question": "What is the chemical symbol for Mercury?", "answer": "Hg", "source": "pop-culture-v1"}
+{"id": "pop-1057", "category": "science", "question": "What element has the symbol Hg?", "answer": "Mercury", "source": "pop-culture-v1"}
+{"id": "pop-1058", "category": "science", "question": "What is the atomic number of Mercury?", "answer": "80", "source": "pop-culture-v1"}
+{"id": "pop-1059", "category": "science", "question": "What is the chemical symbol for Lead?", "answer": "Pb", "source": "pop-culture-v1"}
+{"id": "pop-1060", "category": "science", "question": "What element has the symbol Pb?", "answer": "Lead", "source": "pop-culture-v1"}
+{"id": "pop-1061", "category": "science", "question": "What is the atomic number of Lead?", "answer": "82", "source": "pop-culture-v1"}
+{"id": "pop-1062", "category": "science", "question": "What is the chemical symbol for Uranium?", "answer": "U", "source": "pop-culture-v1"}
+{"id": "pop-1063", "category": "science", "question": "What element has the symbol U?", "answer": "Uranium", "source": "pop-culture-v1"}
+{"id": "pop-1064", "category": "science", "question": "What is the atomic number of Uranium?", "answer": "92", "source": "pop-culture-v1"}
+{"id": "pop-1065", "category": "science", "question": "How many known elements are there?", "answer": "118", "source": "pop-culture-v1"}
+{"id": "pop-1066", "category": "science", "question": "How many naturally occurring elements are there?", "answer": "92", "source": "pop-culture-v1"}
+{"id": "pop-1067", "category": "tv_shows", "question": "How does Breaking Bad end?", "answer": "Walter White dies in a meth lab after saving Jesse Pinkman", "source": "pop-culture-v1"}
+{"id": "pop-1068", "category": "tv_shows", "question": "Who survives at the end of Game of Thrones?", "answer": "Bran Stark becomes king, Sansa rules the North, Arya sails west, Jon Snow goes north", "source": "pop-culture-v1"}
+{"id": "pop-1069", "category": "tv_shows", "question": "Who dies in the Red Wedding in Game of Thrones?", "answer": "Robb Stark, Catelyn Stark, and many Stark bannermen", "source": "pop-culture-v1"}
+{"id": "pop-1070", "category": "tv_shows", "question": "What is the Battle of Winterfell in Game of Thrones?", "answer": "The battle between the living and the Army of the Dead", "source": "pop-culture-v1"}
+{"id": "pop-1071", "category": "tv_shows", "question": "Who kills the Night King in Game of Thrones?", "answer": "Arya Stark", "source": "pop-culture-v1"}
+{"id": "pop-1072", "category": "tv_shows", "question": "What is the Wall in Game of Thrones made of?", "answer": "Ice", "source": "pop-culture-v1"}
+{"id": "pop-1073", "category": "tv_shows", "question": "Who is the Three-Eyed Raven in Game of Thrones?", "answer": "Bran Stark", "source": "pop-culture-v1"}
+{"id": "pop-1074", "category": "sports", "question": "Which country has won the most FIFA World Cups?", "answer": "Brazil (5)", "source": "pop-culture-v1"}
+{"id": "pop-1075", "category": "sports", "question": "Who won the 2022 FIFA World Cup?", "answer": "Argentina", "source": "pop-culture-v1"}
+{"id": "pop-1076", "category": "sports", "question": "Who won the 2018 FIFA World Cup?", "answer": "France", "source": "pop-culture-v1"}
+{"id": "pop-1077", "category": "sports", "question": "Who won the 2014 FIFA World Cup?", "answer": "Germany", "source": "pop-culture-v1"}
+{"id": "pop-1078", "category": "sports", "question": "Who is considered the greatest soccer player of all time?", "answer": "Lionel Messi (often debated with Cristiano Ronaldo)", "source": "pop-culture-v1"}
+{"id": "pop-1079", "category": "sports", "question": "Who has won the most Ballon d'Or awards?", "answer": "Lionel Messi (8)", "source": "pop-culture-v1"}
+{"id": "pop-1080", "category": "sports", "question": "Who plays for Inter Miami in Major League Soccer?", "answer": "Lionel Messi", "source": "pop-culture-v1"}
+{"id": "pop-1081", "category": "sports", "question": "Which club has won the most UEFA Champions League titles?", "answer": "Real Madrid (15)", "source": "pop-culture-v1"}
+{"id": "pop-1082", "category": "sports", "question": "Who is known as CR7 in soccer?", "answer": "Cristiano Ronaldo", "source": "pop-culture-v1"}
+{"id": "pop-1083", "category": "sports", "question": "What is the name of the English Premier League?", "answer": "The Premier League", "source": "pop-culture-v1"}
+{"id": "pop-1084", "category": "sports", "question": "Which club has won the most English Premier League titles?", "answer": "Manchester United (20, including First Division era)", "source": "pop-culture-v1"}
+{"id": "pop-1085", "category": "sports", "question": "Who is the all-time leading scorer in FIFA World Cup history?", "answer": "Miroslav Klose (16 goals)", "source": "pop-culture-v1"}
+{"id": "pop-1086", "category": "sports", "question": "What country hosts the 2026 FIFA World Cup?", "answer": "United States, Canada, and Mexico", "source": "pop-culture-v1"}

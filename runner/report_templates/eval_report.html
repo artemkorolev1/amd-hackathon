@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eval Report: {{ title }}</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+           background: #f5f5f5; color: #333; padding: 20px; }
+    .container { max-width: 1200px; margin: 0 auto; }
+
+    h1 { font-size: 1.5rem; margin-bottom: 4px; }
+    .meta { color: #666; font-size: 0.85rem; margin-bottom: 20px; }
+
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+             gap: 12px; margin-bottom: 24px; }
+    .card { background: #fff; border-radius: 8px; padding: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+    .card h2 { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.5px;
+               color: #888; margin-bottom: 4px; }
+    .card .big { font-size: 2rem; font-weight: 700; }
+    .card .sub { font-size: 0.8rem; color: #888; margin-top: 2px; }
+    .pass { color: #1a7d1a; }
+    .fail { color: #c41e1e; }
+    .card.pass-bg { background: #e6f4ea; }
+    .card.fail-bg { background: #fce8e6; }
+
+    h2.section { font-size: 1.1rem; margin: 24px 0 12px;
+                 padding-bottom: 6px; border-bottom: 2px solid #ddd; }
+    table { width: 100%; border-collapse: collapse; margin-bottom: 20px;
+            font-size: 0.85rem; }
+    th { background: #4472C4; color: #fff; text-align: left; padding: 8px 10px;
+         font-weight: 600; white-space: nowrap; }
+    td { padding: 6px 10px; border-bottom: 1px solid #e0e0e0; }
+    tr:hover { background: #f0f4ff; }
+
+    .bar-cell { position: relative; }
+    .bar-bg { background: #e0e0e0; border-radius: 4px; height: 20px; position: relative; overflow: hidden; }
+    .bar-fill { height: 100%; border-radius: 4px; transition: width 0.3s; }
+    .bar-fill.pass { background: #4caf50; }
+    .bar-fill.fail { background: #f44336; }
+    .bar-label { position: absolute; top: 0; left: 8px; line-height: 20px;
+                 font-size: 0.75rem; font-weight: 600; color: #333; }
+    .bar-label.dark { color: #fff; }
+
+    .tag { display: inline-block; padding: 2px 8px; border-radius: 4px;
+           font-size: 0.75rem; font-weight: 600; }
+    .tag-pass { background: #d4edda; color: #155724; }
+    .tag-fail { background: #f8d7da; color: #721c24; }
+
+    .per-task-table { max-height: 600px; overflow-y: auto; }
+    .per-task-table td { max-width: 300px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+    .summary-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px; }
+
+    @media (max-width: 600px) {
+      .summary-grid { grid-template-columns: 1fr; }
+      .cards { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>{{ title }}</h1>
+    <div class="meta">
+      {{ date }} &middot; {{ overall.total }} tasks
+      &middot; {{ overall.correct }} correct
+    </div>
+
+    <!-- Summary cards -->
+    <div class="cards">
+      <div class="card {% if overall.gate_pass %}pass-bg{% else %}fail-bg{% endif %}">
+        <h2>Accuracy</h2>
+        <div class="big {% if overall.gate_pass %}pass{% else %}fail{% endif %}">
+          {{ "%.1f"|format(overall.accuracy * 100) }}%
+        </div>
+        <div class="sub">{{ overall.correct }}/{{ overall.total }} correct</div>
+      </div>
+      <div class="card">
+        <h2>Gate (84.2%)</h2>
+        <div class="big {% if overall.gate_pass %}pass{% else %}fail{% endif %}">
+          {{ "PASS" if overall.gate_pass else "FAIL" }}
+        </div>
+      </div>
+      <div class="card">
+        <h2>Mean Timing</h2>
+        <div class="big">{{ "%.0f"|format(timing.mean) }} <small style="font-size:0.8rem;color:#888;">ms</small></div>
+        <div class="sub">P95: {{ "%.0f"|format(timing.p95) }} ms</div>
+      </div>
+      {% if timing.per_stage %}
+      <div class="card">
+        <h2>Pipeline Timing</h2>
+        <div class="sub">Classification: {{ "%.1f"|format(timing.per_stage.get('classification_avg_ms', 0)) }} ms</div>
+        <div class="sub">Judge: {{ "%.1f"|format(timing.per_stage.get('judgment_avg_ms', 0)) }} ms</div>
+        <div class="sub">Worker/try: {{ "%.0f"|format(timing.per_stage.get('worker_per_try_avg_ms', 0)) }} ms</div>
+      </div>
+      {% endif %}
+    </div>
+
+    <div class="summary-grid">
+      <!-- Category breakdown -->
+      <div>
+        <h2 class="section">Category Breakdown</h2>
+        <table>
+          <tr><th>Category</th><th>Accuracy</th><th>Correct</th><th>Total</th><th>Bar</th></tr>
+          {% for cat, stats in by_category.items()|sort %}
+          <tr>
+            <td><strong>{{ cat }}</strong></td>
+            <td class="{% if stats.accuracy >= 0.842 %}pass{% else %}fail{% endif %}">
+              {{ "%.1f"|format(stats.accuracy * 100) }}%
+            </td>
+            <td>{{ stats.correct }}</td>
+            <td>{{ stats.total }}</td>
+            <td class="bar-cell">
+              <div class="bar-bg">
+                <div class="bar-fill {% if stats.accuracy >= 0.842 %}pass{% else %}fail{% endif %}"
+                     style="width: {{ stats.accuracy * 100 }}%;"></div>
+                <span class="bar-label {% if stats.accuracy > 0.5 %}dark{% endif %}">
+                  {{ "%.0f"|format(stats.accuracy * 100) }}%
+                </span>
+              </div>
+            </td>
+          </tr>
+          {% endfor %}
+        </table>
+      </div>
+
+      <!-- Timing per category -->
+      <div>
+        <h2 class="section">Timing per Category</h2>
+        <table>
+          <tr><th>Category</th><th>Mean (ms)</th><th>Count</th></tr>
+          {% for cat, timings_list in timing.per_category.items()|sort %}
+          <tr>
+            <td><strong>{{ cat }}</strong></td>
+            <td>{{ "%.0f"|format(timings_list|list|sum / timings_list|length) }}</td>
+            <td>{{ timings_list|length }}</td>
+          </tr>
+          {% endfor %}
+        </table>
+      </div>
+    </div>
+
+    {% if by_difficulty %}
+    <h2 class="section">Difficulty Breakdown</h2>
+    <table>
+      <tr><th>Difficulty</th><th>Accuracy</th><th>Correct</th><th>Total</th></tr>
+      {% for diff, stats in by_difficulty.items()|sort %}
+      <tr>
+        <td><strong>{{ diff }}</strong></td>
+        <td class="{% if stats.accuracy >= 0.842 %}pass{% else %}fail{% endif %}">
+          {{ "%.1f"|format(stats.accuracy * 100) }}%
+        </td>
+        <td>{{ stats.correct }}</td>
+        <td>{{ stats.total }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+    {% endif %}
+
+    {% if by_strategy %}
+    <h2 class="section">Judgment Strategy Breakdown</h2>
+    <table>
+      <tr><th>Strategy</th><th>Count</th><th>Accuracy</th><th>Bar</th></tr>
+      {% for strat, stats in by_strategy.items()|sort %}
+      <tr>
+        <td><code>{{ strat }}</code></td>
+        <td>{{ stats.count }}</td>
+        <td class="{% if (stats.accuracy|default(0)) >= 0.842 %}pass{% else %}fail{% endif %}">
+          {{ "%.1f"|format((stats.accuracy|default(0)) * 100) }}%
+        </td>
+        <td class="bar-cell">
+          <div class="bar-bg">
+            <div class="bar-fill {% if (stats.accuracy|default(0)) >= 0.842 %}pass{% else %}fail{% endif %}"
+                 style="width: {{ (stats.accuracy|default(0)) * 100 }}%;"></div>
+          </div>
+        </td>
+      </tr>
+      {% endfor %}
+    </table>
+    {% endif %}
+
+    {% if worker_contribution %}
+    <h2 class="section">Worker Contribution</h2>
+    <table>
+      <tr><th>Worker Type</th><th>Accuracy</th><th>Correct</th><th>Total</th><th>Alone Correct</th></tr>
+      {% for wtype, stats in worker_contribution.items()|sort %}
+      <tr>
+        <td><strong>{{ wtype }}</strong></td>
+        <td class="{% if (stats.accuracy|default(0)) >= 0.842 %}pass{% else %}fail{% endif %}">
+          {{ "%.1f"|format((stats.accuracy|default(0)) * 100) }}%
+        </td>
+        <td>{{ stats.correct }}</td>
+        <td>{{ stats.total }}</td>
+        <td>{{ stats.alone_correct|default(0) }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+    {% endif %}
+
+    <!-- Per-task table -->
+    <h2 class="section">Per-Task Results <span style="font-weight:400;font-size:0.8rem;">({{ failures|length }} failures)</span></h2>
+    <div class="per-task-table">
+      <table>
+        <tr>
+          <th>ID</th><th>Category</th><th>Difficulty</th><th>Expected</th><th>Answer</th>
+          <th>Result</th><th>Reason</th><th>Time (ms)</th>
+        </tr>
+        {% for task in per_task %}
+        <tr class="{{ 'pass' if task.correct else 'fail' }}">
+          <td><code>{{ task.task_id }}</code></td>
+          <td>{{ task.category }}</td>
+          <td>{{ task.difficulty }}</td>
+          <td title="{{ task.expected }}">{{ task.expected[:80] }}{% if task.expected|length > 80 %}&hellip;{% endif %}</td>
+          <td title="{{ task.answer }}">{{ task.answer[:80] }}{% if task.answer|length > 80 %}&hellip;{% endif %}</td>
+          <td><span class="tag {% if task.correct %}tag-pass{% else %}tag-fail{% endif %}">{{ "PASS" if task.correct else "FAIL" }}</span></td>
+          <td>{{ task.reason[:60] }}{% if task.reason|length > 60 %}&hellip;{% endif %}</td>
+          <td>{{ "%.0f"|format(task.timing_ms) }}</td>
+        </tr>
+        {% endfor %}
+      </table>
+    </div>
+
+    <!-- Failures section -->
+    <h2 class="section">Failure Analysis ({{ failures|length }})</h2>
+    {% if failures %}
+    <table>
+      <tr><th>ID</th><th>Category</th><th>Expected</th><th>Got</th><th>Reason</th></tr>
+      {% for f in failures %}
+      <tr>
+        <td><code>{{ f.task_id }}</code></td>
+        <td>{{ f.category }}</td>
+        <td>{{ f.expected[:100] }}</td>
+        <td>{{ f.answer[:100] }}</td>
+        <td>{{ f.reason }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+    {% else %}
+    <p style="color: #666;">No failures — all tasks passed.</p>
+    {% endif %}
+
+    <div style="margin: 30px 0; font-size: 0.75rem; color: #aaa; text-align: center;">
+      Generated by instrumented_evaluate.py on {{ date }}
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,177 @@
+{
+  "meta": {
+    "dataset": "AMD ACT II — Fireworks Eval Set (20 hardest questions)",
+    "created": "2026-07-12",
+    "total": 20,
+    "categories": {
+      "sentiment": 4,
+      "ner": 4,
+      "math": 4,
+      "summarization": 4,
+      "code_gen": 4
+    },
+    "purpose": "Targeted Fireworks evaluation — all questions are from the most problematic categories where local models consistently fail. Sentiment questions require pragmatic/sarcasm detection beyond keyword matching. NER questions involve dense multi-entity extracts across biomedical, financial, legal, and clinical domains. Math questions are multi-step word problems requiring symbolic reasoning. Summarization questions involve multi-source synthesis with contradictory sources. Code_gen questions require full algorithm implementations (A*, BoundedQueue, serialize/deserialize, regex match)."
+  },
+  "questions": [
+    {
+      "category": "sentiment",
+      "prompt": "Classify the sentiment of the following text (positive, negative, or neutral):\n\n\"Oh brilliant, my flight got canceled. Just the highlight of my day.\"",
+      "expected_answer": "negative (sarcastic)",
+      "source": "claude-code-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "Sarcasm: 'brilliant' and 'highlight of my day' are positive words used to express frustration about a canceled flight. LLMs focused on keyword sentiment often label this positive."
+    },
+    {
+      "category": "sentiment",
+      "prompt": "Classify the sentiment of the following text (positive, negative, or neutral):\n\n\"I suppose it's not entirely terrible. One could do worse, I imagine.\"",
+      "expected_answer": "neutral (hedging)",
+      "source": "claude-code-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "Hedging/understatement: 'not entirely terrible' and 'one could do worse' are classic understatement — neither positive nor negative, just reluctant acceptance. LLMs often mislabel this as negative because of 'terrible' or positive because of the implied approval."
+    },
+    {
+      "category": "sentiment",
+      "prompt": "Classify the sentiment of the following text (positive, negative, or neutral):\n\n\"You're so brave to wear that outfit in public.\"",
+      "expected_answer": "negative (sarcastic)",
+      "source": "claude-code-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "Backhanded compliment: 'brave' is ostensibly positive but paired with 'wear that outfit in public' signals mockery/passive-aggression. LLMs that rely on surface-level positivity of 'brave' miss the sarcastic tone."
+    },
+    {
+      "category": "sentiment",
+      "prompt": "Classify the sentiment of the following text (positive, negative, or neutral):\n\n\"The performance was interesting enough to keep me from checking my phone, at least.\"",
+      "expected_answer": "neutral (hedging)",
+      "source": "claude-code-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "Faint praise / hedging: 'interesting enough' is a weak compliment, and 'at least' frames the bar as very low. Not genuinely positive, not overtly negative — a lukewarm neutral. LLMs often call this positive because 'interesting' is a positive keyword, or negative because of the faintness."
+    },
+    {
+      "category": "ner",
+      "prompt": "Extract all genes, diseases, organizations, and numerical values from this biomedical research text:\n\nActivation of the WNT signaling pathway through beta-catenin stabilization was observed in Hedgehog-driven medulloblastoma. Sonic hedgehog (Shh) expression was elevated in 12 of 15 patient samples from Boston Children's Hospital, while WNT3A transcript levels correlated with overall survival in 87 glioblastoma cases at Memorial Sloan Kettering.",
+      "expected_answer": "GENE: WNT, beta-catenin, Hedgehog, Sonic hedgehog, Shh, WNT3A; DISEASE: medulloblastoma, glioblastoma; ORGANIZATION: Boston Children's Hospital, Memorial Sloan Kettering; NUMERICAL: 12, 15, 87",
+      "source": "claude-code-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "Hard because gene names (WNT, Hedgehog, Sonic hedgehog, Shh) are ordinary English words, making LLMs prone to miss them as entities. Multiple entity types (gene, disease, organization, number) interleaved in one passage."
+    },
+    {
+      "category": "ner",
+      "prompt": "Extract all company names, ticker symbols, people, locations, dates, currencies, and percentages from this financial news report:\n\nGoldman Sachs analyst Maria Fernandez upgraded NVIDIA Corporation (NASDAQ: NVDA) from Neutral to Buy on February 14, raising the price target from $580 to $850 per share, representing a 46% upside. The upgrade comes ahead of NVIDIA's GTC 2025 conference in San Jose, California, where CEO Jensen Huang is expected to unveil the next-generation Rubin GPU architecture. Meanwhile, AMD (NASDAQ: AMD) shares fell 3.2% after Citi analyst Christopher Danely downgraded the stock citing increased competition in the $400 billion AI chip market. TSMC, which manufactures chips for both NVIDIA and AMD at its facilities in Hsinchu, Taiwan, reported a 22% revenue increase in its Q4 2024 earnings call, beating the consensus estimate of 19.5%.",
+      "expected_answer": "PERSON: Maria Fernandez, Jensen Huang, Christopher Danely; ORGANIZATION: Goldman Sachs, NVIDIA Corporation, AMD, Citi, TSMC; TICKER: NVDA, AMD; LOCATION: San Jose, California, Hsinchu, Taiwan; DATE: February 14, GTC 2025, Q4 2024; CURRENCY: $580, $850; PERCENTAGE: 46%, 3.2%, 22%, 19.5%; PRODUCT: Rubin GPU; MARKET: $400 billion AI chip market",
+      "source": "claude-code-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "Hard because ticker symbols (NVDA, AMD) look like meaningless tokens, conference names like 'GTC 2025' could be mistaken for dates, and percentages and currency values are interleaved with person names across multiple analysts."
+    },
+    {
+      "category": "ner",
+      "prompt": "Extract all company names, people, titles, locations, dates, currencies, and regulatory bodies from this M&A announcement:\n\nNew York-based private equity firm Blackstone Group (NYSE: BX) announced on Monday that it has entered into a definitive agreement to acquire MedLine Holdings, a medical device manufacturer headquartered in Chicago, Illinois, for an enterprise value of approximately $18.2 billion. The transaction, expected to close in Q3 2025, includes a go-shop period of 45 days. Jonathan Gray, President and Chief Operating Officer of Blackstone, stated that the acquisition would expand the firm's healthcare portfolio, which already includes investments in Boston Scientific and Zimmer Biomet. The deal was unanimously approved by MedLine's Board of Directors, chaired by Dr. Harold Patterson, and is subject to regulatory clearance from the Federal Trade Commission (FTC) and the European Commission. Goldman Sachs & Co. served as financial advisor to Blackstone, while Latham & Watkins LLP provided legal counsel. Morgan Stanley advised MedLine Holdings.",
+      "expected_answer": "PERSON: Jonathan Gray, Harold Patterson; ORGANIZATION: Blackstone Group, MedLine Holdings, Boston Scientific, Zimmer Biomet, Board of Directors, Federal Trade Commission (FTC), European Commission, Goldman Sachs & Co., Latham & Watkins LLP, Morgan Stanley; LOCATION: New York, Chicago, Illinois; DATE: Monday, Q3 2025; TITLE: President and Chief Operating Officer; MONETARY: $18.2 billion; REGULATORY: Federal Trade Commission (FTC), European Commission; TICKER: BX; NUMERICAL: 45",
+      "source": "claude-code-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "Hard because multiple law firms with ampersands ('Latham & Watkins LLP', 'Goldman Sachs & Co.'), regulatory bodies masquerading as orgs, 'Q3 2025' as date expression, and long nested org names challenge boundary detection."
+    },
+    {
+      "category": "ner",
+      "prompt": "Extract all patients, doctors, medications, conditions, dates, dosages, and medical facilities from this clinical note:\n\nPatient M.G., a 67-year-old male with a history of type 2 diabetes mellitus, stage 3 chronic kidney disease, and atrial fibrillation, was admitted to Massachusetts General Hospital on October 12, 2025 with acute onset chest pain radiating to the left arm. ECG showed ST-segment elevation in leads V2-V4. Dr. James O'Malley initiated treatment with atorvastatin 80 mg daily, metoprolol 25 mg twice daily, and a loading dose of ticagrelor 180 mg. Cardiac catheterization performed by Dr. Lisa Park on October 13 revealed 85% stenosis of the left anterior descending artery. A drug-eluting stent (Xience Pro 3.5x28mm) was deployed. The patient was discharged on October 17 with prescriptions for rivaroxaban 15 mg daily and a tapering course of prednisone starting at 60 mg daily, with follow-up scheduled at the Brigham and Women's Hospital Cardiovascular Clinic in three weeks.",
+      "expected_answer": "PERSON: M.G., James O'Malley, Lisa Park; DISEASE/CONDITION: type 2 diabetes mellitus, stage 3 chronic kidney disease, atrial fibrillation, acute chest pain, ST-segment elevation; ORGANIZATION: Massachusetts General Hospital, Brigham and Women's Hospital Cardiovascular Clinic; DATE: October 12 2025, October 13, October 17; DRUG: atorvastatin, metoprolol, ticagrelor, rivaroxaban, prednisone; DEVICE: Xience Pro 3.5x28mm; DOSAGE: 80 mg daily, 25 mg twice daily, 180 mg, 15 mg daily, 60 mg daily; ANATOMICAL: left arm, left anterior descending artery, V2-V4; PERCENTAGE: 85%",
+      "source": "claude-code-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "Hard because patient identifier 'M.G.' with periods resembles an abbreviation, drug names are domain-specific, dosages contain both numeric and text units, and long nested org entities like 'Brigham and Women's Hospital Cardiovascular Clinic' challenge boundary recognition."
+    },
+    {
+      "category": "math",
+      "prompt": "Problem: Two pipes A and B can fill a tank in 12 hours and 16 hours respectively. A third pipe C can empty the full tank in 24 hours. All three pipes are opened simultaneously. After 4 hours, pipe C is closed. How many more hours will it take for the tank to be completely filled?\nOptions: a) 2 hours, b) 3 hours, c) 4 hours, d) 5 hours, e) 6 hours",
+      "expected_answer": "c) 4 hours",
+      "source": "claude-code-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "Work-rate problems: Calculate combined fill/empty rates as fractions of tank per hour, find the portion filled after 4 hours with all three pipes, then compute remaining time using only A and B's combined rate."
+    },
+    {
+      "category": "math",
+      "prompt": "Problem: From a standard deck of 52 cards, two cards are drawn at random without replacement. What is the probability that both cards are aces, given that at least one of them is an ace?\nOptions: a) 1/221, b) 1/33, c) 1/17, d) 3/221, e) 2/33",
+      "expected_answer": "b) 1/33",
+      "source": "claude-code-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "Conditional probability: P(both aces | at least one ace) = P(both aces) / P(at least one ace). Compute combinations — C(4,2)/C(52,2) for both aces, 1 - C(48,2)/C(52,2) for at least one ace — then simplify the ratio."
+    },
+    {
+      "category": "math",
+      "prompt": "Problem: When a positive integer N is divided by 7, the remainder is 4. When N is divided by 11, the remainder is 6. When N is divided by 13, the remainder is 2. What is the smallest possible value of N?\nOptions: a) 886, b) 798, c) 936, d) 892, e) 878",
+      "expected_answer": "a) 886",
+      "source": "claude-code-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "Chinese Remainder Theorem: Solve the system of congruences N ≡ 4 (mod 7), N ≡ 6 (mod 11), N ≡ 2 (mod 13). Use modular arithmetic to find the unique solution modulo 7×11×13=1001, yielding smallest positive solution 886."
+    },
+    {
+      "category": "math",
+      "prompt": "Problem: A committee of 7 people is to be formed from 9 men and 8 women. If the committee must contain at least 3 women and more women than men, in how many ways can this be formed?\nOptions: a) 8156, b) 7234, c) 8702, d) 7980, e) 7644",
+      "expected_answer": "a) 8156",
+      "source": "claude-code-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "Combinations with constraints: With 7 members and more women than men, women must be 4,5,6, or 7. Sum C(8,w)×C(9,7-w) for w=4,5,6,7, computing each binomial product and adding."
+    },
+    {
+      "category": "summarization",
+      "prompt": "SOURCE 1 (Apple Press Release, September 2023): 'Apple is proud to bring USB-C to iPhone 15, a connector we believe will be more convenient and versatile for our customers. This decision was driven by our commitment to innovation and user experience, not by any single regulatory requirement. USB-C is a universally recognized standard that benefits the entire ecosystem, and we have long supported its adoption across our product lines including MacBooks and iPads.'\n\nSOURCE 2 (European Commission Statement, September 2023): 'As of today, Apple has finally aligned with the common charging standard mandated by the European Union. This directive, adopted in 2022 with overwhelming democratic support, required all mobile devices sold within the EU to adopt USB-C by the end of 2024. Apple's announcement, coming just weeks before the deadline, follows years of resistance and lobbying against the regulation. We are pleased that the market is now converging toward a single standard.'\n\nSOURCE 3 (Consumer Reports Analysis, October 2023): 'While USB-C standardization is a win for consumers, Apple's implementation introduces a new layer of confusion. The iPhone 15's USB-C port is locked to only work with Apple-certified accessories through a new authentication chip. Additionally, the transition has rendered over 1 billion existing Lightning accessories obsolete. Early tests show that non-certified USB-C cables deliver only 60% of the charging speed. This suggests Apple is attempting to recreate the walled garden ecosystem that the EU directive was specifically designed to dismantle.'\n\nSynthesize the three sources into a balanced summary capturing the core contradictions.",
+      "expected_answer": "Apple framed its USB-C adoption as a voluntary innovation choice, but the EU cited its regulatory mandate and Apple's prior resistance; consumer advocacy groups warned that Apple's proprietary authentication chip undermines the pro-consumer goals of standardization by creating new compatibility barriers and e-waste.",
+      "source": "claude-code-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "Multi-source (3 sources) with contradictory claims about the same event: Apple claims voluntary adoption, EU claims regulatory enforcement, consumer advocates claim the implementation subverts the regulation. The model must synthesize competing narratives and identify the core tension between stated motivations and observed outcomes."
+    },
+    {
+      "category": "summarization",
+      "prompt": "SOURCE 1 (UNFCCC Official Press Release, December 2023): 'COP28 concluded with a landmark UAE Consensus that, for the first time in history, includes language on transitioning away from all fossil fuels. 198 Parties adopted the decision by consensus. The agreement calls for tripling renewable energy capacity and doubling energy efficiency by 2030, and accelerating action to achieve net zero by 2050. The outcome sends a powerful signal to markets and investors about the direction of the global economy.'\n\nSOURCE 2 (Alliance of Small Island States Statement): 'We did not come here to sign our death warrant. The text is riddled with loopholes that allow for continued fossil fuel expansion. There is no commitment to phase out, only to transition away, which is meaningless without a deadline. The loss and damage fund, supposedly a historic achievement, was launched with a paltry $700 million in pledges — less than the annual advertising budget of ExxonMobil. We have been betrayed by the very nations causing this crisis.'\n\nSOURCE 3 (Carbon Tracker Independent Analysis): 'The COP28 text contains at least seven caveats that effectively gut the fossil fuel language. The phrase transitioning away from fossil fuels in energy systems excludes petrochemicals, plastics, and aviation. Carbon capture is promoted as a transitional solution despite no evidence it works at scale. Nationally determined contributions remain voluntary. Based on current pledges, we are on track for 2.7 degrees Celsius of warming — far above the 1.5 degree target.'\n\nSynthesize the three sources into a balanced summary capturing the core contradictions.",
+      "expected_answer": "COP28 produced the first-ever global agreement to transition away from fossil fuels, but small island nations and independent analysts condemned it as inadequate, citing loopholes that exempt key sectors, insufficient loss and damage funding, and voluntary commitments that still point to 2.7 degrees Celsius of warming.",
+      "source": "claude-code-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "Multi-source (3 sources) with stark contradictions: official UN optimism versus explicit condemnation from affected nations versus quantitative independent analysis. The model must balance the historic nature of the agreement against substantive criticisms while extracting key numerical evidence."
+    },
+    {
+      "category": "summarization",
+      "prompt": "A new study published in Nature Communications Earth and Environment has analyzed 40 years of satellite data to quantify Arctic sea ice loss. The study found that September sea ice extent (the annual minimum) has declined at an average rate of 13.1% per decade since 1979. In 2023, the minimum extent was 4.23 million square kilometers, approximately 2.5 million square kilometers below the 1981-2010 average. The study projects that an ice-free Arctic summer (defined as less than 1 million square kilometers) will occur by the 2030s under all emission scenarios — approximately 10 years earlier than previous IPCC projections.\n\nThe research team used a high-resolution coupled ocean-sea ice model to analyze multi-year ice dynamics. The volume of multi-year ice (ice that survives at least one summer) has declined by 75% since 1980. This is critical because multi-year ice is 2-3 meters thick on average, while first-year ice is typically 0.5-1.5 meters. The study calculates that total Arctic sea ice volume in September 2023 was approximately 4,200 cubic kilometers, down from 16,000 cubic kilometers in 1980 — a decline of 74%.\n\nThe implications extend beyond the Arctic. The study quantifies the albedo feedback effect: each square kilometer of reflective sea ice replaced by dark open ocean increases solar heat absorption by an amount equivalent to 30,000 barrels of oil burned per year. If the Arctic becomes ice-free in summer, the additional warming could accelerate Greenland ice sheet melting, potentially contributing an additional 0.3-0.5 meters to global sea level rise by 2100. The study also notes that 2023 recorded the highest Arctic surface air temperatures in the 40-year record, at 6.3 degrees Celsius above the 1991-2020 average for the October-December period.",
+      "expected_answer": "Arctic September sea ice is declining 13.1% per decade with volume down 74% since 1980; an ice-free Arctic summer is projected by the 2030s, earlier than prior IPCC estimates, with albedo feedback effects that could accelerate Greenland melt and contribute up to 0.5 meters of sea level rise by 2100.",
+      "source": "claude-code-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "Dense scientific article with multiple interlocking statistics (13.1% per decade decline, 74% volume loss, 4,200 vs 16,000 cubic km, 2030s projection, 0.3-0.5m sea level rise, 6.3 degrees C warming). Requires extracting the central finding while contextualizing with supporting data. Compression ratio >10:1."
+    },
+    {
+      "category": "summarization",
+      "prompt": "STUDY A (New England Journal of Medicine, 2023): In a prospective cohort study following 124,000 adults over 12 years, researchers found that moderate red wine consumption (1-2 glasses per day) was associated with a 30% reduction in cardiovascular events compared to non-drinkers. The benefit was attributed to resveratrol and other polyphenols that reduce inflammation and improve endothelial function. The study controlled for socioeconomic status, diet quality, and exercise. The authors note that the greatest benefit was observed when red wine was consumed with meals.\n\nSTUDY B (The Lancet, 2024): A comprehensive meta-analysis of 89 studies involving 4.8 million participants concluded that no level of alcohol consumption is safe for overall health. The analysis found that any alcohol consumption increases the risk of several cancers, including breast (relative risk 1.13 for one drink per day), colorectal (1.09), and esophageal (1.25). The study argues that the apparent cardiovascular benefit of red wine is a confounding artifact: moderate drinkers tend to have higher socioeconomic status, better diets, and better healthcare access. When controlling for these factors, the cardiovascular benefit disappears. The Global Burden of Disease study estimates that alcohol caused 2.8 million deaths globally in 2022.\n\nSynthesize the findings from both studies into a brief summary that captures their contradiction.",
+      "expected_answer": "Study A found moderate red wine consumption associated with 30% lower cardiovascular risk attributed to polyphenols; Study B's larger meta-analysis found no safe alcohol level, showing increased cancer risks and arguing cardiovascular benefits are a confounding artifact of socioeconomic factors rather than a causal effect of wine.",
+      "source": "claude-code-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "Contradictory medical research findings on the same topic. The model must present both findings accurately without resolving the contradiction, identify the methodological differences (cohort study vs. meta-analysis, sample sizes), and capture the key statistical claims from both sides."
+    },
+    {
+      "category": "code_gen",
+      "prompt": "from typing import List, Tuple, Dict\n\n\ndef a_star_search(\n    grid: List[List[int]],\n    start: Tuple[int, int],\n    goal: Tuple[int, int]\n) -> List[Tuple[int, int]]:\n    \"\"\"\n    Find the shortest path from start to goal on a 2D grid using the A* search algorithm.\n\n    The grid is a rectangular 2D list where:\n      0 = walkable cell\n      1 = obstacle (cannot traverse)\n\n    Movement is allowed in 4 cardinal directions (up, down, left, right) only.\n    Use the Manhattan distance as the heuristic.\n\n    Return the path as a list of (row, col) tuples from start to goal (inclusive).\n    If no path exists, return an empty list.\n\n    Example:\n        grid = [\n            [0, 0, 0, 0],\n            [0, 1, 1, 0],\n            [0, 0, 1, 0],\n            [0, 0, 0, 0],\n        ]\n        a_star_search(grid, (0, 0), (3, 3))\n        # Returns [(0,0), (1,0), (2,0), (3,0), (3,1), (3,2), (3,3)]\n    \"\"\"\n",
+      "expected_answer": "from typing import List, Tuple, Dict\nimport heapq\n\n\ndef a_star_search(\n    grid: List[List[int]],\n    start: Tuple[int, int],\n    goal: Tuple[int, int]\n) -> List[Tuple[int, int]]:\n    rows, cols = len(grid), len(grid[0])\n    if not grid or not grid[0]:\n        return []\n    if grid[start[0]][start[1]] == 1 or grid[goal[0]][goal[1]] == 1:\n        return []\n\n    def heuristic(a: Tuple[int, int], b: Tuple[int, int]) -> int:\n        return abs(a[0] - b[0]) + abs(a[1] - b[1])\n\n    open_set = [(0, start)]\n    came_from: Dict[Tuple[int, int], Tuple[int, int]] = {}\n    g_score: Dict[Tuple[int, int], float] = {start: 0}\n    f_score: Dict[Tuple[int, int], float] = {start: heuristic(start, goal)}\n\n    while open_set:\n        _, current = heapq.heappop(open_set)\n\n        if current == goal:\n            path = []\n            while current in came_from:\n                path.append(current)\n                current = came_from[current]\n            path.append(start)\n            return path[::-1]\n\n        r, c = current\n        for dr, dc in [(-1, 0), (1, 0), (0, -1), (0, 1)]:\n            nr, nc = r + dr, c + dc\n            neighbor = (nr, nc)\n            if 0 <= nr < rows and 0 <= nc < cols and grid[nr][nc] == 0:\n                tentative_g = g_score[current] + 1\n                if tentative_g < g_score.get(neighbor, float('inf')):\n                    came_from[neighbor] = current\n                    g_score[neighbor] = tentative_g\n                    f = tentative_g + heuristic(neighbor, goal)\n                    f_score[neighbor] = f\n                    heapq.heappush(open_set, (f, neighbor))\n\n    return []\n",
+      "source": "claude-code-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "A* search combines Dijkstra's uniform-cost search with a heuristic (Manhattan distance). Requires priority queue management with heapq, path reconstruction via backtracking through came_from, proper boundary checking and obstacle detection, and an admissible heuristic."
+    },
+    {
+      "category": "code_gen",
+      "prompt": "import threading\nfrom typing import Optional, Any\n\n\nclass BoundedQueue:\n    \"\"\"\n    A thread-safe bounded queue (producer-consumer pattern) that supports\n    concurrent put and get operations with blocking semantics.\n\n    put(item): Block until there is space, then add item to the queue.\n    get(): Block until there is an item, then remove and return it.\n    qsize(): Return the approximate number of items in the queue.\n\n    Use threading.Condition for efficient waiting instead of busy-waiting.\n\n    Example:\n        q = BoundedQueue(5)\n        q.put(\"task1\")\n        q.put(\"task2\")\n        item = q.get()  # \"task1\"\n        print(q.qsize())  # 1\n    \"\"\"\n\n    def __init__(self, maxsize: int) -> None:\n        ...\n\n    def put(self, item: Any) -> None:\n        ...\n\n    def get(self) -> Any:\n        ...\n\n    def qsize(self) -> int:\n        ...\n",
+      "expected_answer": "import threading\nfrom typing import Optional, Any\nfrom collections import deque\n\n\nclass BoundedQueue:\n\n    def __init__(self, maxsize: int) -> None:\n        if maxsize <= 0:\n            raise ValueError(\"maxsize must be positive\")\n        self.maxsize = maxsize\n        self.queue: deque = deque()\n        self.mutex = threading.Lock()\n        self.not_full = threading.Condition(self.mutex)\n        self.not_empty = threading.Condition(self.mutex)\n\n    def put(self, item: Any) -> None:\n        with self.not_full:\n            while len(self.queue) >= self.maxsize:\n                self.not_full.wait()\n            self.queue.append(item)\n            self.not_empty.notify()\n\n    def get(self) -> Any:\n        with self.not_empty:\n            while len(self.queue) == 0:\n                self.not_empty.wait()\n            item = self.queue.popleft()\n            self.not_full.notify()\n            return item\n\n    def qsize(self) -> int:\n        with self.mutex:\n            return len(self.queue)\n",
+      "source": "claude-code-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "Thread-safe bounded queue requires threading.Condition for efficient blocking, wait() in a loop for spurious wakeups, signaling the opposite condition after each operation, and correct mutex management to avoid deadlock."
+    },
+    {
+      "category": "code_gen",
+      "prompt": "# Definition for a binary tree node.\nclass TreeNode:\n    def __init__(self, val: int = 0, left: Optional['TreeNode'] = None, right: Optional['TreeNode'] = None):\n        self.val = val\n        self.left = left\n        self.right = right\n\n\nfrom typing import Optional, List\n\n\ndef serialize(root: Optional[TreeNode]) -> str:\n    \"\"\"\n    Serialize a binary tree to a string using level-order (BFS) traversal.\n\n    Use 'null' to represent None nodes. Separate values with commas.\n    Do NOT include trailing nulls at the end of the serialized string.\n\n    Example:\n        Tree:\n              1\n             / \\\n            2   3\n               / \\\n              4   5\n\n        serialize(root) -> \"1,2,3,null,null,4,5\"\n    \"\"\"\n\n\ndef deserialize(data: str) -> Optional[TreeNode]:\n    \"\"\"\n    Deserialize the string back into a binary tree.\n    Return the root node.\n    \"\"\"\n",
+      "expected_answer": "from typing import Optional, List\nfrom collections import deque\n\n\ndef serialize(root: Optional[TreeNode]) -> str:\n    if not root:\n        return \"\"\n\n    result: List[str] = []\n    queue = deque([root])\n\n    while queue:\n        node = queue.popleft()\n        if node:\n            result.append(str(node.val))\n            queue.append(node.left)\n            queue.append(node.right)\n        else:\n            result.append(\"null\")\n\n    # Strip trailing nulls\n    while result and result[-1] == \"null\":\n        result.pop()\n\n    return \",\".join(result)\n\n\ndef deserialize(data: str) -> Optional[TreeNode]:\n    if not data:\n        return None\n\n    values = data.split(\",\")\n    if values[0] == \"null\":\n        return None\n\n    root = TreeNode(int(values[0]))\n    queue = deque([root])\n    i = 1\n\n    while queue and i < len(values):\n        node = queue.popleft()\n\n        if i < len(values) and values[i] != \"null\":\n            node.left = TreeNode(int(values[i]))\n            queue.append(node.left)\n        i += 1\n\n        if i < len(values) and values[i] != \"null\":\n            node.right = TreeNode(int(values[i]))\n            queue.append(node.right)\n        i += 1\n\n    return root\n",
+      "source": "claude-code-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "Binary tree serialization/deserialization is hard because serialize must track None children explicitly and strip trailing nulls, while deserialize must reconstruct parent-child relationships from a flat string with pointer-like indexing."
+    },
+    {
+      "category": "code_gen",
+      "prompt": "from typing import Tuple\n\n\ndef regex_match(text: str, pattern: str) -> bool:\n    \"\"\"\n    Implement a simple regular expression matcher that supports:\n      - '.' matches any single character\n      - '*' matches zero or more of the preceding element\n      - Literal characters match themselves\n\n    The match must cover the ENTIRE string (not a partial match).\n    '*' cannot appear at the start of the pattern.\n\n    This is equivalent to implementing LeetCode 10 with only '.' and '*'.\n\n    Examples:\n        regex_match(\"aa\", \"a\")      -> False\n        regex_match(\"aa\", \"a*\")     -> True\n        regex_match(\"ab\", \".*\")     -> True\n        regex_match(\"aab\", \"c*a*b\") -> True\n        regex_match(\"mississippi\", \"mis*is*p*.\") -> False\n    \"\"\"\n",
+      "expected_answer": "from typing import Tuple\nfrom functools import lru_cache\n\n\ndef regex_match(text: str, pattern: str) -> bool:\n\n    @lru_cache(maxsize=None)\n    def dp(i: int, j: int) -> bool:\n        # Base case: both exhausted\n        if j == len(pattern):\n            return i == len(text)\n\n        # Check if current characters match (first char match)\n        first_match = i < len(text) and (pattern[j] == text[i] or pattern[j] == '.')\n\n        # Handle '*' -- zero or more of preceding element\n        if j + 1 < len(pattern) and pattern[j + 1] == '*':\n            # Zero occurrences: skip pattern[j] and pattern[j+1] ('*')\n            # One or more: consume text[i] if first_match, stay on same pattern\n            return dp(i, j + 2) or (first_match and dp(i + 1, j))\n        else:\n            # No '*' — must match current character\n            return first_match and dp(i + 1, j + 1)\n\n    return dp(0, 0)\n",
+      "source": "claude-code-hard-v1",
+      "difficulty": "hard",
+      "reasoning": "Regex matching with '*' and '.' is hard because '*' can mean zero or more of the preceding element, requiring DP branching into two possibilities. The recursive formulation must handle overlapping subproblems with memoization, edge cases like empty text/pattern, and patterns with trailing '*'."
+    }
+  ]
+}

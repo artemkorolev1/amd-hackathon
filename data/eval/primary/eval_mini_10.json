@@ -1,0 +1,12 @@
+[
+  {"task_id":"tc1","prompt":"Classify the sentiment: Oh brilliant, my flight got canceled. Just the highlight of my day.","category":"sentiment","expected_answer":"negative","complexity_score":0.5,"difficulty":"medium"},
+  {"task_id":"tc2","prompt":"Classify the sentiment: I am absolutely thrilled with this purchase! The quality exceeded all my expectations.","category":"sentiment","expected_answer":"positive","complexity_score":0.3,"difficulty":"simple"},
+  {"task_id":"tc3","prompt":"Classify the sentiment: The movie was okay but the ending felt rushed and unsatisfying.","category":"sentiment","expected_answer":"negative","complexity_score":0.5,"difficulty":"medium"},
+  {"task_id":"tc4","prompt":"Solve: All philosophers are logical. Some logical people are mathematicians. No mathematician is a musician. Is it possible that no philosopher is a musician?","category":"logic","expected_answer":"possible","complexity_score":0.7,"difficulty":"hard"},
+  {"task_id":"tc5","prompt":"Five colleagues — Tom, Oscar, Nina, Maya, and Leo — each work in a different department (Sales, Marketing, Engineering, HR, Finance). Tom works in Sales. Oscar does not work in Engineering. Maya works in Finance. Leo works in HR. Which department does Nina work in?","category":"logic","expected_answer":"engineering","complexity_score":0.6,"difficulty":"medium"},
+  {"task_id":"tc6","prompt":"If all A are B, and some B are C, can we conclude that some A are C?","category":"logic","expected_answer":"no","complexity_score":0.7,"difficulty":"hard"},
+  {"task_id":"tc7","prompt":"What is 25% of 360?","category":"math","expected_answer":"90","complexity_score":0.2,"difficulty":"simple"},
+  {"task_id":"tc8","prompt":"What is the capital of France?","category":"factual","expected_answer":"Paris","complexity_score":0.1,"difficulty":"simple"},
+  {"task_id":"tc9","prompt":"Extract entities: Dr. Sarah Johnson from Stanford University published in Nature Medicine.","category":"ner","expected_answer":"Sarah Johnson, Stanford University, Nature Medicine","complexity_score":0.4,"difficulty":"simple"},
+  {"task_id":"tc10","prompt":"Write a Python function called 'factorial' that computes n! recursively.","category":"code_gen","expected_answer":"def factorial","complexity_score":0.5,"difficulty":"medium"}
+]

@@ -1,0 +1,31 @@
+# Large model files (downloaded during Docker build)
+models/
+
+# Python virtual environment
+.venv/
+venv/
+
+# llama.cpp pre-built binaries
+llama-bin/
+cuda-wheels/llama_cpp/lib/*.so
+cuda-wheels/llama_cpp/lib/*.so.*
+
+# Worktrees
+.worktrees/
+
+# Dependencies
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+json

@@ -1,0 +1,362 @@
+[
+  {
+    "task_id": "cx_00",
+    "category": "code_debug",
+    "prompt": "The following Python function has a bug. Fix it:\n\n```python\ndef is_prime(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return True\n    return False\n```",
+    "expected_answer": "def is_prime(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True",
+    "source": "code_debug_simple",
+    "difficulty": "simple",
+    "reasoning": "single off-by-one in prime check return"
+  },
+  {
+    "task_id": "cx_01",
+    "category": "code_debug",
+    "prompt": "Fix the bug in this function:\n\n```python\ndef find_max(items):\n    best = items[0]\n    for x in items:\n        if x > best:\n            best = x\n    return best\n```",
+    "expected_answer": "def find_max(items):\n    if not items:\n        return None\n    best = items[0]\n    for x in items:\n        if x > best:\n            best = x\n    return best",
+    "source": "code_debug_simple",
+    "difficulty": "simple",
+    "reasoning": "empty list"
+  },
+  {
+    "task_id": "cx_02",
+    "category": "code_gen",
+    "prompt": "Write a Python function called 'factorial' that computes n! recursively.",
+    "expected_answer": "def factorial(n):\n    if n <= 1:\n        return 1\n    return n * factorial(n - 1)",
+    "source": "code_gen_simple",
+    "difficulty": "simple",
+    "reasoning": "recursive"
+  },
+  {
+    "task_id": "cx_03",
+    "category": "code_gen",
+    "prompt": "Write a Python function called 'celsius_to_fahrenheit' that converts Celsius to Fahrenheit.",
+    "expected_answer": "def celsius_to_fahrenheit(c):\n    return (c * 9/5) + 32",
+    "source": "code_gen_simple",
+    "difficulty": "simple",
+    "reasoning": "arithmetic"
+  },
+  {
+    "task_id": "cx_04",
+    "category": "factual",
+    "prompt": "What is the largest planet in our solar system?",
+    "expected_answer": "Jupiter",
+    "source": "factual_simple",
+    "difficulty": "simple",
+    "reasoning": "common knowledge"
+  },
+  {
+    "task_id": "cx_05",
+    "category": "factual",
+    "prompt": "What is the capital city of Canada?",
+    "expected_answer": "Ottawa",
+    "source": "factual_simple",
+    "difficulty": "simple",
+    "reasoning": "common knowledge"
+  },
+  {
+    "task_id": "cx_06",
+    "category": "logic",
+    "prompt": "If all A are B, and some B are C, can we conclude that some A are C?",
+    "expected_answer": "no",
+    "source": "logic_simple",
+    "difficulty": "medium",
+    "reasoning": "syllogism"
+  },
+  {
+    "task_id": "cx_07",
+    "category": "logic",
+    "prompt": "Anna is taller than Ben. Ben is taller than Carl. Who is the shortest?",
+    "expected_answer": "Carl",
+    "source": "logic_simple",
+    "difficulty": "simple",
+    "reasoning": "transitivity"
+  },
+  {
+    "task_id": "cx_08",
+    "category": "math",
+    "prompt": "What is 25% of 360?",
+    "expected_answer": "90",
+    "source": "math_simple",
+    "difficulty": "simple",
+    "reasoning": "percentage"
+  },
+  {
+    "task_id": "cx_09",
+    "category": "math",
+    "prompt": "Solve: 3x + 7 = 22. What is x?",
+    "expected_answer": "5",
+    "source": "math_simple",
+    "difficulty": "simple",
+    "reasoning": "linear equation"
+  },
+  {
+    "task_id": "cx_10",
+    "category": "ner",
+    "prompt": "Extract all named entities (people, organizations, locations) from: 'Tim Cook announced that Apple will partner with OpenAI on new features.'",
+    "expected_answer": "Tim Cook, Apple, OpenAI",
+    "source": "ner_simple",
+    "difficulty": "simple",
+    "reasoning": "3 entities"
+  },
+  {
+    "task_id": "cx_11",
+    "category": "ner",
+    "prompt": "Extract all location entities from: 'The flight from Manila to Tokyo was diverted to Osaka due to weather.'",
+    "expected_answer": "Manila, Tokyo, Osaka",
+    "source": "ner_simple",
+    "difficulty": "simple",
+    "reasoning": "3 locations"
+  },
+  {
+    "task_id": "cx_12",
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of this review: 'This product is amazing! I love it.'",
+    "expected_answer": "positive",
+    "source": "sentiment_simple",
+    "difficulty": "simple",
+    "reasoning": "explicit positive"
+  },
+  {
+    "task_id": "cx_13",
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of this review: 'The product was okay but nothing special.'",
+    "expected_answer": "neutral",
+    "source": "sentiment_simple",
+    "difficulty": "medium",
+    "reasoning": "mixed neutral"
+  },
+  {
+    "task_id": "cx_14",
+    "category": "summarization",
+    "prompt": "Summarize: 'The quick brown fox jumps over the lazy dog. The dog was sleeping in the sun.'",
+    "expected_answer": "A fox jumps over a sleeping dog.",
+    "source": "summarization_simple",
+    "difficulty": "simple",
+    "reasoning": "short input"
+  },
+  {
+    "task_id": "cx_15",
+    "category": "summarization",
+    "prompt": "Summarize: 'Climate change poses a significant threat to global ecosystems. Rising temperatures have led to melting ice caps and more frequent extreme weather events. Scientists urge immediate action to reduce carbon emissions.'",
+    "expected_answer": "Climate change is causing rising temperatures, melting ice caps, and extreme weather; scientists urge action on emissions.",
+    "source": "summarization_medium",
+    "difficulty": "medium",
+    "reasoning": "moderate length"
+  },
+  {
+    "task_id": "cx_16",
+    "category": "code_debug",
+    "prompt": "Fix this bug:\n\n```python\ndef sum_to_n(n):\n    total = 0\n    for i in range(1, n):\n        total += i\n    return total\n```",
+    "expected_answer": "def sum_to_n(n):\n    total = 0\n    for i in range(1, n + 1):\n        total += i\n    return total",
+    "source": "code_debug_medium",
+    "difficulty": "medium",
+    "reasoning": "off-by-one in range"
+  },
+  {
+    "task_id": "cx_17",
+    "category": "code_gen",
+    "prompt": "Write a Python function 'is_palindrome' that checks if a string is a palindrome.",
+    "expected_answer": "def is_palindrome(s):\n    return s == s[::-1]",
+    "source": "code_gen_medium",
+    "difficulty": "medium",
+    "reasoning": "string reversal"
+  },
+  {
+    "task_id": "cx_18",
+    "category": "factual",
+    "prompt": "Who wrote the novel 'One Hundred Years of Solitude'?",
+    "expected_answer": "Gabriel Garcia Marquez",
+    "source": "factual_medium",
+    "difficulty": "medium",
+    "reasoning": "literature"
+  },
+  {
+    "task_id": "cx_19",
+    "category": "factual",
+    "prompt": "What is the largest moon of Saturn?",
+    "expected_answer": "Titan",
+    "source": "factual_medium",
+    "difficulty": "medium",
+    "reasoning": "astronomy"
+  },
+  {
+    "task_id": "cx_20",
+    "category": "logic",
+    "prompt": "Five people sit in a row. Alice sits to the left of Bob. Bob sits to the left of Carol. David sits to the right of Carol. Eve sits to the left of Alice. Who is in the middle?",
+    "expected_answer": "Bob",
+    "source": "logic_medium",
+    "difficulty": "medium",
+    "reasoning": "positional deduction"
+  },
+  {
+    "task_id": "cx_21",
+    "category": "math",
+    "prompt": "A train travels at 72 km/h. How far does it travel in 45 minutes?",
+    "expected_answer": "54 km",
+    "source": "math_medium",
+    "difficulty": "medium",
+    "reasoning": "speed time distance"
+  },
+  {
+    "task_id": "cx_22",
+    "category": "ner",
+    "prompt": "Extract: 'Marie Curie and Pierre Curie discovered radium and polonium. They were awarded the Nobel Prize in Physics in 1903.'",
+    "expected_answer": "Marie Curie, Pierre Curie, radium, polonium",
+    "source": "ner_medium",
+    "difficulty": "medium",
+    "reasoning": "people + substances"
+  },
+  {
+    "task_id": "cx_23",
+    "category": "sentiment",
+    "prompt": "Classify the sentiment: 'Oh brilliant, my flight got canceled. Just the highlight of my day.'",
+    "expected_answer": "negative",
+    "source": "sentiment_medium",
+    "difficulty": "medium",
+    "reasoning": "sarcasm"
+  },
+  {
+    "task_id": "cx_24",
+    "category": "summarization",
+    "prompt": "Provide a brief summary of the following:\nElectric vehicles (EVs) are becoming increasingly popular as battery technology improves and charging infrastructure expands. Major automakers have announced plans to phase out internal combustion engines. However, challenges remain including battery production costs, charging time, and grid capacity.",
+    "expected_answer": "EVs are growing in popularity due to better batteries and more charging stations, but challenges like cost, charging time, and grid capacity remain.",
+    "source": "summarization_medium",
+    "difficulty": "medium",
+    "reasoning": "moderate"
+  },
+  {
+    "task_id": "cx_25",
+    "category": "code_debug",
+    "prompt": "Fix the bug:\n\n```python\ndef reverse_string(s):\n    result = \"\"\n    for i in range(len(s)):\n        result = result + s[i]\n    return result\n```",
+    "expected_answer": "def reverse_string(s):\n    result = \"\"\n    for i in range(len(s) - 1, -1, -1):\n        result = result + s[i]\n    return result",
+    "source": "code_debug_medium",
+    "difficulty": "medium",
+    "reasoning": "reverse iteration"
+  },
+  {
+    "task_id": "cx_26",
+    "category": "code_gen",
+    "prompt": "Write a Python function 'count_vowels' that counts vowels in a string.",
+    "expected_answer": "def count_vowels(s):\n    return sum(1 for c in s.lower() if c in 'aeiou')",
+    "source": "code_gen_medium",
+    "difficulty": "medium",
+    "reasoning": "iteration + condition"
+  },
+  {
+    "task_id": "cx_27",
+    "category": "factual",
+    "prompt": "In what year did the Berlin Wall fall?",
+    "expected_answer": "1989",
+    "source": "factual_medium",
+    "difficulty": "medium",
+    "reasoning": "20th century history"
+  },
+  {
+    "task_id": "cx_28",
+    "category": "math",
+    "prompt": "A rectangle has a length of 12 cm and a width of 8 cm. What is the area?",
+    "expected_answer": "96",
+    "source": "math_medium",
+    "difficulty": "medium",
+    "reasoning": "area calculation"
+  },
+  {
+    "task_id": "cx_29",
+    "category": "ner",
+    "prompt": "Extract all dates: 'The treaty was signed on 12 March 1947 and was ratified in June 1948.'",
+    "expected_answer": "12 March 1947, June 1948",
+    "source": "ner_medium",
+    "difficulty": "medium",
+    "reasoning": "date extraction"
+  },
+  {
+    "task_id": "cx_30",
+    "category": "sentiment",
+    "prompt": "Classify the sentiment of this review: 'I wanted to love it, but it crashes constantly and deleted my files.'",
+    "expected_answer": "negative",
+    "source": "sentiment_hard",
+    "difficulty": "hard",
+    "reasoning": "mixed framing with negative outcome"
+  },
+  {
+    "task_id": "cx_31",
+    "category": "logic",
+    "prompt": "There are three boxes: one contains only apples, one contains only oranges, and one contains both. All boxes are mislabeled. You can pick one fruit from one box without looking. How many picks do you need to determine the correct labels?",
+    "expected_answer": "1",
+    "source": "logic_hard",
+    "difficulty": "hard",
+    "reasoning": "classic puzzle"
+  },
+  {
+    "task_id": "cx_32",
+    "category": "math",
+    "prompt": "If 3x + 2y = 16 and 2x - y = 6, what is x + y?",
+    "expected_answer": "7",
+    "source": "math_hard",
+    "difficulty": "hard",
+    "reasoning": "system of equations"
+  },
+  {
+    "task_id": "cx_33",
+    "category": "summarization",
+    "prompt": "Summarize:\nThe James Webb Space Telescope (JWST) was launched on December 25, 2021. It is the largest and most powerful space telescope ever built, with a 6.5-meter mirror. JWST observes the universe in infrared light, allowing it to see through dust clouds and observe the first galaxies that formed after the Big Bang. It orbits the Sun at the L2 Lagrange point, 1.5 million kilometers from Earth. Its mission includes studying exoplanet atmospheres, star formation, and galaxy evolution. Early images have revealed unprecedented detail in the Carina Nebula and SMACS 0723 galaxy cluster.",
+    "expected_answer": "The James Webb Space Telescope, launched in December 2021, is the most powerful space telescope ever built, observing infrared light from 1.5 million km away to study early galaxies, exoplanets, and star formation.",
+    "source": "summarization_hard",
+    "difficulty": "hard",
+    "reasoning": "long technical text"
+  },
+  {
+    "task_id": "cx_34",
+    "category": "factual",
+    "prompt": "What was the name of the first artificial satellite launched into space?",
+    "expected_answer": "Sputnik",
+    "source": "factual_hard",
+    "difficulty": "hard",
+    "reasoning": "space history"
+  },
+  {
+    "task_id": "cx_35",
+    "category": "code_gen",
+    "prompt": "Write a Python function 'merge_sorted' that merges two sorted lists into one sorted list.",
+    "expected_answer": "def merge_sorted(a, b):\n    return sorted(a + b)",
+    "source": "code_gen_hard",
+    "difficulty": "hard",
+    "reasoning": "merge"
+  },
+  {
+    "task_id": "cx_36",
+    "category": "code_debug",
+    "prompt": "Fix the bug:\n\n```python\ndef second_largest(nums):\n    nums.sort()\n    return nums[-2]\n```",
+    "expected_answer": "def second_largest(nums):\n    if len(nums) < 2:\n        return None\n    nums.sort()\n    return nums[-2]",
+    "source": "code_debug_hard",
+    "difficulty": "hard",
+    "reasoning": "edge case"
+  },
+  {
+    "task_id": "cx_37",
+    "category": "ner",
+    "prompt": "Extract organizations: 'AMD and Fireworks AI announced a partnership. Google DeepMind also contributed research.'",
+    "expected_answer": "AMD, Fireworks AI, Google DeepMind",
+    "source": "ner_hard",
+    "difficulty": "hard",
+    "reasoning": "3 orgs"
+  },
+  {
+    "task_id": "cx_38",
+    "category": "sentiment",
+    "prompt": "Classify the sentiment: 'The software has a learning curve but once you get used to it, it's actually quite intuitive and powerful.'",
+    "expected_answer": "positive",
+    "source": "sentiment_hard",
+    "difficulty": "hard",
+    "reasoning": "balanced with positive conclusion"
+  },
+  {
+    "task_id": "cx_39",
+    "category": "logic",
+    "prompt": "If the statement 'All squares are rectangles' is true, and the statement 'Some rectangles are not squares' is true, what can we conclude about a shape that is known to be a rectangle?",
+    "expected_answer": "It may or may not be a square",
+    "source": "logic_hard",
+    "difficulty": "hard",
+    "reasoning": "set relations"
+  }
+]

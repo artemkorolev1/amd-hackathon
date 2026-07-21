@@ -1,0 +1,138 @@
+{
+  "date": "2026-07-13",
+  "dataset": "math_combined_94",
+  "models_tested": [
+    "qwen2.5-math-1.5b",
+    "smollm2-1.7b",
+    "qwen2.5-1.5b"
+  ],
+  "prompts": [
+    {
+      "index": 0,
+      "label": "empty",
+      "system_prompt": ""
+    },
+    {
+      "index": 1,
+      "label": "Math:",
+      "system_prompt": "Math:"
+    },
+    {
+      "index": 2,
+      "label": "Answer only with a number.",
+      "system_prompt": "Answer only with a number."
+    },
+    {
+      "index": 3,
+      "label": "Let's think step by step.",
+      "system_prompt": "Let's think step by step."
+    },
+    {
+      "index": 4,
+      "label": "Calculate:",
+      "system_prompt": "Calculate:"
+    },
+    {
+      "index": 5,
+      "label": "Answer: ",
+      "system_prompt": "Answer: "
+    }
+  ],
+  "results": {
+    "qwen2.5-math-1.5b": {
+      "prompt_0": {
+        "accuracy": 0.277,
+        "correct": 26,
+        "total": 94,
+        "avg_latency_ms": 1422.8
+      },
+      "prompt_1": {
+        "accuracy": 0.266,
+        "correct": 25,
+        "total": 94,
+        "avg_latency_ms": 1388.7
+      },
+      "prompt_2": {
+        "accuracy": 0.287,
+        "correct": 27,
+        "total": 94,
+        "avg_latency_ms": 1419.6
+      },
+      "prompt_3": {
+        "accuracy": 0.319,
+        "correct": 30,
+        "total": 94,
+        "avg_latency_ms": 1440.8
+      },
+      "prompt_4": {
+        "accuracy": 0.319,
+        "correct": 30,
+        "total": 94,
+        "avg_latency_ms": 1412.7
+      },
+      "prompt_5": {
+        "accuracy": 0.298,
+        "correct": 28,
+        "total": 94,
+        "avg_latency_ms": 1421.3
+      }
+    },
+    "smollm2-1.7b": {
+      "prompt_0": {
+        "accuracy": 0.255,
+        "correct": 24,
+        "total": 94,
+        "avg_latency_ms": 944.1
+      },
+      "prompt_1": {
+        "accuracy": 0.234,
+        "correct": 22,
+        "total": 94,
+        "avg_latency_ms": 908.9
+      },
+      "prompt_2": {
+        "accuracy": 0.117,
+        "correct": 11,
+        "total": 94,
+        "avg_latency_ms": 104.8
+      },
+      "prompt_3": {
+        "accuracy": 0.255,
+        "correct": 24,
+        "total": 94,
+        "avg_latency_ms": 1153.2
+      },
+      "prompt_4": {
+        "accuracy": 0.266,
+        "correct": 25,
+        "total": 94,
+        "avg_latency_ms": 904.8
+      },
+      "prompt_5": {
+        "accuracy": 0.266,
+        "correct": 25,
+        "total": 94,
+        "avg_latency_ms": 784.4
+      }
+    }
+  },
+  "best_per_model": {
+    "qwen2.5-math-1.5b": {
+      "prompt_index": 3,
+      "accuracy": 0.319,
+      "label": "Let's think step by step."
+    },
+    "smollm2-1.7b": {
+      "prompt_index": 4,
+      "accuracy": 0.266,
+      "label": "Calculate:"
+    }
+  },
+  "overall_best": {
+    "model": "qwen2.5-math-1.5b",
+    "prompt_index": 3,
+    "accuracy": 0.319,
+    "label": "Let's think step by step."
+  },
+  "note": "max_tokens=256, boxed_extraction=True, correct_regex=True"
+}

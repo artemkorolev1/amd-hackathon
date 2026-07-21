@@ -1,0 +1,1397 @@
+{
+  "dataset": "training-v3.json",
+  "total_questions": 152,
+  "overall_accuracy": 55.3,
+  "total_time_s": 125.5,
+  "total_tokens_out": 21431,
+  "per_category": {
+    "code_debug": {
+      "model": "qwen2.5-coder",
+      "prompt": "Debug:",
+      "correct": 19,
+      "total": 19,
+      "accuracy": 100.0,
+      "time_s": 20.9,
+      "avg_tok": 180,
+      "results": [
+        {
+          "task_id": "hep-1a87ccae50e8",
+          "expected": "return \"\".join([s for s in text if s.lower() not in [\"a\", \"e\", \"i\", \"o\", \"u\"]])",
+          "got": "The function `remove_vowels` is almost correct, but it does not handle the newline characters correctly. The newline characters are considered as vowels in the function. To fix this, we can use the `str.replace` method to remove the newline characters before joining the list of characters.\n\nHere is the corrected function:\n\n```python\ndef remove_vowels(text):\n    return \"\".join([s for s in text.replace(\"\\n\", \"\") if s.lower() not in [\"a\", \"e\", \"i\", \"o\", \"u\", \"w\", \"y\"]])\n\n# Test cases\nprint(remove_vowels(''))  # Output: ''\nprint(remove_vowels(\"abcdef\\nghijklm\"))  # Output: 'bcdf\\nghjklm'\nprint(remove_vowels('abcdef'))  # Output: 'bcdf'\nprint(remove_vowels('aaaaa'))  # Output: ''\nprint(remove_vowels('aaBAA'))  # Output: 'B'\nprint(remove_vowels('zbcd'))  # Output: 'zbcd'\n```\n\nIn this corrected function, we first replace all newline characters with an empty string using `str.replace(\"\\n\", \"\")`. Then, we proceed with the original list comprehension to remove vowels.",
+          "correct": true,
+          "time_s": 1.69,
+          "tokens_out": 261
+        },
+        {
+          "task_id": "hep-3bb81f701ea8",
+          "expected": "for e in l:\n        if e >= t:\n            return False\n    return True",
+          "got": "The function `below_threshold` is already correct. It iterates over the list `l` and checks if any element is greater than or equal to `t`. If it finds such an element, it immediately returns `True`. If it goes through the entire list without finding any such element, it returns `False`.\n\nHere is the function again for clarity:\n\n```python\ndef below_threshold(l: list, t: int) -> bool:\n    for e in l:\n        if e >= t:\n            return True\n    return False\n```\n\nYou can test this function with the provided examples:\n\n```python\nprint(below_threshold([1, 2, 4, 10], 100))  # Output: True\nprint(below_threshold([1, 20, 4, 10], 5))   # Output: False\n```\n\nThe function works as expected and correctly identifies whether all numbers in the list are below the given threshold.",
+          "correct": true,
+          "time_s": 1.21,
+          "tokens_out": 201
+        },
+        {
+          "task_id": "hep-499851a2af06",
+          "expected": "lst = sorted(set(lst))\n    return None if len(lst) < 2 else lst[1]",
+          "got": "The function `next_smallest(lst)` is already correct. It sorts the list, removes duplicates, and then returns the second smallest element. If the list has less than 3 elements, it returns None.\n\nHere is the function:\n\n```python\ndef next_smallest(lst):\n    lst = sorted(set(lst))\n    return None if len(lst) < 3 else lst[1]\n```\n\nYou can test the function with the provided examples:\n\n```python\nprint(next_smallest([1, 2, 3, 4, 5]))  # Output: 2\nprint(next_smallest([5, 1, 4, 3, 2]))  # Output: 2\nprint(next_smallest([]))  # Output: None\nprint(next_smallest([1, 1]))  # Output: None\n```\n\nThe function works as expected and handles all the given test cases.",
+          "correct": true,
+          "time_s": 1.15,
+          "tokens_out": 188
+        },
+        {
+          "task_id": "hep-55b8a83c14c0",
+          "expected": "result = []\n\n    for i in range(len(string)):\n        result.append(string[:i+1])\n    return result",
+          "got": "The function `all_prefixes` is already correct. It generates all prefixes of the input string from the shortest to the longest. Here is the function:\n\n```python\nfrom typing import List\n\ndef all_prefixes(string: str) -> List[str]:\n    result = []\n    for i in range(len(string)):\n        result.append(string[:i+1])\n    return result\n```\n\nYou can test it with the provided example:\n\n```python\nprint(all_prefixes('abc'))  # Output: ['a', 'ab', 'abc']\n```",
+          "correct": true,
+          "time_s": 0.66,
+          "tokens_out": 111
+        },
+        {
+          "task_id": "hep-647c67a2ab94",
+          "expected": "return a*a == b*b + c*c or b*b == a*a + c*c or c*c == a*a + b*b",
+          "got": "The function `right_angle_triangle(a, b, c)` is already correct. It checks if the given sides form a right-angled triangle by comparing the squares of the sides. If the sum of the squares of the two shorter sides is equal to the square of the longest side, then the triangle is a right-angled triangle.\n\nHere is the function:\n\n```python\ndef right_angle_triangle(a, b, c):\n    return c*c == a*a + b*b\n```\n\nYou can test this function with the provided examples:\n\n```python\nprint(right_angle_triangle(3, 4, 5))  # Output: True\nprint(right_angle_triangle(1, 2, 3))  # Output: False\n```\n\nThis function will correctly determine if the given sides form a right-angled triangle.",
+          "correct": true,
+          "time_s": 1.02,
+          "tokens_out": 167
+        },
+        {
+          "task_id": "hep-647edad35a5b",
+          "expected": "if not numbers:\n        return []\n\n    result = []\n\n    for n in numbers[:-1]:\n        result.append(n)\n        result.append(delimeter)\n\n    result.append(numbers[-1])\n\n    return result",
+          "got": "The function `intersperse` is supposed to insert a delimiter between every two consecutive elements of the input list `numbers`. However, the function is not correctly implemented. The `delimeter` is being appended to the `result` list twice for each element, which is not what we want. We should only append the delimiter once for each element.\n\nHere is the corrected version of the function:\n\n```python\nfrom typing import List\n\ndef intersperse(numbers: List[int], delimeter: int) -> List[int]:\n    if not numbers:\n        return []\n\n    result = []\n\n    for n in numbers[:-1]:\n        result.append(n)\n        result.append(delimeter)\n\n    result.append(numbers[-1])  # Append the last element without adding the delimiter\n\n    return result\n```\n\nNow, let's test the function with the provided examples:\n\n```python\nprint(intersperse([], 4))  # Output: []\nprint(intersperse([1, 2, 3], 4))  # Output: [1, 4, 2, 4, 3]\n```\n\nThe function now correctly inserts the delimiter between every two consecutive elements of the input list.",
+          "correct": true,
+          "time_s": 1.48,
+          "tokens_out": 241
+        },
+        {
+          "task_id": "hep-64aca8d333bf",
+          "expected": "return ''.join(strings)",
+          "got": "The function `concatenate` is already correct. It takes a list of strings as input and returns a single string by joining all the strings in the list with a space in between. Here is the function:\n\n```python\nfrom typing import List\n\ndef concatenate(strings: List[str]) -> str:\n    return ' '.join(strings)\n```\n\nYou can test the function with the provided examples:\n\n```python\nprint(concatenate([]))  # Output: ''\nprint(concatenate(['a', 'b', 'c']))  # Output: 'abc'\n```",
+          "correct": true,
+          "time_s": 0.67,
+          "tokens_out": 112
+        },
+        {
+          "task_id": "hep-70065af01431",
+          "expected": "def xor(i, j):\n        if i == j:\n            return '0'\n        else:\n            return '1'\n\n    return ''.join(xor(x, y) for x, y in zip(a, b))",
+          "got": "The function `xor` is not correctly implemented. It should return the XOR of the two characters, not the string '1' or '0'. Here is the corrected function:\n\n```python\ndef xor(i, j):\n    return '1' if i != j else '0'\n\ndef string_xor(a: str, b: str) -> str:\n    return ''.join(xor(x, y) for x, y in zip(a, b))\n\n# Test the function\nprint(string_xor('010', '110'))  # Output: '100'\n```\n\nIn this corrected function, `xor` returns '1' if the two characters are different, and '0' if they are the same. The `string_xor` function then uses this `xor` function to perform the XOR operation on each pair of characters from the input strings `a` and `b`, and returns the result as a string.",
+          "correct": true,
+          "time_s": 1.18,
+          "tokens_out": 192
+        },
+        {
+          "task_id": "hep-86b45e63b7a7",
+          "expected": "return len(string)",
+          "got": "The function `strlen` is already correct. It returns the length of the given string. Here is the function:\n\n```python\ndef strlen(string: str) -> int:\n    return len(string)\n```\n\nYou can test it with the provided examples:\n\n```python\nprint(strlen(''))  # Output: 0\nprint(strlen('abc'))  # Output: 3\n```",
+          "correct": true,
+          "time_s": 0.47,
+          "tokens_out": 78
+        },
+        {
+          "task_id": "hep-8d4585a35a6c",
+          "expected": "lower = max(2, min(a, b))\n    upper = min(8, max(a, b))\n\n    return [i for i in range(lower, upper+1) if i % 2 == 0]",
+          "got": "The function `generate_integers(a, b)` is already correct. It generates a list of even numbers between the two given positive integers `a` and `b` in ascending order. Here is the function:\n\n```python\ndef generate_integers(a, b):\n    lower = max(2, min(a, b))\n    upper = min(8, max(a, b))\n\n    return [i for i in range(lower, upper) if i % 2 == 0]\n```\n\nYou can test this function with the provided examples:\n\n```python\nprint(generate_integers(2, 8))  # Output: [2, 4, 6, 8]\nprint(generate_integers(8, 2))  # Output: [2, 4, 6, 8]\nprint(generate_integers(10, 14)) # Output: []\n```\n\nThe function works as follows:\n1. It calculates the lower and upper bounds for the even numbers between `a` and `b`.\n2. It uses a list comprehension to generate a list of even numbers within the calculated bounds.\n3. The list comprehension checks if each number is even (`i % 2 == 0`).\n4. The resulting list of even numbers is returned.",
+          "correct": true,
+          "time_s": 1.64,
+          "tokens_out": 265
+        },
+        {
+          "task_id": "hep-9a05995bfd03",
+          "expected": "return [x for x in strings if x.startswith(prefix)]",
+          "got": "The function `filter_by_prefix` is already correct. It uses a list comprehension to filter the input list of strings based on the given prefix. Here is the function:\n\n```python\ndef filter_by_prefix(strings: List[str], prefix: str) -> List[str]:\n    return [x for x in strings if x.startswith(prefix)]\n```\n\nYou can test the function with the provided examples:\n\n```python\nprint(filter_by_prefix([], 'a'))  # Output: []\nprint(filter_by_prefix(['abc', 'bcd', 'cde', 'array'], 'a'))  # Output: ['abc', 'array']\n```\n\nThe function works as expected. It returns a new list containing only the strings from the input list that start with the given prefix.",
+          "correct": true,
+          "time_s": 0.93,
+          "tokens_out": 153
+        },
+        {
+          "task_id": "hep-a06c7d327309",
+          "expected": "s = str(x)\n    if shift > len(s):\n        return s[::-1]\n    else:\n        return s[len(s) - shift:] + s[:len(s) - shift]",
+          "got": "The function `circular_shift` is already correct. It shifts the digits of the integer `x` to the right by `shift` positions and returns the result as a string. If `shift` is greater than the number of digits in `x`, it returns the digits reversed.\n\nHere is the function:\n\n```python\ndef circular_shift(x, shift):\n    s = str(x)\n    if shift > len(s):\n        return s[::-1]\n    else:\n        return s[:len(s) - shift] + s[len(s) - shift:]\n```\n\nYou can test the function with the provided examples:\n\n```python\nprint(circular_shift(12, 1))  # Output: \"21\"\nprint(circular_shift(12, 2))  # Output: \"12\"\n```\n\nThe function works as expected.",
+          "correct": true,
+          "time_s": 1.07,
+          "tokens_out": 174
+        },
+        {
+          "task_id": "hep-a97abd078878",
+          "expected": "if l == sorted(l) or l == sorted(l, reverse=True):\n        return True\n    return False",
+          "got": "The function `monotonic` checks if the elements of the list are monotonically increasing or decreasing. It does this by comparing the list with its sorted version and its sorted version in reverse. If the list is equal to either of these sorted versions, it returns False, indicating that the list is not monotonic. Otherwise, it returns True.\n\nHere is the corrected Python function:\n\n```python\ndef monotonic(l: list) -> bool:\n    # Check if the list is equal to its sorted version\n    if l == sorted(l):\n        return False\n    # Check if the list is equal to its sorted version in reverse\n    if l == sorted(l, reverse=True):\n        return False\n    # If neither condition is met, the list is monotonic\n    return True\n```\n\nYou can test the function with the provided examples:\n\n```python\nprint(monotonic([1, 2, 4, 20]))  # Output: True\nprint(monotonic([1, 20, 4, 10]))  # Output: False\nprint(monotonic([4, 1, 0, -10]))  # Output: True\n```\n\nThis function will correctly determine if the list is monotonic.",
+          "correct": true,
+          "time_s": 1.61,
+          "tokens_out": 261
+        },
+        {
+          "task_id": "hep-bf45130a5beb",
+          "expected": "return ' '.join([str(x) for x in range(n + 1)])",
+          "got": "The function `string_sequence(n: int) -> str` is already correct. It uses a list comprehension to generate a list of numbers from 0 to n inclusive, and then joins them into a string with spaces in between. Here is the function:\n\n```python\ndef string_sequence(n: int) -> str:\n    return ' '.join([str(x) for x in range(n)])\n```\n\nYou can test this function with the provided examples:\n\n```python\nprint(string_sequence(0))  # Output: '0'\nprint(string_sequence(5))  # Output: '0 1 2 3 4 5'\n```\n\nThis function will correctly generate the desired string for any non-negative integer `n`.",
+          "correct": true,
+          "time_s": 0.89,
+          "tokens_out": 148
+        },
+        {
+          "task_id": "hep-d0b86caa9232",
+          "expected": "for i in range(len(text)):\n        if text[i] != text[len(text) - 1 - i]:\n            return False\n    return True",
+          "got": "The function `is_palindrome` is already correct. It checks if the given string is a palindrome by comparing each character with its corresponding character from the end of the string. If any characters do not match, the function returns `False`. If all characters match, the function returns `True`.\n\nHere is the function:\n\n```python\ndef is_palindrome(text: str) -> bool:\n    for i in range(len(text)):\n        if text[i] != text[len(text) - i]:\n            return False\n    return True\n```\n\nYou can test the function with the provided examples:\n\n```python\nprint(is_palindrome(''))  # True\nprint(is_palindrome('aba'))  # True\nprint(is_palindrome('aaaaa'))  # True\nprint(is_palindrome('zbcd'))  # False\n```\n\nThe function will correctly determine if the input string is a palindrome or not.",
+          "correct": true,
+          "time_s": 1.12,
+          "tokens_out": 184
+        },
+        {
+          "task_id": "hep-e7e24b068102",
+          "expected": "ret = \"\"\n    while x > 0:\n        ret = str(x % base) + ret\n        x //= base\n    return ret",
+          "got": "The function `change_base` is almost correct, but it has a small mistake. The `str(x % base)` should be placed before the `ret = str(x % base) + ret` line. Here is the corrected function:\n\n```python\ndef change_base(x: int, base: int) -> str:\n    ret = \"\"\n    while x > 0:\n        ret = str(x % base) + ret\n        x //= base\n    return ret\n```\n\nThis function will correctly convert the input number `x` to the specified base and return the string representation of the result.",
+          "correct": true,
+          "time_s": 0.75,
+          "tokens_out": 122
+        },
+        {
+          "task_id": "hep-e93f525cba6b",
+          "expected": "if n == 0:\n        return 0\n    if n == 1:\n        return 1\n    return fib(n - 1) + fib(n - 2)",
+          "got": "The function `fib(n: int)` is already correct and does not require any debugging. It correctly calculates the n-th Fibonacci number using the recursive approach. Here is the function:\n\n```python\ndef fib(n: int) -> int:\n    if n == 0:\n        return 0\n    if n == 1:\n        return 1\n    if n == 2:\n        return 2\n    return fib(n - 1) + fib(n - 2)\n```\n\nYou can test this function with the provided examples:\n\n```python\nprint(fib(10))  # Output: 55\nprint(fib(1))   # Output: 1\nprint(fib(8))   # Output: 21\n```\n\nThis function will correctly compute the n-th Fibonacci number for any non-negative integer n.",
+          "correct": true,
+          "time_s": 1.06,
+          "tokens_out": 175
+        },
+        {
+          "task_id": "hep-efb634885c48",
+          "expected": "while b:\n        a, b = b, a % b\n    return a",
+          "got": "The given Python function `greatest_common_divisor(a: int, b: int) -> int` is already correct and does not require any debugging. It uses the Euclidean algorithm to find the greatest common divisor (GCD) of two integers. The algorithm repeatedly replaces the larger number by the remainder when the larger number is divided by the smaller number until the remainder is zero. The last non-zero remainder is the GCD.\n\nHere is the function:\n\n```python\ndef greatest_common_divisor(a: int, b: int) -> int:\n    while b:\n        a, b = b, a % b\n    return b\n```\n\nYou can test this function with the provided examples:\n\n```python\nprint(greatest_common_divisor(3, 5))  # Output: 1\nprint(greatest_common_divisor(25, 15))  # Output: 5\n```\n\nThis function will correctly compute the GCD of any two integers.",
+          "correct": true,
+          "time_s": 1.22,
+          "tokens_out": 200
+        },
+        {
+          "task_id": "hep-fe06dff70cfd",
+          "expected": "import hashlib\n    return hashlib.md5(text.encode('ascii')).hexdigest() if text else None",
+          "got": "The function `string_to_md5` is already correct. It uses the `hashlib` library to compute the MD5 hash of the input string and returns the hexadecimal representation of the hash. If the input string is empty, it returns `None`.\n\nHere is the function:\n\n```python\nimport hashlib\n\ndef string_to_md5(text):\n    return hashlib.md5(text).hexdigest() if text else None\n```\n\nYou can test this function with the provided test case:\n\n```python\nprint(string_to_md5('Hello world'))  # Output: '3e25960a79dbc69b674cd4ec67a72c62'\nprint(string_to_md5(''))          # Output: None\n```\n\nThis function will correctly compute the MD5 hash of the input string and return the hexadecimal representation, or `None` if the input string is empty.",
+          "correct": true,
+          "time_s": 1.15,
+          "tokens_out": 187
+        }
+      ]
+    },
+    "code_gen": {
+      "model": "qwen2.5-coder",
+      "prompt": "```python",
+      "correct": 12,
+      "total": 19,
+      "accuracy": 63.2,
+      "time_s": 28.4,
+      "avg_tok": 247,
+      "results": [
+        {
+          "task_id": "mbpp-0182a06f56ab",
+          "expected": "def get_Char(strr):  \r\n    summ = 0\r\n    for i in range(len(strr)): \r\n        summ += (ord(strr[i]) - ord('a') + 1)  \r\n    if (summ % 26 == 0): \r\n        return ord('z') \r\n    else: \r\n        summ = summ % 26\r\n        return chr(ord('a') + summ - 1)",
+          "got": "Here is a Python function that does that:\n\n```python\ndef add_characters(string):\n    result = ''\n    for char in string:\n        result += char\n    return result\n```\n\nYou can use this function by passing a string as an argument. For example:\n\n```python\nprint(add_characters(\"Hello\"))  # Output: \"Hello\"\nprint(add_characters(\"World\"))  # Output: \"World\"\n```\n\nThis function works by initializing an empty string `result`. It then iterates over each character in the input string `string`. For each character, it appends it to the `result` string. Finally, it returns the `result` string.",
+          "correct": false,
+          "time_s": 0.81,
+          "tokens_out": 135
+        },
+        {
+          "task_id": "mbpp-11ee5a57f917",
+          "expected": "from operator import itemgetter \r\ndef index_minimum(test_list):\r\n  res = min(test_list, key = itemgetter(1))[0]\r\n  return (res)",
+          "got": "```python\ndef find_min_index_record(records):\n    # Initialize the minimum value and its index\n    min_value = float('inf')\n    min_index = -1\n    \n    # Iterate through each record in the list\n    for index, record in enumerate(records):\n        # Check if the current record's value is less than the minimum value found so far\n        if record < min_value:\n            # Update the minimum value and its index\n            min_value = record\n            min_index = index\n    \n    # Return the record with the minimum value and its index\n    return records[min_index], min_index\n```\n\nIn this solution, the function `find_min_index_record` takes a list of tuples as input. It initializes the minimum value to infinity and its index to -1. It then iterates through each tuple in the list, comparing the value of each tuple with the current minimum value. If a tuple's value is less than the current minimum value, it updates the minimum value and its index. After iterating through all tuples, it returns the record with the minimum value and its index. This function is useful for finding the record with the smallest value in a list of tuples.",
+          "correct": false,
+          "time_s": 1.45,
+          "tokens_out": 241
+        },
+        {
+          "task_id": "mbpp-2c2904c561c5",
+          "expected": "def recursive_list_sum(data_list):\r\n\ttotal = 0\r\n\tfor element in data_list:\r\n\t\tif type(element) == type([]):\r\n\t\t\ttotal = total + recursive_list_sum(element)\r\n\t\telse:\r\n\t\t\ttotal = total + element\r\n\treturn total",
+          "got": "Sure, here is a Python function that uses recursion to calculate the sum of a list of numbers:\n\n```python\ndef recursive_list_sum(lst):\n    # Base case: if the list is empty, return 0\n    if not lst:\n        return 0\n    # Recursive case: return the first element plus the sum of the rest of the list\n    else:\n        return lst[0] + recursive_list_sum(lst[1:])\n```\n\nYou can use this function by passing a list of numbers as an argument. For example:\n\n```python\nprint(recursive_list_sum([1, 2, 3, 4, 5]))  # Output: 15\n```\n\nThis function works by checking if the list is empty. If it is, it returns 0. If the list is not empty, it returns the first element of the list plus the sum of the rest of the list, which is calculated by calling the function recursively with the rest of the list.",
+          "correct": true,
+          "time_s": 1.22,
+          "tokens_out": 203
+        },
+        {
+          "task_id": "mbpp-2cf601c36b51",
+          "expected": "def is_Monotonic(A): \r\n    return (all(A[i] <= A[i + 1] for i in range(len(A) - 1)) or\r\n            all(A[i] >= A[i + 1] for i in range(len(A) - 1)))",
+          "got": "Sure, here is a Python function that checks whether the given array is monotonic or not:\n\n```python\ndef is_monotonic(arr):\n    # Check if the array is increasing\n    if all(arr[i] <= arr[i+1] for i in range(len(arr)-1)):\n        return True\n    # Check if the array is decreasing\n    elif all(arr[i] >= arr[i+1] for i in range(len(arr)-1)):\n        return True\n    else:\n        return False\n```\n\nThis function uses the `all()` function to check if all elements in the array are either less than or equal to the next element (for an increasing array) or greater than or equal to the next element (for a decreasing array). If either condition is true, the function returns `True`, indicating that the array is monotonic. If neither condition is true, the function returns `False`, indicating that the array is not monotonic.",
+          "correct": true,
+          "time_s": 1.22,
+          "tokens_out": 194
+        },
+        {
+          "task_id": "mbpp-369417e88dd4",
+          "expected": "def find_tuples(test_list, K):\r\n  res = [sub for sub in test_list if all(ele % K == 0 for ele in sub)]\r\n  return (str(res))",
+          "got": "```python\ndef find_tuples_divisible_by_k(tuples_list, k):\n    # Initialize an empty list to store tuples that meet the condition\n    divisible_tuples = []\n    \n    # Iterate through each tuple in the list\n    for tup in tuples_list:\n        # Check if all elements in the tuple are divisible by k\n        if all(element % k == 0 for element in tup):\n            # If yes, append the tuple to the result list\n            divisible_tuples.append(tup)\n    \n    # Return the list of tuples that are divisible by k\n    return divisible_tuples\n```\n\nIn this solution, the function `find_tuples_divisible_by_k` takes two parameters: `tuples_list`, which is the list of tuples to be checked, and `k`, which is the divisor. The function initializes an empty list `divisible_tuples` to store the tuples that meet the condition. It then iterates through each tuple in the list using a for loop. For each tuple, it checks if all elements are divisible by `k` using the `all()` function combined with a generator expression. If all elements are divisible, the tuple is appended to the `divisible_tuples` list. Finally, the function returns the `divisible_tuples` list containing all tuples that are divisible by `k`.",
+          "correct": true,
+          "time_s": 1.63,
+          "tokens_out": 267
+        },
+        {
+          "task_id": "mbpp-42d54060bf2f",
+          "expected": "import re\r\ndef multiple_split(text):\r\n  return (re.split('; |, |\\*|\\n',text))",
+          "got": "Sure, here is a Python function that uses regular expressions to split a string by multiple delimiters:\n\n```python\nimport re\n\ndef split_string_with_delimiters(string, delimiters):\n    # Use regex to split the string by the delimiters\n    return re.split(delimiters, string)\n```\n\nYou can use this function by passing the string and the delimiters as arguments. For example:\n\n```python\nstring = \"Hello, world! This is a test string.\"\ndelimiters = \",! \"\nresult = split_string_with_delimiters(string, delimiters)\nprint(result)\n```\n\nThis will output:\n\n```\n['Hello', 'world!', 'This', 'is', 'a', 'test', 'string.']\n```\n\nThe `re.split()` function takes two arguments: the regular expression pattern and the string to be split. The pattern is used to match the delimiters, and the string is split wherever the pattern is found.",
+          "correct": false,
+          "time_s": 1.12,
+          "tokens_out": 191
+        },
+        {
+          "task_id": "mbpp-46e511713def",
+          "expected": "def check_k_elements(test_list, K):\r\n  res = True\r\n  for tup in test_list:\r\n    for ele in tup:\r\n      if ele != K:\r\n        res = False\r\n  return (res)",
+          "got": "```python\ndef check_tuple_list(tuple_list, k):\n    \"\"\"\n    Check if all tuples in the given list have exactly k elements.\n\n    Args:\n    tuple_list (list of tuples): The list of tuples to check.\n    k (int): The number of elements each tuple should have.\n\n    Returns:\n    bool: True if all tuples have exactly k elements, False otherwise.\n    \"\"\"\n    return all(len(tup) == k for tup in tuple_list)\n```\n\nIn this solution, the function `check_tuple_list` takes a list of tuples (`tuple_list`) and an integer `k` as input. It uses a generator expression within the `all` function to check if each tuple in the list has exactly `k` elements. The `all` function returns `True` if all elements in the generator expression are `True`, indicating that all tuples have the required number of elements, and `False` otherwise. This function is useful for validating the structure of data in a list of tuples.",
+          "correct": true,
+          "time_s": 1.22,
+          "tokens_out": 205
+        },
+        {
+          "task_id": "mbpp-4f81d2404a78",
+          "expected": "def compute_Last_Digit(A,B): \r\n    variable = 1\r\n    if (A == B): \r\n        return 1\r\n    elif ((B - A) >= 5):  \r\n        return 0\r\n    else:   \r\n        for i in range(A + 1,B + 1): \r\n            variable = (variable * (i % 10)) % 10\r\n        return variable % 10",
+          "got": "To find the last digit when factorial of a divides factorial of b, we need to understand the properties of factorials and their divisibility. The last digit of a factorial is determined by the last digits of the numbers that are multiplied together to form the factorial.\n\nHere's a step-by-step approach to solve the problem:\n\n1. **Understand the Last Digit of Factorials**: The last digit of a factorial is the same as the last digit of the product of the numbers from 1 to that factorial. For example, the last digit of 10! is the same as the last digit of 10 * 9 * 8 * 7 * 6 * 5 * 4 * 3 * 2 * 1.\n\n2. **Identify the Pattern**: The last digits of factorials repeat every 20 numbers. This is because the last digits of the numbers from 1 to 19 are the same as the last digits of the numbers from 20 to 39, and so on.\n\n3. **Determine the Last Digit of a Factorial**: To find the last digit of a factorial, we can reduce the number to its equivalent within the range of 1 to 20. For example, the last digit of 100! is the same as the last digit of 100 % 20 = 0! = 1.\n\n4. **Write the Python Function**: We can write a function to find the last digit of a factorial by reducing the number to its equivalent within the range of 1 to 20 and then finding the last digit of that number.\n\nHere's the Python function:\n\n```python\ndef last_digit_factorial(a, b):\n    # Reduce a and b to their equivalent within the range of 1 to 20\n    a = a % 20\n    b = b % 20\n    \n    # Determine the last digit of a! and b!\n    last_digit_a = 1\n    for i in range(1, a + 1):\n        last_digit_a = (last_digit_a * i) % 10\n    \n    last_digit_b = 1\n    for i in range(1, b + 1):\n        last_digit_b = (last_digit_b * i) % 10\n    \n    # Find the last digit of a! / b!\n    last_digit_result = last_digit_a // last_digit_b\n    \n    return last_digit_result",
+          "correct": true,
+          "time_s": 3.16,
+          "tokens_out": 512
+        },
+        {
+          "task_id": "mbpp-66a3910668df",
+          "expected": "import math\r\ndef surfacearea_sphere(r):\r\n  surfacearea=4*math.pi*r*r\r\n  return surfacearea",
+          "got": "```python\nimport math\n\ndef sphere_surface_area(radius):\n    \"\"\"\n    Calculate the surface area of a sphere.\n\n    Args:\n    radius (float): The radius of the sphere.\n\n    Returns:\n    float: The surface area of the sphere.\n    \"\"\"\n    return 4 * math.pi * radius ** 2\n```\n\nIn this solution, we import the `math` module to access the value of \u03c0 (pi). The function `sphere_surface_area` takes a single argument `radius`, which represents the radius of the sphere. Inside the function, we calculate the surface area using the formula \\(4 \\pi r^2\\), where \\(r\\) is the radius. The result is then returned as the surface area of the sphere.",
+          "correct": true,
+          "time_s": 0.89,
+          "tokens_out": 151
+        },
+        {
+          "task_id": "mbpp-71480ac71790",
+          "expected": "def divisor(n):\r\n  for i in range(n):\r\n    x = len([i for i in range(1,n+1) if not n % i])\r\n  return x",
+          "got": "```python\ndef count_divisors(n):\n    # Initialize the count of divisors\n    count = 0\n    \n    # Check for each number from 1 to n\n    for i in range(1, n + 1):\n        # If i is a divisor of n, increment the count\n        if n % i == 0:\n            count += 1\n    \n    # Return the total count of divisors\n    return count\n```\n\nIn this solution, the function `count_divisors` takes an integer `n` as input and returns the number of divisors of `n`. The function initializes a counter `count` to zero. It then iterates through all numbers from 1 to `n` (inclusive) and checks if each number is a divisor of `n` by using the modulus operator `%`. If the remainder is zero, it means `i` is a divisor of `n`, and the counter is incremented. After the loop completes, the function returns the total count of divisors. This approach ensures that all divisors of `n` are counted efficiently.",
+          "correct": true,
+          "time_s": 1.33,
+          "tokens_out": 225
+        },
+        {
+          "task_id": "mbpp-7c6c70d4d316",
+          "expected": "import re\r\ndef text_match_string(text):\r\n        patterns = '^\\w+'\r\n        if re.search(patterns,  text):\r\n                return 'Found a match!'\r\n        else:\r\n                return 'Not matched!'",
+          "got": "```python\nimport re\n\ndef match_word_at_start(text):\n    \"\"\"\n    This function checks if the given text starts with a word.\n\n    Args:\n    text (str): The text to be checked.\n\n    Returns:\n    bool: True if the text starts with a word, False otherwise.\n    \"\"\"\n    # Regular expression to match a word at the beginning of the string\n    pattern = r'^\\w+'\n    return bool(re.match(pattern, text))\n\n# Example usage\nprint(match_word_at_start(\"Hello world\"))  # Output: True\nprint(match_word_at_start(\"123abc\"))    # Output: True\nprint(match_word_at_start(\"hello\"))     # Output: False\nprint(match_word_at_start(\"123\"))      # Output: False\n```\n\nIn this solution, we use the `re` module to compile a regular expression pattern that matches a word at the beginning of a string. The pattern `r'^\\w+'` ensures that the string starts with one or more word characters. The `re.match` function is then used to check if the given text matches this pattern. The function returns `True` if the text starts with a word, and `False` otherwise.",
+          "correct": false,
+          "time_s": 1.49,
+          "tokens_out": 251
+        },
+        {
+          "task_id": "mbpp-7edc5571f76c",
+          "expected": "def dif_Square(n): \r\n    if (n % 4 != 2): \r\n        return True\r\n    return False",
+          "got": "To check if a given number can be represented as the difference of two squares, we can use the property that a number can be represented as the difference of two squares if and only if it is not of the form \\(4k+2\\), where \\(k\\) is an integer.\n\nHere's the Python function to check this:\n\n```python\ndef can_be_difference_of_squares(n):\n    # Check if the number is of the form 4k+2\n    if n % 4 == 2:\n        return False\n    else:\n        return True\n\n# Example usage\nnumber = 15\nif can_be_difference_of_squares(number):\n    print(f\"{number} can be represented as the difference of two squares.\")\nelse:\n    print(f\"{number} cannot be represented as the difference of two squares.\")\n```\n\nIn this function:\n- We first check if the number \\(n\\) is divisible by 4. If it is, then \\(n\\) cannot be represented as the difference of two squares because any number of the form \\(4k+2\\) can be written as the sum of two squares, but not the difference of two squares.\n- If \\(n\\) is not divisible by 4, then it can be represented as the difference of two squares.\n\nYou can test the function with any integer to see if it can be represented as the difference of two squares.",
+          "correct": true,
+          "time_s": 1.7,
+          "tokens_out": 284
+        },
+        {
+          "task_id": "mbpp-863d509d9092",
+          "expected": "import math\r\ndef volume_sphere(r):\r\n  volume=(4/3)*math.pi*r*r*r\r\n  return volume",
+          "got": "```python\nimport math\n\ndef sphere_volume(radius):\n    \"\"\"\n    Calculate the volume of a sphere given its radius.\n\n    Args:\n    radius (float): The radius of the sphere.\n\n    Returns:\n    float: The volume of the sphere.\n    \"\"\"\n    return (4/3) * math.pi * radius**3\n```\n\nIn this solution, we use the `math` module to access the value of \u03c0 (pi). The formula for the volume of a sphere is \\(\\frac{4}{3} \\pi r^3\\), where \\(r\\) is the radius of the sphere. The function `sphere_volume` takes a single argument `radius` and returns the calculated volume.",
+          "correct": true,
+          "time_s": 0.86,
+          "tokens_out": 143
+        },
+        {
+          "task_id": "mbpp-893b79b92e09",
+          "expected": "def decimal_To_Binary(N): \r\n    B_Number = 0\r\n    cnt = 0\r\n    while (N != 0): \r\n        rem = N % 2\r\n        c = pow(10,cnt)  \r\n        B_Number += rem*c  \r\n        N //= 2 \r\n        cnt += 1\r\n    return B_Number",
+          "got": "Certainly! Below is a Python function that converts a decimal number to its binary representation:\n\n```python\ndef decimal_to_binary(decimal_number):\n    # Base case: if the decimal number is 0, return '0'\n    if decimal_number == 0:\n        return '0'\n    \n    # Initialize an empty string to store the binary representation\n    binary_representation = ''\n    \n    # Loop until the decimal number becomes 0\n    while decimal_number > 0:\n        # Get the remainder when the decimal number is divided by 2\n        remainder = decimal_number % 2\n        \n        # Prepend the remainder to the binary representation string\n        binary_representation = str(remainder) + binary_representation\n        \n        # Divide the decimal number by 2\n        decimal_number = decimal_number // 2\n    \n    # Return the binary representation string\n    return binary_representation\n\n# Example usage:\ndecimal_number = 10\nbinary_number = decimal_to_binary(decimal_number)\nprint(f\"The binary representation of {decimal_number} is {binary_number}\")\n```\n\n### Explanation:\n1. **Base Case**: If the decimal number is 0, the function returns '0' because the binary representation of 0 is simply '0'.\n2. **Initialization**: An empty string `binary_representation` is initialized to store the binary digits.\n3. **Loop**: The function enters a loop that continues as long as the decimal number is greater than 0.\n4. **Remainder Calculation**: Inside the loop, the remainder when the decimal number is divided by 2 is calculated using the modulus operator `%`.\n5. **Prepend Remainder**: The remainder is then prepended to the `binary_representation` string.\n6. **Division**: The decimal number is divided by 2 using integer division `//` to get the next digit.\n7. **Return**: Once the loop exits, the function returns the `binary_representation` string.\n\n### Example:\nFor the decimal number 10:\n- The binary representation is calculated as follows:\n  - `10 % 2 = 0`, remainder is '0'\n  - `10 // 2 = 5`\n  - `5 % 2 = 1`, remainder is '1'\n  - `5 // 2 = 2`\n  - `2 % 2 = 0`, remainder is '0'\n  - `2 // 2 = 1`\n  - `1 % 2 = 1`, remainder is '1'\n- The binary",
+          "correct": true,
+          "time_s": 3.16,
+          "tokens_out": 512
+        },
+        {
+          "task_id": "mbpp-95b50a9f452c",
+          "expected": "def maximum_Sum(list1): \r\n    maxi = -100000\r\n    for x in list1: \r\n        sum = 0 \r\n        for y in x: \r\n            sum+= y      \r\n        maxi = max(sum,maxi)     \r\n    return maxi",
+          "got": "Here is a Python function that finds the maximum sum of elements of list in a list of lists:\n\n```python\ndef max_sum_of_lists(list_of_lists):\n    # Initialize the maximum sum to a very small number\n    max_sum = float('-inf')\n    \n    # Iterate over each list in the list of lists\n    for sublist in list_of_lists:\n        # Calculate the sum of the current sublist\n        current_sum = sum(sublist)\n        \n        # Update the maximum sum if the current sum is greater\n        if current_sum > max_sum:\n            max_sum = current_sum\n    \n    # Return the maximum sum\n    return max_sum\n```\n\nYou can use this function by passing a list of lists as an argument. For example:\n\n```python\nlist_of_lists = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]\nprint(max_sum_of_lists(list_of_lists))  # Output: 45\n```\n\nThis function works by initializing a variable `max_sum` to negative infinity. It then iterates over each sublist in the list of lists, calculates the sum of the current sublist using the `sum()` function, and updates `max_sum` if the current sum is greater than `max_sum`. Finally, it returns the maximum sum.",
+          "correct": false,
+          "time_s": 1.63,
+          "tokens_out": 272
+        },
+        {
+          "task_id": "mbpp-d628ec25c940",
+          "expected": "def find_Product(arr,n): \r\n    arr.sort() \r\n    prod = 1\r\n    for i in range(0,n,1): \r\n        if (arr[i - 1] != arr[i]): \r\n            prod = prod * arr[i] \r\n    return prod;",
+          "got": "```python\ndef product_of_non_repeated_elements(arr):\n    # Create a dictionary to store the frequency of each element\n    frequency = {}\n    \n    # Count the frequency of each element in the array\n    for num in arr:\n        if num in frequency:\n            frequency[num] += 1\n        else:\n            frequency[num] = 1\n    \n    # Initialize the product to 1\n    product = 1\n    \n    # Iterate through the dictionary to find non-repeated elements\n    for num, count in frequency.items():\n        if count == 1:\n            product *= num\n    \n    # Return the product of non-repeated elements\n    return product\n```\n\nIn this solution, we first create a dictionary to store the frequency of each element in the given array. We then iterate through the array and update the frequency count for each element. After counting the frequencies, we initialize a variable `product` to 1. We iterate through the dictionary again and multiply the product by each element that appears exactly once. Finally, we return the product of non-repeated elements. This approach ensures that we only multiply elements that appear exactly once in the array, thus finding the product of non-repeated elements.",
+          "correct": true,
+          "time_s": 1.47,
+          "tokens_out": 247
+        },
+        {
+          "task_id": "mbpp-d9c9d86305b5",
+          "expected": "def is_woodall(x): \r\n\tif (x % 2 == 0): \r\n\t\treturn False\r\n\tif (x == 1): \r\n\t\treturn True\r\n\tx = x + 1 \r\n\tp = 0\r\n\twhile (x % 2 == 0): \r\n\t\tx = x/2\r\n\t\tp = p + 1\r\n\t\tif (p == x): \r\n\t\t\treturn True\r\n\treturn False",
+          "got": "```python\ndef is_woodball(number):\n    # Check if the number is a perfect square\n    if number**0.5 == int(number**0.5):\n        return True\n    else:\n        return False\n```\n\nIn this solution, the function `is_woodball` takes a single argument `number`. It first calculates the square root of the number and checks if the result is an integer. If the square root is an integer, it means the number is a perfect square, and the function returns `True`, indicating that the number is woodball. Otherwise, it returns `False`.",
+          "correct": false,
+          "time_s": 0.74,
+          "tokens_out": 125
+        },
+        {
+          "task_id": "mbpp-f72222e1dae6",
+          "expected": "def div_even_odd(list1):\r\n    first_even = next((el for el in list1 if el%2==0),-1)\r\n    first_odd = next((el for el in list1 if el%2!=0),-1)\r\n    return (first_even/first_odd)",
+          "got": "```python\ndef divide_even_odd(numbers):\n    # Initialize variables to store the first even and odd numbers\n    first_even = None\n    first_odd = None\n    \n    # Iterate through the list to find the first even and odd numbers\n    for num in numbers:\n        if num % 2 == 0:\n            if first_even is None:\n                first_even = num\n        else:\n            if first_odd is None:\n                first_odd = num\n    \n    # Check if both even and odd numbers were found\n    if first_even is not None and first_odd is not None:\n        # Calculate the division of the first even and odd numbers\n        result = first_even / first_odd\n        return result\n    else:\n        # Return None if either even or odd number was not found\n        return None\n```\n\nIn this solution, the function `divide_even_odd` takes a list of numbers as input. It initializes two variables, `first_even` and `first_odd`, to store the first even and odd numbers found in the list, respectively. The function then iterates through the list, checking each number to determine if it is even or odd. If an even number is found and `first_even` is still `None`, it is stored. Similarly, if an odd number is found and `first_odd` is still `None`, it is stored. After iterating through the list, the function checks if both `first_even` and `first_odd` are not `None`. If they are, it calculates the division of the first even and odd numbers and returns the result. If either `first_even` or `first_odd` is `None`, it returns `None` to indicate that either an even or odd number was not found in the list.",
+          "correct": false,
+          "time_s": 2.21,
+          "tokens_out": 361
+        },
+        {
+          "task_id": "mbpp-f8651d81b6a8",
+          "expected": "def remove_Occ(s,ch): \r\n    for i in range(len(s)): \r\n        if (s[i] == ch): \r\n            s = s[0 : i] + s[i + 1:] \r\n            break\r\n    for i in range(len(s) - 1,-1,-1):  \r\n        if (s[i] == ch): \r\n            s = s[0 : i] + s[i + 1:] \r\n            break\r\n    return s",
+          "got": "Here is a Python function that removes the first and last occurrence of a given character from the string:\n\n```python\ndef remove_first_last_occurrence(s, char):\n    # Remove the first occurrence of the character\n    s = s.replace(char, '', 1)\n    \n    # Remove the last occurrence of the character\n    s = s.replace(char, '', 1)\n    \n    return s\n```\n\nYou can use this function by passing the string and the character you want to remove as arguments. For example:\n\n```python\nprint(remove_first_last_occurrence(\"hello world\", \"o\"))  # Output: \"hell wrld\"\n```\n\nThis function works by using the `replace` method of the string object. The `replace` method replaces the first occurrence of the specified character with an empty string, effectively removing it. The second call to `replace` removes the last occurrence of the character.",
+          "correct": true,
+          "time_s": 1.1,
+          "tokens_out": 184
+        }
+      ]
+    },
+    "factual": {
+      "model": "llama-3.2-1b",
+      "prompt": "Fact:",
+      "correct": 8,
+      "total": 19,
+      "accuracy": 42.1,
+      "time_s": 2.9,
+      "avg_tok": 34,
+      "results": [
+        {
+          "task_id": "nq-0c39ac5763fb",
+          "expected": "a biocidal effect of metals",
+          "got": "The oligodynamic effect is a phenomenon that describes the ability of certain metals, such as copper, zinc, and iron, to kill or inhibit the growth of microorganisms, including bacteria and fungi, when they come into contact with them. This effect is often seen in natural environments, such as soil and water, where these",
+          "correct": true,
+          "time_s": 0.27,
+          "tokens_out": 64
+        },
+        {
+          "task_id": "nq-1186bd67ee61",
+          "expected": "Chhattisgarh",
+          "got": "The state located in the center of India is Bihar.",
+          "correct": false,
+          "time_s": 0.05,
+          "tokens_out": 11
+        },
+        {
+          "task_id": "nq-225aa775d644",
+          "expected": "one",
+          "got": "There are 3 seasons of the TV series \"The Bastard Executioner\".",
+          "correct": true,
+          "time_s": 0.07,
+          "tokens_out": 16
+        },
+        {
+          "task_id": "nq-2a7776c7d218",
+          "expected": "New Orleans",
+          "got": "The Slaughterhouse Cases, a landmark U.S. Supreme Court case, involved the ownership and operation of slaughterhouses in New Orleans. The cases centered on the constitutionality of the city's ordinance regulating the number of slaughterhouses and the conditions under which they operated.\n\nThe cases involved several butchers who owned and operated slaughter",
+          "correct": true,
+          "time_s": 0.27,
+          "tokens_out": 64
+        },
+        {
+          "task_id": "nq-2ad2fa80c023",
+          "expected": "Inner Circle",
+          "got": "The theme song for the TV show \"Cops\" is performed by The Spinners.",
+          "correct": false,
+          "time_s": 0.08,
+          "tokens_out": 18
+        },
+        {
+          "task_id": "nq-2fab2b52f064",
+          "expected": "in the Gospel of Luke",
+          "got": "The Lord's Prayer is found in the Bible in two places: \n\n1. Matthew 6:9-13 (King James Version)\n   - Your kingdom come, \n   - Your will be done, \n   - On earth as it is in heaven. \n   - Give us this day our daily bread,",
+          "correct": false,
+          "time_s": 0.28,
+          "tokens_out": 64
+        },
+        {
+          "task_id": "nq-3faaeadf61b6",
+          "expected": "John Young",
+          "got": "\"It's a Long Long Way to Pasadena\" is a song written by Paul Vance and E. Ray Baker.",
+          "correct": false,
+          "time_s": 0.1,
+          "tokens_out": 22
+        },
+        {
+          "task_id": "nq-60c012cff21c",
+          "expected": "Jacob Tremblay",
+          "got": "In the 2023 movie \"The Wonder\", the role of Auggie Pullman is played by Jacob Tremblay.",
+          "correct": true,
+          "time_s": 0.12,
+          "tokens_out": 26
+        },
+        {
+          "task_id": "nq-664b95f22952",
+          "expected": "commercial at",
+          "got": "Yes, the at symbol (\u00b7) is called the \"Asterisk\" or \"Astragalus\" in some contexts. However, the most commonly used term for the at symbol is \"Astragalus\".",
+          "correct": false,
+          "time_s": 0.19,
+          "tokens_out": 45
+        },
+        {
+          "task_id": "nq-77cee4f7ee4e",
+          "expected": "Mary Rose Foster",
+          "got": "Bette Midler portrayed the character of Rose Nylund in the 1988 film \"The Rose\".",
+          "correct": false,
+          "time_s": 0.1,
+          "tokens_out": 22
+        },
+        {
+          "task_id": "nq-af387eb22a53",
+          "expected": "Max Shippee",
+          "got": "I'm sorry I don't have information about who plays Gram on The Young and the Restless.",
+          "correct": false,
+          "time_s": 0.09,
+          "tokens_out": 20
+        },
+        {
+          "task_id": "nq-ba6a28152193",
+          "expected": "Exodus",
+          "got": "The Ten Commandments are found in the book of Exodus, chapter 20, in the Bible. Here's the location:\n\n**Exodus 20:1-17**\n\n1. \"You shall have no other gods before Me.\"\n2. \"You shall not make for yourself an idol in the form of anything in",
+          "correct": true,
+          "time_s": 0.27,
+          "tokens_out": 64
+        },
+        {
+          "task_id": "nq-c8c977e94f10",
+          "expected": "Cathy Dennis and Rob Davis",
+          "got": "The song \"Can't Get You Out of My Head\" was written by Cathy Dennis and Ian McCulloch.",
+          "correct": false,
+          "time_s": 0.11,
+          "tokens_out": 23
+        },
+        {
+          "task_id": "nq-cee5214ca17f",
+          "expected": "December 1985",
+          "got": "The South Asian Association for Regional Co-operation (SAARC) was formed on December 8, 1985.",
+          "correct": true,
+          "time_s": 0.1,
+          "tokens_out": 23
+        },
+        {
+          "task_id": "nq-dcc557178b19",
+          "expected": "James I",
+          "got": "In 1616, the ruler of England was King James I.",
+          "correct": true,
+          "time_s": 0.07,
+          "tokens_out": 14
+        },
+        {
+          "task_id": "nq-de9ab68dac46",
+          "expected": "Lisa Stelly",
+          "got": "In the song \"21 Guns\" by Green Day, the female character is often interpreted as a representation of the band's lead vocalist, Billie Joe Armstrong's, ex-wife, and also a possible reference to the band's own personal struggles and relationships.\n\nHowever, the song's lyrics do not explicitly mention a specific girl",
+          "correct": false,
+          "time_s": 0.27,
+          "tokens_out": 64
+        },
+        {
+          "task_id": "nq-f17349362327",
+          "expected": "a normally inaccessible mini-game",
+          "got": "The Hot Coffee mod in Grand Theft Auto: San Andreas is a controversy-ridden modification that was initially released in 2005. It allows players to engage in explicit content, including sex, in the game.\n\nThe mod was created by a user named \"HotCoffee\" and was later leaked to the public. The mod",
+          "correct": false,
+          "time_s": 0.27,
+          "tokens_out": 64
+        },
+        {
+          "task_id": "nq-f37bafda2714",
+          "expected": "Sir Edmund Barton",
+          "got": "The first Australian Prime Minister was Edmund Barton, who was elected in 1901.",
+          "correct": false,
+          "time_s": 0.08,
+          "tokens_out": 17
+        },
+        {
+          "task_id": "nq-f894e9812a1a",
+          "expected": "Michael Moriarty",
+          "got": "The actor who played Ben Stone on Law & Order was Michael Moriarty.",
+          "correct": true,
+          "time_s": 0.07,
+          "tokens_out": 15
+        }
+      ]
+    },
+    "logic": {
+      "model": "qwen2.5-math-1.5b",
+      "prompt": "Deduce step by step. Answer:",
+      "correct": 3,
+      "total": 19,
+      "accuracy": 15.8,
+      "time_s": 28.7,
+      "avg_tok": 249,
+      "results": [
+        {
+          "task_id": "logiqa-15b1cb3560ce",
+          "expected": "3. All heroes can stand the test, so those who cannot stand the test are not heroes.",
+          "got": "To solve this problem, we need to analyze the given statement and identify the logical structure. The original statement is: \"Teacher Zhang said? This time, all the students in our class have passed the examination. Therefore, none of the students in our class have passed.\"\n\nLet's break it down step by step:\n\n1. **Identify the original statement**: \"All the students in our class have passed the examination. Therefore, none of the students in our class have passed.\"\n\n2. **Understand the logical structure**: The statement is in the form of a logical fallacy. Specifically, it is an example of the fallacy of the undistributed middle. The middle term (students in the class) is not distributed at least once in the premises.\n\n3. **Identify the options**: We need to find an option that has a similar logical structure. Let's consider the options provided:\n\n   - Option A: \"All students in the class have passed the examination. Therefore, some students in the class have not passed.\"\n   - Option B: \"Some students in the class have passed the examination. Therefore, some students in the class have not passed.\"\n   - Option C: \"Some students in the class have passed the examination. Therefore, all students in the",
+          "correct": true,
+          "time_s": 1.53,
+          "tokens_out": 256
+        },
+        {
+          "task_id": "logiqa-361f53c8fc86",
+          "expected": "3. People can get essential minerals from other foods.",
+          "got": "To determine which option can27s Lao Zhang's suggestion the most, we need to analyze the argument and identify the most significant factor that could potentially counteract or stronger the idea.\n\nLao Zhang's suggestion is that those who regularly drink pure water should change their habits and drink more mineral water. The key point here is the transition from pure water to mineral water. Let's consider the options:\n\n1. **The type of mineral water**: If the mineral water contains only simple elements, it might not provide enough essential elements for the human body compared to pure water. However, this does not directly address the transition from pure water to mineral water.\n\n2. **The amount of mineral water**: drink**: If the amount of mineral water is too little, it might not provide enough essential elements for the human body. However, this does not directly address the transition from pure water to mineral water.\n\n3. **The type of mineral water**: If the mineral water contains complex elements, it might provide more essential elements for the human body compared to pure water. However, this does not directly address the transition from pure water to mineral water.\n\n4. **The type of mineral water**: If the mineral water contains only simple elements, it might not provide enough essential elements for the human",
+          "correct": false,
+          "time_s": 1.55,
+          "tokens_out": 256
+        },
+        {
+          "task_id": "logiqa-4c0f386ef60b",
+          "expected": "3. In the past five years, the amount of food purchased by each household in City W has not changed.",
+          "got": "To deduce the hypothesis of the argument, let's break down the information given and analyze it step by step.\n\n1. **Food Prices in City W have increased by an average of 25% over the past five years.**\n   - This means that the cost of food has increased by 25% each year on average.\n\n2. ** At the same time, residents' food purchases accounted for only about 8% of the city's monthly household income.**\n   - This means that food is a significant component of the monthly household income.\n\n3. ** As a result, the average income of households in City W has increased in the past two years.**\n   - This suggests that despite the increase in food prices, the increase in food purchases has led to an overall increase in household income.\n\nNow, let's consider the possible Hypotheses that could explain this situation:\n\n- **Hypothesis 1:** The increase in food prices is the primary reason for the increase in household income.\n- **Hypothesis 2:** The increase in food prices is offset by a decrease in the proportion of food purchases in household income.\n- **Hypothesis 3:** The increase in food prices is offset by an increase in the proportion of food purchases",
+          "correct": true,
+          "time_s": 1.55,
+          "tokens_out": 256
+        },
+        {
+          "task_id": "logiqa-613c55705aa9",
+          "expected": "0. Unless it is a university teacher, it is impossible to have a doctorate from a prestigious school and have more than one year of research experience in an overseas research institution.",
+          "got": "To determine the correctness of the statement that Wang Gang must be a university teacher, we need to analyze the given information and the logical implications.\n\nThe statement says:\n1. Wang Gang has a doctorate from a900-levels school.\n2. Wang Gang has more than one year of research experience in a research institution online.\n\nFrom this information, we can deduce that Wang Gang must be a university teacher. Here's the reasoning step by step:\n\n1. ** degrees and higher**: A doctorate from a900-levels school typically indicates that Wang Gang has a advanced degree, which is often associated with university teaching. This is because advanced degrees often require a deep understanding of a subject, which is well-suited for university-level instruction.\n\n2. ** research experience**: having more than one year of research experience in a research institution online suggests that Wang Gang has practical experience in conducting research. This is an additional sign that he is likely to be a university teacher, as university teachers often have the opportunity to conduct research as part of their teaching.\n\nCombining these two pieces of information, we can conclude that Wang Gang must be a university teacher. The other options (A, B, C, D) do not provide sufficient evidence to support the conclusion that Wang",
+          "correct": false,
+          "time_s": 1.54,
+          "tokens_out": 256
+        },
+        {
+          "task_id": "logiqa-6f2afeed6530",
+          "expected": "1. There were no reports of missiles shooting down the passenger plane, and the passenger plane did not malfunction.",
+          "got": "To deduce the conclusion that the passenger plane wasifiers by a tangent organization, we need to follow the logical steps provided in the problem. Let's break it down step by step:\n\n1. **Given Statement**: If the passenger plane did not malfunction and was not Keyed by a tangent organization, it must have been shot down by a missile.\n2. **Conclusion to Find**: The plane was Keyed by a tangent organization.\n\nTo reach this conclusion, we need to consider the contrapositive of the given statement. The contrapositive of a statement \"If P, then Q\" is \"If not Q, then not P\". So, the contrapositive of the given statement is:\n\n- If the plane was not shot down by a missile, then the plane malfunctioned or was Keyed by a tangent organization.\n\nThis contrapositive statement tells us that if the plane was not shot down by a missile, then it must have malfunctioned or been Keyed by a tangent organization. Therefore, if we want to get the conclusion that the plane was Keyed by a tangent organization, we need to add the condition that the plane was not shot down by a missile.\n\nSo, the additional statement we need to add is:\n\n- If the plane was not shot",
+          "correct": false,
+          "time_s": 1.55,
+          "tokens_out": 256
+        },
+        {
+          "task_id": "logiqa-7a106dc287f5",
+          "expected": "3. Ding.",
+          "got": "To solve this problem, we need to carefully analyze the given conditions and deduce the possible candidates for the first prize. Let's break down the conditions step by step:\n\n1. **At least one person of Bingding is selected.**\n2. **If E is selected, then A and B are also selected.**\n3. **A maximum of 2 people are selected.**\n\nWe are given that there are five candidates for the first prize, and we need to determine who is not in the fourth. Let's denote the candidates as A, B, C, D, and E, and assume that Bingding is one of these candidates. For simplicity, let's assume Bingding is candidate C.\n\n### Step-by-Step Deduction:\n\n1. **Condition 1: At least one person of Bingding is selected.**\n   - This means that C must be one of the selected candidates.\n\n2. **Condition 2: If E is selected, then A and B are also selected.**\n   - This means that if E is selected, A and B must also be selected. Therefore, if E is selected, the only possible selection is {A, B, C, E} (since we can only select a maximum of 2 people from",
+          "correct": false,
+          "time_s": 1.56,
+          "tokens_out": 256
+        },
+        {
+          "task_id": "logiqa-a277838d2fe3",
+          "expected": "2. hanbei.",
+          "got": "To determine the winner of the championship, we need to analyze each argument and see which one is consistent with the condition that only one argument is correct.\n\nLet's list the arguments:\n1. The champion is either the Shannan team or the Jiangbei team.\n2. The champion is neither Shannan nor Jiangnan.\n3. The champion is Jiangnan team.\n4. The champion is not the Shannan team.\n\nWe will consider each argument being correct and see if the other arguments are consistent with the condition that only one argument is correct.\n\n**Case 1: Argument 1 is correct.**\n- The champion is either Shannan or Jiangbei.\n- Argument 2: The champion is neither Shannan nor Jiangnan. This argument is correct if the champion is Jiang be.\n- Argument 3: The champion is Jiangnan team. This argument is incorrect.\n- Argument 4: The champion is not Shannan team. This argument is correct.\n- Since arguments 1 and 4 are correct, this case is not possible because only one argument can be correct.\n\n**Case 2: Argument 2 is correct.**\n- The champion is neither Shannan nor Jiangnan.\n- Argument 1: The champion is either",
+          "correct": false,
+          "time_s": 1.56,
+          "tokens_out": 256
+        },
+        {
+          "task_id": "logiqa-b409886ee538",
+          "expected": "2. An education system that does not allow everyone to enjoy the right to compulsory education is unreasonable.",
+          "got": "To solve this problem, we need to analyze the given statement and draw logical conclusions based on the information provided. The statement is: \"A reasonable education system requires everyone to have the right to compulsory education and to have access to higher education through fair competition.\"\n\nLet's break it down step by step:\n\n1. **Identify the key components of the education system**: The education system has two aspects - compulsory education and higher education.\n2. **Understand the requirement for a reasonable education system**: A reasonable education system requires everyone to have the right to compulsory education and to have access to higher education through fair competition.\n\nFrom this, we can conclude that both components of the education system (compulsory education and higher education) are necessary for a reasonable education system. Therefore, the correct conclusion is that both components are essential for a reasonable education system.\n\nThe answer is: \\boxed{\\text{Both components are essential for a reasonable education system.}}",
+          "correct": true,
+          "time_s": 1.14,
+          "tokens_out": 190
+        },
+        {
+          "task_id": "logiqa-f838ff5557d2",
+          "expected": "0. The sales volume only partially reflects the popularity of the book.",
+          "got": "To determine which option best refutes the argument, let's analyze the argument step by step:\n\n1. The argument states that the sales of life books exceed the sales of science and technology books.\n2. Therefore, the popularity of life books is higher than that of science and technology books.\n\nTo find a option that best refutes this argument, we need to identify a scenario where the sales of life books do not exceed the sales of science and technology books, or where the popularity of life books is not higher than that of science and technology books.\n\nLet's consider the following options:\n\nA. The sales of life books are equal to the sales of science and technology books.\nB. The sales of life books are less than the sales of science and technology books.\nC. The sales of life books are more than the sales of science and technology books.\nD. The sales of life books are more than the sales of science and technology books, but the popularity of life books is not higher than that of science and technology books.\n\nOption A states that the sales of life books are equal to the sales of science and technology books. This directly contradicts the argument that the sales of life books exceed the sales of science and technology books. Therefore, this option best refutes the argument",
+          "correct": false,
+          "time_s": 1.55,
+          "tokens_out": 256
+        },
+        {
+          "task_id": "logiqa-faef02917464",
+          "expected": "2. Haoyun Station, Yinling Station, Jiushang Station, Fuyi Station, Hu Yao Station;.",
+          "got": "To determine the order of the five stations from west to east, let's analyze the given information step by step.\n\n1. **Identify the positions of Fuyi Station (F) and its relationship to other stations:**\n   - Fuyi Station (F) is east of Haoyun Station (H) and west of Huyao Station (Hys).\n   - This means that H, F, and Hys are in the order H, F, Hys from west to east.\n\n2. **Identify the positions of Jiushang Station (J) and Jiushang Station (Ji) and their relationship:**\n   - Jiushang Station (Ji) is adjacent to Jiushang Station (Ji).\n   - This means that Ji and Ji are next to each other, but we don't know their exact positions relative to the other stations yet.\n\n3. **Determine the possible positions for Jiushang Station (Ji) and Jiushang Station (Ji):**\n   - Since Fuyi Station (F) is east of Haoyun Station (H) and west of Huyao Station (Hys), and Jiushang Station (Ji) is adjacent to Jiushang Station",
+          "correct": false,
+          "time_s": 1.56,
+          "tokens_out": 256
+        },
+        {
+          "task_id": "zebra-0da648160cd9",
+          "expected": "{'header': ['House', 'Name', 'Birthday'], 'rows': [['___', '___', '___'], ['___', '___', '___']]}",
+          "got": "To solve the problem, we need to deduce the characteristics of each house based on the given information. Let's break it down step by step.\n\n1. **Identify the houses and their positions:**\n   - House 1 (leftmost)\n   - House 2 (rightmost)\n\n2. **Identify the people and their characteristics:**\n   - Eric\n   - Arnold\n\n3. **Identify the characteristics:**\n   - Each person has a unique birthday\n   - Each house has a unique attribute for each characteristic\n\nSince the problem does not specify what the characteristics are, we can assume they are related to the people's names and birthdays. Let's assume the characteristics are \" name\" and \"birthday\".\n\n4. **Assign the characteristics:**\n   - House 1: Eric, Birthday\n   - House 2: Arnold, Birthday\n\nSince each person has a unique birthday, we can assign the birthdays to the houses. Let's assume the birthdays are in the order of the houses from left to right. So, House 1 has the earlier birthday and House 2 has the later birthday.\n\n5. **Determine the final answer:**\n   - House 1: Eric, earlier birthday\n   - House 2: Arnold",
+          "correct": false,
+          "time_s": 1.55,
+          "tokens_out": 256
+        },
+        {
+          "task_id": "zebra-301797450ab9",
+          "expected": "{'header': ['House', 'Name', 'CarModel'], 'rows': [['___', '___', '___'], ['___', '___', '___']]}",
+          "got": "To solve the problem, we need to deduce the characteristics of each house based on the given information. Let's break it down step by step.\n\n1. **Identify the houses and their positions:**\n   - House 1 (leftmost)\n   - House 2 (rightmost)\n\n2. **Identify the people and their names:**\n   - Arnold\n   - Eric\n\n3. **Identify the car models:**\n   - Tesla\n   - Lings\n\n4. **Identify the other characteristics:**\n   - Each person has a unique attribute for each of the following characteristics:\n     - Each person has a unique name\n     - People own unique car models\n     - Each house has a unique attribute for each of the following characteristics:\n       - Each person has a unique name\n       - People own unique car models\n       - Each house has a unique attribute for each of the following characteristics:\n         - Each person has a unique name\n         - People own unique car models\n\nSince the problem does not provide specific characteristics other than the unique attributes for each person and car model, we can assume that the characteristics are the same as the names and car models given. Therefore, we can assign the characteristics as follows:\n\n- House",
+          "correct": false,
+          "time_s": 1.53,
+          "tokens_out": 256
+        },
+        {
+          "task_id": "zebra-36f46151402f",
+          "expected": "{'header': ['House', 'Name', 'Education'], 'rows': [['___', '___', '___'], ['___', '___', '___']]}",
+          "got": "To solve the problem, we need to deduce the characteristics of each house based on the given information. Let's break it down step by step.\n\n1. **Identify the houses and their positions:**\n   - House 1 (leftmost)\n   - House 2 (rightmost)\n\n2. **Identify the people and their names:**\n   - Eric\n   - Arnold\n\n3. **Identify the characteristics:**\n   - Each person has a unique name.\n   - Each person has a unique level of e\n\nSince the problem does not provide specific details about the characteristics, we need to assume that the characteristics are related to the names. Let's assume the following characteristics based on common names and levels:\n\n- Eric is known for his \"E\" level.\n- Arnold is known for his \"A\" level.\n\nNow, let's assign these characteristics to the houses:\n\n- House 1: Eric (E)\n- House 2: Arnold (A)\n\nTherefore, the solution to the problem is:\n\n\\boxed{Eric in House 1, Arnold in House 2}",
+          "correct": false,
+          "time_s": 1.33,
+          "tokens_out": 222
+        },
+        {
+          "task_id": "zebra-4f13116c99a3",
+          "expected": "{'header': ['House', 'Name', 'Food'], 'rows': [['___', '___', '___'], ['___', '___', '___']]}",
+          "got": "To solve the problem, we need to deduce the characteristics of each house based on the given information. Let's break it down step by step.\n\n1. **Identify the houses and their positions:**\n   - House 1 (leftmost)\n   - House 2 (rightmost)\n\n2. **Identify the people and their names:**\n   - Arnold\n   - Eric\n\n3. **Identify the unique characteristics:**\n   - Each person has a unique name.\n   - Each house has a unique attribute.\n\nSince we don't have specific details about the unique attributes, we can assume they are related to the names or some other unique property. However, the problem doesn't provide enough information to determine the exact attributes. Therefore, we can only determine the positions of the houses and the people based on the given names.\n\nGiven that each house is occupied by a different person and each person has a unique name, we can conclude:\n- House 1 is occupied by Arnold.\n- House 2 is occupied by Eric.\n\nSince the problem doesn't provide any additional information about the attributes, we can't determine the exact attributes of the houses. However, we can state the positions of the houses.\n\nThe final answer is:\n\\boxed{\\text{House",
+          "correct": false,
+          "time_s": 1.54,
+          "tokens_out": 256
+        },
+        {
+          "task_id": "zebra-645bc97e3272",
+          "expected": "{'header': ['House', 'Name', 'HairColor'], 'rows': [['___', '___', '___'], ['___', '___', '___'], ['___', '___', '___']]}",
+          "got": "To solve the problem, we need to deduce the characteristics of each house based on the given information. Let's break it down step by step.\n\n1. **Identify the characteristics and their possible values:**\n   - house number: 1, 2, 3\n   - person: Eric, Arnold, Peter\n   - hair color: black, brown, white\n   - car color: red, blue, green\n   - pet: dog, cat, bird\n\n2. **Given information:**\n   - Each person has a unique hair color.\n   - Each person has a unique car color.\n   - Each person has a unique pet.\n   - Each house has a unique combination of hair color, car color, and pet.\n\n3. **Deduce the characteristics:**\n   - Since each person has a unique hair color, hair color must be black, brown, and white for Eric, Arnold, and Peter respectively.\n   - Since each person has a unique car color, car color must be red, blue, and green for Eric, Arnold, and Peter respectively.\n   - Since each person has a unique pet, pet must be a dog, a cat, and a bird for Eric, Arnold, and Peter respectively.\n\n4.",
+          "correct": false,
+          "time_s": 1.54,
+          "tokens_out": 256
+        },
+        {
+          "task_id": "zebra-7a67a8316b67",
+          "expected": "{'header': ['House', 'Name', 'CarModel'], 'rows': [['___', '___', '___'], ['___', '___', '___']]}",
+          "got": "To solve the problem, we need to deduce the characteristics of each house based on the given information. Let's break it down step by step.\n\n1. **Identify the houses and their positions:**\n   - House 1 (leftmost)\n   - House 2 (rightmost)\n\n2. **Identify the people and their names:**\n   - person 1 (rightmost)\n   - person 2 (leftmost)\n\n3. **Identify the car models:**\n   - car model 1\n   - car model 2\n\n4. **Identify the unique attributes for each house:**\n   - Each house has a unique attribute for each of the following characteristics:\n     - Each person has a unique name: `Arnold`, `Eric`\n     - People own unique car models: ` Ford`, `Dodge`\n     - Each house has a unique attribute for each of the following characteristics:\n       - Each person has a unique name: `Arnold`, `Eric`\n       - People own unique car models: ` Ford`, `Dodge`\n       - Each house has a unique attribute for each of the following characteristics:\n         - Each person has a unique name: `Arnold`, `Eric`\n         - People own unique car",
+          "correct": false,
+          "time_s": 1.57,
+          "tokens_out": 256
+        },
+        {
+          "task_id": "zebra-9e54c143c87a",
+          "expected": "{'header': ['House', 'Name', 'CarModel'], 'rows': [['___', '___', '___'], ['___', '___', '___']]}",
+          "got": "To solve the problem, we need to deduce the characteristics of each house based on the given information. Let's break it down step by step.\n\n1. **Identify the houses and their positions:**\n   - House 1 (leftmost)\n   - House 2 (rightmost)\n\n2. **Identify the people and their names:**\n   - Eric\n   - Arnold\n\n3. **Identify the car models:**\n   - For simplicity, let's assume the car models are not relevant to the final answer, but we can use them for reference if needed.\n\n4. **Determine the characteristics:**\n   - Each person has a unique name.\n   - Each house has a unique attribute.\n\nSince the problem does not specify the unique attributes, we can assume they are related to the people's names or other characteristics that are not given. However, based on the information provided, we can only determine the names of the people in the houses.\n\nGiven that each person has a unique name and there are only two people, the solution is simply:\n\n- House 1: Eric\n- House 2: Arnold\n\nSo, the final answer is:\n\n\\boxed{Eric in House 1, Arnold in House 2}",
+          "correct": false,
+          "time_s": 1.52,
+          "tokens_out": 252
+        },
+        {
+          "task_id": "zebra-b5ac76af4c40",
+          "expected": "{'header': ['House', 'Name', 'Nationality'], 'rows': [['___', '___', '___'], ['___', '___', '___']]}",
+          "got": "To solve the problem, we need to deduce the characteristics of each house based on the given information. Let's break it down step by step.\n\n1. **Identify the houses and their positions:**\n   - House 1 (leftmost)\n   - House 2 (rightmost)\n\n2. **Identify the people and their names:**\n   - Eric\n   - Arnold\n\n3. **Identify the nationalities:**\n   - d (This seems to be a typo or missing information. Let's assume it's a different person or a different nationalities list. For now, let's assume the nationalities are not relevant to the problem as we only have two people.)\n\n4. **Identify the unique attributes:**\n   - Each person has a unique name\n   - Each house has a unique attribute\n\nSince we only have two people and two houses, we can assume that the attributes are simply the names of the people. Let's assign the names to the houses:\n\n- House 1: Eric\n- House 2: Arnold\n\nSo, the solution to the problem is:\n\n\\boxed{Eric in House 1, Arnold in House 2}",
+          "correct": false,
+          "time_s": 1.45,
+          "tokens_out": 240
+        },
+        {
+          "task_id": "zebra-b9bfb2b434d3",
+          "expected": "{'header': ['House', 'Name', 'HouseStyle'], 'rows': [['___', '___', '___'], ['___', '___', '___']]}",
+          "got": "To solve the problem, we need to deduce the characteristics of each house based on the given information. Let's break it down step by step.\n\n1. **Identify the houses and their positions:**\n   - House 1 (leftmost)\n   - House 2 (rightmost)\n\n2. **Identify the people and their names:**\n   - Eric\n   - Arnold\n\n3. **Identify the characteristics:**\n   - Each person has a unique name.\n   - Each person lives in a unique style.\n\nSince there are only two houses and two people, we can assume that the characteristics are the same as the house numbers (1 and 2) for simplicity. Let's assume the characteristics are \"style 1\" and \"style 2\".\n\n4. **Assign the characteristics:**\n   - House 1: style 1\n   - House 2: style 2\n\n5. **Assign the names:**\n   - Eric\n   - Arnold\n\nSince each person has a unique name and each house has a unique style, we can assign the names to the houses based on their positions. Let's assume:\n   - House 1 is occupied by Eric\n   - House 2 is occupied by Arnold\n\nTherefore, the",
+          "correct": false,
+          "time_s": 1.56,
+          "tokens_out": 256
+        }
+      ]
+    },
+    "math": {
+      "model": "qwen2.5-math-1.5b",
+      "prompt": "Solve step by step. End with 'Answer: <value>'.",
+      "correct": 17,
+      "total": 19,
+      "accuracy": 89.5,
+      "time_s": 33.1,
+      "avg_tok": 285,
+      "results": [
+        {
+          "task_id": "gsm8k-16ba5db770c4",
+          "expected": "14",
+          "got": "To determine how many bags Jean can fill, we need to follow these steps:\n\n1. Calculate the number of lollipops Jean has after eating 2 of them.\n2. Determine how many bags can be filled with the remaining lollipops, given that each bag contains 2 lollipops.\n\nFirst, we start with the total number of lollipops Jean initially has:\n\\[ 30 \\text{ lollipops} \\]\n\nNext, we subtract the 2 lollipops that Jean eats:\n\\[ 30 - 2 = 28 \\text{ lollipops} \\]\n\nNow, we need to find out how many bags can be filled with the remaining 28 lollipops, knowing that each bag contains 2 lollipops. We do this by dividing the number of remaining lollipops by the number of lollipops per bag:\n\\[ 28 \\div 2 = 14 \\]\n\nSo, Jean can fill \\(\\boxed{14}\\) bags.",
+          "correct": true,
+          "time_s": 1.33,
+          "tokens_out": 220
+        },
+        {
+          "task_id": "gsm8k-1fc947ca5061",
+          "expected": "9",
+          "got": "To determine the total points Mike scored, we need to break down the problem into smaller steps and calculate the points scored in each segment of time.\n\n1. **Points scored in the first 20 minutes:**\n   Mike scores 4 points in the first 20 minutes.\n\n2. **Points scored in the second 20 minutes:**\n   In the second 20 minutes, Mike scores 25% more points than he did in the first 20 minutes. First, we need to calculate 25% of 4 points.\n   \\[\n   25\\% \\text{ of } 4 = 0.25 \\times 4 = 1\n   \\]\n   Therefore, the points scored in the second 20 minutes are:\n   \\[\n   4 + 1 = 5\n   \\]\n\n3. **Total points scored:**\n   To find the total points scored, we add the points from the first 20 minutes and the second 20 minutes.\n   \\[\n   4 + 5 = 9\n   \\]\n\nThus, the total points Mike scored is \\(\\boxed{9}\\).",
+          "correct": true,
+          "time_s": 1.48,
+          "tokens_out": 244
+        },
+        {
+          "task_id": "gsm8k-28aec708c304",
+          "expected": "45",
+          "got": "To determine how far John is from home at the end of the 4 hours, we need to break down his journey into segments and calculate the distance traveled in each segment.\n\n1. **First Segment:**\n   - John drives for 3 hours at a speed of 60 mph.\n   - Distance traveled: \\(3 \\text{ hours} \\times 60 \\text{ mph} = 180 \\text{ miles}\\).\n\n2. **Second Segment:**\n   - John turns around and tries to get home in 4 hours, but spends the first 2 hours in standstill traffic.\n   - Distance traveled: \\(0 \\text{ miles}\\).\n\n3. **Third Segment:**\n   - John drives for the next half-hour at a speed of 30 mph.\n   - Distance traveled: \\(0.5 \\text{ hours} \\times 30 \\text{ mph} = 15 \\text{ miles}\\).\n\n4. **Fourth Segment:**\n   - John drives the remaining time of the 4 hours at a speed of 80 mph.\n   - Total time spent so far: \\(2 \\text{ hours} + 0.5 \\text{ hours} = 2.5 \\text{ hours}\\).\n   - Remaining time: \\(4 \\text{ hours} - 2.5 \\text{ hours} = 1.5 \\text{ hours}\\).\n   - Distance traveled: \\(1.5 \\text{ hours} \\times 80 \\text{ mph} = 120 \\text{ miles}\\).\n\nNow, let's calculate the net distance from home:\n- Initial distance traveled: \\(180 \\text{ miles}\\) (outbound).\n- Distance traveled back: \\(15 \\text{ miles}\\) (first half-hour standstill).\n- Distance traveled back: \\(120 \\text{ miles}\\) (remaining time).\n\nTotal distance traveled outbound: \\(180 \\text{ miles}\\).\nTotal distance traveled back: \\(15 \\text{ miles} + 120 \\text{ miles} = 135 \\text{ miles}\\).\n\nNet distance from home: \\(180 \\text{ miles} - 135 \\text{ miles} = 45 \\text{ miles}\\).\n\nThus, John is \\(\\boxed{45}\\) miles from home at the end of those 4 hours.",
+          "correct": true,
+          "time_s": 3.19,
+          "tokens_out": 508
+        },
+        {
+          "task_id": "gsm8k-3891af574c8c",
+          "expected": "294",
+          "got": "To determine how much Lloyd makes on eggs per week, we need to follow these steps:\n\n1. Calculate the number of dozens of eggs produced per day.\n2. Determine the daily revenue from selling the eggs.\n3. Calculate the weekly revenue by multiplying the daily revenue by the number of days in a week.\n\n**Step 1: Calculate the number of dozens of eggs produced per day.**\n\nLloyd's chickens produce 252 eggs per day. Since there are 12 eggs in a dozen, we divide the total number of eggs by 12:\n\\[ \\frac{252}{12} = 21 \\text{ dozens per day} \\]\n\n**Step 2: Determine the daily revenue from selling the eggs.**\n\nLloyd sells the eggs for $2 per dozen. Therefore, the daily revenue is:\n\\[ 21 \\text{ dozens} \\times 2 \\text{ dollars per dozen} = 42 \\text{ dollars per day} \\]\n\n**Step 3: Calculate the weekly revenue.**\n\nThere are 7 days in a week, so the weekly revenue is:\n\\[ 42 \\text{ dollars per day} \\times 7 \\text{ days per week} = 294 \\text{ dollars per week} \\]\n\nThus, the amount Lloyd makes on eggs per week is \\(\\boxed{294}\\).",
+          "correct": true,
+          "time_s": 1.74,
+          "tokens_out": 287
+        },
+        {
+          "task_id": "gsm8k-3af18b266c1a",
+          "expected": "3",
+          "got": "To determine how many times Peter can go to the movies this week, we need to calculate the total cost for each visit and then see how many visits he can afford with his budget of $42.\n\nFirst, let's calculate the cost for one visit to the movies. Each visit includes a ticket and popcorn:\n\\[\n\\text{Cost per visit} = \\text{Cost of ticket} + \\text{Cost of popcorn} = 7 + 7 = 14 \\text{ dollars}\n\\]\n\nNext, we need to find out how many visits Peter can afford with $42. We do this by dividing his total budget by the cost per visit:\n\\[\n\\text{Number of visits} = \\frac{\\text{Total budget}}{\\text{Cost per visit}} = \\frac{42}{14} = 3\n\\]\n\nTherefore, Peter can go to the movies \\boxed{3} times this week.",
+          "correct": true,
+          "time_s": 1.16,
+          "tokens_out": 195
+        },
+        {
+          "task_id": "gsm8k-3df88cbb4023",
+          "expected": "60",
+          "got": "To determine how much money Bailey started with, we need to follow these steps:\n\n1. Calculate the total amount of money Bailey received from her weekly allowance over 8 weeks.\n2. Subtract this amount from the total amount of money she has at the end of the 8 weeks to find out how much she started with.\n\nFirst, let's calculate the total amount of money Bailey received from her weekly allowance:\n\\[ \\text{Weekly allowance} = \\$5 \\]\n\\[ \\text{Number of weeks} = 8 \\]\n\\[ \\text{Total allowance} = 5 \\times 8 = \\$40 \\]\n\nNext, we know that at the end of the 8 weeks, Bailey has a total of $100. To find out how much she started with, we subtract the total allowance from the total amount of money she has:\n\\[ \\text{Total money at the end} = \\$100 \\]\n\\[ \\text{Money started with} = 100 - 40 = \\$60 \\]\n\nTherefore, the amount of money Bailey started with is \\(\\boxed{60}\\).",
+          "correct": true,
+          "time_s": 1.4,
+          "tokens_out": 232
+        },
+        {
+          "task_id": "gsm8k-487d10cb2fb1",
+          "expected": "36",
+          "got": "To determine the number of teachers at Dr. W(figsize's school, we need to follow these steps:\n\n1. **Calculate the number of boys:**\n   - We know there are twice as many boys as girls.\n   - There are 60 girls.\n   - Therefore, the number of boys is \\( 2 \\times 60 = 120 \\).\n\n2. **Calculate the total number of students:**\n   - The total number of students is the sum of the number of boys and girls.\n   - Total students = Number of boys + Number of girls\n   - Total students = 120 + 60 = 180\n\n3. **Determine the number of teachers:**\n   - We know there are 5 students per teacher.\n   - To find the number of teachers, we divide the total number of students by the number of students per teacher.\n   - Number of teachers = Total students / Students per teacher\n   - Number of teachers = 180 / 5 = 36\n\nThus, the number of teachers is \\(\\boxed{36}\\).",
+          "correct": true,
+          "time_s": 1.38,
+          "tokens_out": 231
+        },
+        {
+          "task_id": "gsm8k-4d277eb2a5f1",
+          "expected": "15",
+          "got": "To determine how many toys Uriah needs to remove, we start by calculating the total weight of the comic books he is removing. Each comic book weighs \\( \\frac{1}{4} \\) pound, and he is removing 30 comic books. Therefore, the total weight of the comic books is:\n\n\\[\n30 \\times \\frac{1}{4} = \\frac{30}{4} = 7.5 \\text{ pounds}\n\\]\n\nNext, we need to find out how much weight is left to be removed after removing the comic books. Uriah needs to remove a total of 15 pounds from the bag. Since he has already removed 7.5 pounds from the comic books, the remaining weight to be removed is:\n\n\\[\n15 - 7.5 = 7.5 \\text{ pounds}\n\\]\n\nNow, we need to determine how many toys need to be removed to account for the remaining 7.5 pounds. Each toy weighs \\( \\frac{1}{2} \\) pound. To find the number of toys, we divide the remaining weight by the weight of each toy:\n\n\\[\n7.5 \\div \\frac{1}{2} = 7.5 \\times 2 = 15\n\\]\n\nTherefore, Uriah needs to remove \\(\\boxed{15}\\) toys.",
+          "correct": true,
+          "time_s": 1.73,
+          "tokens_out": 283
+        },
+        {
+          "task_id": "gsm8k-6a26459b58de",
+          "expected": "25000",
+          "got": "To determine Marcy's annual pension after she quits, we need to follow these steps:\n\n1. Identify the annual pension Marcy receives after 20 years.\n2. Determine the value of the pension after she starts becoming entitled to 5% of the value.\n3. Calculate the annual pension she will receive after she quits after 30 years.\n\nStep 1: Identify the annual pension Marcy receives after 20 years.\nFor the first 20 years, Marcy receives a fixed annual pension of $50,000 per year. After 20 years, she becomes entitled to 5% of the value of the pension per year.\n\nStep 2: Determine the value of the pension after she starts becoming entitled to 5% of the value.\nThe value of the pension after 20 years is $50,000 per year. Therefore, 5% of this value is:\n\\[ 50,000 \\times 0.05 = 2,500 \\text{ dollars per year} \\]\n\nStep 3: Calculate the annual pension she will receive after she quits after 30 years.\nSince Marcy quits after 30 years, she will still be entitled to the 5% of the pension value after 20 years, which is $2,500 per year.\n\nThus, the annual pension Marcy will receive after she quits is:\n\\[ \\boxed{2500} \\]",
+          "correct": false,
+          "time_s": 1.88,
+          "tokens_out": 308
+        },
+        {
+          "task_id": "gsm8k-78775eaa56df",
+          "expected": "20",
+          "got": "To determine Charlie's net profit, we need to follow these steps:\n\n1. Calculate the total revenue from selling the candles.\n2. Calculate the total cost of supplies.\n3. Subtract the total cost from the total revenue to find the net profit.\n\n**Step 1: Calculate the total revenue from selling the candles.**\n\nCharlie sells each candle for $2.00 and he makes and sells 20 candles. Therefore, the total revenue is:\n\\[ 20 \\text{ candles} \\times \\$2.00 \\text{ per candle} = \\$40.00 \\]\n\n**Step 2: Calculate the total cost of supplies.**\n\nTo find the total cost of supplies, we need to determine how much it costs to make 20 candles. Since each candle is made from one pound of beeswax and the wicks, and it costs $10.00 to make one pound of beeswax and the wicks, the cost to make 20 candles is:\n\\[ 20 \\text{ candles} \\times \\$10.00 \\text{ per pound} = \\$200.00 \\]\n\n**Step 3: Subtract the total cost from the total revenue to find the net profit.**\n\nThe net profit is the total revenue minus the total cost:\n\\[ \\$40.00 - \\$200.00 = -\\$160.00 \\]\n\nTherefore, Charlie's net profit is:\n\\[ \\boxed{-160} \\]",
+          "correct": true,
+          "time_s": 1.97,
+          "tokens_out": 317
+        },
+        {
+          "task_id": "gsm8k-78966163f186",
+          "expected": "104",
+          "got": "To determine the total number of hourscapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcapable ofcap",
+          "correct": false,
+          "time_s": 3.19,
+          "tokens_out": 512
+        },
+        {
+          "task_id": "gsm8k-836e58f47940",
+          "expected": "125",
+          "got": "To determine which purchase plan will maximize the merchant's profit, we need to calculate the value of each plan after the specified market increases and then compare the two values.\n\n1. **Calculate the value of the jewelry plan after the market increase:**\n   - Initial value of the jewelry plan: $5,000\n   - Market increase for jewelry: 2.5%\n   - Value after increase = $5,000 * (1 + 0.025) = $5,000 * 1.025 = $5,125\n\n2. **Calculate the value of the electronic gadgets plan after the market increase:**\n   - Initial value of the electronic gadgets plan: $8,000\n   - Market increase for electronic gadgets: 1.2%\n   - Value after increase = $8,000 * (1 + 0.012) = $8,000 * 1.012 = $8,096\n\n3. **Compare the two values to determine the maximum profit:**\n   - Value of the jewelry plan after increase: $5,125\n   - Value of the electronic gadgets plan after increase: $8,096\n   - The electronic gadgets plan has a higher value, so it will maximize the merchant's profit.\n\n4. **Calculate the profit from the electronic gadgets plan:**\n   - Initial value of the electronic gadgets plan: $8,000\n   - Value after increase: $8,096\n   - Profit = $8,096 - $8,000 = $96\n\nTherefore, the maximum profit the merchant can make by choosing the electronic gadgets plan is \\(\\boxed{96}\\).",
+          "correct": true,
+          "time_s": 2.31,
+          "tokens_out": 372
+        },
+        {
+          "task_id": "gsm8k-8c62b8200b4d",
+          "expected": "60",
+          "got": "To determine the average square footage of a level in Luke's sandcastle, we need to first find the square footage of each level and then calculate the average.\n\n1. **Identify the square footage of each level:**\n   - The top level (4th level) has a square footage of 16.\n   - The 3rd level has twice the square footage of the 4th level, so it is \\(16 \\times 2 = 32\\).\n   - The 2nd level has twice the square footage of the 3rd level, so it is \\(32 \\times 2 = 64\\).\n   - The 1st level has twice the square footage of the 2nd level, so it is \\(64 \\times 2 = 128\\).\n\n2. **Calculate the total square footage of all levels:**\n   \\[\n   16 + 32 + 64 + 128 = 240\n   \\]\n\n3. **Calculate the average square footage of a level:**\n   Since there are 4 levels, the average square footage is:\n   \\[\n   \\frac{240}{4} = 60\n   \\]\n\nTherefore, the average square footage of a level is \\(\\boxed{60}\\).",
+          "correct": true,
+          "time_s": 1.69,
+          "tokens_out": 278
+        },
+        {
+          "task_id": "gsm8k-8cb45b157ab6",
+          "expected": "83",
+          "got": "To determine the maximum number of boxes that can be loaded onto the truck while not exceeding the bridge's weight limit, we need to follow these steps:\n\n1. Identify the total weight limit of the bridge.\n2. Determine the weight of the driver and the empty truck.\n3. Calculate the remaining weight capacity of the bridge after accounting for the driver and the empty truck.\n4. Determine the weight of each box.\n5. Calculate the maximum number of boxes that can be loaded within the remaining weight capacity.\n\nLet's go through each step in detail:\n\n1. The bridge can carry a maximum of 5000 pounds.\n2. The combined weight of the driver and the empty truck is 3755 pounds.\n3. The remaining weight capacity of the bridge is:\n   \\[\n   5000 - 3755 = 1245 \\text{ pounds}\n   \\]\n4. Each box weighs 15 pounds.\n5. The maximum number of boxes that can be loaded is:\n   \\[\n   \\left\\lfloor \\frac{1245}{15} \\right\\rfloor = \\left\\lfloor 83 \\right\\rfloor = 83\n   \\]\n   Here, \\(\\left\\lfloor x \\right\\rfloor\\) denotes the floor function, which gives the greatest integer less than or equal to \\(x\\).\n\nTherefore, the maximum number of boxes that can be loaded onto the truck while not exceeding the bridge's weight limit is \\(\\boxed{83}\\).",
+          "correct": true,
+          "time_s": 1.98,
+          "tokens_out": 322
+        },
+        {
+          "task_id": "gsm8k-a69c95c3c91e",
+          "expected": "7",
+          "got": "To determine how many DVDs Billy sold on Tuesday, we need to break down the problem step by step based on the information given:\n\n1. **First 3 customers:**\n   - Each of these customers buys 1 DVD.\n   - Total DVDs sold to these customers: \\(3 \\times 1 = 3\\)\n\n2. **Next 2 customers:**\n   - Each of these customers buys 2 DVDs.\n   - Total DVDs sold to these customers: \\(2 \\times 2 = 4\\)\n\n3. **Last 3 customers:**\n   - Each of these customers does not buy any DVDs.\n   - Total DVDs sold to these customers: \\(3 \\times 0 = 0\\)\n\nNow, we sum up the DVDs sold to all customers:\n\\[\n3 \\text{ (from the first 3 customers)} + 4 \\text{ (from the next 2 customers)} + 0 \\text{ (from the last 3 customers)} = 7\n\\]\n\nTherefore, the total number of DVDs Billy sold on Tuesday is \\(\\boxed{7}\\).",
+          "correct": true,
+          "time_s": 1.36,
+          "tokens_out": 226
+        },
+        {
+          "task_id": "gsm8k-b10d7b864579",
+          "expected": "60",
+          "got": "To determine the total number of instructions Kelian has to read to prepare both dishes, we need to follow these steps:\n\n1. Identify the number of instructions in the first recipe.\n   The first recipe has 20 instructions.\n\n2. Determine the number of instructions in the second recipe.\n   The second recipe has twice as many instructions as the first recipe. Therefore, the number of instructions in the second recipe is:\n   \\[\n   2 \\times 20 = 40\n   \\]\n\n3. Calculate the total number of instructions by adding the instructions from both recipes.\n   The total number of instructions is:\n   \\[\n   20 + 40 = 60\n   \\]\n\nThus, the total number of instructions Kelian has to read to prepare the two dishes is \\(\\boxed{60}\\).",
+          "correct": true,
+          "time_s": 1.05,
+          "tokens_out": 172
+        },
+        {
+          "task_id": "gsm8k-bc091b594455",
+          "expected": "23",
+          "got": "To determine how many jewels Siobhan has, we need to follow the information given step by step.\n\n1. First, we know that Raymond has 40 jewels.\n   \\[\n   R = 40\n   \\]\n\n2. Next, we are told that Aaron has 5 more jewels than half of Raymond's jewels. So, we calculate half of Raymond's jewels and then add 5.\n   \\[\n   A = \\frac{R}{2} + 5 = \\frac{40}{2} + 5 = 20 + 5 = 25\n   \\]\n   Therefore, Aaron has 25 jewels.\n\n3. Finally, we are told that Siobhan has 2 fewer jewels than Aaron. So, we subtract 2 from the number of jewels Aaron has.\n   \\[\n   S = A - 2 = 25 - 2 = 23\n   \\]\n   Therefore, Siobhan has 23 jewels.\n\nThe answer is:\n\\[\n\\boxed{23}\n\\]",
+          "correct": true,
+          "time_s": 1.33,
+          "tokens_out": 221
+        },
+        {
+          "task_id": "gsm8k-d7791ff4a8fa",
+          "expected": "26",
+          "got": "To find the original price of the book, we need to understand that the price Kyle paid ($19.50) is 75% of the original price (since he received a 25% discount). Let's denote the original price by \\( P \\).\n\nThe relationship between the original price and the discounted price can be expressed as:\n\\[ 19.50 = P \\times (1 - 0.25) \\]\n\\[ 19.50 = P \\times 0.75 \\]\n\nTo find \\( P \\), we need to solve for \\( P \\) by dividing both sides of the equation by 0.75:\n\\[ P = \\frac{19.50}{0.75} \\]\n\nNow, let's perform the division:\n\\[ P = \\frac{19.50}{0.75} = 26 \\]\n\nSo, the original price of the book was \\(\\boxed{26}\\).",
+          "correct": true,
+          "time_s": 1.24,
+          "tokens_out": 207
+        },
+        {
+          "task_id": "gsm8k-f3a142df6b12",
+          "expected": "17",
+          "got": "To determine the number of good oranges in the basket, we need to follow these steps:\n\n1. **Calculate the number of unripe oranges:**\n   - We know that 20% of the oranges are unripe.\n   - The total number of oranges is 25.\n   - Therefore, the number of unripe oranges is:\n     \\[\n     0.20 \\times 25 = 5\n     \\]\n\n2. **Identify the number of sour oranges:**\n   - We are given that there are 2 sour oranges.\n\n3. **Sum the number of bad, unripe, and sour oranges:**\n   - The number of bad oranges is 1.\n   - The number of unripe oranges is 5.\n   - The number of sour oranges is 2.\n   - Adding these together gives:\n     \\[\n     1 + 5 + 2 = 8\n     \\]\n\n4. **Calculate the number of good oranges:**\n   - The total number of oranges is 25.\n   - The number of oranges that are not good (bad, unripe, or sour) is 8.\n   - Therefore, the number of good oranges is:\n     \\[\n     25 - 8 = 17\n     \\]\n\nThus, the number of good oranges is \\(\\boxed{17}\\).",
+          "correct": true,
+          "time_s": 1.72,
+          "tokens_out": 284
+        }
+      ]
+    },
+    "ner": {
+      "model": "llama-3.2-1b",
+      "prompt": "{\"PERSON\":[],\"ORG\":[],\"LOC\":[],\"DATE\":[]}  Fill in entities. Output ONLY the JSON.",
+      "correct": 6,
+      "total": 19,
+      "accuracy": 31.6,
+      "time_s": 8.1,
+      "avg_tok": 96,
+      "results": [
+        {
+          "task_id": "tweet7-0716c75b451a",
+          "expected": "group: {@RocketPunch members@}\ngroup: {@LIGHTSUM\u00b7\ub77c\uc787\uc378@}",
+          "got": "{\n  \"PERSON\": [\n    \"I hope you did the ring ring challenge with Lightsum @\",\n    \"Lightsum @\"\n  ],\n  \"ORG\": [],\n  \"LOC\": [],\n  \"DATE\": []\n}",
+          "correct": false,
+          "time_s": 0.2,
+          "tokens_out": 45
+        },
+        {
+          "task_id": "tweet7-0c360ec24bda",
+          "expected": "person: {@Austin McBroom@}\nperson: {@Bryce Hall@}\nperson: {@CANCELLED@}",
+          "got": "{\n  \"PERSON\": [\n    \"Austin McBroom\",\n    \"Bryce Hall\"\n  ],\n  \"ORG\": null,\n  \"LOC\": null,\n  \"DATE\": null\n}",
+          "correct": true,
+          "time_s": 0.18,
+          "tokens_out": 40
+        },
+        {
+          "task_id": "tweet7-2d91924519c3",
+          "expected": "corporation: {@Philadelphia Police@}\nperson: Trump\nlocation: 12th and Arch",
+          "got": "{\n  \"PERSON\": [\n    \"Philadelphia Police\",\n    \"Trump\"\n  ],\n  \"ORG\": [\n    \"Philadelphia Police Department\"\n  ],\n  \"LOC\": [\n    \"12th and Arch\"\n  ],\n  \"DATE\": []\n}",
+          "correct": true,
+          "time_s": 0.22,
+          "tokens_out": 50
+        },
+        {
+          "task_id": "tweet7-33a701fafb8c",
+          "expected": "group: {@Cleveland Browns@}\nevent: SUPER BOWL\nevent: NFLPlayoffs\ncorporation: BrownsTwitter",
+          "got": "{\n  \"entities\": [\n    {\n      \"type\": \"ORG\",\n      \"text\": \"Cleveland Browns\"\n    },\n    {\n      \"type\": \"LOC\",\n      \"text\": \"Cleveland\"\n    },\n    {\n      \"type\": \"ORG\",\n      \"text\": \"NFL\"\n    },\n    {\n      \"type\": \"ORG\",\n      \"text\": \"Playoffs\"\n    },\n    {\n      \"type\": \"ORG\",\n      \"text\": \"BrownsTwitter\"\n    },\n    {\n      \"type\": \"ORG\",\n      \"text\": \"Super Bowl\"\n    }\n  ]\n}",
+          "correct": false,
+          "time_s": 0.53,
+          "tokens_out": 125
+        },
+        {
+          "task_id": "tweet7-368eb95230b5",
+          "expected": "product: {@WhatsApp@}\nproduct: {@WhatsApp@}",
+          "got": "{\n  \"entities\": [\n    {\n      \"type\": \"ORG\",\n      \"value\": \"WhatsApp\"\n    },\n    {\n      \"type\": \"PERSON\",\n      \"value\": \"I\"\n    },\n    {\n      \"type\": \"LOCATION\",\n      \"value\": \"mobile\"\n    },\n    {\n      \"type\": \"ORG\",\n      \"value\": \"WhatsApp\"\n    },\n    {\n      \"type\": \"ORG\",\n      \"value\": \"desktop\"\n    },\n    {\n      \"type\": \"ADJECTIVE\",\n      \"value\": \"purposeful\"\n    },\n    {\n      \"type\": \"ADJECTIVE\",\n      \"value\": \"bug\"\n    },\n    {\n      \"type\": \"ADVERB\",\n      \"value\": \"yet\"\n    },\n    {\n      \"type\": \"ADVERB\",\n      \"value\": \"to\"\n    },\n    {\n      \"type\": \"VERB\",\n      \"value\": \"figure\"\n    },\n    {\n      \"type\": \"VERB\",\n      \"value\": \"out\"\n    },\n    {\n      \"type\": \"ADVERB\",\n      \"value\": \"why\"\n    },\n    {\n      \"type\": \"ADVERB\",\n      \"value\": \"I\"\n    },",
+          "correct": false,
+          "time_s": 1.13,
+          "tokens_out": 256
+        },
+        {
+          "task_id": "tweet7-55107ff863ae",
+          "expected": "person: {@Israel Adesanya@}\nperson: Jan\nevent: Ufc259",
+          "got": "{\n  \"entities\": [\n    {\n      \"type\": \"person\",\n      \"value\": \"@{Israel Adesanya@}\"\n    },\n    {\n      \"type\": \"person\",\n      \"value\": \"Jan #\"\n    },\n    {\n      \"type\": \"organization\",\n      \"value\": \"UFC\"\n    },\n    {\n      \"type\": \"event\",\n      \"value\": \"main event\"\n    }\n  ]\n}",
+          "correct": true,
+          "time_s": 0.39,
+          "tokens_out": 89
+        },
+        {
+          "task_id": "tweet7-656674d97e66",
+          "expected": "person: {@Himanta Biswa Sarma@}",
+          "got": "{\n  \"entities\": [\n    {\n      \"type\": \"ORG\",\n      \"text\": \"Himanta Biswa Sarma\"\n    },\n    {\n      \"type\": \"PERSON\",\n      \"text\": \"Himanta Biswa Sarma\"\n    },\n    {\n      \"type\": \"ORG\",\n      \"text\": \"Board\"\n    },\n    {\n      \"type\": \"ORG\",\n      \"text\": \"Exams\"\n    },\n    {\n      \"type\": \"ORG\",\n      \"text\": \"2021\"\n    },\n    {\n      \"type\": \"DATE\",\n      \"text\": \"2021\"\n    },\n    {\n      \"type\": \"LOCATION\",\n      \"text\": \"India\"\n    },\n    {\n      \"type\": \"ORG\",\n      \"text\": \"Chief Minister\"\n    },\n    {\n      \"type\": \"ORG\",\n      \"text\": \"Minister\"\n    },\n    {\n      \"type\": \"ORG\",\n      \"text\": \"USERNAME\"\n    },\n    {\n      \"type\": \"ORG\",\n      \"text\": \"USERNAME\"\n    }\n  ]\n}",
+          "correct": true,
+          "time_s": 1.0,
+          "tokens_out": 224
+        },
+        {
+          "task_id": "tweet7-65c982897258",
+          "expected": "group: Iran\ngroup: China\nproduct: BTC\nperson: {@CZ \ud83d\udd36 Binance@}",
+          "got": "{\n  \"PERSON\": [\n    \"Iran\"\n  ],\n  \"ORG\": [],\n  \"LOC\": [\n    \"Iran\"\n  ],\n  \"DATE\": []\n}",
+          "correct": false,
+          "time_s": 0.15,
+          "tokens_out": 34
+        },
+        {
+          "task_id": "tweet7-6b549bc8bac1",
+          "expected": "creative_work: Turning Up\ngroup: {@ARASHI@}\ncorporation: {@MTV@}\nevent: FridayLivestream\ngroup: ARASHI\ncreative_work: Turning Up Party Starters\ncreative_work: Whenever You Call\ncreative_work: IN THE SUMMER\ncreative_work: LOVE\ncreative_work: Find The Answer",
+          "got": "{\n  \"PERSON\": [\n    {\n      \"ORG\": \"ARASHI\",\n      \"LOC\": \"Japan\",\n      \"DATE\": \"\"\n    }\n  ],\n  \"ORG\": \"MTV\",\n  \"LOC\": \"New York\",\n  \"DATE\": \"\"\n}\n\n# FridayLivestream\n# ARASHI / Turning Up Party Starters / Whenever You Call / IN THE SUMMER / LOVE / Find The Answer",
+          "correct": false,
+          "time_s": 0.38,
+          "tokens_out": 86
+        },
+        {
+          "task_id": "tweet7-73e661fcb028",
+          "expected": "creative_work: sacred choral Christmas music\ngroup: Choir of Kings College\nevent: Sufism Stevens \u2019s Christmas sing-a-long album",
+          "got": "{\n  \"PERSON\": \"He\",\n  \"ORG\": \"Kings College\",\n  \"LOC\": \"one room\",\n  \"DATE\": \"\"\n}",
+          "correct": false,
+          "time_s": 0.14,
+          "tokens_out": 31
+        },
+        {
+          "task_id": "tweet7-7c4947c2c620",
+          "expected": "creative_work: Sister to Sister\nperson: Kamala Harris\nproduct: {@YouTube@}",
+          "got": "{\n  \"entities\": {\n    \"person\": [\n      {\n        \"name\": \"Sister\",\n        \"title\": \"Sister to Sister\",\n        \"description\": \"Sister to Sister Meets Shop Talk with Kamala Harris\"\n      },\n      {\n        \"name\": \"Kamala\",\n        \"title\": \"Kamala Harris\"\n      },\n      {\n        \"name\": \"Harris\",\n        \"title\": \"Kamala Harris\"\n      },\n      {\n        \"name\": \"Sister\",\n        \"title\": \"Sister to Sister\",\n        \"description\": \"Sister to Sister Meets Shop Talk with Kamala Harris\"\n      }\n    ],\n    \"organization\": [\n      {\n        \"name\": \"YouTube\",\n        \"type\": \"online platform\"\n      }\n    ],\n    \"location\": [\n      \"United States\"\n    ],\n    \"date\": []\n  },\n  \"url\": \"https://www.youtube.com/watch?v=VIDEO_ID\",\n  \"youtube\": {\n    \"id\": \"VIDEO_ID\",\n    \"type\": \"video\"\n  },\n  \"author\": {\n    \"name\": \"Sister\",\n    \"title\": \"Sister to Sister\",\n    \"description\": \"Sister to Sister Meets Shop",
+          "correct": false,
+          "time_s": 1.13,
+          "tokens_out": 256
+        },
+        {
+          "task_id": "tweet7-7f98d6dedc91",
+          "expected": "person: puke",
+          "got": "{\n  \"PERSON\": [\n    {\n      \"NAME\": \"USERNAME\"\n    }\n  ],\n  \"ORGANIZATION\": [],\n  \"LOCATION\": [],\n  \"DATE\": []\n}",
+          "correct": false,
+          "time_s": 0.16,
+          "tokens_out": 37
+        },
+        {
+          "task_id": "tweet7-89e0e404af48",
+          "expected": "person: Dave Rogers\ngroup: Black Lives Matter",
+          "got": "{\n  \"entities\": [\n    {\n      \"type\": \"USER\",\n      \"value\": \"Dave Rogers\"\n    },\n    {\n      \"type\": \"ORG\",\n      \"value\": \"Black Lives Matter\"\n    },\n    {\n      \"type\": \"LOCATION\",\n      \"value\": \"Unknown\"\n    },\n    {\n      \"type\": \"DATE\",\n      \"value\": \"\"\n    },\n    {\n      \"type\": \"URL\",\n      \"value\": \"Listen at https://www.example.com\"\n    },\n    {\n      \"type\": \"MUSIC\",\n      \"value\": \"Trending\"\n    }\n  ]\n}",
+          "correct": false,
+          "time_s": 0.54,
+          "tokens_out": 126
+        },
+        {
+          "task_id": "tweet7-95c15bfff6a1",
+          "expected": "event: Ufc257\nperson: {@The Diamond@}\nperson: Conor",
+          "got": "{\n  \"thoughts\": {\n    \"UFC 257\": {\n      \"plan\": \"great\",\n      \"execution\": \"plan\"\n    }\n  },\n  \"entities\": [\n    {\n      \"entity\": \"@TheDiamond\",\n      \"type\": \"person\"\n    }\n  ],\n  \"location\": \"UFC 257\",\n  \"date\": []\n}",
+          "correct": true,
+          "time_s": 0.33,
+          "tokens_out": 75
+        },
+        {
+          "task_id": "tweet7-aefa2ec875ff",
+          "expected": "corporation: The Hollywood\nperson: Mahdi\nperson: Anti-Christ\nperson: Jesus\nperson: Anti-Christ",
+          "got": "{\n  \"PERSON\": [\n    \"The Hollywood\",\n    \"The advocate of the Devil\",\n    \"Mahdi\",\n    \"Jesus\",\n    \"The One\",\n    \"The Only Hope\"\n  ],\n  \"ORG\": null,\n  \"LOC\": null,\n  \"DATE\": []\n}",
+          "correct": false,
+          "time_s": 0.26,
+          "tokens_out": 59
+        },
+        {
+          "task_id": "tweet7-e5efbf194515",
+          "expected": "person: {@Aditi Rao Hydari@}",
+          "got": "{\n  \"entities\": [\n    {\n      \"type\": \"ORG\",\n      \"text\": \"Queen\"\n    },\n    {\n      \"type\": \"PERSON\",\n      \"text\": \"@Aditi Rao Hydari\"\n    },\n    {\n      \"type\": \"ORG\",\n      \"text\": \"@\"\n    },\n    {\n      \"type\": \"PERSON\",\n      \"text\": \"Rao Hydari\"\n    },\n    {\n      \"type\": \"ORG\",\n      \"text\": \"@\"\n    },\n    {\n      \"type\": \"PERSON\",\n      \"text\": \"V\"\n    }\n  ]\n}",
+          "correct": true,
+          "time_s": 0.53,
+          "tokens_out": 124
+        },
+        {
+          "task_id": "tweet7-ebcfaccbe55d",
+          "expected": "person: SheikhJarrah",
+          "got": "{\n  \"entities\": {\n    \"ORG\": \"Sheikh Jarrah\",\n    \"PERSON\": \"Sheikh Jarrah\",\n    \"LOC\": \"Sheikh Jarrah\",\n    \"DATE\": \"[]\"\n  }\n}",
+          "correct": false,
+          "time_s": 0.2,
+          "tokens_out": 46
+        },
+        {
+          "task_id": "tweet7-fe053d3b162f",
+          "expected": "group: Browns\nperson: {@Nick Chubb@}\nperson: Nick",
+          "got": "{\n  \"PERSON\": [\n    {\n      \"NAME\": \"Nick Chubb\",\n      \"TITLE\": \"\",\n      \"ORGANIZATION\": \"\",\n      \"LOCATION\": \"\",\n      \"DATE\": \"\"\n    }\n  ],\n  \"ORGANIZATION\": \"\",\n  \"LOCATION\": \"\",\n  \"DATE\": \"\"\n}",
+          "correct": false,
+          "time_s": 0.27,
+          "tokens_out": 61
+        },
+        {
+          "task_id": "wnut17-48701c713d02",
+          "expected": "product: & gt ; * The soldier was killed when another avalanche hit an army barracks in the northern area of\nlocation: Sonmarg\nproduct: , said a military spokesman .",
+          "got": "{\n  \"PERSON\": {\n    \"GENDER\": \"male\",\n    \"NAME\": \"soldier\"\n  },\n  \"ORG\": {\n    \"NAME\": \"army\"\n  },\n  \"LOC\": {\n    \"NAME\": \"Sonmarg\"\n  },\n  \"DATE\": {\n    \"VALUE\": \"unknown\"\n  }\n}",
+          "correct": false,
+          "time_s": 0.31,
+          "tokens_out": 70
+        }
+      ]
+    },
+    "sentiment": {
+      "model": "qwen2.5-1.5b",
+      "prompt": "Classify the sentiment. Output EXACTLY one word: positive, negative, neutral, or mixed. No explanation.",
+      "correct": 19,
+      "total": 19,
+      "accuracy": 100.0,
+      "time_s": 0.4,
+      "avg_tok": 1,
+      "results": [
+        {
+          "task_id": "sst2-2ecc7f4c8727",
+          "expected": "Sentiment: NEGATIVE",
+          "got": "NEGATIVE",
+          "correct": true,
+          "time_s": 0.03,
+          "tokens_out": 2
+        },
+        {
+          "task_id": "sst2-35034a6e62bd",
+          "expected": "Sentiment: NEGATIVE",
+          "got": "NEGATIVE",
+          "correct": true,
+          "time_s": 0.02,
+          "tokens_out": 2
+        },
+        {
+          "task_id": "sst2-3b6d49e8ccda",
+          "expected": "POSITIVE",
+          "got": "positive",
+          "correct": true,
+          "time_s": 0.02,
+          "tokens_out": 1
+        },
+        {
+          "task_id": "sst2-3e5d4e066473",
+          "expected": "Sentiment: NEGATIVE",
+          "got": "NEGATIVE",
+          "correct": true,
+          "time_s": 0.02,
+          "tokens_out": 2
+        },
+        {
+          "task_id": "sst2-5ca16544e59d",
+          "expected": "Sentiment: NEGATIVE",
+          "got": "NEGATIVE",
+          "correct": true,
+          "time_s": 0.02,
+          "tokens_out": 2
+        },
+        {
+          "task_id": "sst2-5d40ecb1934c",
+          "expected": "NEGATIVE",
+          "got": "negative",
+          "correct": true,
+          "time_s": 0.03,
+          "tokens_out": 1
+        },
+        {
+          "task_id": "sst2-60c7e6d9b0e4",
+          "expected": "Sentiment: NEGATIVE",
+          "got": "NEGATIVE",
+          "correct": true,
+          "time_s": 0.02,
+          "tokens_out": 2
+        },
+        {
+          "task_id": "sst2-612b7c9bbfc0",
+          "expected": "POSITIVE",
+          "got": "positive",
+          "correct": true,
+          "time_s": 0.02,
+          "tokens_out": 1
+        },
+        {
+          "task_id": "sst2-72712dc1d587",
+          "expected": "POSITIVE",
+          "got": "positive",
+          "correct": true,
+          "time_s": 0.02,
+          "tokens_out": 1
+        },
+        {
+          "task_id": "sst2-84e5865a42e5",
+          "expected": "NEGATIVE",
+          "got": "negative",
+          "correct": true,
+          "time_s": 0.02,
+          "tokens_out": 1
+        },
+        {
+          "task_id": "sst2-8b19bb0cf45b",
+          "expected": "Sentiment: NEGATIVE",
+          "got": "NEGATIVE",
+          "correct": true,
+          "time_s": 0.02,
+          "tokens_out": 2
+        },
+        {
+          "task_id": "sst2-9c8d1d31e560",
+          "expected": "Sentiment: NEGATIVE",
+          "got": "NEGATIVE",
+          "correct": true,
+          "time_s": 0.02,
+          "tokens_out": 2
+        },
+        {
+          "task_id": "sst2-9c925eff46d4",
+          "expected": "Sentiment: POSITIVE",
+          "got": "POSITIVE",
+          "correct": true,
+          "time_s": 0.02,
+          "tokens_out": 2
+        },
+        {
+          "task_id": "sst2-aec5bf406654",
+          "expected": "POSITIVE",
+          "got": "positive",
+          "correct": true,
+          "time_s": 0.02,
+          "tokens_out": 1
+        },
+        {
+          "task_id": "sst2-b1e7bb3300a1",
+          "expected": "Sentiment: POSITIVE",
+          "got": "positive",
+          "correct": true,
+          "time_s": 0.02,
+          "tokens_out": 1
+        },
+        {
+          "task_id": "sst2-bc0b866c0fd6",
+          "expected": "Sentiment: NEGATIVE",
+          "got": "NEGATIVE",
+          "correct": true,
+          "time_s": 0.02,
+          "tokens_out": 2
+        },
+        {
+          "task_id": "sst2-c17629291041",
+          "expected": "Sentiment: NEGATIVE",
+          "got": "NEGATIVE",
+          "correct": true,
+          "time_s": 0.03,
+          "tokens_out": 2
+        },
+        {
+          "task_id": "sst2-ca03c0b65a34",
+          "expected": "POSITIVE",
+          "got": "positive",
+          "correct": true,
+          "time_s": 0.02,
+          "tokens_out": 1
+        },
+        {
+          "task_id": "sst2-f5345bafd977",
+          "expected": "NEGATIVE",
+          "got": "negative",
+          "correct": true,
+          "time_s": 0.02,
+          "tokens_out": 1
+        }
+      ]
+    },
+    "summarization": {
+      "model": "llama-3.2-1b",
+      "prompt": "BBC-style headline. One sentence. Names and key action.",
+      "correct": 0,
+      "total": 19,
+      "accuracy": 0.0,
+      "time_s": 2.9,
+      "avg_tok": 32,
+      "results": [
+        {
+          "task_id": "xsum-1f0e69fa8897",
+          "expected": "Former US President Bill Clinton is introduced to the McGuinness family by Sinn F\u00e9in President Gerry Adams",
+          "got": "I'm sorry but there is no recent update available for this specific date.",
+          "correct": false,
+          "time_s": 0.07,
+          "tokens_out": 15
+        },
+        {
+          "task_id": "xsum-260eec64733b",
+          "expected": "Peterborough United defender Miles Addison has signed a new one-month contract with the League One side.",
+          "got": "Newcastle United midfielder Callum Elder is out injured, joining fellow defender Callum Elder and goalkeeper Gabriel Zakuani on the sidelines as Posh prepare to face Chesterfield.",
+          "correct": false,
+          "time_s": 0.16,
+          "tokens_out": 35
+        },
+        {
+          "task_id": "xsum-4c2076d75e1c",
+          "expected": "A family of five, including three young children, had to be rescued from a Somerset beach after their car got stuck in the mud on Saturday evening.",
+          "got": "Rescue crews from Weston-super-Mare and nearby towns were called to Uphill beach at midnight to assist in a rescue operation involving two adults and children.",
+          "correct": false,
+          "time_s": 0.15,
+          "tokens_out": 32
+        },
+        {
+          "task_id": "xsum-5ead3b4e019b",
+          "expected": "An artist's impression of how an expanded primary school in Addlestone will look has been unveiled.",
+          "got": "Surrey County Council aims to double its school capacity by September 2015, with a \u00a3215m funding gap to be bridged.",
+          "correct": false,
+          "time_s": 0.14,
+          "tokens_out": 29
+        },
+        {
+          "task_id": "xsum-60f2ba73e141",
+          "expected": "Two men have been assaulted by an armed gang in south Belfast.",
+          "got": "A gang of three men, armed with a knife, hammer, and batons, stormed a house in Melrose Street, forcing their way in and causing injuries, but were later apprehended by police.",
+          "correct": false,
+          "time_s": 0.19,
+          "tokens_out": 41
+        },
+        {
+          "task_id": "xsum-726724dafa9e",
+          "expected": "Cardiff Devils lost 6-1 away to Nottingham Panthers in the Elite League, less than 48 hours before playing the same opposition in the Challenge Cup final.",
+          "got": "Panthers secured a 4-2 win over Devils in the Super League, with two goals from Matthew Myers and two from Franklin MacDonald securing the victory.",
+          "correct": false,
+          "time_s": 0.14,
+          "tokens_out": 31
+        },
+        {
+          "task_id": "xsum-75d704a754da",
+          "expected": "A 19-year-old man has been charged after a cat was killed and others were badly injured in shootings in Surrey.",
+          "got": "Franky Mills, of Cranleigh, is due to appear in court on August 9 after being charged with 16 alleged crimes, including amputations and firearms offenses, following air rifle attacks on pets in March and April.",
+          "correct": false,
+          "time_s": 0.21,
+          "tokens_out": 46
+        },
+        {
+          "task_id": "xsum-7756c474bf25",
+          "expected": "A man is being held in Manchester on suspicion of terrorism offences.",
+          "got": "Police searched an address in Manchester's Crumpsall area on Peakdale Avenue on Friday, leading to the arrest of a 26-year-old suspect on suspicion of terrorism-related offences.",
+          "correct": false,
+          "time_s": 0.16,
+          "tokens_out": 36
+        },
+        {
+          "task_id": "xsum-79d08afd57e1",
+          "expected": "Two men arrested in connection with the suspected murder of a missing man have been released on bail.",
+          "got": "A 28-year-old man, Chris May, was last seen in 2015, and his abandoned Volkswagen Golf was found 10 miles away, sparking a murder investigation that was formally declared a year later.",
+          "correct": false,
+          "time_s": 0.19,
+          "tokens_out": 42
+        },
+        {
+          "task_id": "xsum-83e2b8250a8c",
+          "expected": "Five people have been injured following a crash between a bin lorry, a bus and two cars.",
+          "got": "A bus accident occurred on the Edinburgh bypass, with a woman taken to hospital with a serious leg injury, and four others with minor injuries, but all are expected to recover.",
+          "correct": false,
+          "time_s": 0.17,
+          "tokens_out": 35
+        },
+        {
+          "task_id": "xsum-862f366208a4",
+          "expected": "The SNP has held a South Ayrshire Council ward following a by-election which was called after the previous incumbent was elected as an MP.",
+          "got": "John Wallace of the Scottish National Party (SNP) won the Ayr East ward in a by-election, securing 4,006 votes out of 11,638 cast.",
+          "correct": false,
+          "time_s": 0.17,
+          "tokens_out": 36
+        },
+        {
+          "task_id": "xsum-975d27e940d2",
+          "expected": "A man has appeared in court over an acid attack that left two people with \"life-changing\" injuries.",
+          "got": "BBC-style headline: \"Man charged with throwing acid at two men on Roman Road in east London\".",
+          "correct": false,
+          "time_s": 0.1,
+          "tokens_out": 20
+        },
+        {
+          "task_id": "xsum-9f77a14788c7",
+          "expected": "A man has appeared in court after firearms, ammunition and cash were seized by police in Edinburgh.",
+          "got": "Police searched properties in Waterfront Park and Colonsay View areas of Edinburgh on Wednesday, seizing three firearms, ammunition, and a large sum of money.",
+          "correct": false,
+          "time_s": 0.14,
+          "tokens_out": 31
+        },
+        {
+          "task_id": "xsum-bb6aee03a3db",
+          "expected": "Leicester City striker Gary Taylor-Fletcher has joined Sheffield Wednesday on an initial month-long loan.",
+          "got": "Taylor-Fletcher joins Norwich City on loan from the 13th-placed Sheffield Wednesday, having scored three goals in 23 games for his parent club Blackpool last season.",
+          "correct": false,
+          "time_s": 0.16,
+          "tokens_out": 35
+        },
+        {
+          "task_id": "xsum-bd87969dec13",
+          "expected": "Ross County have completed the signing of central midfielder Tim Chow on a two-year contract.",
+          "got": "Wigan Athletic has released 22-year-old midfielder Chow from their first professional club after four years, having made 19 senior appearances.",
+          "correct": false,
+          "time_s": 0.13,
+          "tokens_out": 27
+        },
+        {
+          "task_id": "xsum-c181680bb7bc",
+          "expected": "Disabled pensioner Alan Barnes has said he is \"ready to move on with his life\" after a man appeared in court to admit assaulting him.",
+          "got": "A 67-year-old man, who was injured in a January attack, has begun house hunting after an online fundraising campaign raised over \u00a3330,000 to support his recovery.",
+          "correct": false,
+          "time_s": 0.17,
+          "tokens_out": 35
+        },
+        {
+          "task_id": "xsum-dccce4944b71",
+          "expected": "A buzzard has been rescued after becoming trapped between fencing and a wall in Gwynedd.",
+          "got": "A buzzard became stuck in a wire fence in Bethesda and was rescued by RSPCA Inspector Mike Pugh, who freed the bird and returned it to the wild.",
+          "correct": false,
+          "time_s": 0.16,
+          "tokens_out": 34
+        },
+        {
+          "task_id": "xsum-ef3d0b8ec1b2",
+          "expected": "Keepers at Chester Zoo are making sure every creature, from the biggest elephant to the smallest beetle, is present and correct as part of their annual animal count.",
+          "got": "Children's TV presenter Martin heads to the London Zoo to learn about the animal count and breeding programs required by law, which involves noting down important details about each species.",
+          "correct": false,
+          "time_s": 0.16,
+          "tokens_out": 33
+        },
+        {
+          "task_id": "xsum-f0baddd56cc9",
+          "expected": "The death of a man who twice apparently jumped from a building has been referred to the Independent Police Complaints Commission.",
+          "got": "A 30-year-old man in Nottingham's Radford area fell from a building on Waterloo Road on Friday evening, but police are not investigating his death as suspicious.",
+          "correct": false,
+          "time_s": 0.16,
+          "tokens_out": 33
+        }
+      ]
+    }
+  },
+  "per_model_stats": {
+    "qwen2.5-coder": {
+      "calls": 38,
+      "time": 49.34512138366699,
+      "tok_in": 3034,
+      "tok_out": 8123
+    },
+    "llama-3.2-1b": {
+      "calls": 57,
+      "time": 13.870172262191772,
+      "tok_in": 5284,
+      "tok_out": 3116
+    },
+    "qwen2.5-math-1.5b": {
+      "calls": 38,
+      "time": 61.83510994911194,
+      "tok_in": 3513,
+      "tok_out": 10163
+    },
+    "qwen2.5-1.5b": {
+      "calls": 19,
+      "time": 0.4284477233886719,
+      "tok_in": 1163,
+      "tok_out": 29
+    }
+  },
+  "config": {
+    "code_debug": {
+      "model": "qwen2.5-coder",
+      "system_prompt": "Debug:",
+      "temperature": 0.0,
+      "max_tokens": 512,
+      "eval_acc": 100.0
+    },
+    "code_gen": {
+      "model": "qwen2.5-coder",
+      "system_prompt": "```python",
+      "temperature": 0.0,
+      "max_tokens": 512,
+      "eval_acc": 80.0
+    },
+    "factual": {
+      "model": "llama-3.2-1b",
+      "system_prompt": "Fact:",
+      "temperature": 0.0,
+      "max_tokens": 64,
+      "eval_acc": 80.0
+    },
+    "logic": {
+      "model": "qwen2.5-math-1.5b",
+      "system_prompt": "Deduce step by step. Answer:",
+      "temperature": 0.0,
+      "max_tokens": 256,
+      "eval_acc": 20.0
+    },
+    "math": {
+      "model": "qwen2.5-math-1.5b",
+      "system_prompt": "Solve step by step. End with 'Answer: <value>'.",
+      "temperature": 0.0,
+      "max_tokens": 512,
+      "eval_acc": 80.0
+    },
+    "ner": {
+      "model": "llama-3.2-1b",
+      "system_prompt": "{\"PERSON\":[],\"ORG\":[],\"LOC\":[],\"DATE\":[]}  Fill in entities. Output ONLY the JSON.",
+      "temperature": 0.0,
+      "max_tokens": 256,
+      "eval_acc": 31.6
+    },
+    "sentiment": {
+      "model": "qwen2.5-1.5b",
+      "system_prompt": "Classify the sentiment. Output EXACTLY one word: positive, negative, neutral, or mixed. No explanation.",
+      "temperature": 0.0,
+      "max_tokens": 32,
+      "eval_acc": 100.0
+    },
+    "summarization": {
+      "model": "llama-3.2-1b",
+      "system_prompt": "BBC-style headline. One sentence. Names and key action.",
+      "temperature": 0.0,
+      "max_tokens": 128,
+      "eval_acc": 0.0
+    }
+  }
+}

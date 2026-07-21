@@ -1,0 +1,110 @@
+{
+  "timestamp": "2026-07-13T05:32:01.610455",
+  "categories": {
+    "factual": {
+      "attempts": 354,
+      "matches": 119,
+      "errors": 0,
+      "accuracy": 33.6
+    },
+    "logic": {
+      "attempts": 560,
+      "matches": 2,
+      "errors": 140,
+      "accuracy": 0.4
+    },
+    "math": {
+      "attempts": 83,
+      "matches": 2,
+      "errors": 0,
+      "accuracy": 2.4
+    },
+    "ner": {
+      "attempts": 30,
+      "matches": 0,
+      "errors": 30,
+      "accuracy": 0.0
+    },
+    "sentiment": {
+      "attempts": 30,
+      "matches": 16,
+      "errors": 0,
+      "accuracy": 53.3
+    },
+    "summarization": {
+      "attempts": 30,
+      "matches": 2,
+      "errors": 0,
+      "accuracy": 6.7
+    }
+  },
+  "tools": {
+    "factual_qa": {
+      "attempts": 177,
+      "matches": 36,
+      "errors": 0,
+      "accuracy": 20.3
+    },
+    "spell_check": {
+      "attempts": 177,
+      "matches": 83,
+      "errors": 0,
+      "accuracy": 46.9
+    },
+    "solve_logic_puzzle": {
+      "attempts": 140,
+      "matches": 0,
+      "errors": 0,
+      "accuracy": 0.0
+    },
+    "solve_syllogism": {
+      "attempts": 0,
+      "matches": 0,
+      "errors": 140,
+      "accuracy": 0.0
+    },
+    "solve_truth_teller_liar": {
+      "attempts": 140,
+      "matches": 0,
+      "errors": 0,
+      "accuracy": 0.0
+    },
+    "solve_number_sequence": {
+      "attempts": 140,
+      "matches": 2,
+      "errors": 0,
+      "accuracy": 1.4
+    },
+    "math_solve": {
+      "attempts": 83,
+      "matches": 2,
+      "errors": 0,
+      "accuracy": 2.4
+    },
+    "ner_extract": {
+      "attempts": 0,
+      "matches": 0,
+      "errors": 30,
+      "accuracy": 0.0
+    },
+    "sentiment_analysis": {
+      "attempts": 30,
+      "matches": 16,
+      "errors": 0,
+      "accuracy": 53.3
+    },
+    "summarize": {
+      "attempts": 30,
+      "matches": 2,
+      "errors": 0,
+      "accuracy": 6.7
+    }
+  },
+  "summary": {
+    "total_items": 490,
+    "total_attempts": 1087,
+    "total_matches": 141,
+    "total_errors": 170,
+    "accuracy": 13.0
+  }
+}

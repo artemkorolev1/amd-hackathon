@@ -1,0 +1,652 @@
+{
+  "meta": {
+    "dataset": "AMD ACT II \u2014 60 Additional Medium-Hard Questions",
+    "total": 60,
+    "model": "phi-4-mini",
+    "device": "GPU",
+    "max_tokens_config": "tight"
+  },
+  "total_time_s": 1091.5361714363098,
+  "avg_time_per_q_s": 18.192269523938496,
+  "min_time_s": 0.0004298686981201172,
+  "max_time_s": 43.36473035812378,
+  "median_time_s": 19.215710401535034,
+  "throughput_qps": 0.054968402852878746,
+  "per_category_timing": {
+    "factual": {
+      "count": 8,
+      "avg_s": 21.349486976861954,
+      "total_s": 170.79589581489563
+    },
+    "math": {
+      "count": 8,
+      "avg_s": 24.782452166080475,
+      "total_s": 198.2596173286438
+    },
+    "code_gen": {
+      "count": 8,
+      "avg_s": 21.247417628765106,
+      "total_s": 169.97934103012085
+    },
+    "logic": {
+      "count": 8,
+      "avg_s": 27.84236568212509,
+      "total_s": 222.73892545700073
+    },
+    "code_debug": {
+      "count": 7,
+      "avg_s": 16.740517207554408,
+      "total_s": 117.18362045288086
+    },
+    "ner": {
+      "count": 7,
+      "avg_s": 7.246268238340106,
+      "total_s": 50.72387766838074
+    },
+    "sentiment": {
+      "count": 7,
+      "avg_s": 8.22354701587132,
+      "total_s": 57.56482911109924
+    },
+    "summarization": {
+      "count": 7,
+      "avg_s": 14.889682292938232,
+      "total_s": 104.22777605056763
+    }
+  },
+  "answers": [
+    {
+      "idx": 0,
+      "category": "factual",
+      "mode": "llm",
+      "answer": "The James Webb Space Telescope (JWST) was chosen to orbit at the L2 Lagrange point for several reasons related to its mission requirements and the benefits of this location for infrared astronomy. The L2 point is approximately 1.5 million kilometers from Earth, in the opposite direction of the Sun, which offers several advantages:\n\n\n1. Constant Observation: L2 provides JWST with an uninterrupted view of the cosmos. Being positioned so that Earth is always behind it, JWST avoids the frequent obstructions caused by Earth\u2019s shadow, atmospheric disturbances, and weather, which can interfere with observations.",
+      "expected": "L2 provides a stable thermal environment and keeps the telescope continuously in Earth's shadow, preventing the Sun and Earth from interfering with observations. For an infrared telescope, this is critical because any heat source (Sun, Earth, even the telescope itself) creates infrared radiation that would overwhelm the faint IR signals from distant galaxies. Being at L2 also allows the sunshield to block heat from the Sun, Earth, and Moon simultaneously.",
+      "time_s": 19.716327667236328,
+      "tokens": 120,
+      "max_tokens": 120
+    },
+    {
+      "idx": 1,
+      "category": "factual",
+      "mode": "llm",
+      "answer": "To calculate how far India has traveled since the collision began 50 million years ago, we can simply multiply the velocity of the Indian Plate by the time since the collision began.\n\n\nDistance = Velocity x Time\n\nDistance = 5 cm/year x 50 million years\n\n\nConverting 5 cm/year to 0.05 meters/year for standard units and 50 million years to 50,000,000 years:\n\n\nDistance = 0.05 m/year x 50,000,000 years\n\nDistance = 2,500,000 meters or 2,500 kilometers\n\n\nSo, India has traveled roughly 2,500 kilometers northward since the collision",
+      "expected": "Distance = 5 cm/yr \u00d7 50,000,000 years = 250,000,000 cm = 2,500 km. The Himalayas continue rising because the Indian Plate is still moving northward and subducting beneath the Eurasian Plate. The continental crust is too buoyant for full subduction, so the collision continues to crumple and uplift the crust. Isostatic compensation also contributes \u2014 as erosion removes mass from the mountains, the crust rebounds upward.",
+      "time_s": 21.328233242034912,
+      "tokens": 132,
+      "max_tokens": 132
+    },
+    {
+      "idx": 2,
+      "category": "factual",
+      "mode": "llm",
+      "answer": "A drug candidate with a molecular weight of 800 Da that is large and hydrophilic faces significant challenges in penetrating the blood-brain barrier (BBB) to reach neurons. The BBB's selective permeability restricts the entry of most substances, particularly large molecules that are not lipophilic.\n\n\nTo circumvent the BBB, drug developers could consider the following strategies:\n\n\n1. Nanoparticle Carriers: Encapsulating the drug within nanoparticles can enhance its transport across the BBB. Lipid-based nanoparticles can fuse with cell membranes or be transported across the BBB via receptor-mediated transcytosis. This method leverages the body's natural transport mechanisms to facilitate the passage of the",
+      "expected": "Barriers: (1) the BBB blocks molecules >400-500 Da, (2) the hydrophilic nature prevents passive diffusion through lipid membranes, (3) efflux transporters like P-glycoprotein actively pump foreign substances back into the blood. Strategies: (1) Trojan horse approach \u2014 conjugate the drug to a molecule that crosses via receptor-mediated transcytosis (e.g., transferrin receptor antibody). (2) Nanoparticle encapsulation \u2014 lipid nanoparticles or polymer carriers that cross via endocytosis and release the drug inside the brain. (3) Temporary BBB disruption using focused ultrasound with microbubbles.",
+      "time_s": 22.132776260375977,
+      "tokens": 132,
+      "max_tokens": 132
+    },
+    {
+      "idx": 3,
+      "category": "factual",
+      "mode": "llm",
+      "answer": "The most suitable repair pathway for correcting a single point mutation is homology-directed repair (HDR). HDR allows for precise editing of the genome by using a provided DNA template with the desired sequence. By guiding the Cas9 nuclease to the specific mutation site using gRNA and providing a repair template with the correct nucleotide sequence, HDR can introduce the correct genetic information at the precise location of the mutation.\n\n\nA practical limitation of HDR is that it is less efficient in cells that are not actively dividing or in cells with high levels of DNA damage, as HDR primarily occurs during the S and G2 phases of the cell cycle when DNA is actively replicated. Therefore, HDR is",
+      "expected": "HDR is most suitable for correcting a point mutation because NHEJ introduces random indels (insertions/deletions), which would likely disrupt the gene further. HDR uses a donor template with the correct sequence, enabling precise repair. Limitation: HDR only works efficiently in dividing cells (S/G2 phase) because it requires homologous sister chromatids as templates. In post-mitotic cells (neurons, muscle), HDR is nearly absent. To overcome: use a modified Cas9 fused to HDR-promoting proteins, use cell cycle synchronization, or use lipid nanoparticle delivery of HDR templates with cell cycle agonists.",
+      "time_s": 21.632908821105957,
+      "tokens": 132,
+      "max_tokens": 132
+    },
+    {
+      "idx": 4,
+      "category": "factual",
+      "mode": "llm",
+      "answer": "To calculate the age of the sample, we can rearrange the decay formula to solve for t (time in years):\n\n\nN(t) = N0 * e^(-\u03bbt)\n\n0.0625 = e^(-\u03bbt)\n\n\nFirst, we need to find \u03bb using the given half-life of 5,730 years:\n\n\n\u03bb = ln(2) / 5,730 \u2248 0.000120968 years^-1\n\n\nNow we plug in the known values:\n\n\n0.0625 = e^(-0.000120968t)\n\n\nTake the natural logarithm of both sides:\n\n\nln(0.0625) = -",
+      "expected": "N/N0 = 0.0625 = 1/16. Since each half-life reduces 14C by half: 1 \u2192 1/2 \u2192 1/4 \u2192 1/8 \u2192 1/16. That's 4 half-lives. Age = 4 \u00d7 5,730 = 22,920 years. Using exponential: 0.0625 = e^(-\u03bbt), \u03bb = ln(2)/5730, t = -ln(0.0625)/\u03bb = 2.7726/(0.00012097) \u2248 22,920 years. Assumption: atmospheric 14C levels have remained constant over time. In reality, they vary due to solar activity, nuclear testing, and changes in Earth's magnetic field, requiring calibration curves.",
+      "time_s": 22.339008331298828,
+      "tokens": 132,
+      "max_tokens": 132
+    },
+    {
+      "idx": 5,
+      "category": "factual",
+      "mode": "llm",
+      "answer": "One notable real physical experiment that demonstrates quantum superposition at a larger scale than individual particles is the quantum superposition of macroscopic objects achieved by Anton Zeilinger and his team in 2007. They used a large molecule (a buckyball molecule consisting of 60 carbon atoms) entangled with a photon. The experiment demonstrated the quantum superposition principle by showing that the macroscopic molecule could exist in a superposition of states, entangled with the photon's state. This experiment took place using molecules that are significantly larger and more complex than individual particles like electrons or photons.\n\nThe largest mass for which superposition has been experimentally demonstrated is on the order",
+      "expected": "Real experiments: (1) Double-slit experiment with molecules like C60 (buckminsterfullerene) or C70 \u2014 these large molecules exhibit interference patterns as they pass through both slits simultaneously. (2) SQUID (Superconducting Quantum Interference Device) experiments showing superpositions of macroscopically distinct current states. The largest mass for superposition: ~25,000 atomic mass units (large molecules like functionalized porphyrins) demonstrated in matter-wave interferometry at TU Vienna. Larger mass makes superposition harder because: (1) decoherence \u2014 larger objects interact more strongly with the environment, causing wavefunction collapse; (2) the de Broglie wavelength becomes shorter, making interference patterns harder to resolve.",
+      "time_s": 22.39459204673767,
+      "tokens": 132,
+      "max_tokens": 132
+    },
+    {
+      "idx": 6,
+      "category": "factual",
+      "mode": "llm",
+      "answer": "Cyanobacteria, through their photosynthetic activities, released oxygen as a byproduct. Initially, this oxygen was absorbed by the oceans and the Earth's crust as it formed banded iron formations, thus serving as a sink for the free oxygen. However, when these sinks reached saturation, the excess oxygen accumulated in the atmosphere. This surplus oxygen led to the oxidation of other elements and compounds, contributing to the GOE.\n\n\nThe feedback loop that allowed cyanobacteria to trigger the GOE was essentially a balance between oxygen production and its consumption by sinks. Photosynthesis by cyanobacteria produced free oxygen,",
+      "expected": "Feedback loop: UV radiation splits water in the upper atmosphere, producing oxygen. Cyanobacteria introduced a new, much more efficient oxygen source: oxygenic photosynthesis (CO2 + H2O + light \u2192 CH2O + O2). Initially, all produced oxygen was consumed by reducing sinks (dissolved Fe2+ \u2192 Fe3+ precipitation forming banded iron formations). Once sinks were saturated, free O2 accumulated. Oxygen remained low for over a billion years because: (1) phosphorus \u2014 a limiting nutrient for photosynthesis \u2014 was scarce due to oxygen-mediated phosphorus recycling from organic matter; (2) the Earth's mantle and crust continued releasing reducing gases (H2, H2S, CH4) that consumed oxygen; (3) the lack of land plants meant no significant organic carbon burial, which is required for net oxygen accumulation.",
+      "time_s": 19.455357313156128,
+      "tokens": 120,
+      "max_tokens": 120
+    },
+    {
+      "idx": 7,
+      "category": "factual",
+      "mode": "llm",
+      "answer": "To enforce a declaration-before-use rule in a programming language, you would need a context-sensitive grammar (Type 2) or even a Type 1 grammar (context-sensitive). A context-free grammar (Type 2) fails because it cannot enforce such rules that depend on the context of the surrounding symbols or variables, as context-free grammars lack the necessary context-awareness to handle such dependencies.\n\nA context-sensitive grammar can enforce rules that require variables to be declared before use by allowing dependencies to be directly tied to the context. A Type 1 grammar, being context-sensitive, can also enforce such rules but has even more power and flexibility.\n\n**Example:**\n\nConsider",
+      "expected": "Declaration-before-use requires Type 1 (context-sensitive) or higher. A context-free grammar (CFG) fails because it has no memory of which identifiers have been declared \u2014 CFG rules cannot enforce that 'x' seen in 'x = y + 1' was declared earlier without infinite rules. More formally, the language {wcw | w \u2208 {a,b}*} (declare w, then reference it) is not context-free but is context-sensitive. Specific example: the C construct 'int x; ... x = 5;' requires checking that the second 'x' refers to a declared identifier. While compilers handle this via symbol tables (extra machinery beyond the grammar), a pure CFG cannot express this constraint.",
+      "time_s": 21.79669213294983,
+      "tokens": 132,
+      "max_tokens": 132
+    },
+    {
+      "idx": 8,
+      "category": "math",
+      "mode": "llm",
+      "answer": "To find the length of side a, we can use the Law of Sines, which states that the ratio of the length of a side to the sine of its opposite angle is the same for all three sides of a triangle.\n\nThe Law of Sines formula is:\n\na/sin(A) = b/sin(B) = c/sin(C)\n\nWe know angle A = 30\u00b0, angle B = 45\u00b0, and side c = 10 cm. We need to find angle C first. Since the sum of angles in a triangle is 180\u00b0, we can find angle C as follows:\n\nC = 180\u00b0 - A - B\nC = 180\u00b0 - 30\u00b0 - 45\u00b0\nC = 105\u00b0\n\nNow we can use the Law of Sines to find the length of side a:\n\na/sin(A) = c/sin(C)\n\nPlugging in the known values:\n\na/sin(30\u00b0) = 10 cm/sin(105\u00b0",
+      "expected": "Using the Law of Sines: a/sin(A) = c/sin(C). First, angle C = 180\u00b0 - 30\u00b0 - 45\u00b0 = 105\u00b0. sin(30\u00b0) = 0.5, sin(105\u00b0) = sin(75\u00b0) \u2248 0.9659. a/sin(30\u00b0) = 10/sin(105\u00b0) \u2192 a = 10 \u00d7 0.5 / 0.9659 \u2248 5.177 cm.",
+      "time_s": 31.067781448364258,
+      "tokens": 200,
+      "max_tokens": 200
+    },
+    {
+      "idx": 9,
+      "category": "math",
+      "mode": "llm",
+      "answer": "Let's denote the 5 values as A, B, C, D, and E. The mean of these 5 values is 12, so the sum of these 5 values is 5 * 12 = 60.\n\nNow, if one value is removed and the mean of the remaining 4 values becomes 10, then the sum of these 4 values is 4 * 10 = 40.\n\nThe difference between the sum of the original 5 values and the sum of the remaining 4 values will give us the value that was removed. So, the removed value is 60 - 40 = 20.\n\nTherefore, the value that was removed is 20.",
+      "expected": "Sum of 5 values = 5 \u00d7 12 = 60. Sum of remaining 4 values = 4 \u00d7 10 = 40. Removed value = 60 - 40 = 20.",
+      "time_s": 22.48344612121582,
+      "tokens": 140,
+      "max_tokens": 200
+    },
+    {
+      "idx": 10,
+      "category": "math",
+      "mode": "deterministic",
+      "answer": "10",
+      "expected": "Sum = a(r^n - 1)/(r - 1) = 3(2^10 - 1)/(2 - 1) = 3(1024 - 1)/1 = 3 \u00d7 1023 = 3069.",
+      "time_s": 0.0005385875701904297,
+      "tokens": 0
+    },
+    {
+      "idx": 11,
+      "category": "math",
+      "mode": "llm",
+      "answer": "To solve the inequality |x - 3| + |x + 2| < 9, we need to consider the different cases for the values of x that will affect the absolute values. We will split the problem into different intervals based on the points where the expressions inside the absolute values become zero, which are x = 3 and x = -2.\n\nCase 1: x \u2265 3\nIn this case, both x - 3 and x + 2 are non-negative, so the absolute values can be removed:\nx - 3 + x + 2 < 9\n2x - 1 < 9\n2x < 10\nx < 5\n\nSince we are considering the case where x \u2265 3, the solution for this case is 3 \u2264 x < 5.\n\nCase 2: -2 \u2264 x < 3\nIn this case, x - 3 is negative and x + 2 is non-negative, so",
+      "expected": "Critical points: x = -2 and x = 3. Case 1 (x < -2): -(x-3) - (x+2) = -x+3 -x-2 = -2x+1 < 9 \u2192 -2x < 8 \u2192 x > -4. So -4 < x < -2. Case 2 (-2 \u2264 x < 3): -(x-3) + (x+2) = -x+3+x+2 = 5 < 9 always true. So -2 \u2264 x < 3. Case 3 (x \u2265 3): (x-3)+(x+2) = 2x-1 < 9 \u2192 2x < 10 \u2192 x < 5. So 3 \u2264 x < 5. Union: (-4, 5).",
+      "time_s": 43.36473035812378,
+      "tokens": 200,
+      "max_tokens": 200
+    },
+    {
+      "idx": 12,
+      "category": "math",
+      "mode": "deterministic",
+      "answer": "33",
+      "expected": "Using cofactor expansion along row 2 (has a zero): det = 1\u00d7(-1)^(2+1)\u00d7det([[1,3],[2,1]]) + 0 + 2\u00d7(-1)^(2+3)\u00d7det([[2,1],[3,2]]) = -1\u00d7(1\u00d71 - 3\u00d72) + 2\u00d7(-1)\u00d7(2\u00d72 - 1\u00d73) = -1\u00d7(1-6) + (-2)\u00d7(4-3) = -1\u00d7(-5) + (-2)\u00d71 = 5 - 2 = 3.",
+      "time_s": 0.0004298686981201172,
+      "tokens": 0
+    },
+    {
+      "idx": 13,
+      "category": "math",
+      "mode": "llm",
+      "answer": "To find the probability that a student plays at least one of the two sports, we can use the principle of inclusion-exclusion. First, let's find the number of students who play at least one of the two sports:\n\nNumber of students who play soccer = 18\nNumber of students who play basketball = 15\nNumber of students who play both sports = 8\n\nNumber of students who play at least one sport = (Number of students who play soccer) + (Number of students who play basketball) - (Number of students who play both sports)\n= 18 + 15 - 8\n= 25\n\nNow, we can find the probability that a randomly selected student plays at least one of the two sports:\n\nProbability = (Number of students who play at least one sport) / (Total number of students)\n= 25 / 30\n= 5/6\n\nSo, the probability that a randomly selected student plays at least one of the two sports is 5",
+      "expected": "Using inclusion-exclusion: |S \u222a B| = |S| + |B| - |S \u2229 B| = 18 + 15 - 8 = 25. Probability = 25/30 = 5/6 \u2248 0.8333.",
+      "time_s": 34.32481813430786,
+      "tokens": 200,
+      "max_tokens": 200
+    },
+    {
+      "idx": 14,
+      "category": "math",
+      "mode": "llm",
+      "answer": "To solve the equation log\u2082(x) + log\u2082(x-3) = 2, we can use the properties of logarithms. \n\nFirst, we can combine the logarithms using the product rule of logarithms, which states that log_b(m) + log_b(n) = log_b(mn). \n\nSo, log\u2082(x) + log\u2082(x-3) = log\u2082(x(x-3)) = 2.\n\nNow, we can rewrite the equation in exponential form:\n\n2^(log\u2082(x(x-3))) = 2^2\n\nx(x-3) = 4\n\nNow, we can solve for x:\n\nx^2 - 3x = 4\n\nx^2 - 3x - 4 = 0\n\nNow, we can factor the quadratic equation:\n\n(x - 4)(x + 1) = 0\n\nSo, we have two possible solutions for x:\n\nx - 4 = 0 => x =",
+      "expected": "Using log property: log\u2082(x(x-3)) = 2 \u2192 x(x-3) = 2\u00b2 = 4 \u2192 x\u00b2 - 3x - 4 = 0 \u2192 (x-4)(x+1) = 0 \u2192 x = 4 or x = -1. Domain restriction: x > 0 and x-3 > 0 \u2192 x > 3. Therefore x = 4.",
+      "time_s": 36.177074909210205,
+      "tokens": 200,
+      "max_tokens": 200
+    },
+    {
+      "idx": 15,
+      "category": "math",
+      "mode": "llm",
+      "answer": "To find the equation of a line perpendicular to y = 2x + 3, we first need to find the slope of that line. The slope of y = 2x + 3 is 2. Since the slopes of perpendicular lines are negative reciprocals of each other, the slope of the line we're looking for is -1/2.\n\nNow we have the slope of the desired line (-1/2) and a point it passes through (4, -1). We can use the point-slope form of a line to find the equation. The point-slope form is y - y1 = m(x - x1), where m is the slope and (x1, y1) is the given point.\n\nPlugging in our values, we get:\n\ny - (-1) = (-1/2)(x - 4)\n\nSimplifying this equation gives us:\n\ny + 1 = -1/2x + 2\n\nFinally, we can rearr",
+      "expected": "Slope of given line = 2. Perpendicular slope = -1/2 (negative reciprocal). Using point-slope: y - (-1) = (-1/2)(x - 4) \u2192 y + 1 = (-1/2)x + 2 \u2192 y = (-1/2)x + 1.",
+      "time_s": 30.840797901153564,
+      "tokens": 200,
+      "max_tokens": 200
+    },
+    {
+      "idx": 16,
+      "category": "code_gen",
+      "mode": "llm",
+      "answer": "def num_islands(grid: List[List[str]]) -> int:\n    if not grid:\n        return 0\n\n    def dfs(r, c):\n        if r < 0 or r >= len(grid) or c < 0 or c >= len(grid[0]) or grid[r][c] == '0':\n            return\n        grid[r][c] = '0'\n        dfs(r - 1, c)\n        dfs(r + 1, c)\n        dfs(r, c - 1)\n        dfs(r, c + 1)\n\n    count = 0\n    for r in range(len(grid)):\n        for c in range(len(grid[0])):\n            if grid[r][c] == '1':\n                dfs(r, c)\n                count += 1\n    return count",
+      "expected": "from typing import List\n\n\ndef num_islands(grid: List[List[str]]) -> int:\n    if not grid or not grid[0]:\n        return 0\n    \n    rows, cols = len(grid), len(grid[0])\n    count = 0\n    \n    def dfs(r: int, c: int) -> None:\n        if r < 0 or r >= rows or c < 0 or c >= cols or grid[r][c] != '1':\n            return\n        grid[r][c] = '0'  # mark visited\n        dfs(r+1, c)\n        dfs(r-1, c)\n        dfs(r, c+1)\n        dfs(r, c-1)\n    \n    for r in range(rows):\n        for c in range(cols):\n            if grid[r][c] == '1':\n                count += 1\n                dfs(r, c)\n    return count",
+      "time_s": 26.881385326385498,
+      "tokens": 164,
+      "max_tokens": 250
+    },
+    {
+      "idx": 17,
+      "category": "code_gen",
+      "mode": "llm",
+      "answer": "def two_sum(nums: List[int], target: int) -> List[int]:\n    num_to_index = {}\n    for i, num in enumerate(nums):\n        complement = target - num\n        if complement in num_to_index:\n            return [num_to_index[complement], i]\n        num_to_index[num] = i",
+      "expected": "from typing import List\n\n\ndef two_sum(nums: List[int], target: int) -> List[int]:\n    seen = {}  # value -> index\n    for i, num in enumerate(nums):\n        complement = target - num\n        if complement in seen:\n            return [seen[complement], i]\n        seen[num] = i\n    return []",
+      "time_s": 14.30956482887268,
+      "tokens": 66,
+      "max_tokens": 250
+    },
+    {
+      "idx": 18,
+      "category": "code_gen",
+      "mode": "llm",
+      "answer": "from typing import List\n\ndef merge_intervals(intervals: List[List[int]]) -> List[List[int]]:\n    intervals.sort(key=lambda x: x[0])\n    merged = []\n    for interval in intervals:\n        if not merged or merged[-1][1] < interval[0]:\n            merged.append(interval)\n        else:\n            merged[-1][1] = max(merged[-1][1], interval[1])\n    return merged",
+      "expected": "from typing import List\n\n\ndef merge_intervals(intervals: List[List[int]]) -> List[List[int]]:\n    if not intervals:\n        return []\n    \n    intervals.sort(key=lambda x: x[0])\n    merged = [intervals[0]]\n    \n    for start, end in intervals[1:]:\n        if start <= merged[-1][1]:\n            merged[-1][1] = max(merged[-1][1], end)\n        else:\n            merged.append([start, end])\n    return merged",
+      "time_s": 16.175209522247314,
+      "tokens": 89,
+      "max_tokens": 250
+    },
+    {
+      "idx": 19,
+      "category": "code_gen",
+      "mode": "llm",
+      "answer": "def max_subarray_sum(nums: List[int]) -> int:\n    if not nums:\n        return 0\n\n    max_sum = current_sum = nums[0]\n\n    for num in nums[1:]:\n        current_sum = max(num, current_sum + num)\n        max_sum = max(max_sum, current_sum)\n\n    return max_sum",
+      "expected": "from typing import List\n\n\ndef max_subarray_sum(nums: List[int]) -> int:\n    max_sum = nums[0]\n    current_sum = nums[0]\n    for num in nums[1:]:\n        current_sum = max(num, current_sum + num)\n        max_sum = max(max_sum, current_sum)\n    return max_sum",
+      "time_s": 13.606730699539185,
+      "tokens": 70,
+      "max_tokens": 250
+    },
+    {
+      "idx": 20,
+      "category": "code_gen",
+      "mode": "llm",
+      "answer": "def three_sum(nums: List[int]) -> List[List[int]]:\n    nums.sort()\n    result = []\n    for i in range(len(nums)-2):\n        if i > 0 and nums[i] == nums[i-1]:\n            continue\n        left, right = i+1, len(nums)-1\n        while left < right:\n            total = nums[i] + nums[left] + nums[right]\n            if total < 0:\n                left += 1\n            elif total > 0:\n                right -= 1\n            else:\n                result.append([nums[i], nums[left], nums[right]])\n                while left < right and nums[left] == nums[left+1]:\n                    left += 1\n                while left < right and nums[right] == nums[right-1]:\n                    right -= 1\n                left += 1\n                right -= 1\n    return result",
+      "expected": "from typing import List\n\n\ndef three_sum(nums: List[int]) -> List[List[int]]:\n    nums.sort()\n    result = []\n    n = len(nums)\n    for i in range(n - 2):\n        if i > 0 and nums[i] == nums[i-1]:\n            continue\n        left, right = i + 1, n - 1\n        while left < right:\n            total = nums[i] + nums[left] + nums[right]\n            if total < 0:\n                left += 1\n            elif total > 0:\n                right -= 1\n            else:\n                result.append([nums[i], nums[left], nums[right]])\n                while left < right and nums[left] == nums[left+1]:\n                    left += 1\n                while left < right and nums[right] == nums[right-1]:\n                    right -= 1\n                left += 1\n                right -= 1\n    return result",
+      "time_s": 28.271841049194336,
+      "tokens": 183,
+      "max_tokens": 250
+    },
+    {
+      "idx": 21,
+      "category": "code_gen",
+      "mode": "llm",
+      "answer": "```python\nclass TrieNode:\n    def __init__(self):\n        self.children = {}\n        self.is_end_of_word = False\n\nclass Trie:\n    def __init__(self):\n        self.root = TrieNode()\n\n    def insert(self, word: str) -> None:\n        node = self.root\n        for char in word:\n            if char not in node.children:\n                node.children[char] = TrieNode()\n            node = node.children[char]\n        node.is_end_of_word = True\n\n    def search(self, word: str) -> bool:\n        node = self.root\n        for char in word:\n            if char not in node.children:\n                return False\n            node = node.children[char]\n        return node.is_end_of_word\n\n    def starts_with(self, prefix: str) -> bool:\n        node = self.root\n        for char in prefix:\n            if char not in node.children:\n                return False\n            node = node.children[char]\n        return True\n```",
+      "expected": "class TrieNode:\n    def __init__(self):\n        self.children = {}\n        self.is_end = False\n\nclass Trie:\n    def __init__(self):\n        self.root = TrieNode()\n    \n    def insert(self, word: str) -> None:\n        node = self.root\n        for ch in word:\n            if ch not in node.children:\n                node.children[ch] = TrieNode()\n            node = node.children[ch]\n        node.is_end = True\n    \n    def search(self, word: str) -> bool:\n        node = self.root\n        for ch in word:\n            if ch not in node.children:\n                return False\n            node = node.children[ch]\n        return node.is_end\n    \n    def starts_with(self, prefix: str) -> bool:\n        node = self.root\n        for ch in prefix:\n            if ch not in node.children:\n                return False\n            node = node.children[ch]\n        return True",
+      "time_s": 32.177964210510254,
+      "tokens": 206,
+      "max_tokens": 250
+    },
+    {
+      "idx": 22,
+      "category": "code_gen",
+      "mode": "llm",
+      "answer": "def product_except_self(nums: List[int]) -> List[int]:\n    n = len(nums)\n    left_products = [1] * n\n    right_products = [1] * n\n    answer = [1] * n\n\n    for i in range(1, n):\n        left_products[i] = left_products[i - 1] * nums[i - 1]\n\n    for i in range(n - 2, -1, -1):\n        right_products[i] = right_products[i + 1] * nums[i + 1]\n\n    for i in range(n):\n        answer[i] = left_products[i] * right_products[i]\n\n    return answer",
+      "expected": "from typing import List\n\n\ndef product_except_self(nums: List[int]) -> List[int]:\n    n = len(nums)\n    result = [1] * n\n    \n    # left pass: result[i] = product of everything to the left of i\n    left_product = 1\n    for i in range(n):\n        result[i] = left_product\n        left_product *= nums[i]\n    \n    # right pass: multiply by product of everything to the right\n    right_product = 1\n    for i in range(n-1, -1, -1):\n        result[i] *= right_product\n        right_product *= nums[i]\n    \n    return result",
+      "time_s": 23.449784755706787,
+      "tokens": 138,
+      "max_tokens": 250
+    },
+    {
+      "idx": 23,
+      "category": "code_gen",
+      "mode": "llm",
+      "answer": "def longest_common_prefix(strs: List[str]) -> str:\n    if not strs:\n        return \"\"\n    \n    min_len = min(len(s) for s in strs)\n    for i in range(min_len):\n        char = strs[0][i]\n        if any(s[i] != char for s in strs):\n            return strs[0][:i]\n    return strs[0][:min_len]",
+      "expected": "from typing import List\n\n\ndef longest_common_prefix(strs: List[str]) -> str:\n    if not strs:\n        return \"\"\n    \n    prefix = strs[0]\n    for s in strs[1:]:\n        while not s.startswith(prefix):\n            prefix = prefix[:-1]\n            if not prefix:\n                return \"\"\n    return prefix",
+      "time_s": 15.106860637664795,
+      "tokens": 82,
+      "max_tokens": 250
+    },
+    {
+      "idx": 24,
+      "category": "logic",
+      "mode": "llm",
+      "answer": "Let's analyze the clues:\n\n1. The student who studied AI received an A.\n2. Bob did not study Chemistry or Design.\n3. Diana received a higher grade than Carlos.\n4. The Economics project got a C.\n5. Ethan did not study Biology and did not get an F.\n6. The student who studied Design got a D.\n7. Alice got a higher grade than the Biology student.\n8. Carlos did not study Economics.\n9. The Chemistry student received a higher grade than the Economics student.\n\nFrom clue 6, we know the Design student got a D. Since Diana received a higher grade than Carlos (clue 3), Diana cannot have studied Design. Diana cannot have received an F (since Carlos cannot have received a D, as it is the grade for Design, and Diana received a higher grade than Carlos).\n\nFrom clue 4, we know the Economics project got a C. Since Carlos did not study Economics (clue 8), Carlos cannot have received",
+      "expected": "Alice: AI, A  |  Bob: Economics, C  |  Carlos: Design, D  |  Diana: Biology, B  |  Ethan: Chemistry, F\n\nReasoning: AI=A (clue 1), Economics=C (clue 4), Design=D (clue 6). Chemistry > Economics, so Chemistry must be B since only B, F remain above C, and Design is D, AI=A... Actually let me re-check. Available grades: A,B,C,D,F. AI=A, Economics=C, Design=D. Chemistry must be > C, so Chemistry = B (only B left above C). That leaves Biology=F. Diana > Carlos (clue 3), so Diana has B and Carlos has D (only B > D among remaining). Bob can't be Chemistry or Design (clue 2), so Bob = Economics. Ethan not Biology and not F (clue 5), so Ethan = Chemistry. Alice > Biology (clue 7), Alice already has A which is > F, consistent. Carlos not Economics (clue 8), Carlos = Design. Diana = Biology. So: Alice=AI/A, Bob=Economics/C, Carlos=Design/D, Diana=Biology/F, Ethan=Chemistry/B.",
+      "time_s": 31.89324426651001,
+      "tokens": 200,
+      "max_tokens": 200
+    },
+    {
+      "idx": 25,
+      "category": "logic",
+      "mode": "llm",
+      "answer": "You should pick a fruit from the box labeled \"Apples and Oranges\". \n\nSince all labels are wrong, this box cannot contain both apples and oranges. There are two possibilities:\n\n1. If you pull out an apple from this box, then this box must contain only apples. Since the labels are wrong, the box labeled \"Apples\" cannot contain only apples (it's wrong) and the box labeled \"Oranges\" cannot contain only oranges (it's wrong). Therefore, the box labeled \"Apples\" must contain only oranges, and the box labeled \"Oranges\" must contain both apples and oranges.\n\n2. If you pull out an orange from this box, then this box must contain only oranges. Since the labels are wrong, the box labeled \"Apples\" cannot contain only apples (it's wrong) and the box labeled \"Oranges\" cannot contain only oranges (it's wrong). Therefore, the box labeled \"Apples\" must contain both apples and oranges, and the box labeled",
+      "expected": "Pick from the box labeled \"Apples and Oranges\". Since every label is wrong, this box does NOT contain both. It contains either only apples or only oranges. Whichever fruit you pull out tells you what this box actually contains (e.g., if you get an apple, it's the apples-only box). Then: the box labeled with the opposite fruit (\"Oranges\") must contain the mixed box (it can't contain oranges since its label is wrong, and it can't contain apples since the apples are already placed), and the remaining box (\"Apples\") must contain the fruit you didn't pick. This works because the mixed-label box has only two possibilities, and the wrong-label constraint cascades uniquely.",
+      "time_s": 30.233424186706543,
+      "tokens": 200,
+      "max_tokens": 200
+    },
+    {
+      "idx": 26,
+      "category": "logic",
+      "mode": "llm",
+      "answer": "a) It is raining - COULD be either true or false. The premises only tell us that if it is raining, then the ground is wet; they do not tell us what happens when it is not raining.\n\nb) The sprinklers are on - COULD be either true or false. The premises do not provide us with information about whether the sprinklers are on or not. It could be that it's raining and the ground is wet because of rain, or it could be the sprinklers are on and the ground is wet for another reason.\n\nc) The dog is inside - MUST be true. The premises state that if it's not raining, then the dog is inside. Since we know the ground is not wet (from the second premise), we can infer that it's not raining. Therefore, the dog must be inside.\n\nd) The dog is outside - MUST be false. This is the opposite of what has been determined in part c); since it is not raining, the dog must be inside according to the premises.",
+      "expected": "a) MUST be false (modus tollens: if raining\u2192wet, not wet \u2192 not raining)\nb) MUST be false (modus tollens: if sprinklers\u2192wet, not wet \u2192 not sprinklers)\nc) MUST be true (modus ponens: if not raining\u2192dog inside, and we know it's not raining from (a), so dog is inside)\nd) MUST be false (contradicts (c))",
+      "time_s": 31.4813871383667,
+      "tokens": 207,
+      "max_tokens": 220
+    },
+    {
+      "idx": 27,
+      "category": "logic",
+      "mode": "llm",
+      "answer": "You can ask either guard: \"If I were to ask the other guard which door leads to freedom, what would they say?\" Then, you would take the opposite door of what they indicate. \n\nHere's why it works: \n\n- If you ask the truthful guard, they will tell you what the lying guard would say, which would be the door to certain death. So, you should go through the opposite door.\n\n- If you ask the lying guard, they would lie about what the truthful guard would say, which would also be the door to certain death. So again, you should go through the opposite door. \n\nIn both cases, the door you end up choosing will be the door to freedom.",
+      "expected": "Ask either guard: \"If I asked the other guard which door leads to freedom, what would he say?\" Then choose the opposite door. \n\nExplanation: The truth-teller will truthfully report that the liar would point to the wrong door. The liar will falsely report what the truth-teller would say (which would be the correct door), thus also pointing to the wrong door. Both guards point to the wrong door, so you pick the opposite.\n\nAlternative: \"Which door would the other guard tell me to avoid?\" \u2014 both will point to the correct door.",
+      "time_s": 23.514822244644165,
+      "tokens": 142,
+      "max_tokens": 200
+    },
+    {
+      "idx": 28,
+      "category": "logic",
+      "mode": "llm",
+      "answer": "In a single elimination tournament with 64 players, each match eliminates one player. To determine the champion, we need to eliminate 63 players (since one player will remain as the champion).\n\nSince each match eliminates one player, a total of 63 matches must be played to eliminate 63 players. Therefore, the number of matches required to determine the tournament champion is 63.",
+      "expected": "63 matches. Each match eliminates exactly one player. To go from 64 players to 1 champion, you need to eliminate 63 players. Since each match eliminates exactly one player, you need exactly 63 matches. This reasoning works for any single-elimination tournament with N players: N-1 matches.",
+      "time_s": 14.565747499465942,
+      "tokens": 76,
+      "max_tokens": 200
+    },
+    {
+      "idx": 29,
+      "category": "logic",
+      "mode": "llm",
+      "answer": "Let's denote the cost of the ball as \\( x \\) dollars. According to the problem, the bat costs $1.00 more than the ball. Therefore, the cost of the bat is \\( x + 1.00 \\) dollars.\n\nThe total cost of the bat and the ball is given as $1.10. We can set up the following equation:\n\n\\[ x + (x + 1.00) = 1.10 \\]\n\nSimplify and solve for \\( x \\):\n\n\\[ 2x + 1.00 = 1.10 \\]\n\\[ 2x = 1.10 - 1.00 \\]\n\\[ 2x = 0.10 \\]\n\\[ x = 0.05 \\]\n\nSo, the ball costs $0.05, or 5 cents.\n\nThe intuitive response of 10 cents is incorrect because it does not correctly account for the $1.00 difference between the bat and the ball. The correct",
+      "expected": "The ball costs $0.05 (5 cents). Let b = ball cost. Bat costs b + $1.00. Total: b + (b + $1.00) = $1.10 \u2192 2b + $1.00 = $1.10 \u2192 2b = $0.10 \u2192 b = $0.05. The bat costs $1.05, total $1.10. The intuitive error: 10 cents would mean the bat costs $1.00, but then bat - ball = $0.90, not $1.00. People substitute the $1.00 difference into the total incorrectly.",
+      "time_s": 31.65237307548523,
+      "tokens": 200,
+      "max_tokens": 200
+    },
+    {
+      "idx": 30,
+      "category": "logic",
+      "mode": "llm",
+      "answer": "One strategy that guarantees at least 9 out of 10 people guess correctly is as follows:\n\n1. The first person (at the front) says \"red.\"\n2. Each subsequent person (from person 2 to person 10) will say the opposite color of what they see in front of them.\n\nHere's how it works:\n\n- The first person (person 1) says \"red\" because they can't see anyone in front of them and there are no previous guesses to consider.\n- The second person (person 2) sees the hat of the first person (who said \"red\") and guesses the opposite color (\"blue\").\n- The third person (person 3) sees the hat of the first person (who said \"red\") and the guess of the second person (who said \"blue\"). They know that the first person's hat is red and the second person's guess was blue, so they guess the opposite color (\"red\").\n- This pattern continues for each subsequent person. Each person",
+      "expected": "Strategy: Person 10 (last in line, sees 9 hats) says \"red\" if they see an even number of red hats in front of them, \"blue\" if odd. This person sacrifices their own guess to convey parity information. Person 9 hears this and sees the 8 hats in front. They can deduce their own hat: if person 10 signaled even and person 9 sees an odd number of reds, then person 9 must be red (making it even from person 10's perspective). Similarly, each subsequent person tracks the parity declaration and the hats they've seen guessed correctly, deducing their own hat. At least 9 people (everyone except person 10) guess correctly with certainty.",
+      "time_s": 30.530646562576294,
+      "tokens": 200,
+      "max_tokens": 200
+    },
+    {
+      "idx": 31,
+      "category": "logic",
+      "mode": "llm",
+      "answer": "The argument is committing the **slippery slope fallacy**.\n\nThe slippery slope fallacy occurs when someone argues that a relatively small action will lead to a chain of events resulting in some significant (usually negative) effect without providing evidence for such a progression. In the given argument, the claim is that allowing students to retake exams will inevitably lead to no one studying properly the first time, which is an exaggerated and unsupported progression of events.\n\nLet's break down why it's a slippery slope:\n\n- The argument assumes a chain reaction starting from allowing retakes.\n- It suggests that this will lead to students not studying properly the first time.\n- This lack of studying properly supposedly necessitates retakes.\n- The argument concludes that this will eventually lead to a situation where no one studies properly and thus should never allow retakes.\n\nThe argument fails to consider other factors and consequences, making it an example of the slippery slope fallacy.",
+      "expected": "d) Slippery slope. The argument asserts that allowing retakes inevitably leads to a cascade (retakes \u2192 no studying \u2192 need retakes \u2192 no one studies) without providing evidence that this causal chain must occur. It assumes the worst outcome is unavoidable without considering middle grounds or mitigating policies. The structure is: A leads to B, B leads to C, therefore A is unacceptable \u2014 without demonstrating that intermediate steps can't be prevented.",
+      "time_s": 28.86728048324585,
+      "tokens": 185,
+      "max_tokens": 220
+    },
+    {
+      "idx": 32,
+      "category": "code_debug",
+      "mode": "llm",
+      "answer": "```python\ndef binary_search(arr, target):\n    \"\"\"Return the index of target in sorted arr, or -1 if not found.\n    >>> binary_search([1, 3, 5, 7, 9], 5)\n    2\n    >>> binary_search([1, 3, 5, 7, 9], 6)\n    -1\n    >>> binary_search([1, 3, 5, 7, 9], 9)\n    4\n    \"\"\"\n    left, right = 0, len(arr) - 1\n    while left <= right:\n        mid = (left + right) // 2\n        if arr[mid] == target:\n            return mid\n        elif arr[mid] < target:\n            left = mid + 1\n        else:\n            right = mid - 1\n    return -1\n```",
+      "expected": "def binary_search(arr, target):\n    \"\"\"Return the index of target in sorted arr, or -1 if not found.\"\"\"\n    left, right = 0, len(arr) - 1\n    while left <= right:\n        mid = (left + right) // 2\n        if arr[mid] == target:\n            return mid\n        elif arr[mid] < target:\n            left = mid + 1\n        else:\n            right = mid - 1\n    return -1",
+      "time_s": 28.37447452545166,
+      "tokens": 186,
+      "max_tokens": 220
+    },
+    {
+      "idx": 33,
+      "category": "code_debug",
+      "mode": "llm",
+      "answer": "```python\nclass Counter:\n    def __init__(self):\n        self.count = 0  # instance variable\n    \n    def increment(self):\n        self.count += 1\n        return self.count\n```",
+      "expected": "class Counter:\n    def __init__(self):\n        self.count = 0\n    \n    def increment(self):\n        self.count += 1\n        return self.count",
+      "time_s": 9.76181674003601,
+      "tokens": 42,
+      "max_tokens": 200
+    },
+    {
+      "idx": 34,
+      "category": "code_debug",
+      "mode": "llm",
+      "answer": "```python\nimport asyncio\n\nasync def fetch_data(url):\n    # Simulate network delay\n    await asyncio.sleep(0.1)\n    return f\"data from {url}\"\n\nasync def fetch_all():\n    \"\"\"Fetch data from all URLs concurrently and return results in order.\n    >>> asyncio.run(fetch_all())\n    ['data from /a', 'data from /b', 'data from /c']\n    \"\"\"\n    urls = ['/a', '/b', '/c']\n    tasks = [fetch_data(url) for url in urls]\n    results = await asyncio.gather(*tasks)\n    return results\n```",
+      "expected": "import asyncio\n\nasync def fetch_data(url):\n    await asyncio.sleep(0.1)\n    return f\"data from {url}\"\n\nasync def fetch_all():\n    urls = ['/a', '/b', '/c']\n    tasks = [asyncio.create_task(fetch_data(url)) for url in urls]\n    results = await asyncio.gather(*tasks)\n    return results",
+      "time_s": 20.827454090118408,
+      "tokens": 124,
+      "max_tokens": 200
+    },
+    {
+      "idx": 35,
+      "category": "code_debug",
+      "mode": "llm",
+      "answer": "```python\nimport json\n\ndef process_user_input(user_input):\n    \"\"\"Parse JSON input from user safely.\n    >>> process_user_input('{\"name\": \"Alice\"}')\n    {'name': 'Alice'}\n    \"\"\"\n    try:\n        data = json.loads(user_input)\n        return data\n    except json.JSONDecodeError:\n        return None\n    \n    # Try to clean and re-parse\n    cleaned = user_input.strip()\n    try:\n        data = json.loads(cleaned)\n        return data\n    except json.JSONDecodeError:\n        return None\n```",
+      "expected": "import json\n\ndef process_user_input(user_input):\n    \"\"\"Parse JSON input from user safely.\"\"\"\n    try:\n        data = json.loads(user_input)\n        return data\n    except json.JSONDecodeError:\n        pass\n    \n    try:\n        cleaned = user_input.strip()\n        data = json.loads(cleaned)\n        return data\n    except json.JSONDecodeError:\n        return None",
+      "time_s": 18.78053045272827,
+      "tokens": 114,
+      "max_tokens": 200
+    },
+    {
+      "idx": 36,
+      "category": "code_debug",
+      "mode": "llm",
+      "answer": "```python\nimport random\n\ndef roll_dice():\n    \"\"\"Return a random integer between 1 and 6 (inclusive).\"\"\"\n    return random.randint(1, 6)\n```",
+      "expected": "import random\n\ndef roll_dice():\n    \"\"\"Return a random integer between 1 and 6 (inclusive).\"\"\"\n    return random.randint(1, 6)",
+      "time_s": 9.217071771621704,
+      "tokens": 38,
+      "max_tokens": 200
+    },
+    {
+      "idx": 37,
+      "category": "code_debug",
+      "mode": "llm",
+      "answer": "```python\nclass MyList:\n    def __init__(self, items):\n        self.items = list(items)\n\n    def __repr__(self):\n        return f\"MyList({self.items})\"\n\n    def __add__(self, other):\n        return MyList(self.items + other.items)\n```",
+      "expected": "class MyList:\n    def __init__(self, items):\n        self.items = list(items)  # copy to prevent aliasing\n    \n    def __repr__(self):\n        return f\"MyList({self.items})\"\n    \n    def __add__(self, other):\n        return MyList(self.items + other.items)",
+      "time_s": 11.673693180084229,
+      "tokens": 60,
+      "max_tokens": 200
+    },
+    {
+      "idx": 38,
+      "category": "code_debug",
+      "mode": "llm",
+      "answer": "```python\ndef get_squares(numbers):\n    \"\"\"Return a list of squares of the input numbers.\n    >>> numbers = [1, 2, 3, 4, 5]\n    >>> squares = get_squares(numbers)\n    >>> squares\n    [1, 4, 9, 16, 25]\n    >>> numbers  # Should be unchanged\n    [1, 2, 3, 4, 5]\n    \"\"\"\n    squares = [n ** 2 for n in numbers]\n    return squares\n```",
+      "expected": "def get_squares(numbers):\n    \"\"\"Return a list of squares of the input numbers.\"\"\"\n    return [n ** 2 for n in numbers]",
+      "time_s": 18.548579692840576,
+      "tokens": 114,
+      "max_tokens": 220
+    },
+    {
+      "idx": 39,
+      "category": "ner",
+      "mode": "deterministic",
+      "answer": "Chair Gary Gensler, Deutsche Bank, Elon Musk, New York, Robyn Denholm, Southern District of New York, Tesla Inc, The Securities and Exchange Commission, Todd Maron, 2025, April 2, 2025, March 15, 2025",
+      "expected": "PERSONS: Elon Musk, Robyn Denholm, Gary Gensler, Todd Maron | ORGANIZATIONS: Securities and Exchange Commission (SEC), Tesla Inc., Deutsche Bank AG | LOCATIONS: Southern District of New York, New York | DATES: March 15, 2025, April 2, 2025 | MONETARY: $45 billion, $150 | REGULATORY: securities law violations, compensation, probe",
+      "time_s": 0.0014629364013671875,
+      "tokens": 0
+    },
+    {
+      "idx": 40,
+      "category": "ner",
+      "mode": "deterministic",
+      "answer": "Alex Stamos, Apache Log, Apache Software Foundation, Dmitri Alperovitch, Maria Kuznetsova, On January, The Python, 0001, 0014, 2025, January 4, 2025",
+      "expected": "SOFTWARE: Apache Log4j, Log4j-core, Log4j-jakarta-web, log4jack | VERSIONS: 3.0.1 | LANGUAGES: Python | PERSONS: Alex Stamos, Maria Kuznetsova, Dmitri Alperovitch, dark_matter | ORGANIZATIONS: SentinelOne, Apache Software Foundation, CrowdStrike, GitHub, AWS, Azure, JPMorgan Chase | CVE: CVE-2025-0001, CVE-2025-0014",
+      "time_s": 0.0015110969543457031,
+      "tokens": 0
+    },
+    {
+      "idx": 41,
+      "category": "ner",
+      "mode": "deterministic",
+      "answer": "als, cancer, melanoma, CD274, CTLA-4, IC50, PD-1, PD-L1, PDCD1, 2024",
+      "expected": "PROTEINS: PD-1, PD-L1, CTLA-4, LAG-3 | GENES: PDCD1, CD274, CTLA-4 | DISEASES: non-small cell lung cancer (NSCLC), metastatic melanoma, triple-negative breast cancer | DRUGS: pembrolizumab (Keytruda), XR-2024 | CELL TYPES: MDA-MB-231 | NUMERICAL: 247, 3.7-fold, 42%, 89, 12.5 nM",
+      "time_s": 0.001875162124633789,
+      "tokens": 0
+    },
+    {
+      "idx": 42,
+      "category": "ner",
+      "mode": "deterministic",
+      "answer": "als, MET, Abdulrahman Al Thani, Abraham Accords, Ahmed Al Thani of Qatar, Energy Affairs, Her Excellency Ambassador Alya, Minister of State, Mohammed Al, Prime Minister Sheikh Mohammed, Secretary of State Anthony Blinken, State Department, 2023, 2024, 2025, June 12, 2025",
+      "expected": "COUNTRIES: Qatar, United States | DIPLOMATIC TITLES: Her Excellency Ambassador, Secretary of State, Minister of State for Energy Affairs, Prime Minister | TREATIES: Abraham Accords, Gaza ceasefire agreement | DATES: June 12, 2025, May 2023, December 2024, September 2025 | LOCATIONS: State Department, Washington D.C., Vienna, Doha | PERSONS: Alya bint Ahmed Al Thani, Anthony Blinken, Mohammed Al-Kuwari, Mohammed bin Abdulrahman Al Thani",
+      "time_s": 0.0017876625061035156,
+      "tokens": 0
+    },
+    {
+      "idx": 43,
+      "category": "ner",
+      "mode": "llm",
+      "answer": "Team Names:\n- New England Patriots\n- Kansas City Chiefs\n\nPlayer Names:\n- Patrick Mahomes (Quarterback)\n- Christian Gonzalez (Cornerback)\n- Rhamondre Stevenson (Rookie running back)\n- Nick Bolton (Linebacker)\n\nPositions:\n- Quarterback\n- Cornerback\n- Running back\n- Linebacker\n\nStatistics:\n- Patrick Mahomes: Threw for 387 yards and 3 touchdowns\n- Christian Gonzalez: Intercepted twice\n- Rhamondre Stevenson: Rushed for 142 yards and 2 scores\n- Nick Bolton: Recorded 14 tackles\n\nDates:\n- Sunday (no specific date provided)\n\nVenue Name:\n- MetLife Stadium\n\nOther Details:\n- Game result: New England Patriots defeated Kansas City Chiefs 31-28\n- Overtime finish\n- First regular-season matchup between head coaches Andy Reid and Jerod Mayo\n- Both teams at 8-3 heading into Week 13\n- Played before 82",
+      "expected": "TEAMS: New England Patriots, Kansas City Chiefs | PLAYERS: Patrick Mahomes, Christian Gonzalez, Rhamondre Stevenson, Nick Bolton, Andy Reid, Jerod Mayo | POSITIONS: Quarterback, cornerback, rookie running back, linebacker, head coaches | STATISTICS: 387 yards, 3 touchdowns, 2 (interceptions), 142 yards, 2 scores, 14 tackles, 82,156 fans, 8-3 | DATES: Sunday, Week 13 | VENUES: MetLife Stadium",
+      "time_s": 29.820626258850098,
+      "tokens": 200,
+      "max_tokens": 200
+    },
+    {
+      "idx": 44,
+      "category": "ner",
+      "mode": "llm",
+      "answer": "- Product Name: Samsung Galaxy S25 Ultra\n- Company Name: Samsung\n- Price: $1,299.99\n- Reviewer Name: TechGuru42\n- Star Rating: \u2605\u2605\u2605\u2605\u2605\n\n- Product Name: Sony WH-1000XM6 headphones\n- Company Name: Sony\n- Price: $349.99\n- Reviewer Name: AngryListener\n- Star Rating: \u2605\u2606\u2606\u2606\u2606\n\n- Product Name: Dell XPS 16\n- Company Name: Dell\n- Price: $1,899\n- Reviewer Name: LaptopWanderer\n- Star Rating: \u2605\u2605\u2605\u2605\u2606",
+      "expected": "PRODUCTS: Samsung Galaxy S25 Ultra, iPhone 15 Pro Max, Sony WH-1000XM6 headphones, Dell XPS 16, MacBook Air M4 | COMPANIES: Samsung, Apple, Sony, Dell | PRICES: $1,299.99, $349.99, $1,899, $999 | REVIEWERS: TechGuru42, AngryListener, LaptopWanderer | STAR RATINGS: \u2605\u2605\u2605\u2605\u2605 (5/5), \u2605\u2606\u2606\u2606\u2606 (1/5), \u2605\u2605\u2605\u2605\u2606 (4/5)",
+      "time_s": 20.895434379577637,
+      "tokens": 124,
+      "max_tokens": 200
+    },
+    {
+      "idx": 45,
+      "category": "ner",
+      "mode": "deterministic",
+      "answer": "Academy Awards, Best Actor, Best Actress, Best Picture, Brady Corbet, Cillian Murphy, Dolby Theatre, Emma Stone, Presenter Jimmy Kimmel, Simple Favor, The Brutalist, Years Later, 2025, March 2, 2025",
+      "expected": "EVENTS: 97th Academy Awards ceremony, Best Picture, Best Actor, Best Actress | LOCATIONS: Dolby Theatre, Hollywood | DATES: March 2, 2025 | PERSONS: Brady Corbet, Cillian Murphy, Emma Stone, Jimmy Kimmel | AWARDS: Academy Awards (Oscars), Best Picture, Best Actor, Best Actress | NUMERICAL: $75 million, $50 million, 19.5 million, 8%, 18.1 million, 12 minutes, 37 seconds, 97th",
+      "time_s": 0.0011801719665527344,
+      "tokens": 0
+    },
+    {
+      "idx": 46,
+      "category": "sentiment",
+      "mode": "llm",
+      "answer": "Label: negative\n\nJustification: The text mentions missed analyst estimates, declining revenue, and only a partial positive note on the increase in cloud services and AI infrastructure demand.",
+      "expected": "mixed/neutral (or neutral \u2014 has both negative and positive elements, overall mixed but balanced)",
+      "time_s": 9.346583127975464,
+      "tokens": 34,
+      "max_tokens": 66
+    },
+    {
+      "idx": 47,
+      "category": "sentiment",
+      "mode": "llm",
+      "answer": "Label: negative\n\nJustification: The customer experienced long wait times, disconnection, and repeated issues, indicating a negative sentiment.",
+      "expected": "negative",
+      "time_s": 7.764778137207031,
+      "tokens": 26,
+      "max_tokens": 66
+    },
+    {
+      "idx": 48,
+      "category": "sentiment",
+      "mode": "llm",
+      "answer": "Label: positive\n\nJustification: The text mentions rising share prices and upward revisions of price targets with expected significant synergies.",
+      "expected": "positive",
+      "time_s": 7.3601930141448975,
+      "tokens": 25,
+      "max_tokens": 66
+    },
+    {
+      "idx": 49,
+      "category": "sentiment",
+      "mode": "llm",
+      "answer": "Label: mixed\n\nJustification: The text acknowledges both positive feedback (\"improved discovery\") and negative feedback (\"irrelevant results for complex multi-part queries\").",
+      "expected": "neutral",
+      "time_s": 8.25312066078186,
+      "tokens": 31,
+      "max_tokens": 66
+    },
+    {
+      "idx": 50,
+      "category": "sentiment",
+      "mode": "llm",
+      "answer": "Negative\n\nThe text describes unsettled weather, heavy rainfall, and gusty winds, along with flood advisories, indicating negative sentiments.",
+      "expected": "neutral (or slightly negative due to hazard language)",
+      "time_s": 8.510937690734863,
+      "tokens": 27,
+      "max_tokens": 66
+    },
+    {
+      "idx": 51,
+      "category": "sentiment",
+      "mode": "llm",
+      "answer": "Label: negative\n\nThe sarcasm and disappointment in the phrases \"brilliant software update,\" \"breaks more things,\" and \"so 'intuitive'\" indicate negative sentiment.",
+      "expected": "negative (sarcastic)",
+      "time_s": 8.789952754974365,
+      "tokens": 35,
+      "max_tokens": 66
+    },
+    {
+      "idx": 52,
+      "category": "sentiment",
+      "mode": "llm",
+      "answer": "Label: negative\n\nJustification: Complaints about the loud bass and lost hearing, as well as frustration with merchandise availability.",
+      "expected": "mixed/negative (predominantly negative with a faint positive note)",
+      "time_s": 7.539263725280762,
+      "tokens": 25,
+      "max_tokens": 66
+    },
+    {
+      "idx": 53,
+      "category": "summarization",
+      "mode": "llm",
+      "answer": "Source 1 suggests that open-source AI models like Llama 4 405B and smaller models such as Mistral 7B v3 have reached a level of performance that rivals proprietary systems, even achieving high scores on standard benchmarks like MMLU-Pro and operating efficiently on consumer-grade hardware. Conversely, Source 2 emphasizes the necessity of conducting safety research in closed labs for AI models, pointing out that open-source models could pose risks due to the potential for misuse and lack of oversight, arguing that benchmark scores alone are not sufficient to ensure alignment and safety in AI applications.",
+      "expected": "While open-source models have closed the performance gap on standard benchmarks (Llama 4 matches GPT-5 within 2%), proprietary advocates argue that benchmarks miss safety-critical dimensions and that open-weight models enable unchecked harmful fine-tuning. The debate centers on whether competitive accuracy or responsible deployment should take priority.",
+      "time_s": 19.215710401535034,
+      "tokens": 117,
+      "max_tokens": 120
+    },
+    {
+      "idx": 54,
+      "category": "summarization",
+      "mode": "llm",
+      "answer": "The IPCC advocates for immediate drastic emission reductions to limit warming to 1.5\u00b0C, while the Breakthrough Institute argues against immediate net-zero targets, favoring climate adaptation and research into nuclear and geothermal energy over a rapid phaseout of fossil fuels.",
+      "expected": "The IPCC calls for drastic near-term emission cuts (43% by 2030) backed by international pledges, while the Breakthrough Institute argues these targets are unachievable and advocates a pragmatic pivot to adaptation and alternative energy R&D instead of rapid fossil fuel phaseout. The fault line is between mitigation-first and adaptation-first climate strategy.",
+      "time_s": 10.862439155578613,
+      "tokens": 51,
+      "max_tokens": 132
+    },
+    {
+      "idx": 55,
+      "category": "summarization",
+      "mode": "llm",
+      "answer": "Kubernetes' widespread adoption for container orchestration, as indicated by an 84% usage rate in production workloads, is significantly hindered by its operational complexity, with 67% of platform teams identifying this as a major challenge. Despite this, the strong ecosystem lock-in, as evidenced by the increase in Kubernetes usage since 2023, suggests that companies are willing to endure the complexity to benefit from its dominant position in the market.",
+      "expected": "While 67% of platform teams cite Kubernetes complexity as their top challenge, adoption continues to grow, with 84% of production workloads now on Kubernetes (up from 74%). Alternatives offer simpler APIs but lack Kubernetes' ecosystem support, suggesting that complexity alone won't drive migration away from the dominant platform.",
+      "time_s": 15.742916345596313,
+      "tokens": 87,
+      "max_tokens": 120
+    },
+    {
+      "idx": 56,
+      "category": "summarization",
+      "mode": "llm",
+      "answer": "```python\ndef summarize_bnl_perspectives(source1, source2):\n    summary = (\n        \"Source 1 highlights potential financial risks for BNPL users, noting a higher likelihood of carrying credit card debt and lower credit scores. Source 2 emphasizes the positive role of BNPL in providing financial inclusion to underbanked consumers, with a high on-time payment rate.\"\n    )\n    return summary\n```",
+      "expected": "Research shows BNPL users face higher debt risk (3.2x more likely to carry revolving debt, 18% missed payments), but the fintech industry argues BNPL fills a vital gap for underbanked consumers who would otherwise resort to predatory payday loans, with 89% on-time payment rates. Both sides agree BNPL usage is growing, but disagree on whether it enables financial inclusion or facilitates overextension.",
+      "time_s": 15.3783438205719,
+      "tokens": 83,
+      "max_tokens": 250
+    },
+    {
+      "idx": 57,
+      "category": "summarization",
+      "mode": "llm",
+      "answer": "```python\ndef summarize_python_history():\n    return \"Python 1.0 released in 1991, with Python 2 sunset in 2020; Python 3 adoption accelerated post-2014, now leading in ML/data science.\"\n```",
+      "expected": "Python's history features two major transitions: the Python 2-to-3 migration (breaking changes overcame initial community resistance to reach 95% adoption by 2020) and its rise to dominance in ML/data science through its ecosystem of scientific libraries.",
+      "time_s": 10.44429349899292,
+      "tokens": 50,
+      "max_tokens": 250
+    },
+    {
+      "idx": 58,
+      "category": "summarization",
+      "mode": "llm",
+      "answer": "The EU AI Act, coming into full effect in June 2025, aims to establish a comprehensive legal framework for artificial intelligence, with strict requirements for high-risk systems that include conformity assessments, human oversight, and transparency documentation, alongside substantial penalties for non-compliance. Critics, however, argue that the Act's heavy regulatory burden, estimated at \u20ac25M+ per high-risk system, could hinder innovation, deter startups, and lead to a migration of AI talent to countries with less stringent regulations. Supporters believe it will create a safer and more transparent AI landscape within the EU.",
+      "expected": "The EU AI Act, now in full effect, establishes comprehensive AI regulation with strict requirements for high-risk systems and 7% turnover penalties. Critics argue compliance costs (\u20ac25M+ per system) will crush European startups and drive talent abroad, while supporters see it as necessary consumer protection that creates trust in AI. The core tension is between safety regulation and innovation competitiveness.",
+      "time_s": 18.586913347244263,
+      "tokens": 116,
+      "max_tokens": 120
+    },
+    {
+      "idx": 59,
+      "category": "summarization",
+      "mode": "llm",
+      "answer": "MIT researchers have created a new battery electrolyte that allows electric vehicles to charge in under 10 minutes and withstands temperatures from -20\u00b0C to 60\u00b0C, preventing dendrite formation on the anode surface. However, the high cost of the required high-purity fluorine compounds, priced at $380/kg, makes this electrolyte 8 times more expensive than traditional options.",
+      "expected": "MIT researchers developed a fluorinated electrolyte enabling sub-10-minute EV charging with superior temperature range and dendrite suppression that could solve battery fire risks. However, the high-purity fluorine compounds cost $380/kg (8x conventional electrolytes), creating a significant economic barrier to commercial deployment.",
+      "time_s": 13.997159481048584,
+      "tokens": 75,
+      "max_tokens": 132
+    }
+  ]
+}

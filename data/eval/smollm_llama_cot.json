@@ -1,0 +1,1098 @@
+{
+  "factual": {
+    "smollm-cot-reason": {
+      "model": "smollm2-1.7b",
+      "prompt": "Think step by step. What is the exact answer? Use precise names and numbers.",
+      "correct": 1,
+      "total": 5,
+      "accuracy": 20.0,
+      "details": [
+        {
+          "expected": "New Orleans",
+          "got": "In the Slaughterhouse Cases, the butchers in the slaughterhouse lived in New York City. Specifically, they resided in Manhattan, which was the city where the slaughterhouses were located.",
+          "correct": false
+        },
+        {
+          "expected": "a biocidal effect of metals",
+          "got": "the effect of a few substances having a greater effect than a large number of substances.",
+          "correct": false
+        },
+        {
+          "expected": "commercial at",
+          "got": "The name for the at symbol is \"@\".",
+          "correct": false
+        },
+        {
+          "expected": "Jacob Tremblay",
+          "got": "In the movie \"The Wonder,\" the character Auggie is portrayed by the actor Jacob Lofland.",
+          "correct": false
+        },
+        {
+          "expected": "Michael Moriarty",
+          "got": "The actor who played Ben Stone on Law and Order is Michael Moriarty.",
+          "correct": true
+        }
+      ]
+    },
+    "smollm-short-answer": {
+      "model": "smollm2-1.7b",
+      "prompt": "Answer in 1-5 words. Exact fact only.",
+      "correct": 0,
+      "total": 5,
+      "accuracy": 0.0,
+      "details": [
+        {
+          "expected": "New Orleans",
+          "got": "New York",
+          "correct": false
+        },
+        {
+          "expected": "a biocidal effect of metals",
+          "got": "the effect of certain chemicals on microorganisms.",
+          "correct": false
+        },
+        {
+          "expected": "commercial at",
+          "got": "exclamation mark",
+          "correct": false
+        },
+        {
+          "expected": "Jacob Tremblay",
+          "got": "Jaden Smith",
+          "correct": false
+        },
+        {
+          "expected": "Michael Moriarty",
+          "got": "Kevin Dillon",
+          "correct": false
+        }
+      ]
+    },
+    "smollm-qa-format": {
+      "model": "smollm2-1.7b",
+      "prompt": "Q: What is the answer? A:",
+      "correct": 2,
+      "total": 5,
+      "accuracy": 40.0,
+      "details": [
+        {
+          "expected": "New Orleans",
+          "got": "The Butcher's in the Slaughterhouse Cases (1873) were a series of Supreme Court cases that dealt with the issue of federal power over states. The cases involved the constitutionality of the federal government's power to regulate commerce between states, particularly in the context of the meat industry.\n\nThe",
+          "correct": false
+        },
+        {
+          "expected": "a biocidal effect of metals",
+          "got": "the oligodynamic effect is a phenomenon that describes the ability of certain substances to kill or inhibit the growth of microorganisms, particularly bacteria and fungi, at low concentrations.",
+          "correct": false
+        },
+        {
+          "expected": "commercial at",
+          "got": "The at symbol, also known as the \"at sign\" or \"commercial at,\" is represented by the symbol \"@\". It is commonly used to indicate the start of an email address or a website.",
+          "correct": true
+        },
+        {
+          "expected": "Jacob Tremblay",
+          "got": "In the movie \"The Wonder,\" the character of Auggie is portrayed by the actor Jacob Lofland.",
+          "correct": false
+        },
+        {
+          "expected": "Michael Moriarty",
+          "got": "The actor who played Ben Stone on Law & Order is Michael Moriarty.",
+          "correct": true
+        }
+      ]
+    },
+    "smollm-direct-fact": {
+      "model": "smollm2-1.7b",
+      "prompt": "Give the precise fact. Name, number, or date.",
+      "correct": 2,
+      "total": 5,
+      "accuracy": 40.0,
+      "details": [
+        {
+          "expected": "New Orleans",
+          "got": "The Butchers in the Slaughterhouse Cases (1873) were a group of meatpackers and slaughterhouse workers who challenged the constitutionality of the federal antitrust laws in the United States. They lived in New York City, specifically in the Manhattan borough.",
+          "correct": false
+        },
+        {
+          "expected": "a biocidal effect of metals",
+          "got": "the effect of a few molecules or substances to have a significant impact on a larger population or system.",
+          "correct": false
+        },
+        {
+          "expected": "commercial at",
+          "got": "The at symbol, also known as the \"at sign\" or \"commercial at,\" is commonly referred to as \"@\".",
+          "correct": true
+        },
+        {
+          "expected": "Jacob Tremblay",
+          "got": "The actor who plays Auggie in the movie \"The Wonder\" is Jacob Lofland.",
+          "correct": false
+        },
+        {
+          "expected": "Michael Moriarty",
+          "got": "The actor who played Ben Stone on Law & Order was Michael Moriarty.",
+          "correct": true
+        }
+      ]
+    },
+    "llama-cot-reason": {
+      "model": "llama-3.2-1b",
+      "prompt": "Think step by step. What is the exact answer? Use precise names and numbers.",
+      "correct": 3,
+      "total": 5,
+      "accuracy": 60.0,
+      "details": [
+        {
+          "expected": "New Orleans",
+          "got": "The Slaughterhouse Cases, also known as Ex parte Merryman, were a landmark U.S. Supreme Court case decided in 1873. The cases involved a dispute over the regulation of slaughterhouses in the state of Illinois.\n\nThe plaintiffs in the case were the owners of a slaughterhouse in Chicago, who challenged the constitutionality of a law that regulated the sale of meat in the state. The defendants were the state of Illinois and the city of Chicago.\n\nThe plaintiffs lived in Chicago, Illinois.\n\nThe case ultimately turned on the issue of whether the state had the power to regulate interstate commerce, and whether the sale of meat was subject to",
+          "correct": false
+        },
+        {
+          "expected": "a biocidal effect of metals",
+          "got": "The oligodynamic effect is a phenomenon that describes the antimicrobial or antifungal activity of certain metals, particularly heavy metals, against microorganisms such as bacteria, fungi, and viruses.\n\nMore specifically, the oligodynamic effect is characterized by the ability of certain metals, such as copper, silver, and gold, to inhibit the growth or kill microorganisms when they come into contact with them.\n\nThe exact mechanism of the oligodynamic effect is not fully understood, but it is thought to involve the interaction of the metal ions with the cell membranes of microorganisms, disrupting their cell structure and function, ultimately leading to their death.\n\nSome examples of olig",
+          "correct": true
+        },
+        {
+          "expected": "commercial at",
+          "got": "The at symbol (\u00b7) is called an \"Asterisk\" or \"Astragalus\" in some contexts. However, in most cases, it's referred to as an \"Asterisk\" or simply \"At\".",
+          "correct": false
+        },
+        {
+          "expected": "Jacob Tremblay",
+          "got": "In the 2017 movie \"The Wonder\", the role of Auggie Pullman is played by actor Jacob Tremblay.",
+          "correct": true
+        },
+        {
+          "expected": "Michael Moriarty",
+          "got": "The actor who played Ben Stone on Law & Order was Michael Moriarty.",
+          "correct": true
+        }
+      ]
+    },
+    "llama-short-answer": {
+      "model": "llama-3.2-1b",
+      "prompt": "Answer in 1-5 words. Exact fact only.",
+      "correct": 1,
+      "total": 5,
+      "accuracy": 20.0,
+      "details": [
+        {
+          "expected": "New Orleans",
+          "got": "Unknown.",
+          "correct": false
+        },
+        {
+          "expected": "a biocidal effect of metals",
+          "got": "the antimicrobial activity of metals.",
+          "correct": false
+        },
+        {
+          "expected": "commercial at",
+          "got": "Yes, the at symbol is called the \"Asterisk\"",
+          "correct": false
+        },
+        {
+          "expected": "Jacob Tremblay",
+          "got": "Jacob Tremblay plays Auggie.",
+          "correct": true
+        },
+        {
+          "expected": "Michael Moriarty",
+          "got": "Chris Noth played Ben Stone.",
+          "correct": false
+        }
+      ]
+    },
+    "llama-qa-format": {
+      "model": "llama-3.2-1b",
+      "prompt": "Q: What is the answer? A:",
+      "correct": 3,
+      "total": 5,
+      "accuracy": 60.0,
+      "details": [
+        {
+          "expected": "New Orleans",
+          "got": "I'm sorry I can't provide information on the personal lives of the victims of the Slaughterhouse Cases.",
+          "correct": false
+        },
+        {
+          "expected": "a biocidal effect of metals",
+          "got": "The oligodynamic effect is a phenomenon that describes the ability of certain metals, such as copper, to kill or inhibit the growth of microorganisms, including bacteria and fungi, when they come into contact with them. This effect is often seen in water, soil, and other environments where these metals are present in low concentrations.",
+          "correct": true
+        },
+        {
+          "expected": "commercial at",
+          "got": "Yes, the \"at symbol\" is often referred to as the \"cross product\" or \"cross\" symbol, but it's also commonly known as the \"asterisk\" or \"at sign\".",
+          "correct": false
+        },
+        {
+          "expected": "Jacob Tremblay",
+          "got": "In the 2017 movie \"The Wonder\", the role of Auggie Pullman is played by Jacob Tremblay.",
+          "correct": true
+        },
+        {
+          "expected": "Michael Moriarty",
+          "got": "The actor who played Ben Stone on Law & Order was Michael Moriarty.",
+          "correct": true
+        }
+      ]
+    },
+    "llama-direct-fact": {
+      "model": "llama-3.2-1b",
+      "prompt": "Give the precise fact. Name, number, or date.",
+      "correct": 4,
+      "total": 5,
+      "accuracy": 80.0,
+      "details": [
+        {
+          "expected": "New Orleans",
+          "got": "The Slaughterhouse Cases, a landmark U.S. Supreme Court case, involved the owners of two slaughterhouses in New Orleans. The facts state that the owners of the two slaughterhouses, John C. Brown and John H. Stuart, lived in New Orleans.",
+          "correct": true
+        },
+        {
+          "expected": "a biocidal effect of metals",
+          "got": "The oligodynamic effect is a phenomenon that describes the ability of certain metals, such as copper, to kill or inhibit the growth of microorganisms, including bacteria and fungi, at very low concentrations.",
+          "correct": true
+        },
+        {
+          "expected": "commercial at",
+          "got": "Yes, the at symbol (\u00b7) is called the \"Asterism\" or \"Astragalus\".",
+          "correct": false
+        },
+        {
+          "expected": "Jacob Tremblay",
+          "got": "In the 2023 movie \"The Wonder\", the role of Auggie Pullman is played by Jacob Tremblay.",
+          "correct": true
+        },
+        {
+          "expected": "Michael Moriarty",
+          "got": "The actor who played Ben Stone on Law & Order was Michael Moriarty.",
+          "correct": true
+        }
+      ]
+    }
+  },
+  "logic": {
+    "smollm-cot-premises": {
+      "model": "smollm2-1.7b",
+      "prompt": "Let's reason step by step. Consider each premise carefully. What necessarily follows? Answer:",
+      "correct": 0,
+      "total": 5,
+      "accuracy": 0.0,
+      "details": [
+        {
+          "expected": "1. There were no reports of missiles shooting down the passenger plane, and the passenger plane did not malfunction.",
+          "got": "To get the conclusion that the plane was hijacked by a terrorist organization, you should add the premise that the passenger plane is not shot down by a missile.",
+          "correct": false
+        },
+        {
+          "expected": "0. Unless it is a university teacher, it is impossible to have a doctorate from a prestigious school and have more than one year of research experience in an overseas research institution.",
+          "got": "A: The statement can guarantee the correctness of the above statement if Wang Gang is indeed a university teacher.",
+          "correct": false
+        },
+        {
+          "expected": "3. In the past five years, the amount of food purchased by each household in City W has not changed.",
+          "got": "A: The average income of households in City W has increased in the past two years.",
+          "correct": false
+        },
+        {
+          "expected": "{'header': ['House', 'Name', 'Food'], 'rows': [['___', '___', '___'], ['___', '___', '___']]}",
+          "got": "To solve this problem, we need to find the unique attributes for each person. We have the following information:\n\n- There are 2 houses, numbered 1 to 2 from left to right.\n- Each house is occupied by a different person.\n- Each person has a unique name: `Arnold`, `Eric`.\n- Everyone has something unique for each of the following characteristics:\n  - Color of their house: `red`, `blue`\n  - Pet: `cat`, `dog`\n  - Favorite food: `pizza`, `sushi`\n  - Favorite drink: `coffee`, `soda`\n  - Favorite movie: `Star Wars`, `The Godfather`\n\nTo find the unique attributes for each person, we can start by looking at the characteristics that are unique to each person.\n\n- Arnold has a unique name, so he has a unique attribute for his name.\n- Eric has a unique name, so he also has a unique attribute for his name.\n\nNow, let's look at the characteristics that are not unique to each person. We can find the common attributes by looking at the characteristics that are shared by both Arnold and Eric.\n\n- Both",
+          "correct": false
+        },
+        {
+          "expected": "3. All heroes can stand the test, so those who cannot stand the test are not heroes.",
+          "got": "A: The teacher said that all the students in our class have passed the examination. Therefore, none of the students in our class have passed.\n\nThis is most similar to the above reasoning because it also involves a universal affirmation (all students have passed) and a universal negation (none have passed). The conclusion drawn from these premises is also a universal negation, which is the same structure as the original argument.",
+          "correct": false
+        }
+      ]
+    },
+    "smollm-eliminate": {
+      "model": "smollm2-1.7b",
+      "prompt": "Eliminate impossible cases one by one. What must be true? Answer:",
+      "correct": 0,
+      "total": 5,
+      "accuracy": 0.0,
+      "details": [
+        {
+          "expected": "1. There were no reports of missiles shooting down the passenger plane, and the passenger plane did not malfunction.",
+          "got": "A: If the passenger plane is not shot down by a missile",
+          "correct": false
+        },
+        {
+          "expected": "0. Unless it is a university teacher, it is impossible to have a doctorate from a prestigious school and have more than one year of research experience in an overseas research institution.",
+          "got": "A: Wang Gang must be a university teacher.",
+          "correct": false
+        },
+        {
+          "expected": "3. In the past five years, the amount of food purchased by each household in City W has not changed.",
+          "got": "A: The average income of households in City W has increased in the past two years.",
+          "correct": false
+        },
+        {
+          "expected": "{'header': ['House', 'Name', 'Food'], 'rows': [['___', '___', '___'], ['___', '___', '___']]}",
+          "got": "house:\n- Each person has a unique color: `red`, `blue`, `green`, `yellow`, `purple`, `orange`, `pink`, `black`, `white`, `brown`\n- Each person has a unique pet: `cat`, `dog`, `bird`, `fish`, `snake`, `lizard`, `turtle`, `hamster`, `guinea pig`, `chinchilla`\n- Each person has a unique favorite food: `apple`, `banana`, `cherry`, `date`, `elderberry`, `fig`, `grape`, `honeydew`, `kiwi`, `lemon`\n- Each person has a unique favorite drink: `coffee`, `tea`, `milk`, `water`, `juice`, `soda`, `pop`, `cocoa`, `lemonade`, `butter`\n- Each person has a unique favorite movie: `The Sound of Music`, `Mary Poppins`, `The Wizard of Oz`, `Mary Shelley's Frankenstein`, `The Ten Commandments`, `The Sound of Music`, `Mary Poppins`, `The Wizard of Oz`, `Mary Shelley's Frankenstein`, `The Ten Commandments`",
+          "correct": false
+        },
+        {
+          "expected": "3. All heroes can stand the test, so those who cannot stand the test are not heroes.",
+          "got": "A: The teacher Zhang said that all the students in our class have passed the examination. Therefore, none of the students in our class have passed.\n\nA: The teacher Zhang said that all the students in our class have passed the examination. Therefore, none of the students in our class have passed.\n\nA: The teacher Zhang said that all the students in our class have passed the examination. Therefore, none of the students in our class have passed.\n\nA: The teacher Zhang said that all the students in our class have passed the examination. Therefore, none of the students in our class have passed.\n\nA: The teacher Zhang said that all the students in our class have passed the examination. Therefore, none of the students in our class have passed.\n\nA: The teacher Zhang said that all the students in our class have passed the examination. Therefore, none of the students in our class have passed.\n\nA: The teacher Zhang said that all the students in our class have passed the examination. Therefore, none of the students in our class have passed.\n\nA: The teacher Zhang said that all the students in our class have passed the examination. Therefore, none of the students in our class have passed.",
+          "correct": false
+        }
+      ]
+    },
+    "smollm-table-reason": {
+      "model": "smollm2-1.7b",
+      "prompt": "Use a table to track possibilities. Rule out contradictions. Answer:",
+      "correct": 0,
+      "total": 5,
+      "accuracy": 0.0,
+      "details": [
+        {
+          "expected": "1. There were no reports of missiles shooting down the passenger plane, and the passenger plane did not malfunction.",
+          "got": "| Conclusion | Additional Information |\n|-------------|-----------------------|\n| The plane was hijacked by a terrorist organization | If the plane was hijacked by a terrorist organization, it will be announced to the media. |",
+          "correct": false
+        },
+        {
+          "expected": "0. Unless it is a university teacher, it is impossible to have a doctorate from a prestigious school and have more than one year of research experience in an overseas research institution.",
+          "got": "| Statement | Guarantee |\n|-----------|----------|\n| Wang Gang is a university teacher | Yes |\n| Wang Gang has a doctorate from a prestigious school | Yes |\n| Wang Gang has more than one year of research experience in a research institution overseas | Yes |\n\n| Statement | Guarantee |\n|-----------|----------|\n| Wang Gang is a university teacher | Yes |\n| Wang Gang has a doctorate from a prestigious school | Yes |\n| Wang Gang has more than one year of research experience in a research institution overseas | Yes |\n\n| Statement | Guarantee |\n|-----------|----------|\n| Wang Gang is a university teacher | Yes |\n| Wang Gang has a doctorate from a prestigious school | Yes |\n| Wang Gang has more than one year of research experience in a research institution overseas | Yes |\n\n| Statement | Guarantee |\n|-----------|----------|\n| Wang Gang is a university teacher | Yes |\n| Wang Gang has a doctorate from a prestigious school | Yes |\n| Wang Gang has more than one year of research experience in a research institution overseas | Yes |\n\n| Statement | Guarantee |\n|-----------|----------|\n| Wang",
+          "correct": false
+        },
+        {
+          "expected": "3. In the past five years, the amount of food purchased by each household in City W has not changed.",
+          "got": "A: The average income of households in City W has increased in the past two years.",
+          "correct": false
+        },
+        {
+          "expected": "{'header': ['House', 'Name', 'Food'], 'rows': [['___', '___', '___'], ['___', '___', '___']]}",
+          "got": "| House | Person | Attribute |\n|-------|--------|-----------|\n| 1      | Arnold | Cat      |\n| 2      | Eric   | Dog       |\n\nSolution:\n\n| House | Person | Attribute |\n|-------|--------|-----------|\n| 1      | Arnold | Cat      |\n| 2      | Eric   | Dog       |",
+          "correct": false
+        },
+        {
+          "expected": "3. All heroes can stand the test, so those who cannot stand the test are not heroes.",
+          "got": "A: The teacher Zhang said that all the students in our class have passed the examination. Therefore, none of the students in our class have passed.\n\nA: The teacher Zhang said that all the students in our class have passed the examination. Therefore, none of the students in our class have passed.\n\nA: The teacher Zhang said that all the students in our class have passed the examination. Therefore, none of the students in our class have passed.\n\nA: The teacher Zhang said that all the students in our class have passed the examination. Therefore, none of the students in our class have passed.\n\nA: The teacher Zhang said that all the students in our class have passed the examination. Therefore, none of the students in our class have passed.\n\nA: The teacher Zhang said that all the students in our class have passed the examination. Therefore, none of the students in our class have passed.\n\nA: The teacher Zhang said that all the students in our class have passed the examination. Therefore, none of the students in our class have passed.\n\nA: The teacher Zhang said that all the students in our class have passed the examination. Therefore, none of the students in our class have passed.",
+          "correct": false
+        }
+      ]
+    },
+    "smollm-terse-conclusion": {
+      "model": "smollm2-1.7b",
+      "prompt": "What conclusion follows? One word or short phrase. Answer:",
+      "correct": 0,
+      "total": 5,
+      "accuracy": 0.0,
+      "details": [
+        {
+          "expected": "1. There were no reports of missiles shooting down the passenger plane, and the passenger plane did not malfunction.",
+          "got": "news",
+          "correct": false
+        },
+        {
+          "expected": "0. Unless it is a university teacher, it is impossible to have a doctorate from a prestigious school and have more than one year of research experience in an overseas research institution.",
+          "got": "Conclusion",
+          "correct": false
+        },
+        {
+          "expected": "3. In the past five years, the amount of food purchased by each household in City W has not changed.",
+          "got": "A: Food prices in City W have increased by an average of 25%",
+          "correct": false
+        },
+        {
+          "expected": "{'header': ['House', 'Name', 'Food'], 'rows': [['___', '___', '___'], ['___', '___', '___']]}",
+          "got": "green\n\nReasoning:\n- There are 2 houses, numbered 1 to 2 from left to right.\n- Each house is occupied by a different person.\n- Each person has a unique name: `Arnold`, `Eric`.\n- Everyone has something unique for each of the following",
+          "correct": false
+        },
+        {
+          "expected": "3. All heroes can stand the test, so those who cannot stand the test are not heroes.",
+          "got": "conclusion",
+          "correct": false
+        }
+      ]
+    },
+    "llama-cot-premises": {
+      "model": "llama-3.2-1b",
+      "prompt": "Let's reason step by step. Consider each premise carefully. What necessarily follows? Answer:",
+      "correct": 0,
+      "total": 5,
+      "accuracy": 0.0,
+      "details": [
+        {
+          "expected": "1. There were no reports of missiles shooting down the passenger plane, and the passenger plane did not malfunction.",
+          "got": "To get the conclusion that the plane was hijacked by a terrorist organization, the following should be added:\n\nA: Malaysia Airlines' passenger plane did not malfunction and was not hijacked by terrorist organizations.\n\nThis is because the original premise states that the plane was shot down by a missile, which is a necessary condition for the conclusion that it was hijacked by a terrorist organization. If the plane was not shot down by a missile, then it would not have been hijacked by a terrorist organization.",
+          "correct": false
+        },
+        {
+          "expected": "0. Unless it is a university teacher, it is impossible to have a doctorate from a prestigious school and have more than one year of research experience in an overseas research institution.",
+          "got": "To determine if the statement is correct, we need to analyze the information provided.\n\n1. Wang Gang has a doctorate from a prestigious school.\n2. He has more than one year of research experience in a research institution overseas.\n\nGiven these two premises, we can conclude that Wang Gang is indeed a university teacher, as he has the necessary qualifications and experience to be a teacher.\n\nHowever, the statement \"Wang Gang must be a university teacher\" is not necessarily true. There could be other reasons why Wang Gang is a university teacher, such as:\n\n- He is a university professor, but not a teacher.\n- He is a university researcher, but not a teacher.\n- He is a university administrator, but not a teacher.\n\nTherefore, the correct answer is that the statement \"Wang Gang must be a university teacher\" is not necessarily true, and the following statement can guarantee the correctness of the above statement: \"Wang Gang is a university teacher.\"",
+          "correct": false
+        },
+        {
+          "expected": "3. In the past five years, the amount of food purchased by each household in City W has not changed.",
+          "got": "To determine the hypothesis, let's analyze the given information step by step:\n\n1. Food prices in City W have increased by an average of 25% in the past five years.\n2. Residents' food purchases accounted for only about 8% of the city's monthly household income.\n\nFrom the given information, we can infer that the average income of households in City W has increased due to the higher food prices.\n\nNow, let's consider the possible hypotheses:\n\nHypothesis 1: The average income of households in City W has increased due to the higher food prices.\n\nHypothesis 2: The average income of households in City W has increased due to the higher food prices and residents' food purchases.\n\nSince the average income of households in City W has increased in the past two years, we can conclude that the correct hypothesis is:\n\nHypothesis 1: The average income of households in City W has increased due to the higher food prices.\n\nThe other option, Hypothesis 2, is not supported by the given information.",
+          "correct": false
+        },
+        {
+          "expected": "{'header': ['House', 'Name', 'Food'], 'rows': [['___', '___', '___'], ['___', '___', '___']]}",
+          "got": "Let's break down the problem step by step.\n\nWe have 2 houses, numbered 1 to 2 from left to right. Each house has a unique attribute for each of the following characteristics:\n\n1. Each person has a unique name: `Arnold`, `Eric`\n2. Everyone has something unique for `l`\n\nWe are asked to find what necessarily follows.\n\nSince each house has a unique attribute for each characteristic, we can conclude that each house has a unique attribute for each of the following characteristics:\n\n- Each person has a unique name: `Arnold`, `Eric`\n- Everyone has something unique for `l`\n\nThis means that each house has a unique attribute for each of the following characteristics:\n\n- Each person has a unique name: `Arnold`, `Eric`\n- Everyone has something unique for `l`\n\nSince each house has a unique attribute for each of the following characteristics, we can conclude that each house has a unique attribute for each of the following characteristics:\n\n- Each person has a unique name: `Arnold`, `Eric`\n- Everyone has something unique for `l`\n\nNow, we need to find what necessarily follows.\n\nSince each house has a unique attribute for each of the following characteristics, we can conclude that each house has a unique attribute",
+          "correct": false
+        },
+        {
+          "expected": "3. All heroes can stand the test, so those who cannot stand the test are not heroes.",
+          "got": "Let's analyze the reasoning step by step:\n\n1. Teacher Zhang said: This premise is about the statement made by Teacher Zhang.\n2. All the students in our class have passed the examination: This premise is about the condition that all the students in the class have passed the examination.\n\nThe conclusion drawn is: Therefore, none of the students in our class have passed.\n\nThe reasoning is similar to the following:\n\nAll the students in our class have passed the examination: This premise is about the condition that all the students in the class have passed the examination.\n\nTherefore, none of the students in our class have passed: This conclusion is drawn based on the premise that all the students in the class have passed the examination.\n\nSo, the most similar reasoning is:\n\nAll the students in our class have passed the examination: Therefore, none of the students in our class have passed.\n\nThis is an example of a syllogism, a logical argument that follows a specific structure.",
+          "correct": false
+        }
+      ]
+    },
+    "llama-eliminate": {
+      "model": "llama-3.2-1b",
+      "prompt": "Eliminate impossible cases one by one. What must be true? Answer:",
+      "correct": 1,
+      "total": 5,
+      "accuracy": 20.0,
+      "details": [
+        {
+          "expected": "1. There were no reports of missiles shooting down the passenger plane, and the passenger plane did not malfunction.",
+          "got": "To get the conclusion that the plane was hijacked by a terrorist organization, the following should be added:\n\n- The plane was shot down by a missile.\n\nThis is because the original statement says that the plane was shot down by a missile, which implies that it was not hijacked by a terrorist organization. By adding the additional condition that the plane was shot down by a missile, we can conclude that it was indeed hijacked by a terrorist organization.",
+          "correct": false
+        },
+        {
+          "expected": "0. Unless it is a university teacher, it is impossible to have a doctorate from a prestigious school and have more than one year of research experience in an overseas research institution.",
+          "got": "To determine if Wang Gang is a university teacher, we need to analyze the given information:\n\n1. He has a doctorate from a prestigious school.\n2. He has more than one year of research experience in a research institution overseas.\n\nSince he has a doctorate from a prestigious school, it is possible that he is a university teacher. However, the fact that he has more than one year of research experience overseas does not guarantee that he is a university teacher.\n\nTo guarantee the correctness of the statement, we need to eliminate impossible cases one by one. Let's analyze the options:\n\nA. He is a university teacher.\nB. He is not a university teacher.\n\nIf Wang Gang is a university teacher, then he must have a doctorate from a prestigious school and more than one year of research experience overseas. However, if he is not a university teacher, then he must not have a doctorate from a prestigious school or more than one year of research experience overseas.\n\nSince we cannot eliminate the possibility of Wang Gang being a university teacher, we can conclude that the statement is not sufficient to guarantee the correctness of the above statement.\n\nThe correct answer is B. He is not a university teacher.",
+          "correct": true
+        },
+        {
+          "expected": "3. In the past five years, the amount of food purchased by each household in City W has not changed.",
+          "got": "To find the hypothesis, we need to analyze the given information and eliminate impossible cases one by one.\n\nLet's assume the average income of households in City W is I (in dollars). \n\nGiven that the average food price in City W increased by an average of 25% in the past five years, the new average food price can be calculated as:\n\nNew average food price = Old average food price + (25% of Old average food price)\n= I + (0.25I)\n= 1.25I\n\nSince food prices increased by 25%, the residents' food purchases accounted for only about 8% of the city's monthly household income. This means that the residents' food purchases are relatively low compared to the overall household income.\n\nLet's assume the residents' food purchases are x (in dollars). Then, the residents' food purchases are approximately 8% of the city's monthly household income, which is:\n\nx \u2248 0.08I\n\nNow, we can set up an equation to represent the situation:\n\nx \u2248 0.08I\nx \u2248 0.08(1.25I)\nx \u2248 0.1I\n\nSince x is approximately 8% of the city's monthly household income, we can set",
+          "correct": false
+        },
+        {
+          "expected": "{'header': ['House', 'Name', 'Food'], 'rows': [['___', '___', '___'], ['___', '___', '___']]}",
+          "got": "To solve this problem, let's analyze the given information:\n\n1. There are 2 houses.\n2. Each house is occupied by a different person.\n3. Each house has a unique attribute for each of the following characteristics:\n   - Each person has a unique name: `Arnold`, `Eric`\n   - Everyone has something unique for `age`.\n\nFrom point 3, we know that each house has a unique attribute for each of the following characteristics:\n\n- House 1: `name`, `age`\n- House 2: `name`, `age`\n\nSince each person has a unique name, we can conclude that:\n\n- House 1: `Arnold`, `Eric`\n- House 2: `John`, `Jane`\n\nNow, let's consider the unique attributes for each characteristic:\n\n- House 1: `name`, `age`\n  - `name`: `Arnold`, `Eric`\n  - `age`: `20`, `30`\n\n- House 2: `name`, `age`\n  - `name`: `John`, `Jane`\n  - `age`: `25`, `35`\n\nSince each house has a unique attribute for each of the following characteristics, we can conclude that:\n\n- House 1: `Arn",
+          "correct": false
+        },
+        {
+          "expected": "3. All heroes can stand the test, so those who cannot stand the test are not heroes.",
+          "got": "To find the most similar reasoning, let's analyze the given statement: \"All the students in our class have passed the examination.\"\n\nThis statement implies that if any student in the class has not passed, then the entire class has not passed.\n\nNow, let's consider the options:\n\nA. If A has not passed, then B has not passed.\nB. If C has not passed, then D has not passed.\nC. If E has not passed, then F has not passed.\nD. If G has not passed, then H has not passed.\n\nThe correct answer is A. If A has not passed, then B has not passed.\n\nThis is because if A has not passed, it means that all the students in the class have passed, which is the opposite of what the statement says. Therefore, if A has not passed, then B must have passed, making the statement true.",
+          "correct": false
+        }
+      ]
+    },
+    "llama-table-reason": {
+      "model": "llama-3.2-1b",
+      "prompt": "Use a table to track possibilities. Rule out contradictions. Answer:",
+      "correct": 0,
+      "total": 5,
+      "accuracy": 0.0,
+      "details": [
+        {
+          "expected": "1. There were no reports of missiles shooting down the passenger plane, and the passenger plane did not malfunction.",
+          "got": "To get the conclusion that the plane was hijacked by a terrorist organization, the following should be added:\n\n- The plane was shot down by a missile.\n\nThis is because the initial statement that the plane was shot down by a missile implies that it was not hijacked by a terrorist organization, as hijacking is typically associated with the capture of a plane by a group or individual. By adding the condition that the plane was shot down by a missile, we can conclude that it was not hijacked, which in turn supports the initial statement that it was not hijacked by a terrorist organization.",
+          "correct": false
+        },
+        {
+          "expected": "0. Unless it is a university teacher, it is impossible to have a doctorate from a prestigious school and have more than one year of research experience in an overseas research institution.",
+          "got": "To determine the correctness of the statement, we need to analyze the information provided.\n\n|  | Wang Gang has a doctorate from a prestigious school. | \n| --- | --- |\n|  | He has more than one year of research experience overseas. |\n\nSince Wang Gang has a doctorate from a prestigious school, it is possible that he has a doctorate from a school that is not well-known or reputable. Therefore, we cannot guarantee the correctness of the statement.\n\nHowever, if Wang Gang has a doctorate from a well-known and reputable school, and he has more than one year of research experience overseas, then the statement is likely to be correct.\n\n|  | Wang Gang has a doctorate from a prestigious school. | \n| --- | --- |\n|  | He has more than one year of research experience overseas. |\n\nTo guarantee the correctness of the statement, we need to consider the following possibilities:\n\n1. Wang Gang has a doctorate from a well-known and reputable school.\n2. Wang Gang has a doctorate from a prestigious school, but he has not had more than one year of research experience overseas.\n\nSince we cannot rule out contradictions, we cannot guarantee the correctness of the statement. However, we can conclude that:\n\n- If Wang Gang has",
+          "correct": false
+        },
+        {
+          "expected": "3. In the past five years, the amount of food purchased by each household in City W has not changed.",
+          "got": "To determine the hypothesis, let's analyze the information provided:\n\n1. Food prices in City W have increased by an average of 25% in the past five years.\n2. Residents' food purchases accounted for only about 8% of the city's monthly household income.\n\nBased on the information, we can infer that the average income of households in City W has increased due to the increase in food prices.\n\nNow, let's consider the possible hypotheses:\n\n| Hypothesis | Description |\n| --- | --- |\n| H1: Food prices in City W have increased by an average of 25% in the past five years. | This is the statement we are given. |\n| H2: Residents' food purchases have increased by an average of 25% in the past five years. | This is not supported by the information, as residents' food purchases accounted for only about 8% of the city's monthly household income. |\n| H3: The average income of households in City W has increased by an average of 25% in the past two years. | This is not supported by the information, as the average income of households in City W has increased due to the increase in food prices, not due to an increase in average income. |\n|",
+          "correct": false
+        },
+        {
+          "expected": "{'header': ['House', 'Name', 'Food'], 'rows': [['___', '___', '___'], ['___', '___', '___']]}",
+          "got": "To solve this problem, we'll break it down into steps. We'll use a table to track possibilities.\n\n| **Attribute** | **Possible Values** |\n| --- | --- |\n| House 1 | 1, 2 |\n| House 2 | 1, 2 |\n\nSince each house has a unique attribute for each of the following characteristics, we can list the possible values for each attribute:\n\n| **Attribute** | **Possible Values** |\n| --- | --- |\n| Person 1 | Arnold, Eric |\n| Person 2 | Arnold, Eric |\n| Person 3 | Arnold, Eric |\n| Person 4 | Arnold, Eric |\n\nNow, let's consider the possibilities for each attribute:\n\n| **Attribute** | **Possible Values** |\n| --- | --- |\n| House 1 | 1, 2 |\n| House 2 | 1, 2 |\n\nWe can start by considering the possibilities for House 1:\n\n| **Person 1** | **Person 2** |\n| --- | --- |\n| Arnold | Eric |\n| Eric | Arnold |\n\nNow, let's consider the possibilities for House 2:\n\n| **Person 1** | **Person 2** |\n| --- | --- |\n| Arnold | Eric",
+          "correct": false
+        },
+        {
+          "expected": "3. All heroes can stand the test, so those who cannot stand the test are not heroes.",
+          "got": "To find the most similar reasoning, let's analyze the given statement and the options:\n\nGiven statement: All the students in our class have passed the examination.\n\nOption A: If A then B\n- If all students passed, then all students have passed.\n\nOption B: If not B then not A\n- If not all students passed, then not all students have passed.\n\nOption C: If A then not B\n- If all students passed, then not all students have passed.\n\nOption D: If B then not A\n- If not all students passed, then all students have passed.\n\nNow, let's compare the given statement with the options:\n\n- Option A is the most similar to the given statement because it also implies that if all students passed, then all students have passed.\n\nThe other options do not have the same implication as the given statement. Option B implies that if not all students passed, then all students have passed, which is not the same as the given statement.\n\nTherefore, the most similar reasoning is Option A: If A then B.",
+          "correct": false
+        }
+      ]
+    },
+    "llama-terse-conclusion": {
+      "model": "llama-3.2-1b",
+      "prompt": "What conclusion follows? One word or short phrase. Answer:",
+      "correct": 0,
+      "total": 5,
+      "accuracy": 0.0,
+      "details": [
+        {
+          "expected": "1. There were no reports of missiles shooting down the passenger plane, and the passenger plane did not malfunction.",
+          "got": "To get the conclusion that the plane was hijacked by a terrorist organization, the following should be added:\n\n\"The plane was shot down by a missile.\"\n\nThis would lead to the conclusion that the plane was hijacked by a terrorist organization, as the satellite would discover that the plane was shot down by a missile, which is",
+          "correct": false
+        },
+        {
+          "expected": "0. Unless it is a university teacher, it is impossible to have a doctorate from a prestigious school and have more than one year of research experience in an overseas research institution.",
+          "got": "The correct answer is: A Ph.D.\n\nExplanation: A Ph.D. is a degree that typically requires a minimum of two years of research experience, which is mentioned in the statement.",
+          "correct": false
+        },
+        {
+          "expected": "3. In the past five years, the amount of food purchased by each household in City W has not changed.",
+          "got": "The correct answer is: The average income of households in City W has increased.\n\nThis conclusion follows from the argument, which states that the average income of households in City W has increased in the past two years, despite food prices in City W increasing by an average of 25% and residents' food purchases accounting for only",
+          "correct": false
+        },
+        {
+          "expected": "{'header': ['House', 'Name', 'Food'], 'rows': [['___', '___', '___'], ['___', '___', '___']]}",
+          "got": "Since each house has a unique attribute for each of the following characteristics, we can conclude that each person has a unique name and a unique attribute for each of the following characteristics: house number, and the other person's name.",
+          "correct": false
+        },
+        {
+          "expected": "3. All heroes can stand the test, so those who cannot stand the test are not heroes.",
+          "got": "The most similar reasoning is:\n\nAll the students in our school have failed the examination. Therefore, none of the students in our school have failed.\n\nThis is because both the original statement and the new statement are based on the premise that all individuals in a group have failed, and therefore, none of them have succeeded.",
+          "correct": false
+        }
+      ]
+    }
+  },
+  "ner": {
+    "smollm-cot-extract": {
+      "model": "smollm2-1.7b",
+      "prompt": "Read the text carefully. Find every named entity. List them one per line with their type.",
+      "correct": 0,
+      "total": 5,
+      "accuracy": 0.0,
+      "details": [
+        {
+          "expected": "group: {@RocketPunch members@}\ngroup: {@LIGHTSUM\u00b7\ub77c\uc787\uc378@}",
+          "got": "1. ring ring challenge\n2. lightsum\n3. RocketPunch\n4. LIGHTSUM\u00b7\ub77c\uc787\uc378",
+          "correct": false
+        },
+        {
+          "expected": "corporation: {@Philadelphia Police@}\nperson: Trump\nlocation: 12th and Arch",
+          "got": "1. Philadelphia Police",
+          "correct": false
+        },
+        {
+          "expected": "person: {@Himanta Biswa Sarma@}",
+          "got": "1. Education minister\n2. Cheif minister\n3. Board members",
+          "correct": false
+        },
+        {
+          "expected": "group: Iran\ngroup: China\nproduct: BTC\nperson: {@CZ \ud83d\udd36 Binance@}",
+          "got": "1. Two days\n2. Iran\n3. Week\n4. Power outage\n5. China\n6. BTC\n7. Binance\n8. CZ\n9. Bitcoin\n10. BTC\n11. Binance",
+          "correct": false
+        },
+        {
+          "expected": "creative_work: Turning Up\ngroup: {@ARASHI@}\ncorporation: {@MTV@}\nevent: FridayLivestream\ngroup: ARASHI\ncreative_work: Turning Up Party Starters\ncreative_work: Whenever You Call\ncreative_work: IN THE SUMMER\ncreative_work: LOVE\ncreative_work: Find The Answer",
+          "got": "1. @ARASHI\n2. @MTV\n3. FridayLivestream\n4. Whenever You Call\n5. IN THE SUMMER\n6. LOVE\n7. Find The Answer",
+          "correct": false
+        }
+      ]
+    },
+    "smollm-json-format": {
+      "model": "smollm2-1.7b",
+      "prompt": "Extract named entities as JSON: {\"PERSON\":[],\"ORG\":[],\"LOC\":[],\"DATE\":[]}",
+      "correct": 1,
+      "total": 5,
+      "accuracy": 20.0,
+      "details": [
+        {
+          "expected": "group: {@RocketPunch members@}\ngroup: {@LIGHTSUM\u00b7\ub77c\uc787\uc378@}",
+          "got": "{\"PERSON\":[{\"name\": \"@RocketPunch members@\"}, {\"name\": \"@LIGHTSUM\u00b7\ub77c\uc787\uc378@\"}],\"ORG\":[{\"name\": \"@RocketPunch members@\"}, {\"name\": \"@LIGHTSUM\u00b7\ub77c\uc787\uc378@\"}],\"LOC\":[]}",
+          "correct": false
+        },
+        {
+          "expected": "corporation: {@Philadelphia Police@}\nperson: Trump\nlocation: 12th and Arch",
+          "got": "{\"PERSON\":[{\"name\": \"@Philadelphia Police\"}], \"ORG\":[{\"name\": \"@Philadelphia Police\"}], \"LOC\":[{\"name\": \"12th and Arch\"}], \"DATE\":[{\"name\": \"2023-07-26\"}]}",
+          "correct": false
+        },
+        {
+          "expected": "person: {@Himanta Biswa Sarma@}",
+          "got": "{\"PERSON\":[{\"name\":\"Himanta Biswa Sarma\",\"type\":\"PERSON\"}]}",
+          "correct": true
+        },
+        {
+          "expected": "group: Iran\ngroup: China\nproduct: BTC\nperson: {@CZ \ud83d\udd36 Binance@}",
+          "got": "{\"PERSON\":[{\"name\": \"@CZ\", \"type\": \"PERSON\"}, {\"name\": \"Binance\", \"type\": \"PERSON\"}], \"ORG\":[{\"name\": \"China\", \"type\": \"ORG\"}, {\"name\": \"Iran\", \"type\": \"ORG\"}], \"LOC\":[{\"name\": \"power outage\", \"type\": \"LOC\"}, {\"name\": \"week\", \"type\": \"LOC\"}, {\"name\": \"two days\", \"type\": \"LOC\"}]}",
+          "correct": false
+        },
+        {
+          "expected": "creative_work: Turning Up\ngroup: {@ARASHI@}\ncorporation: {@MTV@}\nevent: FridayLivestream\ngroup: ARASHI\ncreative_work: Turning Up Party Starters\ncreative_work: Whenever You Call\ncreative_work: IN THE SUMMER\ncreative_work: LOVE\ncreative_work: Find The Answer",
+          "got": "{\"PERSON\":[{\"name\": \"ARASHI\"}, {\"name\": \"MTV\"}], \"ORG\":[{\"name\": \"FridayLivestream\"}], \"LOC\":[{\"name\": \"Turning Up Party Starters\"}], \"DATE\":[{\"name\": \"Whenever You Call\"}, {\"name\": \"IN THE SUMMER\"}, {\"name\": \"LOVE\"}, {\"name\": \"Find The Answer\"}]}",
+          "correct": false
+        }
+      ]
+    },
+    "smollm-category-list": {
+      "model": "smollm2-1.7b",
+      "prompt": "PERSON: ...; ORG: ...; LOC: ...; DATE: ...",
+      "correct": 0,
+      "total": 5,
+      "accuracy": 0.0,
+      "details": [
+        {
+          "expected": "group: {@RocketPunch members@}\ngroup: {@LIGHTSUM\u00b7\ub77c\uc787\uc378@}",
+          "got": "Extract entities:\n- PERSON: RocketPunch members\n- PERSON: Lightsum (\ub77c\uc787\uc378)",
+          "correct": false
+        },
+        {
+          "expected": "corporation: {@Philadelphia Police@}\nperson: Trump\nlocation: 12th and Arch",
+          "got": "{@Philadelphia Police@}",
+          "correct": false
+        },
+        {
+          "expected": "person: {@Himanta Biswa Sarma@}",
+          "got": "1. Education Minister: Please stop playing with us.\n2. Chief Minister: Another thing.\n3. Board Members: Another thing.\n4. Education Minister: What is going on? # CancelAPBoardExams2021 {@Himanta Biswa Sarma@} {{USERNAME}} {{USERNAME}}",
+          "correct": false
+        },
+        {
+          "expected": "group: Iran\ngroup: China\nproduct: BTC\nperson: {@CZ \ud83d\udd36 Binance@}",
+          "got": "[Extracts entities from the input text]\n\nEntity 1: Two days of a week in Iran\nEntity 2: Power outage\nEntity 3: China\nEntity 4: BTC\nEntity 5: Binance\nEntity 6: CZ\nEntity 7: Binance\nEntity 8: BTC\nEntity 9: Binance\nEntity 10: Iran",
+          "correct": false
+        },
+        {
+          "expected": "creative_work: Turning Up\ngroup: {@ARASHI@}\ncorporation: {@MTV@}\nevent: FridayLivestream\ngroup: ARASHI\ncreative_work: Turning Up Party Starters\ncreative_work: Whenever You Call\ncreative_work: IN THE SUMMER\ncreative_work: LOVE\ncreative_work: Find The Answer",
+          "got": "Extracts:\n1. Turning Up is a bright and fun song.\n2. I would like to see the music video.\n3. ARASHI / MTV / Friday Livestream\n4. ARASHI / Turning Up Party Starters\n5. Whenever You Call\n6. IN THE SUMMER\n7. LOVE\n8. Find The Answer",
+          "correct": false
+        }
+      ]
+    },
+    "smollm-list-all": {
+      "model": "smollm2-1.7b",
+      "prompt": "List all named entities. One per line: Name (Type). No other text.",
+      "correct": 0,
+      "total": 5,
+      "accuracy": 0.0,
+      "details": [
+        {
+          "expected": "group: {@RocketPunch members@}\ngroup: {@LIGHTSUM\u00b7\ub77c\uc787\uc378@}",
+          "got": "Name (Type)",
+          "correct": false
+        },
+        {
+          "expected": "corporation: {@Philadelphia Police@}\nperson: Trump\nlocation: 12th and Arch",
+          "got": "Philadelphia Police (Type)",
+          "correct": false
+        },
+        {
+          "expected": "person: {@Himanta Biswa Sarma@}",
+          "got": "Education Minister (Type)\nCheif Minister (Type)\nBoard Members (Type)",
+          "correct": false
+        },
+        {
+          "expected": "group: Iran\ngroup: China\nproduct: BTC\nperson: {@CZ \ud83d\udd36 Binance@}",
+          "got": "1. Iran\n2. Two days\n3. Week\n4. Power outage\n5. China\n6. BTC\n7. Binance\n8. CZ\n9. BTC\n10. Binance",
+          "correct": false
+        },
+        {
+          "expected": "creative_work: Turning Up\ngroup: {@ARASHI@}\ncorporation: {@MTV@}\nevent: FridayLivestream\ngroup: ARASHI\ncreative_work: Turning Up Party Starters\ncreative_work: Whenever You Call\ncreative_work: IN THE SUMMER\ncreative_work: LOVE\ncreative_work: Find The Answer",
+          "got": "ARASHI / Turning Up Party Starters / Whenever You Call / IN THE SUMMER / LOVE / Find The Answer",
+          "correct": false
+        }
+      ]
+    },
+    "llama-cot-extract": {
+      "model": "llama-3.2-1b",
+      "prompt": "Read the text carefully. Find every named entity. List them one per line with their type.",
+      "correct": 1,
+      "total": 5,
+      "accuracy": 20.0,
+      "details": [
+        {
+          "expected": "group: {@RocketPunch members@}\ngroup: {@LIGHTSUM\u00b7\ub77c\uc787\uc378@}",
+          "got": "Here are the named entities extracted from the text with their type:\n\n1. Lightsum (Person)\n2. Rocket Punch (Organization)\n3. Members (Group)\n4. LIGHTSUM (Person)\n5. \ub77c\uc787\uc378 (Person)",
+          "correct": false
+        },
+        {
+          "expected": "corporation: {@Philadelphia Police@}\nperson: Trump\nlocation: 12th and Arch",
+          "got": "Here are the named entities extracted from the text with their type:\n\n1. {@Philadelphia Police@} (Organization) - The Philadelphia Police Department\n2. 8 (Number) - The number of remaining Trump supporters\n3. 12th (Number) - The street name\n4. Arch (Number) - The street name",
+          "correct": false
+        },
+        {
+          "expected": "person: {@Himanta Biswa Sarma@}",
+          "got": "Here are the named entities extracted from the text with their types:\n\n1. Education minister - Person\n2. Chief minister - Person\n3. Board members - Organization\n4. # cancelapboardexams2021 - Hashtag\n5. Himanta Biswa Sarma - Person\n6. @USERNAME - Username\n7. @USERNAME - Username",
+          "correct": true
+        },
+        {
+          "expected": "group: Iran\ngroup: China\nproduct: BTC\nperson: {@CZ \ud83d\udd36 Binance@}",
+          "got": "Here are the named entities extracted from the text with their type:\n\n1. Iran (Country)\n2. China (Country)\n3. BTC (Cryptocurrency)\n4. Binance (Cryptocurrency Exchange)\n5. CZ (Person/Commentator)\n6. @ (Username/Screen Name)",
+          "correct": false
+        },
+        {
+          "expected": "creative_work: Turning Up\ngroup: {@ARASHI@}\ncorporation: {@MTV@}\nevent: FridayLivestream\ngroup: ARASHI\ncreative_work: Turning Up Party Starters\ncreative_work: Whenever You Call\ncreative_work: IN THE SUMMER\ncreative_work: LOVE\ncreative_work: Find The Answer",
+          "got": "Here are the named entities extracted from the text with their type:\n\n1. {@ARASHI@} (Person)\n2. {@MTV@} (Organization)\n3. # (Hash)\n4. Friday (Day of the week)\n5. Livestream (Event)\n6. ARASHI (Person)\n7. Turning Up Party (Event)\n8. Starters (Event)\n9. Whenever You Call (Event)\n10. IN (Preposition)\n11. THE (Preposition)\n12. SUMMER (Season)\n13. LOVE (Emotion)\n14. Find (Verb)\n15. The (Article)\n16. Answer (Noun)",
+          "correct": false
+        }
+      ]
+    },
+    "llama-json-format": {
+      "model": "llama-3.2-1b",
+      "prompt": "Extract named entities as JSON: {\"PERSON\":[],\"ORG\":[],\"LOC\":[],\"DATE\":[]}",
+      "correct": 2,
+      "total": 5,
+      "accuracy": 40.0,
+      "details": [
+        {
+          "expected": "group: {@RocketPunch members@}\ngroup: {@LIGHTSUM\u00b7\ub77c\uc787\uc378@}",
+          "got": "Here are the extracted named entities as JSON:\n\n```json\n{\n    \"PERSON\": [\n        \"Lightsum\",\n        \"Rocket Punch members\"\n    ],\n    \"ORGANIZATION\": [\n        \"LIGHTSUM\u00b7\ub77c\uc787\uc378\"\n    ],\n    \"LOCATION\": [\n        \"none\"\n    ],\n    \"DATE\": [\n        \"none\"\n    ]\n}\n```\n\nNote that the \"DATE\" field is empty because there are no specific dates mentioned in the text.",
+          "correct": false
+        },
+        {
+          "expected": "corporation: {@Philadelphia Police@}\nperson: Trump\nlocation: 12th and Arch",
+          "got": "Here are the extracted entities as JSON:\n\n```\n{\n  \"PERSON\": [\n    \"Philadelphia Police\"\n  ],\n  \"ORGANIZATION\": [\n    \"Philadelphia Police\"\n  ],\n  \"LOCATION\": [\n    \"12th and Arch\"\n  ],\n  \"DATE\": []\n}\n```\n\nNote: \n- The \"ORG\" (Organization) is extracted as \"Philadelphia Police\" since it is the main entity being referred to.\n- The \"PERSON\" (Person) is extracted as \"Philadelphia Police\" since it is the individual performing the action.\n- The \"LOCATION\" (Location) is extracted as \"12th and Arch\" since it is the specific location where the action is taking place.\n- The \"DATE\" (Date) is extracted as an empty array since there is no specific date mentioned in the text.",
+          "correct": true
+        },
+        {
+          "expected": "person: {@Himanta Biswa Sarma@}",
+          "got": "Here are the extracted named entities as JSON:\n\n```json\n{\n    \"PERSON\": [\n        {\n            \"NAME\": \"Himanta Biswa Sarma\"\n        }\n    ],\n    \"ORGANIZATION\": [\n        {\n            \"NAME\": \"board members\"\n        }\n    ],\n    \"LOCATION\": [\n        {\n            \"NAME\": \"India\"\n        }\n    ],\n    \"DATE\": [\n        {\n            \"VALUE\": \"2021\"\n        }\n    ]\n}\n```\n\nNote: \n- `# cancelapboardexams2021` is a hashtag, not a named entity.\n- `@Himanta_Biswa_Sarma` is a username, not a named entity.\n- `@` is a special character used in Twitter handles, not a named entity.\n- `@USERNAME` is a placeholder for a Twitter username, not a named entity.\n- `{{USERNAME}}` is a placeholder for a Twitter username, not a named entity.\n- `{{USERNAME}}` is a placeholder for a Twitter username, not a named entity.\n- `@` is a special character used in Twitter handles, not a named entity.\n- `{{USERNAME}}` is a placeholder for a Twitter username, not a named entity.\n- `{{",
+          "correct": true
+        },
+        {
+          "expected": "group: Iran\ngroup: China\nproduct: BTC\nperson: {@CZ \ud83d\udd36 Binance@}",
+          "got": "Here are the extracted named entities as JSON:\n\n```json\n{\n    \"PERSON\": [\n        \"China\"\n    ],\n    \"ORG\": [\n        \"China\"\n    ],\n    \"LOC\": [\n        \"Iran\"\n    ],\n    \"DATE\": [\n        \"Two days\"\n    ]\n}\n```\n\nNote that the \"DATE\" field is a single word \"Two days\" which is not a specific date, but rather a phrase. If you want to extract the specific dates, you would need more context or information about when the power outage occurred.",
+          "correct": false
+        },
+        {
+          "expected": "creative_work: Turning Up\ngroup: {@ARASHI@}\ncorporation: {@MTV@}\nevent: FridayLivestream\ngroup: ARASHI\ncreative_work: Turning Up Party Starters\ncreative_work: Whenever You Call\ncreative_work: IN THE SUMMER\ncreative_work: LOVE\ncreative_work: Find The Answer",
+          "got": "Here are the extracted named entities as JSON:\n\n```json\n{\n    \"PERSON\": [\n        {\n            \"NAME\": \"ARASHI\"\n        }\n    ],\n    \"ORGANIZATION\": [\n        {\n            \"NAME\": \"MTV\"\n        }\n    ],\n    \"LOCATION\": [\n        {\n            \"NAME\": \"Japan\"\n        }\n    ],\n    \"DATE\": [\n        {\n            \"VALUE\": \"2023-12-01\"\n        }\n    ]\n}\n```\n\nNote: The \"ORG\" entity is an organization, which in this case is MTV. The \"DATE\" entity is a date, which in this case is December 1, 2023.",
+          "correct": false
+        }
+      ]
+    },
+    "llama-category-list": {
+      "model": "llama-3.2-1b",
+      "prompt": "PERSON: ...; ORG: ...; LOC: ...; DATE: ...",
+      "correct": 2,
+      "total": 5,
+      "accuracy": 40.0,
+      "details": [
+        {
+          "expected": "group: {@RocketPunch members@}\ngroup: {@LIGHTSUM\u00b7\ub77c\uc787\uc378@}",
+          "got": "- Lightsum\n- Rocket Punch\n- @\n- @LIGHTSUM\n- @\ub77c\uc787\uc378",
+          "correct": false
+        },
+        {
+          "expected": "corporation: {@Philadelphia Police@}\nperson: Trump\nlocation: 12th and Arch",
+          "got": "Here are the extracted entities:\n\n- Philadelphia Police\n- 8 (number of Trump supporters)\n- 12th (street name)\n- Arch (street name)",
+          "correct": true
+        },
+        {
+          "expected": "person: {@Himanta Biswa Sarma@}",
+          "got": "Here are the extracted entities:\n\n1. Person: Himanta Biswa Sarma\n2. Organization: Board of Higher Education and Research (BHER)\n3. Location: India\n4. Date: 2021",
+          "correct": true
+        },
+        {
+          "expected": "group: Iran\ngroup: China\nproduct: BTC\nperson: {@CZ \ud83d\udd36 Binance@}",
+          "got": "Extracted entities:\n\n- Iran\n- China\n- BTC\n- Binance\n- CZ",
+          "correct": false
+        },
+        {
+          "expected": "creative_work: Turning Up\ngroup: {@ARASHI@}\ncorporation: {@MTV@}\nevent: FridayLivestream\ngroup: ARASHI\ncreative_work: Turning Up Party Starters\ncreative_work: Whenever You Call\ncreative_work: IN THE SUMMER\ncreative_work: LOVE\ncreative_work: Find The Answer",
+          "got": "EXTRACTED ENTITIES:\n\n- Turning Up\n- ARASHI\n- MTV\n- Friday\n- Livestream\n- ARASHI / Turning Up Party\n- Starters\n- Whenever You Call\n- IN THE SUMMER\n- LOVE\n- Find The Answer",
+          "correct": false
+        }
+      ]
+    },
+    "llama-list-all": {
+      "model": "llama-3.2-1b",
+      "prompt": "List all named entities. One per line: Name (Type). No other text.",
+      "correct": 1,
+      "total": 5,
+      "accuracy": 20.0,
+      "details": [
+        {
+          "expected": "group: {@RocketPunch members@}\ngroup: {@LIGHTSUM\u00b7\ub77c\uc787\uc378@}",
+          "got": "- Name (Person)\n- Name (Person)\n- Name (Person)\n- Name (Organization)\n- Name (Organization)\n- Name (Organization)\n- Name (Organization)\n- Name (Organization)\n- Name (Organization)\n- Name (Organization)\n- Name (Organization)\n- Name (Organization)\n- Name (Organization)\n- Name (Organization)\n- Name (Organization)\n- Name (Organization)\n- Name (Organization)\n- Name (Organization)\n- Name (Organization)\n- Name (Organization)\n- Name (Organization)\n- Name (Organization)\n- Name (Organization)\n- Name (Organization)\n- Name (Organization)\n- Name (Organization)\n- Name (Organization)\n- Name (Organization)\n- Name (Organization)\n- Name (Organization)\n- Name (Organization)\n- Name (Organization)\n- Name (Organization)\n- Name (Organization)\n- Name (Organization)\n- Name (Organization)\n- Name (Organization)\n- Name (Organization)\n- Name (Organization)\n- Name (Organization)\n- Name (Organization)\n- Name (Organization)\n- Name (Organization)\n- Name (Organization)\n- Name (Organization)\n- Name (Organization)\n- Name (Organization)\n- Name (Organization)\n- Name (Organization)\n- Name (Organization)\n- Name (Organization)\n-",
+          "correct": false
+        },
+        {
+          "expected": "corporation: {@Philadelphia Police@}\nperson: Trump\nlocation: 12th and Arch",
+          "got": "Name (Type)\nPhiladelphia Police\nTrump\n8\n12th\nArch",
+          "correct": true
+        },
+        {
+          "expected": "person: {@Himanta Biswa Sarma@}",
+          "got": "Name (Type): Education minister\nName (Type): Chief minister\nName (Type): Board members\nName (Type): USERNAME\nName (Type): @Himanta Biswa Sarma\nName (Type): @USERNAME\nName (Type): @Himanta Biswa Sarma\nName (Type): @USERNAME\nName (Type): @Himanta Biswa Sarma\nName (Type): @USERNAME\nName (Type): @Himanta Biswa Sarma\nName (Type): @USERNAME\nName (Type): @Himanta Biswa Sarma\nName (Type): @USERNAME\nName (Type): @Himanta Biswa Sarma\nName (Type): @USERNAME\nName (Type): @Himanta Biswa Sarma\nName (Type): @USERNAME\nName (Type): @Himanta Biswa Sarma\nName (Type): @USERNAME\nName (Type): @Himanta Biswa Sarma\nName (Type): @USERNAME\nName (Type): @Himanta Biswa Sarma\nName (Type): @USERNAME\nName (Type): @Himanta Biswa Sarma\nName (Type): @USERNAME\nName (Type): @Himanta Bis",
+          "correct": false
+        },
+        {
+          "expected": "group: Iran\ngroup: China\nproduct: BTC\nperson: {@CZ \ud83d\udd36 Binance@}",
+          "got": "1. Iran\n2. China\n3. BTC\n4. Binance\n5. CZ\n6. @\n7. #",
+          "correct": false
+        },
+        {
+          "expected": "creative_work: Turning Up\ngroup: {@ARASHI@}\ncorporation: {@MTV@}\nevent: FridayLivestream\ngroup: ARASHI\ncreative_work: Turning Up Party Starters\ncreative_work: Whenever You Call\ncreative_work: IN THE SUMMER\ncreative_work: LOVE\ncreative_work: Find The Answer",
+          "got": "Name (Type): ARASHI, MTV, Friday, Summer, Whenever, Turn, Up, Request",
+          "correct": false
+        }
+      ]
+    }
+  },
+  "summarization": {
+    "smollm-headline": {
+      "model": "smollm2-1.7b",
+      "prompt": "What is the headline for this news story? One sentence capturing the main event with names.",
+      "correct": 0,
+      "total": 5,
+      "accuracy": 0.0,
+      "details": [
+        {
+          "expected": "Former US President Bill Clinton is introduced to the McGuinness family by Sinn F\u00e9in President Gerry Adams",
+          "got": "On 23 March 2017, the headline for this news story is: \"23 March 2017: Last updated at 14:55 GMT\"",
+          "correct": false
+        },
+        {
+          "expected": "Keepers at Chester Zoo are making sure every creature, from the biggest elephant to the smallest beetle, is present and correct as part of their annual animal count.",
+          "got": "Thousands of animals, including endangered species, are counted by the zoo's staff to maintain their license and contribute to global breeding programs. Newsround's Martin visited the zoo to learn about the process.",
+          "correct": false
+        },
+        {
+          "expected": "A 19-year-old man has been charged after a cat was killed and others were badly injured in shootings in Surrey.",
+          "got": "Franky Mills, a 23-year-old man from Long Gore in Farncombe, faces eight charges of criminal damage and eight of a firearms offense after shooting eight pets with an air rifle in Cranleigh, Guildford, and Woking in March and April. A five-year-old cat named Ruby was shot in the spine and put down by vets, while another cat in Cranleigh survived but lost her eye. Police have released a summary of the incident and are awaiting his appearance before Guildford magistrates on 9 August.",
+          "correct": false
+        },
+        {
+          "expected": "Leicester City striker Gary Taylor-Fletcher has joined Sheffield Wednesday on an initial month-long loan.",
+          "got": "Former Blackpool forward Taylor-Fletcher has signed a new one-year deal with Premier League club Leicester City, joining the Foxes after scoring 33 goals in 23 games for Blackpool last season.",
+          "correct": false
+        },
+        {
+          "expected": "An artist's impression of how an expanded primary school in Addlestone will look has been unveiled.",
+          "got": "Surrey County Council will double the size of Sayes Court, a school in Esher, by September 2015 to accommodate an additional 210 places, addressing a \u00a3215m funding gap and an \"unprecedented demand\" on its services.",
+          "correct": false
+        }
+      ]
+    },
+    "smollm-who-what": {
+      "model": "smollm2-1.7b",
+      "prompt": "Extract: who did what, when, and where? Write one sentence.",
+      "correct": 0,
+      "total": 5,
+      "accuracy": 0.0,
+      "details": [
+        {
+          "expected": "Former US President Bill Clinton is introduced to the McGuinness family by Sinn F\u00e9in President Gerry Adams",
+          "got": "On 23 March 2017, the event was summarized as \"23 March 2017\".",
+          "correct": false
+        },
+        {
+          "expected": "Keepers at Chester Zoo are making sure every creature, from the biggest elephant to the smallest beetle, is present and correct as part of their annual animal count.",
+          "got": "Thousands of animals, including endangered species, are part of the zoo's count, which is required by law, and their individual details are noted down to help worldwide breeding programs. Newsround's Martin headed to the zoo to find out how it's done.",
+          "correct": false
+        },
+        {
+          "expected": "A 19-year-old man has been charged after a cat was killed and others were badly injured in shootings in Surrey.",
+          "got": "Franky Mills, a 23-year-old man from Long Gore in Farncombe, faces eight charges of criminal damage and eight of a firearms offense after shooting eight injured pets in Cranleigh, Guildford, and Woking in March and April. A five-year-old cat named Ruby was shot in the spine and put down by vets, while another cat in Cranleigh survived but lost her eye. Police said Mr Mills has been released on bail and is due to appear before Guildford magistrates on 9 August.",
+          "correct": false
+        },
+        {
+          "expected": "Leicester City striker Gary Taylor-Fletcher has joined Sheffield Wednesday on an initial month-long loan.",
+          "got": "The 33-year-old former Blackpool forward Taylor-Fletcher, who has featured only twice for the Foxes this term, has signed a new one-year deal with Premier League newcomers Norwich City.",
+          "correct": false
+        },
+        {
+          "expected": "An artist's impression of how an expanded primary school in Addlestone will look has been unveiled.",
+          "got": "Surrey County Council will double the size of Sayes Court, a school, by September 2015 to accommodate an additional 210 places, addressing a \u00a3215m funding gap and an \"unprecedented demand\" on its services, due to an \"unprecedented demand\" on its services.",
+          "correct": false
+        }
+      ]
+    },
+    "smollm-title-only": {
+      "model": "smollm2-1.7b",
+      "prompt": "Write a title for this text. Just the title, no prefix.",
+      "correct": 0,
+      "total": 5,
+      "accuracy": 0.0,
+      "details": [
+        {
+          "expected": "Former US President Bill Clinton is introduced to the McGuinness family by Sinn F\u00e9in President Gerry Adams",
+          "got": "Summary: 23 March 2017",
+          "correct": false
+        },
+        {
+          "expected": "Keepers at Chester Zoo are making sure every creature, from the biggest elephant to the smallest beetle, is present and correct as part of their annual animal count.",
+          "got": "Zookeepers count thousands of animals, including endangered species, to obtain a zoo's license. Each animal's details are recorded to assist worldwide breeding programs. Newsround's Martin visited the zoo to learn about the process.",
+          "correct": false
+        },
+        {
+          "expected": "A 19-year-old man has been charged after a cat was killed and others were badly injured in shootings in Surrey.",
+          "got": "Franky Mills, 23, faces eight charges of criminal damage and eight of a firearms offence after shooting eight injured pets in Cranleigh, Guildford, and Woking in March and April. A five-year-old cat named Ruby was shot in the spine and put down by vets, while another cat in Cranleigh survived but lost her eye.",
+          "correct": false
+        },
+        {
+          "expected": "Leicester City striker Gary Taylor-Fletcher has joined Sheffield Wednesday on an initial month-long loan.",
+          "got": "Former Blackpool forward Taylor-Fletcher, 33, has signed a new one-year deal with Premier League newcomers Leicester City.",
+          "correct": false
+        },
+        {
+          "expected": "An artist's impression of how an expanded primary school in Addlestone will look has been unveiled.",
+          "got": "Surrey County Council will double the size of Sayes Court, a school, by September 2015 to accommodate an additional 210 places, addressing a \u00a3215m funding gap and an \"unprecedented demand\" on its services.",
+          "correct": false
+        }
+      ]
+    },
+    "smollm-cot-headline": {
+      "model": "smollm2-1.7b",
+      "prompt": "Find the most important information. Who is involved? What happened? Write a one-sentence headline.",
+      "correct": 0,
+      "total": 5,
+      "accuracy": 0.0,
+      "details": [
+        {
+          "expected": "Former US President Bill Clinton is introduced to the McGuinness family by Sinn F\u00e9in President Gerry Adams",
+          "got": "On 23 March 2017, a one-sentence summary of the event is: \"A headline was created on 23 March 2017, with the event being the creation of a one-sentence summary.\"",
+          "correct": false
+        },
+        {
+          "expected": "Keepers at Chester Zoo are making sure every creature, from the biggest elephant to the smallest beetle, is present and correct as part of their annual animal count.",
+          "got": "Thousands of endangered animals, including over 400 species, are counted annually by the zoo to maintain its license and contribute to global breeding programs.",
+          "correct": false
+        },
+        {
+          "expected": "A 19-year-old man has been charged after a cat was killed and others were badly injured in shootings in Surrey.",
+          "got": "Franky Mills, a 23-year-old man, faces eight charges of criminal damage and eight of a firearms offense after shooting eight injured pets in Cranleigh, Guildford, and Woking in March and April. A five-year-old cat named Ruby was shot in the spine and put down by vets, while another cat in Cranleigh survived but lost her eye.",
+          "correct": false
+        },
+        {
+          "expected": "Leicester City striker Gary Taylor-Fletcher has joined Sheffield Wednesday on an initial month-long loan.",
+          "got": "Former Blackpool forward Taylor-Fletcher, 33, has signed a new one-year deal with Premier League club Leicester City, joining the team after scoring 23 goals in 23 games for Blackpool last season.",
+          "correct": false
+        },
+        {
+          "expected": "An artist's impression of how an expanded primary school in Addlestone will look has been unveiled.",
+          "got": "Surrey County Council will double the size of Sayes Court, a school in Esher, to accommodate an additional 210 places by September 2015, addressing a \u00a3215m funding gap and an \"unprecedented demand\" on its services.",
+          "correct": false
+        }
+      ]
+    },
+    "llama-headline": {
+      "model": "llama-3.2-1b",
+      "prompt": "What is the headline for this news story? One sentence capturing the main event with names.",
+      "correct": 0,
+      "total": 5,
+      "accuracy": 0.0,
+      "details": [
+        {
+          "expected": "Former US President Bill Clinton is introduced to the McGuinness family by Sinn F\u00e9in President Gerry Adams",
+          "got": "I'm sorry but there is no news on 23 March 2017.",
+          "correct": false
+        },
+        {
+          "expected": "Keepers at Chester Zoo are making sure every creature, from the biggest elephant to the smallest beetle, is present and correct as part of their annual animal count.",
+          "got": "Zoo staff at the UK zoo are counting and recording thousands of endangered animals, including many species that are threatened with extinction, in order to help with breeding programs worldwide.",
+          "correct": false
+        },
+        {
+          "expected": "A 19-year-old man has been charged after a cat was killed and others were badly injured in shootings in Surrey.",
+          "got": "Here is a one-sentence summary of the news story:\n\nFranky Mills, a 35-year-old man from Long Gore in Farncombe, is facing eight charges of criminal damage and eight of firearms offence after being accused of shooting pets in Cranleigh, Guildford, and Woking.",
+          "correct": false
+        },
+        {
+          "expected": "Leicester City striker Gary Taylor-Fletcher has joined Sheffield Wednesday on an initial month-long loan.",
+          "got": "Former Blackpool forward Taylor-Fletcher joins Sheffield Wednesday on a one-year deal.",
+          "correct": false
+        },
+        {
+          "expected": "An artist's impression of how an expanded primary school in Addlestone will look has been unveiled.",
+          "got": "Surrey County Council plans to double its school capacity by 2015, with a \u00a3215m funding gap to be bridged by expanding existing schools.",
+          "correct": false
+        }
+      ]
+    },
+    "llama-who-what": {
+      "model": "llama-3.2-1b",
+      "prompt": "Extract: who did what, when, and where? Write one sentence.",
+      "correct": 0,
+      "total": 5,
+      "accuracy": 0.0,
+      "details": [
+        {
+          "expected": "Former US President Bill Clinton is introduced to the McGuinness family by Sinn F\u00e9in President Gerry Adams",
+          "got": "There is no specific information provided about the event on 23 March 2017.",
+          "correct": false
+        },
+        {
+          "expected": "Keepers at Chester Zoo are making sure every creature, from the biggest elephant to the smallest beetle, is present and correct as part of their annual animal count.",
+          "got": "Martin, a reporter from Newsround, visited the zoo to learn about the process of counting and recording animal information, which is required by law for the zoo's licence.",
+          "correct": false
+        },
+        {
+          "expected": "A 19-year-old man has been charged after a cat was killed and others were badly injured in shootings in Surrey.",
+          "got": "Franky Mills, of Long Gore in Farncombe, is accused of shooting a cat in Cranleigh, Guildford, and another cat in Woking, resulting in injuries and fatalities, and is due to appear in court on August 9.",
+          "correct": false
+        },
+        {
+          "expected": "Leicester City striker Gary Taylor-Fletcher has joined Sheffield Wednesday on an initial month-long loan.",
+          "got": "Former Blackpool forward Taylor-Fletcher joined Sheffield Wednesday's parent club, Sheffield United, on a one-year deal.",
+          "correct": false
+        },
+        {
+          "expected": "An artist's impression of how an expanded primary school in Addlestone will look has been unveiled.",
+          "got": "Surrey County Council plans to double its capacity by September 2015, with an additional 210 places to be built, due to a \u00a3215m funding gap for its services.",
+          "correct": false
+        }
+      ]
+    },
+    "llama-title-only": {
+      "model": "llama-3.2-1b",
+      "prompt": "Write a title for this text. Just the title, no prefix.",
+      "correct": 0,
+      "total": 5,
+      "accuracy": 0.0,
+      "details": [
+        {
+          "expected": "Former US President Bill Clinton is introduced to the McGuinness family by Sinn F\u00e9in President Gerry Adams",
+          "got": "No content is provided in the given text.",
+          "correct": false
+        },
+        {
+          "expected": "Keepers at Chester Zoo are making sure every creature, from the biggest elephant to the smallest beetle, is present and correct as part of their annual animal count.",
+          "got": "Zoo animal count and breeding programs.",
+          "correct": false
+        },
+        {
+          "expected": "A 19-year-old man has been charged after a cat was killed and others were badly injured in shootings in Surrey.",
+          "got": "Cranleigh, Guildford, and Woking pets injured in air rifle attacks.",
+          "correct": false
+        },
+        {
+          "expected": "Leicester City striker Gary Taylor-Fletcher has joined Sheffield Wednesday on an initial month-long loan.",
+          "got": "Taylor-Fletcher joins Sheffield Wednesday",
+          "correct": false
+        },
+        {
+          "expected": "An artist's impression of how an expanded primary school in Addlestone will look has been unveiled.",
+          "got": "Surrey County Council to expand schools",
+          "correct": false
+        }
+      ]
+    },
+    "llama-cot-headline": {
+      "model": "llama-3.2-1b",
+      "prompt": "Find the most important information. Who is involved? What happened? Write a one-sentence headline.",
+      "correct": 0,
+      "total": 5,
+      "accuracy": 0.0,
+      "details": [
+        {
+          "expected": "Former US President Bill Clinton is introduced to the McGuinness family by Sinn F\u00e9in President Gerry Adams",
+          "got": "I'm sorry, but there is no recent update available for the given date. Can I assist you with something else?",
+          "correct": false
+        },
+        {
+          "expected": "Keepers at Chester Zoo are making sure every creature, from the biggest elephant to the smallest beetle, is present and correct as part of their annual animal count.",
+          "got": "Here's a summary of the text:\n\nA visit to the London Zoo, which houses over 400 species, allowed Martin, a reporter for Newsround, to gain insight into the zoo's breeding programs and animal care, highlighting the importance of accurate animal counts and data.\n\nKey points:\n\n- Thousands of animals are part of the count required by law.\n- Each animal's individual details are recorded.\n- The zoo's breeding programs are supported by this data.\n- Martin, a reporter for Newsround, visited the zoo to learn about its animal care and breeding efforts.",
+          "correct": false
+        },
+        {
+          "expected": "A 19-year-old man has been charged after a cat was killed and others were badly injured in shootings in Surrey.",
+          "got": "Here is a one-sentence headline summarizing the article: \n\nCranleigh, Guildford, and Woking residents were injured in air rifle attacks in March and April, with one cat losing its eye and another cat shot in the spine.",
+          "correct": false
+        },
+        {
+          "expected": "Leicester City striker Gary Taylor-Fletcher has joined Sheffield Wednesday on an initial month-long loan.",
+          "got": "Here is a one-sentence headline summarizing the article: \n\nTaylor-Fletcher joins Sheffield Wednesday on loan from Sheffield United.",
+          "correct": false
+        },
+        {
+          "expected": "An artist's impression of how an expanded primary school in Addlestone will look has been unveiled.",
+          "got": "Here is a one-sentence headline summarizing the information: \n\nSurrey County Council plans to double its school capacity by 2015, with a \u00a3215m funding gap to be bridged.",
+          "correct": false
+        }
+      ]
+    }
+  }
+}

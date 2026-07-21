@@ -1,0 +1,138 @@
+{
+  "task": "summarization_gepa_eval",
+  "date": "2026-07-13",
+  "dataset": "summarization_combined_25",
+  "num_questions": 25,
+  "models_tested": [
+    "qwen2.5-1.5b-instruct",
+    "qwen2.5-coder-1.5b-instruct",
+    "llama-3.2-1b-instruct"
+  ],
+  "results": {
+    "qwen2.5-1.5b-instruct": {
+      "prompt_0": {
+        "accuracy": 0.28,
+        "correct": 7,
+        "total": 25,
+        "avg_latency_ms": 1753.1,
+        "label": "empty"
+      },
+      "prompt_1": {
+        "accuracy": 0.28,
+        "correct": 7,
+        "total": 25,
+        "avg_latency_ms": 1620.5,
+        "label": "label_prefix"
+      },
+      "prompt_2": {
+        "accuracy": 0.36,
+        "correct": 9,
+        "total": 25,
+        "avg_latency_ms": 1119.6,
+        "label": "explicit_instruction"
+      },
+      "prompt_3": {
+        "accuracy": 0.28,
+        "correct": 7,
+        "total": 25,
+        "avg_latency_ms": 1023.6,
+        "label": "verbose_instruction"
+      }
+    },
+    "qwen2.5-coder-1.5b-instruct": {
+      "prompt_0": {
+        "accuracy": 0.28,
+        "correct": 7,
+        "total": 25,
+        "avg_latency_ms": 1711.2,
+        "label": "empty"
+      },
+      "prompt_1": {
+        "accuracy": 0.32,
+        "correct": 8,
+        "total": 25,
+        "avg_latency_ms": 1762.7,
+        "label": "label_prefix"
+      },
+      "prompt_2": {
+        "accuracy": 0.36,
+        "correct": 9,
+        "total": 25,
+        "avg_latency_ms": 1777.3,
+        "label": "explicit_instruction"
+      },
+      "prompt_3": {
+        "accuracy": 0.32,
+        "correct": 8,
+        "total": 25,
+        "avg_latency_ms": 1217.5,
+        "label": "verbose_instruction"
+      }
+    },
+    "llama-3.2-1b-instruct": {
+      "prompt_0": {
+        "accuracy": 0.32,
+        "correct": 8,
+        "total": 25,
+        "avg_latency_ms": 1331.3,
+        "label": "empty"
+      },
+      "prompt_1": {
+        "accuracy": 0.28,
+        "correct": 7,
+        "total": 25,
+        "avg_latency_ms": 1855.3,
+        "label": "label_prefix"
+      },
+      "prompt_2": {
+        "accuracy": 0.36,
+        "correct": 9,
+        "total": 25,
+        "avg_latency_ms": 1760.2,
+        "label": "explicit_instruction"
+      },
+      "prompt_3": {
+        "accuracy": 0.28,
+        "correct": 7,
+        "total": 25,
+        "avg_latency_ms": 1225.7,
+        "label": "verbose_instruction"
+      }
+    }
+  },
+  "best_per_model": {
+    "qwen2.5-1.5b-instruct": {
+      "prompt_key": "prompt_2",
+      "accuracy": 0.36,
+      "label": "explicit_instruction",
+      "correct": 9,
+      "total": 25,
+      "avg_latency_ms": 1119.6
+    },
+    "qwen2.5-coder-1.5b-instruct": {
+      "prompt_key": "prompt_2",
+      "accuracy": 0.36,
+      "label": "explicit_instruction",
+      "correct": 9,
+      "total": 25,
+      "avg_latency_ms": 1777.3
+    },
+    "llama-3.2-1b-instruct": {
+      "prompt_key": "prompt_2",
+      "accuracy": 0.36,
+      "label": "explicit_instruction",
+      "correct": 9,
+      "total": 25,
+      "avg_latency_ms": 1760.2
+    }
+  },
+  "overall_best": {
+    "model": "qwen2.5-1.5b-instruct",
+    "prompt_key": "prompt_2",
+    "accuracy": 0.36,
+    "label": "explicit_instruction",
+    "correct": 9,
+    "total": 25,
+    "avg_latency_ms": 1119.6
+  }
+}

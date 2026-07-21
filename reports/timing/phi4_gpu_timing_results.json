@@ -1,0 +1,358 @@
+{
+  "meta": {
+    "dataset": "AMD ACT II \u2014 60 Additional Medium-Hard Questions",
+    "total": 60,
+    "model": "phi-4-mini",
+    "device": "GPU"
+  },
+  "total_time_s": 102.39385080337524,
+  "avg_time_per_q_s": 1.706564180056254,
+  "min_time_s": 0.00042700767517089844,
+  "max_time_s": 5.158514738082886,
+  "median_time_s": 1.3763034343719482,
+  "throughput_qps": 0.585972688098397,
+  "per_category_timing": {
+    "factual": {
+      "count": 8,
+      "avg_s": 3.2390439212322235,
+      "total_s": 25.912351369857788
+    },
+    "math": {
+      "count": 8,
+      "avg_s": 2.376164138317108,
+      "total_s": 19.009313106536865
+    },
+    "code_gen": {
+      "count": 8,
+      "avg_s": 1.532973051071167,
+      "total_s": 12.263784408569336
+    },
+    "logic": {
+      "count": 8,
+      "avg_s": 2.807196766138077,
+      "total_s": 22.457574129104614
+    },
+    "code_debug": {
+      "count": 7,
+      "avg_s": 1.4276392459869385,
+      "total_s": 9.99347472190857
+    },
+    "ner": {
+      "count": 7,
+      "avg_s": 0.5217608043125698,
+      "total_s": 3.6523256301879883
+    },
+    "sentiment": {
+      "count": 7,
+      "avg_s": 0.3943559101649693,
+      "total_s": 2.760491371154785
+    },
+    "summarization": {
+      "count": 7,
+      "avg_s": 0.9062430518014091,
+      "total_s": 6.343701362609863
+    }
+  },
+  "per_question_timing": [
+    {
+      "idx": 0,
+      "category": "factual",
+      "time_s": 3.481879472732544
+    },
+    {
+      "idx": 1,
+      "category": "factual",
+      "time_s": 3.0801901817321777
+    },
+    {
+      "idx": 2,
+      "category": "factual",
+      "time_s": 2.7602055072784424
+    },
+    {
+      "idx": 3,
+      "category": "factual",
+      "time_s": 2.036130666732788
+    },
+    {
+      "idx": 4,
+      "category": "factual",
+      "time_s": 3.9651176929473877
+    },
+    {
+      "idx": 5,
+      "category": "factual",
+      "time_s": 2.9721195697784424
+    },
+    {
+      "idx": 6,
+      "category": "factual",
+      "time_s": 3.6164286136627197
+    },
+    {
+      "idx": 7,
+      "category": "factual",
+      "time_s": 4.000279664993286
+    },
+    {
+      "idx": 8,
+      "category": "math",
+      "time_s": 3.4352643489837646
+    },
+    {
+      "idx": 9,
+      "category": "math",
+      "time_s": 2.3865580558776855
+    },
+    {
+      "idx": 10,
+      "category": "math",
+      "time_s": 0.0004973411560058594
+    },
+    {
+      "idx": 11,
+      "category": "math",
+      "time_s": 4.773683309555054
+    },
+    {
+      "idx": 12,
+      "category": "math",
+      "time_s": 0.00042700767517089844
+    },
+    {
+      "idx": 13,
+      "category": "math",
+      "time_s": 2.247612476348877
+    },
+    {
+      "idx": 14,
+      "category": "math",
+      "time_s": 3.1936962604522705
+    },
+    {
+      "idx": 15,
+      "category": "math",
+      "time_s": 2.971574306488037
+    },
+    {
+      "idx": 16,
+      "category": "code_gen",
+      "time_s": 2.0612711906433105
+    },
+    {
+      "idx": 17,
+      "category": "code_gen",
+      "time_s": 0.8094239234924316
+    },
+    {
+      "idx": 18,
+      "category": "code_gen",
+      "time_s": 1.094099521636963
+    },
+    {
+      "idx": 19,
+      "category": "code_gen",
+      "time_s": 0.8709402084350586
+    },
+    {
+      "idx": 20,
+      "category": "code_gen",
+      "time_s": 2.2656524181365967
+    },
+    {
+      "idx": 21,
+      "category": "code_gen",
+      "time_s": 2.5060834884643555
+    },
+    {
+      "idx": 22,
+      "category": "code_gen",
+      "time_s": 1.685013771057129
+    },
+    {
+      "idx": 23,
+      "category": "code_gen",
+      "time_s": 0.9712998867034912
+    },
+    {
+      "idx": 24,
+      "category": "logic",
+      "time_s": 5.158514738082886
+    },
+    {
+      "idx": 25,
+      "category": "logic",
+      "time_s": 1.7930760383605957
+    },
+    {
+      "idx": 26,
+      "category": "logic",
+      "time_s": 3.3018712997436523
+    },
+    {
+      "idx": 27,
+      "category": "logic",
+      "time_s": 1.971869707107544
+    },
+    {
+      "idx": 28,
+      "category": "logic",
+      "time_s": 0.9007434844970703
+    },
+    {
+      "idx": 29,
+      "category": "logic",
+      "time_s": 2.9934866428375244
+    },
+    {
+      "idx": 30,
+      "category": "logic",
+      "time_s": 5.127863168716431
+    },
+    {
+      "idx": 31,
+      "category": "logic",
+      "time_s": 1.2101490497589111
+    },
+    {
+      "idx": 32,
+      "category": "code_debug",
+      "time_s": 2.38468074798584
+    },
+    {
+      "idx": 33,
+      "category": "code_debug",
+      "time_s": 1.2170114517211914
+    },
+    {
+      "idx": 34,
+      "category": "code_debug",
+      "time_s": 1.4798381328582764
+    },
+    {
+      "idx": 35,
+      "category": "code_debug",
+      "time_s": 1.3763034343719482
+    },
+    {
+      "idx": 36,
+      "category": "code_debug",
+      "time_s": 0.4675135612487793
+    },
+    {
+      "idx": 37,
+      "category": "code_debug",
+      "time_s": 1.6335058212280273
+    },
+    {
+      "idx": 38,
+      "category": "code_debug",
+      "time_s": 1.4346215724945068
+    },
+    {
+      "idx": 39,
+      "category": "ner",
+      "time_s": 0.001354217529296875
+    },
+    {
+      "idx": 40,
+      "category": "ner",
+      "time_s": 0.0014445781707763672
+    },
+    {
+      "idx": 41,
+      "category": "ner",
+      "time_s": 0.0018527507781982422
+    },
+    {
+      "idx": 42,
+      "category": "ner",
+      "time_s": 0.0017292499542236328
+    },
+    {
+      "idx": 43,
+      "category": "ner",
+      "time_s": 2.4974358081817627
+    },
+    {
+      "idx": 44,
+      "category": "ner",
+      "time_s": 1.1472671031951904
+    },
+    {
+      "idx": 45,
+      "category": "ner",
+      "time_s": 0.001241922378540039
+    },
+    {
+      "idx": 46,
+      "category": "sentiment",
+      "time_s": 0.5662317276000977
+    },
+    {
+      "idx": 47,
+      "category": "sentiment",
+      "time_s": 0.30415821075439453
+    },
+    {
+      "idx": 48,
+      "category": "sentiment",
+      "time_s": 0.31491589546203613
+    },
+    {
+      "idx": 49,
+      "category": "sentiment",
+      "time_s": 0.3842935562133789
+    },
+    {
+      "idx": 50,
+      "category": "sentiment",
+      "time_s": 0.30464625358581543
+    },
+    {
+      "idx": 51,
+      "category": "sentiment",
+      "time_s": 0.5731370449066162
+    },
+    {
+      "idx": 52,
+      "category": "sentiment",
+      "time_s": 0.3131086826324463
+    },
+    {
+      "idx": 53,
+      "category": "summarization",
+      "time_s": 1.1688148975372314
+    },
+    {
+      "idx": 54,
+      "category": "summarization",
+      "time_s": 0.6185877323150635
+    },
+    {
+      "idx": 55,
+      "category": "summarization",
+      "time_s": 0.8294796943664551
+    },
+    {
+      "idx": 56,
+      "category": "summarization",
+      "time_s": 0.6651835441589355
+    },
+    {
+      "idx": 57,
+      "category": "summarization",
+      "time_s": 0.7814686298370361
+    },
+    {
+      "idx": 58,
+      "category": "summarization",
+      "time_s": 1.1518993377685547
+    },
+    {
+      "idx": 59,
+      "category": "summarization",
+      "time_s": 1.128267526626587
+    }
+  ]
+}
