@@ -1,6 +1,0 @@
-What is 42 * 13?
-Write a Python function to check if a string is a palindrome.
-Classify the sentiment of this review: The product was okay.
-Translate 'Hello world' to French.
-Extract all diseases from: Splice-site mutation in the PDS gene may result in intrafamilial variability for deafness in Pendred syndrome.
-Summarize: The quick brown fox jumps over the lazy dog.

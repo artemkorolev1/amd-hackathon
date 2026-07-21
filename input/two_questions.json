@@ -1,4 +1,0 @@
-[
-  {"task_id":"tc8","prompt":"What is the capital of France?","category":"factual","expected_answer":"Paris","complexity_score":0.1,"difficulty":"simple"},
-  {"task_id":"tc7","prompt":"What is 25% of 360?","category":"math","expected_answer":"90","complexity_score":0.2,"difficulty":"simple"}
-]

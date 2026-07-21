@@ -1,5 +1,0 @@
-[
-  {"task_id": "t1", "prompt": "What is 15% of 240?"},
-  {"task_id": "t2", "prompt": "Is the following sentiment positive or negative: This movie was terrible and boring"},
-  {"task_id": "t3", "prompt": "What is the capital of France?"}
-]
