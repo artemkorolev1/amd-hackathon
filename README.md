@@ -11,12 +11,47 @@ A hybrid routing agent that classifies tasks across 8 categories and solves them
 ## Architecture
 
 ```
-Input tasks → 8-way classifier cascade (92.2%)
-           → Complexity scoring (MiniLM + heuristics)
-           → Deterministic solvers (factual, NER, sentiment, logic, template math)
-           → LLM inference (Qwen2.5-1.5B + Qwen2.5-Coder-1.5B GGUF via llama.cpp)
-           → ToRA math pipeline (variable extraction → single-shot → consensus voting → iterative fallback)
-           → /output/results.json
+                               ┌──────────────────────────────────────┐
+                               │          /input/tasks.json           │
+                               └────────────────┬─────────────────────┘
+                                                ▼
+┌──────────────────────────────────────────────────────────────────────┐
+│                     8-Way Classifier Cascade                        │
+│   Primary: 8-way scorer (92.2%) + 4 secondary resolvers             │
+│   (code_debug↔code_gen, logic↔math, factual↔logic, summarization↔*) │
+└────────────────────────────────┬─────────────────────────────────────┘
+                                 ▼
+┌──────────────────────────────────────────────────────────────────────┐
+│              Complexity Scoring (MiniLM + LogisticRegression)        │
+│                 7-signal bitmorphic fallback                         │
+└────────────────────────────────┬─────────────────────────────────────┘
+                                 ▼
+┌──────────────────────────────────────────────────────────────────────┐
+│                     Deterministic Solver Layer                       │
+│  ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌────────────┐ │
+│  │  NER v3  │ │  Logic   │ │  Math    │ │Sentiment │ │  Factual   │ │
+│  │Regex+NLP │ │Proposition│ │Template  │ │Weighted  │ │ FactDB     │ │
+│  │          │ │Zebra, SAT │ │Solvers   │ │Keywords  │ │(112K facts)│ │
+│  └──────────┘ └──────────┘ └──────────┘ └──────────┘ └────────────┘ │
+└────────────────────────────────┬─────────────────────────────────────┘
+                                 ▼
+┌──────────────────────────────────────────────────────────────────────┐
+│                     LLM Inference Layer                              │
+│  ┌──────────────────────────┐   ┌────────────────────────────────┐  │
+│  │ Qwen2.5-1.5B-Instruct   │   │ Qwen2.5-Coder-1.5B-Instruct    │  │
+│  │ (general inference)     │   │ (code gen, math extraction)    │  │
+│  └──────────┬───────────────┘   └──────────┬─────────────────────┘  │
+│             ▼                              ▼                        │
+│  ┌────────────────────────────────────────────────────────────────┐ │
+│  │              ToRA Math Pipeline                               │ │
+│  │  Variable extraction → Single-shot ToRA → Consensus voting    │ │
+│  │  (4 temps, ≥40% agree) → Iterative fallback (sub-step decomp) │ │
+│  └────────────────────────────────────────────────────────────────┘ │
+└────────────────────────────────┬─────────────────────────────────────┘
+                                 ▼
+                    ┌──────────────────────────────────────┐
+                    │       /output/results.json            │
+                    └──────────────────────────────────────┘
 ```
 
 ### Solver Categories
